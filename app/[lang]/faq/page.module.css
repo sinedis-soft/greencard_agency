@@ -1,0 +1,10 @@
+.page {
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+
+.item + .item {
+  margin-top: 1rem;
+}
