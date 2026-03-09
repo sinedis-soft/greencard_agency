@@ -1,0 +1,21 @@
+.alert {
+  padding: 0.75rem 0.9rem;
+  border-radius: var(--radius-md);
+  font-size: 0.9rem;
+  border: 1px solid transparent;
+}
+
+.info {
+  background: rgba(18, 35, 61, 0.06);
+  border-color: rgba(18, 35, 61, 0.12);
+}
+
+.success {
+  background: rgba(18, 140, 70, 0.1);
+  border-color: rgba(18, 140, 70, 0.25);
+}
+
+.error {
+  background: rgba(190, 35, 35, 0.1);
+  border-color: rgba(190, 35, 35, 0.25);
+}
