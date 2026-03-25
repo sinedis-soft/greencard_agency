@@ -1,100 +1,159 @@
 import type { SiteDictionary } from '@/types/i18n';
 
 export const beDictionary: SiteDictionary = {
-  common: { brand: 'GreenCard Agency', languageLabel: 'Мова', ctaPrimary: 'Request a quote', ctaSecondary: 'Contact us' },
-  header: { nav: { home: 'Home', about: 'About', insurers: 'Insurers', regulations: 'Regulations', documents: 'Documents', faq: 'FAQ', contacts: 'Contact' } },
-  footer: { legal: 'Legal information', rights: '© GreenCard Agency. All rights reserved.' },
+  common: {
+    brand: 'GreenCard Agency',
+    languageLabel: 'Мова',
+    ctaPrimary: 'Запытаць разлік',
+    ctaSecondary: 'Звязацца з намі'
+  },
+  header: {
+    nav: {
+      home: 'Галоўная',
+      about: 'Пра нас',
+      insurers: 'Страхавыя кампаніі',
+      regulations: 'Правілы',
+      documents: 'Дакументы',
+      faq: 'FAQ',
+      contacts: 'Кантакты'
+    }
+  },
+  footer: {
+    legal: 'Прававая інфармацыя',
+    rights: '© GreenCard Agency. Усе правы абаронены.'
+  },
   pages: {
     home: {
-      hero: { title: 'Insurance solutions for international travel', subtitle: 'Reliable support and transparent policy terms.', trustBadge: 'Professional insurance service' },
-      benefits: { title: 'Why clients choose us', items: ['Verified insurer partners', 'Transparent legal terms', 'Multilingual support: RU/PL/EN/BE'] }
+      hero: {
+        title: 'Страхавыя рашэнні для міжнародных паездак',
+        subtitle: 'Надзейная падтрымка і празрыстыя ўмовы страхавання.',
+        trustBadge: 'Прафесійны страхавы сэрвіс'
+      },
+      benefits: {
+        title: 'Чаму кліенты выбіраюць нас',
+        items: [
+          'Правераныя страхавыя партнёры',
+          'Празрыстыя прававыя ўмовы',
+          'Шматмоўная падтрымка: RU/PL/EN/BE'
+        ]
+      }
     },
     about: {
-      title: 'About us',
-      intro: 'GreenCard Agency supports drivers with fast and compliant cross-border insurance.',
+      title: 'Пра нас',
+      intro: 'GreenCard Agency дапамагае кіроўцам хутка і ў адпаведнасці з патрабаваннямі аформіць трансгранічнае страхаванне.',
       sections: [
-        { title: 'Our role', body: 'We act as an insurance intermediary and help clients choose suitable policy options.' },
-        { title: 'Service standards', body: 'We provide multilingual support and clear requirements before policy issuance.' }
+        {
+          title: 'Наша роля',
+          body: 'Мы выступаем як страхавы пасярэднік і дапамагаем кліентам выбраць адпаведныя варыянты страхавых полісаў.'
+        },
+        {
+          title: 'Стандарты абслугоўвання',
+          body: 'Мы забяспечваем шматмоўную падтрымку і выразныя патрабаванні перад афармленнем поліса.'
+        }
       ]
     },
     insurers: {
-      title: 'Insurer partners',
-      intro: 'List of partner insurance companies available for Green Card and frontier policies.',
+      title: 'Страхавыя партнёры',
+      intro: 'Спіс партнёрскіх страхавых кампаній для полісаў Зялёная карта і памежнага страхавання.',
       sections: [
-        { title: 'Coverage terms', body: 'Coverage scope depends on insurer and selected route countries.' },
-        { title: 'Issuance rules', body: 'Final eligibility is based on registration country, vehicle type, and timing.' }
+        {
+          title: 'Умовы пакрыцця',
+          body: 'Аб’ём страхавога пакрыцця залежыць ад страхавой кампаніі і выбраных краін маршруту.'
+        },
+        {
+          title: 'Правілы афармлення',
+          body: 'Канчатковае рашэнне залежыць ад краіны рэгістрацыі, тыпу транспартнага сродку і тэрмінаў.'
+        }
       ]
     },
     regulations: {
-      title: 'Regulations',
-      intro: 'Terms of service and legal conditions for policy issuance.',
+      title: 'Правілы',
+      intro: 'Умовы аказання паслуг і прававыя ўмовы афармлення поліса.',
       sections: [
-        { title: 'Data processing', body: 'Personal data is processed for quote calculation and policy issuance workflows.' },
-        { title: 'Territorial limitations', body: 'Availability may vary by destination and insurer restrictions.' }
+        {
+          title: 'Апрацоўка дадзеных',
+          body: 'Персанальныя дадзеныя апрацоўваюцца для разліку страхавой прапановы і афармлення поліса.'
+        },
+        {
+          title: 'Тэрытарыяльныя абмежаванні',
+          body: 'Даступнасць можа адрознівацца ў залежнасці ад краіны прызначэння і абмежаванняў страхавой кампаніі.'
+        }
       ]
     },
     documents: {
-      title: 'Documents',
-      intro: 'Download current policy forms and required templates.',
+      title: 'Дакументы',
+      intro: 'Спампуйце актуальныя формы полісаў і неабходныя шаблоны дакументаў.',
       sections: [
-        { title: 'Application forms', body: 'Use updated forms only to avoid processing delays.' },
-        { title: 'Legal templates', body: 'Regulatory attachments and declarations are available in downloadable format.' }
+        {
+          title: 'Формы заяў',
+          body: 'Выкарыстоўвайце толькі актуальныя формы, каб пазбегнуць затрымак у апрацоўцы.'
+        },
+        {
+          title: 'Прававыя шаблоны',
+          body: 'Нарматыўныя дадаткі і заявы даступныя для спампоўвання.'
+        }
       ]
     },
     faq: {
-      title: 'Frequently Asked Questions',
-      intro: 'Key answers about policy issuance and validity.',
+      title: 'Часта задаваныя пытанні',
+      intro: 'Асноўныя адказы пра афармленне і тэрмін дзеяння поліса.',
       items: [
-        { question: 'How fast can I get a policy?', answer: 'Usually on the same day after data verification.' },
-        { question: 'Which countries are covered?', answer: 'Coverage depends on the selected product and insurer terms.' }
+        {
+          question: 'Як хутка я магу атрымаць поліс?',
+          answer: 'Звычайна ў той жа дзень пасля праверкі дадзеных.'
+        },
+        {
+          question: 'Якія краіны пакрываюцца?',
+          answer: 'Пакрыццё залежыць ад абранага прадукту і ўмоў страхавой кампаніі.'
+        }
       ]
     },
     contact: {
-      title: 'Contact',
-      intro: 'Reach our support team and submit an insurance request.',
+      title: 'Кантакты',
+      intro: 'Звяжыцеся з нашай службай падтрымкі і адпраўце запыт на страхаванне.',
       detailsTitle: 'Кантактная інфармацыя',
       mapTitle: 'Карта',
       details: {
-        address: 'Warsaw, Poland (office details to be finalized)',
+        address: 'Варшава, Польшча (інфармацыя пра офіс будзе ўдакладнена)',
         phone: '+48 000 000 000',
         email: 'contact@greencard.agency',
-        hours: 'Mon–Fri 09:00–18:00'
+        hours: 'Пн–Пт 09:00–18:00'
       },
-      mapPlaceholder: 'Map placeholder'
+      mapPlaceholder: 'Карта'
     }
   },
   forms: {
     lead: {
-      title: 'Insurance request form',
-      loading: 'Sending...',
+      title: 'Форма запыту на страхаванне',
+      loading: 'Адпраўка...',
       fields: {
-        fullName: 'Full name',
+        fullName: 'Імя і прозвішча',
         email: 'Email',
-        phone: 'Phone',
-        message: 'Comment',
-        registrationCountry: 'Registration country (ISO2)',
-        vehicleType: 'Vehicle type (car/truck/bus/motorcycle/other)',
-        plateNumber: 'Plate number',
+        phone: 'Тэлефон',
+        message: 'Каментар',
+        registrationCountry: 'Краіна рэгістрацыі (ISO2)',
+        vehicleType: 'Тып транспартнага сродку (аўто/грузавік/аўтобус/матацыкл/іншае)',
+        plateNumber: 'Рэгістрацыйны нумар',
         vin: 'VIN',
-        insuranceStartDate: 'Start date (YYYY-MM-DD)',
-        duration: 'Duration in days',
-        routeCountries: 'Route countries (comma-separated ISO2)',
-        borderEntryPoint: 'Border entry point (optional)',
-        utmSource: 'UTM source (optional)',
-        utmCampaign: 'UTM campaign (optional)',
-        utmMedium: 'UTM medium (optional)',
-        utmTerm: 'UTM term (optional)',
-        utmContent: 'UTM content (optional)',
-        consent: 'I agree to personal data processing',
-        honeypot: 'Do not fill this field'
+        insuranceStartDate: 'Дата пачатку (YYYY-MM-DD)',
+        duration: 'Тэрмін у днях',
+        routeCountries: 'Краіны маршруту (ISO2, праз коску)',
+        borderEntryPoint: 'Памежны пункт (неабавязкова)',
+        utmSource: 'UTM source (неабавязкова)',
+        utmCampaign: 'UTM campaign (неабавязкова)',
+        utmMedium: 'UTM medium (неабавязкова)',
+        utmTerm: 'UTM term (неабавязкова)',
+        utmContent: 'UTM content (неабавязкова)',
+        consent: 'Я даю згоду на апрацоўку персанальных дадзеных',
+        honeypot: 'Не запаўняйце гэта поле'
       },
-      submit: 'Send request',
-      success: 'Request sent. We will contact you shortly.',
+      submit: 'Адправіць запыт',
+      success: 'Запыт адпраўлены. Мы хутка з вамі звяжамся.',
       errors: {
-        invalid: 'Please check entered data.',
-        required: 'Please fill required fields.',
-        server: 'Failed to send request. Try again later.',
-        ratelimit: 'Too many requests. Try later.'
+        invalid: 'Калі ласка, праверце ўведзеныя дадзеныя.',
+        required: 'Калі ласка, запоўніце абавязковыя палі.',
+        server: 'Не атрымалася адправіць запыт. Паспрабуйце пазней.',
+        ratelimit: 'Занадта шмат запытаў. Паспрабуйце пазней.'
       }
     }
   }

@@ -1,100 +1,159 @@
 import type { SiteDictionary } from '@/types/i18n';
 
 export const plDictionary: SiteDictionary = {
-  common: { brand: 'GreenCard Agency', languageLabel: 'Język', ctaPrimary: 'Request a quote', ctaSecondary: 'Contact us' },
-  header: { nav: { home: 'Home', about: 'About', insurers: 'Insurers', regulations: 'Regulations', documents: 'Documents', faq: 'FAQ', contacts: 'Contact' } },
-  footer: { legal: 'Legal information', rights: '© GreenCard Agency. All rights reserved.' },
+  common: {
+    brand: 'GreenCard Agency',
+    languageLabel: 'Język',
+    ctaPrimary: 'Poproś o wycenę',
+    ctaSecondary: 'Skontaktuj się z nami'
+  },
+  header: {
+    nav: {
+      home: 'Strona główna',
+      about: 'O nas',
+      insurers: 'Ubezpieczyciele',
+      regulations: 'Regulamin',
+      documents: 'Dokumenty',
+      faq: 'FAQ',
+      contacts: 'Kontakt'
+    }
+  },
+  footer: {
+    legal: 'Informacje prawne',
+    rights: '© GreenCard Agency. Wszelkie prawa zastrzeżone.'
+  },
   pages: {
     home: {
-      hero: { title: 'Insurance solutions for international travel', subtitle: 'Reliable support and transparent policy terms.', trustBadge: 'Professional insurance service' },
-      benefits: { title: 'Why clients choose us', items: ['Verified insurer partners', 'Transparent legal terms', 'Multilingual support: RU/PL/EN/BE'] }
+      hero: {
+        title: 'Rozwiązania ubezpieczeniowe dla podróży międzynarodowych',
+        subtitle: 'Niezawodne wsparcie i przejrzyste warunki polisy.',
+        trustBadge: 'Profesjonalna obsługa ubezpieczeniowa'
+      },
+      benefits: {
+        title: 'Dlaczego klienci wybierają nas',
+        items: [
+          'Zweryfikowani partnerzy ubezpieczeniowi',
+          'Przejrzyste warunki prawne',
+          'Wsparcie wielojęzyczne: RU/PL/EN/BE'
+        ]
+      }
     },
     about: {
-      title: 'About us',
-      intro: 'GreenCard Agency supports drivers with fast and compliant cross-border insurance.',
+      title: 'O nas',
+      intro: 'GreenCard Agency wspiera kierowców w szybkim i zgodnym z przepisami uzyskaniu ubezpieczenia transgranicznego.',
       sections: [
-        { title: 'Our role', body: 'We act as an insurance intermediary and help clients choose suitable policy options.' },
-        { title: 'Service standards', body: 'We provide multilingual support and clear requirements before policy issuance.' }
+        {
+          title: 'Nasza rola',
+          body: 'Działamy jako pośrednik ubezpieczeniowy i pomagamy klientom wybrać odpowiednie warianty polis.'
+        },
+        {
+          title: 'Standardy obsługi',
+          body: 'Zapewniamy wsparcie wielojęzyczne oraz jasne wymagania przed wystawieniem polisy.'
+        }
       ]
     },
     insurers: {
-      title: 'Insurer partners',
-      intro: 'List of partner insurance companies available for Green Card and frontier policies.',
+      title: 'Partnerzy ubezpieczeniowi',
+      intro: 'Lista partnerskich firm ubezpieczeniowych dostępnych dla polis Zielonej Karty i ubezpieczeń granicznych.',
       sections: [
-        { title: 'Coverage terms', body: 'Coverage scope depends on insurer and selected route countries.' },
-        { title: 'Issuance rules', body: 'Final eligibility is based on registration country, vehicle type, and timing.' }
+        {
+          title: 'Warunki ochrony',
+          body: 'Zakres ochrony zależy od ubezpieczyciela oraz wybranych krajów trasy.'
+        },
+        {
+          title: 'Zasady wystawienia',
+          body: 'Ostateczna kwalifikacja zależy od kraju rejestracji, typu pojazdu oraz terminu.'
+        }
       ]
     },
     regulations: {
-      title: 'Regulations',
-      intro: 'Terms of service and legal conditions for policy issuance.',
+      title: 'Regulamin',
+      intro: 'Warunki świadczenia usług oraz warunki prawne wystawienia polisy.',
       sections: [
-        { title: 'Data processing', body: 'Personal data is processed for quote calculation and policy issuance workflows.' },
-        { title: 'Territorial limitations', body: 'Availability may vary by destination and insurer restrictions.' }
+        {
+          title: 'Przetwarzanie danych',
+          body: 'Dane osobowe są przetwarzane w celu kalkulacji oferty oraz wystawienia polisy.'
+        },
+        {
+          title: 'Ograniczenia terytorialne',
+          body: 'Dostępność może się różnić w zależności od kraju docelowego i ograniczeń ubezpieczyciela.'
+        }
       ]
     },
     documents: {
-      title: 'Documents',
-      intro: 'Download current policy forms and required templates.',
+      title: 'Dokumenty',
+      intro: 'Pobierz aktualne formularze polis i wymagane wzory dokumentów.',
       sections: [
-        { title: 'Application forms', body: 'Use updated forms only to avoid processing delays.' },
-        { title: 'Legal templates', body: 'Regulatory attachments and declarations are available in downloadable format.' }
+        {
+          title: 'Formularze wniosków',
+          body: 'Używaj tylko aktualnych formularzy, aby uniknąć opóźnień w przetwarzaniu.'
+        },
+        {
+          title: 'Wzory dokumentów prawnych',
+          body: 'Załączniki regulacyjne i oświadczenia są dostępne do pobrania.'
+        }
       ]
     },
     faq: {
-      title: 'Frequently Asked Questions',
-      intro: 'Key answers about policy issuance and validity.',
+      title: 'Najczęściej zadawane pytania',
+      intro: 'Najważniejsze odpowiedzi dotyczące wystawienia i ważności polisy.',
       items: [
-        { question: 'How fast can I get a policy?', answer: 'Usually on the same day after data verification.' },
-        { question: 'Which countries are covered?', answer: 'Coverage depends on the selected product and insurer terms.' }
+        {
+          question: 'Jak szybko mogę otrzymać polisę?',
+          answer: 'Zazwyczaj tego samego dnia po weryfikacji danych.'
+        },
+        {
+          question: 'Jakie kraje są objęte ochroną?',
+          answer: 'Zakres ochrony zależy od wybranego produktu i warunków ubezpieczyciela.'
+        }
       ]
     },
     contact: {
-      title: 'Contact',
-      intro: 'Reach our support team and submit an insurance request.',
+      title: 'Kontakt',
+      intro: 'Skontaktuj się z naszym zespołem i wyślij zapytanie ubezpieczeniowe.',
       detailsTitle: 'Dane kontaktowe',
       mapTitle: 'Mapa',
       details: {
-        address: 'Warsaw, Poland (office details to be finalized)',
+        address: 'Warszawa, Polska (szczegóły biura zostaną wkrótce podane)',
         phone: '+48 000 000 000',
         email: 'contact@greencard.agency',
-        hours: 'Mon–Fri 09:00–18:00'
+        hours: 'Pon–Pt 09:00–18:00'
       },
-      mapPlaceholder: 'Map placeholder'
+      mapPlaceholder: 'Mapa'
     }
   },
   forms: {
     lead: {
-      title: 'Insurance request form',
-      loading: 'Sending...',
+      title: 'Formularz zapytania ubezpieczeniowego',
+      loading: 'Wysyłanie...',
       fields: {
-        fullName: 'Full name',
+        fullName: 'Imię i nazwisko',
         email: 'Email',
-        phone: 'Phone',
-        message: 'Comment',
-        registrationCountry: 'Registration country (ISO2)',
-        vehicleType: 'Vehicle type (car/truck/bus/motorcycle/other)',
-        plateNumber: 'Plate number',
+        phone: 'Telefon',
+        message: 'Komentarz',
+        registrationCountry: 'Kraj rejestracji (ISO2)',
+        vehicleType: 'Typ pojazdu (samochód/ciężarówka/autobus/motocykl/inne)',
+        plateNumber: 'Numer rejestracyjny',
         vin: 'VIN',
-        insuranceStartDate: 'Start date (YYYY-MM-DD)',
-        duration: 'Duration in days',
-        routeCountries: 'Route countries (comma-separated ISO2)',
-        borderEntryPoint: 'Border entry point (optional)',
-        utmSource: 'UTM source (optional)',
-        utmCampaign: 'UTM campaign (optional)',
-        utmMedium: 'UTM medium (optional)',
-        utmTerm: 'UTM term (optional)',
-        utmContent: 'UTM content (optional)',
-        consent: 'I agree to personal data processing',
-        honeypot: 'Do not fill this field'
+        insuranceStartDate: 'Data rozpoczęcia (YYYY-MM-DD)',
+        duration: 'Czas trwania w dniach',
+        routeCountries: 'Kraje trasy (ISO2, oddzielone przecinkami)',
+        borderEntryPoint: 'Przejście graniczne (opcjonalnie)',
+        utmSource: 'UTM source (opcjonalnie)',
+        utmCampaign: 'UTM campaign (opcjonalnie)',
+        utmMedium: 'UTM medium (opcjonalnie)',
+        utmTerm: 'UTM term (opcjonalnie)',
+        utmContent: 'UTM content (opcjonalnie)',
+        consent: 'Wyrażam zgodę na przetwarzanie danych osobowych',
+        honeypot: 'Nie wypełniaj tego pola'
       },
-      submit: 'Send request',
-      success: 'Request sent. We will contact you shortly.',
+      submit: 'Wyślij zapytanie',
+      success: 'Zapytanie zostało wysłane. Skontaktujemy się wkrótce.',
       errors: {
-        invalid: 'Please check entered data.',
-        required: 'Please fill required fields.',
-        server: 'Failed to send request. Try again later.',
-        ratelimit: 'Too many requests. Try later.'
+        invalid: 'Sprawdź wprowadzone dane.',
+        required: 'Wypełnij wymagane pola.',
+        server: 'Nie udało się wysłać zapytania. Spróbuj ponownie później.',
+        ratelimit: 'Zbyt wiele zapytań. Spróbuj ponownie później.'
       }
     }
   }
