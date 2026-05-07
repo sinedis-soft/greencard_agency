@@ -1,13 +1,18 @@
 .page {
-  --background: #fafafa;
-  --foreground: #fff;
+  --background: #f4f6f6;
+  --foreground: #ffffff;
 
-  --text-primary: #000;
-  --text-secondary: #666;
+  --text-primary: #17242a;
+  --text-secondary: #6b7880;
 
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
-  --button-secondary-border: #ebebeb;
+  --brand-primary: #003f39;
+  --brand-primary-dark: #002f2b;
+  --brand-accent: #7bae37;
+  --brand-accent-hover: #6d9f2f;
+
+  --button-primary-hover: var(--brand-accent-hover);
+  --button-secondary-hover: #eef4f1;
+  --button-secondary-border: #dbe3e3;
 
   display: flex;
   min-height: 100vh;
@@ -38,13 +43,13 @@
 }
 
 .intro h1 {
-  max-width: 320px;
+  max-width: 360px;
   font-size: 40px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 48px;
   letter-spacing: -2.4px;
   text-wrap: balance;
-  color: var(--text-primary);
+  color: var(--brand-primary);
 }
 
 .intro p {
@@ -56,8 +61,8 @@
 }
 
 .intro a {
-  font-weight: 500;
-  color: var(--text-primary);
+  font-weight: 600;
+  color: var(--brand-primary);
 }
 
 .ctas {
@@ -73,27 +78,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40px;
-  padding: 0 16px;
+  height: 42px;
+  padding: 0 18px;
   border-radius: 128px;
   border: 1px solid transparent;
   transition: 0.2s;
   cursor: pointer;
   width: fit-content;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 a.primary {
-  background: var(--text-primary);
-  color: var(--background);
+  background: var(--brand-accent);
+  color: #061b18;
   gap: 8px;
+  box-shadow: 0 10px 24px rgba(123, 174, 55, 0.24);
 }
 
 a.secondary {
+  color: var(--brand-primary);
   border-color: var(--button-secondary-border);
+  background: #ffffff;
 }
 
-/* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   a.primary:hover {
     background: var(--button-primary-hover);
@@ -102,7 +109,7 @@ a.secondary {
 
   a.secondary:hover {
     background: var(--button-secondary-hover);
-    border-color: transparent;
+    border-color: var(--brand-accent);
   }
 }
 
@@ -124,18 +131,31 @@ a.secondary {
 
 @media (prefers-color-scheme: dark) {
   .logo {
-    filter: invert();
+    filter: none;
   }
 
   .page {
-    --background: #000;
-    --foreground: #000;
+    --background: #002f2b;
+    --foreground: #003f39;
 
-    --text-primary: #ededed;
-    --text-secondary: #999;
+    --text-primary: #ffffff;
+    --text-secondary: rgba(255, 255, 255, 0.72);
 
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
-    --button-secondary-border: #1a1a1a;
+    --button-primary-hover: #86bd3c;
+    --button-secondary-hover: rgba(255, 255, 255, 0.08);
+    --button-secondary-border: rgba(255, 255, 255, 0.18);
+  }
+
+  .intro h1 {
+    color: #ffffff;
+  }
+
+  .intro a,
+  a.secondary {
+    color: #ffffff;
+  }
+
+  a.secondary {
+    background: transparent;
   }
 }

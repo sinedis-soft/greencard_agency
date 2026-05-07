@@ -23,19 +23,11 @@ export type LeadFormDictionary = {
   };
 
   policyholder: {
-    companyCheckbox: string;
-
     individualTitle: string;
     birthDate: string;
-
     addressTitle: string;
     addressPlaceholder: string;
     addressHelp: string;
-
-    companyTitle: string;
-    companyInn: string;
-    ceoFullName: string;
-    ceoTitle: string;
   };
 
   policy: {
@@ -101,19 +93,11 @@ const ru: LeadFormDictionary = {
   },
 
   policyholder: {
-    companyCheckbox: "Оформить на юридическое лицо",
-
     individualTitle: "Данные страхователя (физическое лицо)",
     birthDate: "Дата рождения",
-
     addressTitle: "Адрес регистрации",
-    addressPlaceholder: "Страна, город, улица, дом, квартира (если есть)",
+    addressPlaceholder: "ИНДЕКС, Страна, город, улица, дом, квартира (если есть)",
     addressHelp: "Укажите адрес одной строкой.",
-
-    companyTitle: "Данные страхователя (юридическое лицо)",
-    companyInn: "ИНН компании",
-    ceoFullName: "ФИО руководителя",
-    ceoTitle: "Должность руководителя",
   },
 
   policy: {
@@ -149,8 +133,8 @@ const ru: LeadFormDictionary = {
         { value: "OTHER", label: "Другая" },
       ],
       vehicleTypes: [
-        { value: "car", label: "Легковое" },
-        { value: "truck", label: "Грузовое" },
+        { value: "car", label: "Легковое авто" },
+        { value: "truck", label: "Грузовое авто" },
         { value: "bus", label: "Автобус" },
         { value: "moto", label: "Мотоцикл" },
         { value: "trailer", label: "Прицеп" },
@@ -158,6 +142,7 @@ const ru: LeadFormDictionary = {
       ],
       periods: [
         { value: "30", label: "30 дней" },
+        { value: "60", label: "60 дней" },
         { value: "90", label: "90 дней" },
         { value: "180", label: "6 месяцев" },
         { value: "365", label: "12 месяцев" },
@@ -183,159 +168,159 @@ const ru: LeadFormDictionary = {
   },
 };
 
-const lv: LeadFormDictionary = {
-  title: "Pieteikums polises iegādei",
-  intro: "Aizpildiet datus. Sagatavosim polisi un nosūtīsim maksājuma rekvizītus.",
+const pl: LeadFormDictionary = {
+  title: "Wniosek o zawarcie polisy",
+  intro:
+    "Wypełnij dane. Przygotujemy polisę i prześlemy dane do płatności.",
 
-  notSelected: "Nav izvēlēts",
-  submit: "Nosūtīt pieteikumu",
+  notSelected: "Nie wybrano",
+  submit: "Wyślij wniosek",
 
-  fileForbidden: "nav atļauts (arhīvs, audio vai video).",
+  fileForbidden:
+    "niedozwolony format pliku (archiwum, audio lub wideo).",
 
-  statusSending: "Nosūtīšana…",
-  statusError: "Kļūda, nosūtot pieteikumu. Lūdzu, mēģiniet vēlāk.",
-  statusSuccess: "Pieteikums nosūtīts. Mēs ar jums sazināsimies.",
+  statusSending: "Wysyłanie…",
+  statusError:
+    "Wystąpił błąd podczas wysyłania wniosku. Prosimy spróbować ponownie później.",
+  statusSuccess:
+    "Wniosek został wysłany. Skontaktujemy się z Państwem.",
 
   contact: {
-    legend: "Kontaktinformācija",
-    firstName: "Vārds",
-    lastName: "Uzvārds",
-    phone: "Tālrunis (ar valsts kodu)",
-    email: "E-pasts",
+    legend: "Dane kontaktowe",
+    firstName: "Imię",
+    lastName: "Nazwisko",
+    phone: "Telefon (z numerem kierunkowym kraju)",
+    email: "E-mail",
   },
 
   policyholder: {
-    companyCheckbox: "Noformēt uz juridisko personu",
-
-    individualTitle: "Apdrošinājuma ņēmēja dati (fiziska persona)",
-    birthDate: "Dzimšanas datums",
-
-    addressTitle: "Deklarētā adrese",
-    addressPlaceholder: "Valsts, pilsēta, iela, māja, dzīvoklis (ja ir)",
-    addressHelp: "Norādiet adresi vienā rindā.",
-
-    companyTitle: "Apdrošinājuma ņēmēja dati (juridiska persona)",
-    companyInn: "Uzņēmuma reģistrācijas numurs",
-    ceoFullName: "Vadītāja vārds, uzvārds",
-    ceoTitle: "Vadītāja amats",
+    individualTitle:
+      "Dane ubezpieczającego (osoba fizyczna)",
+    birthDate: "Data urodzenia",
+    addressTitle: "Adres rejestracji",
+    addressPlaceholder:
+      "KOD POCZTOWY, kraj, miasto, ulica, numer domu, numer mieszkania (jeśli dotyczy)",
+    addressHelp: "Proszę podać adres w jednym wierszu.",
   },
 
   policy: {
-    legend: "Dati aprēķinam un noformēšanai",
-    countryFrom: "Transportlīdzekļa reģistrācijas valsts",
-    vehicleType: "Transportlīdzekļa veids",
-    startDate: "Sākuma datums",
-    period: "Termiņš",
+    legend: "Dane do kalkulacji i zawarcia polisy",
+    countryFrom: "Kraj rejestracji pojazdu",
+    vehicleType: "Typ pojazdu",
+    startDate: "Data rozpoczęcia ochrony",
+    period: "Okres",
 
-    vehiclePlate: "Reģistrācijas numurs",
-    docsLabel: "Reģistrācijas apliecība (foto vai PDF)",
-    docsHint: "Var pievienot vairākus failus.",
+    vehiclePlate: "Numer rejestracyjny",
+    docsLabel: "Dowód rejestracyjny (zdjęcie lub PDF)",
+    docsHint: "Można załączyć kilka plików.",
 
-    addVehicle: "Pievienot transportlīdzekli",
-    removeVehicle: "Dzēst",
-    vehicleBlockTitle: "Transportlīdzeklis",
-    comment: "Komentārs (neobligāti)",
+    addVehicle: "Dodaj pojazd",
+    removeVehicle: "Usuń",
+    vehicleBlockTitle: "Pojazd",
+    comment: "Komentarz (opcjonalnie)",
 
     options: {
       countriesFrom: [
-        { value: "KZ", label: "Kazahstāna" },
+        { value: "KZ", label: "Kazachstan" },
         { value: "UA", label: "Ukraina" },
-        { value: "GE", label: "Gruzija" },
-        { value: "UZ", label: "Uzbekistāna" },
-        { value: "KG", label: "Kirgizstāna" },
-        { value: "MD", label: "Moldova" },
-        { value: "TR", label: "Turcija" },
-        { value: "RU", label: "Krievija" },
-        { value: "MN", label: "Mongolija" },
-        { value: "AZ", label: "Azerbaidžāna" },
-        { value: "AR", label: "Armēnija" },
-        { value: "BY", label: "Baltkrievija" },
-        { value: "OTHER", label: "Cita" },
+        { value: "GE", label: "Gruzja" },
+        { value: "UZ", label: "Uzbekistan" },
+        { value: "KG", label: "Kirgistan" },
+        { value: "MD", label: "Mołdawia" },
+        { value: "TR", label: "Turcja" },
+        { value: "RU", label: "Rosja" },
+        { value: "MN", label: "Mongolia" },
+        { value: "AZ", label: "Azerbejdżan" },
+        { value: "AR", label: "Armenia" },
+        { value: "BY", label: "Białoruś" },
+        { value: "OTHER", label: "Inny" },
       ],
       vehicleTypes: [
-        { value: "car", label: "Vieglā automašīna" },
-        { value: "truck", label: "Kravas automašīna" },
-        { value: "bus", label: "Autobuss" },
-        { value: "moto", label: "Motocikls" },
-        { value: "trailer", label: "Piekabe" },
-        { value: "special", label: "Speciālā tehnika" },
+        { value: "car", label: "Samochód osobowy" },
+        { value: "truck", label: "Samochód ciężarowy" },
+        { value: "bus", label: "Autobus" },
+        { value: "moto", label: "Motocykl" },
+        { value: "trailer", label: "Przyczepa" },
+        { value: "special", label: "Pojazd specjalny" },
       ],
       periods: [
-        { value: "30", label: "30 dienas" },
-        { value: "90", label: "90 dienas" },
-        { value: "180", label: "6 mēneši" },
-        { value: "365", label: "12 mēneši" },
+        { value: "30", label: "30 dni" },
+        { value: "60", label: "60 dni" },
+        { value: "90", label: "90 dni" },
+        { value: "180", label: "6 miesięcy" },
+        { value: "365", label: "12 miesięcy" },
       ],
     },
   },
-    steps: {
-    step1: "1. solis",
-    step2: "2. solis",
-    contacts: "Kontakti",
-    vehicleData: "Transportlīdzekļa dati",
-    next: "Tālāk",
-    back: "Atpakaļ",
+
+  steps: {
+    step1: "Krok 1",
+    step2: "Krok 2",
+    contacts: "Dane kontaktowe",
+    vehicleData: "Dane pojazdu",
+    next: "Dalej",
+    back: "Wstecz",
   },
+
   terms: {
-    textBefore: "Es piekrītu",
-    linkText: "noformēšanas noteikumiem un apdrošināšanas noteikumiem",
+    textBefore: "Akceptuję",
+    linkText:
+      "warunki zawarcia umowy oraz zasady ubezpieczenia",
     textAfter: ".",
   },
+
   estimate: {
-    title: "Orientējošās izmaksas pēc pieteikuma:",
-    hint: "Galīgā apdrošināšanas prēmija tiks norādīta rēķinā pēc visu datu pārbaudes un saskaņošanas ar apdrošinātāju.",
+    title: "Orientacyjna składka dla wniosku:",
+    hint:
+      "Ostateczna składka zostanie podana w wiadomości zawierającej dane do płatności po weryfikacji wszystkich danych oraz uzgodnieniu warunków z zakładem ubezpieczeń.",
   },
 };
 
 const en: LeadFormDictionary = {
-  title: "Policy purchase request",
-  intro: "Fill in your details. We will prepare the policy and send you payment instructions.",
+  title: "Policy Purchase Application",
+  intro:
+    "Provide the required information. We will prepare the policy and send payment instructions.",
 
   notSelected: "Not selected",
-  submit: "Submit request",
+  submit: "Submit Application",
 
-  fileForbidden: "is not allowed (archive, audio, or video).",
+  fileForbidden: "is not allowed (archive, audio, or video files).",
 
   statusSending: "Sending…",
-  statusError: "Error submitting the request. Please try again later.",
-  statusSuccess: "Request submitted. We will contact you.",
+  statusError:
+    "An error occurred while submitting the application. Please try again later.",
+  statusSuccess:
+    "Your application has been submitted. We will contact you shortly.",
 
   contact: {
-    legend: "Contact details",
-    firstName: "First name",
-    lastName: "Last name",
-    phone: "Phone number (with country code)",
-    email: "Email",
+    legend: "Contact Details",
+    firstName: "First Name",
+    lastName: "Last Name",
+    phone: "Phone Number (including country code)",
+    email: "E-mail",
   },
 
   policyholder: {
-    companyCheckbox: "Apply as a legal entity",
-
-    individualTitle: "Policyholder details (individual)",
-    birthDate: "Date of birth",
-
-    addressTitle: "Registered address",
-    addressPlaceholder: "Country, city, street, building, apartment (if applicable)",
-    addressHelp: "Enter the address in a single line.",
-
-    companyTitle: "Policyholder details (legal entity)",
-    companyInn: "Company tax ID",
-    ceoFullName: "Full name of the director",
-    ceoTitle: "Position of the director",
+    individualTitle: "Policyholder Information (Individual)",
+    birthDate: "Date of Birth",
+    addressTitle: "Registered Address",
+    addressPlaceholder:
+      "POSTAL CODE, Country, city, street, building, apartment (if applicable)",
+    addressHelp: "Please enter the address in a single line.",
   },
 
   policy: {
-    legend: "Details for calculation and issuance",
-    countryFrom: "Country of vehicle registration",
-    vehicleType: "Vehicle type",
-    startDate: "Start date",
-    period: "Period",
+    legend: "Information for Quotation and Policy Issuance",
+    countryFrom: "Vehicle Registration Country",
+    vehicleType: "Vehicle Type",
+    startDate: "Start Date",
+    period: "Insurance Period",
 
-    vehiclePlate: "License plate number",
-    docsLabel: "Vehicle registration document (photo or PDF)",
-    docsHint: "You can upload multiple files.",
+    vehiclePlate: "Registration Number",
+    docsLabel: "Vehicle Registration Certificate (photo or PDF)",
+    docsHint: "You may attach multiple files.",
 
-    addVehicle: "Add vehicle",
+    addVehicle: "Add Vehicle",
     removeVehicle: "Remove",
     vehicleBlockTitle: "Vehicle",
     comment: "Comment (optional)",
@@ -357,55 +342,178 @@ const en: LeadFormDictionary = {
         { value: "OTHER", label: "Other" },
       ],
       vehicleTypes: [
-        { value: "car", label: "Passenger car" },
+        { value: "car", label: "Passenger Car" },
         { value: "truck", label: "Truck" },
         { value: "bus", label: "Bus" },
         { value: "moto", label: "Motorcycle" },
         { value: "trailer", label: "Trailer" },
-        { value: "special", label: "Special vehicle" },
+        { value: "special", label: "Special Equipment" },
       ],
       periods: [
         { value: "30", label: "30 days" },
+        { value: "60", label: "60 days" },
         { value: "90", label: "90 days" },
         { value: "180", label: "6 months" },
         { value: "365", label: "12 months" },
       ],
     },
   },
-    steps: {
+
+  steps: {
     step1: "Step 1",
     step2: "Step 2",
-    contacts: "Contacts",
-    vehicleData: "Vehicle details",
+    contacts: "Contact Details",
+    vehicleData: "Vehicle Information",
     next: "Next",
     back: "Back",
   },
+
   terms: {
-    textBefore: "I accept",
-    linkText: "the application terms and insurance rules",
+    textBefore: "I accept the",
+    linkText: "terms of issuance and insurance conditions",
     textAfter: ".",
   },
+
   estimate: {
-    title: "Estimated cost for your request:",
-    hint: "The final premium will be provided in the invoice after verification of all details and confirmation by the insurer.",
+    title: "Estimated Premium for the Application:",
+    hint:
+      "The final premium will be provided in the payment notice after verification of all information and confirmation by the insurer.",
+  },
+};
+
+const be: LeadFormDictionary = {
+  title: "Заяўка на набыццё поліса",
+  intro:
+    "Запоўніце даныя. Мы падрыхтуем поліс і накіруем рэквізіты для аплаты.",
+
+  notSelected: "Не выбрана",
+  submit: "Адправіць заяўку",
+
+  fileForbidden: "недапушчальны (архіў, аўдыя або відэа).",
+
+  statusSending: "Адпраўка…",
+  statusError:
+    "Памылка пры адпраўцы заяўкі. Паспрабуйце пазней.",
+  statusSuccess:
+    "Заяўка адпраўлена. Мы зьвяжамся з вамі.",
+
+  contact: {
+    legend: "Кантактныя даныя",
+    firstName: "Імя",
+    lastName: "Прозвішча",
+    phone: "Тэлефон (з кодам краіны)",
+    email: "E-mail",
+  },
+
+  policyholder: {
+    individualTitle:
+      "Даныя страхавальніка (фізічная асоба)",
+    birthDate: "Дата нараджэння",
+    addressTitle: "Адрас жыхарства",
+    addressPlaceholder:
+      "ІНДЭКС, Краіна, горад, вуліца, дом, кватэра (калі ёсць)",
+    addressHelp:
+      "Укажыце адрас адным радком.",
+  },
+
+  policy: {
+    legend:
+      "Даныя для разліку і афармлення",
+    countryFrom:
+      "Краіна рэгістрацыі аўтамабіля",
+    vehicleType: "Тып ТС",
+    startDate: "Дата пачатку",
+    period: "Тэрмін",
+
+    vehiclePlate: "Дзяржаўны нумар",
+    docsLabel:
+      "Тэхпашпарт (фота або PDF)",
+    docsHint:
+      "Можна далучыць некалькі файлаў.",
+
+    addVehicle: "Дадаць ТС",
+    removeVehicle: "Выдаліць",
+    vehicleBlockTitle:
+      "Транспартны сродак",
+    comment: "Каментарый (неабавязкова)",
+
+    options: {
+      countriesFrom: [
+        { value: "KZ", label: "Казахстан" },
+        { value: "UA", label: "Украіна" },
+        { value: "GE", label: "Грузія" },
+        { value: "UZ", label: "Узбекістан" },
+        { value: "KG", label: "Кыргызстан" },
+        { value: "MD", label: "Малдова" },
+        { value: "TR", label: "Турцыя" },
+        { value: "RU", label: "Расія" },
+        { value: "MN", label: "Манголія" },
+        { value: "AZ", label: "Азербайджан" },
+        { value: "AR", label: "Арменія" },
+        { value: "BY", label: "Беларусь" },
+        { value: "OTHER", label: "Іншая" },
+      ],
+      vehicleTypes: [
+        { value: "car", label: "Легкавы аўтамабіль" },
+        { value: "truck", label: "Грузавы аўтамабіль" },
+        { value: "bus", label: "Аўтобус" },
+        { value: "moto", label: "Матацыкл" },
+        { value: "trailer", label: "Прычэп" },
+        { value: "special", label: "Спецтэхніка" },
+      ],
+      periods: [
+        { value: "30", label: "30 дзён" },
+        { value: "60", label: "60 дзён" },
+        { value: "90", label: "90 дзён" },
+        { value: "180", label: "6 месяцаў" },
+        { value: "365", label: "12 месяцаў" },
+      ],
+    },
+  },
+
+  steps: {
+    step1: "Крок 1",
+    step2: "Крок 2",
+    contacts: "Кантакты",
+    vehicleData: "Даныя аўтамабіля",
+    next: "Далей",
+    back: "Назад",
+  },
+
+  terms: {
+    textBefore: "Я прымаю",
+    linkText:
+      "ўмовы афармлення і правілы страхавання",
+    textAfter: ".",
+  },
+
+  estimate: {
+    title:
+      "Прыблізны кошт па заяўцы:",
+    hint:
+      "Канчатковы кошт будзе пазначаны ў лісце з данымі для аплаты пасля праверкі ўсіх даных і ўзгаднення са страхавой кампаніяй.",
   },
 };
 
 const uz: LeadFormDictionary = {
   title: "Polis sotib olish uchun ariza",
-  intro: "Ma’lumotlarni kiriting. Biz polisni tayyorlaymiz va to‘lov rekvizitlarini yuboramiz.",
+  intro:
+    "Ma’lumotlarni to‘ldiring. Biz polisni tayyorlaymiz va to‘lov rekvizitlarini yuboramiz.",
 
   notSelected: "Tanlanmagan",
   submit: "Arizani yuborish",
 
-  fileForbidden: "ruxsat etilmaydi (arxiv, audio yoki video).",
+  fileForbidden:
+    "ruxsat etilmaydi (arxiv, audio yoki video fayl).",
 
   statusSending: "Yuborilmoqda…",
-  statusError: "Arizani yuborishda xatolik yuz berdi. Keyinroq urinib ko‘ring.",
-  statusSuccess: "Ariza yuborildi. Siz bilan bog‘lanamiz.",
+  statusError:
+    "Arizani yuborishda xatolik yuz berdi. Keyinroq qayta urinib ko‘ring.",
+  statusSuccess:
+    "Ariza yuborildi. Tez orada siz bilan bog‘lanamiz.",
 
   contact: {
-    legend: "Aloqa ma’lumotlari",
+    legend: "Kontakt ma’lumotlari",
     firstName: "Ism",
     lastName: "Familiya",
     phone: "Telefon (mamlakat kodi bilan)",
@@ -413,36 +521,55 @@ const uz: LeadFormDictionary = {
   },
 
   policyholder: {
-    companyCheckbox: "Yuridik shaxs nomiga rasmiylashtirish",
-
-    individualTitle: "Sug‘urtalanuvchi ma’lumotlari (jismoniy shaxs)",
+    individualTitle:
+      "Sug‘urta qildiruvchi ma’lumotlari (jismoniy shaxs)",
     birthDate: "Tug‘ilgan sana",
 
     addressTitle: "Ro‘yxatdan o‘tgan manzil",
-    addressPlaceholder: "Mamlakat, shahar, ko‘cha, uy, kvartira (agar bo‘lsa)",
-    addressHelp: "Manzilni bitta qatorda kiriting.",
 
-    companyTitle: "Sug‘urtalanuvchi ma’lumotlari (yuridik shaxs)",
-    companyInn: "Kompaniya INN",
-    ceoFullName: "Rahbar F.I.Sh.",
-    ceoTitle: "Rahbar lavozimi",
+    addressPlaceholder:
+      "POCHTA INDEKSI, mamlakat, shahar, ko‘cha, uy, kvartira (agar mavjud bo‘lsa)",
+
+    addressHelp:
+      "Manzilni bitta qatorda kiriting.",
   },
 
   policy: {
-    legend: "Hisoblash va rasmiylashtirish uchun ma’lumotlar",
-    countryFrom: "Avtomobil ro‘yxatdan o‘tgan davlat",
-    vehicleType: "Transport turi",
-    startDate: "Boshlanish sanasi",
-    period: "Muddat",
+    legend:
+      "Hisoblash va rasmiylashtirish uchun ma’lumotlar",
 
-    vehiclePlate: "Davlat raqami",
-    docsLabel: "Texnik pasport (foto yoki PDF)",
-    docsHint: "Bir nechta fayl biriktirish mumkin.",
+    countryFrom:
+      "Avtomobil ro‘yxatdan o‘tgan mamlakat",
 
-    addVehicle: "Transport vositasi qo‘shish",
-    removeVehicle: "O‘chirish",
-    vehicleBlockTitle: "Transport vositasi",
-    comment: "Izoh (ixtiyoriy)",
+    vehicleType:
+      "Transport vositasi turi",
+
+    startDate:
+      "Boshlanish sanasi",
+
+    period:
+      "Muddat",
+
+    vehiclePlate:
+      "Davlat raqami",
+
+    docsLabel:
+      "Texnik pasport (foto yoki PDF)",
+
+    docsHint:
+      "Bir nechta faylni biriktirish mumkin.",
+
+    addVehicle:
+      "Transport vositasini qo‘shish",
+
+    removeVehicle:
+      "O‘chirish",
+
+    vehicleBlockTitle:
+      "Transport vositasi",
+
+    comment:
+      "Izoh (ixtiyoriy)",
 
     options: {
       countriesFrom: [
@@ -454,12 +581,13 @@ const uz: LeadFormDictionary = {
         { value: "MD", label: "Moldova" },
         { value: "TR", label: "Turkiya" },
         { value: "RU", label: "Rossiya" },
-        { value: "MN", label: "Mongoliya" },
+        { value: "MN", label: "Mo‘g‘uliston" },
         { value: "AZ", label: "Ozarbayjon" },
         { value: "AR", label: "Armaniston" },
         { value: "BY", label: "Belarus" },
         { value: "OTHER", label: "Boshqa" },
       ],
+
       vehicleTypes: [
         { value: "car", label: "Yengil avtomobil" },
         { value: "truck", label: "Yuk avtomobili" },
@@ -468,172 +596,75 @@ const uz: LeadFormDictionary = {
         { value: "trailer", label: "Tirkama" },
         { value: "special", label: "Maxsus texnika" },
       ],
+
       periods: [
         { value: "30", label: "30 kun" },
+        { value: "60", label: "60 kun" },
         { value: "90", label: "90 kun" },
         { value: "180", label: "6 oy" },
         { value: "365", label: "12 oy" },
       ],
     },
   },
-    steps: {
-    step1: "1-qadam",
-    step2: "2-qadam",
-    contacts: "Aloqa ma’lumotlari",
-    vehicleData: "Transport ma’lumotlari",
+
+  steps: {
+    step1: "1-bosqich",
+    step2: "2-bosqich",
+    contacts: "Kontaktlar",
+    vehicleData: "Avtomobil ma’lumotlari",
     next: "Keyingi",
     back: "Orqaga",
   },
+
   terms: {
     textBefore: "Men",
-    linkText: "rasmiylashtirish shartlari va sug‘urta qoidalarini",
-    textAfter: " qabul qilaman.",
+    linkText:
+      "rasmiylashtirish shartlari va sug‘urta qoidalarini",
+
+    textAfter:
+      "qabul qilaman.",
   },
+
   estimate: {
-    title: "Ariza bo‘yicha taxminiy narx:",
-    hint: "Yakuniy narx barcha ma’lumotlar tekshirilgandan va sug‘urta kompaniyasi bilan kelishilgandan so‘ng, to‘lov uchun yuboriladigan invoice’da ko‘rsatiladi.",
-  },
-};
+    title:
+      "Ariza bo‘yicha taxminiy narx:",
 
-const kg: LeadFormDictionary = {
-  title: "Полис сатып алуу үчүн өтүнмө",
-  intro: "Маалыматтарды толтуруңуз. Биз полисти даярдап, төлөм реквизиттерин жөнөтөбүз.",
-
-  notSelected: "Тандалган эмес",
-  submit: "Өтүнмө жөнөтүү",
-
-  fileForbidden: "уруксат берилбейт (архив, аудио же видео).",
-
-  statusSending: "Жөнөтүлүүдө…",
-  statusError: "Өтүнмөнү жөнөтүүдө ката кетти. Кийинчерээк кайра аракет кылыңыз.",
-  statusSuccess: "Өтүнмө жөнөтүлдү. Биз сиз менен байланышабыз.",
-
-  contact: {
-    legend: "Байланыш маалыматтары",
-    firstName: "Аты",
-    lastName: "Фамилиясы",
-    phone: "Телефон (өлкө коду менен)",
-    email: "E-mail",
-  },
-
-  policyholder: {
-    companyCheckbox: "Юридикалык жакка тариздөө",
-
-    individualTitle: "Камсыздандыруучунун маалыматтары (жеке жак)",
-    birthDate: "Туулган күнү",
-
-    addressTitle: "Катталган дарек",
-    addressPlaceholder: "Өлкө, шаар, көчө, үй, батир (эгер болсо)",
-    addressHelp: "Даректи бир сап менен жазыңыз.",
-
-    companyTitle: "Камсыздандыруучунун маалыматтары (юридикалык жак)",
-    companyInn: "Компаниянын ИНН",
-    ceoFullName: "Жетекчинин толук аты-жөнү",
-    ceoTitle: "Жетекчинин кызмат орду",
-  },
-
-  policy: {
-    legend: "Эсептөө жана тариздөө үчүн маалыматтар",
-    countryFrom: "Авто катталган өлкө",
-    vehicleType: "Транспорт каражатынын түрү",
-    startDate: "Башталыш күнү",
-    period: "Мөөнөт",
-
-    vehiclePlate: "Мамлекеттик номер",
-    docsLabel: "Техпаспорт (сүрөт же PDF)",
-    docsHint: "Бир нече файл тиркөөгө болот.",
-
-    addVehicle: "ТК кошуу",
-    removeVehicle: "Өчүрүү",
-    vehicleBlockTitle: "Транспорт каражаты",
-    comment: "Комментарий (милдеттүү эмес)",
-
-    options: {
-      countriesFrom: [
-        { value: "KZ", label: "Казакстан" },
-        { value: "UA", label: "Украина" },
-        { value: "GE", label: "Грузия" },
-        { value: "UZ", label: "Өзбекстан" },
-        { value: "KG", label: "Кыргызстан" },
-        { value: "MD", label: "Молдова" },
-        { value: "TR", label: "Түркия" },
-        { value: "RU", label: "Россия" },
-        { value: "MN", label: "Монголия" },
-        { value: "AZ", label: "Азербайжан" },
-        { value: "AR", label: "Армения" },
-        { value: "BY", label: "Беларусь" },
-        { value: "OTHER", label: "Башка" },
-      ],
-      vehicleTypes: [
-        { value: "car", label: "Жеңил автоунаа" },
-        { value: "truck", label: "Жүк ташуучу унаа" },
-        { value: "bus", label: "Автобус" },
-        { value: "moto", label: "Мотоцикл" },
-        { value: "trailer", label: "Прицеп" },
-        { value: "special", label: "Атайын техника" },
-      ],
-      periods: [
-        { value: "30", label: "30 күн" },
-        { value: "90", label: "90 күн" },
-        { value: "180", label: "6 ай" },
-        { value: "365", label: "12 ай" },
-      ],
-    },
-  },
-    steps: {
-    step1: "1-кадам",
-    step2: "2-кадам",
-    contacts: "Байланыштар",
-    vehicleData: "Унаа маалыматтары",
-    next: "Кийинки",
-    back: "Артка",
-  },
-  terms: {
-    textBefore: "Мен",
-    linkText: "тариздөө шарттарын жана камсыздандыруу эрежелерин",
-    textAfter: " кабыл алам.",
-  },
-  estimate: {
-    title: "Өтүнмө боюнча болжолдуу баа:",
-    hint: "Акыркы баа бардык маалыматтар текшерилип, камсыздандыруу компаниясы менен макулдашылгандан кийин төлөм үчүн жөнөтүлүүчү катта (инвойста) көрсөтүлөт.",
+    hint:
+      "Yakuniy narx barcha ma’lumotlar tekshirilgandan va sug‘urta kompaniyasi bilan kelishilgandan so‘ng to‘lov ma’lumotlari ko‘rsatilgan xatda taqdim etiladi.",
   },
 };
 
 const ka: LeadFormDictionary = {
   title: "პოლისის შეძენის განაცხადი",
-  intro: "შეავსეთ მონაცემები. ჩვენ მოვამზადებთ პოლისს და გამოგიგზავნით გადახდის დეტალებს.",
+  intro:
+    "შეავსეთ მონაცემები. ჩვენ მოვამზადებთ პოლისს და გამოგიგზავნით გადახდის რეკვიზიტებს.",
 
   notSelected: "არ არის არჩეული",
   submit: "განაცხადის გაგზავნა",
 
-  fileForbidden: "დაუშვებელია (არქივი, აუდიო ან ვიდეო).",
+  fileForbidden: "დაუშვებელია (არქივი, აუდიო ან ვიდეო ფაილი).",
 
   statusSending: "იგზავნება…",
-  statusError: "შეცდომა განაცხადის გაგზავნისას. სცადეთ მოგვიანებით.",
-  statusSuccess: "განაცხადი გაგზავნილია. ჩვენ დაგიკავშირდებით.",
+  statusError:
+    "განაცხადის გაგზავნისას დაფიქსირდა შეცდომა. სცადეთ მოგვიანებით.",
+  statusSuccess:
+    "განაცხადი წარმატებით გაიგზავნა. მალე დაგიკავშირდებით.",
 
   contact: {
-    legend: "საკონტაქტო მონაცემები",
+    legend: "საკონტაქტო ინფორმაცია",
     firstName: "სახელი",
     lastName: "გვარი",
     phone: "ტელეფონი (ქვეყნის კოდით)",
-    email: "ელ-ფოსტა",
+    email: "E-mail",
   },
 
   policyholder: {
-    companyCheckbox: "იურიდიულ პირზე გაფორმება",
-
     individualTitle: "დამზღვევის მონაცემები (ფიზიკური პირი)",
     birthDate: "დაბადების თარიღი",
-
     addressTitle: "რეგისტრაციის მისამართი",
-    addressPlaceholder: "ქვეყანა, ქალაქი, ქუჩა, სახლი, ბინა (თუ არის)",
+    addressPlaceholder:
+      "საფოსტო ინდექსი, ქვეყანა, ქალაქი, ქუჩა, სახლი, ბინა (თუ არის)",
     addressHelp: "მიუთითეთ მისამართი ერთ სტრიქონში.",
-
-    companyTitle: "დამზღვევის მონაცემები (იურიდიული პირი)",
-    companyInn: "კომპანიის საიდენტიფიკაციო კოდი",
-    ceoFullName: "ხელმძღვანელის სახელი და გვარი",
-    ceoTitle: "ხელმძღვანელის თანამდებობა",
   },
 
   policy: {
@@ -645,9 +676,9 @@ const ka: LeadFormDictionary = {
 
     vehiclePlate: "სახელმწიფო ნომერი",
     docsLabel: "ტექპასპორტი (ფოტო ან PDF)",
-    docsHint: "შეგიძლიათ რამდენიმე ფაილის დამატება.",
+    docsHint: "შესაძლებელია რამდენიმე ფაილის ატვირთვა.",
 
-    addVehicle: "ТС-ის დამატება",
+    addVehicle: "სატრანსპორტო საშუალების დამატება",
     removeVehicle: "წაშლა",
     vehicleBlockTitle: "სატრანსპორტო საშუალება",
     comment: "კომენტარი (არასავალდებულო)",
@@ -670,7 +701,7 @@ const ka: LeadFormDictionary = {
       ],
       vehicleTypes: [
         { value: "car", label: "მსუბუქი ავტომობილი" },
-        { value: "truck", label: "სატვირთო" },
+        { value: "truck", label: "სატვირთო ავტომობილი" },
         { value: "bus", label: "ავტობუსი" },
         { value: "moto", label: "მოტოციკლი" },
         { value: "trailer", label: "მისაბმელი" },
@@ -678,43 +709,51 @@ const ka: LeadFormDictionary = {
       ],
       periods: [
         { value: "30", label: "30 დღე" },
+        { value: "60", label: "60 დღე" },
         { value: "90", label: "90 დღე" },
         { value: "180", label: "6 თვე" },
         { value: "365", label: "12 თვე" },
       ],
     },
   },
-    steps: {
+
+  steps: {
     step1: "ნაბიჯი 1",
     step2: "ნაბიჯი 2",
-    contacts: "საკონტაქტო მონაცემები",
+    contacts: "კონტაქტები",
     vehicleData: "ავტომობილის მონაცემები",
-    next: "შემდეგი",
+    next: "შემდეგ",
     back: "უკან",
   },
+
   terms: {
     textBefore: "ვეთანხმები",
     linkText: "გაფორმების პირობებსა და დაზღვევის წესებს",
     textAfter: ".",
   },
+
   estimate: {
-    title: "განაცხადის მიხედვით საორიენტაციო ღირებულება:",
-    hint: "საბოლოო ღირებულება მითითებული იქნება ინვოისში გადახდის მონაცემებთან ერთად, ყველა მონაცემის გადამოწმებისა და სადაზღვევო კომპანიასთან შეთანხმების შემდეგ.",
+    title: "განაცხადის სავარაუდო ღირებულება:",
+    hint:
+      "საბოლოო ღირებულება მითითებული იქნება გადახდის მონაცემებთან ერთად გამოგზავნილ წერილში, ყველა მონაცემის გადამოწმებისა და სადაზღვევო კომპანიასთან შეთანხმების შემდეგ.",
   },
 };
 
-const kz: LeadFormDictionary = {
-  title: "Полис сатып алуға өтінім",
-  intro: "Деректерді толтырыңыз. Біз полисті дайындап, төлем реквизиттерін жібереміз.",
+const kk: LeadFormDictionary = {
+  title: "Полисті сатып алуға өтінім",
+  intro:
+    "Деректерді толтырыңыз. Біз полисті дайындап, төлем деректемелерін жібереміз.",
 
   notSelected: "Таңдалмаған",
   submit: "Өтінімді жіберу",
 
-  fileForbidden: "рұқсат етілмейді (архив, аудио немесе видео).",
+  fileForbidden: "рұқсат етілмейді (архив, аудио немесе бейне файл).",
 
   statusSending: "Жіберілуде…",
-  statusError: "Өтінімді жіберу кезінде қате орын алды. Кейінірек қайталап көріңіз.",
-  statusSuccess: "Өтінім жіберілді. Біз сізбен байланысамыз.",
+  statusError:
+    "Өтінімді жіберу кезінде қате орын алды. Кейінірек қайталап көріңіз.",
+  statusSuccess:
+    "Өтінім жіберілді. Жақын арада сізбен хабарласамыз.",
 
   contact: {
     legend: "Байланыс деректері",
@@ -725,36 +764,29 @@ const kz: LeadFormDictionary = {
   },
 
   policyholder: {
-    companyCheckbox: "Заңды тұлғаға рәсімдеу",
-
-    individualTitle: "Сақтанушы деректері (жеке тұлға)",
+    individualTitle: "Сақтанушы туралы деректер (жеке тұлға)",
     birthDate: "Туған күні",
-
     addressTitle: "Тіркеу мекенжайы",
-    addressPlaceholder: "Ел, қала, көше, үй, пәтер (бар болса)",
+    addressPlaceholder:
+      "ПОШТА ИНДЕКСІ, Ел, қала, көше, үй, пәтер (бар болса)",
     addressHelp: "Мекенжайды бір жолмен көрсетіңіз.",
-
-    companyTitle: "Сақтанушы деректері (заңды тұлға)",
-    companyInn: "Компанияның БСН/ЖСН",
-    ceoFullName: "Басшының толық аты-жөні",
-    ceoTitle: "Басшының лауазымы",
   },
 
   policy: {
     legend: "Есептеу және рәсімдеу үшін деректер",
-    countryFrom: "Көлік тіркелген ел",
-    vehicleType: "Көлік түрі",
+    countryFrom: "Көліктің тіркелген елі",
+    vehicleType: "Көлік құралының түрі",
     startDate: "Басталу күні",
-    period: "Мерзім",
+    period: "Мерзімі",
 
-    vehiclePlate: "Мемлекеттік нөмірі",
+    vehiclePlate: "Мемлекеттік нөмір",
     docsLabel: "Техпаспорт (фото немесе PDF)",
-    docsHint: "Бірнеше файл жүктеуге болады.",
+    docsHint: "Бірнеше файл тіркеуге болады.",
 
-    addVehicle: "Көлік қосу",
-    removeVehicle: "Өшіру",
+    addVehicle: "Көлік құралын қосу",
+    removeVehicle: "Жою",
     vehicleBlockTitle: "Көлік құралы",
-    comment: "Пікір (міндетті емес)",
+    comment: "Түсініктеме (міндетті емес)",
 
     options: {
       countriesFrom: [
@@ -767,13 +799,13 @@ const kz: LeadFormDictionary = {
         { value: "TR", label: "Түркия" },
         { value: "RU", label: "Ресей" },
         { value: "MN", label: "Моңғолия" },
-        { value: "AZ", label: "Әзірбайжан" },
+        { value: "AZ", label: "Әзербайжан" },
         { value: "AR", label: "Армения" },
         { value: "BY", label: "Беларусь" },
         { value: "OTHER", label: "Басқа" },
       ],
       vehicleTypes: [
-        { value: "car", label: "Жеңіл автокөлік" },
+        { value: "car", label: "Жеңіл автомобиль" },
         { value: "truck", label: "Жүк көлігі" },
         { value: "bus", label: "Автобус" },
         { value: "moto", label: "Мотоцикл" },
@@ -782,13 +814,15 @@ const kz: LeadFormDictionary = {
       ],
       periods: [
         { value: "30", label: "30 күн" },
+        { value: "60", label: "60 күн" },
         { value: "90", label: "90 күн" },
         { value: "180", label: "6 ай" },
         { value: "365", label: "12 ай" },
       ],
     },
   },
-    steps: {
+
+  steps: {
     step1: "1-қадам",
     step2: "2-қадам",
     contacts: "Байланыс деректері",
@@ -796,69 +830,68 @@ const kz: LeadFormDictionary = {
     next: "Келесі",
     back: "Артқа",
   },
+
   terms: {
     textBefore: "Мен",
     linkText: "рәсімдеу шарттары мен сақтандыру ережелерін",
-    textAfter: " қабылдаймын.",
+    textAfter: "қабылдаймын.",
   },
+
   estimate: {
     title: "Өтінім бойынша болжамды құны:",
-    hint: "Соңғы құны барлық деректер тексеріліп, сақтандыру компаниясымен келісілгеннен кейін төлем деректері көрсетілген хатта (инвойста) жіберіледі.",
+    hint:
+      "Қорытынды құн барлық деректер тексеріліп, сақтандыру компаниясымен келісілгеннен кейін төлем деректері көрсетілген хатта ұсынылады.",
   },
 };
 
 const tr: LeadFormDictionary = {
-  title: "Poliçe satın alma başvurusu",
-  intro: "Bilgileri doldurun. Poliçeyi hazırlayıp ödeme bilgilerini size göndereceğiz.",
+  title: "Poliçe Satın Alma Başvurusu",
+  intro:
+    "Bilgilerinizi doldurun. Poliçeyi hazırlayıp ödeme bilgilerini size göndereceğiz.",
 
   notSelected: "Seçilmedi",
-  submit: "Başvuruyu gönder",
+  submit: "Başvuruyu Gönder",
 
-  fileForbidden: "izin verilmiyor (arşiv, ses veya video).",
+  fileForbidden: "geçersizdir (arşiv, ses veya video dosyası).",
 
   statusSending: "Gönderiliyor…",
-  statusError: "Başvuru gönderilirken hata oluştu. Lütfen daha sonra tekrar deneyin.",
-  statusSuccess: "Başvuru gönderildi. Sizinle iletişime geçeceğiz.",
+  statusError:
+    "Başvuru gönderilirken hata oluştu. Lütfen daha sonra tekrar deneyin.",
+  statusSuccess:
+    "Başvurunuz gönderildi. En kısa sürede sizinle iletişime geçeceğiz.",
 
   contact: {
-    legend: "İletişim bilgileri",
+    legend: "İletişim Bilgileri",
     firstName: "Ad",
     lastName: "Soyad",
-    phone: "Telefon (ülke kodu ile)",
+    phone: "Telefon (ülke kodu ile birlikte)",
     email: "E-posta",
   },
 
   policyholder: {
-    companyCheckbox: "Tüzel kişi adına düzenle",
-
-    individualTitle: "Sigorta ettiren bilgileri (gerçek kişi)",
-    birthDate: "Doğum tarihi",
-
-    addressTitle: "Kayıt adresi",
-    addressPlaceholder: "Ülke, şehir, sokak, bina, daire (varsa)",
+    individualTitle: "Sigorta Ettiren Bilgileri (Gerçek Kişi)",
+    birthDate: "Doğum Tarihi",
+    addressTitle: "Kayıtlı Adres",
+    addressPlaceholder:
+      "Posta Kodu, Ülke, Şehir, Sokak, Bina No, Daire (varsa)",
     addressHelp: "Adresi tek satır halinde girin.",
-
-    companyTitle: "Sigorta ettiren bilgileri (tüzel kişi)",
-    companyInn: "Vergi numarası",
-    ceoFullName: "Yetkili kişinin adı soyadı",
-    ceoTitle: "Yetkilinin görevi",
   },
 
   policy: {
-    legend: "Hesaplama ve düzenleme bilgileri",
-    countryFrom: "Aracın kayıtlı olduğu ülke",
-    vehicleType: "Araç türü",
-    startDate: "Başlangıç tarihi",
+    legend: "Hesaplama ve Düzenleme Bilgileri",
+    countryFrom: "Aracın Kayıtlı Olduğu Ülke",
+    vehicleType: "Araç Türü",
+    startDate: "Başlangıç Tarihi",
     period: "Süre",
 
-    vehiclePlate: "Plaka",
-    docsLabel: "Ruhsat (fotoğraf veya PDF)",
+    vehiclePlate: "Plaka Numarası",
+    docsLabel: "Araç Ruhsatı (fotoğraf veya PDF)",
     docsHint: "Birden fazla dosya ekleyebilirsiniz.",
 
-    addVehicle: "Araç ekle",
+    addVehicle: "Araç Ekle",
     removeVehicle: "Sil",
     vehicleBlockTitle: "Araç",
-    comment: "Mesaj (isteğe bağlı)",
+    comment: "Yorum (isteğe bağlı)",
 
     options: {
       countriesFrom: [
@@ -877,48 +910,54 @@ const tr: LeadFormDictionary = {
         { value: "OTHER", label: "Diğer" },
       ],
       vehicleTypes: [
-        { value: "car", label: "Binek araç" },
-        { value: "truck", label: "Yük aracı" },
+        { value: "car", label: "Binek Araç" },
+        { value: "truck", label: "Kamyon" },
         { value: "bus", label: "Otobüs" },
         { value: "moto", label: "Motosiklet" },
         { value: "trailer", label: "Römork" },
-        { value: "special", label: "Özel ekipman" },
+        { value: "special", label: "Özel Amaçlı Araç" },
       ],
       periods: [
         { value: "30", label: "30 gün" },
+        { value: "60", label: "60 gün" },
         { value: "90", label: "90 gün" },
         { value: "180", label: "6 ay" },
         { value: "365", label: "12 ay" },
       ],
     },
   },
-    steps: {
-      step1: "1. adım",
-      step2: "2. adım",
-      contacts: "İletişim bilgileri",
-      vehicleData: "Araç bilgileri",
-      next: "İleri",
-      back: "Geri",
+
+  steps: {
+    step1: "Adım 1",
+    step2: "Adım 2",
+    contacts: "İletişim",
+    vehicleData: "Araç Bilgileri",
+    next: "Devam",
+    back: "Geri",
   },
+
   terms: {
-    textBefore: "Başvuru şartlarını ve",
-    linkText: "sigorta kurallarını",
-    textAfter: " kabul ediyorum.",
+    textBefore: "Kabul ediyorum:",
+    linkText: "düzenleme şartları ve sigorta kuralları",
+    textAfter: ".",
   },
+
   estimate: {
-    title: "Başvuruya göre tahmini maliyet:",
-    hint: "Nihai tutar, tüm bilgiler kontrol edildikten ve sigorta şirketiyle onaylandıktan sonra ödeme bilgilerini içeren faturada tarafınıza bildirilecektir.",
+    title: "Başvuru İçin Tahmini Tutar:",
+    hint:
+      "Nihai tutar, tüm bilgiler kontrol edilip sigorta şirketi ile onaylandıktan sonra ödeme bilgilerini içeren e-postada belirtilecektir.",
   },
 };
 
 const fa: LeadFormDictionary = {
   title: "درخواست خرید بیمه‌نامه",
-  intro: "اطلاعات را وارد کنید. ما بیمه‌نامه را آماده کرده و جزئیات پرداخت را برای شما ارسال می‌کنیم.",
+  intro:
+    "اطلاعات را تکمیل کنید. ما بیمه‌نامه را آماده کرده و اطلاعات پرداخت را برای شما ارسال خواهیم کرد.",
 
   notSelected: "انتخاب نشده",
   submit: "ارسال درخواست",
 
-  fileForbidden: "مجاز نیست (فایل فشرده، صوتی یا ویدیویی).",
+  fileForbidden: "مجاز نیست (فایل فشرده، صوتی یا ویدئویی).",
 
   statusSending: "در حال ارسال…",
   statusError: "خطا در ارسال درخواست. لطفاً بعداً دوباره تلاش کنید.",
@@ -928,42 +967,34 @@ const fa: LeadFormDictionary = {
     legend: "اطلاعات تماس",
     firstName: "نام",
     lastName: "نام خانوادگی",
-    phone: "شماره تلفن (با کد کشور)",
+    phone: "شماره تلفن (همراه با کد کشور)",
     email: "ایمیل",
   },
 
   policyholder: {
-    companyCheckbox: "صدور برای شخص حقوقی",
-
     individualTitle: "اطلاعات بیمه‌گذار (شخص حقیقی)",
     birthDate: "تاریخ تولد",
-
     addressTitle: "نشانی ثبت",
-    addressPlaceholder: "کشور، شهر، خیابان، پلاک، واحد (در صورت وجود)",
+    addressPlaceholder:
+      "کد پستی، کشور، شهر، خیابان، پلاک، واحد (در صورت وجود)",
     addressHelp: "نشانی را در یک خط وارد کنید.",
-
-    companyTitle: "اطلاعات بیمه‌گذار (شخص حقوقی)",
-    companyInn: "شناسه مالیاتی شرکت",
-    ceoFullName: "نام و نام خانوادگی مدیر",
-    ceoTitle: "سمت مدیر",
   },
 
   policy: {
-    legend: "اطلاعات برای محاسبه و صدور",
-    countryFrom: "کشور ثبت خودرو",
+    legend: "اطلاعات لازم برای محاسبه و صدور",
+    countryFrom: "کشور ثبت وسیله نقلیه",
     vehicleType: "نوع وسیله نقلیه",
     startDate: "تاریخ شروع",
-    period: "مدت",
+    period: "مدت اعتبار",
 
     vehiclePlate: "شماره پلاک",
-    docsLabel: "کارت وسیله نقلیه (عکس یا PDF)",
-    docsHint: "می‌توانید چند فایل ضمیمه کنید.",
+    docsLabel: "کارت خودرو / سند وسیله نقلیه (عکس یا PDF)",
+    docsHint: "امکان بارگذاری چند فایل وجود دارد.",
 
     addVehicle: "افزودن وسیله نقلیه",
     removeVehicle: "حذف",
     vehicleBlockTitle: "وسیله نقلیه",
     comment: "توضیحات (اختیاری)",
-    
 
     options: {
       countriesFrom: [
@@ -982,196 +1013,104 @@ const fa: LeadFormDictionary = {
         { value: "OTHER", label: "سایر" },
       ],
       vehicleTypes: [
-        { value: "car", label: "سواری" },
-        { value: "truck", label: "باری" },
+        { value: "car", label: "خودروی سواری" },
+        { value: "truck", label: "وسیله نقلیه باری" },
         { value: "bus", label: "اتوبوس" },
         { value: "moto", label: "موتورسیکلت" },
-        { value: "trailer", label: "تریلر / یدک" },
+        { value: "trailer", label: "تریلر" },
         { value: "special", label: "ماشین‌آلات ویژه" },
       ],
       periods: [
         { value: "30", label: "۳۰ روز" },
+        { value: "60", label: "۶۰ روز" },
         { value: "90", label: "۹۰ روز" },
         { value: "180", label: "۶ ماه" },
         { value: "365", label: "۱۲ ماه" },
       ],
     },
   },
+
   steps: {
     step1: "مرحله ۱",
     step2: "مرحله ۲",
     contacts: "اطلاعات تماس",
-    vehicleData: "اطلاعات خودرو",
-    next: "بعدی",
+    vehicleData: "اطلاعات وسیله نقلیه",
+    next: "ادامه",
     back: "بازگشت",
   },
+
   terms: {
     textBefore: "من",
     linkText: "شرایط صدور و مقررات بیمه",
-    textAfter: " را می‌پذیرم.",
+    textAfter: "را می‌پذیرم.",
   },
+
   estimate: {
-    title: "هزینه تقریبی بر اساس درخواست:",
-    hint: "هزینه نهایی پس از بررسی اطلاعات و تأیید شرکت بیمه، در فاکتور ارسالی همراه با اطلاعات پرداخت اعلام خواهد شد.",
-  },
-};
-
-const mn: LeadFormDictionary = {
-  title: "Полис худалдан авах хүсэлт",
-  intro: "Мэдээллээ бөглөнө үү. Бид полис бэлдэж, төлбөрийн мэдээллийг илгээнэ.",
-
-  notSelected: "Сонгогдоогүй",
-  submit: "Хүсэлт илгээх",
-
-  fileForbidden: "зөвшөөрөгдөхгүй (архив, аудио эсвэл видео файл).",
-
-  statusSending: "Илгээж байна…",
-  statusError: "Хүсэлт илгээхэд алдаа гарлаа. Дараа дахин оролдоно уу.",
-  statusSuccess: "Хүсэлт илгээгдлээ. Бид тантай холбогдоно.",
-
-  contact: {
-    legend: "Холбоо барих мэдээлэл",
-    firstName: "Нэр",
-    lastName: "Овог",
-    phone: "Утас (улсын кодтой)",
-    email: "И-мэйл",
-  },
-
-  policyholder: {
-    companyCheckbox: "Хуулийн этгээдэд бүрдүүлэх",
-
-    individualTitle: "Даатгуулагчийн мэдээлэл (хувь хүн)",
-    birthDate: "Төрсөн огноо",
-
-    addressTitle: "Бүртгэлийн хаяг",
-    addressPlaceholder: "Улс, хот, гудамж, байр, орон сууц (байгаа бол)",
-    addressHelp: "Хаягийг нэг мөрөөр бичнэ үү.",
-
-    companyTitle: "Даатгуулагчийн мэдээлэл (хуулийн этгээд)",
-    companyInn: "Компанийн ИНН",
-    ceoFullName: "Удирдлагын овог нэр",
-    ceoTitle: "Удирдлагын албан тушаал",
-  },
-
-  policy: {
-    legend: "Тооцоолол болон бүрдүүлэлтийн мэдээлэл",
-    countryFrom: "Автомашины бүртгэлийн улс",
-    vehicleType: "Тээврийн хэрэгслийн төрөл",
-    startDate: "Эхлэх огноо",
-    period: "Хугацаа",
-
-    vehiclePlate: "Улсын дугаар",
-    docsLabel: "Техникийн паспорт (зураг эсвэл PDF)",
-    docsHint: "Олон файл хавсаргах боломжтой.",
-
-    addVehicle: "Тээврийн хэрэгсэл нэмэх",
-    removeVehicle: "Устгах",
-    vehicleBlockTitle: "Тээврийн хэрэгсэл",
-    comment: "Тайлбар (заавал биш)",
-
-    options: {
-      countriesFrom: [
-        { value: "KZ", label: "Казахстан" },
-        { value: "UA", label: "Украин" },
-        { value: "GE", label: "Гүрж" },
-        { value: "UZ", label: "Узбекистан" },
-        { value: "KG", label: "Кыргызстан" },
-        { value: "MD", label: "Молдав" },
-        { value: "TR", label: "Турк" },
-        { value: "RU", label: "Орос" },
-        { value: "MN", label: "Монгол" },
-        { value: "AZ", label: "Азербайжан" },
-        { value: "AR", label: "Армени" },
-        { value: "BY", label: "Беларусь" },
-        { value: "OTHER", label: "Бусад" },
-      ],
-      vehicleTypes: [
-        { value: "car", label: "Суудлын автомашин" },
-        { value: "truck", label: "Ачааны автомашин" },
-        { value: "bus", label: "Автобус" },
-        { value: "moto", label: "Мотоцикл" },
-        { value: "trailer", label: "Чиргүүл" },
-        { value: "special", label: "Тусгай зориулалтын техник" },
-      ],
-      periods: [
-        { value: "30", label: "30 хоног" },
-        { value: "90", label: "90 хоног" },
-        { value: "180", label: "6 сар" },
-        { value: "365", label: "12 сар" },
-      ],
-    },
-  },
-  steps: {
-    step1: "1-р алхам",
-    step2: "2-р алхам",
-    contacts: "Холбоо барих мэдээлэл",
-    vehicleData: "Тээврийн хэрэгслийн мэдээлэл",
-    next: "Дараах",
-    back: "Буцах",
-  },
-  terms: {
-    textBefore: "Би",
-    linkText: "бүрдүүлэлтийн нөхцөл болон даатгалын дүрмийг",
-    textAfter: " зөвшөөрч байна.",
-  },
-  estimate: {
-    title: "Хүсэлтийн урьдчилсан үнэ:",
-    hint: "Бүх мэдээллийг шалгаж, даатгалын компанитай тохиролцсоны дараа төлбөрийн мэдээлэл бүхий нэхэмжлэхэд эцсийн үнийг илгээнэ.",
+    title: "هزینه تقریبی درخواست:",
+    hint:
+      "هزینه نهایی پس از بررسی اطلاعات و تأیید شرکت بیمه، در نامه حاوی اطلاعات پرداخت اعلام خواهد شد.",
   },
 };
 
 const hy: LeadFormDictionary = {
   title: "Պոլիսի գնման հայտ",
-  intro: "Լրացրեք տվյալները։ Մենք կպատրաստենք պոլիսը և կուղարկենք վճարման տվյալները։",
+  intro:
+    "Լրացրեք տվյալները։ Մենք կպատրաստենք պոլիսը և կուղարկենք վճարման տվյալները։",
 
   notSelected: "Ընտրված չէ",
   submit: "Ուղարկել հայտը",
 
-  fileForbidden: "անթույլատրելի է (արխիվ, աուդիո կամ վիդեո)։",
+  fileForbidden: "թույլատրելի չէ (արխիվ, աուդիո կամ վիդեո ֆայլ):",
 
   statusSending: "Ուղարկվում է…",
-  statusError: "Հայտի ուղարկման ժամանակ առաջացավ սխալ։ Փորձեք ավելի ուշ։",
-  statusSuccess: "Հայտը ուղարկված է։ Մենք կկապվենք ձեզ հետ։",
+  statusError:
+    "Հայտի ուղարկման ընթացքում տեղի է ունեցել սխալ։ Խնդրում ենք փորձել ավելի ուշ։",
+  statusSuccess:
+    "Հայտն ուղարկվել է։ Մենք կկապվենք ձեզ հետ։",
 
   contact: {
     legend: "Կոնտակտային տվյալներ",
     firstName: "Անուն",
     lastName: "Ազգանուն",
     phone: "Հեռախոս (երկրի կոդով)",
-    email: "Էլ. փոստ",
+    email: "E-mail",
   },
 
   policyholder: {
-    companyCheckbox: "Ձևակերպել իրավաբանական անձի վրա",
-
-    individualTitle: "Ապահովագրվողի տվյալներ (ֆիզիկական անձ)",
+    individualTitle:
+      "Ապահովադրի տվյալներ (ֆիզիկական անձ)",
     birthDate: "Ծննդյան ամսաթիվ",
-
     addressTitle: "Գրանցման հասցե",
-    addressPlaceholder: "Երկիր, քաղաք, փողոց, տուն, բնակարան (եթե կա)",
-    addressHelp: "Նշեք հասցեն մեկ տողով։",
-
-    companyTitle: "Ապահովագրվողի տվյալներ (իրավաբանական անձ)",
-    companyInn: "Ընկերության ՀՎՀՀ",
-    ceoFullName: "Տնօրենի անուն, ազգանուն",
-    ceoTitle: "Տնօրենի պաշտոն",
+    addressPlaceholder:
+      "ԻՆԴԵՔՍ, երկիր, քաղաք, փողոց, տուն, բնակարան (եթե կա)",
+    addressHelp:
+      "Նշեք հասցեն մեկ տողով։",
   },
 
   policy: {
-    legend: "Տվյալներ հաշվարկի և ձևակերպման համար",
-    countryFrom: "Տրանսպորտային միջոցի գրանցման երկիր",
-    vehicleType: "Տրանսպորտային միջոցի տեսակ",
+    legend:
+      "Հաշվարկի և ձևակերպման համար տվյալներ",
+    countryFrom:
+      "Ավտոմեքենայի գրանցման երկիր",
+    vehicleType:
+      "Տրանսպորտային միջոցի տեսակ",
     startDate: "Սկսման ամսաթիվ",
     period: "Ժամկետ",
 
-    vehiclePlate: "Պետհամարանիշ",
-    docsLabel: "Տեխ. անձնագիր (լուսանկար կամ PDF)",
-    docsHint: "Կարելի է կցել մի քանի ֆայլ։",
+    vehiclePlate:
+      "Պետհամարանիշ",
+    docsLabel:
+      "Տեխնիկական անձնագիր (լուսանկար կամ PDF)",
+    docsHint:
+      "Կարելի է կցել մի քանի ֆայլ։",
 
-    addVehicle: "Ավելացնել ՏՄ",
-    removeVehicle: "Ջնջել",
-    vehicleBlockTitle: "Տրանսպորտային միջոց",
-    comment: "Մեկնաբանություն (ոչ պարտադիր)",
+    addVehicle:
+      "Ավելացնել տրանսպորտային միջոց",
+    removeVehicle: "Հեռացնել",
+    vehicleBlockTitle:
+      "Տրանսպորտային միջոց",
+    comment:
+      "Մեկնաբանություն (ըստ ցանկության)",
 
     options: {
       countriesFrom: [
@@ -1190,51 +1129,58 @@ const hy: LeadFormDictionary = {
         { value: "OTHER", label: "Այլ" },
       ],
       vehicleTypes: [
-        { value: "car", label: "Թեթև մարդատար" },
-        { value: "truck", label: "Բեռնատար" },
+        { value: "car", label: "Թեթև մարդատար ավտոմեքենա" },
+        { value: "truck", label: "Բեռնատար ավտոմեքենա" },
         { value: "bus", label: "Ավտոբուս" },
-        { value: "moto", label: "Մոտոցիկլ" },
+        { value: "moto", label: "Մոտոցիկլետ" },
         { value: "trailer", label: "Կցորդ" },
         { value: "special", label: "Հատուկ տեխնիկա" },
       ],
       periods: [
         { value: "30", label: "30 օր" },
+        { value: "60", label: "60 օր" },
         { value: "90", label: "90 օր" },
         { value: "180", label: "6 ամիս" },
         { value: "365", label: "12 ամիս" },
       ],
     },
   },
+
   steps: {
     step1: "Քայլ 1",
     step2: "Քայլ 2",
-    contacts: "Կոնտակտային տվյալներ",
-    vehicleData: "Տրանսպորտային միջոցի տվյալներ",
+    contacts: "Կոնտակտներ",
+    vehicleData:
+      "Ավտոմեքենայի տվյալներ",
     next: "Հաջորդը",
     back: "Հետ",
   },
+
   terms: {
     textBefore: "Ես ընդունում եմ",
-    linkText: "ձևակերպման պայմանները և ապահովագրության կանոնները",
+    linkText:
+      "ձևակերպման պայմանները և ապահովագրության կանոնները",
     textAfter: "։",
   },
+
   estimate: {
-    title: "Հայտի նախնական արժեքը՝",
-    hint: "Վերջնական արժեքը կներկայացվի վճարման տվյալներով նամակում (ինվոյսում)՝ բոլոր տվյալների ստուգումից և ապահովագրողի հետ համաձայնեցումից հետո։",
+    title:
+      "Հայտի մոտավոր արժեքը՝",
+    hint:
+      "Վերջնական արժեքը կներկայացվի վճարման տվյալներով նամակում բոլոր տվյալների ստուգումից և ապահովագրական ընկերության հետ համաձայնեցումից հետո։",
   },
 };
 
 const dictionaries: Partial<Record<Lang, LeadFormDictionary>> = {
   ru,
-  lv,
+  pl,
   en,
+  be,
   uz,
-  kg,
   ka,
-  kz,
+  kk,
   tr,
   fa,
-  mn,
   hy,
 };
 

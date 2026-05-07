@@ -5,10 +5,18 @@ import React, { useRef, useState } from "react";
 import Link from "next/link";
 import type { Lang } from "@/app/dictionaries/header";
 import { getLeadFormDictionary } from "@/app/dictionaries/leadForm";
-import { getPolicyPrice, formatEUR } from "@/app/lib/insurancePrices";
+import { getPolicyPrice, formatCurrency } from "@/app/lib/insurancePrices";
 
 type FormStatus = "idle" | "loading" | "success" | "error";
 type Step = 1 | 2;
+
+type VehiclePriceState = Record<
+  number,
+  {
+    vehicleType: string;
+    period: string;
+  }
+>;
 
 function formatLatinName(raw: string): string {
   return raw.replace(/[^A-Za-z\s'-]/g, "");
@@ -43,12 +51,6 @@ function formatPlate(raw: string): string {
     .slice(0, 12);
 }
 
-function formatDigits(raw: string, maxLen?: number): string {
-  let v = raw.replace(/\D/g, "");
-  if (typeof maxLen === "number" && maxLen >= 0) v = v.slice(0, maxLen);
-  return v;
-}
-
 function validateFiles(
   files: FileList,
   forbiddenTypes: string[],
@@ -76,6 +78,26 @@ function validateFiles(
   return true;
 }
 
+function todayISO(): string {
+  const d = new Date();
+  const yyyy = d.getFullYear();
+  const mm = String(d.getMonth() + 1).padStart(2, "0");
+  const dd = String(d.getDate()).padStart(2, "0");
+
+  return yyyy + "-" + mm + "-" + dd;
+}
+
+function maxBirthDateISO(): string {
+  const d = new Date();
+  d.setFullYear(d.getFullYear() - 18);
+
+  const yyyy = d.getFullYear();
+  const mm = String(d.getMonth() + 1).padStart(2, "0");
+  const dd = String(d.getDate()).padStart(2, "0");
+
+  return yyyy + "-" + mm + "-" + dd;
+}
+
 export default function LeadForm(props: { lang: Lang }) {
   const t = getLeadFormDictionary(props.lang);
 
@@ -88,18 +110,12 @@ export default function LeadForm(props: { lang: Lang }) {
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
 
-  const [isCompany, setIsCompany] = useState(false);
-
   const [birthDate, setBirthDate] = useState("");
   const [address, setAddress] = useState("");
 
-  const [companyInn, setCompanyInn] = useState("");
-  const [ceoFullName, setCeoFullName] = useState("");
-  const [ceoTitle, setCeoTitle] = useState("");
-
   const [vehicleBlocks, setVehicleBlocks] = useState<number[]>([0]);
   const [vehicleFileCounts, setVehicleFileCounts] = useState<Record<number, number>>({});
-  const [, setPriceTick] = useState(0);
+  const [vehiclePrices, setVehiclePrices] = useState<VehiclePriceState>({});
 
   const formRef = useRef<HTMLFormElement | null>(null);
 
@@ -112,31 +128,11 @@ export default function LeadForm(props: { lang: Lang }) {
     "video/",
   ];
 
-  function todayISO(): string {
-    const d = new Date();
-    const yyyy = d.getFullYear();
-    const mm = String(d.getMonth() + 1).padStart(2, "0");
-    const dd = String(d.getDate()).padStart(2, "0");
-    return yyyy + "-" + mm + "-" + dd;
-  }
-
-  function maxBirthDateISO(): string {
-    const d = new Date();
-    d.setFullYear(d.getFullYear() - 18);
-
-    const yyyy = d.getFullYear();
-    const mm = String(d.getMonth() + 1).padStart(2, "0");
-    const dd = String(d.getDate()).padStart(2, "0");
-
-    return yyyy + "-" + mm + "-" + dd;
-  }
-
   function addVehicle() {
     setVehicleBlocks(function (prev) {
       const lastId = prev.length ? prev[prev.length - 1] : 0;
       return prev.concat([lastId + 1]);
     });
-    setPriceTick((v) => v + 1);
   }
 
   function removeVehicle(id: number) {
@@ -157,7 +153,11 @@ export default function LeadForm(props: { lang: Lang }) {
       return next;
     });
 
-    setPriceTick((v) => v + 1);
+    setVehiclePrices(function (prev) {
+      const next = { ...prev };
+      delete next[id];
+      return next;
+    });
   }
 
   function validateStep(stepToValidate: Step): boolean {
@@ -184,48 +184,6 @@ export default function LeadForm(props: { lang: Lang }) {
     }
 
     return true;
-  }
-
-  function calculateEstimatedTotal(): number | null {
-    if (!formRef.current) return null;
-
-    let total = 0;
-    let hasPrice = false;
-
-    for (let i = 0; i < vehicleBlocks.length; i++) {
-      const vehicleTypeEl = formRef.current.querySelector(
-        `[name="vehicles[${i}][vehicleType]"]`
-      ) as HTMLSelectElement | null;
-
-      const periodEl = formRef.current.querySelector(
-        `[name="vehicles[${i}][period]"]`
-      ) as HTMLSelectElement | null;
-
-      const vehicleType = vehicleTypeEl?.value || "";
-      const period = periodEl?.value || "";
-
-      const price = getPolicyPrice(vehicleType, period);
-
-      if (price !== null) {
-        total += price;
-        hasPrice = true;
-      }
-    }
-
-    return hasPrice ? total : null;
-  }
-
-  function onToggleCompany(nextVal: boolean) {
-    setIsCompany(nextVal);
-
-    if (nextVal) {
-      setBirthDate("");
-      setAddress("");
-    } else {
-      setCompanyInn("");
-      setCeoFullName("");
-      setCeoTitle("");
-    }
   }
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -294,18 +252,12 @@ export default function LeadForm(props: { lang: Lang }) {
       setPhone("");
       setEmail("");
 
-      setIsCompany(false);
-
       setBirthDate("");
       setAddress("");
 
-      setCompanyInn("");
-      setCeoFullName("");
-      setCeoTitle("");
-
       setVehicleBlocks([0]);
       setVehicleFileCounts({});
-      setPriceTick((v) => v + 1);
+      setVehiclePrices({});
     } catch {
       setStatus("error");
       setMessage(t.statusError);
@@ -315,7 +267,27 @@ export default function LeadForm(props: { lang: Lang }) {
   const minStartDate = todayISO();
   const maxBirthDate = maxBirthDateISO();
   const statusId = "lead-form-status";
-  const estimatedTotal = calculateEstimatedTotal();
+
+  const estimatedTotal = (() => {
+    let total = 0;
+    let hasPrice = false;
+
+    for (let i = 0; i < vehicleBlocks.length; i++) {
+      const id = vehicleBlocks[i];
+      const item = vehiclePrices[id];
+
+      if (!item) continue;
+
+      const price = getPolicyPrice(item.vehicleType, item.period);
+
+      if (price !== null) {
+        total += price;
+        hasPrice = true;
+      }
+    }
+
+    return hasPrice ? total : null;
+  })();
 
   return (
     <section className="section" id="buy" aria-label={t.title}>
@@ -410,104 +382,43 @@ export default function LeadForm(props: { lang: Lang }) {
                 </div>
               </div>
 
-              <div className="field">
-                <label className="check">
+              <div className="block">
+                <div className="block__title">{t.policyholder.individualTitle}</div>
+
+                <div className="row-2">
+                  <div className="field">
+                    <label htmlFor="birthDate">{t.policyholder.birthDate} *</label>
+                    <input
+                      id="birthDate"
+                      type="date"
+                      name="policyholder_birthDate"
+                      className="input"
+                      value={birthDate}
+                      onChange={(e) => setBirthDate(e.currentTarget.value)}
+                      required
+                      max={maxBirthDate}
+                      autoComplete="bday"
+                    />
+                  </div>
+
+                  <div className="field" />
+                </div>
+
+                <div className="field">
+                  <label htmlFor="policyholderAddress">{t.policyholder.addressTitle} *</label>
                   <input
-                    type="checkbox"
-                    name="policyholder_isCompany"
-                    checked={isCompany}
-                    onChange={(e) => onToggleCompany(!!e.currentTarget.checked)}
-                    disabled={status === "loading"}
+                    id="policyholderAddress"
+                    name="policyholder_address"
+                    className="input"
+                    value={address}
+                    onChange={(e) => setAddress(e.currentTarget.value)}
+                    required
+                    autoComplete="street-address"
+                    placeholder={t.policyholder.addressPlaceholder}
                   />
-                  <span>{t.policyholder.companyCheckbox}</span>
-                </label>
+                  <div className="help">{t.policyholder.addressHelp}</div>
+                </div>
               </div>
-
-              {!isCompany ? (
-                <div className="block">
-                  <div className="block__title">{t.policyholder.individualTitle}</div>
-
-                  <div className="row-2">
-                    <div className="field">
-                      <label htmlFor="birthDate">{t.policyholder.birthDate} *</label>
-                      <input
-                        id="birthDate"
-                        type="date"
-                        name="policyholder_birthDate"
-                        className="input"
-                        value={birthDate}
-                        onChange={(e) => setBirthDate(e.currentTarget.value)}
-                        required
-                        max={maxBirthDate}
-                        autoComplete="bday"
-                      />
-                    </div>
-
-                    <div className="field" />
-                  </div>
-
-                  <div className="field">
-                    <label htmlFor="policyholderAddress">{t.policyholder.addressTitle} *</label>
-                    <input
-                      id="policyholderAddress"
-                      name="policyholder_address"
-                      className="input"
-                      value={address}
-                      onChange={(e) => setAddress(e.currentTarget.value)}
-                      required
-                      autoComplete="street-address"
-                      placeholder={t.policyholder.addressPlaceholder}
-                    />
-                    <div className="help">{t.policyholder.addressHelp}</div>
-                  </div>
-                </div>
-              ) : (
-                <div className="block">
-                  <div className="block__title">{t.policyholder.companyTitle}</div>
-
-                  <div className="row-2">
-                    <div className="field">
-                      <label htmlFor="companyInn">{t.policyholder.companyInn} *</label>
-                      <input
-                        id="companyInn"
-                        name="company_inn"
-                        className="input"
-                        value={companyInn}
-                        onChange={(e) => setCompanyInn(formatDigits(e.currentTarget.value, 20))}
-                        required
-                        inputMode="numeric"
-                        autoComplete="off"
-                      />
-                    </div>
-
-                    <div className="field">
-                      <label htmlFor="ceoTitle">{t.policyholder.ceoTitle} *</label>
-                      <input
-                        id="ceoTitle"
-                        name="company_ceo_title"
-                        className="input"
-                        value={ceoTitle}
-                        onChange={(e) => setCeoTitle(e.currentTarget.value)}
-                        required
-                        autoComplete="organization-title"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="field">
-                    <label htmlFor="ceoFullName">{t.policyholder.ceoFullName} *</label>
-                    <input
-                      id="ceoFullName"
-                      name="company_ceo_fullName"
-                      className="input"
-                      value={ceoFullName}
-                      onChange={(e) => setCeoFullName(e.currentTarget.value)}
-                      required
-                      autoComplete="name"
-                    />
-                  </div>
-                </div>
-              )}
             </div>
 
             <div data-form-step="2" hidden={step !== 2}>
@@ -562,7 +473,17 @@ export default function LeadForm(props: { lang: Lang }) {
                           className="input"
                           defaultValue=""
                           required
-                          onChange={() => setPriceTick((v) => v + 1)}
+                          onChange={(e) => {
+                            const value = e.currentTarget.value;
+
+                            setVehiclePrices((prev) => ({
+                              ...prev,
+                              [id]: {
+                                vehicleType: value,
+                                period: prev[id]?.period || "",
+                              },
+                            }));
+                          }}
                         >
                           <option value="">{t.notSelected}</option>
                           {t.policy.options.vehicleTypes.map(function (o) {
@@ -584,7 +505,17 @@ export default function LeadForm(props: { lang: Lang }) {
                           className="input"
                           defaultValue=""
                           required
-                          onChange={() => setPriceTick((v) => v + 1)}
+                          onChange={(e) => {
+                            const value = e.currentTarget.value;
+
+                            setVehiclePrices((prev) => ({
+                              ...prev,
+                              [id]: {
+                                vehicleType: prev[id]?.vehicleType || "",
+                                period: value,
+                              },
+                            }));
+                          }}
                         >
                           <option value="">{t.notSelected}</option>
                           {t.policy.options.periods.map(function (o) {
@@ -670,7 +601,7 @@ export default function LeadForm(props: { lang: Lang }) {
               {estimatedTotal !== null ? (
                 <div className="estimate-box" aria-live="polite">
                   <div className="estimate-box__title">
-                    {t.estimate.title} {formatEUR(estimatedTotal)}.
+                    {t.estimate.title} {formatCurrency(estimatedTotal)}.
                   </div>
                   <div className="estimate-box__text">{t.estimate.hint}</div>
                 </div>
@@ -688,11 +619,7 @@ export default function LeadForm(props: { lang: Lang }) {
 
                   <span className="terms-text">
                     {t.terms.textBefore}{" "}
-                    <Link
-                      href={`/${props.lang}/rules`}
-                      target="_blank"
-                      className="terms-link"
-                    >
+                    <Link href={`/${props.lang}/rules`} target="_blank" className="terms-link">
                       {t.terms.linkText}
                     </Link>
                     {t.terms.textAfter}

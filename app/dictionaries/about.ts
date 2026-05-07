@@ -23,645 +23,1233 @@ export interface AboutDictionary {
 
 const RU: AboutDictionary = {
   seo: {
-    title: "О нас — EURO polis",
-    description: "Информация о компании, юридические данные и форма обратной связи.",
+    title: "О нас — SINEDIS",
+    description:
+      "Информация о страховом агенте, правовой основе деятельности, страховой компании и порядке подачи жалоб.",
   },
+
   hero: {
-    title: "Акредетованый страховой агент страховой компании Ergo Insurance SE",
-    subtitle: "Работаем прозрачно, по правилам и с понятными условиями для клиента.",
+    title:
+      "Страховой агент SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    subtitle:
+      "Работаем в соответствии с законодательством о страховом посредничестве и предоставляем клиентам обязательную информацию до заключения договора страхования.",
   },
+
   cards: [
     {
       title: "Кто мы и чем полезны",
-      text: "Помогаем оформить страхование для международных поездок и перевозок в страны Евросоюза, с учетом сроков и требований Латвийской Республики.",
+      text:
+        "Помогаем оформить страхование для международных перевозок и поездок, консультируем по условиям страхования и требованиям для въезда в различные страны.",
     },
     {
-      title: "Статус и правовая основа",
-      text: "Работаем как страховой агент в рамках действующего законодательства и раскрываем обязательную информацию о компании.",
+      title: "Правовая основа деятельности",
+      text:
+        "Работаем как зарегистрированный страховой агент в Польше и раскрываем обязательную информацию в соответствии с законодательством о дистрибуции страхования.",
     },
     {
       title: "Прозрачные условия",
-      text: "До оформления обсуждаем ключевые параметры: объект страхования, период действия, территорию, лимиты и исключения.",
+      text:
+        "До оформления обсуждаем территорию действия, срок страхования, ограничения, исключения и порядок урегулирования убытков.",
     },
     {
-      title: "Процесс от заявки до полиса",
-      text: "Получение данных → уточнение деталей → согласование условий → оплата → выдача полиса и инструкции.",
+      title: "Процесс оформления",
+      text:
+        "Получение данных → проверка информации → согласование условий → оплата → выпуск полиса и передача документов клиенту.",
     },
   ],
+
   company: {
-    title: "Сведения о страховом посреднике и страховой компании",
+    title: "Информация о страховом посреднике SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+
     lines: [
-      "Страховые услуги предоставляются при участии страховой компании",
-      "ERGO Insurance SE (Латвийский филиал):",
-      "",
-      "ERGO Insurance SE Latvijas filiāle",
-      "Регистрационный номер: 40103599913",
-      "Юридический адрес: Skanstes iela 50, Rīga, LV-1013, Латвия",
-      "",
-      "Данные страхового посредника",
-      "Rižova Ludmila",
-      "",
-      "Телефон: +371 22355307",
-      "E-mail: ludmila.rizova@ergo.lv",
-      "Страна осуществления деятельности: Латвия",
-      "Вид страховой деятельности:",
-      "пограничные страховые договоры (страхование гражданской ответственности владельцев транспортных средств для въезда на территорию других государств)",
-      "",
-      "Правовой статус",
-      "Посредник имеет право на получение страховой премии от клиента, что означает возможность принимать оплату по страховым договорам непосредственно от страхователя с последующей передачей страховой компании.",
+      "В соответствии со статьёй 22 Закона Польши от 15 декабря 2017 года о дистрибуции страхования предоставляем следующую информацию:",
 
+      "",
+      "Данные страхового агента",
+      "Компания: SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "Адрес агента: 01-473 Варшава, ul. Dobrzańskiego Hubala 22D",
+      "Номер в реестре страховых агентов: 11257162/A",
+      "NIP: 5242953841",
 
+      "",
+      "Реестр страховых агентов ведётся Комиссией финансового надзора Польши (KNF).",
+      "Проверить регистрацию можно на сайте KNF, выбрав тип субъекта «Agent» и указав номер регистрации либо название агентства.",
+
+      "",
+      "Область деятельности",
+      "SINEDIS SP. Z O.O. осуществляет агентскую деятельность по дистрибуции страхования в рамках Раздела II «Иные личные и имущественные виды страхования» согласно приложению к закону о страховой и перестраховочной деятельности.",
+
+      "",
+      "Страховая компания",
+      "Агент действует от имени:",
+      "Towarzystwo Ubezpieczeń i Reasekuracji „WARTA” S.A.",
+      "Адрес: rondo Ignacego Daszyńskiego 1, 00-843 Warszawa",
+      "Горячая линия и телефон для уведомления об убытках: +48 502 308 308 (стоимость звонка зависит от тарифа оператора).",
+
+      "",
+      "Полномочия агента",
+      "Полномочия агента подтверждаются отдельным документом.",
+      "Объём полномочий можно проверить также через реестр KNF, выбрав агента и раздел «Pełnomocnictwa».",
+
+      "",
+      "Вознаграждение агента",
+      "В связи с заключением договора страхования агент получает комиссионное вознаграждение, включённое в страховую премию.",
+      "Агент также может получать иные финансовые либо нефинансовые преимущества, связанные с деятельностью по дистрибуции страхования и участием в программах, предназначенных для страховых агентов.",
+
+      "",
+      "Информация о капитальных связях",
+      "Агент не владеет акциями либо долями TUiR „WARTA” S.A., дающими не менее 10% голосов.",
+      "TUiR „WARTA” S.A. также не владеет долями либо акциями SINEDIS SP. Z O.O., дающими не менее 10% голосов.",
+
+      "",
+      "Жалобы, связанные со страховой защитой",
+      "Жалобы, касающиеся страховой защиты, могут быть направлены в WARTA следующими способами:",
+
+      "",
+      "1. В письменной форме на бумажном носителе:",
+      "по адресу: skrytka pocztowa 1020, 00-950 Warszawa либо лично в любом подразделении WARTA, обслуживающем клиентов.",
+
+      "",
+      "2. В электронной форме:",
+      "на электронный адрес доставки AE:PL-12869-16149-GHRES-21 либо через форму на сайте www.warta.pl/reklamacje.",
+
+      "",
+      "3. Устно:",
+      "по телефону +48 502 308 308 либо под протокол в подразделениях WARTA.",
+
+      "",
+      "Срок рассмотрения жалобы",
+      "WARTA рассматривает жалобу в течение 30 дней с момента получения и предоставляет ответ письменно либо в электронной форме — в зависимости от способа подачи жалобы.",
+      "В особо сложных случаях срок может быть продлён до 60 дней, о чём заявитель уведомляется заранее.",
+
+      "",
+      "Жалобы, не связанные со страховой защитой",
+      "Если претензия не касается непосредственно страховой защиты, клиент может обратиться напрямую к агенту:",
+
+      "",
+      "SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "Адрес агента: 01-473 Варшава, ul. Dobrzańskiego Hubala 22D",
     ],
-    
-    note: "Если вам нужно оформить страхование для международной поездки или перевозки, отправьте запрос — мы уточним условия и перечень документов.",
+
+    note:
+      "Если вам требуется страхование или дополнительная информация, свяжитесь с нами — мы уточним условия страхования, перечень документов и дальнейший порядок оформления.",
   },
+
   contact: {
-    title: "Напишите нам сообщение",
-    desc: "Ответим по заявке и подскажем оптимальный вариант оформления.",
+    title: "Свяжитесь с нами",
+    desc:
+      "Ответим на вопросы по страхованию, условиям оформления и необходимым документам.",
   },
 };
 
-const LV: AboutDictionary = {
+const PL: AboutDictionary = {
   seo: {
-    title: "Par mums — EURO polis",
-    description: "Informācija par uzņēmumu, juridiskie dati un saziņas forma.",
+    title: "O nas — SINEDIS",
+    description:
+      "Informacje o agencie ubezpieczeniowym, podstawach prawnych działalności, zakładzie ubezpieczeń oraz procedurze składania reklamacji.",
   },
+
   hero: {
-    title: "Akreditēts apdrošināšanas aģents apdrošināšanas sabiedrībai ERGO Insurance SE",
-    subtitle: "Strādājam caurskatāmi, ievērojot normatīvos aktus un nodrošinot klientam saprotamus nosacījumus.",
+    title:
+      "Agent ubezpieczeniowy SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    subtitle:
+      "Działamy zgodnie z przepisami dotyczącymi dystrybucji ubezpieczeń i przekazujemy klientom wymagane informacje przed zawarciem umowy ubezpieczenia.",
   },
+
   cards: [
     {
-      title: "Kas mēs esam un kā varam palīdzēt",
-      text: "Palīdzam noformēt apdrošināšanu starptautiskiem braucieniem un pārvadājumiem uz Eiropas Savienības valstīm, ņemot vērā termiņus un Latvijas Republikas prasības.",
+      title: "Kim jesteśmy i jak pomagamy",
+      text:
+        "Pomagamy w zawarciu ubezpieczeń dla transportu międzynarodowego oraz podróży zagranicznych, doradzamy w zakresie warunków ubezpieczenia i wymagań dotyczących wjazdu do różnych krajów.",
     },
     {
-      title: "Statuss un tiesiskais pamats",
-      text: "Darbojamies kā apdrošināšanas aģents atbilstoši spēkā esošajiem normatīvajiem aktiem un nodrošinām obligātās informācijas atklāšanu par uzņēmumu.",
+      title: "Podstawa prawna działalności",
+      text:
+        "Działamy jako zarejestrowany agent ubezpieczeniowy w Polsce i przekazujemy wymagane informacje zgodnie z przepisami dotyczącymi dystrybucji ubezpieczeń.",
     },
     {
-      title: "Caurspīdīgi nosacījumi",
-      text: "Pirms noformēšanas vienojamies par būtiskākajiem parametriem: apdrošināšanas objektu, darbības periodu, teritoriju, limitiem un izņēmumiem.",
+      title: "Przejrzyste warunki",
+      text:
+        "Przed zawarciem umowy omawiamy zakres terytorialny ochrony, okres ubezpieczenia, ograniczenia, wyłączenia odpowiedzialności oraz procedurę likwidacji szkód.",
     },
     {
-      title: "Process no pieteikuma līdz polisei",
-      text: "Datu saņemšana → detaļu precizēšana → nosacījumu saskaņošana → apmaksa → polises izsniegšana un instrukcijas.",
+      title: "Proces zawarcia umowy",
+      text:
+        "Przekazanie danych → weryfikacja informacji → uzgodnienie warunków → opłacenie składki → wystawienie polisy i przekazanie dokumentów klientowi.",
     },
   ],
+
   company: {
-    title: "Informācija par apdrošināšanas starpnieku un apdrošinātāju",
+    title:
+      "Informacje o pośredniku ubezpieczeniowym SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+
     lines: [
-      "Apdrošināšanas pakalpojumi tiek sniegti, sadarbojoties ar apdrošināšanas sabiedrību",
-      "ERGO Insurance SE (Latvijas filiāle):",
+      "Zgodnie z art. 22 ustawy z dnia 15 grudnia 2017 r. o dystrybucji ubezpieczeń przekazujemy następujące informacje:",
+
       "",
-      "ERGO Insurance SE Latvijas filiāle",
-      "Reģistrācijas numurs: 40103599913",
-      "Juridiskā adrese: Skanstes iela 50, Rīga, LV-1013, Latvija",
+      "Dane agenta ubezpieczeniowego",
+      "Firma: SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "Adres agenta: 01-473 Warszawa, ul. Dobrzańskiego Hubala 22D",
+      "Numer wpisu do rejestru agentów ubezpieczeniowych: 11257162/A",
+      "NIP: 5242953841",
+
       "",
-      "Apdrošināšanas starpnieka dati",
-      "Rižova Ludmila",
+      "Rejestr agentów ubezpieczeniowych prowadzony jest przez Komisję Nadzoru Finansowego (KNF).",
+      "Weryfikacji wpisu można dokonać na stronie internetowej KNF, wybierając typ podmiotu „Agent” oraz podając numer wpisu lub nazwę agencji.",
+
       "",
-      "Tālrunis: +371 22355307",
-      "E-pasts: ludmila.rizova@ergo.lv",
-      "Darbības valsts: Latvija",
-      "Apdrošināšanas darbības veids:",
-      "robežapdrošināšanas līgumi (transportlīdzekļu īpašnieku civiltiesiskās atbildības apdrošināšana iebraukšanai citu valstu teritorijā)",
+      "Zakres działalności",
+      "SINEDIS SP. Z O.O. prowadzi działalność agencyjną w zakresie dystrybucji ubezpieczeń w Dziale II „Pozostałe ubezpieczenia osobowe oraz ubezpieczenia majątkowe”, zgodnie z załącznikiem do ustawy o działalności ubezpieczeniowej i reasekuracyjnej.",
+
       "",
-      "Tiesiskais statuss",
-      "Starpniekam ir tiesības saņemt apdrošināšanas prēmiju no klienta, kas nozīmē, ka tas var pieņemt maksājumu par apdrošināšanas līgumu tieši no apdrošinājuma ņēmēja un pēc tam to nodot apdrošinātājam.",
+      "Zakład ubezpieczeń",
+      "Agent działa w imieniu:",
+      "Towarzystwo Ubezpieczeń i Reasekuracji „WARTA” S.A.",
+      "Adres: rondo Ignacego Daszyńskiego 1, 00-843 Warszawa",
+      "Infolinia oraz numer do zgłaszania szkód: +48 502 308 308 (koszt połączenia zgodny z taryfą operatora).",
+
+      "",
+      "Pełnomocnictwo agenta",
+      "Umocowanie agenta potwierdzone jest odrębnym dokumentem.",
+      "Zakres pełnomocnictwa można również sprawdzić w rejestrze KNF po wybraniu agenta oraz sekcji „Pełnomocnictwa”.",
+
+      "",
+      "Wynagrodzenie agenta",
+      "W związku z zawarciem umowy ubezpieczenia agent otrzymuje wynagrodzenie prowizyjne uwzględnione w składce ubezpieczeniowej.",
+      "Agent może również otrzymywać inne korzyści finansowe lub niefinansowe związane z wykonywaniem czynności dystrybucyjnych oraz uczestnictwem w programach przeznaczonych dla agentów ubezpieczeniowych.",
+
+      "",
+      "Informacja o powiązaniach kapitałowych",
+      "Agent nie posiada akcji ani udziałów TUiR „WARTA” S.A., dających co najmniej 10% głosów.",
+      "TUiR „WARTA” S.A. również nie posiada udziałów ani akcji SINEDIS SP. Z O.O., dających co najmniej 10% głosów.",
+
+      "",
+      "Reklamacje dotyczące ochrony ubezpieczeniowej",
+      "Reklamacje dotyczące ochrony ubezpieczeniowej mogą być składane do WARTA w następujący sposób:",
+
+      "",
+      "1. W formie pisemnej:",
+      "na adres: skrytka pocztowa 1020, 00-950 Warszawa lub osobiście w każdej placówce WARTA obsługującej klientów.",
+
+      "",
+      "2. W formie elektronicznej:",
+      "na adres do doręczeń elektronicznych AE:PL-12869-16149-GHRES-21 lub za pośrednictwem formularza dostępnego na stronie www.warta.pl/reklamacje.",
+
+      "",
+      "3. Ustnie:",
+      "telefonicznie pod numerem +48 502 308 308 lub do protokołu w placówkach WARTA.",
+
+      "",
+      "Termin rozpatrzenia reklamacji",
+      "WARTA rozpatruje reklamację w terminie 30 dni od dnia jej otrzymania i udziela odpowiedzi w formie pisemnej lub elektronicznej — zgodnie ze sposobem złożenia reklamacji.",
+      "W szczególnie skomplikowanych przypadkach termin ten może zostać przedłużony do 60 dni, o czym osoba składająca reklamację zostanie wcześniej poinformowana.",
+
+      "",
+      "Reklamacje niezwiązane z ochroną ubezpieczeniową",
+      "Jeżeli reklamacja nie dotyczy bezpośrednio ochrony ubezpieczeniowej, klient może skontaktować się bezpośrednio z agentem:",
+
+      "",
+      "SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "Adres agenta: 01-473 Warszawa, ul. Dobrzańskiego Hubala 22D",
     ],
-    note: "Ja jums nepieciešams noformēt apdrošināšanu starptautiskam braucienam vai pārvadājumam, nosūtiet pieprasījumu — precizēsim nosacījumus un nepieciešamo dokumentu sarakstu.",
+
+    note:
+      "Jeżeli potrzebują Państwo ubezpieczenia lub dodatkowych informacji, prosimy o kontakt — wyjaśnimy warunki ubezpieczenia, wymagane dokumenty oraz dalszy proces zawarcia umowy.",
   },
+
   contact: {
-    title: "Sazinieties ar mums",
-    desc: "Atbildēsim uz jūsu pieprasījumu un ieteiksim optimālo noformēšanas risinājumu.",
+    title: "Skontaktuj się z nami",
+    desc:
+      "Odpowiemy na pytania dotyczące ubezpieczenia, warunków zawarcia umowy oraz wymaganych dokumentów.",
   },
 };
 
 const EN: AboutDictionary = {
   seo: {
-    title: "About Us — EURO polis",
-    description: "Company information, legal details, and a contact form.",
+    title: "About Us — SINEDIS",
+    description:
+      "Information about the insurance agent, legal basis of operations, insurance undertaking, and complaints handling procedure.",
   },
+
   hero: {
-    title: "Authorized Insurance Agent of ERGO Insurance SE",
-    subtitle: "We operate transparently, in full compliance with regulations, and offer clear terms for our clients.",
+    title:
+      "Insurance Agent SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    subtitle:
+      "We operate in accordance with insurance distribution regulations and provide clients with all mandatory pre-contractual information prior to concluding an insurance agreement.",
   },
+
   cards: [
     {
-      title: "Who We Are and How We Help",
-      text: "We assist with arranging insurance for international travel and transport operations within the European Union, taking into account deadlines and the requirements of the Republic of Latvia.",
+      title: "Who We Are and How We Can Help",
+      text:
+        "We assist clients with arranging insurance for international transport and travel, and provide guidance on insurance terms and entry requirements applicable in different countries.",
     },
     {
-      title: "Status and Legal Framework",
-      text: "We operate as an insurance agent under applicable law and disclose all mandatory company information.",
+      title: "Legal Basis of Operations",
+      text:
+        "We operate as a registered insurance agent in Poland and disclose mandatory information in accordance with insurance distribution legislation.",
     },
     {
       title: "Transparent Terms",
-      text: "Before issuing a policy, we review key parameters: the insured object, coverage period, territory, limits, and exclusions.",
+      text:
+        "Before policy issuance, we discuss the territorial scope, insurance period, limitations, exclusions, and claims handling procedures.",
     },
     {
-      title: "From Application to Policy",
-      text: "Data submission → clarification of details → agreement on terms → payment → policy issuance and instructions.",
+      title: "Issuance Process",
+      text:
+        "Data collection → information verification → agreement of terms → payment → policy issuance and delivery of documents to the client.",
     },
   ],
+
   company: {
-    title: "Information about the Insurance Intermediary and the Insurer",
+    title:
+      "Information about the Insurance Intermediary SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+
     lines: [
-      "Insurance services are provided with the involvement of the insurer",
-      "ERGO Insurance SE (Latvian branch):",
+      "Pursuant to Article 22 of the Polish Act of 15 December 2017 on Insurance Distribution, we provide the following information:",
+
       "",
-      "ERGO Insurance SE Latvijas filiāle",
-      "Registration number: 40103599913",
-      "Legal address: Skanstes iela 50, Riga, LV-1013, Latvia",
+      "Insurance Agent Details",
+      "Company name: SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "Registered address: ul. Dobrzańskiego Hubala 22D, 01-473 Warsaw, Poland",
+      "Insurance Agent Register Number: 11257162/A",
+      "Tax Identification Number (NIP): 5242953841",
+
       "",
-      "Insurance intermediary details",
-      "Rižova Ludmila",
+      "The register of insurance agents is maintained by the Polish Financial Supervision Authority (KNF).",
+      "Registration can be verified on the KNF website by selecting the entity type “Agent” and entering either the registration number or the agency name.",
+
       "",
-      "Phone: +371 22355307",
-      "Email: ludmila.rizova@ergo.lv",
-      "Country of operation: Latvia",
-      "Type of insurance activity:",
-      "border insurance contracts (motor third-party liability insurance for entry into other countries)",
+      "Scope of Activity",
+      "SINEDIS SP. Z O.O. conducts insurance distribution activities within Section II “Other Personal and Property Insurance Classes” in accordance with the appendix to the Act on Insurance and Reinsurance Activity.",
+
       "",
-      "Legal status",
-      "The intermediary is authorized to collect insurance premiums from clients, meaning they may accept payments under insurance contracts directly from the policyholder and transfer them to the insurer.",
+      "Insurance Undertaking",
+      "The agent acts on behalf of:",
+      "Towarzystwo Ubezpieczeń i Reasekuracji “WARTA” S.A.",
+      "Address: rondo Ignacego Daszyńskiego 1, 00-843 Warsaw, Poland",
+      "Claims notification hotline: +48 502 308 308 (call charges depend on the operator’s tariff).",
+
+      "",
+      "Authority of the Agent",
+      "The agent’s authority is confirmed by a separate power of attorney document.",
+      "The scope of authority may also be verified through the KNF register by selecting the agent and the “Pełnomocnictwa” section.",
+
+      "",
+      "Agent Remuneration",
+      "In connection with the conclusion of an insurance agreement, the agent receives commission-based remuneration included in the insurance premium.",
+      "The agent may also receive other financial or non-financial benefits related to insurance distribution activities and participation in programmes intended for insurance agents.",
+
+      "",
+      "Information on Capital Links",
+      "The agent does not hold shares or stocks in TUiR “WARTA” S.A. representing at least 10% of voting rights.",
+      "Likewise, TUiR “WARTA” S.A. does not hold shares or stocks in SINEDIS SP. Z O.O. representing at least 10% of voting rights.",
+
+      "",
+      "Complaints Related to Insurance Coverage",
+      "Complaints concerning insurance coverage may be submitted to WARTA using the following methods:",
+
+      "",
+      "1. In writing on paper:",
+      "by mail to: skrytka pocztowa 1020, 00-950 Warsaw, Poland, or in person at any WARTA customer service office.",
+
+      "",
+      "2. In electronic form:",
+      "to the electronic delivery address AE:PL-12869-16149-GHRES-21 or via the form available at www.warta.pl/reklamacje.",
+
+      "",
+      "3. Orally:",
+      "by telephone at +48 502 308 308 or verbally for the record at WARTA offices.",
+
+      "",
+      "Complaint Handling Period",
+      "WARTA reviews complaints within 30 days from the date of receipt and provides a response in writing or electronically, depending on the method used to submit the complaint.",
+      "In particularly complex cases, the deadline may be extended to 60 days, of which the complainant will be informed in advance.",
+
+      "",
+      "Complaints Not Related to Insurance Coverage",
+      "If a complaint does not directly concern insurance coverage, the client may contact the agent directly:",
+
+      "",
+      "SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "Registered address: ul. Dobrzańskiego Hubala 22D, 01-473 Warsaw, Poland",
     ],
-    note: "If you need insurance for international travel or transport, submit a request — we will уточнить условия and required documents.",
+
+    note:
+      "If you require insurance coverage or additional information, please contact us — we will clarify the insurance terms, required documentation, and further steps of the application process.",
   },
+
   contact: {
-    title: "Send Us a Message",
-    desc: "We will review your request and suggest the most suitable option.",
+    title: "Contact Us",
+    desc:
+      "We will answer your questions regarding insurance coverage, application terms, and required documentation.",
+  },
+};
+
+const BE: AboutDictionary = {
+  seo: {
+    title: "Пра нас — SINEDIS",
+    description:
+      "Інфармацыя аб страхавым агенце, прававых асновах дзейнасці, страхавой кампаніі і парадку падачы скаргаў.",
+  },
+
+  hero: {
+    title:
+      "Страхавы агент SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    subtitle:
+      "Працуюем у адпаведнасці з заканадаўствам аб страхавым пасярэдніцтве і прадастаўляем кліентам абавязковую інфармацыю да заключэння дагавора страхавання.",
+  },
+
+  cards: [
+    {
+      title: "Хто мы і чым можам быць карысныя",
+      text:
+        "Дапамагаем аформіць страхаванне для міжнародных перавозак і паездак, кансультуем па ўмовах страхавання і патрабаваннях для ўезду ў розныя краіны.",
+    },
+    {
+      title: "Прававая аснова дзейнасці",
+      text:
+        "Працуюць як зарэгістраваны страхавы агент у Польшчы і раскрываем абавязковую інфармацыю ў адпаведнасці з заканадаўствам аб дыстрыбуцыі страхавання.",
+    },
+    {
+      title: "Празрыстыя ўмовы",
+      text:
+        "Да афармлення абмяркоўваем тэрыторыю дзеяння, тэрмін страхавання, абмежаванні, выключэнні і парадак урэгулявання страхавых выпадкаў.",
+    },
+    {
+      title: "Працэс афармлення",
+      text:
+        "Атрыманне даных → праверка інфармацыі → узгадненне ўмоў → аплата → выпуск поліса і перадача дакументаў кліенту.",
+    },
+  ],
+
+  company: {
+    title:
+      "Інфармацыя аб страхавым пасярэдніку SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+
+    lines: [
+      "У адпаведнасці з артыкулам 22 Закона Польшчы ад 15 снежня 2017 года аб дыстрыбуцыі страхавання прадастаўляем наступную інфармацыю:",
+
+      "",
+      "Даныя страхавога агента",
+      "Кампанія: SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "Адрас агента: 01-473 Варшава, ul. Dobrzańskiego Hubala 22D",
+      "Нумар у рэестры страхавых агентаў: 11257162/A",
+      "NIP: 5242953841",
+
+      "",
+      "Рэестр страхавых агентаў вядзецца Камісіяй фінансавага нагляду Польшчы (KNF).",
+      "Праверыць рэгістрацыю можна на сайце KNF, выбраўшы тып суб’екта «Agent» і ўказаўшы нумар рэгістрацыі або назву агенцтва.",
+
+      "",
+      "Сфера дзейнасці",
+      "SINEDIS SP. Z O.O. ажыццяўляе агентскую дзейнасць па дыстрыбуцыі страхавання ў рамках Раздзела II «Іншыя асабістыя і маёмасныя віды страхавання» згодна з дадаткам да закона аб страхавой і перастрахавальнай дзейнасці.",
+
+      "",
+      "Страхавая кампанія",
+      "Агент дзейнічае ад імя:",
+      "Towarzystwo Ubezpieczeń i Reasekuracji „WARTA” S.A.",
+      "Адрас: rondo Ignacego Daszyńskiego 1, 00-843 Warszawa",
+      "Гарачая лінія і тэлефон для паведамлення аб страхавых выпадках: +48 502 308 308 (кошт званка залежыць ад тарыфу аператара).",
+
+      "",
+      "Паўнамоцтвы агента",
+      "Паўнамоцтвы агента пацвярджаюцца асобным дакументам.",
+      "Аб’ём паўнамоцтваў можна таксама праверыць праз рэестр KNF, выбраўшы агента і раздзел «Pełnomocnictwa».",
+
+      "",
+      "Узнагароджанне агента",
+      "У сувязі з заключэннем дагавора страхавання агент атрымлівае камісійнае ўзнагароджанне, уключанае ў страхавую прэмію.",
+      "Агент таксама можа атрымліваць іншыя фінансавыя або нефінансавыя выгоды, звязаныя з дзейнасцю па дыстрыбуцыі страхавання і ўдзелам у праграмах, прызначаных для страхавых агентаў.",
+
+      "",
+      "Інфармацыя аб капітальных сувязях",
+      "Агент не валодае акцыямі або долямі TUiR „WARTA” S.A., якія даюць не менш за 10% галасоў.",
+      "TUiR „WARTA” S.A. таксама не валодае долямі або акцыямі SINEDIS SP. Z O.O., якія даюць не менш за 10% галасоў.",
+
+      "",
+      "Скаргі, звязаныя са страхавой абаронай",
+      "Скаргі, якія датычацца страхавой абароны, могуць быць накіраваны ў WARTA наступнымі спосабамі:",
+
+      "",
+      "1. У пісьмовай форме на папяровым носьбіце:",
+      "па адрасе: skrytka pocztowa 1020, 00-950 Warszawa або асабіста ў любым падраздзяленні WARTA, якое абслугоўвае кліентаў.",
+
+      "",
+      "2. У электроннай форме:",
+      "на электронны адрас дастаўкі AE:PL-12869-16149-GHRES-21 або праз форму на сайце www.warta.pl/reklamacje.",
+
+      "",
+      "3. Вусна:",
+      "па тэлефоне +48 502 308 308 або пад пратакол у падраздзяленнях WARTA.",
+
+      "",
+      "Тэрмін разгляду скаргі",
+      "WARTA разглядае скаргу на працягу 30 дзён з моманту атрымання і прадастаўляе адказ у пісьмовай або электроннай форме — у залежнасці ад спосабу падачы скаргі.",
+      "У асабліва складаных выпадках тэрмін можа быць прадоўжаны да 60 дзён, пра што заяўнік паведамляецца загадзя.",
+
+      "",
+      "Скаргі, не звязаныя са страхавой абаронай",
+      "Калі прэтэнзія не датычыцца непасрэдна страхавой абароны, кліент можа звярнуцца непасрэдна да агента:",
+
+      "",
+      "SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "Адрас агента: 01-473 Варшава, ul. Dobrzańskiego Hubala 22D",
+    ],
+
+    note:
+      "Калі вам патрабуецца страхаванне або дадатковая інфармацыя, звяжыцеся з намі — мы ўдакладнім умовы страхавання, пералік дакументаў і далейшы парадак афармлення.",
+  },
+
+  contact: {
+    title: "Звяжыцеся з намі",
+    desc:
+      "Адкажам на пытанні па страхаванні, умовах афармлення і неабходных дакументах.",
   },
 };
 
 const UZ: AboutDictionary = {
   seo: {
-    title: "Biz haqimizda — EURO polis",
-    description: "Kompaniya haqida ma’lumot, yuridik rekvizitlar va aloqa shakli.",
+    title: "Biz haqimizda — SINEDIS",
+    description:
+      "Sug‘urta agenti, faoliyatning huquqiy asoslari, sug‘urta kompaniyasi va shikoyat yuborish tartibi haqida ma’lumot.",
   },
+
   hero: {
-    title: "ERGO Insurance SE sug‘urta kompaniyasining akkreditatsiyadan o‘tgan sug‘urta agenti",
-    subtitle: "Biz shaffof ishlaymiz, qoidalarga amal qilamiz va mijoz uchun tushunarli shartlarni taklif qilamiz.",
+    title:
+      "SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ sug‘urta agenti",
+    subtitle:
+      "Sug‘urta vositachiligi to‘g‘risidagi qonunchilikka muvofiq faoliyat yuritamiz hamda sug‘urta shartnomasi tuzilishidan oldin mijozlarga majburiy ma’lumotlarni taqdim etamiz.",
   },
+
   cards: [
     {
-      title: "Biz kimmiz va qanday foyda beramiz",
-      text: "Yevropa Ittifoqi mamlakatlariga xalqaro safar va tashuvlar uchun sug‘urtani Latviya Respublikasi talablari va muddatlarini inobatga olgan holda rasmiylashtirishga yordam beramiz.",
+      title: "Biz kimmiz va qanday yordam beramiz",
+      text:
+        "Xalqaro yuk tashuvlari va safarlar uchun sug‘urtani rasmiylashtirishda yordam beramiz, sug‘urta shartlari hamda turli davlatlarga kirish talablari bo‘yicha maslahat beramiz.",
     },
     {
-      title: "Status va huquqiy asos",
-      text: "Amaldagi qonunchilik doirasida sug‘urta agenti sifatida ishlaymiz va kompaniya haqidagi majburiy ma’lumotlarni oshkor qilamiz.",
+      title: "Faoliyatning huquqiy asosi",
+      text:
+        "Polshada ro‘yxatdan o‘tgan sug‘urta agenti sifatida faoliyat yuritamiz va sug‘urta distribyutsiyasi to‘g‘risidagi qonunchilikka muvofiq majburiy ma’lumotlarni oshkor qilamiz.",
     },
     {
       title: "Shaffof shartlar",
-      text: "Rasmiylashtirishdan oldin asosiy parametrlarni muhokama qilamiz: sug‘urta obyekti, amal qilish muddati, hududi, limitlar va istisnolar.",
+      text:
+        "Rasmiylashtirishdan oldin amal qilish hududi, sug‘urta muddati, cheklovlar, istisnolar va zararlarni tartibga solish tartibini muhokama qilamiz.",
     },
     {
-      title: "Arizadan polisgacha jarayon",
-      text: "Ma’lumotlarni olish → tafsilotlarni aniqlashtirish → shartlarni kelishish → to‘lov → polis va yo‘riqnoma berish.",
+      title: "Rasmiylashtirish jarayoni",
+      text:
+        "Ma’lumotlarni olish → ma’lumotlarni tekshirish → shartlarni kelishish → to‘lov → polisni rasmiylashtirish va hujjatlarni mijozga topshirish.",
     },
   ],
-  company: {
-    title: "Sug‘urta vositachisi va sug‘urta kompaniyasi haqida ma’lumot",
-    lines: [
-      "Sug‘urta xizmatlari quyidagi sug‘urta kompaniyasi ishtirokida taqdim etiladi",
-      "ERGO Insurance SE (Latviya filiali):",
-      "",
-      "ERGO Insurance SE Latvijas filiāle",
-      "Ro‘yxatga olish raqami: 40103599913",
-      "Yuridik manzil: Skanstes iela 50, Rīga, LV-1013, Latviya",
-      "",
-      "Sug‘urta vositachisi ma’lumotlari",
-      "Rižova Ludmila",
-      "",
-      "Telefon: +371 22355307",
-      "E-mail: ludmila.rizova@ergo.lv",
-      "Faoliyat yuritiladigan mamlakat: Latviya",
-      "Sug‘urta faoliyati turi:",
-      "chegaraviy sug‘urta shartnomalari (boshqa davlatlar hududiga kirish uchun transport vositalari egalarining fuqarolik javobgarligini sug‘urtalash)",
-      "",
-      "Huquqiy maqom",
-      "Vositachi mijozdan sug‘urta mukofotini qabul qilish huquqiga ega, ya’ni sug‘urta shartnomalari bo‘yicha to‘lovni to‘g‘ridan-to‘g‘ri sug‘urtalanuvchidan qabul qilib, keyinchalik sug‘urta kompaniyasiga o‘tkazishi mumkin.",
-    ],
-    note: "Agar sizga xalqaro safar yoki tashuv uchun sug‘urta rasmiylashtirish kerak bo‘lsa, so‘rov yuboring — biz shartlar va hujjatlar ro‘yxatini aniqlashtiramiz.",
-  },
-  contact: {
-    title: "Bizga xabar yozing",
-    desc: "Arizangiz bo‘yicha javob beramiz va eng maqbul rasmiylashtirish variantini taklif qilamiz.",
-  },
-};
 
-const KY: AboutDictionary = {
-  seo: {
-    title: "Биз жөнүндө — EURO polis",
-    description: "Компания тууралуу маалымат, юридикалык маалыматтар жана байланыш формасы.",
-  },
-  hero: {
-    title: "ERGO Insurance SE камсыздандыруу компаниясынын аккредитацияланган камсыздандыруу агенти",
-    subtitle: "Биз ачык-айкын иштейбиз, эрежелерди сактайбыз жана кардар үчүн түшүнүктүү шарттарды сунуштайбыз.",
-  },
-  cards: [
-    {
-      title: "Биз кимбиз жана кандай жардам беребиз",
-      text: "Европа Биримдигине эл аралык сапарлар жана жүк ташуулар үчүн камсыздандырууну, Латвия Республикасынын талаптарын жана мөөнөттөрүн эске алуу менен, туура жол-жобо менен тариздөөгө жардам беребиз.",
-    },
-    {
-      title: "Статус жана укуктук негиз",
-      text: "Колдонуудагы мыйзамдарга ылайык камсыздандыруу агенти катары иш алып барабыз жана компания тууралуу милдеттүү маалыматтарды ачык көрсөтөбүз.",
-    },
-    {
-      title: "Ачык шарттар",
-      text: "Полисти тариздөөдөн мурун негизги параметрлерди тактайбыз: камсыздандыруу объектиси, мөөнөтү, камтуу аймагы, лимиттер жана өзгөчөлүктөр (чыгаруулар).",
-    },
-    {
-      title: "Өтүнмөдөн полиске чейин процесс",
-      text: "Маалыматтарды алуу → деталдарды тактоо → шарттарды макулдашуу → төлөм → полисти жана нускамаларды берүү.",
-    },
-  ],
   company: {
-    title: "Камсыздандыруу ортомчусу жана камсыздандыруу компаниясы жөнүндө маалымат",
+    title:
+      "SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ sug‘urta vositachisi haqida ma’lumot",
+
     lines: [
-      "Камсыздандыруу кызматтары төмөнкү камсыздандыруу компаниясынын катышуусу менен көрсөтүлөт:",
-      "ERGO Insurance SE (Латвиядагы филиалы):",
+      "Polshaning 2017-yil 15-dekabrdagi Sug‘urta distribyutsiyasi to‘g‘risidagi qonunining 22-moddasiga muvofiq quyidagi ma’lumotlarni taqdim etamiz:",
+
       "",
-      "ERGO Insurance SE Latvijas filiāle",
-      "Каттоо номери: 40103599913",
-      "Юридикалык дареги: Skanstes iela 50, Rīga, LV-1013, Латвия",
+      "Sug‘urta agenti ma’lumotlari",
+      "Kompaniya: SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "Agent manzili: 01-473 Varshava, ul. Dobrzańskiego Hubala 22D",
+      "Sug‘urta agentlari reyestridagi raqam: 11257162/A",
+      "NIP: 5242953841",
+
       "",
-      "Камсыздандыруу ортомчусу тууралуу маалымат",
-      "Rižova Ludmila",
+      "Sug‘urta agentlari reyestri Polsha Moliyaviy nazorat komissiyasi (KNF) tomonidan yuritiladi.",
+      "Ro‘yxatdan o‘tganligini KNF saytida subyekt turi sifatida «Agent»ni tanlab hamda ro‘yxat raqami yoki agentlik nomini kiritib tekshirish mumkin.",
+
       "",
-      "Телефон: +371 22355307",
-      "E-mail: ludmila.rizova@ergo.lv",
-      "Иш жүргүзүлгөн өлкө: Латвия",
-      "Камсыздандыруу ишмердүүлүгүнүн түрү:",
-      "чек аралык камсыздандыруу келишимдери (башка мамлекеттерге кирүү үчүн транспорт каражаттарынын ээлеринин жарандык жоопкерчилигин камсыздандыруу)",
+      "Faoliyat sohasi",
+      "SINEDIS SP. Z O.O. sug‘urta va qayta sug‘urta faoliyati to‘g‘risidagi qonunga ilovaga muvofiq II-bo‘lim «Boshqa shaxsiy va mulkiy sug‘urta turlari» doirasida sug‘urta distribyutsiyasi bo‘yicha agentlik faoliyatini amalga oshiradi.",
+
       "",
-      "Укуктук статус",
-      "Ортомчу кардардан камсыздандыруу төлөмүн (премияны) алууга укуктуу, бул камсыздандыруу келишими боюнча төлөмдү түздөн-түз кардардан кабыл алып, андан ары камсыздандыруу компаниясына өткөрүп берүү мүмкүнчүлүгүн билдирет.",
+      "Sug‘urta kompaniyasi",
+      "Agent quyidagi kompaniya nomidan faoliyat yuritadi:",
+      "Towarzystwo Ubezpieczeń i Reasekuracji „WARTA” S.A.",
+      "Manzil: rondo Ignacego Daszyńskiego 1, 00-843 Warszawa",
+      "Call-markaz va zararlar haqida xabar berish telefoni: +48 502 308 308 (qo‘ng‘iroq narxi operator tarifiga bog‘liq).",
+
+      "",
+      "Agent vakolatlari",
+      "Agent vakolatlari alohida hujjat bilan tasdiqlanadi.",
+      "Vakolatlar hajmini KNF reyestrida agentni va «Pełnomocnictwa» bo‘limini tanlash orqali ham tekshirish mumkin.",
+
+      "",
+      "Agentning mukofoti",
+      "Sug‘urta shartnomasi tuzilishi munosabati bilan agent sug‘urta mukofotiga kiritilgan komission mukofot oladi.",
+      "Agent sug‘urta distribyutsiyasi faoliyati hamda sug‘urta agentlari uchun mo‘ljallangan dasturlarda ishtirok etish bilan bog‘liq boshqa moliyaviy yoki nomoliyaviy manfaatlarni ham olishi mumkin.",
+
+      "",
+      "Kapital aloqalari haqida ma’lumot",
+      "Agent TUiR „WARTA” S.A. kompaniyasining kamida 10% ovoz berish huquqini beruvchi aksiyalari yoki ulushlariga ega emas.",
+      "TUiR „WARTA” S.A. ham SINEDIS SP. Z O.O. kompaniyasining kamida 10% ovoz berish huquqini beruvchi ulushlari yoki aksiyalariga ega emas.",
+
+      "",
+      "Sug‘urta himoyasi bilan bog‘liq shikoyatlar",
+      "Sug‘urta himoyasiga oid shikoyatlar WARTA kompaniyasiga quyidagi usullarda yuborilishi mumkin:",
+
+      "",
+      "1. Qog‘oz shaklida yozma ravishda:",
+      "manzil bo‘yicha: skrytka pocztowa 1020, 00-950 Warszawa yoki mijozlarga xizmat ko‘rsatuvchi istalgan WARTA bo‘limiga shaxsan topshirish orqali.",
+
+      "",
+      "2. Elektron shaklda:",
+      "AE:PL-12869-16149-GHRES-21 elektron yetkazib berish manziliga yoki www.warta.pl/reklamacje saytidagi forma orqali.",
+
+      "",
+      "3. Og‘zaki shaklda:",
+      "+48 502 308 308 telefoni orqali yoki WARTA bo‘limlarida bayonnoma asosida.",
+
+      "",
+      "Shikoyatni ko‘rib chiqish muddati",
+      "WARTA shikoyatni qabul qilingan kundan boshlab 30 kun ichida ko‘rib chiqadi va javobni yozma yoki elektron shaklda — shikoyat yuborilgan usulga qarab taqdim etadi.",
+      "Alohida murakkab hollarda muddat 60 kungacha uzaytirilishi mumkin, bu haqda murojaat qiluvchi oldindan xabardor qilinadi.",
+
+      "",
+      "Sug‘urta himoyasi bilan bog‘liq bo‘lmagan shikoyatlar",
+      "Agar e’tiroz bevosita sug‘urta himoyasiga taalluqli bo‘lmasa, mijoz to‘g‘ridan-to‘g‘ri agentga murojaat qilishi mumkin:",
+
+      "",
+      "SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "Agent manzili: 01-473 Varshava, ul. Dobrzańskiego Hubala 22D",
     ],
-    note: "Эгер сизге эл аралык сапар же жүк ташуу үчүн камсыздандыруу керек болсо, өтүнмө жөнөтүңүз — биз шарттарды жана керектүү документтердин тизмесин тактап беребиз.",
+
+    note:
+      "Agar sizga sug‘urta yoki qo‘shimcha ma’lumot kerak bo‘lsa, biz bilan bog‘laning — sug‘urta shartlari, hujjatlar ro‘yxati va keyingi rasmiylashtirish tartibini aniqlashtirib beramiz.",
   },
+
   contact: {
-    title: "Бизге жазыңыз",
-    desc: "Өтүнмөңүз боюнча жооп беребиз жана эң ылайыктуу тариздөө вариантын сунуштайбыз.",
+    title: "Biz bilan bog‘laning",
+    desc:
+      "Sug‘urta, rasmiylashtirish shartlari va zarur hujjatlar bo‘yicha savollaringizga javob beramiz.",
   },
 };
 
 const KA: AboutDictionary = {
   seo: {
-    title: "ჩვენ შესახებ — EURO polis",
-    description: "ინფორმაცია კომპანიის შესახებ, იურიდიული მონაცემები და უკუკავშირის ფორმა.",
+    title: "ჩვენ შესახებ — SINEDIS",
+    description:
+      "ინფორმაცია სადაზღვევო აგენტის, საქმიანობის სამართლებრივი საფუძვლის, სადაზღვევო კომპანიისა და საჩივრების წარდგენის წესის შესახებ.",
   },
+
   hero: {
-    title: "ERGO Insurance SE-ის აკრედიტებული სადაზღვევო აგენტი",
-    subtitle: "ვმუშაობთ გამჭვირვალედ, წესების დაცვით და კლიენტისთვის გასაგები პირობებით.",
+    title:
+      "სადაზღვევო აგენტი SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    subtitle:
+      "ვმუშაობთ სადაზღვევო შუამავლობის შესახებ კანონმდებლობის შესაბამისად და დაზღვევის ხელშეკრულების გაფორმებამდე კლიენტებს ვაწვდით სავალდებულო ინფორმაციას.",
   },
+
   cards: [
     {
       title: "ვინ ვართ და როგორ შეგვიძლია დახმარება",
-      text: "გეხმარებით საერთაშორისო მოგზაურობისა და გადაზიდვების დაზღვევის გაფორმებაში ევროკავშირის ქვეყნებში, ლატვიის რესპუბლიკის მოთხოვნებისა და ვადების გათვალისწინებით.",
+      text:
+        "ვახორციელებთ საერთაშორისო გადაზიდვებისა და მოგზაურობებისთვის დაზღვევის ორგანიზებას, ვუწევთ კონსულტაციას დაზღვევის პირობებისა და სხვადასხვა ქვეყანაში შესვლის მოთხოვნების შესახებ.",
     },
     {
-      title: "სტატუსი და სამართლებრივი საფუძველი",
-      text: "ვმუშაობთ როგორც სადაზღვევო აგენტი მოქმედი კანონმდებლობის ფარგლებში და ვაქვეყნებთ კომპანიის შესახებ სავალდებულო ინფორმაციას.",
+      title: "საქმიანობის სამართლებრივი საფუძველი",
+      text:
+        "ვმოქმედებთ როგორც პოლონეთში რეგისტრირებული სადაზღვევო აგენტი და ვასაჯაროებთ სავალდებულო ინფორმაციას დაზღვევის დისტრიბუციის შესახებ კანონმდებლობის შესაბამისად.",
     },
     {
       title: "გამჭვირვალე პირობები",
-      text: "გაფორმებამდე განვიხილავთ ძირითად პარამეტრებს: დაზღვევის ობიექტს, მოქმედების პერიოდს, ტერიტორიას, ლიმიტებს და გამონაკლისებს.",
+      text:
+        "ხელშეკრულების გაფორმებამდე განვიხილავთ მოქმედების ტერიტორიას, დაზღვევის ვადას, შეზღუდვებს, გამონაკლისებსა და ზარალის დარეგულირების პროცედურას.",
     },
     {
-      title: "პროცესი განაცხადიდან პოლისამდე",
-      text: "მონაცემების მიღება → დეტალების დაზუსტება → პირობების შეთანხმება → გადახდა → პოლისის და ინსტრუქციის გაცემა.",
+      title: "გაფორმების პროცესი",
+      text:
+        "მონაცემების მიღება → ინფორმაციის გადამოწმება → პირობების შეთანხმება → გადახდა → პოლისის გაცემა და დოკუმენტების კლიენტისთვის გადაცემა.",
     },
   ],
+
   company: {
-    title: "ინფორმაცია სადაზღვევო შუამავალსა და სადაზღვევო კომპანიაზე",
+    title:
+      "ინფორმაცია სადაზღვევო შუამავალ SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ-ის შესახებ",
+
     lines: [
-      "სადაზღვევო მომსახურება ხორციელდება სადაზღვევო კომპანიის მონაწილეობით",
-      "ERGO Insurance SE (ლატვიის ფილიალი):",
+      "პოლონეთის 2017 წლის 15 დეკემბრის „დაზღვევის დისტრიბუციის შესახებ“ კანონის 22-ე მუხლის შესაბამისად, წარმოგიდგენთ შემდეგ ინფორმაციას:",
+
       "",
-      "ERGO Insurance SE Latvijas filiāle",
-      "სარეგისტრაციო ნომერი: 40103599913",
-      "იურიდიული მისამართი: Skanstes iela 50, Rīga, LV-1013, ლატვია",
+      "სადაზღვევო აგენტის მონაცემები",
+      "კომპანია: SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "აგენტის მისამართი: 01-473 ვარშავა, ul. Dobrzańskiego Hubala 22D",
+      "სადაზღვევო აგენტების რეესტრის ნომერი: 11257162/A",
+      "NIP: 5242953841",
+
       "",
-      "სადაზღვევო შუამავლის მონაცემები",
-      "Rižova Ludmila",
+      "სადაზღვევო აგენტების რეესტრს აწარმოებს პოლონეთის ფინანსური ზედამხედველობის კომისია (KNF).",
+      "რეგისტრაციის გადამოწმება შესაძლებელია KNF-ის ვებგვერდზე, სუბიექტის ტიპად „Agent“-ის არჩევით და რეგისტრაციის ნომრის ან სააგენტოს სახელწოდების მითითებით.",
+
       "",
-      "ტელეფონი: +371 22355307",
-      "ელ-ფოსტა: ludmila.rizova@ergo.lv",
-      "საქმიანობის ქვეყანა: ლატვია",
-      "სადაზღვევო საქმიანობის სახე:",
-      "საზღვრის გადაკვეთის სადაზღვევო ხელშეკრულებები (სატრანსპორტო საშუალებების მფლობელთა სამოქალაქო პასუხისმგებლობის დაზღვევა სხვა ქვეყნების ტერიტორიაზე შესვლისთვის)",
+      "საქმიანობის სფერო",
+      "SINEDIS SP. Z O.O. ახორციელებს სადაზღვევო დისტრიბუციის სააგენტო საქმიანობას II განყოფილების — „პირადი და ქონებრივი დაზღვევის სხვა სახეები“ — ფარგლებში, დაზღვევისა და გადაზღვევის საქმიანობის შესახებ კანონის დანართის შესაბამისად.",
+
       "",
-      "სამართლებრივი სტატუსი",
-      "შუამავალს აქვს უფლება მიიღოს სადაზღვევო პრემია კლიენტისგან, რაც ნიშნავს, რომ მას შეუძლია მიიღოს გადახდა დაზღვევის ხელშეკრულებების ფარგლებში უშუალოდ დამზღვევისგან და შემდეგ გადაუხადოს სადაზღვევო კომპანიას.",
+      "სადაზღვევო კომპანია",
+      "აგენტი მოქმედებს შემდეგი კომპანიის სახელით:",
+      "Towarzystwo Ubezpieczeń i Reasekuracji „WARTA” S.A.",
+      "მისამართი: rondo Ignacego Daszyńskiego 1, 00-843 Warszawa",
+      "ცხელი ხაზი და ზარალის შეტყობინების ტელეფონი: +48 502 308 308 (ზარის ღირებულება დამოკიდებულია ოპერატორის ტარიფზე).",
+
+      "",
+      "აგენტის უფლებამოსილება",
+      "აგენტის უფლებამოსილება დადასტურებულია ცალკე დოკუმენტით.",
+      "უფლებამოსილების მოცულობის გადამოწმება ასევე შესაძლებელია KNF-ის რეესტრში აგენტის და განყოფილების „Pełnomocnictwa“ არჩევით.",
+
+      "",
+      "აგენტის ანაზღაურება",
+      "დაზღვევის ხელშეკრულების გაფორმებასთან დაკავშირებით აგენტი იღებს საკომისიო ანაზღაურებას, რომელიც შედის სადაზღვევო პრემიის შემადგენლობაში.",
+      "აგენტი ასევე შეიძლება იღებდეს სხვა ფინანსურ ან არაფინანსურ სარგებელს, რომელიც დაკავშირებულია სადაზღვევო დისტრიბუციის საქმიანობასთან და სადაზღვევო აგენტებისთვის განკუთვნილ პროგრამებში მონაწილეობასთან.",
+
+      "",
+      "ინფორმაცია კაპიტალურ კავშირებზე",
+      "აგენტი არ ფლობს TUiR „WARTA” S.A.-ის აქციებს ან წილებს, რომლებიც ხმების არანაკლებ 10%-ს იძლევა.",
+      "TUiR „WARTA” S.A. ასევე არ ფლობს SINEDIS SP. Z O.O.-ის აქციებს ან წილებს, რომლებიც ხმების არანაკლებ 10%-ს იძლევა.",
+
+      "",
+      "საჩივრები, რომლებიც დაკავშირებულია სადაზღვევო დაცვასთან",
+      "სადაზღვევო დაცვასთან დაკავშირებული საჩივრების გაგზავნა WARTA-ში შესაძლებელია შემდეგი გზებით:",
+
+      "",
+      "1. წერილობით, ქაღალდის მატარებელზე:",
+      "მისამართზე: skrytka pocztowa 1020, 00-950 Warszawa ან პირადად WARTA-ს ნებისმიერ კლიენტთა მომსახურების განყოფილებაში.",
+
+      "",
+      "2. ელექტრონული ფორმით:",
+      "ელექტრონული მიწოდების მისამართზე AE:PL-12869-16149-GHRES-21 ან ფორმის მეშვეობით ვებგვერდზე www.warta.pl/reklamacje.",
+
+      "",
+      "3. ზეპირად:",
+      "ტელეფონით +48 502 308 308 ან WARTA-ს განყოფილებებში ოქმის შედგენით.",
+
+      "",
+      "საჩივრის განხილვის ვადა",
+      "WARTA საჩივარს განიხილავს მიღებიდან 30 დღის განმავლობაში და პასუხს გასცემს წერილობით ან ელექტრონული ფორმით — საჩივრის წარდგენის ფორმის შესაბამისად.",
+      "განსაკუთრებით რთულ შემთხვევებში ვადა შეიძლება გაგრძელდეს 60 დღემდე, რის შესახებაც განმცხადებელი წინასწარ მიიღებს შეტყობინებას.",
+
+      "",
+      "საჩივრები, რომლებიც არ უკავშირდება სადაზღვევო დაცვას",
+      "თუ პრეტენზია უშუალოდ არ ეხება სადაზღვევო დაცვას, კლიენტს შეუძლია პირდაპირ მიმართოს აგენტს:",
+
+      "",
+      "SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "აგენტის მისამართი: 01-473 ვარშავა, ul. Dobrzańskiego Hubala 22D",
     ],
-    note: "თუ გჭირდებათ დაზღვევის გაფორმება საერთაშორისო მოგზაურობისთვის ან გადაზიდვისთვის, გამოგვიგზავნეთ განაცხადი — დავაზუსტებთ პირობებს და საჭირო დოკუმენტების ჩამონათვალს.",
+
+    note:
+      "თუ გჭირდებათ დაზღვევა ან დამატებითი ინფორმაცია, დაგვიკავშირდით — დაგიზუსტებთ დაზღვევის პირობებს, საჭირო დოკუმენტების ჩამონათვალსა და გაფორმების შემდგომ პროცედურას.",
   },
+
   contact: {
-    title: "მოგვწერეთ შეტყობინება",
-    desc: "გიპასუხებთ თქვენს მოთხოვნაზე და შემოგთავაზებთ ოპტიმალურ გადაწყვეტას.",
+    title: "დაგვიკავშირდით",
+    desc:
+      "გიპასუხებთ კითხვებზე დაზღვევის, გაფორმების პირობებისა და საჭირო დოკუმენტების შესახებ.",
   },
 };
 
-const KZ: AboutDictionary = {
+const KK: AboutDictionary = {
   seo: {
-    title: "Біз туралы — EURO polis",
-    description: "Компания туралы ақпарат, заңды деректер және кері байланыс нысаны.",
+    title: "Біз туралы — SINEDIS",
+    description:
+      "Сақтандыру агенті, қызметтің құқықтық негіздері, сақтандыру компаниясы және шағым беру тәртібі туралы ақпарат.",
   },
+
   hero: {
-    title: "ERGO Insurance SE сақтандыру компаниясының аккредиттелген сақтандыру агенті",
-    subtitle: "Біз ашық, заң талаптарына сай және клиентке түсінікті шарттармен жұмыс істейміз.",
+    title:
+      "SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ сақтандыру агенті",
+    subtitle:
+      "Сақтандыру делдалдығы туралы заңнамаға сәйкес жұмыс істейміз және сақтандыру шартын жасасқанға дейін клиенттерге міндетті ақпаратты ұсынамыз.",
   },
+
   cards: [
     {
-      title: "Біз кімбіз және немен пайдалы бола аламыз",
-      text: "Еуропалық Одақ елдеріне халықаралық сапарлар мен тасымалдар үшін сақтандыруды рәсімдеуге көмектесеміз, Латвия Республикасының талаптары мен мерзімдерін ескере отырып.",
+      title: "Біз кімбіз және қандай көмек көрсетеміз",
+      text:
+        "Халықаралық тасымалдар мен сапарларға арналған сақтандыруды рәсімдеуге көмектесеміз, сақтандыру талаптары және әртүрлі елдерге кіру шарттары бойынша кеңес береміз.",
     },
     {
-      title: "Мәртебе және құқықтық негіз",
-      text: "Қолданыстағы заңнама аясында сақтандыру агенті ретінде жұмыс істейміз және компания туралы міндетті ақпаратты ашық түрде ұсынамыз.",
+      title: "Қызметтің құқықтық негіздері",
+      text:
+        "Польшада тіркелген сақтандыру агенті ретінде жұмыс істейміз және сақтандыру дистрибуциясы туралы заңнамаға сәйкес міндетті ақпаратты ашып көрсетеміз.",
     },
     {
-      title: "Ашық шарттар",
-      text: "Рәсімдеуге дейін негізгі параметрлерді келісеміз: сақтандыру нысаны, қолданылу мерзімі, аумағы, лимиттер және ерекшеліктер.",
+      title: "Ашық және түсінікті шарттар",
+      text:
+        "Рәсімдеуге дейін сақтандыру аумағын, қолданылу мерзімін, шектеулерді, ерекшеліктерді және залалды реттеу тәртібін талқылаймыз.",
     },
     {
-      title: "Өтінімнен полиске дейінгі процесс",
-      text: "Деректерді алу → мәліметтерді нақтылау → шарттарды келісу → төлем → полис пен нұсқаулықтарды беру.",
+      title: "Рәсімдеу процесі",
+      text:
+        "Деректерді алу → ақпаратты тексеру → шарттарды келісу → төлем жасау → полисті шығару және құжаттарды клиентке тапсыру.",
     },
   ],
+
   company: {
-    title: "Сақтандыру делдалы және сақтандыру компаниясы туралы мәліметтер",
+    title:
+      "SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ сақтандыру делдалы туралы ақпарат",
+
     lines: [
-      "Сақтандыру қызметтері келесі сақтандыру компаниясының қатысуымен ұсынылады",
-      "ERGO Insurance SE (Латвия филиалы):",
+      "Польшаның 2017 жылғы 15 желтоқсандағы «Сақтандыру дистрибуциясы туралы» Заңының 22-бабына сәйкес келесі ақпаратты ұсынамыз:",
+
       "",
-      "ERGO Insurance SE Latvijas filiāle",
-      "Тіркеу нөмірі: 40103599913",
-      "Заңды мекенжайы: Skanstes iela 50, Rīga, LV-1013, Латвия",
+      "Сақтандыру агенті туралы мәліметтер",
+      "Компания: SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "Агенттің мекенжайы: 01-473 Варшава, ul. Dobrzańskiego Hubala 22D",
+      "Сақтандыру агенттері тізіліміндегі нөмірі: 11257162/A",
+      "NIP: 5242953841",
+
       "",
-      "Сақтандыру делдалы туралы деректер",
-      "Rižova Ludmila",
+      "Сақтандыру агенттерінің тізілімін Польша Қаржылық қадағалау комиссиясы (KNF) жүргізеді.",
+      "Тіркеуді KNF сайтында субъект түрі ретінде «Agent» таңдап, тіркеу нөмірін немесе агенттік атауын көрсету арқылы тексеруге болады.",
+
       "",
-      "Телефон: +371 22355307",
-      "E-mail: ludmila.rizova@ergo.lv",
-      "Қызмет жүзеге асырылатын ел: Латвия",
-      "Сақтандыру қызметінің түрі:",
-      "шекаралық сақтандыру шарттары (басқа мемлекеттердің аумағына кіру үшін көлік құралдары иелерінің азаматтық-құқықтық жауапкершілігін сақтандыру)",
+      "Қызмет саласы",
+      "SINEDIS SP. Z O.O. сақтандыру және қайта сақтандыру қызметі туралы заңға қосымшаға сәйкес II бөлім «Өзге жеке және мүліктік сақтандыру түрлері» шеңберінде сақтандыру дистрибуциясы бойынша агенттік қызметті жүзеге асырады.",
+
       "",
-      "Құқықтық мәртебе",
-      "Делдал клиенттен сақтандыру сыйлықақысын алуға құқылы, бұл сақтанушыдан төлемді тікелей қабылдап, оны кейін сақтандыру компаниясына аудару мүмкіндігін білдіреді.",
+      "Сақтандыру компаниясы",
+      "Агент келесі компанияның атынан әрекет етеді:",
+      "Towarzystwo Ubezpieczeń i Reasekuracji „WARTA” S.A.",
+      "Мекенжайы: rondo Ignacego Daszyńskiego 1, 00-843 Warszawa",
+      "Залал туралы хабарлау және байланыс орталығының телефоны: +48 502 308 308 (қоңырау құны оператор тарифіне байланысты).",
+
+      "",
+      "Агенттің өкілеттіктері",
+      "Агенттің өкілеттіктері жеке құжатпен расталады.",
+      "Өкілеттік көлемін KNF тізілімінен агентті және «Pełnomocnictwa» бөлімін таңдау арқылы да тексеруге болады.",
+
+      "",
+      "Агенттің сыйақысы",
+      "Сақтандыру шартын жасасуға байланысты агент сақтандыру сыйлықақысына енгізілген комиссиялық сыйақы алады.",
+      "Сондай-ақ агент сақтандыру дистрибуциясы қызметіне және сақтандыру агенттеріне арналған бағдарламаларға қатысуына байланысты өзге қаржылық немесе қаржылық емес артықшылықтар алуы мүмкін.",
+
+      "",
+      "Капиталдық байланыстар туралы ақпарат",
+      "Агент TUiR „WARTA” S.A. компаниясының кемінде 10% дауыс беруге құқық беретін акцияларына немесе үлестеріне иелік етпейді.",
+      "Сол сияқты TUiR „WARTA” S.A. да SINEDIS SP. Z O.O. компаниясының кемінде 10% дауыс беруге құқық беретін акцияларына немесе үлестеріне иелік етпейді.",
+
+      "",
+      "Сақтандыру қорғауына қатысты шағымдар",
+      "Сақтандыру қорғауына қатысты шағымдарды WARTA компаниясына келесі тәсілдермен жолдауға болады:",
+
+      "",
+      "1. Қағаз түріндегі жазбаша нысанда:",
+      "мекенжай бойынша: skrytka pocztowa 1020, 00-950 Warszawa немесе клиенттерге қызмет көрсететін WARTA бөлімшелерінің кез келгеніне жеке тапсыру арқылы.",
+
+      "",
+      "2. Электрондық нысанда:",
+      "AE:PL-12869-16149-GHRES-21 электрондық жеткізу мекенжайына немесе www.warta.pl/reklamacje сайтындағы форма арқылы.",
+
+      "",
+      "3. Ауызша түрде:",
+      "+48 502 308 308 телефоны арқылы немесе WARTA бөлімшелерінде хаттама жасау арқылы.",
+
+      "",
+      "Шағымды қарау мерзімі",
+      "WARTA шағымды алған күннен бастап 30 күн ішінде қарайды және жауапты жазбаша немесе электрондық түрде — шағым беру тәсіліне байланысты ұсынады.",
+      "Ерекше күрделі жағдайларда мерзім 60 күнге дейін ұзартылуы мүмкін, бұл туралы өтініш беруші алдын ала хабардар етіледі.",
+
+      "",
+      "Сақтандыру қорғауына қатысы жоқ шағымдар",
+      "Егер шағым сақтандыру қорғауына тікелей қатысты болмаса, клиент агентке тікелей жүгіне алады:",
+
+      "",
+      "SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "Агенттің мекенжайы: 01-473 Варшава, ul. Dobrzańskiego Hubala 22D",
     ],
-    note: "Егер сізге халықаралық сапар немесе тасымал үшін сақтандыру қажет болса, өтінім жіберіңіз — біз шарттар мен қажетті құжаттар тізімін нақтылап береміз.",
+
+    note:
+      "Егер сізге сақтандыру немесе қосымша ақпарат қажет болса, бізбен хабарласыңыз — сақтандыру шарттарын, қажетті құжаттар тізімін және рәсімдеудің келесі кезеңдерін нақтылап береміз.",
   },
+
   contact: {
-    title: "Бізге хабарлама жазыңыз",
-    desc: "Өтініміңізге жауап беріп, рәсімдеудің оңтайлы нұсқасын ұсынамыз.",
+    title: "Бізбен байланысыңыз",
+    desc:
+      "Сақтандыру, рәсімдеу шарттары және қажетті құжаттар бойынша сұрақтарға жауап береміз.",
   },
 };
 
 const TR: AboutDictionary = {
   seo: {
-    title: "Hakkımızda — EURO polis",
-    description: "Şirket hakkında bilgiler, hukuki veriler ve iletişim formu.",
+    title: "Hakkımızda — SINEDIS",
+    description:
+      "Sigorta acentesi, faaliyetlerin hukuki dayanağı, sigorta şirketi ve şikâyet başvuru prosedürü hakkında bilgiler.",
   },
+
   hero: {
-    title: ":contentReference[oaicite:0]{index=0} sigorta şirketinin akredite sigorta acentesi",
-    subtitle: "Şeffaf şekilde, mevzuata uygun ve müşteri için açık koşullarla çalışıyoruz.",
+    title:
+      "SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ Sigorta Acentesi",
+    subtitle:
+      "Sigorta aracılığı mevzuatına uygun şekilde faaliyet göstermekte ve sigorta sözleşmesi kurulmadan önce müşterilere gerekli bilgileri sunmaktayız.",
   },
+
   cards: [
     {
-      title: "Biz kimiz ve nasıl yardımcı oluruz",
-      text: "Avrupa Birliği ülkelerine uluslararası seyahat ve taşımalar için sigorta düzenlenmesinde, süreler ve Letonya Cumhuriyeti gereklilikleri dikkate alınarak destek sağlıyoruz.",
+      title: "Biz Kimiz ve Nasıl Yardımcı Oluyoruz",
+      text:
+        "Uluslararası taşımacılık ve seyahatler için sigorta düzenlenmesine yardımcı oluyor, sigorta şartları ve farklı ülkelere giriş gereklilikleri konusunda danışmanlık sağlıyoruz.",
     },
     {
-      title: "Statü ve hukuki dayanak",
-      text: "Geçerli mevzuat çerçevesinde sigorta acentesi olarak faaliyet gösteriyor ve şirket hakkında zorunlu bilgileri şeffaf şekilde sunuyoruz.",
+      title: "Faaliyetlerin Hukuki Dayanağı",
+      text:
+        "Polonya’da kayıtlı bir sigorta acentesi olarak faaliyet göstermekte ve sigorta dağıtım mevzuatına uygun şekilde zorunlu bilgileri açıklamaktayız.",
     },
     {
-      title: "Şeffaf koşullar",
-      text: "Poliçe düzenlenmeden önce temel parametreleri birlikte netleştiriyoruz: sigorta konusu, süre, coğrafi kapsam, teminat limitleri ve istisnalar.",
+      title: "Şeffaf Şartlar",
+      text:
+        "Sigorta düzenlenmeden önce teminat bölgesi, sigorta süresi, sınırlamalar, istisnalar ve hasar süreçleri hakkında bilgi verilmektedir.",
     },
     {
-      title: "Başvurudan poliçeye süreç",
-      text: "Bilgilerin alınması → detayların netleştirilmesi → şartların onaylanması → ödeme → poliçenin ve gerekli talimatların teslimi.",
+      title: "Düzenleme Süreci",
+      text:
+        "Bilgilerin alınması → verilerin kontrolü → şartların onaylanması → ödeme → poliçenin düzenlenmesi ve belgelerin müşteriye teslim edilmesi.",
     },
   ],
+
   company: {
-    title: "Sigorta aracısı ve sigorta şirketine ilişkin bilgiler",
+    title:
+      "SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ Sigorta Aracısı Hakkında Bilgi",
+
     lines: [
-      "Sigorta hizmetleri aşağıdaki sigorta şirketinin katılımıyla sunulmaktadır:",
-      ":contentReference[oaicite:1]{index=1} (Letonya şubesi):",
+      "15 Aralık 2017 tarihli Polonya Sigorta Dağıtımı Kanunu’nun 22. maddesi uyarınca aşağıdaki bilgileri sunmaktayız:",
+
       "",
-      "ERGO Insurance SE Latvijas filiāle",
-      "Tescil numarası: 40103599913",
-      "Yasal adres: Skanstes iela 50, Rīga, LV-1013, Letonya",
+      "Sigorta Acentesine İlişkin Bilgiler",
+      "Şirket: SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "Acentenin adresi: 01-473 Varşova, ul. Dobrzańskiego Hubala 22D",
+      "Sigorta acenteleri sicil numarası: 11257162/A",
+      "NIP: 5242953841",
+
       "",
-      "Sigorta aracısına ait bilgiler",
-      ":contentReference[oaicite:2]{index=2}",
+      "Sigorta acenteleri sicili, Polonya Finansal Denetim Kurumu (KNF) tarafından tutulmaktadır.",
+      "Kayıt durumu, KNF internet sitesinde “Agent” kuruluş türü seçilerek ve kayıt numarası veya acente adı girilerek doğrulanabilir.",
+
       "",
-      "Telefon: +371 22355307",
-      "E-posta: ludmila.rizova@ergo.lv",
-      "Faaliyet gösterilen ülke: Letonya",
-      "Sigorta faaliyet türü:",
-      "sınır sigortası sözleşmeleri (başka ülkelere giriş için motorlu araç sahiplerinin zorunlu mali sorumluluk sigortası)",
+      "Faaliyet Alanı",
+      "SINEDIS SP. Z O.O., sigorta ve reasürans faaliyetlerine ilişkin kanunun ekinde yer alan II. Bölüm “Diğer şahıs ve mal sigortaları” kapsamında sigorta dağıtım acenteliği faaliyetinde bulunmaktadır.",
+
       "",
-      "Hukuki statü",
-      "Aracı, sigorta primini müşteriden tahsil etme yetkisine sahiptir. Bu, sigorta sözleşmeleri kapsamında ödemeyi doğrudan sigortalıdan alıp daha sonra sigorta şirketine aktarma imkânı anlamına gelir.",
+      "Sigorta Şirketi",
+      "Acente aşağıdaki şirket adına hareket etmektedir:",
+      "Towarzystwo Ubezpieczeń i Reasekuracji „WARTA” S.A.",
+      "Adres: rondo Ignacego Daszyńskiego 1, 00-843 Warszawa",
+      "Hasar ihbar hattı ve çağrı merkezi: +48 502 308 308 (arama ücreti operatör tarifesine bağlıdır).",
+
+      "",
+      "Acentenin Yetkileri",
+      "Acentenin yetkileri ayrı bir belge ile teyit edilmektedir.",
+      "Yetki kapsamı ayrıca KNF sicilinde, ilgili acente ve “Pełnomocnictwa” bölümü seçilerek kontrol edilebilir.",
+
+      "",
+      "Acentenin Ücretlendirilmesi",
+      "Sigorta sözleşmesinin kurulmasıyla bağlantılı olarak acente, sigorta primine dahil edilen komisyon almaktadır.",
+      "Acente ayrıca sigorta dağıtım faaliyetleri ve sigorta acentelerine yönelik programlara katılım kapsamında başka mali veya mali olmayan menfaatler de elde edebilir.",
+
+      "",
+      "Sermaye Bağlantılarına İlişkin Bilgi",
+      "Acente, TUiR „WARTA” S.A. şirketinde oy haklarının en az %10’unu sağlayan hisse veya paylara sahip değildir.",
+      "TUiR „WARTA” S.A. da SINEDIS SP. Z O.O. şirketinde oy haklarının en az %10’unu sağlayan hisse veya paylara sahip değildir.",
+
+      "",
+      "Sigorta Teminatı ile İlgili Şikâyetler",
+      "Sigorta teminatına ilişkin şikâyetler aşağıdaki yöntemlerle WARTA’ya iletilebilir:",
+
+      "",
+      "1. Yazılı olarak, fiziki ortamda:",
+      "Adres: skrytka pocztowa 1020, 00-950 Warszawa veya müşteri hizmeti veren herhangi bir WARTA şubesine şahsen teslim edilerek.",
+
+      "",
+      "2. Elektronik ortamda:",
+      "AE:PL-12869-16149-GHRES-21 elektronik teslimat adresine veya www.warta.pl/reklamacje internet sitesindeki form aracılığıyla.",
+
+      "",
+      "3. Sözlü olarak:",
+      "+48 502 308 308 numaralı telefon üzerinden veya WARTA şubelerinde tutanak altına alınmak suretiyle.",
+
+      "",
+      "Şikâyetin İncelenme Süresi",
+      "WARTA, şikâyeti alındığı tarihten itibaren 30 gün içinde değerlendirir ve başvurunun iletilme şekline bağlı olarak yazılı veya elektronik ortamda cevap verir.",
+      "Özellikle karmaşık durumlarda bu süre 60 güne kadar uzatılabilir ve başvuru sahibi önceden bilgilendirilir.",
+
+      "",
+      "Sigorta Teminatı ile İlgili Olmayan Şikâyetler",
+      "Şikâyet doğrudan sigorta teminatı ile ilgili değilse, müşteri doğrudan acenteye başvurabilir:",
+
+      "",
+      "SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "Acentenin adresi: 01-473 Varşova, ul. Dobrzańskiego Hubala 22D",
     ],
-    note: "Uluslararası seyahat veya taşımalar için sigorta yaptırmak istiyorsanız, talep gönderin — koşulları ve gerekli belgeleri netleştirelim.",
+
+    note:
+      "Sigorta yaptırmak veya ek bilgi almak isterseniz bizimle iletişime geçin — sigorta şartlarını, gerekli belgeleri ve sonraki işlem sürecini açıklayalım.",
   },
+
   contact: {
-    title: "Bize mesaj gönderin",
-    desc: "Başvurunuza yanıt verir ve en uygun düzenleme seçeneğini öneririz.",
+    title: "Bizimle İletişime Geçin",
+    desc:
+      "Sigorta, düzenleme koşulları ve gerekli belgeler hakkındaki sorularınızı yanıtlayacağız.",
   },
 };
 
 const FA: AboutDictionary = {
   seo: {
-    title: "درباره ما — EURO polis",
-    description: "اطلاعات شرکت، داده‌های حقوقی و فرم تماس.",
+    title: "درباره ما — SINEDIS",
+    description:
+      "اطلاعات مربوط به نماینده بیمه، مبانی حقوقی فعالیت، شرکت بیمه و نحوه ثبت و رسیدگی به شکایات.",
   },
+
   hero: {
-    title: "نماینده بیمه دارای مجوز از شرکت بیمه Ergo Insurance SE",
-    subtitle: "ما به‌صورت شفاف، مطابق مقررات و با شرایط قابل‌درک برای مشتری فعالیت می‌کنیم.",
+    title:
+      "نماینده بیمه SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    subtitle:
+      "ما مطابق با قوانین مربوط به توزیع بیمه فعالیت می‌کنیم و پیش از انعقاد قرارداد بیمه، اطلاعات الزامی را در اختیار مشتریان قرار می‌دهیم.",
   },
+
   cards: [
     {
-      title: "ما که هستیم و چه کمکی می‌کنیم",
-      text: "در تنظیم و صدور بیمه برای سفرها و حمل‌ونقل بین‌المللی به کشورهای اتحادیه اروپا کمک می‌کنیم، با در نظر گرفتن مهلت‌ها و الزامات جمهوری لتونی.",
+      title: "ما که هستیم و چگونه کمک می‌کنیم",
+      text:
+        "در اخذ بیمه برای حمل‌ونقل بین‌المللی و سفرهای خارجی کمک می‌کنیم و درباره شرایط بیمه و الزامات ورود به کشورهای مختلف مشاوره ارائه می‌دهیم.",
     },
     {
-      title: "وضعیت و مبنای حقوقی",
-      text: "به‌عنوان نماینده بیمه در چارچوب قوانین جاری فعالیت می‌کنیم و اطلاعات الزامی مربوط به شرکت را به‌صورت شفاف ارائه می‌دهیم.",
+      title: "مبنای حقوقی فعالیت",
+      text:
+        "ما به‌عنوان نماینده رسمی بیمه در لهستان فعالیت می‌کنیم و اطلاعات الزامی را مطابق با قوانین توزیع بیمه افشا می‌کنیم.",
     },
     {
       title: "شرایط شفاف",
-      text: "پیش از صدور بیمه‌نامه، پارامترهای کلیدی را بررسی می‌کنیم: موضوع بیمه، مدت اعتبار، قلمرو جغرافیایی، سقف تعهدات و استثنائات.",
+      text:
+        "پیش از صدور بیمه‌نامه، محدوده جغرافیایی پوشش، مدت اعتبار بیمه، محدودیت‌ها، استثنائات و روند رسیدگی به خسارت را بررسی و توضیح می‌دهیم.",
     },
     {
-      title: "فرآیند از درخواست تا صدور بیمه‌نامه",
-      text: "دریافت اطلاعات → بررسی جزئیات → توافق بر شرایط → پرداخت → صدور بیمه‌نامه و ارائه دستورالعمل‌ها.",
+      title: "فرآیند صدور بیمه‌نامه",
+      text:
+        "دریافت اطلاعات ← بررسی داده‌ها ← توافق بر شرایط ← پرداخت ← صدور بیمه‌نامه و تحویل مدارک به مشتری.",
     },
   ],
-  company: {
-    title: "اطلاعات مربوط به واسطه بیمه و شرکت بیمه",
-    lines: [
-      "خدمات بیمه‌ای با مشارکت شرکت بیمه ارائه می‌شود:",
-      "ERGO Insurance SE (شعبه لتونی):",
-      "",
-      "ERGO Insurance SE Latvijas filiāle",
-      "شماره ثبت: 40103599913",
-      "نشانی حقوقی: Skanstes iela 50, Rīga, LV-1013, Latvia",
-      "",
-      "اطلاعات واسطه بیمه",
-      "Rižova Ludmila",
-      "",
-      "تلفن: +371 22355307",
-      "ایمیل: ludmila.rizova@ergo.lv",
-      "کشور فعالیت: لتونی",
-      "نوع فعالیت بیمه‌ای:",
-      "قراردادهای بیمه مرزی (بیمه مسئولیت مدنی دارندگان وسایل نقلیه برای ورود به قلمرو سایر کشورها)",
-      "",
-      "وضعیت حقوقی",
-      "واسطه بیمه مجاز به دریافت حق‌بیمه از مشتری است، به این معنا که می‌تواند پرداخت مربوط به قرارداد بیمه را مستقیماً از بیمه‌گذار دریافت کرده و سپس به شرکت بیمه منتقل کند.",
-    ],
-    note: "در صورت نیاز به بیمه برای سفر یا حمل‌ونقل بین‌المللی، درخواست خود را ارسال کنید — شرایط و مدارک موردنیاز را برای شما مشخص می‌کنیم.",
-  },
-  contact: {
-    title: "برای ما پیام بفرستید",
-    desc: "در مورد درخواست شما پاسخ می‌دهیم و مناسب‌ترین گزینه صدور بیمه را پیشنهاد می‌کنیم.",
-  },
-};
 
-const MN: AboutDictionary = {
-  seo: {
-    title: "Бидний тухай — EURO polis",
-    description: "Компанийн мэдээлэл, хууль эрх зүйн өгөгдөл болон буцах холбооны маягт.",
-  },
-  hero: {
-    title: "ERGO Insurance SE даатгалын компанийн итгэмжлэгдсэн даатгалын агент",
-    subtitle: "Бид ил тод, дүрмийн дагуу, харилцагчид ойлгомжтой нөхцөлөөр ажилладаг.",
-  },
-  cards: [
-    {
-      title: "Бид хэн бэ, юугаараа хэрэгтэй вэ",
-      text: "Европын Холбооны улс руу олон улсын аялал болон тээвэрлэлтийн даатгалыг хугацаа болон Латвийн Бүгд Найрамдах Улсын шаардлагад нийцүүлэн бүрдүүлэхэд тусалдаг.",
-    },
-    {
-      title: "Статус ба хууль эрх зүйн үндэс",
-      text: "Бид хүчин төгөлдөр хууль тогтоомжийн хүрээнд даатгалын агентын хувиар ажиллаж, компанийн талаарх заавал ил тод байх мэдээллийг бүрэн танилцуулдаг.",
-    },
-    {
-      title: "Ил тод нөхцөл",
-      text: "Даатгалын гэрээ байгуулахаас өмнө бид үндсэн нөхцлүүдийг тохиролцдог: даатгалын объект, хугацаа, хамрах нутаг дэвсгэр, хариуцлагын лимит болон хасалт (үл хамаарах нөхцөл).",
-    },
-    {
-      title: "Захиалгаас полис хүртэлх үйл явц",
-      text: "Мэдээлэл хүлээн авах → дэлгэрэнгүйг тодруулах → нөхцөлийг тохиролцох → төлбөр хийх → полис болон заавар олгох.",
-    },
-  ],
   company: {
-    title: "Даатгалын зуучлагч болон даатгалын компанийн мэдээлэл",
+    title:
+      "اطلاعات مربوط به واسطه بیمه SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+
     lines: [
-      "Даатгалын үйлчилгээг дараах даатгалын компанийн оролцоотойгоор үзүүлдэг:",
-      "ERGO Insurance SE (Латвийн салбар):",
+      "مطابق ماده ۲۲ قانون لهستان مورخ ۱۵ دسامبر ۲۰۱۷ درباره توزیع بیمه، اطلاعات زیر ارائه می‌شود:",
+
       "",
-      "ERGO Insurance SE Latvijas filiāle",
-      "Бүртгэлийн дугаар: 40103599913",
-      "Хууль ёсны хаяг: Skanstes iela 50, Rīga, LV-1013, Латви",
+      "اطلاعات نماینده بیمه",
+      "شرکت: SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "نشانی نماینده: 01-473 Warsaw, ul. Dobrzańskiego Hubala 22D",
+      "شماره ثبت در فهرست نمایندگان بیمه: 11257162/A",
+      "NIP: 5242953841",
+
       "",
-      "Даатгалын зуучлагчийн мэдээлэл",
-      "Rižova Ludmila",
+      "فهرست نمایندگان بیمه توسط کمیسیون نظارت مالی لهستان (KNF) نگهداری می‌شود.",
+      "ثبت شرکت را می‌توان از طریق وب‌سایت KNF با انتخاب نوع نهاد «Agent» و وارد کردن شماره ثبت یا نام شرکت بررسی کرد.",
+
       "",
-      "Утас: +371 22355307",
-      "И-мэйл: ludmila.rizova@ergo.lv",
-      "Үйл ажиллагаа явуулж буй улс: Латви",
-      "Даатгалын үйл ажиллагааны төрөл:",
-      "хилийн даатгалын гэрээ (өөр улсын нутаг дэвсгэрт нэвтрэхэд зориулсан тээврийн хэрэгслийн эзэмшигчийн иргэний хариуцлагын даатгал)",
+      "حوزه فعالیت",
+      "شرکت SINEDIS SP. Z O.O. در چارچوب بخش II «سایر انواع بیمه‌های اشخاص و اموال» مطابق پیوست قانون فعالیت‌های بیمه و بیمه اتکایی، خدمات توزیع بیمه ارائه می‌دهد.",
+
       "",
-      "Хууль эрх зүйн статус",
-      "Зуучлагч нь даатгалын хураамжийг харилцагчаас хүлээн авах эрхтэй бөгөөд энэ нь даатгуулагчаас төлбөрийг шууд авч, дараа нь даатгалын компанид шилжүүлэх боломжтой гэсэн үг.",
+      "شرکت بیمه",
+      "نماینده از طرف شرکت زیر فعالیت می‌کند:",
+      "Towarzystwo Ubezpieczeń i Reasekuracji „WARTA” S.A.",
+      "نشانی: rondo Ignacego Daszyńskiego 1, 00-843 Warszawa",
+      "شماره تماس و خط ویژه اعلام خسارت: +48 502 308 308 (هزینه تماس مطابق تعرفه اپراتور محاسبه می‌شود).",
+
+      "",
+      "اختیارات نماینده",
+      "اختیارات نماینده با سند جداگانه تأیید شده است.",
+      "دامنه اختیارات همچنین از طریق فهرست KNF و بخش «Pełnomocnictwa» قابل بررسی است.",
+
+      "",
+      "حق‌الزحمه نماینده",
+      "نماینده در ارتباط با انعقاد قرارداد بیمه، کمیسیون دریافت می‌کند که در حق بیمه لحاظ شده است.",
+      "نماینده همچنین ممکن است مزایای مالی یا غیرمالی دیگری مرتبط با فعالیت توزیع بیمه و مشارکت در برنامه‌های ویژه نمایندگان بیمه دریافت کند.",
+
+      "",
+      "اطلاعات مربوط به وابستگی سرمایه‌ای",
+      "نماینده مالک سهام یا سهم‌الشرکه در TUiR „WARTA” S.A. که حداقل ۱۰٪ حق رأی ایجاد کند، نیست.",
+      "همچنین TUiR „WARTA” S.A. مالک سهام یا سهم‌الشرکه در SINEDIS SP. Z O.O. که حداقل ۱۰٪ حق رأی ایجاد کند، نیست.",
+
+      "",
+      "شکایات مرتبط با پوشش بیمه‌ای",
+      "شکایات مربوط به پوشش بیمه‌ای را می‌توان از روش‌های زیر به WARTA ارسال کرد:",
+
+      "",
+      "1. به‌صورت کتبی روی نسخه کاغذی:",
+      "به نشانی: skrytka pocztowa 1020, 00-950 Warszawa یا حضوری در هر یک از شعب WARTA که به مشتریان خدمات ارائه می‌دهند.",
+
+      "",
+      "2. به‌صورت الکترونیکی:",
+      "از طریق نشانی الکترونیکی AE:PL-12869-16149-GHRES-21 یا فرم موجود در وب‌سایت www.warta.pl/reklamacje.",
+
+      "",
+      "3. به‌صورت شفاهی:",
+      "از طریق شماره +48 502 308 308 یا ثبت صورتجلسه در شعب WARTA.",
+
+      "",
+      "مهلت رسیدگی به شکایت",
+      "WARTA شکایت را ظرف مدت ۳۰ روز از تاریخ دریافت بررسی کرده و پاسخ را به‌صورت کتبی یا الکترونیکی، متناسب با روش ثبت شکایت، ارائه می‌کند.",
+      "در موارد پیچیده، این مهلت ممکن است تا ۶۰ روز تمدید شود که در این صورت، متقاضی پیشاپیش مطلع خواهد شد.",
+
+      "",
+      "شکایات غیرمرتبط با پوشش بیمه‌ای",
+      "در صورتی که شکایت مستقیماً مربوط به پوشش بیمه‌ای نباشد، مشتری می‌تواند مستقیماً با نماینده تماس بگیرد:",
+
+      "",
+      "SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "نشانی نماینده: 01-473 Warsaw, ul. Dobrzańskiego Hubala 22D",
     ],
-    note: "Хэрэв та олон улсын аялал эсвэл тээвэрлэлтийн даатгал хийлгэхийг хүсвэл хүсэлт илгээнэ үү — бид нөхцөл болон шаардлагатай баримт бичгийн жагсаалтыг тодруулж өгнө.",
+
+    note:
+      "در صورتی که به بیمه یا اطلاعات تکمیلی نیاز دارید، با ما تماس بگیرید — شرایط بیمه، فهرست مدارک موردنیاز و مراحل بعدی صدور بیمه‌نامه را توضیح خواهیم داد.",
   },
+
   contact: {
-    title: "Бидэнд мессеж илгээнэ үү",
-    desc: "Бид таны хүсэлтэд хариу өгч, хамгийн тохиромжтой шийдлийг санал болгоно.",
+    title: "تماس با ما",
+    desc:
+      "به سؤالات شما درباره بیمه، شرایط صدور و مدارک موردنیاز پاسخ خواهیم داد.",
   },
 };
 
 const HY: AboutDictionary = {
   seo: {
-    title: "Մեր մասին — EURO polis",
-    description: "Տեղեկություն ընկերության մասին, իրավական տվյալներ և հետադարձ կապի ձև։",
+    title: "Մեր մասին — SINEDIS",
+    description:
+      "Տեղեկատվություն ապահովագրական գործակալի, գործունեության իրավական հիմքերի, ապահովագրական ընկերության և բողոքների ներկայացման կարգի վերաբերյալ։",
   },
+
   hero: {
-    title: "ERGO Insurance SE ապահովագրական ընկերության հավատարմագրված ապահովագրական գործակալ",
-    subtitle: "Աշխատում ենք թափանցիկ, օրենքի շրջանակներում և հաճախորդի համար հասկանալի պայմաններով։",
+    title:
+      "SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ ապահովագրական գործակալ",
+    subtitle:
+      "Գործում ենք ապահովագրական միջնորդության մասին օրենսդրությանը համապատասխան և մինչև ապահովագրության պայմանագրի կնքումը հաճախորդներին տրամադրում ենք պարտադիր տեղեկատվություն։",
   },
+
   cards: [
     {
       title: "Ով ենք մենք և ինչով ենք օգտակար",
-      text: "Օգնում ենք ձևակերպել ապահովագրություն միջազգային ուղևորությունների և բեռնափոխադրումների համար դեպի Եվրոպական միության երկրներ՝ հաշվի առնելով ժամկետներն ու Լատվիայի Հանրապետության պահանջները։",
+      text:
+        "Օգնում ենք ձևակերպել ապահովագրություն միջազգային փոխադրումների և ուղևորությունների համար, տրամադրում ենք խորհրդատվություն ապահովագրության պայմանների և տարբեր երկրներ մուտքի պահանջների վերաբերյալ։",
     },
     {
-      title: "Կարգավիճակ և իրավական հիմք",
-      text: "Աշխատում ենք որպես ապահովագրական գործակալ՝ գործող օրենսդրության շրջանակում և տրամադրում ենք ընկերության վերաբերյալ պարտադիր տեղեկատվություն։",
+      title: "Գործունեության իրավական հիմքը",
+      text:
+        "Գործում ենք որպես Լեհաստանում գրանցված ապահովագրական գործակալ և բացահայտում ենք պարտադիր տեղեկատվությունը՝ ապահովագրության բաշխման մասին օրենսդրությանը համապատասխան։",
     },
     {
       title: "Թափանցիկ պայմաններ",
-      text: "Մինչ ձևակերպումը քննարկում ենք հիմնական պարամետրերը՝ ապահովագրվող օբյեկտը, գործողության ժամկետը, տարածքը, սահմանաչափերը և բացառությունները։",
+      text:
+        "Մինչ ձևակերպումը քննարկում ենք ապահովագրության տարածքային գործողությունը, ժամկետը, սահմանափակումները, բացառությունները և վնասների կարգավորման ընթացակարգը։",
     },
     {
-      title: "Գործընթացը՝ դիմումից մինչև պոլիս",
-      text: "Տվյալների ստացում → մանրամասների ճշտում → պայմանների համաձայնեցում → վճարում → պոլիսի և հրահանգների տրամադրում։",
+      title: "Ձևակերպման գործընթացը",
+      text:
+        "Տվյալների ստացում → տեղեկատվության ստուգում → պայմանների համաձայնեցում → վճարում → ապահովագրական պոլիսի թողարկում և փաստաթղթերի փոխանցում հաճախորդին։",
     },
   ],
+
   company: {
-    title: "Տեղեկություններ ապահովագրական միջնորդի և ապահովագրական ընկերության մասին",
+    title:
+      "Տեղեկատվություն SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ ապահովագրական միջնորդի վերաբերյալ",
+
     lines: [
-      "Ապահովագրական ծառայությունները մատուցվում են հետևյալ ապահովագրական ընկերության մասնակցությամբ՝",
-      "ERGO Insurance SE (Լատվիայի մասնաճյուղ)։",
+      "Լեհաստանի 2017 թվականի դեկտեմբերի 15-ի «Ապահովագրության բաշխման մասին» օրենքի 22-րդ հոդվածի համաձայն տրամադրում ենք հետևյալ տեղեկատվությունը․",
+
       "",
-      "ERGO Insurance SE Latvijas filiāle",
-      "Գրանցման համար՝ 40103599913",
-      "Իրավաբանական հասցե՝ Skanstes iela 50, Rīga, LV-1013, Լատվիա",
+      "Ապահովագրական գործակալի տվյալներ",
+      "Ընկերություն՝ SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "Գործակալի հասցե՝ 01-473 Վարշավա, ul. Dobrzańskiego Hubala 22D",
+      "Ապահովագրական գործակալների ռեեստրում համարը՝ 11257162/A",
+      "NIP՝ 5242953841",
+
       "",
-      "Ապահովագրական միջնորդի տվյալներ",
-      "Rižova Ludmila",
+      "Ապահովագրական գործակալների ռեեստրը վարում է Լեհաստանի Ֆինանսական վերահսկողության հանձնաժողովը (KNF)։",
+      "Գրանցումը կարելի է ստուգել KNF-ի կայքում՝ ընտրելով «Agent» սուբյեկտի տեսակը և նշելով գրանցման համարը կամ գործակալության անվանումը։",
+
       "",
-      "Հեռախոս՝ +371 22355307",
-      "Էլ. փոստ՝ ludmila.rizova@ergo.lv",
-      "Գործունեության երկիր՝ Լատվիա",
-      "Ապահովագրական գործունեության տեսակ՝",
-      "սահմանային ապահովագրական պայմանագրեր (տրանսպորտային միջոցների սեփականատերերի քաղաքացիական պատասխանատվության ապահովագրություն՝ այլ պետությունների տարածք մուտք գործելու համար)",
+      "Գործունեության ոլորտը",
+      "SINEDIS SP. Z O.O.-ն իրականացնում է ապահովագրական բաշխման գործակալական գործունեություն II բաժնի՝ «Այլ անձնական և գույքային ապահովագրության տեսակներ» շրջանակում՝ ապահովագրական և վերաապահովագրական գործունեության մասին օրենքի հավելվածի համաձայն։",
+
       "",
-      "Իրավական կարգավիճակ",
-      "Միջնորդն իրավունք ունի ստանալ ապահովագրական պրեմիան հաճախորդից, ինչը նշանակում է, որ կարող է ընդունել վճարումը ապահովագրական պայմանագրերի համար անմիջապես ապահովագրողից՝ այն հետագայում փոխանցելով ապահովագրական ընկերությանը։",
+      "Ապահովագրական ընկերություն",
+      "Գործակալը գործում է հետևյալ ընկերության անունից․",
+      "Towarzystwo Ubezpieczeń i Reasekuracji „WARTA” S.A.",
+      "Հասցե՝ rondo Ignacego Daszyńskiego 1, 00-843 Warszawa",
+      "Թեժ գիծ և վնասների մասին ծանուցման հեռախոսահամար՝ +48 502 308 308 (զանգի արժեքը կախված է օպերատորի սակագնից)։",
+
+      "",
+      "Գործակալի լիազորությունները",
+      "Գործակալի լիազորությունները հաստատվում են առանձին փաստաթղթով։",
+      "Լիազորությունների ծավալը կարելի է ստուգել նաև KNF-ի ռեեստրում՝ ընտրելով գործակալին և «Pełnomocnictwa» բաժինը։",
+
+      "",
+      "Գործակալի վարձատրությունը",
+      "Ապահովագրության պայմանագրի կնքման հետ կապված գործակալը ստանում է միջնորդավճար, որը ներառված է ապահովագրական պրեմիայի մեջ։",
+      "Գործակալը կարող է ստանալ նաև այլ ֆինանսական կամ ոչ ֆինանսական առավելություններ՝ կապված ապահովագրության բաշխման գործունեության և ապահովագրական գործակալների համար նախատեսված ծրագրերին մասնակցության հետ։",
+
+      "",
+      "Տեղեկատվություն կապիտալային կապերի մասին",
+      "Գործակալը չի տիրապետում TUiR „WARTA” S.A.-ի բաժնետոմսերի կամ բաժնեմասերի, որոնք ապահովում են առնվազն 10% ձայնի իրավունք։",
+      "TUiR „WARTA” S.A.-ն նույնպես չի տիրապետում SINEDIS SP. Z O.O.-ի բաժնեմասերի կամ բաժնետոմսերի, որոնք ապահովում են առնվազն 10% ձայնի իրավունք։",
+
+      "",
+      "Բողոքներ՝ կապված ապահովագրական պաշտպանության հետ",
+      "Ապահովագրական պաշտպանության վերաբերյալ բողոքները կարող են ներկայացվել WARTA-ին հետևյալ եղանակներով․",
+
+      "",
+      "1. Գրավոր՝ թղթային տարբերակով․",
+      "հասցեով՝ skrytka pocztowa 1020, 00-950 Warszawa կամ անձամբ WARTA-ի հաճախորդների սպասարկման ցանկացած մասնաճյուղում։",
+
+      "",
+      "2. Էլեկտրոնային ձևով․",
+      "AE:PL-12869-16149-GHRES-21 էլեկտրոնային առաքման հասցեով կամ www.warta.pl/reklamacje կայքի ձևի միջոցով։",
+
+      "",
+      "3. Բանավոր․",
+      "հեռախոսով՝ +48 502 308 308 կամ արձանագրությամբ WARTA-ի մասնաճյուղերում։",
+
+      "",
+      "Բողոքի քննության ժամկետը",
+      "WARTA-ն բողոքը քննում է ստացման պահից 30 օրվա ընթացքում և պատասխանը տրամադրում է գրավոր կամ էլեկտրոնային ձևով՝ կախված բողոքի ներկայացման եղանակից։",
+      "Առանձնապես բարդ դեպքերում ժամկետը կարող է երկարաձգվել մինչև 60 օր, որի մասին դիմողը նախապես ծանուցվում է։",
+
+      "",
+      "Բողոքներ, որոնք կապված չեն ապահովագրական պաշտպանության հետ",
+      "Եթե պահանջը անմիջականորեն կապված չէ ապահովագրական պաշտպանության հետ, հաճախորդը կարող է անմիջապես դիմել գործակալին․",
+
+      "",
+      "SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "Գործակալի հասցե՝ 01-473 Վարշավա, ul. Dobrzańskiego Hubala 22D",
     ],
-    note: "Եթե ցանկանում եք ձևակերպել ապահովագրություն միջազգային ուղևորության կամ բեռնափոխադրման համար, ուղարկեք հարցում — մենք կհստակեցնենք պայմաններն ու անհրաժեշտ փաստաթղթերի ցանկը։",
+
+    note:
+      "Եթե ձեզ անհրաժեշտ է ապահովագրություն կամ լրացուցիչ տեղեկատվություն, կապ հաստատեք մեզ հետ — մենք կհստակեցնենք ապահովագրության պայմանները, անհրաժեշտ փաստաթղթերի ցանկը և ձևակերպման հետագա ընթացակարգը։",
   },
+
   contact: {
-    title: "Գրեք մեզ հաղորդագրություն",
-    desc: "Կպատասխանենք ձեր դիմումին և կառաջարկենք ձևակերպման լավագույն տարբերակը։",
+    title: "Կապվեք մեզ հետ",
+    desc:
+      "Կպատասխանենք ապահովագրության, ձևակերպման պայմանների և անհրաժեշտ փաստաթղթերի վերաբերյալ հարցերին։",
   },
 };
 
 export const aboutDictionary: Record<Lang, AboutDictionary> = {
   ru: RU,
-  lv: LV,
+  pl: PL,
   en: EN,
+  be: BE,
   uz: UZ,
-  kg: KY,
   ka: KA,
-  kz: KZ,
+  kk: KK,
   tr: TR,
   fa: FA,
-  mn: MN,
   hy: HY,
 };
 

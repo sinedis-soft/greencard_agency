@@ -2,37 +2,37 @@ import type { Lang } from "@/app/dictionaries/header";
 import { getHomeDictionary } from "@/app/dictionaries/home";
 import { SITE_URL, toAbsolute } from "@/app/seo";
 
-type JsonLdProps = { data: Record<string, unknown> | Array<Record<string, unknown>> };
-
+type JsonLdProps = {
+  data: Record<string, unknown> | Array<Record<string, unknown>>;
+};
 
 const TARGET_CARRIER_COUNTRIES = [
-  "KZ",
+  "BY",
   "UZ",
   "AM",
   "GE",
   "TJ",
-  "KG",
-  "MN",
+  "TR",
+  "AZ",
   "TM",
+  "KZ",
+  "KG",
+  "MD",
+  "UA",
 ] as const;
 
 const COMPANY_ADDRESS = {
   "@type": "PostalAddress",
-  addressCountry: "LV",
-  addressLocality: "Riga",
-  postalCode: "LV-1013",
+  streetAddress: "ul. H. Dobrzańskiego Hubala 22D",
+  addressLocality: "Warszawa",
+  postalCode: "01-473",
+  addressCountry: "PL",
 };
 
 const OPENING_HOURS = [
   {
     "@type": "OpeningHoursSpecification",
-    dayOfWeek: [
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-    ],
+    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
     opens: "09:00",
     closes: "18:00",
   },
@@ -41,6 +41,27 @@ const OPENING_HOURS = [
 const OFFICIAL_PROFILES = [
   toAbsolute("/ru/contacts"),
   toAbsolute("/en/contacts"),
+  toAbsolute("/be/contacts"),
+  toAbsolute("/uz/contacts"),
+  toAbsolute("/ka/contacts"),
+  toAbsolute("/kk/contacts"),
+  toAbsolute("/tr/contacts"),
+  toAbsolute("/pl/contacts"),
+  toAbsolute("/fa/contacts"),
+  toAbsolute("/hy/contacts"),
+];
+
+const AVAILABLE_LANGUAGES = [
+  "ru",
+  "pl",
+  "en",
+  "be",
+  "uz",
+  "ka",
+  "kk",
+  "tr",
+  "fa",
+  "hy",
 ];
 
 function JsonLd({ data }: JsonLdProps) {
@@ -57,22 +78,40 @@ export function OrganizationJsonLd({ lang }: { lang: Lang }) {
     "@context": "https://schema.org",
     "@type": "Organization",
     "@id": toAbsolute(`/${lang}#organization`),
-    name: "Rižova Ludmila",
+    name: "SINEDIS Sp. z o.o.",
+    legalName: "SINEDIS Spółka z ograniczoną odpowiedzialnością",
     url: SITE_URL,
-    email: "ludmila.rizova@ergo.lv",
-    telephone: "+37122355307",
+    email: "info@sinedis.pl",
+    telephone: "+48573581333",
     address: COMPANY_ADDRESS,
     openingHoursSpecification: OPENING_HOURS,
     sameAs: OFFICIAL_PROFILES,
-    areaServed: ["LV", ...TARGET_CARRIER_COUNTRIES],
+    areaServed: ["PL", "EEA", ...TARGET_CARRIER_COUNTRIES],
+    identifier: [
+      {
+        "@type": "PropertyValue",
+        propertyID: "KRS",
+        value: "0000999636",
+      },
+      {
+        "@type": "PropertyValue",
+        propertyID: "NIP",
+        value: "5242953841",
+      },
+      {
+        "@type": "PropertyValue",
+        propertyID: "REGON",
+        value: "52350998300000",
+      },
+    ],
     contactPoint: [
       {
         "@type": "ContactPoint",
         contactType: "customer support",
-        telephone: "+37122355307",
-        email: "ludmila.rizova@ergo.lv",
-        availableLanguage: ["ru", "lv", "en", "uz", "kg", "ka", "kz", "tr", "fa", "mn", "hy"],
-        areaServed: ["LV", ...TARGET_CARRIER_COUNTRIES],
+        telephone: "+48573581333",
+        email: "info@sinedis.pl",
+        availableLanguage: AVAILABLE_LANGUAGES,
+        areaServed: ["PL", "EEA", ...TARGET_CARRIER_COUNTRIES],
       },
     ],
   };
@@ -85,26 +124,40 @@ export function InsuranceAgencyJsonLd({ lang }: { lang: Lang }) {
     "@context": "https://schema.org",
     "@type": "InsuranceAgency",
     "@id": toAbsolute(`/${lang}#insurance-agency`),
-    name: "Rižova Ludmila",
+    name: "SINEDIS Sp. z o.o.",
+    legalName: "SINEDIS Spółka z ograniczoną odpowiedzialnością",
     url: toAbsolute(`/${lang}`),
+    email: "info@sinedis.pl",
+    telephone: "+48573581333",
     parentOrganization: {
       "@id": toAbsolute(`/${lang}#organization`),
     },
     address: COMPANY_ADDRESS,
     openingHoursSpecification: OPENING_HOURS,
     sameAs: OFFICIAL_PROFILES,
-    areaServed: ["LV", ...TARGET_CARRIER_COUNTRIES],
-    serviceType: "EEA cross-border motor third-party liability insurance",
+    areaServed: ["PL", "EEA", ...TARGET_CARRIER_COUNTRIES],
+    serviceType:
+      "Insurance intermediation and border motor third-party liability insurance",
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: "Border insurance for EEA countries",
+      name: "SINEDIS insurance products",
       itemListElement: [
         {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "Cross-border border insurance for the European Economic Area (EEA)",
+            name: "Border motor third-party liability insurance",
+            serviceType: "Border insurance",
             areaServed: ["EEA"],
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Green Card agency",
+            serviceType: "International motor third-party liability insurance",
+            areaServed: ["PL", "EEA"],
           },
         },
       ],
@@ -116,6 +169,7 @@ export function InsuranceAgencyJsonLd({ lang }: { lang: Lang }) {
 
 export function FaqPageJsonLd({ lang }: { lang: Lang }) {
   const faqItems = getHomeDictionary(lang).faq.items;
+
   const data = {
     "@context": "https://schema.org",
     "@type": "FAQPage",

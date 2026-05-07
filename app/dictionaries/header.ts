@@ -1,20 +1,23 @@
 // app/dictionaries/header.ts
 
-export const LOCALES = ["ru", "lv", "en", "uz", "kg", "ka", "kz", "tr", "fa", "mn", "hy"] as const;
+export const LOCALES = ["ru", "pl", "en", "be", "uz", "ka", "kk", "tr", "fa","hy"] as const;
+
+
+
 export type Lang = (typeof LOCALES)[number];
 
 export const LOCALE_META: Record<Lang, { nativeName: string; region: "Europe" | "Asia" }> = {
-  ru: { nativeName: "Русский", region: "Europe" },
-  lv: { nativeName: "Latviešu", region: "Europe" },
+  pl: { nativeName: "Polski", region: "Europe" },
   en: { nativeName: "English", region: "Europe" },
+  be: { nativeName: "Беларуская", region: "Europe" },
+  ru: { nativeName: "Русский", region: "Europe" },
+  kk: { nativeName: "Қазақша", region: "Asia" },
   uz: { nativeName: "O‘zbek", region: "Asia" },
-  kg: { nativeName: "Кыргызча", region: "Asia" },
-  ka: { nativeName: "ქართული", region: "Asia" },
-  kz: { nativeName: "Қазақша", region: "Asia" },
   tr: { nativeName: "Türkçe", region: "Asia" },
-  fa: { nativeName: "فارسی", region: "Asia" },
-  mn: { nativeName: "Монгол", region: "Asia" },
   hy: { nativeName: "Հայերեն", region: "Asia" },
+  ka: { nativeName: "ქართული", region: "Asia" },
+  fa: { nativeName: "فارسی", region: "Asia" },
+  
 };
 
 export interface HeaderDictionary {
@@ -39,8 +42,8 @@ export interface HeaderDictionary {
 
 export const headerDictionary: Record<Lang, HeaderDictionary> = {
   ru: {
-    brandTitle: "EURO polis",
-    brandSub: "Страхование для частных лиц и бизнеса",
+    brandTitle: "Green card agency",
+    brandSub: "Страхование для частных лиц",
     topContacts: "Контакты",
     topLangLabel: "Язык",
     nav: {
@@ -56,26 +59,26 @@ export const headerDictionary: Record<Lang, HeaderDictionary> = {
 
   },
 
-  lv: {
-    brandTitle: "EURO polis",
-    brandSub: "Apdrošināšana privātpersonām un uzņēmumiem",
-    topContacts: "Kontakti",
-    topLangLabel: "Valoda",
+  pl: {
+    brandTitle: "Green card agency",
+    brandSub: "Ubezpieczenia dla klientów indywidualnych",
+    topContacts: "Kontakt",
+    topLangLabel: "Język",
     nav: {
-      main: "Sākumlapa",
-      about: "Par mums",
-      contacts: "Kontakti",
+      main: "Strona główna",
+      about: "O nas",
+      contacts: "Kontakt",
     },
-    ctaCalc: "Kalkulators",
-    ctaBuy: "Iegādāties polisi",
-    menu: "Izvēlne",
-    languageDialogTitle: "Izvēlieties valodu",
-    languageDialogClose: "Aizvērt",
+    ctaCalc: "Kalkulator",
+    ctaBuy: "Kup polisę",
+    menu: "Menu",
+    languageDialogTitle: "Wybierz język",
+    languageDialogClose: "Zamknij",
   },
 
   en: {
-    brandTitle: "EURO polis",
-    brandSub: "Insurance for individuals and business",
+    brandTitle: "Green card agency",
+    brandSub: "Insurance for individuals",
     topContacts: "Contacts",
     topLangLabel: "Language",
     nav: {
@@ -90,9 +93,26 @@ export const headerDictionary: Record<Lang, HeaderDictionary> = {
     languageDialogClose: "Close",
   },
 
+  be: {
+    brandTitle: "Green card agency",
+    brandSub: "Страхаванне для фізічных асоб",
+    topContacts: "Кантакты",
+    topLangLabel: "Мова",
+    nav: {
+      main: "Галоўная",
+      about: "Пра нас",
+      contacts: "Кантакты",
+    },
+    ctaCalc: "Калькулятар",
+    ctaBuy: "Купіць поліс",
+    menu: "Меню",
+    languageDialogTitle: "Выберыце мову",
+    languageDialogClose: "Закрыць",
+  },
+
   uz: {
-    brandTitle: "EURO polis",
-    brandSub: "Jismoniy shaxslar va biznes uchun sug'urta",
+    brandTitle: "Green Card agentligi",
+    brandSub: "Jismoniy shaxslar uchun sug‘urta",
     topContacts: "Kontaktlar",
     topLangLabel: "Til",
     nav: {
@@ -106,26 +126,9 @@ export const headerDictionary: Record<Lang, HeaderDictionary> = {
     languageDialogTitle: "Tilni tanlang",
     languageDialogClose: "Yopish",
   },
-
-  kg: {
-    brandTitle: "EURO polis",
-    brandSub: "Жеке адамдар жана бизнес үчүн камсыздандыруу",
-    topContacts: "Байланыш",
-    topLangLabel: "Тил",
-    nav: {
-      main: "Башкы бет",
-      about: "Биз жөнүндө",
-      contacts: "Байланыш",
-    },
-    ctaCalc: "Калькулятор",
-    ctaBuy: "Полис сатып алуу",
-    menu: "Меню",
-    languageDialogTitle: "Тилди тандаңыз",
-    languageDialogClose: "Жабуу",
-  },
   ka: {
-    brandTitle: "EURO polis",
-    brandSub: "დაზღვევა კერძო პირებისთვის და ბიზნესისთვის",
+    brandTitle: "Green card agency",
+    brandSub: "დაზღვევა ფიზიკური პირებისთვის",
     topContacts: "კონტაქტები",
     topLangLabel: "ენა",
     nav: {
@@ -139,10 +142,10 @@ export const headerDictionary: Record<Lang, HeaderDictionary> = {
     languageDialogTitle: "აირჩიეთ ენა",
     languageDialogClose: "დახურვა",
   },
-  kz: {
-    brandTitle: "EURO polis",
-    brandSub: "Жеке тұлғалар мен бизнеске арналған сақтандыру",
-    topContacts: "Байланыс",
+  kk: {
+    brandTitle: "Green Card агенттігі",
+    brandSub: "Жеке тұлғаларға арналған сақтандыру",
+    topContacts: "Байланыстар",
     topLangLabel: "Тіл",
     nav: {
       main: "Басты бет",
@@ -150,31 +153,31 @@ export const headerDictionary: Record<Lang, HeaderDictionary> = {
       contacts: "Байланыс",
     },
     ctaCalc: "Калькулятор",
-    ctaBuy: "Полис сатып алу",
+    ctaBuy: "Полисті сатып алу",
     menu: "Мәзір",
     languageDialogTitle: "Тілді таңдаңыз",
     languageDialogClose: "Жабу",
   },
   tr: {
-    brandTitle: "EURO polis",
-    brandSub: "Bireyler ve işletmeler için sigorta",
+    brandTitle: "Yeşil Kart Acentesi",
+    brandSub: "Bireysel sigorta çözümleri",
     topContacts: "İletişim",
     topLangLabel: "Dil",
     nav: {
-      main: "Ana sayfa",
+      main: "Ana Sayfa",
       about: "Hakkımızda",
       contacts: "İletişim",
     },
     ctaCalc: "Hesaplayıcı",
-    ctaBuy: "Poliçe satın al",
+    ctaBuy: "Poliçe Satın Al",
     menu: "Menü",
-    languageDialogTitle: "Dil seçin",
+    languageDialogTitle: "Dil Seçin",
     languageDialogClose: "Kapat",
   },
   fa: {
-    brandTitle: "EURO polis",
-    brandSub: "بیمه برای افراد و کسب‌وکارها",
-    topContacts: "تماس‌ها",
+    brandTitle: "آژانس گرین کارت",
+    brandSub: "بیمه برای اشخاص حقیقی",
+    topContacts: "اطلاعات تماس",
     topLangLabel: "زبان",
     nav: {
       main: "صفحه اصلی",
@@ -184,29 +187,12 @@ export const headerDictionary: Record<Lang, HeaderDictionary> = {
     ctaCalc: "محاسبه‌گر",
     ctaBuy: "خرید بیمه‌نامه",
     menu: "منو",
-    languageDialogTitle: "زبان را انتخاب کنید",
+    languageDialogTitle: "انتخاب زبان",
     languageDialogClose: "بستن",
   },
-  mn: {
-    brandTitle: "EURO polis",
-    brandSub: "Хувь хүн болон бизнесийн даатгал",
-    topContacts: "Холбоо барих",
-    topLangLabel: "Хэл",
-    nav: {
-      main: "Нүүр",
-      about: "Бидний тухай",
-      contacts: "Холбоо барих",
-    },
-    ctaCalc: "Тооцоолуур",
-    ctaBuy: "Даатгалын полис авах",
-    menu: "Цэс",
-    languageDialogTitle: "Хэл сонгох",
-    languageDialogClose: "Хаах",
-  },
-
   hy: {
-    brandTitle: "EURO polis",
-    brandSub: "Ապահովագրություն անհատների և բիզնեսի համար",
+    brandTitle: "Green card agency",
+    brandSub: "Ապահովագրություն ֆիզիկական անձանց համար",
     topContacts: "Կոնտակտներ",
     topLangLabel: "Լեզու",
     nav: {

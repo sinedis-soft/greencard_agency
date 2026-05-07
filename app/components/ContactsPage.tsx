@@ -6,43 +6,40 @@ import { keepShortWords } from "@/app/utils/typography";
 
 const titles: Record<Lang, string> = {
   ru: "Контакты",
-  lv: "Kontakti",
+  pl: "Kontakt",
   en: "Contacts",
+  be: "Кантакты",
   uz: "Kontaktlar",
-  kg: "Байланыш",
   ka: "კონტაქტები",
-  kz: "Байланыс",
+  kk: "Байланыс",
   tr: "İletişim",
   fa: "تماس با ما",
-  mn: "Холбоо барих",
   hy: "Կոնտակտներ",
 };
 
 const intro: Record<Lang, string> = {
   ru: "Свяжитесь с нами удобным для вас способом.",
-  lv: "Sazinieties ar mums jums ērtā veidā.",
+  pl: "Skontaktuj się z nami w wygodny dla Państwa sposób.",
   en: "Contact us in any convenient way.",
+  be: "Звяжыцеся з намі зручным для вас спосабам.",
   uz: "Biz bilan o'zingizga qulay usulda bog'laning.",
-  kg: "Биз менен өзүңүзгө ыңгайлуу жол менен байланышыңыз.",
   ka: "დაგვიკავშირდით თქვენთვის ხელსაყრელი ნებისმიერი ფორმით.",
-  kz: "Бізге өзіңізге ыңғайлы тәсілмен хабарласыңыз.",
+  kk: "Бізге өзіңізге ыңғайлы тәсілмен хабарласыңыз.",
   tr: "Bize size en uygun yoldan ulaşın.",
   fa: "از هر طریقی که برایتان راحت‌تر است با ما تماس بگیرید.",
-  mn: "Өөрт тохиромжтой хэлбэрээр бидэнтэй холбогдоорой.",
   hy: "Կապվեք մեզ հետ ձեզ հարմար ցանկացած տարբերակով:"
 };
 
 const labels: Record<Lang, { phone: string; email: string }> = {
   ru: { phone: "Телефон", email: "E-mail" },
-  lv: { phone: "Tālrunis", email: "E-pasts" },
+  pl: { phone: "Telefon", email: "E-mail" },
   en: { phone: "Phone", email: "E-mail" },
+  be: { phone: "Тэлефон", email: "E-mail" },
   uz: { phone: "Telefon", email: "E-mail" },
-  kg: { phone: "Телефон", email: "E-mail" },
   ka: { phone: "ტელეფონი", email: "ელ-ფოსტა" },
-  kz: { phone: "Телефон", email: "Электрондық пошта" },
+  kk: { phone: "Телефон", email: "Электрондық пошта" },
   tr: { phone: "Telefon", email: "E-posta" },
   fa: { phone: "تلفن", email: "ایمیل" },
-  mn: { phone: "Утас", email: "Имэйл" },
   hy: { phone: "Հեռախոս", email: "Էլ. փոստ" },
 };
 
@@ -64,12 +61,12 @@ export default function ContactsPage({ lang }: { lang: Lang }) {
           <div className="panel">
             <div className="panel__body">
 
-              <p className="section__desc" style={{ margin: "0 0 10px", fontWeight: 700 }}>Rižova Ludmila</p>
+              <p className="section__desc" style={{ margin: "0 0 10px", fontWeight: 700 }}>SINEDIS SP. Z O.O.</p>
               <p className="section__desc" style={{ margin: "0 0 10px" }}>
-                {labels[lang].phone}: <a href="tel:+37122355307">+371 22355307</a>
+                {labels[lang].phone}: <a href="tel:+48573581333">+48 573 581 333</a>
               </p>
               <p className="section__desc" style={{ margin: 0 }}>
-                {labels[lang].email}: <a href="mailto:ludmila.rizova@ergo.lv">ludmila.rizova@ergo.lv</a>
+                {labels[lang].email}: <a href="mailto:europolis@greencard.agency">europolis@greencard.agency</a>
               </p>
 
             </div>

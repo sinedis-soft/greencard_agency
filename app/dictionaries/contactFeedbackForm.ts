@@ -26,34 +26,47 @@ const ru: ContactFeedbackFormDictionary = {
   error: "Не удалось отправить форму. Попробуйте позже.",
 };
 
-const lv: ContactFeedbackFormDictionary = {
-  title: "Atgriezeniskās saites forma",
-  firstName: "Vārds",
-  lastName: "Uzvārds",
-  phone: "Tālrunis",
-  email: "E-pasts",
-  comment: "Komentārs",
-  submit: "Nosūtīt",
-  sending: "Nosūtīšana...",
-  ok: "Ziņojums nosūtīts. Drīzumā ar jums sazināsimies.",
-  error: "Neizdevās nosūtīt formu. Mēģiniet vēlāk.",
+const pl: ContactFeedbackFormDictionary = {
+  title: "Formularz kontaktowy",
+  firstName: "Imię",
+  lastName: "Nazwisko",
+  phone: "Telefon",
+  email: "E-mail",
+  comment: "Komentarz",
+  submit: "Wyślij",
+  sending: "Wysyłanie...",
+  ok: "Wiadomość została wysłana. Skontaktujemy się z Państwem wkrótce.",
+  error: "Nie udało się wysłać formularza. Prosimy spróbować ponownie później.",
 };
 
 const en: ContactFeedbackFormDictionary = {
-  title: "Feedback form",
-  firstName: "First name",
-  lastName: "Last name",
+  title: "Contact Form",
+  firstName: "First Name",
+  lastName: "Last Name",
   phone: "Phone",
   email: "E-mail",
   comment: "Comment",
-  submit: "Send",
+  submit: "Submit",
   sending: "Sending...",
-  ok: "Message sent. We will contact you soon.",
-  error: "Failed to send the form. Try again later.",
+  ok: "Your message has been sent. We will contact you shortly.",
+  error: "Unable to send the form. Please try again later.",
+};
+
+const be: ContactFeedbackFormDictionary = {
+  title: "Форма зваротнай сувязі",
+  firstName: "Імя",
+  lastName: "Прозвішча",
+  phone: "Тэлефон",
+  email: "E-mail",
+  comment: "Каментарый",
+  submit: "Адправіць",
+  sending: "Адпраўка...",
+  ok: "Паведамленне адпраўлена. Мы хутка звяжамся з вамі.",
+  error: "Не ўдалося адправіць форму. Паспрабуйце пазней.",
 };
 
 const uz: ContactFeedbackFormDictionary = {
-  title: "Qayta aloqa formasi",
+  title: "Qayta aloqa shakli",
   firstName: "Ism",
   lastName: "Familiya",
   phone: "Telefon",
@@ -62,20 +75,7 @@ const uz: ContactFeedbackFormDictionary = {
   submit: "Yuborish",
   sending: "Yuborilmoqda...",
   ok: "Xabar yuborildi. Tez orada siz bilan bog‘lanamiz.",
-  error: "Formani yuborib bo‘lmadi. Keyinroq urinib ko‘ring.",
-};
-
-const kg: ContactFeedbackFormDictionary = {
-  title: "Кайтарым байланыш формасы",
-  firstName: "Аты",
-  lastName: "Фамилиясы",
-  phone: "Телефон",
-  email: "E-mail",
-  comment: "Комментарий",
-  submit: "Жөнөтүү",
-  sending: "Жөнөтүлүүдө...",
-  ok: "Билдирүү жөнөтүлдү. Жакында сиз менен байланышабыз.",
-  error: "Форманы жөнөтүү мүмкүн болгон жок. Кийинчерээк кайра аракет кылыңыз.",
+  error: "Shaklni yuborib bo‘lmadi. Keyinroq qayta urinib ko‘ring.",
 };
 
 const ka: ContactFeedbackFormDictionary = {
@@ -83,64 +83,51 @@ const ka: ContactFeedbackFormDictionary = {
   firstName: "სახელი",
   lastName: "გვარი",
   phone: "ტელეფონი",
-  email: "ელ-ფოსტა",
+  email: "E-mail",
   comment: "კომენტარი",
   submit: "გაგზავნა",
   sending: "იგზავნება...",
-  ok: "შეტყობინება გაგზავნილია. მალე დაგიკავშირდებით.",
+  ok: "შეტყობინება წარმატებით გაიგზავნა. მალე დაგიკავშირდებით.",
   error: "ფორმის გაგზავნა ვერ მოხერხდა. სცადეთ მოგვიანებით.",
 };
 
-const kz: ContactFeedbackFormDictionary = {
-  title: "Кері байланыс формасы",
+const kk: ContactFeedbackFormDictionary = {
+  title: "Кері байланыс нысаны",
   firstName: "Аты",
   lastName: "Тегі",
   phone: "Телефон",
   email: "E-mail",
-  comment: "Пікір",
+  comment: "Түсініктеме",
   submit: "Жіберу",
   sending: "Жіберілуде...",
-  ok: "Хабарлама жіберілді. Жақын уақытта сізбен байланысамыз.",
-  error: "Форманы жіберу мүмкін болмады. Кейінірек қайталап көріңіз.",
+  ok: "Хабарлама жіберілді. Жақын арада сізбен хабарласамыз.",
+  error: "Нысанды жіберу мүмкін болмады. Кейінірек қайталап көріңіз.",
 };
 
 const tr: ContactFeedbackFormDictionary = {
-  title: "İletişim formu",
+  title: "İletişim Formu",
   firstName: "Ad",
   lastName: "Soyad",
   phone: "Telefon",
   email: "E-posta",
-  comment: "Mesaj",
+  comment: "Yorum",
   submit: "Gönder",
   sending: "Gönderiliyor...",
-  ok: "Mesaj gönderildi. Kısa süre içinde sizinle iletişime geçeceğiz.",
+  ok: "Mesajınız gönderildi. En kısa sürede sizinle iletişime geçeceğiz.",
   error: "Form gönderilemedi. Lütfen daha sonra tekrar deneyin.",
 };
 
 const fa: ContactFeedbackFormDictionary = {
-  title: "فرم تماس",
+  title: "فرم بازخورد",
   firstName: "نام",
   lastName: "نام خانوادگی",
-  phone: "تلفن",
+  phone: "شماره تلفن",
   email: "ایمیل",
-  comment: "پیام",
+  comment: "توضیحات",
   submit: "ارسال",
   sending: "در حال ارسال...",
-  ok: "پیام ارسال شد. به‌زودی با شما تماس می‌گیریم.",
-  error: "ارسال فرم انجام نشد. لطفاً بعداً دوباره تلاش کنید.",
-};
-
-const mn: ContactFeedbackFormDictionary = {
-  title: "Буцах холбооны маягт",
-  firstName: "Нэр",
-  lastName: "Овог",
-  phone: "Утас",
-  email: "И-мэйл",
-  comment: "Сэтгэгдэл",
-  submit: "Илгээх",
-  sending: "Илгээж байна...",
-  ok: "Мессеж илгээгдлээ. Бид удахгүй тантай холбогдоно.",
-  error: "Маягтыг илгээж чадсангүй. Дараа дахин оролдоно уу.",
+  ok: "پیام با موفقیت ارسال شد. به‌زودی با شما تماس خواهیم گرفت.",
+  error: "ارسال فرم امکان‌پذیر نبود. لطفاً بعداً دوباره تلاش کنید.",
 };
 
 const hy: ContactFeedbackFormDictionary = {
@@ -148,25 +135,24 @@ const hy: ContactFeedbackFormDictionary = {
   firstName: "Անուն",
   lastName: "Ազգանուն",
   phone: "Հեռախոս",
-  email: "Էլ. փոստ",
+  email: "E-mail",
   comment: "Մեկնաբանություն",
   submit: "Ուղարկել",
   sending: "Ուղարկվում է...",
-  ok: "Հաղորդագրությունը ուղարկվել է։ Մենք շուտով կկապվենք ձեզ հետ։",
-  error: "Չհաջողվեց ուղարկել ձևը։ Փորձեք ավելի ուշ։",
+  ok: "Հաղորդագրությունն ուղարկվել է։ Մենք շուտով կկապվենք ձեզ հետ։",
+  error: "Չհաջողվեց ուղարկել ձևը։ Խնդրում ենք փորձել ավելի ուշ։",
 };
 
 const dictionaries: Partial<Record<Lang, ContactFeedbackFormDictionary>> = {
   ru,
-  lv,
+  pl,
   en,
+  be,
   uz,
-  kg,
   ka,
-  kz,
+  kk,
   tr,
   fa,
-  mn,
   hy,
 };
 

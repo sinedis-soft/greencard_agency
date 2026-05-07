@@ -12,13 +12,13 @@ export type PriceVehicle =
 export type PriceTerm = "30" | "60" | "90" | "180" | "365";
 
 export const PRICES_EUR: Record<PriceVehicle, Partial<Record<PriceTerm, number>>> = {
-  car: { "30": 54.17, "60": 104.17, "90": 150, "180": 265.5, "365": 500 },
-  van: { "30": 541.67, "60": 1041.67, "90": 1500, "180": 2625, "365": 5000 },
-  bus: { "30": 541.67, "60": 1041.67, "90": 1500, "180": 2625, "365": 5000 },
-  truck: { "30": 100, "60": 200, "90": 300, "180": 0, "365": 0 },
-  trailer: { "30": 15, "60": 30, "90": 45, "180": 100, "365": 200 },
-  special: { "30": 43.33, "60": 83.33, "90": 120, "180": 210, "365": 400 },
-  moto: { "30": 43.33, "60": 83.33, "90": 120, "180": 210, "365": 400 },
+  car: { "30": 157.50, "60": 256.20, "90": 429.45, "180": 729.75, "365": 991.20 },
+  van: { "30": 966.00, "60": 1932, "90": 2898.00, "180": 5796.00, "365": 11721.15 },
+  bus: { "30": 966.00, "60": 1932, "90": 2898.00, "180": 5796.00, "365": 11721.15 },
+  truck: {  "30": 1617,  "60": 3234,  "90": 4851,  "180": 9702,  "365": 19619,},
+  trailer: {  "30": 357,  "60": 714,  "90": 1071,  "180": 2142,  "365": 4331,},
+  special: {  "30": 966,  "60": 1932,  "90": 2898,  "180": 5796,  "365": 11721,},
+  moto: { "30": 262.50, "60": 525, "90": 787.50, "180": 1575.00, "365": 3184.65 },
 };
 
 export function getPolicyPrice(vehicle: string, term: string): number | null {
@@ -29,6 +29,15 @@ export function getPolicyPrice(vehicle: string, term: string): number | null {
   return price;
 }
 
-export function formatEUR(value: number): string {
-  return `€ ${value.toFixed(2)}`;
+export function formatCurrency(
+  value: number,
+  currency: "PLN" | "EUR" = "PLN",
+  locale = "pl-PL"
+) {
+  return new Intl.NumberFormat(locale, {
+    style: "currency",
+    currency,
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  }).format(value);
 }

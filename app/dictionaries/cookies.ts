@@ -43,146 +43,190 @@ const RU: CookieDictionary = {
   closeAria: "Закрыть",
 };
 
-const LV: CookieDictionary = {
-  manageBtn: "Sīkdatnes",
-  modalTitle: "Sīkdatņu iestatījumi",
-  modalText: "Izvēlieties, kuras sīkdatnes drīkst izmantot. Nepieciešamās sīkdatnes vienmēr ir aktīvas.",
-  categoriesTitle: "Kategorijas",
+const PL: CookieDictionary = {
+  manageBtn: "Cookie",
+  modalTitle: "Ustawienia plików cookie",
+  modalText:
+    "Wybierz, które pliki cookie mogą być używane. Niezbędne pliki cookie są zawsze aktywne.",
+  categoriesTitle: "Kategorie",
   categories: [
-    { key: "necessary", title: "Nepieciešamās", description: "Nepieciešamas vietnes darbībai un drošībai. Tās nevar atslēgt.", locked: true },
-    { key: "functional", title: "Funkcionālās", description: "Saglabā lietotāja iestatījumus un nodrošina atsevišķu funkciju korektu darbību." },
-    { key: "marketing", title: "Analītiskās", description: "Palīdz, izmantojot anonīmu statistiku, uzlabot vietnes lietošanas ērtumu, kā arī pilnveidot produktus un pakalpojumus." },
+    {
+      key: "necessary",
+      title: "Niezbędne",
+      description:
+        "Są wymagane do prawidłowego działania strony oraz zapewnienia bezpieczeństwa. Nie można ich wyłączyć.",
+      locked: true,
+    },
+    {
+      key: "functional",
+      title: "Funkcjonalne",
+      description:
+        "Zapamiętują ustawienia interfejsu i wspierają prawidłowe działanie wybranych funkcji.",
+    },
+    {
+      key: "marketing",
+      title: "Analityczne",
+      description:
+        "Pomagają ulepszać wygodę korzystania ze strony oraz rozwijać produkty i usługi na podstawie anonimowych danych statystycznych.",
+    },
   ],
-  policyText: "Plašāk —",
-  policyLabel: "sīkdatņu politikā",
+  policyText: "Więcej informacji znajduje się w",
+  policyLabel: "polityce cookie",
   policyHref: "/cookiepolicy",
-  saveBtn: "Saglabāt",
-  acceptAllBtn: "Pieņemt visas",
-  rejectAllBtn: "Noraidīt nebūtiskās",
-  closeAria: "Aizvērt",
+  saveBtn: "Zapisz",
+  acceptAllBtn: "Akceptuj wszystkie",
+  rejectAllBtn: "Odrzuć opcjonalne",
+  closeAria: "Zamknij",
 };
 
 const EN: CookieDictionary = {
   manageBtn: "Cookies",
-  modalTitle: "Cookie settings",
-  modalText: "Choose which cookies you allow us to use. Necessary cookies are always enabled.",
+  modalTitle: "Cookie Settings",
+  modalText:
+    "Select which cookies may be used. Necessary cookies are always enabled.",
   categoriesTitle: "Categories",
   categories: [
     {
       key: "necessary",
       title: "Necessary",
-      description: "Required for the website to function properly and for security purposes. Cannot be disabled.",
+      description:
+        "Required for website functionality and security. These cookies cannot be disabled.",
       locked: true,
     },
     {
       key: "functional",
       title: "Functional",
-      description: "Remember your preferences and support certain website features.",
+      description:
+        "Remember interface preferences and support the proper operation of certain website features.",
     },
     {
       key: "marketing",
       title: "Analytics",
-      description: "Help us improve the website, products, and services through anonymous usage statistics.",
+      description:
+        "Help improve website usability, products, and services through anonymous statistical analysis.",
     },
   ],
-  policyText: "Learn more in the",
+  policyText: "For more information, see the",
   policyLabel: "Cookie Policy",
   policyHref: "/cookiepolicy",
   saveBtn: "Save",
-  acceptAllBtn: "Accept all",
-  rejectAllBtn: "Reject non-essential",
+  acceptAllBtn: "Accept All",
+  rejectAllBtn: "Reject Optional Cookies",
   closeAria: "Close",
 };
 
-const UZ: CookieDictionary = {
+const BE: CookieDictionary = {
   manageBtn: "Cookie",
-  modalTitle: "Cookie sozlamalari",
-  modalText: "Qaysi cookie fayllardan foydalanishga ruxsat berishni tanlang. Zarur cookie fayllar har doim yoqilgan bo‘ladi.",
-  categoriesTitle: "Toifalar",
+  modalTitle: "Налады cookie",
+  modalText:
+    "Выберыце, якія cookie-файлы можна выкарыстоўваць. Неабходныя — заўсёды ўключаныя.",
+  categoriesTitle: "Катэгорыі",
   categories: [
     {
       key: "necessary",
-      title: "Zarur",
-      description: "Saytning ishlashi va xavfsizligi uchun kerak. O‘chirib bo‘lmaydi.",
-      locked: true
-    },
-    {
-      key: "functional",
-      title: "Funktsional",
-      description: "Interfeys sozlamalarini eslab qoladi va ayrim funksiyalarning to‘g‘ri ishlashiga yordam beradi."
-    },
-    {
-      key: "marketing",
-      title: "Analitik",
-      description: "Anonim statistika orqali sayt qulayligini oshirishga, mahsulot va xizmatlarni takomillashtirishga yordam beradi."
-    },
-  ],
-  policyText: "Batafsil —",
-  policyLabel: "cookie siyosatida",
-  policyHref: "/cookiepolicy",
-  saveBtn: "Saqlash",
-  acceptAllBtn: "Barchasini qabul qilish",
-  rejectAllBtn: "Ixtiyoriylarini rad etish",
-  closeAria: "Yopish",
-};
-
-const KY: CookieDictionary = {
-  manageBtn: "Cookie",
-  modalTitle: "Cookie жөндөөлөрү",
-  modalText: "Кайсы cookie колдонууга уруксат берериңизди тандаңыз. Зарыл болгон cookie — дайыма иштетилген.",
-  categoriesTitle: "Категориялар",
-  categories: [
-    {
-      key: "necessary",
-      title: "Зарыл",
-      description: "Сайттын иштеши жана коопсуздугу үчүн керек. Өчүрүүгө болбойт.",
+      title: "Неабходныя",
+      description:
+        "Патрэбныя для працы сайта і забеспячэння бяспекі. Адключыць немагчыма.",
       locked: true,
     },
     {
       key: "functional",
-      title: "Функционалдык",
-      description: "Интерфейс жөндөөлөрүн сактайт жана айрым функциялардын туура иштешине жардам берет.",
+      title: "Функцыянальныя",
+      description:
+        "Запамінаюць налады інтэрфейсу і дапамагаюць карэктнай працы асобных функцый.",
     },
     {
       key: "marketing",
-      title: "Аналитикалык",
-      description: "Анонимдүү статистика аркылуу сайтты колдонуу ыңгайлуулугун жакшыртууга, ошондой эле продукттарды жана кызматтарды өнүктүрүүгө жардам берет.",
+      title: "Аналітычныя",
+      description:
+        "Дапамагаюць праз ананімную статыстыку паляпшаць зручнасць выкарыстання сайта, удасканальваць прадукты і паслугі.",
     },
   ],
-  policyText: "Толугураак маалымат —",
-  policyLabel: "cookie саясаты",
+  policyText: "Падрабязней — у",
+  policyLabel: "палітыцы cookie",
   policyHref: "/cookiepolicy",
-  saveBtn: "Сактоо",
-  acceptAllBtn: "Баарын кабыл алуу",
-  rejectAllBtn: "Милдеттүү эмес cookie’лерди четке кагуу",
-  closeAria: "Жабуу",
+  saveBtn: "Захаваць",
+  acceptAllBtn: "Прыняць усе",
+  rejectAllBtn: "Адхіліць неабавязковыя",
+  closeAria: "Закрыць",
+};
+
+const UZ: CookieDictionary = {
+  manageBtn: "Cookie",
+
+  modalTitle: "Cookie sozlamalari",
+
+  modalText:
+    "Qaysi cookie-fayllardan foydalanishga ruxsat berilishini tanlang. Zarur cookie-fayllar har doim yoqilgan bo‘ladi.",
+
+  categoriesTitle: "Kategoriyalar",
+
+  categories: [
+    {
+      key: "necessary",
+      title: "Zarur",
+      description:
+        "Saytning ishlashi va xavfsizligi uchun kerak. O‘chirib bo‘lmaydi.",
+      locked: true,
+    },
+    {
+      key: "functional",
+      title: "Funktsional",
+      description:
+        "Interfeys sozlamalarini eslab qoladi va ayrim funksiyalarning to‘g‘ri ishlashiga yordam beradi.",
+    },
+    {
+      key: "marketing",
+      title: "Analitik",
+      description:
+        "Anonim statistika orqali sayt qulayligini yaxshilash, mahsulot va xizmatlarni takomillashtirishga yordam beradi.",
+    },
+  ],
+
+  policyText: "Batafsil ma’lumot —",
+
+  policyLabel: "cookie siyosatida",
+
+  policyHref: "/cookiepolicy",
+
+  saveBtn: "Saqlash",
+
+  acceptAllBtn: "Barchasini qabul qilish",
+
+  rejectAllBtn: "Majburiy bo‘lmaganlarini rad etish",
+
+  closeAria: "Yopish",
 };
 
 const KA: CookieDictionary = {
   manageBtn: "Cookie",
-  modalTitle: "Cookie პარამეტრები",
-  modalText: "აირჩიეთ, რომელი cookie-ების გამოყენებას ეთანხმებით. აუცილებელი cookie-ები ყოველთვის ჩართულია.",
+  modalTitle: "Cookie-ფაილების პარამეტრები",
+  modalText:
+    "აირჩიეთ, რომელი cookie-ფაილების გამოყენებაა დაშვებული. აუცილებელი cookie-ფაილები ყოველთვის ჩართულია.",
   categoriesTitle: "კატეგორიები",
   categories: [
     {
       key: "necessary",
       title: "აუცილებელი",
-      description: "საჭიროა საიტის მუშაობისა და უსაფრთხოებისთვის. მათი გამორთვა შეუძლებელია.",
+      description:
+        "საჭიროა ვებგვერდის ფუნქციონირებისა და უსაფრთხოების უზრუნველსაყოფად. მათი გამორთვა შეუძლებელია.",
       locked: true,
     },
     {
       key: "functional",
       title: "ფუნქციური",
-      description: "იმახსოვრებს ინტერფეისის პარამეტრებს და უზრუნველყოფს ცალკეული ფუნქციების სწორ მუშაობას.",
+      description:
+        "იმახსოვრებს ინტერფეისის პარამეტრებს და უზრუნველყოფს ცალკეული ფუნქციების სწორ მუშაობას.",
     },
     {
       key: "marketing",
       title: "ანალიტიკური",
-      description: "ანონიმური სტატისტიკის საფუძველზე გვეხმარება საიტის მოხმარების გაუმჯობესებაში და პროდუქტებისა და სერვისების განვითარებაში.",
+      description:
+        "ანონიმური სტატისტიკის მეშვეობით გვეხმარება ვებგვერდის გამოყენების კომფორტის, პროდუქტებისა და მომსახურებების გაუმჯობესებაში.",
     },
   ],
-  policyText: "დეტალურად —",
-  policyLabel: "cookie პოლიტიკაში",
+  policyText: "დეტალური ინფორმაცია —",
+  policyLabel: "cookie-ფაილების პოლიტიკაში",
   policyHref: "/cookiepolicy",
   saveBtn: "შენახვა",
   acceptAllBtn: "ყველას მიღება",
@@ -190,27 +234,31 @@ const KA: CookieDictionary = {
   closeAria: "დახურვა",
 };
 
-const KZ: CookieDictionary = {
+const KK: CookieDictionary = {
   manageBtn: "Cookie",
   modalTitle: "Cookie баптаулары",
-  modalText: "Қай cookie түрлерін қолдануға болатынын таңдаңыз. Қажеттілері әрқашан қосулы болады.",
+  modalText:
+    "Қандай cookie файлдарын пайдалануға рұқсат берілетінін таңдаңыз. Міндетті cookie файлдары әрдайым қосулы болады.",
   categoriesTitle: "Санаттар",
   categories: [
     {
       key: "necessary",
-      title: "Қажетті",
-      description: "Сайттың дұрыс жұмыс істеуі мен қауіпсіздігі үшін қажет. Өшіруге болмайды.",
+      title: "Міндетті",
+      description:
+        "Сайттың жұмысы мен қауіпсіздігі үшін қажет. Өшіру мүмкін емес.",
       locked: true,
     },
     {
       key: "functional",
       title: "Функционалдық",
-      description: "Интерфейс баптауларын сақтайды және кейбір функциялардың дұрыс жұмыс істеуіне көмектеседі.",
+      description:
+        "Интерфейс баптауларын сақтайды және жекелеген функциялардың дұрыс жұмыс істеуіне көмектеседі.",
     },
     {
       key: "marketing",
-      title: "Аналитикалық",
-      description: "Анонимді статистика арқылы сайттың ыңғайлылығын арттыруға, өнімдер мен қызметтерді жетілдіруге көмектеседі.",
+      title: "Талдамалық",
+      description:
+        "Анонимді статистика арқылы сайтты пайдалану ыңғайлылығын жақсартуға, өнімдер мен қызметтерді жетілдіруге көмектеседі.",
     },
   ],
   policyText: "Толығырақ —",
@@ -218,54 +266,75 @@ const KZ: CookieDictionary = {
   policyHref: "/cookiepolicy",
   saveBtn: "Сақтау",
   acceptAllBtn: "Барлығын қабылдау",
-  rejectAllBtn: "Міндетті емес cookie-лерден бас тарту",
+  rejectAllBtn: "Міндетті емес файлдарды қабылдамау",
   closeAria: "Жабу",
 };
 
 const TR: CookieDictionary = {
   manageBtn: "Çerezler",
-  modalTitle: "Çerez ayarları",
-  modalText: "Hangi çerezlerin kullanılacağını seçin. Zorunlu olanlar her zaman aktiftir.",
+  modalTitle: "Çerez Ayarları",
+  modalText:
+    "Hangi çerezlerin kullanılabileceğini seçin. Zorunlu çerezler her zaman etkin durumdadır.",
   categoriesTitle: "Kategoriler",
   categories: [
-    { key: "necessary", title: "Zorunlu", description: "Sitenin çalışması ve güvenliği için gereklidir. Devre dışı bırakılamaz.", locked: true },
-    { key: "functional", title: "Fonksiyonel", description: "Arayüz tercihlerini hatırlar ve bazı özelliklerin düzgün çalışmasını sağlar." },
-    { key: "marketing", title: "Analitik", description: "Anonim istatistikler aracılığıyla kullanıcı deneyimini iyileştirmeye, ürün ve hizmetleri geliştirmeye yardımcı olur." },
+    {
+      key: "necessary",
+      title: "Zorunlu",
+      description:
+        "Web sitesinin çalışması ve güvenliği için gereklidir. Devre dışı bırakılamaz.",
+      locked: true,
+    },
+    {
+      key: "functional",
+      title: "İşlevsel",
+      description:
+        "Arayüz ayarlarını hatırlar ve belirli işlevlerin düzgün çalışmasına yardımcı olur.",
+    },
+    {
+      key: "marketing",
+      title: "Analitik",
+      description:
+        "Anonim istatistikler aracılığıyla site kullanım kolaylığını, ürünleri ve hizmetleri geliştirmeye yardımcı olur.",
+    },
   ],
   policyText: "Daha fazla bilgi için",
-  policyLabel: "çerez politikası",
+  policyLabel: "Çerez Politikası",
   policyHref: "/cookiepolicy",
   saveBtn: "Kaydet",
-  acceptAllBtn: "Tümünü kabul et",
-  rejectAllBtn: "Zorunlu olmayanları reddet",
+  acceptAllBtn: "Tümünü Kabul Et",
+  rejectAllBtn: "Zorunlu Olmayanları Reddet",
   closeAria: "Kapat",
 };
 
 const FA: CookieDictionary = {
   manageBtn: "کوکی‌ها",
   modalTitle: "تنظیمات کوکی",
-  modalText: "انتخاب کنید کدام کوکی‌ها استفاده شوند. کوکی‌های ضروری همیشه فعال هستند.",
+  modalText:
+    "انتخاب کنید کدام کوکی‌ها مجاز به استفاده باشند. کوکی‌های ضروری همیشه فعال هستند.",
   categoriesTitle: "دسته‌بندی‌ها",
   categories: [
     {
       key: "necessary",
       title: "ضروری",
-      description: "برای عملکرد صحیح سایت و امنیت لازم هستند و امکان غیرفعال‌سازی ندارند.",
-      locked: true
+      description:
+        "برای عملکرد صحیح وب‌سایت و حفظ امنیت لازم هستند. غیرفعال‌سازی آن‌ها امکان‌پذیر نیست.",
+      locked: true,
     },
     {
       key: "functional",
       title: "عملکردی",
-      description: "تنظیمات شما را ذخیره می‌کنند و به اجرای صحیح برخی قابلیت‌ها کمک می‌کنند."
+      description:
+        "تنظیمات رابط کاربری را ذخیره می‌کنند و به عملکرد صحیح برخی قابلیت‌ها کمک می‌کنند.",
     },
     {
       key: "marketing",
       title: "تحلیلی",
-      description: "با استفاده از آمار ناشناس به بهبود تجربه کاربری و توسعه خدمات کمک می‌کنند."
+      description:
+        "از طریق آمار ناشناس به بهبود سهولت استفاده از وب‌سایت و توسعه خدمات و محصولات کمک می‌کنند.",
     },
   ],
   policyText: "اطلاعات بیشتر در",
-  policyLabel: "سیاست کوکی",
+  policyLabel: "سیاست کوکی‌ها",
   policyHref: "/cookiepolicy",
   saveBtn: "ذخیره",
   acceptAllBtn: "پذیرفتن همه",
@@ -273,46 +342,31 @@ const FA: CookieDictionary = {
   closeAria: "بستن",
 };
 
-const MN: CookieDictionary = {
-  manageBtn: "Cookie",
-  modalTitle: "Cookie тохиргоо",
-  modalText: "Ямар cookie ашиглахыг сонгоно уу. Заавал шаардлагатай cookie нь үргэлж идэвхтэй байна.",
-  categoriesTitle: "Ангиллууд",
-  categories: [
-    { key: "necessary", title: "Шаардлагатай", description: "Сайтын хэвийн ажиллагаа болон аюулгүй байдалд шаардлагатай. Унтраах боломжгүй.", locked: true },
-    { key: "functional", title: "Функциональ", description: "Интерфэйсийн тохиргоог санаж, зарим функцүүдийг зөв ажиллуулахад тусалдаг." },
-    { key: "marketing", title: "Аналитик", description: "Аноним статистикийн тусламжтайгаар сайтын ашиглахад хялбар байдлыг сайжруулах, бүтээгдэхүүн үйлчилгээний чанарыг дээшлүүлэхэд ашиглагддаг." },
-  ],
-  policyText: "Дэлгэрэнгүйг",
-  policyLabel: "cookie бодлогоос",
-  policyHref: "/cookiepolicy",
-  saveBtn: "Хадгалах",
-  acceptAllBtn: "Бүгдийг зөвшөөрөх",
-  rejectAllBtn: "Шаардлагагүйг татгалзах",
-  closeAria: "Хаах",
-};
-
 const HY: CookieDictionary = {
-  manageBtn: "Cookie-ներ",
+  manageBtn: "Cookie",
   modalTitle: "Cookie-ների կարգավորումներ",
-  modalText: "Ընտրեք, թե որ cookie-ներն եք թույլատրում օգտագործել։ Անհրաժեշտները միշտ միացված են։",
+  modalText:
+    "Ընտրեք, թե որ cookie-ները կարող են օգտագործվել։ Անհրաժեշտ cookie-ները միշտ ակտիվ են։",
   categoriesTitle: "Կատեգորիաներ",
   categories: [
     {
       key: "necessary",
       title: "Անհրաժեշտ",
-      description: "Պահանջվում են կայքի աշխատանքի և անվտանգության համար։ Անջատել հնարավոր չէ։",
-      locked: true
+      description:
+        "Անհրաժեշտ են կայքի աշխատանքի և անվտանգության ապահովման համար։ Անջատել հնարավոր չէ։",
+      locked: true,
     },
     {
       key: "functional",
       title: "Ֆունկցիոնալ",
-      description: "Հիշում են ինտերֆեյսի կարգավորումները և ապահովում են առանձին ֆունկցիաների ճիշտ աշխատանքը։"
+      description:
+        "Հիշում են ինտերֆեյսի կարգավորումները և աջակցում առանձին գործառույթների ճիշտ աշխատանքին։",
     },
     {
       key: "marketing",
       title: "Վերլուծական",
-      description: "Օգնում են անանուն վիճակագրության միջոցով բարելավել կայքի օգտագործման հարմարավետությունը, ինչպես նաև զարգացնել ծառայություններն ու առաջարկները։"
+      description:
+        "Օգնում են անանուն վիճակագրության միջոցով բարելավել կայքի օգտագործման հարմարավետությունը, կատարելագործել արտադրանքներն ու ծառայությունները։",
     },
   ],
   policyText: "Ավելին՝",
@@ -324,7 +378,7 @@ const HY: CookieDictionary = {
   closeAria: "Փակել",
 };
 
-const COOKIE_DICTIONARY: Record<Lang, CookieDictionary> = { ru: RU, en: EN, lv: LV, uz: UZ, kg: KY, ka: KA, kz:KZ, tr:TR, fa: FA, mn: MN, hy: HY };
+const COOKIE_DICTIONARY: Record<Lang, CookieDictionary> = { ru: RU, en: EN, pl: PL, be: BE, uz: UZ, ka: KA, kk:KK, tr:TR, fa: FA, hy: HY };
 
 export function getCookieDictionary(lang: Lang): CookieDictionary {
   return COOKIE_DICTIONARY[lang] ?? COOKIE_DICTIONARY.ru;

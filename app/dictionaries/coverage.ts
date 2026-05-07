@@ -36,23 +36,25 @@ const DICT: Record<Lang, CoverageDict> = {
     ],
   },
 
-  lv: {
-    title: "Darbības teritorija un nosacījumi",
-    mapAlt: "Pārrobežu apdrošināšanas līguma darbības valstis",
+  pl: {
+    title: "Zakres terytorialny i warunki",
+    mapAlt: "Państwa objęte umową ubezpieczenia transgranicznego",
     mapCaption: " ",
     items: [
       {
-        title: "Darbības teritorija",
+        title: "Zakres terytorialny",
         text:
-          "Polise ir spēkā valstīs, kas norādītas kartē. A - Austrija, B - Beļģija, BG - Bulgārija, CY - Kipra, CZ - Čehija, D - Vācija, DK - Dānija, E - Spānija, EST - Igaunija, F - Francija, FIN - Somija, GR - Grieķija, H - Ungārija, HR - Horvātija, I - Itālija, IRL - Īrija, IS - Islande, L - Luksemburga, LT - Lietuva, LV - Latvija, M - Malta, N - Norvēģija, NL - Nīderlande, P - Portugāle, PL - Polija, RO - Rumānija, S - Zviedrija, SK - Slovākija, SLO - Slovēnija, CH - Šveice.",
+          "Polisa obowiązuje w krajach oznaczonych na mapie. A - Austria, B - Belgia, BG - Bułgaria, CY - Cypr, CZ - Czechy, D - Niemcy, DK - Dania, E - Hiszpania, EST - Estonia, F - Francja, FIN - Finlandia, GR - Grecja, H - Węgry, HR - Chorwacja, I - Włochy, IRL - Irlandia, IS - Islandia, L - Luksemburg, LT - Litwa, LV - Łotwa, M - Malta, N - Norwegia, NL - Niderlandy, P - Portugalia, PL - Polska, RO - Rumunia, S - Szwecja, SK - Słowacja, SLO - Słowenia, CH - Szwajcaria.",
       },
       {
-        title: "Transportlīdzekļu veidi",
-        text: "Vieglie automobiļi, motocikli, kravas transportlīdzekļi, piekabes, autobusi.",
+        title: "Rodzaje pojazdów",
+        text:
+          "Samochody osobowe, motocykle, pojazdy ciężarowe, przyczepy oraz autobusy.",
       },
       {
-        title: "Darbības termiņš",
-        text: "Minimālais termiņš — 1 mēnesis. Maksimālais — 1 gads.",
+        title: "Okres obowiązywania",
+        text:
+          "Minimalny okres ubezpieczenia wynosi 1 miesiąc. Maksymalny okres wynosi 1 rok.",
       },
     ],
   },
@@ -63,179 +65,175 @@ const DICT: Record<Lang, CoverageDict> = {
     mapCaption: " ",
     items: [
       {
-        title: "Territorial scope",
+        title: "Territorial Scope",
         text:
-          "The policy is valid in the countries marked on the map: A – Austria, B – Belgium, BG – Bulgaria, CY – Cyprus, CZ – Czech Republic, D – Germany, DK – Denmark, E – Spain, EST – Estonia, F – France, FIN – Finland, GR – Greece, H – Hungary, HR – Croatia, I – Italy, IRL – Ireland, IS – Iceland, L – Luxembourg, LT – Lithuania, LV – Latvia, M – Malta, N – Norway, NL – Netherlands, P – Portugal, PL – Poland, RO – Romania, S – Sweden, SK – Slovakia, SLO – Slovenia, CH – Switzerland.",
+          "The policy is valid in the countries marked on the map. A - Austria, B - Belgium, BG - Bulgaria, CY - Cyprus, CZ - Czech Republic, D - Germany, DK - Denmark, E - Spain, EST - Estonia, F - France, FIN - Finland, GR - Greece, H - Hungary, HR - Croatia, I - Italy, IRL - Ireland, IS - Iceland, L - Luxembourg, LT - Lithuania, LV - Latvia, M - Malta, N - Norway, NL - Netherlands, P - Portugal, PL - Poland, RO - Romania, S - Sweden, SK - Slovakia, SLO - Slovenia, CH - Switzerland.",
       },
       {
-        title: "Vehicle types",
-        text: "Passenger cars, motorcycles, trucks, trailers, and buses.",
+        title: "Vehicle Types",
+        text:
+          "Passenger cars, motorcycles, commercial vehicles, trailers, and buses.",
       },
       {
-        title: "Policy period",
-        text: "Minimum period: 1 month. Maximum period: 1 year.",
+        title: "Insurance Period",
+        text:
+          "Minimum period — 1 month. Maximum period — 1 year.",
+      },
+    ],
+  },
+
+  be: {
+    title: "Тэрыторыя пакрыцця і ўмовы",
+    mapAlt: "Краіны дзеяння дагавора трансгранічнага страхавання",
+    mapCaption: " ",
+    items: [
+      {
+        title: "Тэрыторыя дзеяння",
+        text:
+          "Поліс дзейнічае ў краінах, пазначаных на карце. A - Аўстрыя, B - Бельгія, BG - Балгарыя, CY - Кіпр, CZ - Чэхія, D - Германія, DK - Данія, E - Іспанія, EST - Эстонія, F - Францыя, FIN - Фінляндыя, GR - Грэцыя, H - Венгрыя, HR - Харватыя, I - Італія, IRL - Ірландыя, IS - Ісландыя, L - Люксембург, LT - Літва, LV - Латвія, M - Мальта, N - Нарвегія, NL - Нідэрланды, P - Партугалія, PL - Польшча, RO - Румынія, S - Швецыя, SK - Славакія, SLO - Славенія, CH - Швейцарыя.",
+      },
+      {
+        title: "Тыпы транспартных сродкаў",
+        text:
+          "Легкавыя аўтамабілі, матацыклы, грузавы транспарт, прычэпы, аўтобусы.",
+      },
+      {
+        title: "Тэрмін дзеяння",
+        text:
+          "Мінімальны тэрмін — 1 месяц. Максімальны — 1 год.",
       },
     ],
   },
 
   uz: {
     title: "Qamrov hududi va shartlar",
-    mapAlt: "Transchegaraviy sug‘urta shartnomasining amal qilish hududlari",
+    mapAlt: "Transchegaraviy sug‘urta shartnomasi amal qiladigan davlatlar",
     mapCaption: " ",
     items: [
       {
         title: "Amal qilish hududi",
         text:
-          "Polis xaritada ko‘rsatilgan mamlakatlarda amal qiladi. A - Avstriya, B - Belgiya, BG - Bolgariya, CY - Kipr, CZ - Chexiya, D - Germaniya, DK - Daniya, E - Ispaniya, EST - Estoniya, F - Fransiya, FIN - Finlyandiya, GR - Gretsiya, H - Vengriya, HR - Xorvatiya, I - Italiya, IRL - Irlandiya, IS - Islandiya, L - Lyuksemburg, LT - Litva, LV - Latviya, M - Malta, N - Norvegiya, NL - Niderlandiya, P - Portugaliya, PL - Polsha, RO - Ruminiya, S - Shvetsiya, SK - Slovakiya, SLO - Sloveniya, CH - Shveytsariya.",
+          "Polis xaritada ko‘rsatilgan davlatlarda amal qiladi. A - Avstriya, B - Belgiya, BG - Bolgariya, CY - Kipr, CZ - Chexiya, D - Germaniya, DK - Daniya, E - Ispaniya, EST - Estoniya, F - Fransiya, FIN - Finlyandiya, GR - Gretsiya, H - Vengriya, HR - Xorvatiya, I - Italiya, IRL - Irlandiya, IS - Islandiya, L - Lyuksemburg, LT - Litva, LV - Latviya, M - Malta, N - Norvegiya, NL - Niderlandiya, P - Portugaliya, PL - Polsha, RO - Ruminiya, S - Shvetsiya, SK - Slovakiya, SLO - Sloveniya, CH - Shveytsariya.",
       },
       {
         title: "Transport vositalari turlari",
-        text: "Yengil avtomobillar, mototsikllar, yuk avtomobillari, tirkamalar, avtobuslar.",
+        text:
+          "Yengil avtomobillar, mototsikllar, yuk transporti, tirkamalar, avtobuslar.",
       },
       {
         title: "Amal qilish muddati",
-        text: "Minimal muddat — 1 oy. Maksimal muddat — 1 yil.",
-      },
-    ],
-  },
-
-  kg: {
-    title: "Камтуу аймагы жана шарттары",
-    mapAlt: "Трансчек аралык камсыздандыруу келишиминин колдонуу аймагы",
-    mapCaption: " ",
-    items: [
-      {
-        title: "Камтуу аймагы",
         text:
-          "Полис картада белгиленген өлкөлөрдө жарактуу. A - Австрия, B - Бельгия, BG - Болгария, CY - Кипр, CZ - Чехия, D - Германия, DK - Дания, E - Испания, EST - Эстония, F - Франция, FIN - Финляндия, GR - Греция, H - Венгрия, HR - Хорватия, I - Италия, IRL - Ирландия, IS - Исландия, L - Люксембург, LT - Литва, LV - Латвия, M - Мальта, N - Норвегия, NL - Нидерланды, P - Португалия, PL - Польша, RO - Румыния, S - Швеция, SK - Словакия, SLO - Словения, CH - Швейцария.",
-      },
-      {
-        title: "Транспорт каражаттарынын түрлөрү",
-        text: "Жеңил автоунаалар, мотоциклдер, жүк ташуучу унаалар, прицептер, автобустар.",
-      },
-      {
-        title: "Колдонуу мөөнөтү",
-        text: "Минималдуу мөөнөт — 1 ай. Максималдуу — 1 жыл.",
+          "Minimal muddat — 1 oy. Maksimal muddat — 1 yil.",
       },
     ],
   },
   ka: {
-    title: "დაფარვის არეალი და პირობები",
-    mapAlt: "ტრანსსასაზღვრო დაზღვევის ხელშეკრულების მოქმედების ქვეყნები",
+    title: "დაფარვის ზონა და პირობები",
+    mapAlt: "საერთაშორისო სასაზღვრო დაზღვევის ხელშეკრულების მოქმედების ქვეყნები",
     mapCaption: " ",
     items: [
       {
         title: "მოქმედების ტერიტორია",
         text:
-          "პოლისი მოქმედებს რუკაზე აღნიშნულ ქვეყნებში: A - ავსტრია, B - ბელგია, BG - ბულგარეთი, CY - კვიპროსი, CZ - ჩეხეთი, D - გერმანია, DK - დანია, E - ესპანეთი, EST - ესტონეთი, F - საფრანგეთი, FIN - ფინეთი, GR - საბერძნეთი, H - უნგრეთი, HR - ხორვატია, I - იტალია, IRL - ირლანდია, IS - ისლანდია, L - ლუქსემბურგი, LT - ლიტვა, LV - ლატვია, M - მალტა, N - ნორვეგია, NL - ნიდერლანდები, P - პორტუგალია, PL - პოლონეთი, RO - რუმინეთი, S - შვედეთი, SK - სლოვაკეთი, SLO - სლოვენია, CH - შვეიცარია.",
+          "პოლისი მოქმედებს რუკაზე აღნიშნულ ქვეყნებში. A - ავსტრია, B - ბელგია, BG - ბულგარეთი, CY - კვიპროსი, CZ - ჩეხეთი, D - გერმანია, DK - დანია, E - ესპანეთი, EST - ესტონეთი, F - საფრანგეთი, FIN - ფინეთი, GR - საბერძნეთი, H - უნგრეთი, HR - ხორვატია, I - იტალია, IRL - ირლანდია, IS - ისლანდია, L - ლუქსემბურგი, LT - ლიტვა, LV - ლატვია, M - მალტა, N - ნორვეგია, NL - ნიდერლანდები, P - პორტუგალია, PL - პოლონეთი, RO - რუმინეთი, S - შვედეთი, SK - სლოვაკეთი, SLO - სლოვენია, CH - შვეიცარია.",
       },
       {
         title: "სატრანსპორტო საშუალებების ტიპები",
-        text: "მსუბუქი ავტომობილები, მოტოციკლები, სატვირთო ტრანსპორტი, მისაბმელები, ავტობუსები.",
+        text:
+          "მსუბუქი ავტომობილები, მოტოციკლები, სატვირთო ტრანსპორტი, მისაბმელები, ავტობუსები.",
       },
       {
         title: "მოქმედების ვადა",
-        text: "მინიმალური ვადა — 1 თვე. მაქსიმალური — 1 წელი.",
+        text:
+          "მინიმალური ვადა — 1 თვე. მაქსიმალური — 1 წელი.",
       },
     ],
   },
-  kz: {
+  kk: {
     title: "Қамту аймағы және шарттар",
-    mapAlt: "Трансшекаралық сақтандыру шартының қолданылу елдері",
+    mapAlt: "Трансшекаралық сақтандыру шарты қолданылатын елдер",
     mapCaption: " ",
     items: [
       {
         title: "Қолданылу аумағы",
         text:
-          "Полис картада көрсетілген елдерде жарамды. A - Австрия, B - Бельгия, BG - Болгария, CY - Кипр, CZ - Чехия, D - Германия, DK - Дания, E - Испания, EST - Эстония, F - Франция, FIN - Финляндия, GR - Греция, H - Венгрия, HR - Хорватия, I - Италия, IRL - Ирландия, IS - Исландия, L - Люксембург, LT - Литва, LV - Латвия, M - Мальта, N - Норвегия, NL - Нидерланды, P - Португалия, PL - Польша, RO - Румыния, S - Швеция, SK - Словакия, SLO - Словения, CH - Швейцария.",
+          "Полис картада көрсетілген елдерде жарамды. A - Австрия, B - Бельгия, BG - Болгария, CY - Кипр, CZ - Чехия, D - Германия, DK - Дания, E - Испания, EST - Эстония, F - Франция, FIN - Финляндия, GR - Грекия, H - Венгрия, HR - Хорватия, I - Италия, IRL - Ирландия, IS - Исландия, L - Люксембург, LT - Литва, LV - Латвия, M - Мальта, N - Норвегия, NL - Нидерланд, P - Португалия, PL - Польша, RO - Румыния, S - Швеция, SK - Словакия, SLO - Словения, CH - Швейцария.",
       },
       {
         title: "Көлік құралдарының түрлері",
-        text: "Жеңіл автокөліктер, мотоциклдер, жүк көліктері, тіркемелер, автобустар.",
+        text:
+          "Жеңіл автомобильдер, мотоциклдер, жүк көліктері, тіркемелер, автобустар.",
       },
       {
         title: "Қолданылу мерзімі",
-        text: "Ең төменгі мерзім — 1 ай. Ең жоғары — 1 жыл.",
+        text:
+          "Ең төменгі мерзім — 1 ай. Ең ұзақ мерзім — 1 жыл.",
       },
     ],
   },
   tr: {
-    title: "Kapsam alanı ve koşullar",
+    title: "Teminat Bölgesi ve Şartlar",
     mapAlt: "Sınır ötesi sigorta sözleşmesinin geçerli olduğu ülkeler",
     mapCaption: " ",
     items: [
       {
-        title: "Geçerlilik bölgesi",
+        title: "Geçerlilik Bölgesi",
         text:
-          "Poliçe, haritada işaretli ülkelerde geçerlidir. A - Avusturya, B - Belçika, BG - Bulgaristan, CY - Kıbrıs, CZ - Çekya, D - Almanya, DK - Danimarka, E - İspanya, EST - Estonya, F - Fransa, FIN - Finlandiya, GR - Yunanistan, H - Macaristan, HR - Hırvatistan, I - İtalya, IRL - İrlanda, IS - İzlanda, L - Lüksemburg, LT - Litvanya, LV - Letonya, M - Malta, N - Norveç, NL - Hollanda, P - Portekiz, PL - Polonya, RO - Romanya, S - İsveç, SK - Slovakya, SLO - Slovenya, CH - İsviçre.",
+          "Poliçe, haritada belirtilen ülkelerde geçerlidir. A - Avusturya, B - Belçika, BG - Bulgaristan, CY - Kıbrıs, CZ - Çekya, D - Almanya, DK - Danimarka, E - İspanya, EST - Estonya, F - Fransa, FIN - Finlandiya, GR - Yunanistan, H - Macaristan, HR - Hırvatistan, I - İtalya, IRL - İrlanda, IS - İzlanda, L - Lüksemburg, LT - Litvanya, LV - Letonya, M - Malta, N - Norveç, NL - Hollanda, P - Portekiz, PL - Polonya, RO - Romanya, S - İsveç, SK - Slovakya, SLO - Slovenya, CH - İsviçre.",
       },
       {
-        title: "Araç türleri",
-        text: "Binek araçlar, motosikletler, yük araçları, römorklar ve otobüsler.",
+        title: "Araç Türleri",
+        text:
+          "Binek araçlar, motosikletler, yük taşıma araçları, römorklar ve otobüsler.",
       },
       {
-        title: "Geçerlilik süresi",
-        text: "Asgari süre 1 ay, azami süre 1 yıldır.",
+        title: "Geçerlilik Süresi",
+        text:
+          "Asgari sigorta süresi 1 ay, azami sigorta süresi ise 1 yıldır.",
       },
     ],
   },
   fa: {
-    title: "قلمرو پوشش و شرایط",
-    mapAlt: "کشورهای تحت پوشش بیمه فرامرزی",
+    title: "منطقه پوشش و شرایط",
+    mapAlt: "کشورهای تحت پوشش قرارداد بیمه فرامرزی",
     mapCaption: " ",
     items: [
       {
-        title: "قلمرو جغرافیایی",
+        title: "محدوده جغرافیایی پوشش",
         text:
-          "بیمه‌نامه در کشورهایی که روی نقشه مشخص شده‌اند معتبر است: A - اتریش، B - بلژیک، BG - بلغارستان، CY - قبرس، CZ - جمهوری چک، D - آلمان، DK - دانمارک، E - اسپانیا، EST - استونی، F - فرانسه، FIN - فنلاند، GR - یونان، H - مجارستان، HR - کرواسی، I - ایتالیا، IRL - ایرلند، IS - ایسلند، L - لوکزامبورگ، LT - لیتوانی، LV - لتونی، M - مالت، N - نروژ، NL - هلند، P - پرتغال، PL - لهستان، RO - رومانی، S - سوئد، SK - اسلواکی، SLO - اسلوونی، CH - سوئیس.",
+          "بیمه‌نامه در کشورهای مشخص‌شده روی نقشه معتبر است. A - اتریش، B - بلژیک، BG - بلغارستان، CY - قبرس، CZ - جمهوری چک، D - آلمان، DK - دانمارک، E - اسپانیا، EST - استونی، F - فرانسه، FIN - فنلاند، GR - یونان، H - مجارستان، HR - کرواسی، I - ایتالیا، IRL - ایرلند، IS - ایسلند، L - لوکزامبورگ، LT - لیتوانی، LV - لتونی، M - مالت، N - نروژ، NL - هلند، P - پرتغال، PL - لهستان، RO - رومانی، S - سوئد، SK - اسلواکی، SLO - اسلوونی، CH - سوئیس.",
       },
       {
         title: "انواع وسایل نقلیه",
-        text: "خودروهای سواری، موتورسیکلت‌ها، وسایل نقلیه باری، تریلرها و اتوبوس‌ها.",
+        text:
+          "خودروهای سواری، موتورسیکلت‌ها، وسایل نقلیه باری، تریلرها و اتوبوس‌ها.",
       },
       {
         title: "مدت اعتبار",
-        text: "حداقل مدت ۱ ماه و حداکثر ۱ سال است.",
-      },
-    ],
-  },
-  mn: {
-    title: "Хамрах хүрээ ба нөхцөл",
-    mapAlt: "Хил дамнасан даатгалын гэрээ хүчинтэй улс орнууд",
-    mapCaption: " ",
-    items: [
-      {
-        title: "Хамрах нутаг дэвсгэр",
         text:
-          "Полис нь газрын зураг дээр тэмдэглэгдсэн улс орнуудад хүчинтэй. A - Австри, B - Бельги, BG - Болгар, CY - Кипр, CZ - Чех, D - Герман, DK - Дани, E - Испани, EST - Эстони, F - Франц, FIN - Финланд, GR - Грек, H - Унгар, HR - Хорват, I - Итали, IRL - Ирланд, IS - Исланд, L - Люксембург, LT - Литва, LV - Латви, M - Мальта, N - Норвеги, NL - Нидерланд, P - Португал, PL - Польш, RO - Румын, S - Швед, SK - Словак, SLO - Словени, CH - Швейцар.",
-      },
-      {
-        title: "Тээврийн хэрэгслийн төрөл",
-        text: "Суудлын автомашин, мотоцикл, ачааны автомашин, чиргүүл, автобус.",
-      },
-      {
-        title: "Хүчинтэй хугацаа",
-        text: "Хамгийн бага хугацаа — 1 сар. Хамгийн их — 1 жил.",
+          "حداقل مدت اعتبار بیمه ۱ ماه و حداکثر مدت اعتبار ۱ سال است.",
       },
     ],
   },
   hy: {
     title: "Ծածկույթի տարածք և պայմաններ",
-    mapAlt: "Տրանսսահմանային ապահովագրության պայմանագրի գործողության երկրներ",
+    mapAlt: "Միջսահմանային ապահովագրության պայմանագրի գործողության երկրները",
     mapCaption: " ",
     items: [
       {
         title: "Գործողության տարածք",
         text:
-          "Պոլիսը գործում է քարտեզում նշված երկրներում. A - Ավստրիա, B - Բելգիա, BG - Բուլղարիա, CY - Կիպրոս, CZ - Չեխիա, D - Գերմանիա, DK - Դանիա, E - Իսպանիա, EST - Էստոնիա, F - Ֆրանսիա, FIN - Ֆինլանդիա, GR - Հունաստան, H - Հունգարիա, HR - Խորվաթիա, I - Իտալիա, IRL - Իռլանդիա, IS - Իսլանդիա, L - Լյուքսեմբուրգ, LT - Լիտվա, LV - Լատվիա, M - Մալթա, N - Նորվեգիա, NL - Նիդերլանդներ, P - Պորտուգալիա, PL - Լեհաստան, RO - Ռումինիա, S - Շվեդիա, SK - Սլովակիա, SLO - Սլովենիա, CH - Շվեյցարիա։",
+          "Պոլիսը գործում է քարտեզում նշված երկրներում։ A - Ավստրիա, B - Բելգիա, BG - Բուլղարիա, CY - Կիպրոս, CZ - Չեխիա, D - Գերմանիա, DK - Դանիա, E - Իսպանիա, EST - Էստոնիա, F - Ֆրանսիա, FIN - Ֆինլանդիա, GR - Հունաստան, H - Հունգարիա, HR - Խորվաթիա, I - Իտալիա, IRL - Իռլանդիա, IS - Իսլանդիա, L - Լյուքսեմբուրգ, LT - Լիտվա, LV - Լատվիա, M - Մալթա, N - Նորվեգիա, NL - Նիդեռլանդներ, P - Պորտուգալիա, PL - Լեհաստան, RO - Ռումինիա, S - Շվեդիա, SK - Սլովակիա, SLO - Սլովենիա, CH - Շվեյցարիա։",
       },
       {
         title: "Տրանսպորտային միջոցների տեսակներ",
-        text: "Թեթև մարդատար ավտոմեքենաներ, մոտոցիկլներ, բեռնատար տրանսպորտ, կցորդներ, ավտոբուսներ։",
+        text:
+          "Թեթև մարդատար ավտոմեքենաներ, մոտոցիկլետներ, բեռնատար տրանսպորտ, կցորդներ, ավտոբուսներ։",
       },
       {
         title: "Գործողության ժամկետ",
-        text: "Նվազագույն ժամկետը՝ 1 ամիս։ Առավելագույնը՝ 1 տարի։",
+        text:
+          "Նվազագույն ժամկետը՝ 1 ամիս։ Առավելագույնը՝ 1 տարի։",
       },
     ],
   },

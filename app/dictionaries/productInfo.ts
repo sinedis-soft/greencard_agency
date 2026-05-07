@@ -3,288 +3,596 @@ import type { CookiesPolicyDictionary } from "@/app/dictionaries/privacyCookies"
 
 const ru: CookiesPolicyDictionary = {
   pageTitle: "Информация о продукте",
+
   sections: [
-    { title: "Robežpolise (пограничная OCTA)" },
-    { title: "1. Общая информация", paragraphs: ["Robežpolise — это обязательное страхование гражданской ответственности владельцев транспортных средств (OCTA), предназначенное для транспортных средств, зарегистрированных за пределами Европейского союза и въезжающих на территорию Латвийской Республики.","Данный вид страхования применяется в случаях, когда у транспортного средства отсутствует действующий международный страховой полис (Green Card), признаваемый в странах Европейской экономической зоны.","Robežpolise оформляется в соответствии с требованиями Sauszemes transportlīdzekļu īpašnieku civiltiesiskās atbildības obligātās apdrošināšanas likums и является частью системы обязательного страхования гражданской ответственности."] },
-    { title: "2. Назначение страхования", paragraphs: ["Цель robežpolise — обеспечить наличие обязательного страхового покрытия гражданской ответственности:","","• при въезде транспортного средства на территорию Латвии;","• при участии в дорожном движении на территории стран, признающих систему взаимного страхования.","","Без действующего договора OCTA участие транспортного средства в дорожном движении запрещено."] },
-    { title: "3. Что покрывает страхование", paragraphs: ["Robežpolise покрывает гражданскую ответственность владельца или водителя транспортного средства за вред, причинённый третьим лицам в результате дорожно-транспортного происшествия.","","Покрываются:","","• вред жизни и здоровью третьих лиц;","• ущерб имуществу третьих лиц;","• ущерб транспортным средствам третьих лиц.","","Не покрываются:","","• повреждения собственного транспортного средства;","• личные убытки страхователя;","• иные случаи, не предусмотренные правилами страхования."] },
-    { title: "4. Территория действия", paragraphs: ["Robežpolise действует на территории:","","• Латвийской Республики;","• а также других государств, входящих в систему взаимного признания страхования гражданской ответственности владельцев транспортных средств.","","Территория покрытия определяется:","","• условиями конкретного страхового полиса;","• перечнем стран, указанных в страховом документе.","","Полис действует в странах, которые не исключены (не зачёркнуты) в страховом документе.","К таким странам могут относиться государства Европейского союза, Европейской экономической зоны.","","В каждой стране страховое покрытие действует:","","• в соответствии с законодательством этой страны;","• с лимитами ответственности, установленными национальным правом;","• через национальное бюро системы страхования гражданской ответственности."] },
-    { title: "5. Срок действия", paragraphs: ["Договор страхования заключается на срок:","","• от 1 месяца;","• до 12 месяцев.","","Конкретный срок определяется при оформлении полиса."] },
-    { title: "6. Кому предназначен продукт", paragraphs: ["Robežpolise предназначена для:","","• транспортных средств, зарегистрированных за пределами ЕС и ЕЭЗ;","• транспортных средств, не имеющих действующего международного страхования;","• водителей, въезжающих на территорию Латвии и других стран системы взаимного признания страхования."] },
-    { title: "7. Ограничения", paragraphs: ["Robežpolise не оформляется для:","","• транспортных средств, зарегистрированных в странах Европейского союза;","• транспортных средств, зарегистрированных в Великобритании;","• транспортных средств, имеющих действующий международный страховой полис, признаваемый в ЕС."] },
-    { title: "8. Заключение договора", paragraphs: ["Договор страхования:","","• заключается между страхователем и страховой компанией;","• может быть оформлен дистанционно;","• вступает в силу в соответствии с условиями страховщика (как правило — после оплаты).","","Полис предоставляется в электронной форме и имеет юридическую силу."] },
-    { title: "9. Правовое регулирование", paragraphs: ["Продукт регулируется:","","Sauszemes transportlīdzekļu īpašnieku civiltiesiskās atbildības obligātās apdrošināšanas likums","","а также нормами:","","• законодательства Европейского союза о страховании гражданской ответственности."] },
-    { title: "10. Важная информация для пользователя", paragraphs: ["• Robežpolise является обязательным условием участия в дорожном движении при отсутствии Green Card.","• Полис обеспечивает страховое покрытие только гражданской ответственности.","• Перед поездкой необходимо проверить территорию действия, указанную в полисе.","• Условия страхования и порядок урегулирования убытков определяются страховщиком."] },
+    {
+      title: "OC Graniczne (пограничное страхование гражданской ответственности)",
+    },
+
+    {
+      title: "1. Общая информация",
+      paragraphs: [
+        "OC Graniczne — это обязательное страхование гражданской ответственности владельцев транспортных средств, предназначенное для транспортных средств, зарегистрированных за пределами Европейской экономической зоны и въезжающих на территорию стран, признающих систему обязательного страхования гражданской ответственности.",
+        "Страхование применяется в случаях отсутствия действующего международного страхового сертификата Green Card, признаваемого на территории Европейской экономической зоны.",
+        "Продукт оформляется в соответствии с законодательством Польши об обязательном страховании гражданской ответственности владельцев транспортных средств.",
+      ],
+    },
+
+    {
+      title: "2. Назначение страхования",
+      paragraphs: [
+        "Цель OC Graniczne — обеспечить наличие обязательного страхового покрытия гражданской ответственности владельца или водителя транспортного средства.",
+        "",
+        "Страхование необходимо:",
+        "",
+        "• при въезде транспортного средства на территорию стран ЕЭЗ;",
+        "• при участии транспортного средства в дорожном движении;",
+        "• при отсутствии действующего Green Card.",
+        "",
+        "Без действующего договора обязательного страхования участие транспортного средства в дорожном движении запрещено.",
+      ],
+    },
+
+    {
+      title: "3. Что покрывает страхование",
+      paragraphs: [
+        "Страхование покрывает гражданскую ответственность владельца и/или водителя транспортного средства за вред, причинённый третьим лицам в связи с использованием транспортного средства.",
+        "",
+        "Покрываются:",
+        "",
+        "• вред жизни и здоровью третьих лиц;",
+        "• телесные повреждения;",
+        "• ущерб имуществу третьих лиц;",
+        "• повреждение или уничтожение транспортных средств третьих лиц.",
+        "",
+        "Страховщик несёт ответственность в пределах страховых сумм, установленных законодательством.",
+      ],
+    },
+
+    {
+      title: "4. Что не покрывается",
+      paragraphs: [
+        "Страхование не покрывает:",
+        "",
+        "• ущерб собственному транспортному средству страхователя;",
+        "• личные убытки владельца транспортного средства;",
+        "• ущерб окружающей среде;",
+        "• случаи, не предусмотренные законодательством и условиями страхования.",
+        "",
+        "Также не покрываются убытки, причинённые владельцу транспортного средства самим водителем данного транспортного средства.",
+      ],
+    },
+
+    {
+      title: "5. Ограничения страхового покрытия",
+      paragraphs: [
+        "Страховщик имеет право требовать возврата выплаченного возмещения от водителя транспортного средства в случаях, предусмотренных законодательством.",
+        "",
+        "В частности, если водитель:",
+        "",
+        "• причинил ущерб умышленно;",
+        "• управлял транспортным средством в состоянии алкогольного или наркотического опьянения;",
+        "• не имел необходимых водительских прав;",
+        "• завладел транспортным средством преступным путём;",
+        "• скрылся с места происшествия.",
+      ],
+    },
+
+    {
+      title: "6. Территория действия",
+      paragraphs: [
+        "OC Graniczne действует:",
+        "",
+        "• в странах Европейского экономического пространства;",
+        "• в Швейцарии;",
+        "• в государствах, национальные бюро которых являются участниками системы взаимного признания обязательного страхования гражданской ответственности.",
+        "",
+        "Точная территория действия определяется условиями страхового полиса.",
+      ],
+    },
+
+    {
+      title: "7. Срок действия",
+      paragraphs: [
+        "Страхование заключается на срок, указанный в страховом полисе.",
+        "",
+        "Договор может быть заключён:",
+        "",
+        "• на 12 месяцев;",
+        "• либо на более короткий срок в случаях, предусмотренных законодательством.",
+        "",
+        "Страховая защита начинает действовать с даты, указанной в полисе.",
+      ],
+    },
+
+    {
+      title: "8. Обязанности страхователя",
+      paragraphs: [
+        "Страхователь обязан:",
+        "",
+        "• предоставить достоверную информацию при оформлении страхования;",
+        "• оплатить страховую премию в установленные сроки;",
+        "• сообщить страховщику о наступлении страхового события;",
+        "• принять меры для уменьшения последствий происшествия;",
+        "• при необходимости уведомить полицию;",
+        "• предоставить другим участникам ДТП информацию о страховом полисе.",
+      ],
+    },
+
+    {
+      title: "9. Прекращение действия договора",
+      paragraphs: [
+        "Договор страхования прекращается:",
+        "",
+        "• по окончании срока действия;",
+        "• при снятии транспортного средства с регистрации;",
+        "• при регистрации транспортного средства за пределами страны;",
+        "• в случаях расторжения договора, предусмотренных законодательством.",
+      ],
+    },
+
+    {
+      title: "10. Важная информация",
+      paragraphs: [
+        "• OC Graniczne является обязательным видом страхования при отсутствии действующего Green Card.",
+        "• Полис покрывает исключительно гражданскую ответственность перед третьими лицами.",
+        "• Полис не покрывает ущерб собственному транспортному средству.",
+        "• Условия страхования и порядок урегулирования убытков определяются страховщиком и действующим законодательством.",
+      ],
+    },
+
+    {
+      title: "11. Правовое регулирование",
+      paragraphs: [
+        "Продукт регулируется законодательством Республики Польша об обязательном страховании гражданской ответственности владельцев транспортных средств, а также правилами системы международного признания страхования гражданской ответственности.",
+      ],
+    },
   ],
 };
 
-const lv: CookiesPolicyDictionary = {
-  pageTitle: "Informācija par produktu",
+const pl: CookiesPolicyDictionary = {
+  pageTitle: "Informacje o produkcie",
+
   sections: [
-    { title: "Robežpolise (robežapdrošināšana OCTA)" },
-
     {
-      title: "1. Vispārīga informācija",
-      paragraphs: [
-        "Robežpolise ir obligātā transportlīdzekļu īpašnieku civiltiesiskās atbildības apdrošināšana (OCTA), kas paredzēta transportlīdzekļiem, kuri reģistrēti ārpus Eiropas Savienības un iebrauc Latvijas Republikas teritorijā.",
-        "Šis apdrošināšanas veids tiek piemērots gadījumos, kad transportlīdzeklim nav derīgas starptautiskās apdrošināšanas polises (Zaļā karte), kas tiek atzīta Eiropas Ekonomikas zonas valstīs.",
-        "Robežpolise tiek noformēta saskaņā ar Sauszemes transportlīdzekļu īpašnieku civiltiesiskās atbildības obligātās apdrošināšanas likumu un ir daļa no obligātās civiltiesiskās atbildības apdrošināšanas sistēmas."
-      ]
+      title: "OC Graniczne (ubezpieczenie graniczne odpowiedzialności cywilnej)",
     },
 
     {
-      title: "2. Apdrošināšanas mērķis",
+      title: "1. Informacje ogólne",
       paragraphs: [
-        "Robežpolises mērķis ir nodrošināt obligāto civiltiesiskās atbildības apdrošināšanas segumu:",
-        "",
-        "• transportlīdzeklim iebraucot Latvijas teritorijā;",
-        "• piedaloties ceļu satiksmē valstīs, kurās tiek atzīta savstarpējās apdrošināšanas sistēma.",
-        "",
-        "Bez derīga OCTA līguma transportlīdzekļa dalība ceļu satiksmē ir aizliegta."
-      ]
+        "OC Graniczne to obowiązkowe ubezpieczenie odpowiedzialności cywilnej posiadaczy pojazdów mechanicznych przeznaczone dla pojazdów zarejestrowanych poza Europejskim Obszarem Gospodarczym, wjeżdżających na terytorium państw uznających system obowiązkowego ubezpieczenia odpowiedzialności cywilnej.",
+        "Ubezpieczenie ma zastosowanie w przypadku braku ważnego międzynarodowego certyfikatu ubezpieczeniowego Zielona Karta uznawanego na terytorium Europejskiego Obszaru Gospodarczego.",
+        "Produkt jest oferowany zgodnie z przepisami prawa polskiego dotyczącymi obowiązkowego ubezpieczenia odpowiedzialności cywilnej posiadaczy pojazdów mechanicznych.",
+      ],
     },
 
     {
-      title: "3. Ko sedz apdrošināšana",
+      title: "2. Cel ubezpieczenia",
       paragraphs: [
-        "Robežpolise sedz transportlīdzekļa īpašnieka vai vadītāja civiltiesisko atbildību par zaudējumiem, kas nodarīti trešajām personām ceļu satiksmes negadījuma rezultātā.",
+        "Celem OC Granicznego jest zapewnienie obowiązkowej ochrony odpowiedzialności cywilnej właściciela lub kierującego pojazdem mechanicznym.",
         "",
-        "Tiek segts:",
+        "Ubezpieczenie jest wymagane:",
         "",
-        "• kaitējums trešo personu dzīvībai vai veselībai;",
-        "• mantiskais kaitējums trešo personu īpašumam;",
-        "• zaudējumi trešo personu transportlīdzekļiem.",
+        "• przy wjeździe pojazdu na terytorium państw EOG;",
+        "• przy uczestnictwie pojazdu w ruchu drogowym;",
+        "• w przypadku braku ważnej Zielonej Karty.",
         "",
-        "Netiek segts:",
-        "",
-        "• paša transportlīdzekļa bojājumi;",
-        "• apdrošinājuma ņēmēja personīgie zaudējumi;",
-        "• citi gadījumi, kas nav paredzēti apdrošināšanas noteikumos."
-      ]
+        "Uczestnictwo pojazdu w ruchu drogowym bez ważnej umowy obowiązkowego ubezpieczenia jest niedozwolone.",
+      ],
     },
 
     {
-      title: "4. Darbības teritorija",
+      title: "3. Zakres ochrony",
       paragraphs: [
-        "Robežpolise ir spēkā:",
+        "Ubezpieczenie obejmuje odpowiedzialność cywilną właściciela i/lub kierującego pojazdem za szkody wyrządzone osobom trzecim w związku z użytkowaniem pojazdu mechanicznego.",
         "",
-        "• Latvijas Republikā;",
-        "• kā arī citās valstīs, kas ietilpst savstarpējās civiltiesiskās atbildības apdrošināšanas atzīšanas sistēmā.",
+        "Ochroną objęte są:",
         "",
-        "Darbības teritoriju nosaka:",
+        "• szkody na życiu i zdrowiu osób trzecich;",
+        "• uszkodzenia ciała;",
+        "• szkody w mieniu osób trzecich;",
+        "• uszkodzenie lub zniszczenie pojazdów należących do osób trzecich.",
         "",
-        "• konkrētās polises nosacījumi;",
-        "• valstis, kas norādītas apdrošināšanas dokumentā.",
-        "",
-        "Polise ir spēkā valstīs, kuras nav izslēgtas (nav pārsvītrotas) apdrošināšanas dokumentā.",
-        "Šajās valstīs var ietilpt Eiropas Savienības un Eiropas Ekonomikas zonas valstis.",
-        "",
-        "Katrā valstī apdrošināšanas segums tiek piemērots:",
-        "",
-        "• saskaņā ar attiecīgās valsts normatīvajiem aktiem;",
-        "• ievērojot nacionāli noteiktos atbildības limitus;",
-        "• ar attiecīgās valsts nacionālā biroja starpniecību."
-      ]
+        "Zakład ubezpieczeń ponosi odpowiedzialność do wysokości sum gwarancyjnych określonych przepisami prawa.",
+      ],
     },
 
     {
-      title: "5. Darbības termiņš",
+      title: "4. Wyłączenia odpowiedzialności",
       paragraphs: [
-        "Apdrošināšanas līgums tiek noslēgts uz termiņu:",
+        "Ubezpieczenie nie obejmuje:",
         "",
-        "• no 1 mēnešiem;",
-        "• līdz 12 mēnešiem.",
+        "• szkód w pojeździe własnym ubezpieczającego;",
+        "• strat osobistych właściciela pojazdu;",
+        "• szkód w środowisku naturalnym;",
+        "• zdarzeń nieobjętych przepisami prawa i warunkami ubezpieczenia.",
         "",
-        "Konkrētais termiņš tiek noteikts polises noformēšanas brīdī."
-      ]
+        "Ochrona nie obejmuje również szkód wyrządzonych właścicielowi pojazdu przez kierującego tym samym pojazdem.",
+      ],
     },
 
     {
-      title: "6. Kam paredzēts produkts",
+      title: "5. Ograniczenia ochrony ubezpieczeniowej",
       paragraphs: [
-        "Robežpolise ir paredzēta:",
+        "Zakład ubezpieczeń ma prawo dochodzić zwrotu wypłaconego odszkodowania od kierującego pojazdem w przypadkach przewidzianych przepisami prawa.",
         "",
-        "• transportlīdzekļiem, kas reģistrēti ārpus ES un EEZ;",
-        "• transportlīdzekļiem bez derīgas starptautiskās apdrošināšanas;",
-        "• vadītājiem, kas iebrauc Latvijā un citās savstarpējās atzīšanas sistēmas valstīs."
-      ]
+        "W szczególności, jeżeli kierujący:",
+        "",
+        "• wyrządził szkodę umyślnie;",
+        "• prowadził pojazd pod wpływem alkoholu lub środków odurzających;",
+        "• nie posiadał wymaganych uprawnień do kierowania pojazdem;",
+        "• wszedł w posiadanie pojazdu w wyniku przestępstwa;",
+        "• oddalił się z miejsca zdarzenia.",
+      ],
     },
 
     {
-      title: "7. Ierobežojumi",
+      title: "6. Terytorium obowiązywania",
       paragraphs: [
-        "Robežpolise netiek noformēta:",
+        "OC Graniczne obowiązuje:",
         "",
-        "• transportlīdzekļiem, kas reģistrēti ES valstīs;",
-        "• transportlīdzekļiem, kas reģistrēti Apvienotajā Karalistē;",
-        "• transportlīdzekļiem ar derīgu starptautisko apdrošināšanas polisi, kas tiek atzīta ES."
-      ]
+        "• na terytorium państw Europejskiego Obszaru Gospodarczego;",
+        "• na terytorium Szwajcarii;",
+        "• w państwach, których biura narodowe uczestniczą w systemie wzajemnego uznawania obowiązkowego ubezpieczenia odpowiedzialności cywilnej.",
+        "",
+        "Dokładny zakres terytorialny określają warunki polisy ubezpieczeniowej.",
+      ],
     },
 
     {
-      title: "8. Līguma noslēgšana",
+      title: "7. Okres obowiązywania",
       paragraphs: [
-        "Apdrošināšanas līgums:",
+        "Ubezpieczenie zawierane jest na okres wskazany w polisie ubezpieczeniowej.",
         "",
-        "• tiek noslēgts starp apdrošinājuma ņēmēju un apdrošinātāju;",
-        "• var tikt noformēts attālināti;",
-        "• stājas spēkā saskaņā ar apdrošinātāja noteikumiem (parasti — pēc apmaksas).",
+        "Umowa może zostać zawarta:",
         "",
-        "Polise tiek izsniegta elektroniskā formā un tai ir juridisks spēks."
-      ]
+        "• na 12 miesięcy;",
+        "• albo na krótszy okres w przypadkach przewidzianych przepisami prawa.",
+        "",
+        "Ochrona ubezpieczeniowa rozpoczyna się od daty wskazanej w polisie.",
+      ],
     },
 
     {
-      title: "9. Tiesiskais regulējums",
+      title: "8. Obowiązki ubezpieczającego",
       paragraphs: [
-        "Produktu regulē:",
+        "Ubezpieczający jest zobowiązany:",
         "",
-        "Sauszemes transportlīdzekļu īpašnieku civiltiesiskās atbildības obligātās apdrošināšanas likums",
-        "",
-        "kā arī:",
-        "",
-        "• Eiropas Savienības normatīvie akti civiltiesiskās atbildības apdrošināšanas jomā."
-      ]
+        "• przekazać prawdziwe informacje przy zawieraniu ubezpieczenia;",
+        "• opłacić składkę w wymaganym terminie;",
+        "• zgłosić zakładowi ubezpieczeń zdarzenie objęte ochroną;",
+        "• podjąć działania ograniczające skutki zdarzenia;",
+        "• w razie potrzeby powiadomić policję;",
+        "• przekazać innym uczestnikom zdarzenia informacje dotyczące polisy.",
+      ],
     },
 
     {
-      title: "10. Svarīga informācija lietotājam",
+      title: "9. Wygaśnięcie umowy",
       paragraphs: [
-        "• Robežpolise ir obligāta dalībai ceļu satiksmē, ja nav derīgas Zaļās kartes.",
-        "• Polise sedz tikai civiltiesisko atbildību.",
-        "• Pirms brauciena jāpārbauda polises darbības teritorija.",
-        "• Apdrošināšanas noteikumus un zaudējumu atlīdzības kārtību nosaka apdrošinātājs."
-      ]
+        "Umowa ubezpieczenia wygasa:",
+        "",
+        "• z upływem okresu obowiązywania;",
+        "• po wyrejestrowaniu pojazdu;",
+        "• po rejestracji pojazdu poza danym państwem;",
+        "• w przypadkach rozwiązania umowy przewidzianych przepisami prawa.",
+      ],
+    },
+
+    {
+      title: "10. Ważne informacje",
+      paragraphs: [
+        "• OC Graniczne jest obowiązkowym rodzajem ubezpieczenia w przypadku braku ważnej Zielonej Karty.",
+        "• Polisa obejmuje wyłącznie odpowiedzialność cywilną wobec osób trzecich.",
+        "• Polisa nie obejmuje szkód w pojeździe własnym.",
+        "• Warunki ubezpieczenia oraz procedura likwidacji szkód określane są przez zakład ubezpieczeń i obowiązujące przepisy prawa.",
+      ],
+    },
+
+    {
+      title: "11. Podstawa prawna",
+      paragraphs: [
+        "Produkt regulowany jest przepisami prawa Rzeczypospolitej Polskiej dotyczącymi obowiązkowego ubezpieczenia odpowiedzialności cywilnej posiadaczy pojazdów mechanicznych oraz zasadami międzynarodowego systemu uznawania ubezpieczeń odpowiedzialności cywilnej.",
+      ],
     },
   ],
 };
 
 const en: CookiesPolicyDictionary = {
   pageTitle: "Product Information",
+
   sections: [
-    { title: "Robežpolise (Border OCTA)" },
     {
-      title: "1. General information",
+      title: "OC Graniczne (Border Motor Third-Party Liability Insurance)",
+    },
+
+    {
+      title: "1. General Information",
       paragraphs: [
-        "Robežpolise is compulsory motor third-party liability insurance (OCTA) for vehicles registered outside the European Union and entering the territory of the Republic of Latvia.",
-        "This type of insurance applies when the vehicle does not have a valid international insurance policy (Green Card) recognized in the countries of the European Economic Area.",
-        "Robežpolise is issued in accordance with the requirements of the Sauszemes transportlīdzekļu īpašnieku civiltiesiskās atbildības obligātās apdrošināšanas likums and forms part of the compulsory motor third-party liability insurance system.",
+        "OC Graniczne is compulsory motor third-party liability insurance intended for vehicles registered outside the European Economic Area entering the territory of countries recognising the compulsory motor liability insurance system.",
+        "The insurance applies where there is no valid Green Card international insurance certificate recognised within the European Economic Area.",
+        "The product is issued in accordance with Polish legislation governing compulsory motor third-party liability insurance.",
       ],
     },
+
     {
-      title: "2. Purpose of the insurance",
+      title: "2. Purpose of the Insurance",
       paragraphs: [
-        "The purpose of robežpolise is to ensure compulsory third-party liability insurance coverage:",
+        "The purpose of OC Graniczne is to ensure mandatory third-party liability insurance coverage for the owner or driver of a motor vehicle.",
         "",
-        "• when a vehicle enters the territory of Latvia;",
-        "• when a vehicle participates in road traffic in countries that recognize the mutual insurance system.",
+        "The insurance is required:",
         "",
-        "A vehicle may not participate in road traffic without a valid OCTA insurance contract.",
+        "• when entering the territory of EEA countries;",
+        "• when the vehicle participates in road traffic;",
+        "• in the absence of a valid Green Card.",
+        "",
+        "Participation in road traffic without a valid compulsory insurance agreement is prohibited.",
       ],
     },
+
     {
-      title: "3. What the insurance covers",
+      title: "3. What the Insurance Covers",
       paragraphs: [
-        "Robežpolise covers the civil liability of the vehicle owner or driver for damage caused to third parties as a result of a road traffic accident.",
+        "The insurance covers the civil liability of the vehicle owner and/or driver for damage caused to third parties in connection with the use of the vehicle.",
         "",
-        "Covered:",
+        "Coverage includes:",
         "",
-        "• bodily injury or death of third parties;",
-        "• damage to third-party property;",
-        "• damage to third-party vehicles.",
+        "• injury to life and health of third parties;",
+        "• bodily injuries;",
+        "• property damage caused to third parties;",
+        "• damage to or destruction of third-party vehicles.",
         "",
-        "Not covered:",
-        "",
-        "• damage to the insured vehicle;",
-        "• personal losses of the policyholder;",
-        "• other cases not provided for by the insurance terms.",
+        "The insurer is liable within the insured limits established by law.",
       ],
     },
+
     {
-      title: "4. Territorial scope",
+      title: "4. What Is Not Covered",
       paragraphs: [
-        "Robežpolise is valid in:",
+        "The insurance does not cover:",
         "",
-        "• the Republic of Latvia;",
-        "• other countries participating in the mutual recognition system for motor third-party liability insurance.",
+        "• damage to the insured’s own vehicle;",
+        "• personal losses of the vehicle owner;",
+        "• environmental damage;",
+        "• cases not предусмотренные by legislation and insurance conditions.",
         "",
-        "The coverage territory is determined by:",
-        "",
-        "• the terms of the specific insurance policy;",
-        "• the list of countries stated in the insurance document.",
-        "",
-        "The policy is valid in countries that are not excluded or crossed out in the insurance document.",
-        "Such countries may include Member States of the European Union and the European Economic Area.",
-        "",
-        "In each country, insurance coverage applies:",
-        "",
-        "• in accordance with the laws of that country;",
-        "• within the liability limits established by national law;",
-        "• through the national bureau of the motor third-party liability insurance system.",
+        "Losses caused to the vehicle owner by the driver of the same vehicle are also excluded from coverage.",
       ],
     },
+
     {
-      title: "5. Policy period",
+      title: "5. Limitations of Insurance Coverage",
       paragraphs: [
-        "The insurance contract is concluded for a period of:",
+        "The insurer has the right to seek recovery of paid compensation from the driver in cases provided by law.",
         "",
-        "• from 1 month;",
-        "• up to 12 months.",
+        "In particular, if the driver:",
         "",
-        "The specific period is determined when the policy is issued.",
+        "• intentionally caused the damage;",
+        "• operated the vehicle under the influence of alcohol or narcotic substances;",
+        "• did not possess the required driving licence;",
+        "• unlawfully obtained the vehicle;",
+        "• left the scene of the accident.",
       ],
     },
+
     {
-      title: "6. Who the product is intended for",
+      title: "6. Territorial Scope",
       paragraphs: [
-        "Robežpolise is intended for:",
+        "OC Graniczne is valid:",
         "",
-        "• vehicles registered outside the EU and EEA;",
-        "• vehicles without valid international insurance;",
-        "• drivers entering Latvia and other countries participating in the mutual insurance recognition system.",
+        "• in countries of the European Economic Area;",
+        "• in Switzerland;",
+        "• in states whose national bureaus participate in the mutual recognition system for compulsory motor liability insurance.",
+        "",
+        "The exact territorial scope is determined by the insurance policy conditions.",
       ],
     },
+
     {
-      title: "7. Restrictions",
+      title: "7. Insurance Period",
       paragraphs: [
-        "Robežpolise is not issued for:",
+        "The insurance agreement is concluded for the period specified in the insurance policy.",
         "",
-        "• vehicles registered in European Union countries;",
-        "• vehicles registered in the United Kingdom;",
-        "• vehicles with a valid international insurance policy recognized in the EU.",
+        "The agreement may be concluded:",
+        "",
+        "• for 12 months;",
+        "• or for a shorter period in cases permitted by law.",
+        "",
+        "Insurance coverage begins on the date specified in the policy.",
       ],
     },
+
     {
-      title: "8. Conclusion of the contract",
+      title: "8. Obligations of the Policyholder",
       paragraphs: [
-        "The insurance contract:",
+        "The policyholder is required to:",
         "",
-        "• is concluded between the policyholder and the insurance company;",
-        "• may be issued remotely;",
-        "• enters into force in accordance with the insurer’s terms, usually after payment.",
-        "",
-        "The policy is provided electronically and has legal effect.",
+        "• provide accurate information when arranging the insurance;",
+        "• pay the insurance premium within the prescribed deadlines;",
+        "• notify the insurer of an insured event;",
+        "• take reasonable measures to minimise the consequences of the incident;",
+        "• notify the police when required;",
+        "• provide other parties involved in the accident with insurance policy details.",
       ],
     },
+
     {
-      title: "9. Legal regulation",
+      title: "9. Termination of the Agreement",
       paragraphs: [
-        "The product is regulated by:",
+        "The insurance agreement terminates:",
         "",
-        "Sauszemes transportlīdzekļu īpašnieku civiltiesiskās atbildības obligātās apdrošināšanas likums",
-        "",
-        "as well as:",
-        "",
-        "• European Union legislation on motor third-party liability insurance.",
+        "• upon expiry of the insurance period;",
+        "• upon deregistration of the vehicle;",
+        "• upon registration of the vehicle outside the country;",
+        "• in cases of contract termination provided by law.",
       ],
     },
+
     {
-      title: "10. Important information for users",
+      title: "10. Important Information",
       paragraphs: [
-        "• Robežpolise is mandatory for participation in road traffic where there is no valid Green Card.",
-        "• The policy provides coverage only for third-party liability.",
-        "• Before travelling, check the territorial scope stated in the policy.",
-        "• The insurance terms and claims handling procedure are determined by the insurer.",
+        "• OC Graniczne is compulsory insurance where no valid Green Card is available.",
+        "• The policy covers only third-party civil liability.",
+        "• The policy does not cover damage to the insured’s own vehicle.",
+        "• Insurance conditions and claims handling procedures are determined by the insurer and applicable legislation.",
+      ],
+    },
+
+    {
+      title: "11. Legal Framework",
+      paragraphs: [
+        "The product is governed by the legislation of the Republic of Poland concerning compulsory motor third-party liability insurance, as well as by the rules of the international motor insurance recognition system.",
+      ],
+    },
+  ],
+};
+
+const be: CookiesPolicyDictionary = {
+  pageTitle: "Інфармацыя аб страхавым прадукце",
+
+  sections: [
+    {
+      title:
+        "OC Graniczne (памежнае страхаванне грамадзянскай адказнасці)",
+    },
+
+    {
+      title: "1. Агульная інфармацыя",
+      paragraphs: [
+        "OC Graniczne — гэта абавязковае страхаванне грамадзянскай адказнасці ўладальнікаў транспартных сродкаў, прызначанае для транспартных сродкаў, зарэгістраваных па-за межамі Еўрапейскай эканамічнай прасторы і якія ўязджаюць на тэрыторыю краін, што прызнаюць сістэму абавязковага страхавання грамадзянскай адказнасці.",
+        "Страхаванне прымяняецца ў выпадках адсутнасці дзейнага міжнароднага страхавога сертыфіката Green Card, які прызнаецца на тэрыторыі Еўрапейскай эканамічнай прасторы.",
+        "Прадукт афармляецца ў адпаведнасці з заканадаўствам Польшчы аб абавязковым страхаванні грамадзянскай адказнасці ўладальнікаў транспартных сродкаў.",
+      ],
+    },
+
+    {
+      title: "2. Мэта страхавання",
+      paragraphs: [
+        "Мэта OC Graniczne — забяспечыць наяўнасць абавязковага страхавога пакрыцця грамадзянскай адказнасці ўладальніка або кіроўцы транспартнага сродку.",
+        "",
+        "Страхаванне неабходна:",
+        "",
+        "• пры ўездзе транспартнага сродку на тэрыторыю краін ЕЭП;",
+        "• пры ўдзеле транспартнага сродку ў дарожным руху;",
+        "• пры адсутнасці дзейнага Green Card.",
+        "",
+        "Без дзейнага дагавора абавязковага страхавання ўдзел транспартнага сродку ў дарожным руху забаронены.",
+      ],
+    },
+
+    {
+      title: "3. Што пакрывае страхаванне",
+      paragraphs: [
+        "Страхаванне пакрывае грамадзянскую адказнасць уладальніка і/або кіроўцы транспартнага сродку за шкоду, прычыненую трэцім асобам у сувязі з выкарыстаннем транспартнага сродку.",
+        "",
+        "Пакрываюцца:",
+        "",
+        "• шкода жыццю і здароўю трэціх асоб;",
+        "• цялесныя пашкоджанні;",
+        "• шкода маёмасці трэціх асоб;",
+        "• пашкоджанне або знішчэнне транспартных сродкаў трэціх асоб.",
+        "",
+        "Страхоўшчык нясе адказнасць у межах страхавых сум, устаноўленых заканадаўствам.",
+      ],
+    },
+
+    {
+      title: "4. Што не пакрываецца",
+      paragraphs: [
+        "Страхаванне не пакрывае:",
+        "",
+        "• шкоду ўласнаму транспартнаму сродку страхавальніка;",
+        "• асабістыя страты ўладальніка транспартнага сродку;",
+        "• шкоду навакольнаму асяроддзю;",
+        "• выпадкі, не прадугледжаныя заканадаўствам і ўмовамі страхавання.",
+        "",
+        "Таксама не пакрываюцца страты, прычыненыя ўладальніку транспартнага сродку самім кіроўцам гэтага транспартнага сродку.",
+      ],
+    },
+
+    {
+      title: "5. Абмежаванні страхавога пакрыцця",
+      paragraphs: [
+        "Страхоўшчык мае права патрабаваць вяртання выплачанага страхавога пакрыцця ад кіроўцы транспартнага сродку ў выпадках, прадугледжаных заканадаўствам.",
+        "",
+        "У прыватнасці, калі кіроўца:",
+        "",
+        "• прычыніў шкоду наўмысна;",
+        "• кіраваў транспартным сродкам у стане алкагольнага або наркатычнага ап’янення;",
+        "• не меў неабходнага права кіравання;",
+        "• завалодаў транспартным сродкам злачынным шляхам;",
+        "• пакінуў месца здарэння.",
+      ],
+    },
+
+    {
+      title: "6. Тэрыторыя дзеяння",
+      paragraphs: [
+        "OC Graniczne дзейнічае:",
+        "",
+        "• у краінах Еўрапейскай эканамічнай прасторы;",
+        "• у Швейцарыі;",
+        "• у дзяржавах, нацыянальныя бюро якіх з’яўляюцца ўдзельнікамі сістэмы ўзаемнага прызнання абавязковага страхавання грамадзянскай адказнасці.",
+        "",
+        "Дакладная тэрыторыя дзеяння вызначаецца ўмовамі страхавога поліса.",
+      ],
+    },
+
+    {
+      title: "7. Тэрмін дзеяння",
+      paragraphs: [
+        "Страхаванне заключаецца на тэрмін, указаны ў страхавым полісе.",
+        "",
+        "Дагавор можа быць заключаны:",
+        "",
+        "• на 12 месяцаў;",
+        "• або на больш кароткі тэрмін у выпадках, прадугледжаных заканадаўствам.",
+        "",
+        "Страхавая абарона пачынае дзейнічаць з даты, указанай у полісе.",
+      ],
+    },
+
+    {
+      title: "8. Абавязкі страхавальніка",
+      paragraphs: [
+        "Страхавальнік абавязаны:",
+        "",
+        "• прадаставіць дакладную інфармацыю пры афармленні страхавання;",
+        "• аплаціць страхавую прэмію ва ўстаноўленыя тэрміны;",
+        "• паведаміць страхоўшчыку аб надыходзе страхавога выпадку;",
+        "• прыняць меры для змяншэння наступстваў здарэння;",
+        "• пры неабходнасці паведаміць у паліцыю;",
+        "• прадаставіць іншым удзельнікам ДТЗ інфармацыю аб страхавым полісе.",
+      ],
+    },
+
+    {
+      title: "9. Спыненне дзеяння дагавора",
+      paragraphs: [
+        "Дагавор страхавання спыняецца:",
+        "",
+        "• па заканчэнні тэрміну дзеяння;",
+        "• пры зняцці транспартнага сродку з рэгістрацыі;",
+        "• пры рэгістрацыі транспартнага сродку за межамі краіны;",
+        "• у выпадках скасавання дагавора, прадугледжаных заканадаўствам.",
+      ],
+    },
+
+    {
+      title: "10. Важная інфармацыя",
+      paragraphs: [
+        "• OC Graniczne з’яўляецца абавязковым відам страхавання пры адсутнасці дзейнага Green Card.",
+        "• Поліс пакрывае выключна грамадзянскую адказнасць перад трэцімі асобамі.",
+        "• Поліс не пакрывае шкоду ўласнаму транспартнаму сродку.",
+        "• Умовы страхавання і парадак урэгулявання страхавых выпадкаў вызначаюцца страхоўшчыкам і дзеючым заканадаўствам.",
+      ],
+    },
+
+    {
+      title: "11. Прававое рэгуляванне",
+      paragraphs: [
+        "Прадукт рэгулюецца заканадаўствам Рэспублікі Польшча аб абавязковым страхаванні грамадзянскай адказнасці ўладальнікаў транспартных сродкаў, а таксама правіламі сістэмы міжнароднага прызнання страхавання грамадзянскай адказнасці.",
       ],
     },
   ],
@@ -292,1023 +600,912 @@ const en: CookiesPolicyDictionary = {
 
 const uz: CookiesPolicyDictionary = {
   pageTitle: "Mahsulot haqida ma’lumot",
+
   sections: [
-    { title: "Robežpolise (chegaraviy OCTA)" },
+    {
+      title:
+        "OC Graniczne (fuqarolik javobgarligi bo‘yicha chegara sug‘urtasi)",
+    },
+
     {
       title: "1. Umumiy ma’lumot",
       paragraphs: [
-        "Robežpolise — bu Yevropa Ittifoqidan tashqarida ro‘yxatdan o‘tgan va Latviya Respublikasi hududiga kirayotgan transport vositalari uchun mo‘ljallangan majburiy fuqarolik javobgarligi sug‘urtasi (OCTA).",
-        "Ushbu sug‘urta turi transport vositasida Yevropa iqtisodiy hududida tan olinadigan amal qiluvchi xalqaro sug‘urta polisi (Green Card) mavjud bo‘lmaganda qo‘llaniladi.",
-        "Robežpolise Sauszemes transportlīdzekļu īpašnieku civiltiesiskās atbildības obligātās apdrošināšanas likums talablariga muvofiq rasmiylashtiriladi va majburiy sug‘urta tizimining bir qismidir."
-      ]
+        "OC Graniczne — bu Yevropa iqtisodiy hududidan tashqarida ro‘yxatdan o‘tgan va fuqarolik javobgarligini majburiy sug‘urtalash tizimini tan oluvchi davlatlar hududiga kirayotgan transport vositalari uchun mo‘ljallangan majburiy fuqarolik javobgarligi sug‘urtasidir.",
+        "Sug‘urta Yevropa iqtisodiy hududida tan olinadigan amal qiluvchi Green Card xalqaro sug‘urta sertifikati mavjud bo‘lmagan hollarda qo‘llaniladi.",
+        "Mahsulot Polshaning transport vositalari egalari fuqarolik javobgarligini majburiy sug‘urtalash to‘g‘risidagi qonunchiligiga muvofiq rasmiylashtiriladi.",
+      ],
     },
+
     {
       title: "2. Sug‘urtaning maqsadi",
       paragraphs: [
-        "Robežpolise quyidagi holatlarda fuqarolik javobgarligi sug‘urtasi mavjud bo‘lishini ta’minlaydi:",
+        "OC Graniczne’ning maqsadi transport vositasi egasi yoki haydovchisining fuqarolik javobgarligi bo‘yicha majburiy sug‘urta qoplamasini ta’minlashdir.",
         "",
-        "• transport vositasi Latviya hududiga kirganda;",
-        "• o‘zaro tan olinadigan sug‘urta tizimiga kiruvchi davlatlarda yo‘l harakatida ishtirok etganda.",
+        "Sug‘urta quyidagi hollarda talab etiladi:",
         "",
-        "Amal qiluvchi OCTA shartnomasi bo‘lmasa, transport vositasining yo‘l harakatida ishtirok etishi taqiqlanadi."
-      ]
+        "• transport vositasi YIH davlatlari hududiga kirganda;",
+        "• transport vositasi yo‘l harakatida ishtirok etganda;",
+        "• amal qiluvchi Green Card mavjud bo‘lmaganda.",
+        "",
+        "Majburiy sug‘urta shartnomasi mavjud bo‘lmasa, transport vositasining yo‘l harakatida ishtirok etishi taqiqlanadi.",
+      ],
     },
+
     {
       title: "3. Sug‘urta nimani qoplaydi",
       paragraphs: [
-        "Robežpolise yo‘l-transport hodisasi natijasida uchinchi shaxslarga yetkazilgan zarar uchun transport vositasi egasi yoki haydovchisining fuqarolik javobgarligini qoplaydi.",
+        "Sug‘urta transport vositasidan foydalanish bilan bog‘liq holda uchinchi shaxslarga yetkazilgan zarar uchun transport vositasi egasi va/yoki haydovchisining fuqarolik javobgarligini qoplaydi.",
         "",
         "Qoplanadi:",
         "",
         "• uchinchi shaxslarning hayoti va sog‘lig‘iga yetkazilgan zarar;",
+        "• tan jarohatlari;",
         "• uchinchi shaxslarning mol-mulkiga yetkazilgan zarar;",
-        "• uchinchi shaxslarning transport vositalariga yetkazilgan zarar.",
+        "• uchinchi shaxslarning transport vositalarining shikastlanishi yoki yo‘q qilinishi.",
         "",
-        "Qoplanmaydi:",
-        "",
-        "• o‘z transport vositasiga yetkazilgan zarar;",
-        "• sug‘urtalanuvchining shaxsiy zarar va yo‘qotishlari;",
-        "• sug‘urta qoidalarida nazarda tutilmagan boshqa holatlar."
-      ]
+        "Sug‘urtalovchi qonunchilikda belgilangan sug‘urta summalari doirasida javobgar hisoblanadi.",
+      ],
     },
+
     {
-      title: "4. Amal qilish hududi",
+      title: "4. Nimalar qoplanmaydi",
       paragraphs: [
-        "Robežpolise quyidagi hududlarda amal qiladi:",
+        "Sug‘urta quyidagilarni qoplamaydi:",
         "",
-        "• Latviya Respublikasi;",
-        "• shuningdek, transport vositalari egalari fuqarolik javobgarligi sug‘urtasining o‘zaro tan olinishi tizimiga kiruvchi boshqa davlatlar.",
+        "• sug‘urta qildiruvchining o‘z transport vositasiga yetkazilgan zarar;",
+        "• transport vositasi egasining shaxsiy zarar va yo‘qotishlari;",
+        "• atrof-muhitga yetkazilgan zarar;",
+        "• qonunchilik va sug‘urta shartlarida nazarda tutilmagan holatlar.",
         "",
-        "Qamrov hududi quyidagilar bilan belgilanadi:",
-        "",
-        "• aniq sug‘urta polisi shartlari;",
-        "• sug‘urta hujjatida ko‘rsatilgan davlatlar ro‘yxati.",
-        "",
-        "Polis sug‘urta hujjatida chiqarib tashlanmagan (chizib qo‘yilmagan) davlatlarda amal qiladi.",
-        "Bunday davlatlarga Yevropa Ittifoqi va Yevropa iqtisodiy hududi mamlakatlari kirishi mumkin.",
-        "",
-        "Har bir davlatda sug‘urta qoplamasi:",
-        "",
-        "• ushbu davlat qonunchiligiga muvofiq;",
-        "• milliy qonunchilikda belgilangan javobgarlik limitlari doirasida;",
-        "• milliy sug‘urta byurosi orqali amal qiladi."
-      ]
+        "Shuningdek, ushbu transport vositasi haydovchisi tomonidan transport vositasi egasiga yetkazilgan zararlar ham qoplanmaydi.",
+      ],
     },
+
     {
-      title: "5. Amal qilish muddati",
+      title: "5. Sug‘urta qoplamasi cheklovlari",
       paragraphs: [
-        "Sug‘urta shartnomasi quyidagi muddatga tuziladi:",
+        "Sug‘urtalovchi qonunchilikda nazarda tutilgan hollarda transport vositasi haydovchisidan to‘langan kompensatsiyani qaytarishni talab qilish huquqiga ega.",
         "",
-        "• kamida 1 oy;",
-        "• ko‘pi bilan 12 oy.",
+        "Xususan, agar haydovchi:",
         "",
-        "Aniq muddat polis rasmiylashtirilayotganda belgilanadi."
-      ]
+        "• zararni qasddan yetkazgan bo‘lsa;",
+        "• transport vositasini alkogol yoki giyohvand moddalar ta’sirida boshqargan bo‘lsa;",
+        "• zarur haydovchilik guvohnomasiga ega bo‘lmagan bo‘lsa;",
+        "• transport vositasini noqonuniy ravishda egallagan bo‘lsa;",
+        "• hodisa joyidan yashiringan bo‘lsa.",
+      ],
     },
+
     {
-      title: "6. Kimlar uchun mo‘ljallangan",
+      title: "6. Amal qilish hududi",
       paragraphs: [
-        "Robežpolise quyidagilar uchun mo‘ljallangan:",
+        "OC Graniczne quyidagi hududlarda amal qiladi:",
         "",
-        "• YI va Yevropa iqtisodiy hududidan tashqarida ro‘yxatdan o‘tgan transport vositalari;",
-        "• amal qiluvchi xalqaro sug‘urtasi mavjud bo‘lmagan transport vositalari;",
-        "• Latviya va boshqa tegishli davlatlarga kirayotgan haydovchilar."
-      ]
+        "• Yevropa iqtisodiy hududi davlatlarida;",
+        "• Shveytsariyada;",
+        "• fuqarolik javobgarligini majburiy sug‘urtalashni o‘zaro tan olish tizimida ishtirok etuvchi milliy byurolarga ega davlatlarda.",
+        "",
+        "Aniq amal qilish hududi sug‘urta polisi shartlarida belgilanadi.",
+      ],
     },
+
     {
-      title: "7. Cheklovlar",
+      title: "7. Amal qilish muddati",
       paragraphs: [
-        "Robežpolise quyidagilar uchun rasmiylashtirilmaydi:",
+        "Sug‘urta polisi polisda ko‘rsatilgan muddatga tuziladi.",
         "",
-        "• Yevropa Ittifoqi mamlakatlarida ro‘yxatdan o‘tgan transport vositalari;",
-        "• Buyuk Britaniyada ro‘yxatdan o‘tgan transport vositalari;",
-        "• YIda tan olinadigan amal qiluvchi xalqaro sug‘urtaga ega transport vositalari."
-      ]
+        "Shartnoma quyidagi muddatlarga tuzilishi mumkin:",
+        "",
+        "• 12 oyga;",
+        "• yoki qonunchilikda nazarda tutilgan hollarda undan qisqaroq muddatga.",
+        "",
+        "Sug‘urta himoyasi polisda ko‘rsatilgan sanadan boshlab amal qiladi.",
+      ],
     },
+
     {
-      title: "8. Shartnoma tuzish",
+      title: "8. Sug‘urta qildiruvchining majburiyatlari",
       paragraphs: [
-        "Sug‘urta shartnomasi:",
+        "Sug‘urta qildiruvchi quyidagilarga majbur:",
         "",
-        "• sug‘urtalanuvchi va sug‘urta kompaniyasi o‘rtasida tuziladi;",
-        "• masofadan turib rasmiylashtirilishi mumkin;",
-        "• sug‘urtalovchi shartlariga muvofiq kuchga kiradi (odatda — to‘lovdan so‘ng).",
-        "",
-        "Polis elektron shaklda taqdim etiladi va yuridik kuchga ega."
-      ]
+        "• sug‘urta rasmiylashtirilayotganda ishonchli ma’lumotlarni taqdim etish;",
+        "• sug‘urta mukofotini belgilangan muddatlarda to‘lash;",
+        "• sug‘urta hodisasi yuz berganda sug‘urtalovchini xabardor qilish;",
+        "• hodisa oqibatlarini kamaytirish choralarini ko‘rish;",
+        "• zarurat bo‘lsa, politsiyani xabardor qilish;",
+        "• YTHning boshqa иштирокчиларига sug‘urta polisi haqidagi ma’lumotlarni taqdim etish.",
+      ],
     },
+
     {
-      title: "9. Huquqiy tartibga solish",
+      title: "9. Shartnomaning amal qilishi tugashi",
       paragraphs: [
-        "Mahsulot quyidagi hujjatlar bilan tartibga solinadi:",
+        "Sug‘urta shartnomasi quyidagi hollarda tugaydi:",
         "",
-        "Sauszemes transportlīdzekļu īpašnieku civiltiesiskās atbildības obligātās apdrošināšanas likums",
-        "",
-        "shuningdek:",
-        "",
-        "• Yevropa Ittifoqining fuqarolik javobgarligi sug‘urtasi bo‘yicha qonunchiligi."
-      ]
+        "• amal qilish muddati yakunlanganda;",
+        "• transport vositasi ro‘yxatdan chiqarilganda;",
+        "• transport vositasi boshqa davlatda ro‘yxatdan o‘tkazilganda;",
+        "• qonunchilikda nazarda tutilgan shartnomani bekor qilish hollari yuz berganda.",
+      ],
     },
+
     {
       title: "10. Muhim ma’lumot",
       paragraphs: [
-        "• Robežpolise Green Card bo‘lmaganda majburiy hisoblanadi.",
-        "• Polis faqat fuqarolik javobgarligini qoplaydi.",
-        "• Safardan oldin polisda ko‘rsatilgan hududni tekshirish zarur.",
-        "• Sug‘urta shartlari va zararlarni qoplash tartibi sug‘urtalovchi tomonidan belgilanadi."
-      ]
+        "• OC Graniczne amal qiluvchi Green Card mavjud bo‘lmaganda majburiy sug‘urta turi hisoblanadi.",
+        "• Polis faqat uchinchi shaxslar oldidagi fuqarolik javobgarligini qoplaydi.",
+        "• Polis sug‘urta qildiruvchining o‘z transport vositasiga yetkazilgan zararni qoplamaydi.",
+        "• Sug‘urta shartlari va zararlarni tartibga solish tartibi sug‘urtalovchi hamda amaldagi qonunchilik bilan belgilanadi.",
+      ],
     },
-  ],
-};
 
-const kg: CookiesPolicyDictionary = {
-  pageTitle: "Продукт тууралуу маалымат",
-  sections: [
-    { title: "Robežpolise (чек аралык OCTA)" },
     {
-      title: "1. Жалпы маалымат",
+      title: "11. Huquqiy tartibga solish",
       paragraphs: [
-        "Robežpolise — бул транспорт каражаттарынын ээлеринин жарандык жоопкерчилигин милдеттүү камсыздандыруу (OCTA). Ал Европа Биримдигинен тышкары катталган жана Латвия Республикасынын аймагына кирген транспорт каражаттары үчүн арналган.",
-        "Бул камсыздандыруу түрү транспорт каражатында Европа экономикалык аймагында таанылган жарактуу эл аралык камсыздандыруу полиси (Green Card) жок болгон учурда колдонулат.",
-        "Robežpolise Sauszemes transportlīdzekļu īpašnieku civiltiesiskās atbildības obligātās apdrošināšanas likums талаптарына ылайык таризделет жана милдеттүү жарандык жоопкерчилик камсыздандыруу системасына кирет."
-      ]
+        "Mahsulot Polsha Respublikasining transport vositalari egalari fuqarolik javobgarligini majburiy sug‘urtalash to‘g‘risidagi qonunchiligi, shuningdek fuqarolik javobgarligi sug‘urtasini xalqaro tan olish tizimi qoidalari bilan tartibga solinadi.",
+      ],
     },
-    {
-      title: "2. Камсыздандыруунун максаты",
-      paragraphs: [
-        "Robežpolise төмөнкү учурларда жарандык жоопкерчиликти милдеттүү камсыздандыруу менен камсыз кылат:",
-        "",
-        "• транспорт каражаты Латвия аймагына киргенде;",
-        "• өз ара таануу системасына кирген өлкөлөрдө жол кыймылына катышканда.",
-        "",
-        "Жарактуу OCTA келишими жок болсо, транспорт каражатынын жол кыймылына катышуусуна тыюу салынат."
-      ]
-    },
-    {
-      title: "3. Камсыздандыруу эмнени камтыйт",
-      paragraphs: [
-        "Robežpolise жол кырсыгынын натыйжасында үчүнчү жактарга келтирилген зыян үчүн транспорт каражатынын ээси же айдоочунун жарандык жоопкерчилигин жабат.",
-        "",
-        "Камтылат:",
-        "",
-        "• үчүнчү жактардын өмүрүнө жана ден соолугуна келтирилген зыян;",
-        "• үчүнчү жактардын мүлкүнө келтирилген зыян;",
-        "• үчүнчү жактардын транспорт каражаттарына келтирилген зыян.",
-        "",
-        "Камтылбайт:",
-        "",
-        "• өзүнүн транспорт каражатына келтирилген зыян;",
-        "• камсыздандырылуучунун жеке чыгымдары;",
-        "• камсыздандыруу эрежелеринде каралбаган башка учурлар."
-      ]
-    },
-    {
-      title: "4. Камтуу аймагы",
-      paragraphs: [
-        "Robežpolise төмөнкү аймактарда жарактуу:",
-        "",
-        "• Латвия Республикасынын аймагында;",
-        "• ошондой эле транспорт каражаттарынын жарандык жоопкерчилигин өз ара таануу системасына кирген башка мамлекеттерде.",
-        "",
-        "Камтуу аймагы төмөнкүлөр менен аныкталат:",
-        "",
-        "• конкреттүү полистин шарттары;",
-        "• камсыздандыруу документинде көрсөтүлгөн өлкөлөрдүн тизмеси.",
-        "",
-        "Полис камсыздандыруу документинде чийилип салынбаган өлкөлөрдө жарактуу.",
-        "Мындай өлкөлөргө Европа Биримдигине жана Европа экономикалык аймагына кирген мамлекеттер кириши мүмкүн.",
-        "",
-        "Ар бир өлкөдө камсыздандыруу төмөнкүдөй шарттарда колдонулат:",
-        "",
-        "• ошол өлкөнүн мыйзамдарына ылайык;",
-        "• улуттук мыйзамдар менен белгиленген жоопкерчилик лимиттери менен;",
-        "• улуттук камсыздандыруу бюросу аркылуу."
-      ]
-    },
-    {
-      title: "5. Мөөнөтү",
-      paragraphs: [
-        "Камсыздандыруу келишими төмөнкү мөөнөткө түзүлөт:",
-        "",
-        "• 1 айдөн;",
-        "• 12 айга чейин.",
-        "",
-        "Так мөөнөт полисти тариздөөдө аныкталат."
-      ]
-    },
-    {
-      title: "6. Кимдер үчүн арналган",
-      paragraphs: [
-        "Robežpolise төмөнкүлөр үчүн арналган:",
-        "",
-        "• ЕС жана ЕЭАдан тышкары катталган транспорт каражаттары;",
-        "• жарактуу эл аралык камсыздандыруусу жок транспорт каражаттары;",
-        "• Латвияга жана башка тиешелүү өлкөлөргө кирген айдоочулар."
-      ]
-    },
-    {
-      title: "7. Чектөөлөр",
-      paragraphs: [
-        "Robežpolise төмөнкүлөр үчүн берилбейт:",
-        "",
-        "• Европа Биримдигинде катталган транспорт каражаттары;",
-        "• Улуу Британияда катталган транспорт каражаттары;",
-        "• ЕСте таанылган жарактуу эл аралык полиси бар транспорт каражаттары."
-      ]
-    },
-    {
-      title: "8. Келишим түзүү",
-      paragraphs: [
-        "Камсыздандыруу келишими:",
-        "",
-        "• камсыздандырылуучу менен камсыздандыруу компаниясынын ортосунда түзүлөт;",
-        "• алыстан таризделиши мүмкүн;",
-        "• камсыздандыруучунун шарттарына ылайык күчүнө кирет (адатта — төлөмдөн кийин).",
-        "",
-        "Полис электрондук түрдө берилет жана юридикалык күчкө ээ."
-      ]
-    },
-    {
-      title: "9. Укуктук жөнгө салуу",
-      paragraphs: [
-        "Бул продукт төмөнкүлөр менен жөнгө салынат:",
-        "",
-        "Sauszemes transportlīdzekļu īpašnieku civiltiesiskās atbildības obligātās apdrošināšanas likums",
-        "",
-        "ошондой эле:",
-        "",
-        "• жарандык жоопкерчилик камсыздандыруу боюнча Европа Биримдигинин мыйзамдары."
-      ]
-    },
-    {
-      title: "10. Маанилүү маалымат",
-      paragraphs: [
-        "• Robežpolise Green Card жок учурда милдеттүү талап болуп саналат.",
-        "• Полис жарандык жоопкерчиликти гана камтыйт.",
-        "• Сапар алдында камтуу аймагын текшерүү зарыл.",
-        "• Камсыздандыруу шарттары жана зыянды жөнгө салуу тартиби камсыздандыруучу тарабынан аныкталат."
-      ]
-    }
   ],
 };
 
 const ka: CookiesPolicyDictionary = {
-  pageTitle: "პროდუქტის შესახებ ინფორმაცია",
+  pageTitle: "ინფორმაცია პროდუქტის შესახებ",
+
   sections: [
-    { title: "Robežpolise (საზღვრის OCTA)" },
+    {
+      title: "OC Graniczne (სასაზღვრო სამოქალაქო პასუხისმგებლობის დაზღვევა)",
+    },
+
     {
       title: "1. ზოგადი ინფორმაცია",
       paragraphs: [
-        "Robežpolise წარმოადგენს სატრანსპორტო საშუალებების მფლობელთა სავალდებულო სამოქალაქო პასუხისმგებლობის დაზღვევას (OCTA), რომელიც განკუთვნილია ევროკავშირის ფარგლებს გარეთ რეგისტრირებული სატრანსპორტო საშუალებებისთვის, რომლებიც შედიან ლატვიის რესპუბლიკის ტერიტორიაზე.",
-        "ეს დაზღვევა გამოიყენება იმ შემთხვევაში, თუ სატრანსპორტო საშუალებას არ აქვს მოქმედი საერთაშორისო სადაზღვევო პოლისი (Green Card), რომელიც აღიარებულია ევროპის ეკონომიკური სივრცის ქვეყნებში.",
-        "Robežpolise გაიცემა Sauszemes transportlīdzekļu īpašnieku civiltiesiskās atbildības obligātās apdrošināšanas likums-ის მოთხოვნების შესაბამისად და წარმოადგენს სავალდებულო პასუხისმგებლობის დაზღვევის სისტემის ნაწილს."
-      ]
+        "OC Graniczne წარმოადგენს სატრანსპორტო საშუალებების მფლობელთა სავალდებულო სამოქალაქო პასუხისმგებლობის დაზღვევას, რომელიც განკუთვნილია ევროპის ეკონომიკური სივრცის ფარგლებს გარეთ რეგისტრირებული სატრანსპორტო საშუალებებისთვის, რომლებიც შედიან იმ ქვეყნების ტერიტორიაზე, სადაც მოქმედებს სამოქალაქო პასუხისმგებლობის სავალდებულო დაზღვევის აღიარების სისტემა.",
+        "დაზღვევა გამოიყენება იმ შემთხვევაში, თუ არ არსებობს მოქმედი საერთაშორისო სადაზღვევო სერტიფიკატი Green Card, რომელიც აღიარებულია ევროპის ეკონომიკური სივრცის ტერიტორიაზე.",
+        "პროდუქტი ფორმდება პოლონეთის რესპუბლიკის კანონმდებლობის შესაბამისად, რომელიც არეგულირებს სატრანსპორტო საშუალებების მფლობელთა სავალდებულო სამოქალაქო პასუხისმგებლობის დაზღვევას.",
+      ],
     },
+
     {
-      title: "2. დაზღვევის მიზანი",
+      title: "2. დაზღვევის დანიშნულება",
       paragraphs: [
-        "Robežpolise-ის მიზანია უზრუნველყოს სავალდებულო პასუხისმგებლობის დაზღვევა:",
+        "OC Graniczne-ის მიზანია უზრუნველყოს სატრანსპორტო საშუალების მფლობელის ან მძღოლის სავალდებულო სამოქალაქო პასუხისმგებლობის სადაზღვევო დაფარვა.",
         "",
-        "• სატრანსპორტო საშუალების ლატვიაში შემოსვლისას;",
-        "• იმ ქვეყნებში მოძრაობისას, რომლებიც აღიარებენ ურთიერთდაზღვევის სისტემას.",
+        "დაზღვევა აუცილებელია:",
         "",
-        "მოქმედი OCTA ხელშეკრულების გარეშე სატრანსპორტო საშუალების მონაწილეობა საგზაო მოძრაობაში აკრძალულია."
-      ]
+        "• სატრანსპორტო საშუალების ევროპის ეკონომიკური სივრცის ქვეყნებში შესვლისას;",
+        "• სატრანსპორტო საშუალების საგზაო მოძრაობაში მონაწილეობისას;",
+        "• მოქმედი Green Card-ის არარსებობის შემთხვევაში.",
+        "",
+        "სავალდებულო დაზღვევის მოქმედი ხელშეკრულების გარეშე სატრანსპორტო საშუალების საგზაო მოძრაობაში მონაწილეობა აკრძალულია.",
+      ],
     },
+
     {
       title: "3. რას ფარავს დაზღვევა",
       paragraphs: [
-        "Robežpolise ფარავს სატრანსპორტო საშუალების მფლობელის ან მძღოლის სამოქალაქო პასუხისმგებლობას მესამე პირებისთვის მიყენებული ზიანის შემთხვევაში.",
+        "დაზღვევა ფარავს სატრანსპორტო საშუალების მფლობელის და/ან მძღოლის სამოქალაქო პასუხისმგებლობას მესამე პირებისთვის სატრანსპორტო საშუალების გამოყენებით მიყენებული ზიანისათვის.",
         "",
         "ფარავს:",
         "",
-        "• მესამე პირის სიცოცხლესა და ჯანმრთელობაზე მიყენებულ ზიანს;",
-        "• მესამე პირის ქონებრივ ზიანს;",
-        "• მესამე პირის სატრანსპორტო საშუალებების დაზიანებას.",
+        "• მესამე პირების სიცოცხლისა და ჯანმრთელობის დაზიანებას;",
+        "• სხეულის დაზიანებებს;",
+        "• მესამე პირების ქონებრივ ზიანს;",
+        "• მესამე პირების სატრანსპორტო საშუალებების დაზიანებას ან განადგურებას.",
         "",
-        "არ ფარავს:",
-        "",
-        "• საკუთარი სატრანსპორტო საშუალების დაზიანებას;",
-        "• დამზღვევის პირად ზარალს;",
-        "• სხვა შემთხვევებს, რომლებიც არ არის განსაზღვრული დაზღვევის წესებში."
-      ]
+        "სადაზღვევო კომპანია პასუხისმგებელია კანონმდებლობით დადგენილი სადაზღვევო ლიმიტების ფარგლებში.",
+      ],
     },
+
     {
-      title: "4. მოქმედების ტერიტორია",
+      title: "4. რას არ ფარავს დაზღვევა",
       paragraphs: [
-        "Robežpolise მოქმედებს:",
+        "დაზღვევა არ ფარავს:",
         "",
-        "• ლატვიის რესპუბლიკის ტერიტორიაზე;",
-        "• ასევე სხვა ქვეყნებში, რომლებიც შედიან სატრანსპორტო საშუალებების პასუხისმგებლობის ურთიერთდაზღვევის სისტემაში.",
+        "• დამზღვევის საკუთარი სატრანსპორტო საშუალების დაზიანებას;",
+        "• სატრანსპორტო საშუალების მფლობელის პირად ზარალს;",
+        "• გარემოსთვის მიყენებულ ზიანს;",
+        "• შემთხვევებს, რომლებიც არ არის გათვალისწინებული კანონმდებლობითა და დაზღვევის პირობებით.",
         "",
-        "დაფარვის ტერიტორია განისაზღვრება:",
-        "",
-        "• კონკრეტული პოლისის პირობებით;",
-        "• პოლისში მითითებული ქვეყნების ჩამონათვალით.",
-        "",
-        "პოლისი მოქმედებს იმ ქვეყნებში, რომლებიც არ არის გამორიცხული (არ არის გადახაზული) სადაზღვევო დოკუმენტში.",
-        "ეს შეიძლება იყოს ევროკავშირის და ევროპის ეკონომიკური სივრცის ქვეყნები.",
-        "",
-        "ყოველ ქვეყანაში დაფარვა მოქმედებს:",
-        "",
-        "• შესაბამისი ქვეყნის კანონმდებლობის მიხედვით;",
-        "• ეროვნული ლიმიტების ფარგლებში;",
-        "• შესაბამისი ეროვნული სადაზღვევო ბიუროს მეშვეობით."
-      ]
+        "ასევე არ ანაზღაურდება ზიანი, რომელიც სატრანსპორტო საშუალების მფლობელს მიაყენა ამავე სატრანსპორტო საშუალების მძღოლმა.",
+      ],
     },
+
     {
-      title: "5. მოქმედების ვადა",
+      title: "5. სადაზღვევო დაფარვის შეზღუდვები",
       paragraphs: [
-        "დაზღვევის ხელშეკრულება იდება:",
+        "სადაზღვევო კომპანიას უფლება აქვს კანონმდებლობით გათვალისწინებულ შემთხვევებში მოითხოვოს გადახდილი ანაზღაურების დაბრუნება სატრანსპორტო საშუალების მძღოლისგან.",
         "",
-        "• მინიმუმ 15 დღით;",
-        "• მაქსიმუმ 12 თვემდე.",
+        "კერძოდ, თუ მძღოლი:",
         "",
-        "კონკრეტული ვადა განისაზღვრება პოლისის გაფორმებისას."
-      ]
+        "• ზიანი მიაყენა განზრახ;",
+        "• მართავდა სატრანსპორტო საშუალებას ალკოჰოლური ან ნარკოტიკული ზემოქმედების ქვეშ;",
+        "• არ ფლობდა შესაბამის მართვის მოწმობას;",
+        "• დაეუფლა სატრანსპორტო საშუალებას დანაშაულებრივი გზით;",
+        "• მიიმალა შემთხვევის ადგილიდან.",
+      ],
     },
+
     {
-      title: "6. ვისთვის არის განკუთვნილი",
+      title: "6. მოქმედების ტერიტორია",
       paragraphs: [
-        "Robežpolise განკუთვნილია:",
+        "OC Graniczne მოქმედებს:",
         "",
-        "• ევროკავშირისა და ევროეკონომიკური ზონის ფარგლებს გარეთ რეგისტრირებული სატრანსპორტო საშუალებებისთვის;",
-        "• სატრანსპორტო საშუალებებისთვის, რომლებსაც არ აქვთ მოქმედი საერთაშორისო დაზღვევა;",
-        "• მძღოლებისთვის, რომლებიც შედიან ლატვიაში და სხვა შესაბამის ქვეყნებში."
-      ]
+        "• ევროპის ეკონომიკური სივრცის ქვეყნებში;",
+        "• შვეიცარიაში;",
+        "• იმ სახელმწიფოებში, რომელთა ეროვნული ბიუროები სავალდებულო სამოქალაქო პასუხისმგებლობის დაზღვევის ურთიერთაღიარების სისტემის წევრები არიან.",
+        "",
+        "მოქმედების ზუსტი ტერიტორია განისაზღვრება სადაზღვევო პოლისის პირობებით.",
+      ],
     },
+
     {
-      title: "7. შეზღუდვები",
+      title: "7. მოქმედების ვადა",
       paragraphs: [
-        "Robežpolise არ გაიცემა:",
+        "დაზღვევა ფორმდება სადაზღვევო პოლისში მითითებული ვადით.",
         "",
-        "• ევროკავშირის ქვეყნებში რეგისტრირებული სატრანსპორტო საშუალებებისთვის;",
-        "• გაერთიანებულ სამეფოში რეგისტრირებული სატრანსპორტო საშუალებებისთვის;",
-        "• სატრანსპორტო საშუალებებისთვის, რომლებსაც აქვთ მოქმედი საერთაშორისო დაზღვევა, რომელიც აღიარებულია ევროკავშირში."
-      ]
+        "ხელშეკრულება შეიძლება გაფორმდეს:",
+        "",
+        "• 12 თვემდე ვადით;",
+        "• ან უფრო მოკლე ვადით კანონმდებლობით გათვალისწინებულ შემთხვევებში.",
+        "",
+        "სადაზღვევო დაცვა ძალაში შედის პოლისში მითითებული თარიღიდან.",
+      ],
     },
+
     {
-      title: "8. ხელშეკრულების გაფორმება",
+      title: "8. დამზღვევის ვალდებულებები",
       paragraphs: [
-        "დაზღვევის ხელშეკრულება:",
+        "დამზღვევი ვალდებულია:",
         "",
-        "• იდება დამზღვევსა და სადაზღვევო კომპანიას შორის;",
-        "• შეიძლება გაფორმდეს დისტანციურად;",
-        "• ძალაში შედის დამზღვევის პირობების შესაბამისად (როგორც წესი — გადახდის შემდეგ).",
-        "",
-        "პოლისი გაიცემა ელექტრონულად და აქვს იურიდიული ძალა."
-      ]
+        "• დაზღვევის გაფორმებისას წარადგინოს სანდო ინფორმაცია;",
+        "• დროულად გადაიხადოს სადაზღვევო პრემია;",
+        "• აცნობოს სადაზღვევო კომპანიას სადაზღვევო შემთხვევის შესახებ;",
+        "• მიიღოს ზომები შემთხვევის შედეგების შესამცირებლად;",
+        "• საჭიროების შემთხვევაში აცნობოს პოლიციას;",
+        "• საგზაო შემთხვევის სხვა მონაწილეებს მიაწოდოს ინფორმაცია სადაზღვევო პოლისის შესახებ.",
+      ],
     },
+
     {
-      title: "9. სამართლებრივი რეგულირება",
+      title: "9. ხელშეკრულების შეწყვეტა",
       paragraphs: [
-        "პროდუქტი რეგულირდება:",
+        "დაზღვევის ხელშეკრულება წყდება:",
         "",
-        "Sauszemes transportlīdzekļu īpašnieku civiltiesiskās atbildības obligātās apdrošināšanas likums",
-        "",
-        "ასევე:",
-        "",
-        "• ევროკავშირის სამართლებრივი ნორმებით პასუხისმგებლობის დაზღვევის სფეროში."
-      ]
+        "• მოქმედების ვადის ამოწურვისას;",
+        "• სატრანსპორტო საშუალების რეგისტრაციიდან მოხსნის შემთხვევაში;",
+        "• სატრანსპორტო საშუალების სხვა ქვეყანაში რეგისტრაციის შემთხვევაში;",
+        "• კანონმდებლობით გათვალისწინებულ სხვა შემთხვევებში.",
+      ],
     },
+
     {
       title: "10. მნიშვნელოვანი ინფორმაცია",
       paragraphs: [
-        "• Robežpolise სავალდებულოა, თუ არ გაქვთ Green Card;",
-        "• პოლისი ფარავს მხოლოდ სამოქალაქო პასუხისმგებლობას;",
-        "• გამგზავრებამდე აუცილებლად გადაამოწმეთ დაფარვის ტერიტორია;",
-        "• დაზღვევის პირობები და ზარალის ანაზღაურების პროცედურა განისაზღვრება სადაზღვევო კომპანიის მიერ."
-      ]
-    }
-  ]
+        "• OC Graniczne წარმოადგენს სავალდებულო დაზღვევას მოქმედი Green Card-ის არარსებობის შემთხვევაში.",
+        "• პოლისი ფარავს მხოლოდ სამოქალაქო პასუხისმგებლობას მესამე პირების მიმართ.",
+        "• პოლისი არ ფარავს საკუთარი სატრანსპორტო საშუალების დაზიანებას.",
+        "• დაზღვევის პირობები და ზარალის დარეგულირების წესი განისაზღვრება სადაზღვევო კომპანიისა და მოქმედი კანონმდებლობის საფუძველზე.",
+      ],
+    },
+
+    {
+      title: "11. სამართლებრივი რეგულირება",
+      paragraphs: [
+        "პროდუქტი რეგულირდება პოლონეთის რესპუბლიკის კანონმდებლობით, რომელიც ეხება სატრანსპორტო საშუალებების მფლობელთა სავალდებულო სამოქალაქო პასუხისმგებლობის დაზღვევას, ასევე სამოქალაქო პასუხისმგებლობის დაზღვევის საერთაშორისო აღიარების სისტემის წესებით.",
+      ],
+    },
+  ],
 };
 
-const kz: CookiesPolicyDictionary = {
+const kk: CookiesPolicyDictionary = {
   pageTitle: "Өнім туралы ақпарат",
+
   sections: [
-    { title: "Robežpolise (шекаралық OCTA)" },
+    {
+      title:
+        "OC Graniczne (азаматтық-құқықтық жауапкершілікті шекаралық сақтандыру)",
+    },
+
     {
       title: "1. Жалпы ақпарат",
       paragraphs: [
-        "Robežpolise — бұл Еуропалық Одақтан тыс тіркелген және Латвия Республикасының аумағына кіретін көлік құралдары үшін арналған көлік иелерінің азаматтық-құқықтық жауапкершілігін міндетті сақтандыру (OCTA).",
-        "Бұл сақтандыру түрі көлік құралында Еуропалық экономикалық аймақ елдерінде танылатын жарамды халықаралық сақтандыру полисі (Green Card) болмаған жағдайда қолданылады.",
-        "Robežpolise Sauszemes transportlīdzekļu īpašnieku civiltiesiskās atbildības obligātās apdrošināšanas likums талаптарына сәйкес рәсімделеді және міндетті жауапкершілік сақтандыру жүйесінің бөлігі болып табылады.",
+        "OC Graniczne — бұл Еуропалық экономикалық аймақтан тыс тіркелген және азаматтық-құқықтық жауапкершілікті міндетті сақтандыру жүйесін мойындайтын елдер аумағына кіретін көлік құралдарына арналған міндетті азаматтық-құқықтық жауапкершілік сақтандыруы.",
+        "Сақтандыру Еуропалық экономикалық аймақ аумағында танылатын жарамды Green Card халықаралық сақтандыру сертификаты болмаған жағдайда қолданылады.",
+        "Өнім Польша Республикасының көлік құралдары иелерінің міндетті азаматтық-құқықтық жауапкершілігін сақтандыру туралы заңнамасына сәйкес рәсімделеді.",
       ],
     },
+
     {
       title: "2. Сақтандырудың мақсаты",
       paragraphs: [
-        "Robežpolise мақсаты — азаматтық-құқықтық жауапкершілік бойынша міндетті сақтандыру қорғанысын қамтамасыз ету:",
+        "OC Graniczne мақсаты — көлік құралы иесінің немесе жүргізушісінің азаматтық-құқықтық жауапкершілігі бойынша міндетті сақтандыру жабынының болуын қамтамасыз ету.",
         "",
-        "• көлік құралы Латвия аумағына кірген кезде;",
-        "• өзара сақтандыру жүйесін мойындайтын елдерде жол қозғалысына қатысқан кезде.",
+        "Сақтандыру келесі жағдайларда қажет:",
         "",
-        "Жарамды OCTA шарты болмаса, көлік құралының жол қозғалысына қатысуына тыйым салынады.",
+        "• көлік құралы ЕЭА елдерінің аумағына кірген кезде;",
+        "• көлік құралы жол қозғалысына қатысқан кезде;",
+        "• жарамды Green Card болмаған кезде.",
+        "",
+        "Міндетті сақтандыру шарты болмаған жағдайда көлік құралының жол қозғалысына қатысуына тыйым салынады.",
       ],
     },
+
     {
       title: "3. Сақтандыру нені қамтиды",
       paragraphs: [
-        "Robežpolise жол-көлік оқиғасы нәтижесінде үшінші тұлғаларға келтірілген зиян үшін көлік иесінің немесе жүргізушінің азаматтық-құқықтық жауапкершілігін жабады.",
+        "Сақтандыру көлік құралын пайдалану нәтижесінде үшінші тұлғаларға келтірілген зиян үшін көлік құралы иесінің және/немесе жүргізушісінің азаматтық-құқықтық жауапкершілігін қамтиды.",
         "",
-        "Қамтылады:",
+        "Қамтылатын жағдайлар:",
         "",
         "• үшінші тұлғалардың өмірі мен денсаулығына келтірілген зиян;",
+        "• дене жарақаттары;",
         "• үшінші тұлғалардың мүлкіне келтірілген зиян;",
-        "• үшінші тұлғалардың көлік құралдарына келтірілген зиян.",
+        "• үшінші тұлғалардың көлік құралдарының бүлінуі немесе жойылуы.",
         "",
-        "Қамтылмайды:",
-        "",
-        "• өз көлік құралына келтірілген зиян;",
-        "• сақтанушының жеке шығындары;",
-        "• сақтандыру ережелерінде қарастырылмаған басқа жағдайлар.",
+        "Сақтандырушы заңнамада белгіленген сақтандыру сомалары шегінде жауапкершілік көтереді.",
       ],
     },
+
     {
-      title: "4. Қолданылу аумағы",
+      title: "4. Нелер қамтылмайды",
       paragraphs: [
-        "Robežpolise келесі аумақта жарамды:",
+        "Сақтандыру мыналарды қамтымайды:",
         "",
-        "• Латвия Республикасының аумағында;",
-        "• сондай-ақ көлік құралдары иелерінің жауапкершілігін өзара тану жүйесіне кіретін басқа мемлекеттерде.",
+        "• сақтанушының өз көлік құралына келтірілген зиян;",
+        "• көлік құралы иесінің жеке шығындары;",
+        "• қоршаған ортаға келтірілген зиян;",
+        "• заңнамада және сақтандыру шарттарында көзделмеген жағдайлар.",
         "",
-        "Қамту аумағы келесіге байланысты анықталады:",
-        "",
-        "• нақты полис шарттарына;",
-        "• сақтандыру құжатында көрсетілген елдер тізіміне.",
-        "",
-        "Полис сақтандыру құжатында сызып тасталмаған елдерде жарамды.",
-        "Бұл елдерге Еуропалық Одақ және Еуропалық экономикалық аймақ мемлекеттері кіруі мүмкін.",
-        "",
-        "Әр елде сақтандыру келесі шарттармен әрекет етеді:",
-        "",
-        "• сол елдің заңнамасына сәйкес;",
-        "• ұлттық құқықта белгіленген жауапкершілік лимиттерімен;",
-        "• ұлттық сақтандыру бюросы арқылы.",
+        "Сондай-ақ осы көлік құралының жүргізушісі көлік иесіне келтірген зиян өтелмейді.",
       ],
     },
+
     {
-      title: "5. Қолданылу мерзімі",
+      title: "5. Сақтандыру жабынының шектеулері",
       paragraphs: [
-        "Сақтандыру шарты келесі мерзімге жасалады:",
+        "Сақтандырушы заңнамада көзделген жағдайларда төленген өтемақыны көлік жүргізушісінен кері талап етуге құқылы.",
         "",
-        "• 15 күннен бастап;",
-        "• 12 айға дейін.",
+        "Атап айтқанда, егер жүргізуші:",
         "",
-        "Нақты мерзім полис рәсімдеу кезінде анықталады.",
+        "• зиянды қасақана келтірсе;",
+        "• алкогольдік немесе есірткілік масаң күйде көлік басқарса;",
+        "• қажетті жүргізуші куәлігі болмаса;",
+        "• көлік құралын қылмыстық жолмен иеленсе;",
+        "• оқиға орнынан кетіп қалса.",
       ],
     },
+
     {
-      title: "6. Кімге арналған",
+      title: "6. Қолданылу аумағы",
       paragraphs: [
-        "Robežpolise келесі жағдайларға арналған:",
+        "OC Graniczne келесі аумақтарда әрекет етеді:",
         "",
-        "• ЕО және ЕЭА-дан тыс тіркелген көлік құралдары;",
-        "• жарамды халықаралық сақтандыруы жоқ көлік құралдары;",
-        "• Латвияға және өзара сақтандыру жүйесіне кіретін елдерге кіретін жүргізушілер.",
+        "• Еуропалық экономикалық аймақ елдерінде;",
+        "• Швейцарияда;",
+        "• азаматтық-құқықтық жауапкершілікті міндетті сақтандыруды өзара тану жүйесіне қатысатын ұлттық бюролары бар мемлекеттерде.",
+        "",
+        "Қолданылу аумағы сақтандыру полисінің шарттарымен нақты айқындалады.",
       ],
     },
+
     {
-      title: "7. Шектеулер",
+      title: "7. Қолданылу мерзімі",
       paragraphs: [
-        "Robežpolise келесі жағдайларда рәсімделмейді:",
+        "Сақтандыру полисте көрсетілген мерзімге жасалады.",
         "",
-        "• Еуропалық Одақ елдерінде тіркелген көлік құралдары үшін;",
-        "• Ұлыбританияда тіркелген көлік құралдары үшін;",
-        "• ЕО аумағында танылатын жарамды халықаралық сақтандыру полисі бар көлік құралдары үшін.",
+        "Шарт келесі мерзімдерге жасалуы мүмкін:",
+        "",
+        "• 12 айға;",
+        "• немесе заңнамада көзделген жағдайларда одан қысқа мерзімге.",
+        "",
+        "Сақтандыру жабыны полисте көрсетілген күннен бастап күшіне енеді.",
       ],
     },
+
     {
-      title: "8. Шарт жасасу",
+      title: "8. Сақтанушының міндеттері",
       paragraphs: [
-        "Сақтандыру шарты:",
+        "Сақтанушы міндетті:",
         "",
-        "• сақтанушы мен сақтандыру компаниясы арасында жасалады;",
-        "• қашықтан рәсімделуі мүмкін;",
-        "• сақтандырушы шарттарына сәйкес күшіне енеді (әдетте — төлемнен кейін).",
-        "",
-        "Полис электрондық түрде беріледі және заңды күші бар.",
+        "• сақтандыру рәсімдеу кезінде дұрыс ақпарат ұсынуға;",
+        "• сақтандыру сыйлықақысын белгіленген мерзімде төлеуге;",
+        "• сақтандыру оқиғасы туралы сақтандырушыға хабарлауға;",
+        "• оқиға салдарын азайту шараларын қабылдауға;",
+        "• қажет болған жағдайда полицияға хабарлауға;",
+        "• жол-көлік оқиғасының басқа қатысушыларына сақтандыру полисі туралы ақпарат беруге.",
       ],
     },
+
     {
-      title: "9. Құқықтық реттеу",
+      title: "9. Шарттың тоқтатылуы",
       paragraphs: [
-        "Өнім келесімен реттеледі:",
+        "Сақтандыру шарты келесі жағдайларда тоқтатылады:",
         "",
-        "Sauszemes transportlīdzekļu īpašnieku civiltiesiskās atbildības obligātās apdrošināšanas likums",
-        "",
-        "сондай-ақ:",
-        "",
-        "• азаматтық-құқықтық жауапкершілікті сақтандыру бойынша ЕО заңнамасымен.",
+        "• қолданылу мерзімі аяқталған кезде;",
+        "• көлік құралы тіркеуден шығарылған кезде;",
+        "• көлік құралы басқа елде тіркелген кезде;",
+        "• заңнамада көзделген шартты бұзу жағдайларында.",
       ],
     },
+
     {
-      title: "10. Пайдаланушыға маңызды ақпарат",
+      title: "10. Маңызды ақпарат",
       paragraphs: [
-        "• Robežpolise — Green Card болмаған жағдайда жол қозғалысына қатысу үшін міндетті шарт.",
-        "• Полис тек азаматтық-құқықтық жауапкершілікті қамтиды.",
-        "• Сапар алдында полисте көрсетілген қамту аумағын тексеру қажет.",
-        "• Сақтандыру шарттары мен шығындарды реттеу тәртібін сақтандырушы белгілейді.",
+        "• OC Graniczne — жарамды Green Card болмаған жағдайда міндетті сақтандыру түрі.",
+        "• Полис тек үшінші тұлғалар алдындағы азаматтық-құқықтық жауапкершілікті қамтиды.",
+        "• Полис сақтанушының өз көлік құралына келтірілген зиянды өтемейді.",
+        "• Сақтандыру шарттары мен залалды реттеу тәртібі сақтандырушы және қолданыстағы заңнама арқылы айқындалады.",
+      ],
+    },
+
+    {
+      title: "11. Құқықтық реттеу",
+      paragraphs: [
+        "Өнім Польша Республикасының көлік құралдары иелерінің міндетті азаматтық-құқықтық жауапкершілігін сақтандыру туралы заңнамасымен, сондай-ақ азаматтық-құқықтық жауапкершілікті сақтандыруды халықаралық тану жүйесінің қағидаларымен реттеледі.",
       ],
     },
   ],
 };
 
 const tr: CookiesPolicyDictionary = {
-  pageTitle: "Ürün bilgisi",
+  pageTitle: "Ürün Bilgileri",
+
   sections: [
-    { title: "Robežpolise (sınır OCTA poliçesi)" },
-    { title: "1. Genel bilgiler", paragraphs: [
-      "Robežpolise, Avrupa Birliği dışında kayıtlı araçların Letonya Cumhuriyeti topraklarına girişinde kullanılan zorunlu motorlu araç sorumluluk sigortasıdır (OCTA).",
-      "Bu sigorta türü, aracın Avrupa Ekonomik Alanı ülkelerinde geçerli olan uluslararası bir sigorta poliçesine (Yeşil Kart) sahip olmadığı durumlarda uygulanır.",
-      "Robežpolise, Sauszemes transportlīdzekļu īpašnieku civiltiesiskās atbildības obligātās apdrošināšanas likums hükümlerine uygun olarak düzenlenir ve zorunlu mali sorumluluk sigortası sisteminin bir parçasıdır."
-    ] },
-    { title: "2. Sigortanın amacı", paragraphs: [
-      "Robežpolise’nin amacı, zorunlu mali sorumluluk sigortası kapsamının sağlanmasıdır:",
-      "",
-      "• aracın Letonya’ya girişinde;",
-      "• karşılıklı sigorta tanıma sistemine dahil ülkelerde trafiğe katılım sırasında.",
-      "",
-      "Geçerli bir OCTA sözleşmesi olmadan aracın trafiğe çıkması yasaktır."
-    ] },
-    { title: "3. Sigortanın kapsamı", paragraphs: [
-      "Robežpolise, bir trafik kazası sonucunda üçüncü kişilere verilen zararlardan dolayı araç sahibi veya sürücünün hukuki sorumluluğunu kapsar.",
-      "",
-      "Kapsam dahilinde:",
-      "",
-      "• üçüncü kişilerin hayatına ve sağlığına verilen zararlar;",
-      "• üçüncü kişilerin mal varlığına verilen zararlar;",
-      "• üçüncü kişilere ait araçlara verilen zararlar.",
-      "",
-      "Kapsam dışı:",
-      "",
-      "• sigortalıya ait aracın hasarı;",
-      "• sigorta ettirenin kişisel zararları;",
-      "• sigorta şartlarında belirtilmeyen diğer durumlar."
-    ] },
-    { title: "4. Geçerlilik bölgesi", paragraphs: [
-      "Robežpolise şu bölgelerde geçerlidir:",
-      "",
-      "• Letonya Cumhuriyeti;",
-      "• motorlu araç sorumluluk sigortasının karşılıklı tanındığı diğer ülkeler.",
-      "",
-      "Coğrafi kapsam şu unsurlara bağlıdır:",
-      "",
-      "• poliçe koşulları;",
-      "• poliçede belirtilen ülke listesi.",
-      "",
-      "Poliçe, sigorta belgesinde hariç tutulmamış (üzeri çizilmemiş) ülkelerde geçerlidir.",
-      "Bu ülkeler Avrupa Birliği ve Avrupa Ekonomik Alanı ülkelerini kapsayabilir.",
-      "",
-      "Her ülkede sigorta:",
-      "",
-      "• o ülkenin mevzuatına göre;",
-      "• ulusal sorumluluk limitleri çerçevesinde;",
-      "• ilgili ülkenin sigorta bürosu aracılığıyla uygulanır."
-    ] },
-    { title: "5. Süre", paragraphs: [
-      "Sigorta sözleşmesi şu süreler için yapılır:",
-      "",
-      "• en az 15 gün;",
-      "• en fazla 12 ay.",
-      "",
-      "Kesin süre poliçe düzenlenirken belirlenir."
-    ] },
-    { title: "6. Ürün kimler içindir", paragraphs: [
-      "Robežpolise aşağıdakiler için tasarlanmıştır:",
-      "",
-      "• AB ve AEA dışındaki ülkelerde kayıtlı araçlar;",
-      "• geçerli uluslararası sigortası olmayan araçlar;",
-      "• Letonya ve karşılıklı sigorta sistemine dahil ülkelere giriş yapan sürücüler."
-    ] },
-    { title: "7. Kısıtlamalar", paragraphs: [
-      "Robežpolise şu durumlarda düzenlenmez:",
-      "",
-      "• Avrupa Birliği ülkelerinde kayıtlı araçlar için;",
-      "• Birleşik Krallık’ta kayıtlı araçlar için;",
-      "• AB’de geçerli uluslararası sigorta poliçesine sahip araçlar için."
-    ] },
-    { title: "8. Sözleşmenin kurulması", paragraphs: [
-      "Sigorta sözleşmesi:",
-      "",
-      "• sigorta ettiren ile sigorta şirketi arasında yapılır;",
-      "• uzaktan düzenlenebilir;",
-      "• sigortacının şartlarına göre yürürlüğe girer (genellikle ödeme sonrası).",
-      "",
-      "Poliçe elektronik olarak düzenlenir ve hukuki geçerliliğe sahiptir."
-    ] },
-    { title: "9. Hukuki düzenleme", paragraphs: [
-      "Ürün aşağıdaki mevzuata tabidir:",
-      "",
-      "Sauszemes transportlīdzekļu īpašnieku civiltiesiskās atbildības obligātās apdrošināšanas likums",
-      "",
-      "ayrıca:",
-      "",
-      "• Avrupa Birliği motorlu araç sorumluluk sigortası mevzuatı."
-    ] },
-    { title: "10. Kullanıcı için önemli bilgiler", paragraphs: [
-      "• Robežpolise, Yeşil Kart bulunmadığında trafiğe katılım için zorunludur.",
-      "• Poliçe yalnızca üçüncü kişilere karşı sorumluluğu kapsar.",
-      "• Seyahatten önce poliçede belirtilen coğrafi kapsam kontrol edilmelidir.",
-      "• Sigorta koşulları ve hasar süreci sigorta şirketi tarafından belirlenir."
-    ] },
+    {
+      title: "OC Graniczne (Sınır Mali Sorumluluk Sigortası)",
+    },
+
+    {
+      title: "1. Genel Bilgiler",
+      paragraphs: [
+        "OC Graniczne, Avrupa Ekonomik Alanı dışında kayıtlı olan ve zorunlu mali sorumluluk sigortası sistemini tanıyan ülkelere giriş yapan araçlar için düzenlenen zorunlu motorlu taşıt mali sorumluluk sigortasıdır.",
+        "Sigorta, Avrupa Ekonomik Alanı sınırları içinde geçerli kabul edilen geçerli bir Green Card uluslararası sigorta sertifikasının bulunmadığı durumlarda uygulanır.",
+        "Ürün, Polonya motorlu taşıt sahiplerinin zorunlu mali sorumluluk sigortasına ilişkin mevzuatı uyarınca düzenlenmektedir.",
+      ],
+    },
+
+    {
+      title: "2. Sigortanın Amacı",
+      paragraphs: [
+        "OC Graniczne’nin amacı, araç sahibinin veya sürücüsünün zorunlu mali sorumluluk sigorta teminatına sahip olmasını sağlamaktır.",
+        "",
+        "Sigorta aşağıdaki durumlarda gereklidir:",
+        "",
+        "• aracın AEA ülkeleri sınırlarına giriş yapması durumunda;",
+        "• aracın kara trafiğine katılması durumunda;",
+        "• geçerli bir Green Card bulunmadığında.",
+        "",
+        "Geçerli bir zorunlu sigorta sözleşmesi olmadan aracın trafiğe çıkması yasaktır.",
+      ],
+    },
+
+    {
+      title: "3. Sigortanın Kapsadığı Teminatlar",
+      paragraphs: [
+        "Sigorta, aracın kullanımıyla bağlantılı olarak üçüncü kişilere verilen zararlar nedeniyle araç sahibi ve/veya sürücüsünün hukuki sorumluluğunu kapsar.",
+        "",
+        "Teminat kapsamına şunlar dahildir:",
+        "",
+        "• üçüncü kişilerin yaşamı ve sağlığına verilen zararlar;",
+        "• bedensel yaralanmalar;",
+        "• üçüncü kişilere ait mal varlığı zararları;",
+        "• üçüncü kişilere ait araçların zarar görmesi veya tamamen kullanılamaz hale gelmesi.",
+        "",
+        "Sigortacı, mevzuatta belirlenen teminat limitleri çerçevesinde sorumludur.",
+      ],
+    },
+
+    {
+      title: "4. Teminat Dışında Kalan Haller",
+      paragraphs: [
+        "Sigorta aşağıdaki zararları kapsamaz:",
+        "",
+        "• sigortalıya ait aracın kendi zararları;",
+        "• araç sahibinin kişisel zararları;",
+        "• çevresel zararlar;",
+        "• mevzuat ve sigorta şartları kapsamında öngörülmeyen durumlar.",
+        "",
+        "Ayrıca, aynı aracın sürücüsünün araç sahibine verdiği zararlar da kapsam dışındadır.",
+      ],
+    },
+
+    {
+      title: "5. Teminat Sınırlamaları",
+      paragraphs: [
+        "Sigortacı, mevzuatta belirtilen durumlarda ödediği tazminatın sürücüden geri tahsil edilmesini talep etme hakkına sahiptir.",
+        "",
+        "Özellikle sürücünün:",
+        "",
+        "• zararı kasten vermesi;",
+        "• alkol veya uyuşturucu etkisi altında araç kullanması;",
+        "• gerekli sürücü belgesine sahip olmaması;",
+        "• aracı yasa dışı yollarla elde etmiş olması;",
+        "• olay yerinden kaçması durumlarında.",
+      ],
+    },
+
+    {
+      title: "6. Geçerlilik Bölgesi",
+      paragraphs: [
+        "OC Graniczne aşağıdaki bölgelerde geçerlidir:",
+        "",
+        "• Avrupa Ekonomik Alanı ülkelerinde;",
+        "• İsviçre’de;",
+        "• zorunlu mali sorumluluk sigortasının karşılıklı tanınması sistemine dahil ulusal bürolara sahip devletlerde.",
+        "",
+        "Kesin geçerlilik bölgesi sigorta poliçesi şartlarında belirtilir.",
+      ],
+    },
+
+    {
+      title: "7. Sigorta Süresi",
+      paragraphs: [
+        "Sigorta sözleşmesi, poliçede belirtilen süre için düzenlenir.",
+        "",
+        "Sözleşme şu sürelerle yapılabilir:",
+        "",
+        "• 12 ay;",
+        "• veya mevzuatta öngörülen durumlarda daha kısa sürelerle.",
+        "",
+        "Sigorta teminatı, poliçede belirtilen tarihte başlar.",
+      ],
+    },
+
+    {
+      title: "8. Sigorta Ettirenin Yükümlülükleri",
+      paragraphs: [
+        "Sigorta ettiren aşağıdaki yükümlülüklere sahiptir:",
+        "",
+        "• sigorta düzenlenirken doğru bilgi vermek;",
+        "• sigorta primini belirtilen süre içinde ödemek;",
+        "• sigorta olayını sigortacıya bildirmek;",
+        "• olayın sonuçlarını azaltmaya yönelik önlemler almak;",
+        "• gerektiğinde polisi bilgilendirmek;",
+        "• kazaya karışan diğer taraflara sigorta poliçesi bilgilerini vermek.",
+      ],
+    },
+
+    {
+      title: "9. Sözleşmenin Sona Ermesi",
+      paragraphs: [
+        "Sigorta sözleşmesi aşağıdaki durumlarda sona erer:",
+        "",
+        "• sigorta süresinin bitmesi;",
+        "• aracın trafik kaydının silinmesi;",
+        "• aracın başka bir ülkeye kaydedilmesi;",
+        "• mevzuatta öngörülen fesih durumları.",
+      ],
+    },
+
+    {
+      title: "10. Önemli Bilgiler",
+      paragraphs: [
+        "• Geçerli bir Green Card bulunmadığında OC Graniczne zorunlu bir sigorta türüdür.",
+        "• Poliçe yalnızca üçüncü kişilere karşı mali sorumluluğu kapsar.",
+        "• Poliçe, sigortalının kendi aracındaki zararları kapsamaz.",
+        "• Sigorta şartları ve hasar süreçleri sigortacı ve yürürlükteki mevzuat tarafından belirlenir.",
+      ],
+    },
+
+    {
+      title: "11. Hukuki Düzenleme",
+      paragraphs: [
+        "Ürün, Polonya Cumhuriyeti’nin motorlu taşıt sahiplerinin zorunlu mali sorumluluk sigortasına ilişkin mevzuatı ve uluslararası mali sorumluluk sigortası tanıma sistemi kuralları kapsamında düzenlenmektedir.",
+      ],
+    },
   ],
 };
 
 const fa: CookiesPolicyDictionary = {
-  pageTitle: "اطلاعات محصول",
+  pageTitle: "اطلاعات محصول بیمه",
+
   sections: [
-    { title: "Robežpolise (بیمه مرزی OCTA)" },
+    {
+      title: "OC Graniczne (بیمه مرزی مسئولیت مدنی)",
+    },
 
     {
-      title: "1. اطلاعات کلی",
+      title: "1. اطلاعات عمومی",
       paragraphs: [
-        "Robežpolise نوعی بیمه اجباری مسئولیت مدنی دارندگان وسایل نقلیه (OCTA) است که برای وسایل نقلیه ثبت‌شده خارج از اتحادیه اروپا و واردشونده به قلمرو جمهوری لتونی در نظر گرفته شده است.",
-        "این نوع بیمه در مواردی استفاده می‌شود که وسیله نقلیه فاقد بیمه بین‌المللی معتبر (Green Card) باشد که در کشورهای منطقه اقتصادی اروپا پذیرفته می‌شود.",
-        "Robežpolise مطابق با الزامات Sauszemes transportlīdzekļu īpašnieku civiltiesiskās atbildības obligātās apdrošināšanas likums صادر می‌شود و بخشی از سیستم بیمه اجباری مسئولیت مدنی است."
-      ]
+        "OC Graniczne نوعی بیمه اجباری مسئولیت مدنی وسایل نقلیه موتوری است که برای وسایل نقلیه ثبت‌شده خارج از منطقه اقتصادی اروپا و واردشونده به کشورهای پذیرنده سیستم بیمه اجباری مسئولیت مدنی صادر می‌شود.",
+        "این بیمه در مواردی کاربرد دارد که گواهی معتبر بین‌المللی Green Card مورد تأیید در قلمرو منطقه اقتصادی اروپا وجود نداشته باشد.",
+        "این محصول مطابق با قوانین جمهوری لهستان در زمینه بیمه اجباری مسئولیت مدنی دارندگان وسایل نقلیه موتوری صادر می‌شود.",
+      ],
     },
 
     {
       title: "2. هدف بیمه",
       paragraphs: [
-        "هدف Robežpolise فراهم کردن پوشش اجباری مسئولیت مدنی است:",
+        "هدف OC Graniczne تضمین وجود پوشش اجباری مسئولیت مدنی مالک یا راننده وسیله نقلیه است.",
         "",
-        "• هنگام ورود وسیله نقلیه به قلمرو لتونی؛",
-        "• هنگام مشارکت در ترافیک جاده‌ای در کشورهایی که سیستم بیمه متقابل را به رسمیت می‌شناسند.",
+        "این بیمه در موارد زیر ضروری است:",
         "",
-        "بدون بیمه معتبر OCTA، استفاده از وسیله نقلیه در جاده‌ها ممنوع است."
-      ]
+        "• هنگام ورود وسیله نقلیه به قلمرو کشورهای منطقه اقتصادی اروپا؛",
+        "• هنگام مشارکت وسیله نقلیه در تردد جاده‌ای؛",
+        "• در صورت نداشتن Green Card معتبر.",
+        "",
+        "بدون قرارداد معتبر بیمه اجباری، مشارکت وسیله نقلیه در تردد جاده‌ای ممنوع است.",
+      ],
     },
 
     {
-      title: "3. پوشش بیمه",
+      title: "3. موارد تحت پوشش بیمه",
       paragraphs: [
-        "Robežpolise مسئولیت مدنی مالک یا راننده وسیله نقلیه را در قبال خسارات واردشده به اشخاص ثالث در نتیجه تصادف پوشش می‌دهد.",
+        "این بیمه مسئولیت مدنی مالک و/یا راننده وسیله نقلیه را در قبال خسارات واردشده به اشخاص ثالث ناشی از استفاده از وسیله نقلیه پوشش می‌دهد.",
         "",
-        "موارد تحت پوشش:",
+        "موارد تحت پوشش شامل:",
         "",
-        "• خسارت جانی یا بدنی به اشخاص ثالث؛",
+        "• خسارت جانی و آسیب به سلامت اشخاص ثالث؛",
+        "• صدمات بدنی؛",
         "• خسارت مالی به اموال اشخاص ثالث؛",
-        "• خسارت به وسایل نقلیه اشخاص ثالث.",
+        "• آسیب یا از بین رفتن وسایل نقلیه متعلق به اشخاص ثالث.",
         "",
-        "موارد خارج از پوشش:",
-        "",
-        "• خسارت به وسیله نقلیه خود بیمه‌گذار؛",
-        "• خسارات شخصی بیمه‌گذار؛",
-        "• سایر مواردی که در شرایط بیمه ذکر نشده‌اند."
-      ]
+        "شرکت بیمه در حدود مبالغ بیمه‌ای تعیین‌شده در قوانین مسئولیت خواهد داشت.",
+      ],
     },
 
     {
-      title: "4. قلمرو جغرافیایی",
+      title: "4. موارد خارج از پوشش",
       paragraphs: [
-        "Robežpolise در قلمرو زیر معتبر است:",
+        "این بیمه موارد زیر را پوشش نمی‌دهد:",
         "",
-        "• جمهوری لتونی؛",
-        "• سایر کشورهایی که سیستم شناسایی متقابل بیمه مسئولیت مدنی را می‌پذیرند.",
+        "• خسارت واردشده به وسیله نقلیه متعلق به بیمه‌گذار؛",
+        "• زیان‌های شخصی مالک وسیله نقلیه؛",
+        "• خسارت‌های زیست‌محیطی؛",
+        "• مواردی که در قوانین و شرایط بیمه پیش‌بینی نشده‌اند.",
         "",
-        "قلمرو پوشش بر اساس موارد زیر تعیین می‌شود:",
-        "",
-        "• شرایط بیمه‌نامه؛",
-        "• فهرست کشورها در سند بیمه.",
-        "",
-        "بیمه در کشورهایی معتبر است که در سند بیمه خط نخورده‌اند.",
-        "این کشورها می‌توانند شامل کشورهای اتحادیه اروپا و منطقه اقتصادی اروپا باشند.",
-        "",
-        "در هر کشور، پوشش بیمه بر اساس موارد زیر اعمال می‌شود:",
-        "",
-        "• قوانین همان کشور؛",
-        "• سقف تعهدات تعیین‌شده در قانون ملی؛",
-        "• از طریق دفتر ملی بیمه مربوطه."
-      ]
+        "همچنین خسارات واردشده به مالک وسیله نقلیه توسط راننده همان وسیله نقلیه تحت پوشش قرار نمی‌گیرد.",
+      ],
     },
 
     {
-      title: "5. مدت اعتبار",
+      title: "5. محدودیت‌های پوشش بیمه‌ای",
       paragraphs: [
-        "مدت قرارداد بیمه:",
+        "شرکت بیمه در موارد مقرر در قوانین، حق مطالبه بازپرداخت خسارت پرداخت‌شده از راننده وسیله نقلیه را دارد.",
         "",
-        "• حداقل ۱۵ روز؛",
-        "• حداکثر ۱۲ ماه.",
+        "به‌ویژه اگر راننده:",
         "",
-        "مدت دقیق هنگام صدور بیمه‌نامه تعیین می‌شود."
-      ]
+        "• عمداً موجب خسارت شده باشد؛",
+        "• در حالت مستی یا تحت تأثیر مواد مخدر رانندگی کرده باشد؛",
+        "• فاقد گواهینامه لازم بوده باشد؛",
+        "• وسیله نقلیه را از طریق غیرقانونی تصاحب کرده باشد؛",
+        "• محل حادثه را ترک کرده باشد.",
+      ],
     },
 
     {
-      title: "6. مخاطبان محصول",
+      title: "6. قلمرو جغرافیایی اعتبار",
       paragraphs: [
-        "Robežpolise برای موارد زیر طراحی شده است:",
+        "OC Graniczne معتبر است در:",
         "",
-        "• وسایل نقلیه ثبت‌شده خارج از اتحادیه اروپا و منطقه اقتصادی اروپا؛",
-        "• وسایل نقلیه بدون بیمه بین‌المللی معتبر؛",
-        "• رانندگانی که وارد لتونی یا سایر کشورهای این سیستم می‌شوند."
-      ]
+        "• کشورهای منطقه اقتصادی اروپا؛",
+        "• سوئیس؛",
+        "• کشورهایی که دفاتر ملی آن‌ها عضو سیستم شناسایی متقابل بیمه اجباری مسئولیت مدنی هستند.",
+        "",
+        "قلمرو دقیق اعتبار در شرایط بیمه‌نامه مشخص می‌شود.",
+      ],
     },
 
     {
-      title: "7. محدودیت‌ها",
+      title: "7. مدت اعتبار",
       paragraphs: [
-        "Robežpolise برای موارد زیر صادر نمی‌شود:",
+        "بیمه برای مدتی که در بیمه‌نامه ذکر شده منعقد می‌شود.",
         "",
-        "• وسایل نقلیه ثبت‌شده در کشورهای اتحادیه اروپا؛",
-        "• وسایل نقلیه ثبت‌شده در بریتانیا؛",
-        "• وسایل نقلیه دارای بیمه بین‌المللی معتبر قابل‌قبول در اتحادیه اروپا."
-      ]
+        "قرارداد می‌تواند منعقد شود:",
+        "",
+        "• برای ۱۲ ماه؛",
+        "• یا برای مدت کوتاه‌تر در موارد پیش‌بینی‌شده در قوانین.",
+        "",
+        "پوشش بیمه‌ای از تاریخ درج‌شده در بیمه‌نامه آغاز می‌شود.",
+      ],
     },
 
     {
-      title: "8. انعقاد قرارداد",
+      title: "8. تعهدات بیمه‌گذار",
       paragraphs: [
-        "قرارداد بیمه:",
+        "بیمه‌گذار موظف است:",
         "",
-        "• بین بیمه‌گذار و شرکت بیمه منعقد می‌شود؛",
-        "• می‌تواند به‌صورت آنلاین صادر شود؛",
-        "• طبق شرایط بیمه‌گر (معمولاً پس از پرداخت) فعال می‌شود.",
-        "",
-        "بیمه‌نامه به‌صورت الکترونیکی ارائه شده و دارای اعتبار قانونی است."
-      ]
+        "• هنگام صدور بیمه، اطلاعات صحیح ارائه دهد؛",
+        "• حق بیمه را در مهلت مقرر پرداخت کند؛",
+        "• وقوع حادثه بیمه‌ای را به بیمه‌گر اطلاع دهد؛",
+        "• برای کاهش پیامدهای حادثه اقدامات لازم را انجام دهد؛",
+        "• در صورت نیاز پلیس را مطلع سازد؛",
+        "• اطلاعات بیمه‌نامه را در اختیار سایر طرف‌های حادثه قرار دهد.",
+      ],
     },
 
     {
-      title: "9. مقررات قانونی",
+      title: "9. خاتمه قرارداد",
       paragraphs: [
-        "این محصول بر اساس موارد زیر تنظیم می‌شود:",
+        "قرارداد بیمه در موارد زیر خاتمه می‌یابد:",
         "",
-        "Sauszemes transportlīdzekļu īpašnieku civiltiesiskās atbildības obligātās apdrošināšanas likums",
-        "",
-        "و همچنین:",
-        "",
-        "• مقررات اتحادیه اروپا در زمینه بیمه مسئولیت مدنی."
-      ]
+        "• پایان مدت اعتبار؛",
+        "• خروج وسیله نقلیه از ثبت؛",
+        "• ثبت وسیله نقلیه در خارج از کشور؛",
+        "• در سایر موارد فسخ قرارداد که در قوانین پیش‌بینی شده‌اند.",
+      ],
     },
 
     {
-      title: "10. نکات مهم برای کاربر",
+      title: "10. اطلاعات مهم",
       paragraphs: [
-        "• Robežpolise در صورت نداشتن Green Card برای تردد الزامی است.",
-        "• این بیمه فقط مسئولیت مدنی را پوشش می‌دهد.",
-        "• قبل از سفر، قلمرو پوشش را بررسی کنید.",
-        "• شرایط بیمه و نحوه رسیدگی به خسارت توسط شرکت بیمه تعیین می‌شود."
-      ]
+        "• OC Graniczne در صورت نبود Green Card معتبر، نوعی بیمه اجباری محسوب می‌شود.",
+        "• بیمه‌نامه فقط مسئولیت مدنی در برابر اشخاص ثالث را پوشش می‌دهد.",
+        "• بیمه‌نامه خسارت واردشده به وسیله نقلیه خود بیمه‌گذار را پوشش نمی‌دهد.",
+        "• شرایط بیمه و نحوه رسیدگی به خسارت‌ها توسط بیمه‌گر و قوانین جاری تعیین می‌شود.",
+      ],
     },
-  ],
-};
 
-const mn: CookiesPolicyDictionary = {
-  pageTitle: "Бүтээгдэхүүний мэдээлэл",
-  sections: [
-    { title: "Robežpolise (хил дамнасан OCTA даатгал)" },
-
-    { title: "1. Ерөнхий мэдээлэл", paragraphs: [
-      "Robežpolise нь Европын Холбооноос гадна бүртгэлтэй тээврийн хэрэгсэл Латвийн Бүгд Найрамдах Улсад нэвтрэх үед шаардлагатай тээврийн хэрэгслийн эзэмшигчийн иргэний хариуцлагын заавал даатгал (OCTA) юм.",
-      "Энэ даатгал нь тухайн тээврийн хэрэгсэлд Европын эдийн засгийн бүсийн улс орнуудад хүлээн зөвшөөрөгдсөн хүчинтэй олон улсын даатгалын полис (Ногоон карт) байхгүй тохиолдолд хэрэглэгдэнэ.",
-      "Robežpolise нь Sauszemes transportlīdzekļu īpašnieku civiltiesiskās atbildības obligātās apdrošināšanas likums хуулийн шаардлагын дагуу олгогдож, заавал даатгалын системийн нэг хэсэг болно."
-    ]},
-
-    { title: "2. Даатгалын зорилго", paragraphs: [
-      "Robežpolise-ийн зорилго нь иргэний хариуцлагын заавал даатгалын хамгаалалтыг хангах явдал юм:",
-      "",
-      "• тээврийн хэрэгсэл Латвийн нутаг дэвсгэрт нэвтрэх үед;",
-      "• харилцан хүлээн зөвшөөрөх даатгалын системд хамаарах улс орнуудад замын хөдөлгөөнд оролцох үед.",
-      "",
-      "Хүчинтэй OCTA гэрээгүй тохиолдолд тээврийн хэрэгсэл замын хөдөлгөөнд оролцохыг хориглоно."
-    ]},
-
-    { title: "3. Даатгал юуг хамардаг вэ", paragraphs: [
-      "Robežpolise нь зам тээврийн ослын улмаас гуравдагч этгээдэд учирсан хохиролд тээврийн хэрэгслийн эзэмшигч эсвэл жолоочийн иргэний хариуцлагыг даатгана.",
-      "",
-      "Дараах хохирлыг нөхөн төлнө:",
-      "",
-      "• гуравдагч этгээдийн амь нас, эрүүл мэндэд учирсан хохирол;",
-      "• гуравдагч этгээдийн эд хөрөнгийн хохирол;",
-      "• гуравдагч этгээдийн тээврийн хэрэгслийн хохирол.",
-      "",
-      "Дараахыг нөхөн төлөхгүй:",
-      "",
-      "• өөрийн тээврийн хэрэгслийн гэмтэл;",
-      "• даатгуулагчийн хувийн хохирол;",
-      "• даатгалын нөхцөлд заагаагүй бусад тохиолдол."
-    ]},
-
-    { title: "4. Хамрах нутаг дэвсгэр", paragraphs: [
-      "Robežpolise дараах нутаг дэвсгэрт хүчинтэй:",
-      "",
-      "• Латвийн Бүгд Найрамдах Улс;",
-      "• мөн тээврийн хэрэгслийн иргэний хариуцлагын даатгалыг харилцан хүлээн зөвшөөрөх системд багтсан бусад улс орнууд.",
-      "",
-      "Хамрах хүрээг дараах зүйлс тодорхойлно:",
-      "",
-      "• тухайн полисын нөхцөл;",
-      "• даатгалын баримт бичигт заасан улс орнуудын жагсаалт.",
-      "",
-      "Даатгалын баримтад хасагдаагүй (таслаагүй) улс орнуудад полис хүчинтэй байна.",
-      "Үүнд Европын Холбоо болон Европын эдийн засгийн бүсийн улс орнууд багтаж болно.",
-      "",
-      "Тухайн улс бүрт даатгал:",
-      "",
-      "• тухайн улсын хууль тогтоомжийн дагуу;",
-      "• үндэсний хуульд заасан хариуцлагын лимитээр;",
-      "• тухайн улсын даатгалын товчоогоор дамжин хэрэгжинэ."
-    ]},
-
-    { title: "5. Хугацаа", paragraphs: [
-      "Даатгалын гэрээг дараах хугацаагаар байгуулна:",
-      "",
-      "• 15 хоногоос эхлэн;",
-      "• 12 сар хүртэл.",
-      "",
-      "Тодорхой хугацааг полис бүрдүүлэх үед тогтооно."
-    ]},
-
-    { title: "6. Хэнд зориулагдсан", paragraphs: [
-      "Robežpolise нь дараахад зориулагдсан:",
-      "",
-      "• ЕХ болон ЕЭЗ-оос гадна бүртгэлтэй тээврийн хэрэгсэл;",
-      "• хүчинтэй олон улсын даатгалгүй тээврийн хэрэгсэл;",
-      "• Латви болон харилцан хүлээн зөвшөөрөх системийн улс орнуудад нэвтрэх жолооч."
-    ]},
-
-    { title: "7. Хязгаарлалт", paragraphs: [
-      "Robežpolise дараах тохиолдолд олгогдохгүй:",
-      "",
-      "• Европын Холбоонд бүртгэлтэй тээврийн хэрэгсэл;",
-      "• Их Британид бүртгэлтэй тээврийн хэрэгсэл;",
-      "• ЕХ-д хүлээн зөвшөөрөгдсөн хүчинтэй олон улсын даатгалтай тээврийн хэрэгсэл."
-    ]},
-
-    { title: "8. Гэрээ байгуулах", paragraphs: [
-      "Даатгалын гэрээ:",
-      "",
-      "• даатгуулагч болон даатгалын компанийн хооронд байгуулагдана;",
-      "• зайнаас бүрдүүлэх боломжтой;",
-      "• даатгагчийн нөхцлийн дагуу хүчин төгөлдөр болно (ихэвчлэн төлбөр хийсний дараа).",
-      "",
-      "Полис нь цахим хэлбэрээр олгогдож, хууль ёсны хүчинтэй байна."
-    ]},
-
-    { title: "9. Эрх зүйн зохицуулалт", paragraphs: [
-      "Энэхүү бүтээгдэхүүнийг дараах хууль зохицуулна:",
-      "",
-      "Sauszemes transportlīdzekļu īpašnieku civiltiesiskās atbildības obligātās apdrošināšanas likums",
-      "",
-      "мөн:",
-      "",
-      "• Европын Холбооны иргэний хариуцлагын даатгалын тухай хууль тогтоомж."
-    ]},
-
-    { title: "10. Хэрэглэгчид зориулсан чухал мэдээлэл", paragraphs: [
-      "• Robežpolise нь Ногоон карт байхгүй үед замын хөдөлгөөнд оролцоход зайлшгүй шаардлагатай.",
-      "• Даатгал нь зөвхөн иргэний хариуцлагыг хамарна.",
-      "• Аяллын өмнө полист заасан хамрах нутаг дэвсгэрийг шалгана.",
-      "• Даатгалын нөхцөл болон нөхөн төлбөрийн журам нь даатгагчаар тодорхойлогдоно."
-    ]},
+    {
+      title: "11. مقررات حقوقی",
+      paragraphs: [
+        "این محصول تحت نظارت قوانین جمهوری لهستان در زمینه بیمه اجباری مسئولیت مدنی دارندگان وسایل نقلیه موتوری و همچنین مقررات سیستم بین‌المللی شناسایی متقابل بیمه مسئولیت مدنی قرار دارد.",
+      ],
+    },
   ],
 };
 
 const hy: CookiesPolicyDictionary = {
-  pageTitle: "Ապրանքի մասին տեղեկատվություն",
+  pageTitle: "Տեղեկատվություն ապահովագրական պրոդուկտի մասին",
+
   sections: [
-    { title: "Robežpolise (սահմանային OCTA)" },
+    {
+      title:
+        "OC Graniczne (սահմանային քաղաքացիական պատասխանատվության ապահովագրություն)",
+    },
+
     {
       title: "1. Ընդհանուր տեղեկատվություն",
       paragraphs: [
-        "Robežpolise-ն տրանսպորտային միջոցների սեփականատերերի քաղաքացիական պատասխանատվության պարտադիր ապահովագրություն (OCTA) է, որը նախատեսված է Եվրոպական միությունից դուրս գրանցված և Լատվիայի Հանրապետության տարածք մուտք գործող տրանսպորտային միջոցների համար։",
-        "Ապահովագրության այս տեսակը կիրառվում է այն դեպքերում, երբ տրանսպորտային միջոցը չունի գործող միջազգային ապահովագրական պոլիս (Green Card), որը ճանաչվում է Եվրոպական տնտեսական տարածքի երկրներում։",
-        "Robežpolise-ն ձևակերպվում է Sauszemes transportlīdzekļu īpašnieku civiltiesiskās atbildības obligātās apdrošināšanas likums-ի պահանջներին համապատասխան և հանդիսանում է պարտադիր քաղաքացիական պատասխանատվության ապահովագրության համակարգի մաս։",
+        "OC Graniczne-ն տրանսպորտային միջոցների սեփականատերերի պարտադիր քաղաքացիական պատասխանատվության ապահովագրություն է, որը նախատեսված է Եվրոպական տնտեսական տարածքից դուրս գրանցված և պարտադիր քաղաքացիական պատասխանատվության ապահովագրության համակարգը ճանաչող երկրների տարածք մուտք գործող տրանսպորտային միջոցների համար։",
+        "Ապահովագրությունը կիրառվում է այն դեպքերում, երբ բացակայում է գործող միջազգային Green Card ապահովագրական վկայականը, որը ճանաչվում է Եվրոպական տնտեսական տարածքում։",
+        "Պրոդուկտը ձևակերպվում է Լեհաստանի օրենսդրության համաձայն՝ տրանսպորտային միջոցների սեփականատերերի պարտադիր քաղաքացիական պատասխանատվության ապահովագրության վերաբերյալ։",
       ],
     },
+
     {
       title: "2. Ապահովագրության նպատակը",
       paragraphs: [
-        "Robežpolise-ի նպատակն է ապահովել քաղաքացիական պատասխանատվության պարտադիր ապահովագրական ծածկույթ՝",
+        "OC Graniczne-ի նպատակը տրանսպորտային միջոցի սեփականատիրոջ կամ վարորդի քաղաքացիական պատասխանատվության պարտադիր ապահովագրական ծածկույթի ապահովումն է։",
         "",
-        "• տրանսպորտային միջոցի մուտքի դեպքում Լատվիայի տարածք;",
-        "• երթևեկությանը մասնակցելիս այն երկրներում, որոնք ճանաչում են փոխադարձ ապահովագրության համակարգը։",
+        "Ապահովագրությունը անհրաժեշտ է՝",
         "",
-        "Առանց գործող OCTA պայմանագրի՝ տրանսպորտային միջոցի մասնակցությունը ճանապարհային երթևեկությանը արգելված է։",
+        "• տրանսպորտային միջոցի մուտքի դեպքում ԵՏՏ երկրների տարածք;",
+        "• տրանսպորտային միջոցի մասնակցության դեպքում ճանապարհային երթևեկությանը;",
+        "• գործող Green Card-ի բացակայության դեպքում։",
+        "",
+        "Առանց գործող պարտադիր ապահովագրության պայմանագրի՝ տրանսպորտային միջոցի մասնակցությունը ճանապարհային երթևեկությանը արգելվում է։",
       ],
     },
+
     {
       title: "3. Ինչ է ծածկում ապահովագրությունը",
       paragraphs: [
-        "Robežpolise-ն ծածկում է տրանսպորտային միջոցի սեփականատիրոջ կամ վարորդի քաղաքացիական պատասխանատվությունը՝ ճանապարհատրանսպորտային պատահարի հետևանքով երրորդ անձանց պատճառված վնասի համար։",
+        "Ապահովագրությունը ծածկում է տրանսպորտային միջոցի սեփականատիրոջ և/կամ վարորդի քաղաքացիական պատասխանատվությունը՝ տրանսպորտային միջոցի օգտագործման հետևանքով երրորդ անձանց պատճառված վնասների համար։",
         "",
         "Ծածկվում են՝",
         "",
-        "• երրորդ անձանց կյանքի և առողջության վնասը;",
-        "• երրորդ անձանց գույքային վնասը;",
-        "• երրորդ անձանց տրանսպորտային միջոցներին հասցված վնասը։",
+        "• երրորդ անձանց կյանքի և առողջության վնասները;",
+        "• մարմնական վնասվածքները;",
+        "• երրորդ անձանց գույքային վնասները;",
+        "• երրորդ անձանց տրանսպորտային միջոցների վնասումը կամ ոչնչացումը։",
         "",
-        "Չեն ծածկվում՝",
-        "",
-        "• սեփական տրանսպորտային միջոցի վնասները;",
-        "• ապահովագրվողի անձնական կորուստները;",
-        "• այլ դեպքեր, որոնք նախատեսված չեն ապահովագրության կանոններով։",
+        "Ապահովագրողը պատասխանատվություն է կրում օրենսդրությամբ սահմանված ապահովագրական գումարների սահմաններում։",
       ],
     },
+
     {
-      title: "4. Գործողության տարածք",
+      title: "4. Ինչը չի ծածկվում",
       paragraphs: [
-        "Robežpolise-ն գործում է՝",
+        "Ապահովագրությունը չի ծածկում՝",
         "",
-        "• Լատվիայի Հանրապետության տարածքում;",
-        "• ինչպես նաև այլ պետություններում, որոնք ընդգրկված են քաղաքացիական պատասխանատվության ապահովագրության փոխադարձ ճանաչման համակարգում։",
+        "• ապահովադրի սեփական տրանսպորտային միջոցի վնասը;",
+        "• տրանսպորտային միջոցի սեփականատիրոջ անձնական վնասները;",
+        "• շրջակա միջավայրին հասցված վնասը;",
+        "• օրենսդրությամբ և ապահովագրության պայմաններով չնախատեսված դեպքերը։",
         "",
-        "Ծածկույթի տարածքը որոշվում է՝",
-        "",
-        "• կոնկրետ ապահովագրական պոլիսի պայմաններով;",
-        "• պոլիսում նշված երկրների ցանկով։",
-        "",
-        "Պոլիսը գործում է այն երկրներում, որոնք չեն բացառվել (չեն գծանցվել) ապահովագրական փաստաթղթում։",
-        "Այդ երկրների մեջ կարող են ներառվել Եվրոպական միության և Եվրոպական տնտեսական տարածքի պետությունները։",
-        "",
-        "Յուրաքանչյուր երկրում ապահովագրական ծածկույթը գործում է՝",
-        "",
-        "• տվյալ երկրի օրենսդրությանը համապատասխան;",
-        "• ազգային օրենքով սահմանված պատասխանատվության սահմանաչափերով;",
-        "• համապատասխան ազգային ապահովագրական բյուրոյի միջոցով։",
+        "Չեն ծածկվում նաև տվյալ տրանսպորտային միջոցի վարորդի կողմից սեփականատիրոջը պատճառված վնասները։",
       ],
     },
+
     {
-      title: "5. Գործողության ժամկետ",
+      title: "5. Ապահովագրական ծածկույթի սահմանափակումներ",
       paragraphs: [
-        "Ապահովագրության պայմանագիրը կնքվում է հետևյալ ժամկետով՝",
+        "Ապահովագրողն իրավունք ունի օրենսդրությամբ նախատեսված դեպքերում պահանջել վարորդից վճարված փոխհատուցման վերադարձ։",
         "",
-        "• նվազագույնը՝ 15 օր;",
-        "• առավելագույնը՝ 12 ամիս։",
+        "Մասնավորապես, եթե վարորդը՝",
         "",
-        "Կոնկրետ ժամկետը որոշվում է պոլիսի ձևակերպման ժամանակ։",
+        "• վնասը պատճառել է դիտավորությամբ;",
+        "• ղեկավարել է տրանսպորտային միջոցը ալկոհոլային կամ թմրամիջոցների ազդեցության տակ;",
+        "• չի ունեցել անհրաժեշտ վարորդական իրավունք;",
+        "• հանցավոր ճանապարհով տիրացել է տրանսպորտային միջոցին;",
+        "• հեռացել է պատահարի վայրից։",
       ],
     },
+
     {
-      title: "6. Ո՞ւմ համար է նախատեսված",
+      title: "6. Գործողության տարածք",
       paragraphs: [
-        "Robežpolise-ն նախատեսված է՝",
+        "OC Graniczne-ն գործում է՝",
         "",
-        "• ԵՄ և ԵՏՏ-ից դուրս գրանցված տրանսպորտային միջոցների համար;",
-        "• այն տրանսպորտային միջոցների համար, որոնք չունեն գործող միջազգային ապահովագրություն;",
-        "• վարորդների համար, որոնք մուտք են գործում Լատվիայի և այլ համապատասխան երկրների տարածք։",
+        "• Եվրոպական տնտեսական տարածքի երկրներում;",
+        "• Շվեյցարիայում;",
+        "• այն պետություններում, որոնց ազգային բյուրոները հանդիսանում են քաղաքացիական պատասխանատվության ապահովագրության փոխադարձ ճանաչման համակարգի մասնակիցներ։",
+        "",
+        "Գործողության ճշգրիտ տարածքը սահմանվում է ապահովագրական պոլիսի պայմաններով։",
       ],
     },
+
     {
-      title: "7. Սահմանափակումներ",
+      title: "7. Գործողության ժամկետ",
       paragraphs: [
-        "Robežpolise-ն չի ձևակերպվում՝",
+        "Ապահովագրությունը կնքվում է ապահովագրական պոլիսում նշված ժամկետով։",
         "",
-        "• Եվրոպական միության երկրներում գրանցված տրանսպորտային միջոցների համար;",
-        "• Միացյալ Թագավորությունում գրանցված տրանսպորտային միջոցների համար;",
-        "• այն տրանսպորտային միջոցների համար, որոնք ունեն ԵՄ-ում ճանաչվող գործող միջազգային ապահովագրական պոլիս։",
+        "Պայմանագիրը կարող է կնքվել՝",
+        "",
+        "• 12 ամսով;",
+        "• կամ ավելի կարճ ժամկետով՝ օրենսդրությամբ նախատեսված դեպքերում։",
+        "",
+        "Ապահովագրական ծածկույթը սկսում է գործել պոլիսում նշված ամսաթվից։",
       ],
     },
+
     {
-      title: "8. Պայմանագրի կնքում",
+      title: "8. Ապահովադրի պարտականությունները",
       paragraphs: [
-        "Ապահովագրության պայմանագիրը՝",
+        "Ապահովադիրը պարտավոր է՝",
         "",
-        "• կնքվում է ապահովագրվողի և ապահովագրական ընկերության միջև;",
-        "• կարող է ձևակերպվել հեռավար;",
-        "• ուժի մեջ է մտնում ապահովագրողի պայմանների համաձայն (սովորաբար՝ վճարումից հետո)։",
-        "",
-        "Պոլիսը տրամադրվում է էլեկտրոնային ձևով և ունի իրավական ուժ։",
+        "• ապահովագրության ձևակերպման ժամանակ տրամադրել հավաստի տեղեկատվություն;",
+        "• սահմանված ժամկետներում վճարել ապահովագրավճարը;",
+        "• տեղեկացնել ապահովագրողին ապահովագրական դեպքի առաջացման մասին;",
+        "• միջոցներ ձեռնարկել պատահարի հետևանքները նվազեցնելու համար;",
+        "• անհրաժեշտության դեպքում տեղեկացնել ոստիկանությանը;",
+        "• ՃՏՊ-ի մյուս մասնակիցներին տրամադրել տեղեկատվություն ապահովագրական պոլիսի վերաբերյալ։",
       ],
     },
+
     {
-      title: "9. Իրավական կարգավորում",
+      title: "9. Պայմանագրի դադարեցում",
       paragraphs: [
-        "Ապրանքը կարգավորվում է՝",
+        "Ապահովագրության պայմանագիրը դադարեցվում է՝",
         "",
-        "Sauszemes transportlīdzekļu īpašnieku civiltiesiskās atbildības obligātās apdrošināšanas likums-ով,",
-        "",
-        "ինչպես նաև՝",
-        "",
-        "• Եվրոպական միության քաղաքացիական պատասխանատվության ապահովագրության օրենսդրությամբ։",
+        "• գործողության ժամկետի ավարտից հետո;",
+        "• տրանսպորտային միջոցը հաշվառումից հանելու դեպքում;",
+        "• տրանսպորտային միջոցը այլ երկրում գրանցելու դեպքում;",
+        "• օրենսդրությամբ նախատեսված պայմանագրի լուծման դեպքերում։",
       ],
     },
+
     {
-      title: "10. Կարևոր տեղեկատվություն օգտատիրոջ համար",
+      title: "10. Կարևոր տեղեկատվություն",
       paragraphs: [
-        "• Robežpolise-ն պարտադիր է ճանապարհային երթևեկությանը մասնակցելու համար, եթե չկա Green Card։",
-        "• Պոլիսը ծածկում է միայն քաղաքացիական պատասխանատվությունը։",
-        "• Մինչ ուղևորությունը անհրաժեշտ է ստուգել պոլիսում նշված գործողության տարածքը։",
-        "• Ապահովագրության պայմաններն ու վնասների կարգավորումը սահմանվում են ապահովագրողի կողմից։",
+        "• OC Graniczne-ն պարտադիր ապահովագրության տեսակ է գործող Green Card-ի բացակայության դեպքում։",
+        "• Պոլիսը ծածկում է բացառապես երրորդ անձանց նկատմամբ քաղաքացիական պատասխանատվությունը։",
+        "• Պոլիսը չի ծածկում սեփական տրանսպորտային միջոցի վնասները։",
+        "• Ապահովագրության պայմանները և վնասների կարգավորման ընթացակարգը սահմանվում են ապահովագրողի և գործող օրենսդրության կողմից։",
+      ],
+    },
+
+    {
+      title: "11. Իրավական կարգավորում",
+      paragraphs: [
+        "Պրոդուկտը կարգավորվում է Լեհաստանի Հանրապետության օրենսդրությամբ՝ տրանսպորտային միջոցների սեփականատերերի պարտադիր քաղաքացիական պատասխանատվության ապահովագրության վերաբերյալ, ինչպես նաև քաղաքացիական պատասխանատվության ապահովագրության միջազգային ճանաչման համակարգի կանոններով։",
       ],
     },
   ],
 };
 
+
 const dictionaries: Partial<Record<Lang, CookiesPolicyDictionary>> = {
   ru,
+  pl,
   en,
-  lv,
+  be,
   uz,
-  kg,
   ka,
-  kz,
+  kk,
   tr,
   fa,
-  mn,
   hy,
 };
 

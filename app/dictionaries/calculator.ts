@@ -1,7 +1,7 @@
 // app/dictionaries/calculator.ts
 import type { Lang } from "@/app/dictionaries/header";
 
-export type Vehicle = "car" | "van" | "truck" | "trailer" | "special";
+export type Vehicle = "car" | "van" | "moto" | "truck" | "trailer" | "special";
 export type Term = "30" | "60" | "90" | "180" | "365";
 
 export interface CalculatorDictionary {
@@ -32,6 +32,7 @@ export const calculatorDictionary: Record<Lang, CalculatorDictionary> = {
         label: "Тип ТС",
         options: [
           { value: "car", label: "Легковые" },
+          { value: "moto", label: "Мотоциклы" },
           { value: "van", label: "Автобусы" },
           { value: "truck", label: "Грузовые" },
           { value: "trailer", label: "Прицепы" },
@@ -56,59 +57,62 @@ export const calculatorDictionary: Record<Lang, CalculatorDictionary> = {
     note: " ",
   },
 
-  lv: {
-    title: "Izmaksu kalkulators",
-    badge: "~ 1 minūte",
-    intro: "Izvēlieties apdrošināšanas periodu un transportlīdzekļa veidu.",
+  pl: {
+    title: "Kalkulator składki",
+    badge: "~ 1 minuta",
+    intro: "Wybierz okres ubezpieczenia oraz typ pojazdu.",
 
     fields: {
       vehicle: {
-        label: "Transportlīdzekļa veids",
+        label: "Typ pojazdu",
         options: [
-          { value: "car", label: "Vieglie automobiļi" },
-          { value: "van", label: "Autobusi" },
-          { value: "truck", label: "Kravas automobiļi" },
-          { value: "trailer", label: "Piekabes" },
-          { value: "special", label: "Speciālā tehnika" },
+          { value: "car", label: "Samochody osobowe" },
+          { value: "moto", label: "Motocykle" },
+          { value: "van", label: "Autobusy" },
+          { value: "truck", label: "Pojazdy ciężarowe" },
+          { value: "trailer", label: "Przyczepy" },
+          { value: "special", label: "Pojazdy specjalne" },
         ],
       },
       term: {
-        label: "Apdrošināšanas periods",
+        label: "Okres ubezpieczenia",
         options: [
-          { value: "30", label: "1 mēnesis" },
-          { value: "60", label: "2 mēneši" },
-          { value: "90", label: "3 mēneši" },
-          { value: "180", label: "6 mēneši" },
-          { value: "365", label: "12 mēneši" },
+          { value: "30", label: "1 miesiąc" },
+          { value: "60", label: "2 miesiące" },
+          { value: "90", label: "3 miesiące" },
+          { value: "180", label: "6 miesięcy" },
+          { value: "365", label: "12 miesięcy" },
         ],
       },
     },
 
-    button: "Aprēķināt",
-    resultTitle: "Aptuvenās izmaksas",
+    button: "Oblicz",
+    resultTitle: "Orientacyjna składka",
     resultHint: " ",
     note: " ",
   },
 
 
+
   en: {
-    title: "Price Calculator",
+    title: "Premium Calculator",
     badge: "~ 1 minute",
     intro: "Select the insurance period and vehicle type.",
 
     fields: {
       vehicle: {
-        label: "Vehicle type",
+        label: "Vehicle Type",
         options: [
-          { value: "car", label: "Passenger cars" },
+          { value: "car", label: "Passenger Cars" },
+          { value: "moto", label: "Motorcycles" },
           { value: "van", label: "Buses" },
           { value: "truck", label: "Trucks" },
           { value: "trailer", label: "Trailers" },
-          { value: "special", label: "Special vehicles" },
+          { value: "special", label: "Special Equipment" },
         ],
       },
       term: {
-        label: "Insurance period",
+        label: "Insurance Period",
         options: [
           { value: "30", label: "1 month" },
           { value: "60", label: "2 months" },
@@ -120,7 +124,41 @@ export const calculatorDictionary: Record<Lang, CalculatorDictionary> = {
     },
 
     button: "Calculate",
-    resultTitle: "Estimated cost",
+    resultTitle: "Estimated Premium",
+    resultHint: " ",
+    note: " ",
+  },
+  be: {
+    title: "Калькулятар кошту",
+    badge: "~ 1 хвіліна",
+    intro: "Выберыце тэрмін страхавання і тып транспартнага сродку.",
+
+    fields: {
+      vehicle: {
+        label: "Тып ТС",
+        options: [
+          { value: "car", label: "Легкавыя" },
+          { value: "moto", label: "Матацыклы" },
+          { value: "van", label: "Аўтобусы" },
+          { value: "truck", label: "Грузавыя" },
+          { value: "trailer", label: "Прычэпы" },
+          { value: "special", label: "Спецтэхніка" },
+        ],
+      },
+      term: {
+        label: "Тэрмін страхавання",
+        options: [
+          { value: "30", label: "1 месяц" },
+          { value: "60", label: "2 месяцы" },
+          { value: "90", label: "3 месяцы" },
+          { value: "180", label: "6 месяцаў" },
+          { value: "365", label: "12 месяцаў" },
+        ],
+      },
+    },
+
+    button: "Разлічыць",
+    resultTitle: "Арыенціровачны кошт",
     resultHint: " ",
     note: " ",
   },
@@ -134,6 +172,7 @@ export const calculatorDictionary: Record<Lang, CalculatorDictionary> = {
         label: "Transport vositasi turi",
         options: [
           { value: "car", label: "Yengil avtomobillar" },
+          { value: "moto", label: "Mototsikllar" },
           { value: "van", label: "Avtobuslar" },
           { value: "truck", label: "Yuk avtomobillari" },
           { value: "trailer", label: "Tirkamalar" },
@@ -157,39 +196,6 @@ export const calculatorDictionary: Record<Lang, CalculatorDictionary> = {
     resultHint: " ",
     note: " ",
   },
-  kg: {
-    title: "Бааны эсептөө калькулятору",
-    badge: "~ 1 мүнөт",
-    intro: "Камсыздандыруу мөөнөтүн жана транспорт каражатынын түрүн тандаңыз.",
-
-    fields: {
-      vehicle: {
-        label: "Транспорт каражатынын түрү",
-        options: [
-          { value: "car", label: "Жеңил автоунаалар" },
-          { value: "van", label: "Автобустар" },
-          { value: "truck", label: "Жүк ташуучу унаалар" },
-          { value: "trailer", label: "Прицептер" },
-          { value: "special", label: "Атайын техника" },
-        ],
-      },
-      term: {
-        label: "Камсыздандыруу мөөнөтү",
-        options: [
-          { value: "30", label: "1 ай" },
-          { value: "60", label: "2 ай" },
-          { value: "90", label: "3 ай" },
-          { value: "180", label: "6 ай" },
-          { value: "365", label: "12 ай" },
-        ],
-      },
-    },
-
-    button: "Эсептөө",
-    resultTitle: "Болжолдуу баа",
-    resultHint: " ",
-    note: " ",
-  },
 
   ka: {
     title: "ღირებულების კალკულატორი",
@@ -201,8 +207,9 @@ export const calculatorDictionary: Record<Lang, CalculatorDictionary> = {
         label: "სატრანსპორტო საშუალების ტიპი",
         options: [
           { value: "car", label: "მსუბუქი ავტომობილები" },
+          { value: "moto", label: "მოტოციკლები" },
           { value: "van", label: "ავტობუსები" },
-          { value: "truck", label: "სატვირთოები" },
+          { value: "truck", label: "სატვირთო ავტომობილები" },
           { value: "trailer", label: "მისაბმელები" },
           { value: "special", label: "სპეცტექნიკა" },
         ],
@@ -225,16 +232,17 @@ export const calculatorDictionary: Record<Lang, CalculatorDictionary> = {
     note: " ",
   },
 
-  kz: {
+  kk: {
     title: "Құн калькуляторы",
     badge: "~ 1 минут",
-    intro: "Сақтандыру мерзімін және көлік құралын таңдаңыз.",
+    intro: "Сақтандыру мерзімі мен көлік құралының түрін таңдаңыз.",
 
     fields: {
       vehicle: {
         label: "Көлік құралының түрі",
         options: [
-          { value: "car", label: "Жеңіл автокөліктер" },
+          { value: "car", label: "Жеңіл автомобильдер" },
+          { value: "moto", label: "Мотоциклдер" },
           { value: "van", label: "Автобустар" },
           { value: "truck", label: "Жүк көліктері" },
           { value: "trailer", label: "Тіркемелер" },
@@ -260,23 +268,24 @@ export const calculatorDictionary: Record<Lang, CalculatorDictionary> = {
   },
 
   tr: {
-    title: "Fiyat hesaplayıcı",
+    title: "Fiyat Hesaplayıcısı",
     badge: "~ 1 dakika",
     intro: "Sigorta süresini ve araç türünü seçin.",
 
     fields: {
       vehicle: {
-        label: "Araç türü",
+        label: "Araç Türü",
         options: [
-          { value: "car", label: "Binek araçlar" },
+          { value: "car", label: "Binek Araçlar" },
+          { value: "moto", label: "Motosikletler" },
           { value: "van", label: "Otobüsler" },
-          { value: "truck", label: "Yük araçları" },
+          { value: "truck", label: "Kamyonlar" },
           { value: "trailer", label: "Römorklar" },
-          { value: "special", label: "Özel ekipman" },
+          { value: "special", label: "Özel Amaçlı Araçlar" },
         ],
       },
       term: {
-        label: "Sigorta süresi",
+        label: "Sigorta Süresi",
         options: [
           { value: "30", label: "1 ay" },
           { value: "60", label: "2 ay" },
@@ -288,29 +297,30 @@ export const calculatorDictionary: Record<Lang, CalculatorDictionary> = {
     },
 
     button: "Hesapla",
-    resultTitle: "Tahmini maliyet",
+    resultTitle: "Tahmini Maliyet",
     resultHint: " ",
     note: " ",
   },
 
   fa: {
-    title: "محاسبه هزینه",
-    badge: "حدود ۱ دقیقه",
+    title: "محاسبه‌گر هزینه بیمه",
+    badge: "~ ۱ دقیقه",
     intro: "مدت بیمه و نوع وسیله نقلیه را انتخاب کنید.",
 
     fields: {
       vehicle: {
         label: "نوع وسیله نقلیه",
         options: [
-          { value: "car", label: "سواری" },
-          { value: "van", label: "اتوبوس" },
-          { value: "truck", label: "کامیون" },
-          { value: "trailer", label: "تریلر / یدک" },
+          { value: "car", label: "خودروهای سواری" },
+          { value: "moto", label: "موتورسیکلت‌ها" },
+          { value: "van", label: "اتوبوس‌ها" },
+          { value: "truck", label: "وسایل نقلیه باری" },
+          { value: "trailer", label: "تریلرها" },
           { value: "special", label: "ماشین‌آلات ویژه" },
         ],
       },
       term: {
-        label: "مدت بیمه",
+        label: "مدت اعتبار بیمه",
         options: [
           { value: "30", label: "۱ ماه" },
           { value: "60", label: "۲ ماه" },
@@ -327,40 +337,6 @@ export const calculatorDictionary: Record<Lang, CalculatorDictionary> = {
     note: " ",
   },
 
-  mn: {
-    title: "Үнийн тооцоолуур",
-    badge: "~ 1 минут",
-    intro: "Даатгалын хугацаа болон тээврийн хэрэгслийн төрлийг сонгоно уу.",
-
-    fields: {
-      vehicle: {
-        label: "Тээврийн хэрэгслийн төрөл",
-        options: [
-          { value: "car", label: "Суудлын автомашин" },
-          { value: "van", label: "Автобус" },
-          { value: "truck", label: "Ачааны автомашин" },
-          { value: "trailer", label: "Чиргүүл" },
-          { value: "special", label: "Тусгай зориулалтын техник" },
-        ],
-      },
-      term: {
-        label: "Даатгалын хугацаа",
-        options: [
-          { value: "30", label: "1 сар" },
-          { value: "60", label: "2 сар" },
-          { value: "90", label: "3 сар" },
-          { value: "180", label: "6 сар" },
-          { value: "365", label: "12 сар" },
-        ],
-      },
-    },
-
-    button: "Тооцоолох",
-    resultTitle: "Ойролцоо үнэ",
-    resultHint: " ",
-    note: " ",
-  },
-
   hy: {
     title: "Արժեքի հաշվիչ",
     badge: "~ 1 րոպե",
@@ -370,7 +346,8 @@ export const calculatorDictionary: Record<Lang, CalculatorDictionary> = {
       vehicle: {
         label: "Տրանսպորտային միջոցի տեսակ",
         options: [
-          { value: "car", label: "Թեթև մարդատար" },
+          { value: "car", label: "Թեթև մարդատար ավտոմեքենաներ" },
+          { value: "moto", label: "Մոտոցիկլետներ" },
           { value: "van", label: "Ավտոբուսներ" },
           { value: "truck", label: "Բեռնատարներ" },
           { value: "trailer", label: "Կցորդներ" },
@@ -394,7 +371,7 @@ export const calculatorDictionary: Record<Lang, CalculatorDictionary> = {
     resultHint: " ",
     note: " ",
   },
-};
+}
 
 export function getCalculatorDictionary(lang: Lang): CalculatorDictionary {
   return calculatorDictionary[lang] ? calculatorDictionary[lang] : calculatorDictionary.ru;
