@@ -28,12 +28,18 @@ export type LeadFormDictionary = {
     addressTitle: string;
     addressPlaceholder: string;
     addressHelp: string;
+    persPass: string;
   };
 
   policy: {
     legend: string;
     countryFrom: string;
     vehicleType: string;
+    engineType: string;
+    vehicleVin: string;
+    vehicleEngineCapacity: string;
+    vehiclePower: string;
+    powerUnit: string;
     startDate: string;
     period: string;
 
@@ -50,6 +56,8 @@ export type LeadFormDictionary = {
       countriesFrom: Array<{ value: string; label: string }>;
       vehicleTypes: Array<{ value: string; label: string }>;
       periods: Array<{ value: string; label: string }>;
+      engineTypes: Array<{ value: string; label: string }>;
+      powerUnits: Array<{ value: string; label: string }>;
     };
   };
     steps: {
@@ -98,6 +106,7 @@ const ru: LeadFormDictionary = {
     addressTitle: "Адрес регистрации",
     addressPlaceholder: "ИНДЕКС, Страна, город, улица, дом, квартира (если есть)",
     addressHelp: "Укажите адрес одной строкой.",
+    persPass: "Серия и номер паспорта без пробелов",
   },
 
   policy: {
@@ -108,6 +117,11 @@ const ru: LeadFormDictionary = {
     period: "Срок",
 
     vehiclePlate: "Госномер",
+    engineType: "Тип топлива",
+    vehicleEngineCapacity: "Объем двигателя, см. куб.",
+    vehicleVin: "VIN номер",
+    vehiclePower: "Мощность двигателя",
+    powerUnit: "Единица измерения мощности",
     docsLabel: "Техпаспорт (фото или PDF)",
     docsHint: "Можно прикрепить несколько файлов.",
 
@@ -146,6 +160,18 @@ const ru: LeadFormDictionary = {
         { value: "90", label: "90 дней" },
         { value: "180", label: "6 месяцев" },
         { value: "365", label: "12 месяцев" },
+      ],
+      engineTypes: [
+        { value: "petrol", label: "бензин" },
+        { value: "diesel", label: "дизель" },
+        { value: "Gas", label: "газ" },
+        { value: "Gasoline", label: "газ / бензин" },
+        { value: "electric", label: "электро" },
+        { value: "Hybrid", label: "гибрид" },
+      ],
+      powerUnits: [
+        { value: "ph", label: "лошадиные силы" },
+        { value: "kw", label: "килоВаты" },
       ],
     },
   },
@@ -201,6 +227,7 @@ const pl: LeadFormDictionary = {
     addressPlaceholder:
       "KOD POCZTOWY, kraj, miasto, ulica, numer domu, numer mieszkania (jeśli dotyczy)",
     addressHelp: "Proszę podać adres w jednym wierszu.",
+    persPass: "Seria i numer paszportu bez spacji",
   },
 
   policy: {
@@ -211,6 +238,11 @@ const pl: LeadFormDictionary = {
     period: "Okres",
 
     vehiclePlate: "Numer rejestracyjny",
+    engineType: "Rodzaj paliwa",
+    vehicleEngineCapacity: "Pojemność silnika, cm³",
+    vehicleVin: "Numer VIN",
+    vehiclePower: "Moc silnika",
+    powerUnit: "Jednostka mocy",
     docsLabel: "Dowód rejestracyjny (zdjęcie lub PDF)",
     docsHint: "Można załączyć kilka plików.",
 
@@ -235,6 +267,7 @@ const pl: LeadFormDictionary = {
         { value: "BY", label: "Białoruś" },
         { value: "OTHER", label: "Inny" },
       ],
+
       vehicleTypes: [
         { value: "car", label: "Samochód osobowy" },
         { value: "truck", label: "Samochód ciężarowy" },
@@ -243,12 +276,27 @@ const pl: LeadFormDictionary = {
         { value: "trailer", label: "Przyczepa" },
         { value: "special", label: "Pojazd specjalny" },
       ],
+
       periods: [
         { value: "30", label: "30 dni" },
         { value: "60", label: "60 dni" },
         { value: "90", label: "90 dni" },
         { value: "180", label: "6 miesięcy" },
         { value: "365", label: "12 miesięcy" },
+      ],
+
+      engineTypes: [
+        { value: "petrol", label: "benzyna" },
+        { value: "diesel", label: "diesel" },
+        { value: "Gas", label: "gaz" },
+        { value: "Gasoline", label: "gaz / benzyna" },
+        { value: "electric", label: "elektryczny" },
+        { value: "Hybrid", label: "hybrydowy" },
+      ],
+
+      powerUnits: [
+        { value: "ph", label: "konie mechaniczne" },
+        { value: "kw", label: "kilowaty" },
       ],
     },
   },
@@ -272,7 +320,7 @@ const pl: LeadFormDictionary = {
   estimate: {
     title: "Orientacyjna składka dla wniosku:",
     hint:
-      "Ostateczna składka zostanie podana w wiadomości zawierającej dane do płatności po weryfikacji wszystkich danych oraz uzgodnieniu warunków z zakładem ubezpieczeń.",
+      "Ostateczna składka zostanie podana w wiadomości zawierającej dane do płatności (fakturze/proformie) po weryfikacji wszystkich danych oraz uzgodnieniu warunków z zakładem ubezpieczeń.",
   },
 };
 
@@ -307,6 +355,7 @@ const en: LeadFormDictionary = {
     addressPlaceholder:
       "POSTAL CODE, Country, city, street, building, apartment (if applicable)",
     addressHelp: "Please enter the address in a single line.",
+    persPass: "Passport series and number without spaces",
   },
 
   policy: {
@@ -317,6 +366,11 @@ const en: LeadFormDictionary = {
     period: "Insurance Period",
 
     vehiclePlate: "Registration Number",
+    engineType: "Fuel Type",
+    vehicleEngineCapacity: "Engine Capacity, cc",
+    vehicleVin: "VIN Number",
+    vehiclePower: "Engine Power",
+    powerUnit: "Power Unit",
     docsLabel: "Vehicle Registration Certificate (photo or PDF)",
     docsHint: "You may attach multiple files.",
 
@@ -341,6 +395,7 @@ const en: LeadFormDictionary = {
         { value: "BY", label: "Belarus" },
         { value: "OTHER", label: "Other" },
       ],
+
       vehicleTypes: [
         { value: "car", label: "Passenger Car" },
         { value: "truck", label: "Truck" },
@@ -349,12 +404,27 @@ const en: LeadFormDictionary = {
         { value: "trailer", label: "Trailer" },
         { value: "special", label: "Special Equipment" },
       ],
+
       periods: [
         { value: "30", label: "30 days" },
         { value: "60", label: "60 days" },
         { value: "90", label: "90 days" },
         { value: "180", label: "6 months" },
         { value: "365", label: "12 months" },
+      ],
+
+      engineTypes: [
+        { value: "petrol", label: "Petrol" },
+        { value: "diesel", label: "Diesel" },
+        { value: "Gas", label: "Gas" },
+        { value: "Gasoline", label: "Gas / Petrol" },
+        { value: "electric", label: "Electric" },
+        { value: "Hybrid", label: "Hybrid" },
+      ],
+
+      powerUnits: [
+        { value: "ph", label: "Horsepower" },
+        { value: "kw", label: "Kilowatts" },
       ],
     },
   },
@@ -377,7 +447,7 @@ const en: LeadFormDictionary = {
   estimate: {
     title: "Estimated Premium for the Application:",
     hint:
-      "The final premium will be provided in the payment notice after verification of all information and confirmation by the insurer.",
+      "The final premium will be provided in the payment notice (invoice) after verification of all information and confirmation by the insurer.",
   },
 };
 
@@ -395,7 +465,7 @@ const be: LeadFormDictionary = {
   statusError:
     "Памылка пры адпраўцы заяўкі. Паспрабуйце пазней.",
   statusSuccess:
-    "Заяўка адпраўлена. Мы зьвяжамся з вамі.",
+    "Заяўка адпраўлена. Мы звяжамся з вамі.",
 
   contact: {
     legend: "Кантактныя даныя",
@@ -409,11 +479,13 @@ const be: LeadFormDictionary = {
     individualTitle:
       "Даныя страхавальніка (фізічная асоба)",
     birthDate: "Дата нараджэння",
-    addressTitle: "Адрас жыхарства",
+    addressTitle: "Адрас рэгістрацыі",
     addressPlaceholder:
       "ІНДЭКС, Краіна, горад, вуліца, дом, кватэра (калі ёсць)",
     addressHelp:
       "Укажыце адрас адным радком.",
+    persPass:
+      "Серыя і нумар пашпарта без прабелаў",
   },
 
   policy: {
@@ -426,6 +498,14 @@ const be: LeadFormDictionary = {
     period: "Тэрмін",
 
     vehiclePlate: "Дзяржаўны нумар",
+    engineType: "Тып паліва",
+    vehicleEngineCapacity:
+      "Аб’ём рухавіка, куб. см",
+    vehicleVin: "VIN-нумар",
+    vehiclePower:
+      "Магутнасць рухавіка",
+    powerUnit:
+      "Адзінка вымярэння магутнасці",
     docsLabel:
       "Тэхпашпарт (фота або PDF)",
     docsHint:
@@ -435,7 +515,8 @@ const be: LeadFormDictionary = {
     removeVehicle: "Выдаліць",
     vehicleBlockTitle:
       "Транспартны сродак",
-    comment: "Каментарый (неабавязкова)",
+    comment:
+      "Каментарый (неабавязкова)",
 
     options: {
       countriesFrom: [
@@ -453,20 +534,66 @@ const be: LeadFormDictionary = {
         { value: "BY", label: "Беларусь" },
         { value: "OTHER", label: "Іншая" },
       ],
+
       vehicleTypes: [
-        { value: "car", label: "Легкавы аўтамабіль" },
-        { value: "truck", label: "Грузавы аўтамабіль" },
-        { value: "bus", label: "Аўтобус" },
-        { value: "moto", label: "Матацыкл" },
-        { value: "trailer", label: "Прычэп" },
-        { value: "special", label: "Спецтэхніка" },
+        {
+          value: "car",
+          label: "Легкавы аўтамабіль",
+        },
+        {
+          value: "truck",
+          label: "Грузавы аўтамабіль",
+        },
+        {
+          value: "bus",
+          label: "Аўтобус",
+        },
+        {
+          value: "moto",
+          label: "Матацыкл",
+        },
+        {
+          value: "trailer",
+          label: "Прычэп",
+        },
+        {
+          value: "special",
+          label: "Спецтэхніка",
+        },
       ],
+
       periods: [
         { value: "30", label: "30 дзён" },
         { value: "60", label: "60 дзён" },
         { value: "90", label: "90 дзён" },
         { value: "180", label: "6 месяцаў" },
         { value: "365", label: "12 месяцаў" },
+      ],
+
+      engineTypes: [
+        { value: "petrol", label: "бензін" },
+        { value: "diesel", label: "дызель" },
+        { value: "Gas", label: "газ" },
+        {
+          value: "Gasoline",
+          label: "газ / бензін",
+        },
+        {
+          value: "electric",
+          label: "электра",
+        },
+        { value: "Hybrid", label: "гібрыд" },
+      ],
+
+      powerUnits: [
+        {
+          value: "ph",
+          label: "конскія сілы",
+        },
+        {
+          value: "kw",
+          label: "кілаваты",
+        },
       ],
     },
   },
@@ -475,7 +602,8 @@ const be: LeadFormDictionary = {
     step1: "Крок 1",
     step2: "Крок 2",
     contacts: "Кантакты",
-    vehicleData: "Даныя аўтамабіля",
+    vehicleData:
+      "Даныя аўтамабіля",
     next: "Далей",
     back: "Назад",
   },
@@ -489,9 +617,9 @@ const be: LeadFormDictionary = {
 
   estimate: {
     title:
-      "Прыблізны кошт па заяўцы:",
+      "Арыенціровачны кошт па заяўцы:",
     hint:
-      "Канчатковы кошт будзе пазначаны ў лісце з данымі для аплаты пасля праверкі ўсіх даных і ўзгаднення са страхавой кампаніяй.",
+      "Канчатковы кошт будзе пазначаны ў лісце з данымі для аплаты (інвойсе) пасля праверкі ўсіх даных і ўзгаднення са страхавой кампаніяй.",
   },
 };
 
@@ -507,8 +635,10 @@ const uz: LeadFormDictionary = {
     "ruxsat etilmaydi (arxiv, audio yoki video fayl).",
 
   statusSending: "Yuborilmoqda…",
+
   statusError:
     "Arizani yuborishda xatolik yuz berdi. Keyinroq qayta urinib ko‘ring.",
+
   statusSuccess:
     "Ariza yuborildi. Tez orada siz bilan bog‘lanamiz.",
 
@@ -523,6 +653,7 @@ const uz: LeadFormDictionary = {
   policyholder: {
     individualTitle:
       "Sug‘urta qildiruvchi ma’lumotlari (jismoniy shaxs)",
+
     birthDate: "Tug‘ilgan sana",
 
     addressTitle: "Ro‘yxatdan o‘tgan manzil",
@@ -532,6 +663,9 @@ const uz: LeadFormDictionary = {
 
     addressHelp:
       "Manzilni bitta qatorda kiriting.",
+
+    persPass:
+      "Pasport seriyasi va raqami bo‘sh joysiz",
   },
 
   policy: {
@@ -552,6 +686,21 @@ const uz: LeadFormDictionary = {
 
     vehiclePlate:
       "Davlat raqami",
+
+    engineType:
+      "Yoqilg‘i turi",
+
+    vehicleEngineCapacity:
+      "Dvigatel hajmi, kub sm",
+
+    vehicleVin:
+      "VIN raqami",
+
+    vehiclePower:
+      "Dvigatel quvvati",
+
+    powerUnit:
+      "Quvvat o‘lchov birligi",
 
     docsLabel:
       "Texnik pasport (foto yoki PDF)",
@@ -604,6 +753,20 @@ const uz: LeadFormDictionary = {
         { value: "180", label: "6 oy" },
         { value: "365", label: "12 oy" },
       ],
+
+      engineTypes: [
+        { value: "petrol", label: "benzin" },
+        { value: "diesel", label: "dizel" },
+        { value: "Gas", label: "gaz" },
+        { value: "Gasoline", label: "gaz / benzin" },
+        { value: "electric", label: "elektr" },
+        { value: "Hybrid", label: "gibrid" },
+      ],
+
+      powerUnits: [
+        { value: "ph", label: "ot kuchi" },
+        { value: "kw", label: "kilovatt" },
+      ],
     },
   },
 
@@ -618,6 +781,7 @@ const uz: LeadFormDictionary = {
 
   terms: {
     textBefore: "Men",
+
     linkText:
       "rasmiylashtirish shartlari va sug‘urta qoidalarini",
 
@@ -630,7 +794,7 @@ const uz: LeadFormDictionary = {
       "Ariza bo‘yicha taxminiy narx:",
 
     hint:
-      "Yakuniy narx barcha ma’lumotlar tekshirilgandan va sug‘urta kompaniyasi bilan kelishilgandan so‘ng to‘lov ma’lumotlari ko‘rsatilgan xatda taqdim etiladi.",
+      "Yakuniy narx barcha ma’lumotlar tekshirilgandan va sug‘urta kompaniyasi bilan kelishilgandan so‘ng to‘lov ma’lumotlari ko‘rsatilgan xatda (invoice) taqdim etiladi.",
   },
 };
 
@@ -663,8 +827,9 @@ const ka: LeadFormDictionary = {
     birthDate: "დაბადების თარიღი",
     addressTitle: "რეგისტრაციის მისამართი",
     addressPlaceholder:
-      "საფოსტო ინდექსი, ქვეყანა, ქალაქი, ქუჩა, სახლი, ბინა (თუ არის)",
+      "საფოსტო ინდექსი, ქვეყანა, ქალაქი, ქუჩა, სახლი, ბინა (არსებობის შემთხვევაში)",
     addressHelp: "მიუთითეთ მისამართი ერთ სტრიქონში.",
+    persPass: "პასპორტის სერია და ნომერი გამოტოვებების გარეშე",
   },
 
   policy: {
@@ -675,6 +840,11 @@ const ka: LeadFormDictionary = {
     period: "ვადა",
 
     vehiclePlate: "სახელმწიფო ნომერი",
+    engineType: "საწვავის ტიპი",
+    vehicleEngineCapacity: "ძრავის მოცულობა, კუბ. სმ",
+    vehicleVin: "VIN ნომერი",
+    vehiclePower: "ძრავის სიმძლავრე",
+    powerUnit: "სიმძლავრის საზომი ერთეული",
     docsLabel: "ტექპასპორტი (ფოტო ან PDF)",
     docsHint: "შესაძლებელია რამდენიმე ფაილის ატვირთვა.",
 
@@ -699,6 +869,7 @@ const ka: LeadFormDictionary = {
         { value: "BY", label: "ბელარუსი" },
         { value: "OTHER", label: "სხვა" },
       ],
+
       vehicleTypes: [
         { value: "car", label: "მსუბუქი ავტომობილი" },
         { value: "truck", label: "სატვირთო ავტომობილი" },
@@ -707,12 +878,27 @@ const ka: LeadFormDictionary = {
         { value: "trailer", label: "მისაბმელი" },
         { value: "special", label: "სპეცტექნიკა" },
       ],
+
       periods: [
         { value: "30", label: "30 დღე" },
         { value: "60", label: "60 დღე" },
         { value: "90", label: "90 დღე" },
         { value: "180", label: "6 თვე" },
         { value: "365", label: "12 თვე" },
+      ],
+
+      engineTypes: [
+        { value: "petrol", label: "ბენზინი" },
+        { value: "diesel", label: "დიზელი" },
+        { value: "Gas", label: "გაზი" },
+        { value: "Gasoline", label: "გაზი / ბენზინი" },
+        { value: "electric", label: "ელექტრო" },
+        { value: "Hybrid", label: "ჰიბრიდი" },
+      ],
+
+      powerUnits: [
+        { value: "ph", label: "ცხენის ძალა" },
+        { value: "kw", label: "კილოვატი" },
       ],
     },
   },
@@ -735,7 +921,7 @@ const ka: LeadFormDictionary = {
   estimate: {
     title: "განაცხადის სავარაუდო ღირებულება:",
     hint:
-      "საბოლოო ღირებულება მითითებული იქნება გადახდის მონაცემებთან ერთად გამოგზავნილ წერილში, ყველა მონაცემის გადამოწმებისა და სადაზღვევო კომპანიასთან შეთანხმების შემდეგ.",
+      "საბოლოო ღირებულება მითითებული იქნება გადახდის მონაცემებთან ერთად გამოგზავნილ წერილში (ინვოისში), ყველა მონაცემის გადამოწმებისა და სადაზღვევო კომპანიასთან შეთანხმების შემდეგ.",
   },
 };
 
@@ -770,6 +956,7 @@ const kk: LeadFormDictionary = {
     addressPlaceholder:
       "ПОШТА ИНДЕКСІ, Ел, қала, көше, үй, пәтер (бар болса)",
     addressHelp: "Мекенжайды бір жолмен көрсетіңіз.",
+    persPass: "Паспорттың сериясы мен нөмірі бос орынсыз",
   },
 
   policy: {
@@ -780,6 +967,11 @@ const kk: LeadFormDictionary = {
     period: "Мерзімі",
 
     vehiclePlate: "Мемлекеттік нөмір",
+    engineType: "Отын түрі",
+    vehicleEngineCapacity: "Қозғалтқыш көлемі, см³",
+    vehicleVin: "VIN нөмірі",
+    vehiclePower: "Қозғалтқыш қуаты",
+    powerUnit: "Қуат өлшем бірлігі",
     docsLabel: "Техпаспорт (фото немесе PDF)",
     docsHint: "Бірнеше файл тіркеуге болады.",
 
@@ -804,6 +996,7 @@ const kk: LeadFormDictionary = {
         { value: "BY", label: "Беларусь" },
         { value: "OTHER", label: "Басқа" },
       ],
+
       vehicleTypes: [
         { value: "car", label: "Жеңіл автомобиль" },
         { value: "truck", label: "Жүк көлігі" },
@@ -812,12 +1005,27 @@ const kk: LeadFormDictionary = {
         { value: "trailer", label: "Тіркеме" },
         { value: "special", label: "Арнайы техника" },
       ],
+
       periods: [
         { value: "30", label: "30 күн" },
         { value: "60", label: "60 күн" },
         { value: "90", label: "90 күн" },
         { value: "180", label: "6 ай" },
         { value: "365", label: "12 ай" },
+      ],
+
+      engineTypes: [
+        { value: "petrol", label: "бензин" },
+        { value: "diesel", label: "дизель" },
+        { value: "Gas", label: "газ" },
+        { value: "Gasoline", label: "газ / бензин" },
+        { value: "electric", label: "электр" },
+        { value: "Hybrid", label: "гибрид" },
+      ],
+
+      powerUnits: [
+        { value: "ph", label: "ат күші" },
+        { value: "kw", label: "киловатт" },
       ],
     },
   },
@@ -840,7 +1048,7 @@ const kk: LeadFormDictionary = {
   estimate: {
     title: "Өтінім бойынша болжамды құны:",
     hint:
-      "Қорытынды құн барлық деректер тексеріліп, сақтандыру компаниясымен келісілгеннен кейін төлем деректері көрсетілген хатта ұсынылады.",
+      "Қорытынды құн барлық деректер тексеріліп, сақтандыру компаниясымен келісілгеннен кейін төлем деректері көрсетілген хатта (инвойста) ұсынылады.",
   },
 };
 
@@ -875,6 +1083,7 @@ const tr: LeadFormDictionary = {
     addressPlaceholder:
       "Posta Kodu, Ülke, Şehir, Sokak, Bina No, Daire (varsa)",
     addressHelp: "Adresi tek satır halinde girin.",
+    persPass: "Pasaport seri ve numarası (boşluksuz)",
   },
 
   policy: {
@@ -885,6 +1094,11 @@ const tr: LeadFormDictionary = {
     period: "Süre",
 
     vehiclePlate: "Plaka Numarası",
+    engineType: "Yakıt Türü",
+    vehicleEngineCapacity: "Motor Hacmi (cm³)",
+    vehicleVin: "VIN Numarası",
+    vehiclePower: "Motor Gücü",
+    powerUnit: "Güç Birimi",
     docsLabel: "Araç Ruhsatı (fotoğraf veya PDF)",
     docsHint: "Birden fazla dosya ekleyebilirsiniz.",
 
@@ -924,6 +1138,18 @@ const tr: LeadFormDictionary = {
         { value: "180", label: "6 ay" },
         { value: "365", label: "12 ay" },
       ],
+      engineTypes: [
+        { value: "petrol", label: "benzin" },
+        { value: "diesel", label: "dizel" },
+        { value: "Gas", label: "gaz" },
+        { value: "Gasoline", label: "gaz / benzin" },
+        { value: "electric", label: "elektrikli" },
+        { value: "Hybrid", label: "hibrit" },
+      ],
+      powerUnits: [
+        { value: "ph", label: "beygir gücü" },
+        { value: "kw", label: "kilovat" },
+      ],
     },
   },
 
@@ -945,7 +1171,7 @@ const tr: LeadFormDictionary = {
   estimate: {
     title: "Başvuru İçin Tahmini Tutar:",
     hint:
-      "Nihai tutar, tüm bilgiler kontrol edilip sigorta şirketi ile onaylandıktan sonra ödeme bilgilerini içeren e-postada belirtilecektir.",
+      "Nihai tutar, tüm bilgiler kontrol edilip sigorta şirketi ile onaylandıktan sonra ödeme bilgilerini içeren e-postada (fatura/invoice) belirtilecektir.",
   },
 };
 
@@ -978,6 +1204,7 @@ const fa: LeadFormDictionary = {
     addressPlaceholder:
       "کد پستی، کشور، شهر، خیابان، پلاک، واحد (در صورت وجود)",
     addressHelp: "نشانی را در یک خط وارد کنید.",
+    persPass: "سری و شماره گذرنامه بدون فاصله",
   },
 
   policy: {
@@ -988,6 +1215,11 @@ const fa: LeadFormDictionary = {
     period: "مدت اعتبار",
 
     vehiclePlate: "شماره پلاک",
+    engineType: "نوع سوخت",
+    vehicleEngineCapacity: "حجم موتور (سانتی‌متر مکعب)",
+    vehicleVin: "شماره VIN",
+    vehiclePower: "قدرت موتور",
+    powerUnit: "واحد اندازه‌گیری قدرت",
     docsLabel: "کارت خودرو / سند وسیله نقلیه (عکس یا PDF)",
     docsHint: "امکان بارگذاری چند فایل وجود دارد.",
 
@@ -1012,6 +1244,7 @@ const fa: LeadFormDictionary = {
         { value: "BY", label: "بلاروس" },
         { value: "OTHER", label: "سایر" },
       ],
+
       vehicleTypes: [
         { value: "car", label: "خودروی سواری" },
         { value: "truck", label: "وسیله نقلیه باری" },
@@ -1020,12 +1253,27 @@ const fa: LeadFormDictionary = {
         { value: "trailer", label: "تریلر" },
         { value: "special", label: "ماشین‌آلات ویژه" },
       ],
+
       periods: [
         { value: "30", label: "۳۰ روز" },
         { value: "60", label: "۶۰ روز" },
         { value: "90", label: "۹۰ روز" },
         { value: "180", label: "۶ ماه" },
         { value: "365", label: "۱۲ ماه" },
+      ],
+
+      engineTypes: [
+        { value: "petrol", label: "بنزین" },
+        { value: "diesel", label: "دیزل" },
+        { value: "Gas", label: "گاز" },
+        { value: "Gasoline", label: "گاز / بنزین" },
+        { value: "electric", label: "برقی" },
+        { value: "Hybrid", label: "هیبریدی" },
+      ],
+
+      powerUnits: [
+        { value: "ph", label: "اسب بخار" },
+        { value: "kw", label: "کیلووات" },
       ],
     },
   },
@@ -1048,7 +1296,7 @@ const fa: LeadFormDictionary = {
   estimate: {
     title: "هزینه تقریبی درخواست:",
     hint:
-      "هزینه نهایی پس از بررسی اطلاعات و تأیید شرکت بیمه، در نامه حاوی اطلاعات پرداخت اعلام خواهد شد.",
+      "هزینه نهایی پس از بررسی اطلاعات و تأیید شرکت بیمه، در نامه حاوی اطلاعات پرداخت (فاکتور) اعلام خواهد شد.",
   },
 };
 
@@ -1060,7 +1308,7 @@ const hy: LeadFormDictionary = {
   notSelected: "Ընտրված չէ",
   submit: "Ուղարկել հայտը",
 
-  fileForbidden: "թույլատրելի չէ (արխիվ, աուդիո կամ վիդեո ֆայլ):",
+  fileForbidden: "անթույլատրելի է (արխիվ, աուդիո կամ վիդեո ֆայլ):",
 
   statusSending: "Ուղարկվում է…",
   statusError:
@@ -1085,6 +1333,8 @@ const hy: LeadFormDictionary = {
       "ԻՆԴԵՔՍ, երկիր, քաղաք, փողոց, տուն, բնակարան (եթե կա)",
     addressHelp:
       "Նշեք հասցեն մեկ տողով։",
+    persPass:
+      "Անձնագրի սերիան և համարը՝ առանց բացատների",
   },
 
   policy: {
@@ -1099,6 +1349,15 @@ const hy: LeadFormDictionary = {
 
     vehiclePlate:
       "Պետհամարանիշ",
+    engineType:
+      "Վառելիքի տեսակ",
+    vehicleEngineCapacity:
+      "Շարժիչի ծավալը, խ. սմ",
+    vehicleVin: "VIN համար",
+    vehiclePower:
+      "Շարժիչի հզորություն",
+    powerUnit:
+      "Հզորության չափման միավոր",
     docsLabel:
       "Տեխնիկական անձնագիր (լուսանկար կամ PDF)",
     docsHint:
@@ -1128,20 +1387,60 @@ const hy: LeadFormDictionary = {
         { value: "BY", label: "Բելառուս" },
         { value: "OTHER", label: "Այլ" },
       ],
+
       vehicleTypes: [
-        { value: "car", label: "Թեթև մարդատար ավտոմեքենա" },
-        { value: "truck", label: "Բեռնատար ավտոմեքենա" },
-        { value: "bus", label: "Ավտոբուս" },
-        { value: "moto", label: "Մոտոցիկլետ" },
-        { value: "trailer", label: "Կցորդ" },
-        { value: "special", label: "Հատուկ տեխնիկա" },
+        {
+          value: "car",
+          label: "Թեթև մարդատար ավտոմեքենա",
+        },
+        {
+          value: "truck",
+          label: "Բեռնատար ավտոմեքենա",
+        },
+        {
+          value: "bus",
+          label: "Ավտոբուս",
+        },
+        {
+          value: "moto",
+          label: "Մոտոցիկլետ",
+        },
+        {
+          value: "trailer",
+          label: "Կցորդ",
+        },
+        {
+          value: "special",
+          label: "Հատուկ տեխնիկա",
+        },
       ],
+
       periods: [
         { value: "30", label: "30 օր" },
         { value: "60", label: "60 օր" },
         { value: "90", label: "90 օր" },
         { value: "180", label: "6 ամիս" },
         { value: "365", label: "12 ամիս" },
+      ],
+
+      engineTypes: [
+        { value: "petrol", label: "բենզին" },
+        { value: "diesel", label: "դիզել" },
+        { value: "Gas", label: "գազ" },
+        { value: "Gasoline", label: "գազ / բենզին" },
+        { value: "electric", label: "էլեկտրական" },
+        { value: "Hybrid", label: "հիբրիդ" },
+      ],
+
+      powerUnits: [
+        {
+          value: "ph",
+          label: "ձիաուժ",
+        },
+        {
+          value: "kw",
+          label: "կիլովատ",
+        },
       ],
     },
   },
@@ -1167,7 +1466,7 @@ const hy: LeadFormDictionary = {
     title:
       "Հայտի մոտավոր արժեքը՝",
     hint:
-      "Վերջնական արժեքը կներկայացվի վճարման տվյալներով նամակում բոլոր տվյալների ստուգումից և ապահովագրական ընկերության հետ համաձայնեցումից հետո։",
+      "Վերջնական արժեքը կներկայացվի վճարման տվյալներով նամակում (invoice)՝ բոլոր տվյալների ստուգումից և ապահովագրական ընկերության հետ համաձայնեցումից հետո։",
   },
 };
 

@@ -66,7 +66,7 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
   ru: {
     hero: {
       kicker: "Онлайн-оформление",
-      title: "Договор пограничного страхования (OC graniczne) — быстро и без лишних шагов",
+      title: "Договор пограничного страхования ( OC graniczne) — быстро и без лишних шагов",
       lead:
         "Рассчитайте стоимость, заполните заявку и получите PDF-полис. Для авто из стран зарегистрированных за пределами ЕС — полис легко проверить по базе страхования Республики Польша (UFG).",
       meta: ["PDF-полис после оформления", "Поддержка в мессенджерах", "Понятные условия"],
@@ -211,7 +211,7 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
     hero: {
       kicker: "Zawarcie online",
       title:
-        "Ubezpieczenie graniczne (OC graniczne) — szybko i bez zbędnych formalności",
+        "OC graniczne — szybko i bez zbędnych formalności",
       lead:
         "Oblicz składkę, wypełnij wniosek i otrzymaj polisę PDF. Dla pojazdów zarejestrowanych poza UE — polisę można łatwo zweryfikować w bazie ubezpieczeniowej Polski (UFG).",
       meta: [

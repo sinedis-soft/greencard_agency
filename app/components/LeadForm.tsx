@@ -48,7 +48,24 @@ function formatPlate(raw: string): string {
     .replace(/\s/g, "")
     .replace(/[^A-Za-z0-9-]/g, "")
     .toUpperCase()
-    .slice(0, 12);
+    .slice(0, 8);
+}
+
+function formatVIN(raw: string): string {
+  return raw
+    .replace(/\s/g, "")
+    .replace(/[^A-Za-z0-9]/g, "")
+    .replace(/[IOQ]/gi, "")
+    .toUpperCase()
+    .slice(0, 17);
+}
+
+function formatPass(raw: string): string {
+  return raw
+    .replace(/\s/g, "")
+    .replace(/[^A-Za-z0-9-]/g, "")
+    .toUpperCase()
+    .slice(0, 15);
 }
 
 function validateFiles(
@@ -76,6 +93,10 @@ function validateFiles(
   }
 
   return true;
+}
+
+function isValidVIN(vin: string): boolean {
+  return vin.length === 17;
 }
 
 function todayISO(): string {
@@ -331,6 +352,7 @@ export default function LeadForm(props: { lang: Lang }) {
                   <input
                     id="firstName"
                     name="contact_firstNameLat"
+                    placeholder="Tom"
                     className="input"
                     value={firstName}
                     onChange={(ev) => setFirstName(formatLatinName(ev.target.value))}
@@ -344,6 +366,7 @@ export default function LeadForm(props: { lang: Lang }) {
                   <input
                     id="lastName"
                     name="contact_lastNameLat"
+                    placeholder="Kavaliou"
                     className="input"
                     value={lastName}
                     onChange={(ev) => setLastName(formatLatinName(ev.target.value))}
@@ -359,6 +382,7 @@ export default function LeadForm(props: { lang: Lang }) {
                   <input
                     id="phone"
                     name="contact_phone"
+                    placeholder="+48573581333"
                     className="input"
                     value={phone}
                     onChange={(ev) => setPhone(formatPhone(ev.target.value))}
@@ -373,6 +397,7 @@ export default function LeadForm(props: { lang: Lang }) {
                   <input
                     id="email"
                     name="contact_email"
+                    placeholder="exempl@mail.pl"
                     className="input"
                     value={email}
                     onChange={(ev) => setEmail(formatEmail(ev.target.value))}
@@ -400,6 +425,17 @@ export default function LeadForm(props: { lang: Lang }) {
                       autoComplete="bday"
                     />
                   </div>
+                  <div className="field">
+                      <label>{t.policyholder.persPass} *</label>
+                      <input
+                        name="policyholder_pass"
+                        className="input"
+                        required
+                        onChange={(e) => {
+                          e.currentTarget.value = formatPass(e.currentTarget.value);
+                        }}
+                      />
+                      </div>
 
                   <div className="field" />
                 </div>
@@ -540,16 +576,154 @@ export default function LeadForm(props: { lang: Lang }) {
                       </div>
                     </div>
 
-                    <div className="field">
-                      <label>{t.policy.vehiclePlate} *</label>
-                      <input
-                        name={"vehicles[" + idx + "][plate]"}
-                        className="input"
-                        required
-                        onChange={(e) => {
-                          e.currentTarget.value = formatPlate(e.currentTarget.value);
-                        }}
-                      />
+                    <div className="row-2">
+                      <div className="field">
+                        <label>{t.policy.vehiclePlate} *</label>
+                        <input
+                          name={"vehicles[" + idx + "][plate]"}
+                          className="input"
+                          required
+                          onChange={(e) => {
+                            e.currentTarget.value = formatPlate(e.currentTarget.value);
+                          }}
+                        />
+                      </div>
+
+                      <div className="field">
+                        <label>{t.policy.vehicleVin} *</label>
+                        <input
+                          name={"vehicles[" + idx + "][vin]"}
+                          className="input"
+                          required
+                          minLength={17}
+                          maxLength={17}
+                          pattern="[A-HJ-NPR-Z0-9]{17}"
+                          onChange={(e) => {
+                            e.currentTarget.value = formatVIN(e.currentTarget.value);
+                          }}
+                        />
+                      </div>
+                    </div>
+
+                    <div className="row-2">
+                      <div className="field">
+                        <label>{t.policy.engineType} *</label>
+                        <select
+                          name={"vehicles[" + idx + "][engineType]"}
+                          className="input"
+                          defaultValue=""
+                          required
+                          onChange={(e) => {
+                            const value = e.currentTarget.value;
+
+                            setVehiclePrices((prev) => ({
+                              ...prev,
+                              [id]: {
+                                vehicleType: value,
+                                period: prev[id]?.period || "",
+                              },
+                            }));
+                          }}
+                        >
+                          <option value="">{t.notSelected}</option>
+                          {t.policy.options.engineTypes.map(function (o) {
+                            return (
+                              <option key={o.value} value={o.value}>
+                                {o.label}
+                              </option>
+                            );
+                          })}
+                        </select>
+                      </div>
+
+                      <div className="field">
+                        <label>{t.policy.vehicleEngineCapacity} *</label>
+
+                        <input
+                          name={"vehicles[" + idx + "][engineCapacity]"}
+                          className="input"
+                          required
+                          inputMode="decimal"
+                          pattern="^\d+([.,]\d{1,2})?$"
+                          placeholder="3986"
+                          onChange={(e) => {
+                            let value = e.currentTarget.value;
+
+                            value = value.replace(",", ".");
+                            value = value.replace(/[^0-9.]/g, "");
+
+                            const parts = value.split(".");
+
+                            if (parts.length > 2) {
+                              value = parts[0] + "." + parts.slice(1).join("");
+                            }
+
+                            e.currentTarget.value = value;
+                          }}
+                        />
+                      </div>
+                    </div>
+
+                    <div className="row-2">
+                      <div className="field">
+                        <label>{t.policy.vehiclePower} *</label>
+
+                        <input
+                          name={"vehicles[" + idx + "][vehiclePower]"}
+                          className="input"
+                          required
+                          inputMode="decimal"
+                          pattern="^\d+([.,]\d{1,2})?$"
+                          placeholder="250"
+                          onChange={(e) => {
+                            let value = e.currentTarget.value;
+
+                            value = value.replace(",", ".");
+                            value = value.replace(/[^0-9.]/g, "");
+
+                            const parts = value.split(".");
+
+                            if (parts.length > 2) {
+                              value = parts[0] + "." + parts.slice(1).join("");
+                            }
+
+                            e.currentTarget.value = value;
+                          }}
+                        />
+                      </div>
+
+
+                      <div className="field">
+                        <label>{t.policy.powerUnit} *</label>
+                        <select
+                          name={"vehicles[" + idx + "][powerUnit]"}
+                          className="input"
+                          defaultValue=""
+                          required
+                          onChange={(e) => {
+                            const value = e.currentTarget.value;
+
+                            setVehiclePrices((prev) => ({
+                              ...prev,
+                              [id]: {
+                                vehicleType: value,
+                                period: prev[id]?.period || "",
+                              },
+                            }));
+                          }}
+                        >
+                          <option value="">{t.notSelected}</option>
+                          {t.policy.options.powerUnits.map(function (o) {
+                            return (
+                              <option key={o.value} value={o.value}>
+                                {o.label}
+                              </option>
+                            );
+                          })}
+                        </select>
+                      </div>
+
+                      
                     </div>
 
                     <div className="field">
