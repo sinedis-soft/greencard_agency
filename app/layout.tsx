@@ -1,16 +1,20 @@
-import '@/styles/globals.css';
-import type { Metadata } from 'next';
+// app/layout.tsx
+import type { Metadata } from "next";
+import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://greencard.agency'),
-  title: 'GreenCard Agency',
-  description: 'Insurance solutions for international mobility and green card policies.'
+  title: "Страховой агент Людмила Рыжова",
+  description: "Официальные страховые услуги и сопровождение.",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="ru">
+      <body className="min-h-dvh">{children}</body>
     </html>
   );
 }

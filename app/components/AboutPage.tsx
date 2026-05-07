@@ -1,0 +1,47 @@
+import type { Lang } from "@/app/dictionaries/header";
+import type { AboutDictionary } from "@/app/dictionaries/about";
+import { keepShortWords } from "@/app/utils/typography";
+
+export default function AboutPage({ t }: { lang: Lang; t: AboutDictionary }) {
+  return (
+    <main id="main">
+      <section className="section">
+        <div className="container">
+          <div className="section__hd">
+            <div>
+              <h1 className="section__title">{keepShortWords(t.hero.title)}</h1>
+              <p className="section__desc">{keepShortWords(t.hero.subtitle)}</p>
+            </div>
+          </div>
+
+          <div className="grid-4">
+            {t.cards.map((card, idx) => (
+              <article className="card" key={idx}>
+                <div className="card__body">
+                  <h3 className="card__title">{keepShortWords(card.title)}</h3>
+                  <p className="card__text">{card.text}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <div className="panel">
+            <div className="panel__body">
+              <h2 className="section__title" style={{ marginBottom: 12 }}>{keepShortWords(t.company.title)}</h2>
+              {t.company.lines.map((line, idx) => (
+                <p key={idx} className="section__desc" style={{ margin: "0 0 10px" }}>
+                  {line}
+                </p>
+              ))}
+              <p className="lead" style={{ marginTop: 16 }}>{t.company.note}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+}

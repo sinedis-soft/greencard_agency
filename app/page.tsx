@@ -1,5 +1,6 @@
-import { redirect } from 'next/navigation';
+// app/page.tsx (редирект с / на /ru)
+import { redirect } from "next/navigation";
 
-export default function IndexPage() {
-  redirect('/ru');
+export default function Home() {
+  redirect("/en");
 }

@@ -1,33 +1,33 @@
-import type { Metadata } from 'next';
-import { BenefitsSection } from '@/components/sections/home/BenefitsSection';
-import { HeroSection } from '@/components/sections/home/HeroSection';
-import { LeadForm } from '@/components/sections/shared/LeadForm';
-import { getDictionary, isLocale } from '@/lib/i18n/getDictionary';
-import { createLocalizedMetadata } from '@/lib/seo/metadata';
-import type { Locale } from '@/types/i18n';
-
-export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
-  const { lang } = await params;
-  const safeLang: Locale = isLocale(lang) ? lang : 'ru';
-  const dict = getDictionary(safeLang);
-
-  return createLocalizedMetadata({
-    lang: safeLang,
-    pathname: '/',
-    title: dict.pages.home.hero.title,
-    description: dict.pages.home.hero.subtitle
-  });
+import Home from "@/app/components/Home";
+import { LOCALES, Lang } from "@/app/dictionaries/header";
+import { pageAlternates } from "@/app/seo";
+import { getSeoDictionary } from "@/app/dictionaries/seo";
+function normalizeLang(value: string): Lang {
+  return (LOCALES as readonly string[]).includes(value) ? (value as Lang) : "ru";
 }
 
-export default async function HomePage({ params }: { params: Promise<{ lang: string }> }) {
-  const { lang } = await params;
-  const dict = getDictionary(lang);
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }) {
+  const { lang: rawLang } = await params;
+  const lang = normalizeLang(rawLang);
 
-  return (
-    <>
-      <HeroSection content={dict.pages.home.hero} />
-      <BenefitsSection content={dict.pages.home.benefits} />
-      <LeadForm dictionary={dict.forms.lead} lang={lang as Locale} />
-    </>
-  );
+  const seo = getSeoDictionary(lang);
+
+  return {
+    alternates: pageAlternates(lang, ""),
+    title: seo.home.title,
+    description: seo.home.description,
+  };
+}
+
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
+  const { lang: rawLang } = await params;
+  const lang = (LOCALES as readonly string[]).includes(rawLang)
+    ? (rawLang as Lang)
+    : "ru";
+
+  return <Home lang={lang} />;
 }
