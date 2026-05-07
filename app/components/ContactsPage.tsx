@@ -30,17 +30,17 @@ const intro: Record<Lang, string> = {
   hy: "Կապվեք մեզ հետ ձեզ հարմար ցանկացած տարբերակով:"
 };
 
-const labels: Record<Lang, { phone: string; email: string }> = {
-  ru: { phone: "Телефон", email: "E-mail" },
-  pl: { phone: "Telefon", email: "E-mail" },
-  en: { phone: "Phone", email: "E-mail" },
-  be: { phone: "Тэлефон", email: "E-mail" },
-  uz: { phone: "Telefon", email: "E-mail" },
-  ka: { phone: "ტელეფონი", email: "ელ-ფოსტა" },
-  kk: { phone: "Телефон", email: "Электрондық пошта" },
-  tr: { phone: "Telefon", email: "E-posta" },
-  fa: { phone: "تلفن", email: "ایمیل" },
-  hy: { phone: "Հեռախոս", email: "Էլ. փոստ" },
+const labels: Record<Lang, { phone: string; email: string; whatsapp:string; telegram:string; facebook:string; instagram:string;}> = {
+  ru: { phone: "Телефон", email: "Электронная почта", whatsapp:"Whats App", telegram: "Телеграм", facebook: "Facebook messenger", instagram:"Instagram", },
+  pl: {    phone: "Telefon",    email: "Poczta elektroniczna",    whatsapp: "WhatsApp",    telegram: "Telegram", facebook: "Facebook messenger", instagram:"Instagram",},
+  en: {    phone: "Phone",    email: "E-mail",    whatsapp: "WhatsApp",    telegram: "Telegram", facebook: "Facebook messenger", instagram:"Instagram",},
+  be: {    phone: "Тэлефон",    email: "Электронная пошта",    whatsapp: "WhatsApp",    telegram: "Тэлеграм", facebook: "Facebook messenger", instagram:"Instagram",},
+  uz: {    phone: "Telefon",    email: "Elektron pochta",    whatsapp: "WhatsApp",    telegram: "Telegram", facebook: "Facebook messenger", instagram:"Instagram",},
+  ka: {    phone: "ტელეფონი",    email: "ელექტრონული ფოსტა",    whatsapp: "WhatsApp",    telegram: "Telegram", facebook: "Facebook messenger", instagram:"Instagram",},
+  kk: {    phone: "Телефон",    email: "Электрондық пошта",    whatsapp: "WhatsApp",    telegram: "Telegram", facebook: "Facebook messenger", instagram:"Instagram",},
+  tr: {    phone: "Telefon",    email: "E-posta",    whatsapp: "WhatsApp",    telegram: "Telegram", facebook: "Facebook messenger", instagram:"Instagram",},
+  fa: {    phone: "تلفن",    email: "پست الکترونیکی",    whatsapp: "واتس‌اپ",    telegram: "تلگرام", facebook: "Facebook messenger", instagram:"Instagram",},
+  hy: {    phone: "Հեռախոս",    email: "Էլեկտրոնային փոստ",    whatsapp: "WhatsApp",    telegram: "Telegram", facebook: "Facebook messenger", instagram:"Instagram",},
 };
 
 export default function ContactsPage({ lang }: { lang: Lang }) {
@@ -58,16 +58,85 @@ export default function ContactsPage({ lang }: { lang: Lang }) {
             </div>
           </div>
 
-          <div className="panel">
+          <div className="panel contact-card">
             <div className="panel__body">
 
-              <p className="section__desc" style={{ margin: "0 0 10px", fontWeight: 700 }}>SINEDIS SP. Z O.O.</p>
-              <p className="section__desc" style={{ margin: "0 0 10px" }}>
-                {labels[lang].phone}: <a href="tel:+48573581333">+48 573 581 333</a>
-              </p>
-              <p className="section__desc" style={{ margin: 0 }}>
-                {labels[lang].email}: <a href="mailto:europolis@greencard.agency">europolis@greencard.agency</a>
-              </p>
+              <div className="contact-company">
+                SINEDIS SP. Z O.O.
+              </div>
+
+              <a
+                className="contact-row"
+                href="mailto:europolis@greencard.agency"
+              >
+                <span className="contact-label">
+                  {labels[lang].email}
+                </span>
+
+                <span className="contact-value">
+                  europolis@greencard.agency
+                </span>
+              </a>
+
+              <a
+                className="contact-row"
+                href="https://wa.me/48573581333"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="contact-label">
+                  {labels[lang].whatsapp}
+                </span>
+
+                <span className="contact-value">
+                  +48 573 581 333
+                </span>
+              </a>
+
+              <a
+                className="contact-row"
+                href="https://t.me/GreenCardAgency_bot"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="contact-label">
+                  {labels[lang].telegram}
+                </span>
+
+                <span className="contact-value">
+                  @GreenCardAgency_bot
+                </span>
+              </a>
+              
+              <a
+                className="contact-row"
+                href="https://m.me/779464698588846"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="contact-label">
+                  {labels[lang].facebook}
+                </span>
+
+                <span className="contact-value">
+                  www.facebook.com/people/Sinedis/61580498747893/
+                </span>
+              </a>
+
+              <a
+                className="contact-row"
+                href="https://www.instagram.com/sinedis_ubezpieczenia/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="contact-label">
+                  {labels[lang].instagram}
+                </span>
+
+                <span className="contact-value">
+                  @sinedis_ubezpieczenia
+                </span>
+              </a>
 
             </div>
           </div>
