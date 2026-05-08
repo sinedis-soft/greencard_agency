@@ -37,7 +37,9 @@ const vehicleStringFields: VehicleStringField[] = ["countryFrom","vehicleType","
 const engineTypeMap: Record<string, string> = { petrol: "133", diesel: "135", Gas: "137", Gasoline: "139", Hybrid: "141", electric: "143" };
 const powerUnitMap: Record<string, string> = { kw: "145", ph: "147" };
 function isVehicleStringField(field: string): field is VehicleStringField { return vehicleStringFields.includes(field as VehicleStringField); }
-const langToComm: Record<string, string> = { ru: "3937", pl: "3955", en: "3953", be:"3935", uz: "3947", kg: "3949", ka: "3941", kk: "3945", tr: "3957", fa: "3953", mn: "3953", hy: "3943" };
+
+const langToComm: Record<string, string> = {ru: "3937", en: "3953", kz: "3945" };
+
 const countryMap: Record<string, string> = { AR: "529", AZ: "531", BY: "123", GE: "523", KZ: "385", KG: "527", MD: "521", MN: "383", RU: "125", TR: "2253", UA: "519", UZ: "525", OTHER: "411" };
 const vehicleTypeMap: Record<string, string> = { car: "127", trailer: "129", bus: "131", moto: "217", special: "457", truck: "453" };
 const periodMap: Record<string, string> = { "30": "115", "90": "117", "180": "119", "365": "121" };
