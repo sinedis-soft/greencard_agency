@@ -44,6 +44,8 @@ export type LeadFormDictionary = {
     period: string;
 
     vehiclePlate: string;
+    vehicleBrend: string;
+    vehicleYear: string;
     docsLabel: string;
     docsHint: string;
 
@@ -117,6 +119,8 @@ const ru: LeadFormDictionary = {
     period: "Срок",
 
     vehiclePlate: "Госномер",
+    vehicleBrend: "Марка и модель ТС",
+    vehicleYear: "Год выпуска ТС",
     engineType: "Тип топлива",
     vehicleEngineCapacity: "Объем двигателя, см. куб.",
     vehicleVin: "VIN номер",
@@ -238,6 +242,8 @@ const pl: LeadFormDictionary = {
     period: "Okres",
 
     vehiclePlate: "Numer rejestracyjny",
+    vehicleBrend: "Marka i model pojazdu",
+    vehicleYear: "Rok produkcji pojazdu",
     engineType: "Rodzaj paliwa",
     vehicleEngineCapacity: "Pojemność silnika, cm³",
     vehicleVin: "Numer VIN",
@@ -366,6 +372,8 @@ const en: LeadFormDictionary = {
     period: "Insurance Period",
 
     vehiclePlate: "Registration Number",
+    vehicleBrend: "Vehicle Make and Model",
+    vehicleYear: "Vehicle Year of Manufacture",
     engineType: "Fuel Type",
     vehicleEngineCapacity: "Engine Capacity, cc",
     vehicleVin: "VIN Number",
@@ -498,6 +506,8 @@ const be: LeadFormDictionary = {
     period: "Тэрмін",
 
     vehiclePlate: "Дзяржаўны нумар",
+    vehicleBrend: "Марка і мадэль ТС",
+    vehicleYear: "Год выпуску ТС",
     engineType: "Тып паліва",
     vehicleEngineCapacity:
       "Аб’ём рухавіка, куб. см",
@@ -689,6 +699,9 @@ const uz: LeadFormDictionary = {
 
     engineType:
       "Yoqilg‘i turi",
+    
+    vehicleBrend: "Transport vositasining markasi va modeli",
+    vehicleYear: "Transport vositasi ishlab chiqarilgan yil",
 
     vehicleEngineCapacity:
       "Dvigatel hajmi, kub sm",
@@ -840,6 +853,8 @@ const ka: LeadFormDictionary = {
     period: "ვადა",
 
     vehiclePlate: "სახელმწიფო ნომერი",
+    vehicleBrend: "სატრანსპორტო საშუალების მარკა და მოდელი",
+    vehicleYear: "სატრანსპორტო საშუალების გამოშვების წელი",
     engineType: "საწვავის ტიპი",
     vehicleEngineCapacity: "ძრავის მოცულობა, კუბ. სმ",
     vehicleVin: "VIN ნომერი",
@@ -967,6 +982,8 @@ const kk: LeadFormDictionary = {
     period: "Мерзімі",
 
     vehiclePlate: "Мемлекеттік нөмір",
+    vehicleBrend: "Көлік құралының маркасы мен моделі",
+    vehicleYear: "Көлік құралының шығарылған жылы",
     engineType: "Отын түрі",
     vehicleEngineCapacity: "Қозғалтқыш көлемі, см³",
     vehicleVin: "VIN нөмірі",
@@ -1094,6 +1111,8 @@ const tr: LeadFormDictionary = {
     period: "Süre",
 
     vehiclePlate: "Plaka Numarası",
+    vehicleBrend: "Araç Markası ve Modeli",
+    vehicleYear: "Araç Üretim Yılı",
     engineType: "Yakıt Türü",
     vehicleEngineCapacity: "Motor Hacmi (cm³)",
     vehicleVin: "VIN Numarası",
@@ -1215,6 +1234,8 @@ const fa: LeadFormDictionary = {
     period: "مدت اعتبار",
 
     vehiclePlate: "شماره پلاک",
+    vehicleBrend: "برند و مدل وسیله نقلیه",
+    vehicleYear: "سال ساخت وسیله نقلیه",
     engineType: "نوع سوخت",
     vehicleEngineCapacity: "حجم موتور (سانتی‌متر مکعب)",
     vehicleVin: "شماره VIN",
@@ -1349,6 +1370,8 @@ const hy: LeadFormDictionary = {
 
     vehiclePlate:
       "Պետհամարանիշ",
+    vehicleBrend: "Տրանսպորտային միջոցի մակնիշ և մոդել",
+    vehicleYear: "Տրանսպորտային միջոցի արտադրության տարեթիվ",
     engineType:
       "Վառելիքի տեսակ",
     vehicleEngineCapacity:

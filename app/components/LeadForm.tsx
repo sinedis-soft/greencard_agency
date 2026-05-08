@@ -604,6 +604,44 @@ export default function LeadForm(props: { lang: Lang }) {
                         />
                       </div>
                     </div>
+                    <div className="row-2">
+                      <div className="field">
+                        <label>{t.policy.vehicleBrend} *</label>
+                        <input
+                          name={"vehicles[" + idx + "][brend]"}
+                          className="input"
+                          required
+                        />
+                      </div>
+                        <div className="field">
+                          <label>{t.policy.vehicleYear} *</label>
+
+                          <input
+                            name={"vehicles[" + idx + "][year]"}
+                            className="input"
+                            required
+                            inputMode="numeric"
+                            pattern="^\d{4}$"
+                            placeholder="2020"
+                            maxLength={4}
+                            onChange={(e) => {
+                              e.currentTarget.value = e.currentTarget.value
+                                .replace(/\D/g, "")
+                                .slice(0, 4);
+                            }}
+                            onBlur={(e) => {
+                              const year = Number(e.currentTarget.value);
+
+                              if (year < 1985 || year > new Date().getFullYear() + 1) {
+                                e.currentTarget.setCustomValidity("Invalid year");
+                              } else {
+                                e.currentTarget.setCustomValidity("");
+                              }
+                            }}
+                          />
+                        </div>
+                      
+                    </div>
 
                     <div className="row-2">
                       <div className="field">
