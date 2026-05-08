@@ -115,8 +115,8 @@ const ru: LeadFormDictionary = {
     legend: "Данные для расчёта и оформления",
     countryFrom: "Страна регистрации авто",
     vehicleType: "Тип ТС",
-    startDate: "Дата начала",
-    period: "Срок",
+    startDate: "Дата начала действия страховки",
+    period: "Срок страхования",
 
     vehiclePlate: "Госномер",
     vehicleBrend: "Марка и модель ТС",
@@ -238,8 +238,8 @@ const pl: LeadFormDictionary = {
     legend: "Dane do kalkulacji i zawarcia polisy",
     countryFrom: "Kraj rejestracji pojazdu",
     vehicleType: "Typ pojazdu",
-    startDate: "Data rozpoczęcia ochrony",
-    period: "Okres",
+    startDate: "Data rozpoczęcia ochrony ubezpieczeniowej",
+    period: "Okres ubezpieczenia",
 
     vehiclePlate: "Numer rejestracyjny",
     vehicleBrend: "Marka i model pojazdu",
@@ -368,8 +368,8 @@ const en: LeadFormDictionary = {
     legend: "Information for Quotation and Policy Issuance",
     countryFrom: "Vehicle Registration Country",
     vehicleType: "Vehicle Type",
-    startDate: "Start Date",
-    period: "Insurance Period",
+    startDate: "Insurance Start Date",
+    period: "Insurance Period", 
 
     vehiclePlate: "Registration Number",
     vehicleBrend: "Vehicle Make and Model",
@@ -502,8 +502,8 @@ const be: LeadFormDictionary = {
     countryFrom:
       "Краіна рэгістрацыі аўтамабіля",
     vehicleType: "Тып ТС",
-    startDate: "Дата пачатку",
-    period: "Тэрмін",
+    startDate: "Дата пачатку дзеяння страхавання",
+    period: "Тэрмін страхавання",
 
     vehiclePlate: "Дзяржаўны нумар",
     vehicleBrend: "Марка і мадэль ТС",
@@ -688,11 +688,8 @@ const uz: LeadFormDictionary = {
     vehicleType:
       "Transport vositasi turi",
 
-    startDate:
-      "Boshlanish sanasi",
-
-    period:
-      "Muddat",
+    startDate: "Sug‘urta amal qilishining boshlanish sanasi",
+    period: "Sug‘urta muddati",
 
     vehiclePlate:
       "Davlat raqami",
@@ -849,8 +846,8 @@ const ka: LeadFormDictionary = {
     legend: "მონაცემები გაანგარიშებისა და გაფორმებისთვის",
     countryFrom: "ავტომობილის რეგისტრაციის ქვეყანა",
     vehicleType: "სატრანსპორტო საშუალების ტიპი",
-    startDate: "დაწყების თარიღი",
-    period: "ვადა",
+    startDate: "დაზღვევის მოქმედების დაწყების თარიღი",
+    period: "დაზღვევის ვადა",
 
     vehiclePlate: "სახელმწიფო ნომერი",
     vehicleBrend: "სატრანსპორტო საშუალების მარკა და მოდელი",
@@ -978,8 +975,8 @@ const kk: LeadFormDictionary = {
     legend: "Есептеу және рәсімдеу үшін деректер",
     countryFrom: "Көліктің тіркелген елі",
     vehicleType: "Көлік құралының түрі",
-    startDate: "Басталу күні",
-    period: "Мерзімі",
+    startDate: "Сақтандырудың басталу күні",
+    period: "Сақтандыру мерзімі",
 
     vehiclePlate: "Мемлекеттік нөмір",
     vehicleBrend: "Көлік құралының маркасы мен моделі",
@@ -1107,8 +1104,8 @@ const tr: LeadFormDictionary = {
     legend: "Hesaplama ve Düzenleme Bilgileri",
     countryFrom: "Aracın Kayıtlı Olduğu Ülke",
     vehicleType: "Araç Türü",
-    startDate: "Başlangıç Tarihi",
-    period: "Süre",
+    startDate: "Sigorta Başlangıç Tarihi",
+    period: "Sigorta Süresi",
 
     vehiclePlate: "Plaka Numarası",
     vehicleBrend: "Araç Markası ve Modeli",
@@ -1230,8 +1227,8 @@ const fa: LeadFormDictionary = {
     legend: "اطلاعات لازم برای محاسبه و صدور",
     countryFrom: "کشور ثبت وسیله نقلیه",
     vehicleType: "نوع وسیله نقلیه",
-    startDate: "تاریخ شروع",
-    period: "مدت اعتبار",
+    startDate: "تاریخ شروع پوشش بیمه",
+    period: "مدت اعتبار بیمه",
 
     vehiclePlate: "شماره پلاک",
     vehicleBrend: "برند و مدل وسیله نقلیه",
@@ -1365,8 +1362,8 @@ const hy: LeadFormDictionary = {
       "Ավտոմեքենայի գրանցման երկիր",
     vehicleType:
       "Տրանսպորտային միջոցի տեսակ",
-    startDate: "Սկսման ամսաթիվ",
-    period: "Ժամկետ",
+    startDate: "Ապահովագրության գործողության մեկնարկի ամսաթիվ",
+    period: "Ապահովագրության ժամկետ",
 
     vehiclePlate:
       "Պետհամարանիշ",

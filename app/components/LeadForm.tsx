@@ -484,6 +484,49 @@ export default function LeadForm(props: { lang: Lang }) {
 
                     <div className="row-2">
                       <div className="field">
+                        <label>{t.policy.period} *</label>
+                        <select
+                          name={"vehicles[" + idx + "][period]"}
+                          className="input"
+                          defaultValue=""
+                          required
+                          onChange={(e) => {
+                            const value = e.currentTarget.value;
+
+                            setVehiclePrices((prev) => ({
+                              ...prev,
+                              [id]: {
+                                vehicleType: prev[id]?.vehicleType || "",
+                                period: value,
+                              },
+                            }));
+                          }}
+                        >
+                          <option value="">{t.notSelected}</option>
+                          {t.policy.options.periods.map(function (o) {
+                            return (
+                              <option key={o.value} value={o.value}>
+                                {o.label}
+                              </option>
+                            );
+                          })}
+                        </select>
+                      </div>
+
+                      <div className="field">
+                        <label>{t.policy.startDate} *</label>
+                        <input
+                          type="date"
+                          name={"vehicles[" + idx + "][startDate]"}
+                          className="input"
+                          min={minStartDate}
+                          required
+                        />
+                      </div>
+                    </div>
+
+                    <div className="row-2">
+                      <div className="field">
                         <label>{t.policy.countryFrom} *</label>
                         <select
                           name={"vehicles[" + idx + "][countryFrom]"}
@@ -533,48 +576,7 @@ export default function LeadForm(props: { lang: Lang }) {
                       </div>
                     </div>
 
-                    <div className="row-2">
-                      <div className="field">
-                        <label>{t.policy.period} *</label>
-                        <select
-                          name={"vehicles[" + idx + "][period]"}
-                          className="input"
-                          defaultValue=""
-                          required
-                          onChange={(e) => {
-                            const value = e.currentTarget.value;
-
-                            setVehiclePrices((prev) => ({
-                              ...prev,
-                              [id]: {
-                                vehicleType: prev[id]?.vehicleType || "",
-                                period: value,
-                              },
-                            }));
-                          }}
-                        >
-                          <option value="">{t.notSelected}</option>
-                          {t.policy.options.periods.map(function (o) {
-                            return (
-                              <option key={o.value} value={o.value}>
-                                {o.label}
-                              </option>
-                            );
-                          })}
-                        </select>
-                      </div>
-
-                      <div className="field">
-                        <label>{t.policy.startDate} *</label>
-                        <input
-                          type="date"
-                          name={"vehicles[" + idx + "][startDate]"}
-                          className="input"
-                          min={minStartDate}
-                          required
-                        />
-                      </div>
-                    </div>
+                    
 
                     <div className="row-2">
                       <div className="field">
