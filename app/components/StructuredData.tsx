@@ -38,19 +38,6 @@ const OPENING_HOURS = [
   },
 ];
 
-const OFFICIAL_PROFILES = [
-  toAbsolute("/ru/contacts"),
-  toAbsolute("/en/contacts"),
-  toAbsolute("/be/contacts"),
-  toAbsolute("/uz/contacts"),
-  toAbsolute("/ka/contacts"),
-  toAbsolute("/kk/contacts"),
-  toAbsolute("/tr/contacts"),
-  toAbsolute("/pl/contacts"),
-  toAbsolute("/fa/contacts"),
-  toAbsolute("/hy/contacts"),
-];
-
 const AVAILABLE_LANGUAGES = [
   "ru",
   "pl",
@@ -62,18 +49,48 @@ const AVAILABLE_LANGUAGES = [
   "tr",
   "fa",
   "hy",
+] as const;
+
+/**
+ * sameAs должен содержать внешние официальные профили бренда.
+ * Внутренние страницы сайта сюда не добавлять.
+ *
+ * Когда появятся реальные профили, добавьте их сюда:
+ * - Google Business Profile
+ * - LinkedIn
+ * - Facebook
+ * - Instagram
+ * - официальные карточки компании в каталогах
+ */
+const OFFICIAL_EXTERNAL_PROFILES: string[] = [
+  "https://www.facebook.com/profile.php?id=61580498747893",
+  "https://www.instagram.com/sinedis_ubezpieczenia",
 ];
 
 function JsonLd({ data }: JsonLdProps) {
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify(data).replace(/</g, "\\u003c"),
+      }}
     />
   );
 }
 
+function getSameAs() {
+  return OFFICIAL_EXTERNAL_PROFILES.length > 0
+    ? OFFICIAL_EXTERNAL_PROFILES
+    : undefined;
+}
+
+function getContactPage(lang: Lang) {
+  return toAbsolute(`/${lang}/contacts`);
+}
+
 export function OrganizationJsonLd({ lang }: { lang: Lang }) {
+  const sameAs = getSameAs();
+
   const data = {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -85,7 +102,7 @@ export function OrganizationJsonLd({ lang }: { lang: Lang }) {
     telephone: "+48573581333",
     address: COMPANY_ADDRESS,
     openingHoursSpecification: OPENING_HOURS,
-    sameAs: OFFICIAL_PROFILES,
+    ...(sameAs ? { sameAs } : {}),
     areaServed: ["PL", "EEA", ...TARGET_CARRIER_COUNTRIES],
     identifier: [
       {
@@ -112,6 +129,7 @@ export function OrganizationJsonLd({ lang }: { lang: Lang }) {
         email: "info@sinedis.pl",
         availableLanguage: AVAILABLE_LANGUAGES,
         areaServed: ["PL", "EEA", ...TARGET_CARRIER_COUNTRIES],
+        url: getContactPage(lang),
       },
     ],
   };
@@ -120,6 +138,8 @@ export function OrganizationJsonLd({ lang }: { lang: Lang }) {
 }
 
 export function InsuranceAgencyJsonLd({ lang }: { lang: Lang }) {
+  const sameAs = getSameAs();
+
   const data = {
     "@context": "https://schema.org",
     "@type": "InsuranceAgency",
@@ -129,13 +149,24 @@ export function InsuranceAgencyJsonLd({ lang }: { lang: Lang }) {
     url: toAbsolute(`/${lang}`),
     email: "info@sinedis.pl",
     telephone: "+48573581333",
+    address: COMPANY_ADDRESS,
+    openingHoursSpecification: OPENING_HOURS,
+    ...(sameAs ? { sameAs } : {}),
     parentOrganization: {
       "@id": toAbsolute(`/${lang}#organization`),
     },
-    address: COMPANY_ADDRESS,
-    openingHoursSpecification: OPENING_HOURS,
-    sameAs: OFFICIAL_PROFILES,
     areaServed: ["PL", "EEA", ...TARGET_CARRIER_COUNTRIES],
+    contactPoint: [
+      {
+        "@type": "ContactPoint",
+        contactType: "customer support",
+        telephone: "+48573581333",
+        email: "info@sinedis.pl",
+        availableLanguage: AVAILABLE_LANGUAGES,
+        areaServed: ["PL", "EEA", ...TARGET_CARRIER_COUNTRIES],
+        url: getContactPage(lang),
+      },
+    ],
     serviceType:
       "Insurance intermediation and border motor third-party liability insurance",
     hasOfferCatalog: {
@@ -156,7 +187,8 @@ export function InsuranceAgencyJsonLd({ lang }: { lang: Lang }) {
           itemOffered: {
             "@type": "Service",
             name: "Green Card agency",
-            serviceType: "International motor third-party liability insurance",
+            serviceType:
+              "International motor third-party liability insurance",
             areaServed: ["PL", "EEA"],
           },
         },
@@ -182,6 +214,55 @@ export function FaqPageJsonLd({ lang }: { lang: Lang }) {
         text: item.a,
       },
     })),
+  };
+
+  return <JsonLd data={data} />;
+}
+
+export function WebSiteJsonLd({ lang }: { lang: Lang }) {
+  const data = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": toAbsolute(`/${lang}#website`),
+    name: "Green card agency",
+    alternateName: "SINEDIS",
+    url: toAbsolute(`/${lang}`),
+    inLanguage: lang,
+    publisher: {
+      "@id": toAbsolute(`/${lang}#organization`),
+    },
+  };
+
+  return <JsonLd data={data} />;
+}
+
+export function BreadcrumbListJsonLd({
+  lang,
+  pageName,
+  pagePath,
+}: {
+  lang: Lang;
+  pageName: string;
+  pagePath: string;
+}) {
+  const data = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": toAbsolute(`/${lang}${pagePath}#breadcrumb`),
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: toAbsolute(`/${lang}`),
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: pageName,
+        item: toAbsolute(`/${lang}${pagePath}`),
+      },
+    ],
   };
 
   return <JsonLd data={data} />;
