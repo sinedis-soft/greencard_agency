@@ -34,3 +34,16 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Environment variables
+
+Create `.env` based on `.env.example` and configure:
+
+- `BITRIX_WEBHOOK_URL` - Bitrix webhook URL.
+- `SMTP_HOST` - SMTP host.
+- `SMTP_PORT` - SMTP port (usually `465` for SSL or `587` for STARTTLS/non-SSL connection).
+- `SMTP_SECURE` - `true` for SSL SMTP connection, `false` for plain SMTP.
+- `SMTP_USER` - SMTP login.
+- `SMTP_PASS` - SMTP password.
+- `SMTP_FROM` - From email address.
+- `DEAL_REPORT_EMAIL_TO` - email address to receive per-deal full reports.
