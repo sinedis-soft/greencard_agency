@@ -3,7 +3,7 @@ import Footer from "@/app/components/Footer";
 import CookieConsent from "@/app/components/CookieConsent";
 import type { Metadata } from "next";
 import { LOCALES, type Lang } from "@/app/dictionaries/header";
-import { SITE_URL, buildHreflangAlternates } from "@/app/seo";
+import { SITE_URL, pageAlternates } from "@/app/seo";
 import { getSeoDictionary } from "@/app/dictionaries/seo";
 import {
   InsuranceAgencyJsonLd,
@@ -73,10 +73,7 @@ export async function generateMetadata({
       template: "%s | Green card agency",
     },
     description: seo.home.description,
-    alternates: {
-      canonical: `/${lang}`,
-      languages: buildHreflangAlternates(""),
-    },
+    alternates: pageAlternates(lang, ""),
     openGraph: {
       type: "website",
       locale: lang,

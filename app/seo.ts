@@ -1,6 +1,6 @@
 import { LOCALES, type Lang } from "@/app/dictionaries/header";
 
-export const SITE_URL = "https://ваш-домен.com";
+export const SITE_URL = "https://greencard.agency";
 
 export const ROUTES = [
   "",
@@ -9,7 +9,7 @@ export const ROUTES = [
   "/product-info",
   "/rules",
   "/privacy",
-  "/cookie-policy",
+  "/cookiepolicy",
 ] as const;
 
 export type AppRoute = (typeof ROUTES)[number];
@@ -50,5 +50,14 @@ export function buildHreflangAlternates(route: string = ""): Record<string, stri
   return {
     ...alternates,
     "x-default": toAbsolute(localePath("en", normalizedRoute)),
+  };
+}
+
+export function pageAlternates(lang: Lang, route: string = "") {
+  const normalizedRoute = route === "/" ? "" : route;
+
+  return {
+    canonical: localePath(lang, normalizedRoute),
+    languages: buildHreflangAlternates(normalizedRoute),
   };
 }
