@@ -10,6 +10,13 @@ type VehicleInput = {
   period: string;
   startDate: string;
   plate: string;
+  vin: string;
+  brend: string;
+  year: string;
+  engineType: string;
+  engineCapacity: string;
+  vehiclePower: string;
+  powerUnit: string;
   comment: string;
   docs: File[];
 };
@@ -22,8 +29,29 @@ const vehicleStringFields: VehicleStringField[] = [
   "period",
   "startDate",
   "plate",
+  "vin",
+  "brend",
+  "year",
+  "engineType",
+  "engineCapacity",
+  "vehiclePower",
+  "powerUnit",
   "comment",
 ];
+
+const engineTypeMap: Record<string, string> = {
+  petrol: "133",
+  diesel: "135",
+  Gas: "137",
+  Gasoline: "139",
+  Hybrid: "141",
+  electric: "143",
+};
+
+const powerUnitMap: Record<string, string> = {
+  kw: "145",
+  ph: "147",
+};
 
 function isVehicleStringField(field: string): field is VehicleStringField {
   return vehicleStringFields.includes(field as VehicleStringField);
@@ -146,6 +174,7 @@ export async function POST(req: Request) {
 
     const birthDate = toString(form.get("policyholder_birthDate"));
     const address = toString(form.get("policyholder_address"));
+    const policyholderPass = toString(form.get("policyholder_pass"));
 
     const companyInn = toString(form.get("company_inn"));
     const ceoFullName = toString(form.get("company_ceo_fullName"));
@@ -165,6 +194,13 @@ export async function POST(req: Request) {
         period: "",
         startDate: "",
         plate: "",
+        vin: "",
+        brend: "",
+        year: "",
+        engineType: "",
+        engineCapacity: "",
+        vehiclePower: "",
+        powerUnit: "",
         comment: "",
         docs: [],
       };
@@ -200,6 +236,7 @@ export async function POST(req: Request) {
       PHONE: phone ? [{ VALUE: phone, VALUE_TYPE: "WORK" }] : [],
       EMAIL: email ? [{ VALUE: email, VALUE_TYPE: "WORK" }] : [],
       UF_CRM_1753957395750: langToComm[lang] || "3953",
+      UF_CRM_CONTACT_1686145698592: policyholderPass,
       ...(isCompany ? {} : { BIRTHDATE: birthDate, ADDRESS: address }),
     };
 
@@ -274,6 +311,17 @@ export async function POST(req: Request) {
           UF_CRM_1686152209741: periodMap[vehicle.period] || "115",
           UF_CRM_1686152149204: vehicle.startDate,
           UF_CRM_1686152485641: vehicle.plate,
+          UF_CRM_1686152659867: vehicle.vin,
+          UF_CRM_1686152515152: vehicle.brend,
+          UF_CRM_1686152614718: vehicle.year ? Number(vehicle.year) : "",
+          UF_CRM_1686152745455: engineTypeMap[vehicle.engineType] || "",
+          UF_CRM_1686152831791: vehicle.engineCapacity
+            ? Number(vehicle.engineCapacity)
+            : "",
+          UF_CRM_1686152861297: vehicle.vehiclePower
+            ? Number(vehicle.vehiclePower)
+            : "",
+          UF_CRM_1686152902186: powerUnitMap[vehicle.powerUnit] || "",
           UF_CRM_1686154280439: docs,
 
           COMMENTS: vehicle.comment,
