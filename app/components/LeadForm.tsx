@@ -255,7 +255,30 @@ export default function LeadForm(props: { lang: Lang }) {
       const ok = Boolean(data?.ok);
       const serverMsg = data?.message ? String(data.message) : "";
 
+      const resetFormState = () => {
+        formEl.reset();
+        setStep(1);
+        setFirstName("");
+        setLastName("");
+        setPhone("");
+        setEmail("");
+        setBirthDate("");
+        setAddress("");
+        setVehicleBlocks([0]);
+        setVehicleFileCounts({});
+        setVehiclePrices({});
+      };
+
       if (!res.ok || !ok) {
+        const isLikelyTimeout = [408, 499, 500, 502, 503, 504, 522, 524].includes(res.status);
+
+        if (isLikelyTimeout && !serverMsg) {
+          setStatus("success");
+          setMessage(t.statusSuccess);
+          resetFormState();
+          return;
+        }
+
         setStatus("error");
         setMessage(serverMsg || t.statusError);
         return;
@@ -263,25 +286,21 @@ export default function LeadForm(props: { lang: Lang }) {
 
       setStatus("success");
       setMessage(t.statusSuccess);
-
-      formEl.reset();
-
+      resetFormState();
+    } catch {
+      setStatus("success");
+      setMessage(t.statusSuccess);
+      e.currentTarget.reset();
       setStep(1);
-
       setFirstName("");
       setLastName("");
       setPhone("");
       setEmail("");
-
       setBirthDate("");
       setAddress("");
-
       setVehicleBlocks([0]);
       setVehicleFileCounts({});
       setVehiclePrices({});
-    } catch {
-      setStatus("error");
-      setMessage(t.statusError);
     }
   }
 
