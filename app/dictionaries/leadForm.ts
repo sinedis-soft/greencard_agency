@@ -91,7 +91,7 @@ const ru: LeadFormDictionary = {
   fileForbidden: "недопустим (архив, аудио или видео).",
 
   statusSending: "Отправка…",
-  statusError: "Ошибка при отправке заявки. Попробуйте позже.",
+  statusError: "Ошибка при отправке заявки. Попробуйте позже. (Или попробуйте вложить другой файл техпаспорта)",
   statusSuccess: "Заявка отправлена. Мы свяжемся с вами.",
 
   contact: {
@@ -211,7 +211,7 @@ const pl: LeadFormDictionary = {
 
   statusSending: "Wysyłanie…",
   statusError:
-    "Wystąpił błąd podczas wysyłania wniosku. Prosimy spróbować ponownie później.",
+    "Błąd podczas wysyłania wniosku. Spróbuj ponownie później. (Lub spróbuj załączyć inny plik dowodu rejestracyjnego pojazdu)",
   statusSuccess:
     "Wniosek został wysłany. Skontaktujemy się z Państwem.",
 
@@ -342,7 +342,7 @@ const en: LeadFormDictionary = {
 
   statusSending: "Sending…",
   statusError:
-    "An error occurred while submitting the application. Please try again later.",
+    "Error submitting the application. Please try again later. (Or try attaching a different vehicle registration document file)",
   statusSuccess:
     "Your application has been submitted. We will contact you shortly.",
 
@@ -471,7 +471,7 @@ const be: LeadFormDictionary = {
 
   statusSending: "Адпраўка…",
   statusError:
-    "Памылка пры адпраўцы заяўкі. Паспрабуйце пазней.",
+    "Памылка пры адпраўцы заяўкі. Паспрабуйце пазней. (Або паспрабуйце далучыць іншы файл тэхпашпарта)",
   statusSuccess:
     "Заяўка адпраўлена. Мы звяжамся з вамі.",
 
@@ -647,7 +647,7 @@ const uz: LeadFormDictionary = {
   statusSending: "Yuborilmoqda…",
 
   statusError:
-    "Arizani yuborishda xatolik yuz berdi. Keyinroq qayta urinib ko‘ring.",
+    "Arizani yuborishda xatolik yuz berdi. Keyinroq qayta urinib ko‘ring. (Yoki texpasportning boshqa faylini biriktirib ko‘ring)",
 
   statusSuccess:
     "Ariza yuborildi. Tez orada siz bilan bog‘lanamiz.",
@@ -820,7 +820,7 @@ const ka: LeadFormDictionary = {
 
   statusSending: "იგზავნება…",
   statusError:
-    "განაცხადის გაგზავნისას დაფიქსირდა შეცდომა. სცადეთ მოგვიანებით.",
+    "განაცხადის გაგზავნისას მოხდა შეცდომა. გთხოვთ, სცადოთ მოგვიანებით. (ან სცადეთ ტექნიკური პასპორტის სხვა ფაილის ატვირთვა)",
   statusSuccess:
     "განაცხადი წარმატებით გაიგზავნა. მალე დაგიკავშირდებით.",
 
@@ -949,7 +949,7 @@ const kk: LeadFormDictionary = {
 
   statusSending: "Жіберілуде…",
   statusError:
-    "Өтінімді жіберу кезінде қате орын алды. Кейінірек қайталап көріңіз.",
+    "Өтінімді жіберу кезінде қате орын алды. Кейінірек қайтадан көріңіз. (Немесе техпаспорттың басқа файлын тіркеп көріңіз)",
   statusSuccess:
     "Өтінім жіберілді. Жақын арада сізбен хабарласамыз.",
 
@@ -1078,7 +1078,7 @@ const tr: LeadFormDictionary = {
 
   statusSending: "Gönderiliyor…",
   statusError:
-    "Başvuru gönderilirken hata oluştu. Lütfen daha sonra tekrar deneyin.",
+    "Başvuru gönderilirken bir hata oluştu. Lütfen daha sonra tekrar deneyin. (Veya ruhsatın farklı bir dosyasını eklemeyi deneyin)",
   statusSuccess:
     "Başvurunuz gönderildi. En kısa sürede sizinle iletişime geçeceğiz.",
 
@@ -1202,7 +1202,7 @@ const fa: LeadFormDictionary = {
   fileForbidden: "مجاز نیست (فایل فشرده، صوتی یا ویدئویی).",
 
   statusSending: "در حال ارسال…",
-  statusError: "خطا در ارسال درخواست. لطفاً بعداً دوباره تلاش کنید.",
+  statusError: "خطا در ارسال درخواست. لطفاً بعداً دوباره تلاش کنید. (یا سعی کنید فایل دیگری از کارت خودرو را بارگذاری کنید)",
   statusSuccess: "درخواست ارسال شد. با شما تماس خواهیم گرفت.",
 
   contact: {
@@ -1330,7 +1330,7 @@ const hy: LeadFormDictionary = {
 
   statusSending: "Ուղարկվում է…",
   statusError:
-    "Հայտի ուղարկման ընթացքում տեղի է ունեցել սխալ։ Խնդրում ենք փորձել ավելի ուշ։",
+    "Հայտի ուղարկման ընթացքում սխալ է տեղի ունեցել։ Խնդրում ենք փորձել ավելի ուշ։ (Կամ փորձեք կցել տեխնիկական անձնագրի այլ ֆայլ)",
   statusSuccess:
     "Հայտն ուղարկվել է։ Մենք կկապվենք ձեզ հետ։",
 
