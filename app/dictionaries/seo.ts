@@ -1,4 +1,6 @@
 import type { Lang } from "@/app/dictionaries/header";
+import { getGeorgiaRomaniaOcDictionary } from "@/app/dictionaries/seo-landings/georgiaRomaniaOc";
+import { getBelarusPolandOcDictionary } from "@/app/dictionaries/seo-landings/belarusPolandOc";
 
 export type SeoRouteKey =
   | "home"
@@ -7,16 +9,20 @@ export type SeoRouteKey =
   | "productInfo"
   | "rules"
   | "privacy"
-  | "cookiePolicy";
+  | "cookiePolicy"
+  | "georgiaRomaniaOc"
+  | "belarusPolandOc";
 
 type RouteSeo = {
   title: string;
   description: string;
 };
 
-type SeoDictionary = Record<SeoRouteKey, RouteSeo>;
+type SeoDictionaryBase = Record<Exclude<SeoRouteKey, "georgiaRomaniaOc" | "belarusPolandOc">, RouteSeo>;
 
-export const seoDictionary: Record<Lang, SeoDictionary> = {
+type SeoDictionary = SeoDictionaryBase & { georgiaRomaniaOc: RouteSeo; belarusPolandOc: RouteSeo };
+
+export const seoDictionary: Record<Lang, SeoDictionaryBase> = {
   ru: {
     home: {
       title: "Border insurance для грузоперевозчиков и физических лиц",
@@ -410,6 +416,22 @@ export const seoDictionary: Record<Lang, SeoDictionary> = {
   },
 };
 
+
+
 export function getSeoDictionary(lang: Lang): SeoDictionary {
-  return seoDictionary[lang];
+  const base = seoDictionary[lang];
+  const georgiaLandingSeo = getGeorgiaRomaniaOcDictionary(lang).seo;
+  const belarusLandingSeo = getBelarusPolandOcDictionary(lang).seo;
+
+  return {
+    ...base,
+    georgiaRomaniaOc: {
+      title: georgiaLandingSeo.title,
+      description: georgiaLandingSeo.description,
+    },
+    belarusPolandOc: {
+      title: belarusLandingSeo.title,
+      description: belarusLandingSeo.description,
+    },
+  };
 }
