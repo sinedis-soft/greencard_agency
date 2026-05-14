@@ -3,6 +3,7 @@ import { LOCALES } from "@/app/dictionaries/header";
 import { pageAlternates, toAbsolute } from "@/app/seo";
 import { getBelarusPolandOcDictionary } from "@/app/dictionaries/seo-landings/belarusPolandOc";
 import { BreadcrumbListJsonLd } from "@/app/components/StructuredData";
+import Calculator from "@/app/components/Calculator";
 
 function normalizeLang(value: string): Lang {
   return (LOCALES as readonly string[]).includes(value) ? (value as Lang) : "ru";
@@ -30,7 +31,20 @@ export default async function BelarusPolandOcPage({ params }: { params: Promise<
     <main id="main">
       <BreadcrumbListJsonLd lang={lang} pageName={t.breadcrumbTitle} pagePath="/belarus-poland-oc" />
       <FaqJsonLd lang={lang} />
-      <section className="hero"><div className="container"><p className="kicker"><span className="badge">{t.hero.kicker}</span></p><h1 className="h1">{t.hero.title}</h1><p className="lead">{t.hero.lead}</p><a className="btn btn--primary" href={`/${lang}#buy`}>{t.hero.cta}</a></div></section>
+      <section className="hero">
+        <div className="container">
+          <div className="hero__grid">
+            <div>
+              <p className="kicker"><span className="badge">{t.hero.kicker}</span></p>
+              <h1 className="h1">{t.hero.title}</h1><p className="lead">{t.hero.lead}</p>
+              <a className="btn btn--primary" href={`/${lang}#buy`}>{t.hero.cta}</a>
+            </div>
+            <div id="calc">
+              <Calculator lang={lang} />
+            </div>
+          </div>
+        </div>
+          </section>
       <section className="section"><div className="container"><h2 className="section__title">{t.what.title}</h2><p>{t.what.text}</p></div></section>
       <section className="section"><div className="container"><h2 className="section__title">{t.who.title}</h2><ul>{t.who.items.map((i) => <li key={i}>{i}</li>)}</ul></div></section>
       <section className="section"><div className="container"><h2 className="section__title">{t.how.title}</h2><ol>{t.how.steps.map((i) => <li key={i}>{i}</li>)}</ol></div></section>
