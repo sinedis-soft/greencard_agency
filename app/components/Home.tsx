@@ -8,9 +8,11 @@ import LeadForm from "@/app/components/LeadForm";
 import CoverageBlock from "@/app/components/CoverageBlock";
 import { keepShortWords } from "@/app/utils/typography";
 import { FaqPageJsonLd } from "@/app/components/StructuredData";
+import { getBelarusPolandOcDictionary } from "@/app/dictionaries/seo-landings/belarusPolandOc";
 
 export default function Home({ lang }: { lang: Lang }) {
   const t = getHomeDictionary(lang);
+  const landing = getBelarusPolandOcDictionary(lang);
 
   return (
     <main id="main">
@@ -183,6 +185,24 @@ export default function Home({ lang }: { lang: Lang }) {
           </div>
         </div>
       </section>
+      <section className="section">
+        <div className="container">
+          <div className="section__hd">
+            <div>
+              <h2 className="section__title">{landing.carousel.title}</h2>
+            </div>
+          </div>
+
+          <div className="seo-carousel">
+            <a className="seo-mini-card" href={`/${lang}/belarus-poland-oc`}>
+              <h3>{landing.carousel.cardTitle}</h3>
+              <p>{landing.carousel.cardText}</p>
+              <span>{landing.carousel.cta}</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
     </main>
   );
 }

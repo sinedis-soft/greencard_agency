@@ -9,7 +9,10 @@ const ROUTE_LAST_MODIFIED: Record<string, string> = {
   "/product-info": "2026-05-08",
   "/rules": "2026-05-08",
   "/privacy": "2026-05-08",
-  "/cookiepolicy": "2026-05-08",
+
+  "/cookie-policy": "2026-05-08",
+  "/belarus-poland-oc": "2026-05-14",
+
 };
 
 function getLastModified(route: string): Date {
