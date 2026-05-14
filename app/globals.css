@@ -1894,3 +1894,31 @@ footer {
     text-align: left;
   }
 }
+.seo-carousel {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 320px));
+  gap: 12px;
+}
+
+.seo-mini-card {
+  display: block;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  border-radius: var(--radius-14);
+  padding: 14px;
+}
+
+.seo-mini-card h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+
+.seo-mini-card p {
+  margin: 0 0 8px;
+  color: var(--text-700);
+}
+
+.seo-mini-card span {
+  font-weight: 700;
+  color: var(--brand-primary);
+}
