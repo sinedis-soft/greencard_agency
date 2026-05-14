@@ -10,6 +10,7 @@ export const ROUTES = [
   "/rules",
   "/privacy",
   "/cookiepolicy",
+  "/belarus-poland-oc",
 ] as const;
 
 export type AppRoute = (typeof ROUTES)[number];
