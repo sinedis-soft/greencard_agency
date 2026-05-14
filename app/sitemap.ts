@@ -12,6 +12,7 @@ const ROUTE_LAST_MODIFIED: Record<string, string> = {
 
   "/cookie-policy": "2026-05-08",
   "/belarus-poland-oc": "2026-05-14",
+  "/georgia-romania-oc": "2026-05-14",
 
 };
 

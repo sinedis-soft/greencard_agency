@@ -11,6 +11,7 @@ export const ROUTES = [
   "/privacy",
   "/cookiepolicy",
   "/belarus-poland-oc",
+  "/georgia-romania-oc",
 ] as const;
 
 export type AppRoute = (typeof ROUTES)[number];

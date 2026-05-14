@@ -9,10 +9,12 @@ import CoverageBlock from "@/app/components/CoverageBlock";
 import { keepShortWords } from "@/app/utils/typography";
 import { FaqPageJsonLd } from "@/app/components/StructuredData";
 import { getBelarusPolandOcDictionary } from "@/app/dictionaries/seo-landings/belarusPolandOc";
+import { getGeorgiaRomaniaOcDictionary } from "@/app/dictionaries/seo-landings/georgiaRomaniaOc";
 
 export default function Home({ lang }: { lang: Lang }) {
   const t = getHomeDictionary(lang);
   const landing = getBelarusPolandOcDictionary(lang);
+  const georgiaRomania = getGeorgiaRomaniaOcDictionary(lang);
 
   return (
     <main id="main">
@@ -198,6 +200,11 @@ export default function Home({ lang }: { lang: Lang }) {
               <h3>{landing.carousel.cardTitle}</h3>
               <p>{landing.carousel.cardText}</p>
               <span>{landing.carousel.cta}</span>
+            </a>
+            <a className="seo-mini-card" href={`/${lang}/georgia-romania-oc`}>
+              <h3>{georgiaRomania.carousel.cardTitle}</h3>
+              <p>{georgiaRomania.carousel.cardText}</p>
+              <span>{georgiaRomania.carousel.cta}</span>
             </a>
           </div>
         </div>
