@@ -63,3 +63,25 @@ export function pageAlternates(lang: Lang, route: string = "") {
     languages: buildHreflangAlternates(normalizedRoute),
   };
 }
+
+
+export function pageSocialMetadata(lang: Lang, route: string, title: string, description: string) {
+  const normalizedRoute = route === "/" ? "" : route;
+  const url = localePath(lang, normalizedRoute);
+
+  return {
+    openGraph: {
+      type: "website" as const,
+      locale: lang,
+      url,
+      siteName: "Green card agency",
+      title,
+      description,
+    },
+    twitter: {
+      card: "summary_large_image" as const,
+      title,
+      description,
+    },
+  };
+}

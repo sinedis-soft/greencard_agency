@@ -2,7 +2,7 @@ import CookiesPolicyPage from "@/app/components/CookiesPolicyPage";
 import { getPrivacyPolicyDictionary } from "@/app/dictionaries/privacyPolicy";
 import type { Lang } from "@/app/dictionaries/header";
 import { LOCALES } from "@/app/dictionaries/header";
-import { pageAlternates } from "@/app/seo";
+import { pageAlternates, pageSocialMetadata } from "@/app/seo";
 import { getSeoDictionary } from "@/app/dictionaries/seo";
 function normalizeLang(value: string): Lang {
   return (LOCALES as readonly string[]).includes(value) ? (value as Lang) : "ru";
@@ -24,6 +24,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
 
     title: seo.privacy.title,
     description: seo.privacy.description,
+    ...pageSocialMetadata(lang, "/privacy", seo.privacy.title, seo.privacy.description),
   };
 }
 

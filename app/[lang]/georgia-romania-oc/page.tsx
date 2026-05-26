@@ -1,6 +1,6 @@
 import type { Lang } from "@/app/dictionaries/header";
 import { LOCALES } from "@/app/dictionaries/header";
-import { pageAlternates, toAbsolute } from "@/app/seo";
+import { pageAlternates, pageSocialMetadata, toAbsolute } from "@/app/seo";
 import { getGeorgiaRomaniaOcDictionary } from "@/app/dictionaries/seo-landings/georgiaRomaniaOc";
 import { BreadcrumbListJsonLd } from "@/app/components/StructuredData";
 import Calculator from "@/app/components/Calculator";
@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   const { lang: rawLang } = await params;
   const lang = normalizeLang(rawLang);
   const t = getGeorgiaRomaniaOcDictionary(lang);
-  return { alternates: pageAlternates(lang, "/georgia-romania-oc"), title: t.seo.title, description: t.seo.description };
+  return { alternates: pageAlternates(lang, "/georgia-romania-oc"), title: t.seo.title, description: t.seo.description, ...pageSocialMetadata(lang, "/georgia-romania-oc", t.seo.title, t.seo.description) };
 }
 
 export default async function GeorgiaRomaniaOcPage({ params }: { params: Promise<{ lang: string }> }) {
