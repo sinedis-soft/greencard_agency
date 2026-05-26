@@ -6,8 +6,22 @@ import type { Lang } from "@/app/dictionaries/header";
 import { LOCALES } from "@/app/dictionaries/header";
 import { pageAlternates, pageSocialMetadata } from "@/app/seo";
 import { getSeoDictionary } from "@/app/dictionaries/seo";
+import { BreadcrumbListJsonLd } from "@/app/components/StructuredData";
 import { getRulesDictionary } from "@/app/dictionaries/rules";
 import RulesPage from "@/app/components/RulesPage";
+
+const breadcrumbTitleByLang: Record<Lang, string> = {
+  ru: "Правила",
+  pl: "Regulamin",
+  en: "Rules",
+  be: "Правілы",
+  uz: "Qoidalar",
+  ka: "წესები",
+  kk: "Ережелер",
+  tr: "Kurallar",
+  fa: "قوانین",
+  hy: "Կանոններ",
+};
 
 function normalizeLang(value: string): Lang {
   return (LOCALES as readonly string[]).includes(value) ? (value as Lang) : "ru";
@@ -30,5 +44,9 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
 
 export default async function Page({ params }: { params: Promise<{ lang: string }> }) {
   const { lang: rawLang } = await params;
-  return <RulesPage t={getRulesDictionary(normalizeLang(rawLang))} />;
+  const lang = normalizeLang(rawLang);
+  return <>
+    <BreadcrumbListJsonLd lang={lang} pageName={breadcrumbTitleByLang[lang]} pagePath="/rules" />
+    <RulesPage t={getRulesDictionary(lang)} />
+  </>;
 }

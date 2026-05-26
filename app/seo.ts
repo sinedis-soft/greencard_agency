@@ -2,19 +2,26 @@ import { LOCALES, type Lang } from "@/app/dictionaries/header";
 
 export const SITE_URL = "https://greencard.agency";
 
-export const ROUTES = [
-  "",
-  "/about",
-  "/contacts",
-  "/product-info",
-  "/rules",
-  "/privacy",
-  "/cookiepolicy",
-  "/belarus-poland-oc",
-  "/georgia-romania-oc",
-] as const;
+export const ROUTE_META = {
+  "": { lastModified: "2026-05-08" },
+  "/about": { lastModified: "2026-05-08" },
+  "/contacts": { lastModified: "2026-05-08" },
+  "/product-info": { lastModified: "2026-05-08" },
+  "/rules": { lastModified: "2026-05-08" },
+  "/privacy": { lastModified: "2026-05-08" },
+  "/cookiepolicy": { lastModified: "2026-05-08" },
+  "/belarus-poland-oc": { lastModified: "2026-05-14" },
+  "/georgia-romania-oc": { lastModified: "2026-05-14" },
+} as const;
 
-export type AppRoute = (typeof ROUTES)[number];
+export const ROUTES = Object.keys(ROUTE_META) as Array<keyof typeof ROUTE_META>;
+;
+
+export type AppRoute = keyof typeof ROUTE_META;
+
+export function routeLastModified(route: AppRoute): Date {
+  return new Date(ROUTE_META[route].lastModified);
+}
 
 export const REGIONAL_HREFLANG_MAP: Record<Lang, string> = {
   ru: "ru",
@@ -26,7 +33,7 @@ export const REGIONAL_HREFLANG_MAP: Record<Lang, string> = {
   kk: "kk-KZ",
   tr: "tr-TR",
   fa: "fa",
-  hy: "hy-AM",
+  hy: "hy-AM", // Armenia regional target
 };
 
 export function localePath(lang: Lang, route: string = ""): string {
@@ -72,7 +79,9 @@ export function pageSocialMetadata(lang: Lang, route: string, title: string, des
   return {
     openGraph: {
       type: "website" as const,
-      locale: lang,
+
+      locale: REGIONAL_HREFLANG_MAP[lang],
+
       url,
       siteName: "Green card agency",
       title,

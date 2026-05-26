@@ -4,6 +4,20 @@ import type { Lang } from "@/app/dictionaries/header";
 import { LOCALES } from "@/app/dictionaries/header";
 import { pageAlternates, pageSocialMetadata } from "@/app/seo";
 import { getSeoDictionary } from "@/app/dictionaries/seo";
+import { BreadcrumbListJsonLd } from "@/app/components/StructuredData";
+const breadcrumbTitleByLang: Record<Lang, string> = {
+  ru: "Конфиденциальность",
+  pl: "Prywatność",
+  en: "Privacy",
+  be: "Прыватнасць",
+  uz: "Maxfiylik",
+  ka: "კონფიდენციალურობა",
+  kk: "Құпиялылық",
+  tr: "Gizlilik",
+  fa: "حریم خصوصی",
+  hy: "Գաղտնիություն",
+};
+
 function normalizeLang(value: string): Lang {
   return (LOCALES as readonly string[]).includes(value) ? (value as Lang) : "ru";
 }
@@ -31,5 +45,8 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
 export default async function PrivacyPolicyRoute({ params }: { params: Params }) {
   const { lang } = await params;
   const t = getPrivacyPolicyDictionary(lang);
-  return <CookiesPolicyPage lang={lang} t={t} />;
+  return <>
+    <BreadcrumbListJsonLd lang={lang} pageName={breadcrumbTitleByLang[lang]} pagePath="/privacy" />
+    <CookiesPolicyPage lang={lang} t={t} />
+  </>;
 }
