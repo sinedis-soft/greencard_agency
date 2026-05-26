@@ -6,8 +6,10 @@ import Link from "next/link";
 import type { Lang } from "@/app/dictionaries/header";
 import { getLeadFormDictionary } from "@/app/dictionaries/leadForm";
 import { getPolicyPrice, formatCurrency } from "@/app/lib/insurancePrices";
+import SubmissionModal from "@/app/components/SubmissionModal";
 
 type FormStatus = "idle" | "loading" | "success" | "error";
+type SubmitOutcome = "none" | "success" | "partial";
 type Step = 1 | 2;
 
 type VehiclePriceState = Record<
@@ -125,6 +127,7 @@ export default function LeadForm(props: { lang: Lang }) {
   const [step, setStep] = useState<Step>(1);
   const [status, setStatus] = useState<FormStatus>("idle");
   const [message, setMessage] = useState("");
+  const [outcome, setOutcome] = useState<SubmitOutcome>("none");
 
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -253,6 +256,7 @@ export default function LeadForm(props: { lang: Lang }) {
       }
 
       const ok = Boolean(data?.ok);
+      const partialSuccess = Boolean((data as { partialSuccess?: boolean } | null)?.partialSuccess);
       const serverMsg = data?.message ? String(data.message) : "";
 
       const resetFormState = () => {
@@ -286,10 +290,12 @@ export default function LeadForm(props: { lang: Lang }) {
 
       setStatus("success");
       setMessage(t.statusSuccess);
+      setOutcome(partialSuccess ? "partial" : "success");
       resetFormState();
     } catch {
       setStatus("success");
       setMessage(t.statusSuccess);
+      setOutcome("success");
       e.currentTarget.reset();
       setStep(1);
       setFirstName("");
@@ -328,6 +334,20 @@ export default function LeadForm(props: { lang: Lang }) {
 
     return hasPrice ? total : null;
   })();
+
+
+  const modalTexts: Record<Lang, { success: string; partial: string }> = {
+    ru: { success: "Ваша заявка УСПЕШНО отправлена! С вами может связаться менеджер через почту или мессенджеры для уточнения информации", partial: "Ваша заявка отправлена! Но есть проблема с прикрепленными файлами, с вами свяжется менеджер через почту или мессенджеры для уточнения информации" },
+    pl: { success: "Twoje zgłoszenie zostało POMYŚLNIE wysłane! Menedżer może skontaktować się z Tobą przez e-mail lub komunikatory, aby doprecyzować informacje.", partial: "Twoje zgłoszenie zostało wysłane! Wystąpił problem z załączonymi plikami, menedżer skontaktuje się z Tobą przez e-mail lub komunikatory, aby doprecyzować informacje." },
+    en: { success: "Your request was SUCCESSFULLY sent! A manager may contact you via email or messengers to уточнить information.", partial: "Your request was sent! There is an issue with attached files, a manager will contact you via email or messengers to clarify details." },
+    be: { success: "Ваша заяўка ПАСПЯХОВА адпраўлена! З вамі можа звязацца менеджар праз пошту або месенджары для ўдакладнення інфармацыі.", partial: "Ваша заяўка адпраўлена! Але ёсць праблема з прымацаванымі файламі, з вамі звяжацца менеджар праз пошту або месенджары для ўдакладнення інфармацыі." },
+    uz: { success: "Arizangiz MUVAFFAQIYATLI yuborildi! Menejer ma’lumotlarni aniqlashtirish uchun siz bilan e-pochta yoki messenjerlar orqali bog‘lanishi mumkin.", partial: "Arizangiz yuborildi! Ammo biriktirilgan fayllar bilan muammo bor, menejer ma’lumotlarni aniqlashtirish uchun siz bilan e-pochta yoki messenjerlar orqali bog‘lanadi." },
+    ka: { success: "თქვენი განაცხადი წარმატებით გაიგზავნა! ინფორმაციის დასაზუსტებლად მენეჯერი შეიძლება დაგიკავშირდეთ ელფოსტით ან მესენჯერებით.", partial: "თქვენი განაცხადი გაიგზავნა! მაგრამ მიმაგრებულ ფაილებზე პრობლემაა, მენეჯერი დაგიკავშირდებათ ელფოსტით ან მესენჯერებით ინფორმაციის დასაზუსტებლად." },
+    kk: { success: "Өтініміңіз СӘТТІ жіберілді! Ақпаратты нақтылау үшін менеджер сізбен пошта немесе мессенджерлер арқылы байланысуы мүмкін.", partial: "Өтініміңіз жіберілді! Бірақ тіркелген файлдарда мәселе бар, ақпаратты нақтылау үшін менеджер сізбен пошта немесе мессенджерлер арқылы байланысады." },
+    tr: { success: "Başvurunuz BAŞARIYLA gönderildi! Bilgileri netleştirmek için yönetici sizinle e-posta veya mesajlaşma uygulamaları üzerinden iletişime geçebilir.", partial: "Başvurunuz gönderildi! Ancak ekli dosyalarda bir sorun var, yönetici bilgileri netleştirmek için sizinle e-posta veya mesajlaşma uygulamaları üzerinden iletişime geçecektir." },
+    fa: { success: "درخواست شما با موفقیت ارسال شد! ممکن است مدیر برای تکمیل اطلاعات از طریق ایمیل یا پیام‌رسان‌ها با شما تماس بگیرد.", partial: "درخواست شما ارسال شد! اما مشکلی در فایل‌های پیوست وجود دارد و مدیر برای تکمیل اطلاعات از طریق ایمیل یا پیام‌رسان‌ها با شما تماس می‌گیرد." },
+    hy: { success: "Ձեր հայտը ՀԱՋՈՂՈՒԹՅԱՄԲ ուղարկվել է։ Տվյալները ճշտելու համար մենեջերը կարող է կապվել ձեզ հետ էլ․փոստով կամ մեսենջերներով։", partial: "Ձեր հայտը ուղարկվել է։ Բայց կցված ֆայլերի հետ խնդիր կա, և մենեջերը կկապվի ձեզ հետ էլ․փոստով կամ մեսենջերներով՝ տվյալները ճշտելու համար։" },
+  };
 
   return (
     <section className="section" id="buy" aria-label={t.title}>
@@ -1145,6 +1165,7 @@ export default function LeadForm(props: { lang: Lang }) {
           }
         }
       `}</style>
+          <SubmissionModal isOpen={outcome !== "none"} onClose={() => setOutcome("none")} title={outcome === "partial" ? "Green Card Agency" : "Green Card Agency"} message={outcome === "partial" ? modalTexts[props.lang].partial : modalTexts[props.lang].success} variant={outcome === "partial" ? "partial" : "success"} />
     </section>
   );
 }
