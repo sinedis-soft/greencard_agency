@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import type { Lang } from "@/app/dictionaries/header";
 import { getContactFeedbackFormDictionary } from "@/app/dictionaries/contactFeedbackForm";
+import SubmissionModal from "@/app/components/SubmissionModal";
 
 type FormState = {
   firstName: string;
@@ -28,6 +29,7 @@ export default function ContactFeedbackForm({ lang }: { lang: Lang }) {
   const [form, setForm] = useState<FormState>(initialFormState);
   const [status, setStatus] = useState<SubmitStatus>("idle");
   const [message, setMessage] = useState("");
+  const [showSuccessModal, setShowSuccessModal] = useState(false);
 
   function updateField<K extends keyof FormState>(key: K, value: FormState[K]) {
     setForm((prev) => ({
@@ -69,12 +71,27 @@ export default function ContactFeedbackForm({ lang }: { lang: Lang }) {
 
       setStatus("success");
       setMessage(dict.ok);
+      setShowSuccessModal(true);
       setForm(initialFormState);
     } catch {
       setStatus("error");
       setMessage(dict.error);
     }
   }
+
+
+  const successMessages: Record<Lang, string> = {
+    ru: "Ваша заявка УСПЕШНО отправлена! С вами может связаться менеджер через почту или мессенджеры для уточнения информации",
+    pl: "Twoje zgłoszenie zostało POMYŚLNIE wysłane! Menedżer może skontaktować się z Tobą przez e-mail lub komunikatory, aby doprecyzować informacje.",
+    en: "Your request was SUCCESSFULLY sent! A manager may contact you via email or messengers to clarify details.",
+    be: "Ваша заяўка ПАСПЯХОВА адпраўлена! З вамі можа звязацца менеджар праз пошту або месенджары для ўдакладнення інфармацыі.",
+    uz: "Arizangiz MUVAFFAQIYATLI yuborildi! Menejer ma’lumotlarni aniqlashtirish uchun siz bilan e-pochta yoki messenjerlar orqali bog‘lanishi mumkin.",
+    ka: "თქვენი განაცხადი წარმატებით გაიგზავნა! ინფორმაციის დასაზუსტებლად მენეჯერი შეიძლება დაგიკავშირდეთ ელფოსტით ან მესენჯერებით.",
+    kk: "Өтініміңіз СӘТТІ жіберілді! Ақпаратты нақтылау үшін менеджер сізбен пошта немесе мессенджерлер арқылы байланысуы мүмкін.",
+    tr: "Başvurunuz BAŞARIYLA gönderildi! Bilgileri netleştirmek için yönetici sizinle e-posta veya mesajlaşma uygulamaları üzerinden iletişime geçebilir.",
+    fa: "درخواست شما با موفقیت ارسال شد! ممکن است مدیر برای تکمیل اطلاعات از طریق ایمیل یا پیام‌رسان‌ها با شما تماس بگیرد.",
+    hy: "Ձեր հայտը ՀԱՋՈՂՈՒԹՅԱՄԲ ուղարկվել է։ Տվյալները ճշտելու համար մենեջերը կարող է կապվել ձեզ հետ էլ․փոստով կամ մեսենջերներով։",
+  };
 
   return (
     <section className="contact-form-section">
@@ -379,6 +396,7 @@ export default function ContactFeedbackForm({ lang }: { lang: Lang }) {
           }
         }
       `}</style>
+          <SubmissionModal isOpen={showSuccessModal} onClose={() => setShowSuccessModal(false)} title="Green Card Agency" message={successMessages[lang]} variant="success" />
     </section>
   );
 }

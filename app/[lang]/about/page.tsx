@@ -4,10 +4,24 @@ export const dynamicParams = false;
 import type { Metadata } from "next";
 import type { Lang } from "@/app/dictionaries/header";
 import { LOCALES } from "@/app/dictionaries/header";
-import { pageAlternates } from "@/app/seo";
+import { pageAlternates, pageSocialMetadata } from "@/app/seo";
 import { getSeoDictionary } from "@/app/dictionaries/seo";
+import { BreadcrumbListJsonLd } from "@/app/components/StructuredData";
 import { getAboutDictionary } from "@/app/dictionaries/about";
 import AboutPage from "@/app/components/AboutPage";
+
+const breadcrumbTitleByLang: Record<Lang, string> = {
+  ru: "О нас",
+  pl: "O nas",
+  en: "About",
+  be: "Пра нас",
+  uz: "Biz haqimizda",
+  ka: "ჩვენ შესახებ",
+  kk: "Біз туралы",
+  tr: "Hakkımızda",
+  fa: "درباره ما",
+  hy: "Մեր մասին",
+};
 
 function normalizeLang(value: string): Lang {
   return (LOCALES as readonly string[]).includes(value) ? (value as Lang) : "ru";
@@ -31,6 +45,7 @@ export async function generateMetadata({
     alternates: pageAlternates(lang, "/about"),
     title: seo.about.title,
     description: seo.about.description,
+    ...pageSocialMetadata(lang, "/about", seo.about.title, seo.about.description),
   };
 }
 
@@ -43,5 +58,8 @@ export default async function Page({
   const lang = normalizeLang(rawLang);
   const t = getAboutDictionary(lang);
 
-  return <AboutPage lang={lang} t={t} />;
+  return <>
+    <BreadcrumbListJsonLd lang={lang} pageName={breadcrumbTitleByLang[lang]} pagePath="/about" />
+    <AboutPage lang={lang} t={t} />
+  </>;
 }

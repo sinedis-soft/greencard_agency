@@ -1,6 +1,6 @@
 import Home from "@/app/components/Home";
 import { LOCALES, Lang } from "@/app/dictionaries/header";
-import { pageAlternates } from "@/app/seo";
+import { pageAlternates, pageSocialMetadata } from "@/app/seo";
 import { getSeoDictionary } from "@/app/dictionaries/seo";
 function normalizeLang(value: string): Lang {
   return (LOCALES as readonly string[]).includes(value) ? (value as Lang) : "ru";
@@ -16,6 +16,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     alternates: pageAlternates(lang, ""),
     title: seo.home.title,
     description: seo.home.description,
+    ...pageSocialMetadata(lang, "", seo.home.title, seo.home.description),
   };
 }
 

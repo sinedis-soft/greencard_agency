@@ -1,6 +1,6 @@
 import type { Lang } from "@/app/dictionaries/header";
 import { LOCALES } from "@/app/dictionaries/header";
-import { pageAlternates, toAbsolute } from "@/app/seo";
+import { pageAlternates, pageSocialMetadata, toAbsolute } from "@/app/seo";
 import { getBelarusPolandOcDictionary } from "@/app/dictionaries/seo-landings/belarusPolandOc";
 import { BreadcrumbListJsonLd } from "@/app/components/StructuredData";
 import Calculator from "@/app/components/Calculator";
@@ -19,18 +19,26 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   const { lang: rawLang } = await params;
   const lang = normalizeLang(rawLang);
   const t = getBelarusPolandOcDictionary(lang);
-  return { alternates: pageAlternates(lang, "/belarus-poland-oc"), title: t.seo.title, description: t.seo.description };
+  return { alternates: pageAlternates(lang, "/belarus-poland-oc"), title: t.seo.title, description: t.seo.description, ...pageSocialMetadata(lang, "/belarus-poland-oc", t.seo.title, t.seo.description) };
 }
 
 export default async function BelarusPolandOcPage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang: rawLang } = await params;
   const lang = normalizeLang(rawLang);
   const t = getBelarusPolandOcDictionary(lang);
+  const homeCrumbByLang: Record<Lang, string> = { ru: "Главная", pl: "Strona główna", en: "Home", be: "Галоўная", uz: "Bosh sahifa", ka: "მთავარი", kk: "Басты бет", tr: "Ana Sayfa", fa: "صفحه اصلی", hy: "Գլխավոր" };
 
   return (
     <main id="main">
       <BreadcrumbListJsonLd lang={lang} pageName={t.breadcrumbTitle} pagePath="/belarus-poland-oc" />
       <FaqJsonLd lang={lang} />
+      <nav aria-label="Breadcrumb" className="container" style={{ paddingTop: "16px" }}>
+        <ol style={{ display: "flex", gap: "8px", listStyle: "none", padding: 0, margin: 0, color: "#4b5563", fontSize: "14px" }}>
+          <li><a href={`/${lang}`}>{homeCrumbByLang[lang]}</a></li>
+          <li aria-hidden="true">/</li>
+          <li aria-current="page">{t.breadcrumbTitle}</li>
+        </ol>
+      </nav>
       <section className="hero">
         <div className="container">
           <div className="hero__grid">
