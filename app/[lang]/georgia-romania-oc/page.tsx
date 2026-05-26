@@ -11,6 +11,7 @@ function normalizeLang(value: string): Lang {
 
 function FaqJsonLd({ lang }: { lang: Lang }) {
   const t = getGeorgiaRomaniaOcDictionary(lang);
+  const homeCrumbByLang: Record<Lang, string> = { ru: "Главная", pl: "Strona główna", en: "Home", be: "Галоўная", uz: "Bosh sahifa", ka: "მთავარი", kk: "Басты бет", tr: "Ana Sayfa", fa: "صفحه اصلی", hy: "Գլխավոր" };
   const data = {"@context":"https://schema.org","@type":"FAQPage","@id":toAbsolute(`/${lang}/georgia-romania-oc#faq`),mainEntity:t.faq.items.map((item)=>({"@type":"Question",name:item.q,acceptedAnswer:{"@type":"Answer",text:item.a}}))};
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data).replace(/</g, "\\u003c") }} />;
 }
@@ -26,11 +27,19 @@ export default async function GeorgiaRomaniaOcPage({ params }: { params: Promise
   const { lang: rawLang } = await params;
   const lang = normalizeLang(rawLang);
   const t = getGeorgiaRomaniaOcDictionary(lang);
+  const homeCrumbByLang: Record<Lang, string> = { ru: "Главная", pl: "Strona główna", en: "Home", be: "Галоўная", uz: "Bosh sahifa", ka: "მთავარი", kk: "Басты бет", tr: "Ana Sayfa", fa: "صفحه اصلی", hy: "Գլխավոր" };
 
   return (
     <main id="main">
       <BreadcrumbListJsonLd lang={lang} pageName={t.breadcrumbTitle} pagePath="/georgia-romania-oc" />
       <FaqJsonLd lang={lang} />
+      <nav aria-label="Breadcrumb" className="container" style={{ paddingTop: "16px" }}>
+        <ol style={{ display: "flex", gap: "8px", listStyle: "none", padding: 0, margin: 0, color: "#4b5563", fontSize: "14px" }}>
+          <li><a href={`/${lang}`}>{homeCrumbByLang[lang]}</a></li>
+          <li aria-hidden="true">/</li>
+          <li aria-current="page">{t.breadcrumbTitle}</li>
+        </ol>
+      </nav>
       <section className="hero">
         <div className="container">
           <div className="hero__grid">
