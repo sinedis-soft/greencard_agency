@@ -6,7 +6,7 @@ import type { Lang } from "@/app/dictionaries/header";
 import { LOCALES } from "@/app/dictionaries/header";
 import { getCookiesPolicyDictionary } from "@/app/dictionaries/privacyCookies";
 import CookiesPolicyPage from "@/app/components/CookiesPolicyPage";
-import { pageAlternates } from "@/app/seo";
+import { pageAlternates, pageSocialMetadata } from "@/app/seo";
 import { getSeoDictionary } from "@/app/dictionaries/seo";
 
 function normalizeLang(value: string): Lang {
@@ -31,6 +31,7 @@ export async function generateMetadata({
     alternates: pageAlternates(lang, "/cookiepolicy"),
     title: seo.cookiePolicy.title,
     description: seo.cookiePolicy.description,
+    ...pageSocialMetadata(lang, "/cookiepolicy", seo.cookiePolicy.title, seo.cookiePolicy.description),
   };
 }
 

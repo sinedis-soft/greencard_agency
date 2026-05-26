@@ -4,7 +4,7 @@ export const dynamicParams = false;
 import type { Metadata } from "next";
 import type { Lang } from "@/app/dictionaries/header";
 import { LOCALES } from "@/app/dictionaries/header";
-import { pageAlternates } from "@/app/seo";
+import { pageAlternates, pageSocialMetadata } from "@/app/seo";
 import { getSeoDictionary } from "@/app/dictionaries/seo";
 import { getAboutDictionary } from "@/app/dictionaries/about";
 import AboutPage from "@/app/components/AboutPage";
@@ -31,6 +31,7 @@ export async function generateMetadata({
     alternates: pageAlternates(lang, "/about"),
     title: seo.about.title,
     description: seo.about.description,
+    ...pageSocialMetadata(lang, "/about", seo.about.title, seo.about.description),
   };
 }
 

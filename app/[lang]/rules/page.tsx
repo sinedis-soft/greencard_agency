@@ -4,7 +4,7 @@ export const dynamicParams = false;
 import type { Metadata } from "next";
 import type { Lang } from "@/app/dictionaries/header";
 import { LOCALES } from "@/app/dictionaries/header";
-import { pageAlternates } from "@/app/seo";
+import { pageAlternates, pageSocialMetadata } from "@/app/seo";
 import { getSeoDictionary } from "@/app/dictionaries/seo";
 import { getRulesDictionary } from "@/app/dictionaries/rules";
 import RulesPage from "@/app/components/RulesPage";
@@ -24,6 +24,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     alternates: pageAlternates(lang, "/rules"),
     title: seo.rules.title,
     description: seo.rules.description,
+    ...pageSocialMetadata(lang, "/rules", seo.rules.title, seo.rules.description),
   };
 }
 

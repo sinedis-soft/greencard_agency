@@ -4,7 +4,7 @@ export const dynamicParams = false;
 import type { Metadata } from "next";
 import type { Lang } from "@/app/dictionaries/header";
 import { LOCALES } from "@/app/dictionaries/header";
-import { pageAlternates } from "@/app/seo";
+import { pageAlternates, pageSocialMetadata } from "@/app/seo";
 import { getSeoDictionary } from "@/app/dictionaries/seo";
 
 import ContactsPage from "@/app/components/ContactsPage";
@@ -30,6 +30,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     alternates: pageAlternates(lang, "/contacts"),
     title: seo.contacts.title,
     description: seo.contacts.description,
+    ...pageSocialMetadata(lang, "/contacts", seo.contacts.title, seo.contacts.description),
   };
 }
 
