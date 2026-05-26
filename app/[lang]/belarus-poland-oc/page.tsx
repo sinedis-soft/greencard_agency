@@ -11,6 +11,7 @@ function normalizeLang(value: string): Lang {
 
 function FaqJsonLd({ lang }: { lang: Lang }) {
   const t = getBelarusPolandOcDictionary(lang);
+  const homeCrumbByLang: Record<Lang, string> = { ru: "Главная", pl: "Strona główna", en: "Home", be: "Галоўная", uz: "Bosh sahifa", ka: "მთავარი", kk: "Басты бет", tr: "Ana Sayfa", fa: "صفحه اصلی", hy: "Գլխավոր" };
   const data = {"@context":"https://schema.org","@type":"FAQPage","@id":toAbsolute(`/${lang}/belarus-poland-oc#faq`),mainEntity:t.faq.items.map((item)=>({"@type":"Question",name:item.q,acceptedAnswer:{"@type":"Answer",text:item.a}}))};
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data).replace(/</g, "\\u003c") }} />;
 }

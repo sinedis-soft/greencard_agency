@@ -79,7 +79,9 @@ export function pageSocialMetadata(lang: Lang, route: string, title: string, des
   return {
     openGraph: {
       type: "website" as const,
+
       locale: REGIONAL_HREFLANG_MAP[lang],
+
       url,
       siteName: "Green card agency",
       title,
