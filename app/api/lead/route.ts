@@ -1,5 +1,7 @@
 import { NextResponse } from "next/server";
 import { randomUUID } from "node:crypto";
+import { appendFile, mkdir, readdir, unlink } from "node:fs/promises";
+import path from "node:path";
 import net from "node:net";
 import tls from "node:tls";
 
@@ -45,6 +47,69 @@ const vehicleTypeMap: Record<string, string> = { car: "127", trailer: "129", bus
 const periodMap: Record<string, string> = { "30": "115", "90": "117", "180": "119", "365": "121" };
 
 type BitrixResponse = { result?: unknown; error?: string; error_description?: string };
+type LeadRouteStage = "form_parse" | "contact_lookup" | "contact_upsert" | "company_upsert" | "deal_upsert" | "smtp_report";
+type LogLevel = "INFO" | "ERROR";
+
+const LOG_DIR = path.join(process.cwd(), "logs");
+const LOG_FILE_BASENAME = "lead-api";
+const LOG_ROTATION_DAYS = 30;
+const LOG_RETENTION_AFTER_ROTATION_DAYS = 30;
+
+function toErrorMessage(error: unknown): string {
+  if (error instanceof Error) return error.message;
+  return typeof error === "string" ? error : "Unknown error";
+}
+
+function currentLogWindowStart(inputDate = new Date()): Date {
+  const day = inputDate.getUTCDate();
+  const periodStartDay = day <= LOG_ROTATION_DAYS ? 1 : LOG_ROTATION_DAYS + 1;
+  return new Date(Date.UTC(inputDate.getUTCFullYear(), inputDate.getUTCMonth(), periodStartDay, 0, 0, 0, 0));
+}
+
+function formatDateYYYYMMDD(date: Date): string {
+  const year = date.getUTCFullYear();
+  const month = String(date.getUTCMonth() + 1).padStart(2, "0");
+  const day = String(date.getUTCDate()).padStart(2, "0");
+  return `${year}-${month}-${day}`;
+}
+
+function getActiveLogFileName(now = new Date()): string {
+  return `${LOG_FILE_BASENAME}-${formatDateYYYYMMDD(currentLogWindowStart(now))}.log`;
+}
+
+async function pruneExpiredLogFiles(now = new Date()): Promise<void> {
+  const entries = await readdir(LOG_DIR, { withFileTypes: true });
+  const dayMs = 24 * 60 * 60 * 1000;
+  const activeFileName = getActiveLogFileName(now);
+
+  for (const entry of entries) {
+    if (!entry.isFile()) continue;
+    if (!entry.name.startsWith(`${LOG_FILE_BASENAME}-`) || !entry.name.endsWith(".log")) continue;
+    if (entry.name === activeFileName) continue;
+    const datePart = entry.name.slice(`${LOG_FILE_BASENAME}-`.length, -".log".length);
+    const startedAt = new Date(`${datePart}T00:00:00.000Z`);
+    if (!Number.isFinite(startedAt.getTime())) continue;
+    const windowEndMs = startedAt.getTime() + LOG_ROTATION_DAYS * dayMs;
+    const retentionEndMs = windowEndMs + LOG_RETENTION_AFTER_ROTATION_DAYS * dayMs;
+    if (now.getTime() >= retentionEndMs) {
+      await unlink(path.join(LOG_DIR, entry.name)).catch(() => {});
+    }
+  }
+}
+
+async function writeLeadLog(level: LogLevel, message: string, meta?: Record<string, unknown>): Promise<void> {
+  const now = new Date();
+  const fileName = getActiveLogFileName(now);
+  const payload = {
+    ts: now.toISOString(),
+    level,
+    message,
+    ...meta,
+  };
+  await mkdir(LOG_DIR, { recursive: true });
+  await appendFile(path.join(LOG_DIR, fileName), `${JSON.stringify(payload)}\n`, "utf8");
+  await pruneExpiredLogFiles(now);
+}
 
 async function bx(method: string, payload: unknown): Promise<unknown> { if (!BITRIX_WEBHOOK) throw new Error("BITRIX_WEBHOOK_URL is not set"); const res = await fetch(`${BITRIX_WEBHOOK}/${method}.json`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload), cache: "no-store" }); const data = (await res.json()) as BitrixResponse; if (!res.ok || data.error) throw new Error(data.error_description || data.error || "Bitrix error"); return data.result; }
 function toString(v: FormDataEntryValue | null): string { return typeof v === "string" ? v.trim() : ""; }
@@ -146,17 +211,34 @@ async function sendSmtpMail({to,subject,html}:{to:string;subject:string;html:str
 }
 
 
-export async function POST(req: Request) { try { const form = await req.formData(); const lang = toString(form.get("lang")) || "en"; const firstName = toString(form.get("contact_firstNameLat")); const lastName = toString(form.get("contact_lastNameLat")); const phone = toString(form.get("contact_phone")); const email = toString(form.get("contact_email")).toLowerCase(); const isCompany = form.get("policyholder_isCompany") === "on"; const birthDate = toString(form.get("policyholder_birthDate")); const address = toString(form.get("policyholder_address")); const policyholderPass = toString(form.get("policyholder_pass")); const companyInn = toString(form.get("company_inn")); const ceoFullName = toString(form.get("company_ceo_fullName")); const ceoTitle = toString(form.get("company_ceo_title")); const vehiclesByIdx: Record<string, VehicleInput> = {}; for (const [key, value] of form.entries()) { const match = key.match(/^vehicles\[(\d+)\]\[(\w+)\]$/); if (!match) continue; const [, idx, field] = match; vehiclesByIdx[idx] ||= { countryFrom: "", vehicleType: "", period: "", startDate: "", plate: "", vin: "", brend: "", year: "", engineType: "", engineCapacity: "", vehiclePower: "", powerUnit: "", comment: "", docs: [] }; if (field === "docs" && value instanceof File) { vehiclesByIdx[idx].docs.push(value); } else if (typeof value === "string" && isVehicleStringField(field)) { vehiclesByIdx[idx][field] = value.trim(); } } const vehicles = Object.keys(vehiclesByIdx).sort((a,b)=>Number(a)-Number(b)).map((key)=>vehiclesByIdx[key]).filter((vehicle)=>vehicle.plate || vehicle.docs.length > 0); if (!email || !phone || vehicles.length === 0) return NextResponse.json({ ok: false, message: "Missing required fields" }, { status: 400 }); const duplicateResult = await bx("crm.duplicate.findbycomm", { type: "EMAIL", values: [email] }); const contactFields = { NAME: firstName, LAST_NAME: lastName, PHONE: phone ? [{ VALUE: phone, VALUE_TYPE: "WORK" }] : [], EMAIL: email ? [{ VALUE: email, VALUE_TYPE: "WORK" }] : [], UF_CRM_1753957395750: langToComm[lang] || "3953", UF_CRM_CONTACT_1686145698592: policyholderPass, ...(isCompany ? {} : { BIRTHDATE: birthDate, ADDRESS: address }) }; const existingContactId = getContactIdFromDuplicateResult(duplicateResult); let contactId: number; if (existingContactId) { contactId = existingContactId; await bx("crm.contact.update", { id: contactId, fields: contactFields }); } else { contactId = getCreatedId(await bx("crm.contact.add", { fields: contactFields })); } let companyId = 1817; if (isCompany) { const companyList = await bx("crm.company.list", { filter: { UF_CRM_COMPANY_1692911328252: companyInn }, select: ["ID"], start: -1 }); const companyFields = { TITLE: companyInn ? `Company ${companyInn}` : `Company ${lastName} ${firstName}`.trim(), UF_CRM_COMPANY_1692911328252: companyInn, UF_CRM_1709019759168: ceoFullName, UF_CRM_1709019814756: ceoTitle }; const existingCompanyId = getIdFromFirstItem(companyList); if (existingCompanyId) { companyId = existingCompanyId; await bx("crm.company.update", { id: companyId, fields: companyFields }); } else { companyId = getCreatedId(await bx("crm.company.add", { fields: companyFields })); } } let hasFileProcessingIssue = false; for (const vehicle of vehicles) { const docs: BitrixFileValue[] = []; for (const file of vehicle.docs) docs.push({ fileData: [normalizeBitrixFileName(file.name), await fileToBase64(file)] }); let dealId: number; const dealFields = { TITLE: `Lead ${lastName} ${firstName} ${vehicle.plate}`.trim(), CONTACT_ID: contactId, COMPANY_ID: companyId, UF_CRM_1686152306664: countryMap[vehicle.countryFrom] || "411", UF_CRM_1686152567597: vehicleTypeMap[vehicle.vehicleType] || "127", UF_CRM_1686152209741: periodMap[vehicle.period] || "115", UF_CRM_1686152149204: vehicle.startDate, UF_CRM_1686152485641: vehicle.plate, UF_CRM_1686152659867: vehicle.vin, UF_CRM_1686152515152: vehicle.brend, UF_CRM_1686152614718: vehicle.year ? Number(vehicle.year) : "", UF_CRM_1686152745455: engineTypeMap[vehicle.engineType] || "", UF_CRM_1686152831791: vehicle.engineCapacity ? Number(vehicle.engineCapacity) : "", UF_CRM_1686152861297: vehicle.vehiclePower ? Number(vehicle.vehiclePower) : "", UF_CRM_1686152902186: powerUnitMap[vehicle.powerUnit] || "", UF_CRM_1686154280439: docs, COMMENTS: vehicle.comment, UF_CRM_1693578066803: "401", UF_CRM_1686682902533: "813", UF_CRM_1690539097: "425", UF_CRM_1700656576088: "", UF_CRM_1686683031442: "231" }; try { dealId = getCreatedId(await bx("crm.deal.add", { fields: dealFields })); } catch (error) { const filesInfo = vehicle.docs.map(describeFile).join(", "); const reason = error instanceof Error ? error.message : "Unknown error"; console.error(`Bitrix rejected file upload. Files: ${filesInfo}. Reason: ${reason}`); hasFileProcessingIssue = true; dealId = getCreatedId(await bx("crm.deal.add", { fields: { ...dealFields, UF_CRM_1686154280439: [] } })); }
+export async function POST(req: Request) {
+  const traceId = randomUUID();
+  let stage: LeadRouteStage = "form_parse";
+  let debugEmail = "";
+  let vehicleCount = 0;
+  try { const form = await req.formData(); const lang = toString(form.get("lang")) || "en"; const firstName = toString(form.get("contact_firstNameLat")); const lastName = toString(form.get("contact_lastNameLat")); const phone = toString(form.get("contact_phone")); const email = toString(form.get("contact_email")).toLowerCase(); debugEmail = email; const isCompany = form.get("policyholder_isCompany") === "on"; const birthDate = toString(form.get("policyholder_birthDate")); const address = toString(form.get("policyholder_address")); const policyholderPass = toString(form.get("policyholder_pass")); const companyInn = toString(form.get("company_inn")); const ceoFullName = toString(form.get("company_ceo_fullName")); const ceoTitle = toString(form.get("company_ceo_title")); const vehiclesByIdx: Record<string, VehicleInput> = {}; for (const [key, value] of form.entries()) { const match = key.match(/^vehicles\[(\d+)\]\[(\w+)\]$/); if (!match) continue; const [, idx, field] = match; vehiclesByIdx[idx] ||= { countryFrom: "", vehicleType: "", period: "", startDate: "", plate: "", vin: "", brend: "", year: "", engineType: "", engineCapacity: "", vehiclePower: "", powerUnit: "", comment: "", docs: [] }; if (field === "docs" && value instanceof File) { vehiclesByIdx[idx].docs.push(value); } else if (typeof value === "string" && isVehicleStringField(field)) { vehiclesByIdx[idx][field] = value.trim(); } } const vehicles = Object.keys(vehiclesByIdx).sort((a,b)=>Number(a)-Number(b)).map((key)=>vehiclesByIdx[key]).filter((vehicle)=>vehicle.plate || vehicle.docs.length > 0); vehicleCount = vehicles.length; if (!email || !phone || vehicles.length === 0) return NextResponse.json({ ok: false, message: "Missing required fields", traceId }, { status: 400 }); stage = "contact_lookup"; const duplicateResult = await bx("crm.duplicate.findbycomm", { type: "EMAIL", values: [email] }); stage = "contact_upsert"; const contactFields = { NAME: firstName, LAST_NAME: lastName, PHONE: phone ? [{ VALUE: phone, VALUE_TYPE: "WORK" }] : [], EMAIL: email ? [{ VALUE: email, VALUE_TYPE: "WORK" }] : [], UF_CRM_1753957395750: langToComm[lang] || "3953", UF_CRM_CONTACT_1686145698592: policyholderPass, ...(isCompany ? {} : { BIRTHDATE: birthDate, ADDRESS: address }) }; const existingContactId = getContactIdFromDuplicateResult(duplicateResult); let contactId: number; if (existingContactId) { contactId = existingContactId; await bx("crm.contact.update", { id: contactId, fields: contactFields }); } else { contactId = getCreatedId(await bx("crm.contact.add", { fields: contactFields })); } let companyId = 1817; if (isCompany) { stage = "company_upsert"; const companyList = await bx("crm.company.list", { filter: { UF_CRM_COMPANY_1692911328252: companyInn }, select: ["ID"], start: -1 }); const companyFields = { TITLE: companyInn ? `Company ${companyInn}` : `Company ${lastName} ${firstName}`.trim(), UF_CRM_COMPANY_1692911328252: companyInn, UF_CRM_1709019759168: ceoFullName, UF_CRM_1709019814756: ceoTitle }; const existingCompanyId = getIdFromFirstItem(companyList); if (existingCompanyId) { companyId = existingCompanyId; await bx("crm.company.update", { id: companyId, fields: companyFields }); } else { companyId = getCreatedId(await bx("crm.company.add", { fields: companyFields })); } } let hasFileProcessingIssue = false; for (const vehicle of vehicles) { const docs: BitrixFileValue[] = []; for (const file of vehicle.docs) docs.push({ fileData: [normalizeBitrixFileName(file.name), await fileToBase64(file)] }); let dealId: number; const dealFields = { TITLE: `Lead ${lastName} ${firstName} ${vehicle.plate}`.trim(), CONTACT_ID: contactId, COMPANY_ID: companyId, UF_CRM_1686152306664: countryMap[vehicle.countryFrom] || "411", UF_CRM_1686152567597: vehicleTypeMap[vehicle.vehicleType] || "127", UF_CRM_1686152209741: periodMap[vehicle.period] || "115", UF_CRM_1686152149204: vehicle.startDate, UF_CRM_1686152485641: vehicle.plate, UF_CRM_1686152659867: vehicle.vin, UF_CRM_1686152515152: vehicle.brend, UF_CRM_1686152614718: vehicle.year ? Number(vehicle.year) : "", UF_CRM_1686152745455: engineTypeMap[vehicle.engineType] || "", UF_CRM_1686152831791: vehicle.engineCapacity ? Number(vehicle.engineCapacity) : "", UF_CRM_1686152861297: vehicle.vehiclePower ? Number(vehicle.vehiclePower) : "", UF_CRM_1686152902186: powerUnitMap[vehicle.powerUnit] || "", UF_CRM_1686154280439: docs, COMMENTS: vehicle.comment, UF_CRM_1693578066803: "401", UF_CRM_1686682902533: "813", UF_CRM_1690539097: "425", UF_CRM_1700656576088: "", UF_CRM_1686683031442: "231" }; stage = "deal_upsert"; try { dealId = getCreatedId(await bx("crm.deal.add", { fields: dealFields })); } catch (error) { const filesInfo = vehicle.docs.map(describeFile).join(", "); const reason = error instanceof Error ? error.message : "Unknown error"; console.error(`Bitrix rejected file upload. Files: ${filesInfo}. Reason: ${reason}. traceId=${traceId}`); hasFileProcessingIssue = true; dealId = getCreatedId(await bx("crm.deal.add", { fields: { ...dealFields, UF_CRM_1686154280439: [] } })); }
 
 
       if (DEAL_REPORT_EMAIL_TO) {
+        stage = "smtp_report";
         const html = buildDealEmailHtml({ dealId, contactId, companyId, lang, firstName, lastName, phone, email, isCompany, birthDate, address, policyholderPass, companyInn, ceoFullName, ceoTitle, vehicle });
         try {
           await sendSmtpMail({ to: DEAL_REPORT_EMAIL_TO, subject: `Сделка #${dealId}: ${lastName} ${firstName}`.trim(), html });
         } catch (smtpError) {
           console.error("SMTP send failed:", smtpError);
+          await writeLeadLog("ERROR", "SMTP send failed", {
+            traceId,
+            stage,
+            error: toErrorMessage(smtpError),
+          });
         }
       }
     }
 
-    return NextResponse.json({ ok: true, partialSuccess: hasFileProcessingIssue }); } catch (error) { return NextResponse.json({ ok: false, message: error instanceof Error ? error.message : "Unknown error" }, { status: 500 }); } }
+    await writeLeadLog("INFO", "Lead submit completed", { traceId, stage: "deal_upsert", email: debugEmail || "n/a", vehicles: vehicleCount, partialSuccess: hasFileProcessingIssue });
+    return NextResponse.json({ ok: true, partialSuccess: hasFileProcessingIssue, traceId }); } catch (error) {
+    const errorMessage = toErrorMessage(error);
+    console.error(`[lead-api] Failed. traceId=${traceId}; stage=${stage}; email=${debugEmail || "n/a"}; vehicles=${vehicleCount}; message=${errorMessage}`);
+    await writeLeadLog("ERROR", "Lead submit failed", { traceId, stage, email: debugEmail || "n/a", vehicles: vehicleCount, error: errorMessage });
+    return NextResponse.json({ ok: false, message: `Lead submit failed at stage "${stage}". Trace ID: ${traceId}. ${errorMessage}`, traceId }, { status: 500 });
+  } }
