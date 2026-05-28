@@ -73,11 +73,21 @@ function formatPass(raw: string): string {
 function validateFiles(
   files: FileList,
   forbiddenTypes: string[],
-  fileForbiddenText: string
+  fileForbiddenText: string,
+  maxSingleFileBytes: number,
+  maxTotalFilesBytes: number
 ): boolean {
+  let totalSize = 0;
+
   for (let i = 0; i < files.length; i++) {
     const file = files[i];
     const type = file.type || "";
+    totalSize += file.size;
+
+    if (file.size > maxSingleFileBytes) {
+      alert(`${file.name}: file is too large. Max ${Math.round(maxSingleFileBytes / (1024 * 1024))} MB per file.`);
+      return false;
+    }
 
     for (let j = 0; j < forbiddenTypes.length; j++) {
       const t = forbiddenTypes[j];
@@ -92,6 +102,11 @@ function validateFiles(
         return false;
       }
     }
+  }
+
+  if (totalSize > maxTotalFilesBytes) {
+    alert(`Attached files are too large. Max total ${Math.round(maxTotalFilesBytes / (1024 * 1024))} MB.`);
+    return false;
   }
 
   return true;
@@ -151,6 +166,8 @@ export default function LeadForm(props: { lang: Lang }) {
     "audio/",
     "video/",
   ];
+  const maxSingleFileBytes = 10 * 1024 * 1024;
+  const maxTotalFilesBytes = 20 * 1024 * 1024;
 
   function addVehicle() {
     setVehicleBlocks(function (prev) {
@@ -275,6 +292,12 @@ export default function LeadForm(props: { lang: Lang }) {
 
       if (!res.ok || !ok) {
         const isLikelyTimeout = [408, 499, 500, 502, 503, 504, 522, 524].includes(res.status);
+
+        if (res.status === 413) {
+          setStatus("error");
+          setMessage("The attached files are too large for upload. Please attach smaller files.");
+          return;
+        }
 
         if (isLikelyTimeout && !serverMsg) {
           setStatus("success");
@@ -830,7 +853,13 @@ export default function LeadForm(props: { lang: Lang }) {
                           const fl = e.currentTarget.files;
                           if (!fl) return;
 
-                          const ok = validateFiles(fl, forbiddenTypes, t.fileForbidden);
+                          const ok = validateFiles(
+                            fl,
+                            forbiddenTypes,
+                            t.fileForbidden,
+                            maxSingleFileBytes,
+                            maxTotalFilesBytes
+                          );
 
                           if (!ok) {
                             e.currentTarget.value = "";
