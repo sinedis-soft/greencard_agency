@@ -38,33 +38,50 @@ const breadcrumbTitleByLang: Record<Lang, string> = {
 };
 
 function normalizeLang(value: string): Lang {
-  return (LOCALES as readonly string[]).includes(value) ? (value as Lang) : "ru";
+  return (LOCALES as readonly string[]).includes(value)
+    ? (value as Lang)
+    : "ru";
 }
 
 export const dynamic = "force-static";
 
 type Params = Promise<{ lang: Lang }>;
 
-export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }) {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
   const { lang: rawLang } = await params;
   const lang = normalizeLang(rawLang);
 
   const seo = getSeoDictionary(lang);
 
   return {
+    robots: { index: false, follow: true },
     alternates: pageAlternates(lang, "/product-info"),
     title: seo.productInfo.title,
     description: seo.productInfo.description,
-    ...pageSocialMetadata(lang, "/product-info", seo.productInfo.title, seo.productInfo.description),
+    ...pageSocialMetadata(
+      lang,
+      "/product-info",
+      seo.productInfo.title,
+      seo.productInfo.description,
+    ),
   };
 }
-
 
 export default async function ProductInfoRoute({ params }: { params: Params }) {
   const { lang } = await params;
   const t = getProductInfoDictionary(lang);
-  return <>
-    <BreadcrumbListJsonLd lang={lang} pageName={breadcrumbTitleByLang[lang]} pagePath="/product-info" />
-    <CookiesPolicyPage lang={lang} t={t} />
-  </>;
+  return (
+    <>
+      <BreadcrumbListJsonLd
+        lang={lang}
+        pageName={breadcrumbTitleByLang[lang]}
+        pagePath="/product-info"
+      />
+      <CookiesPolicyPage lang={lang} t={t} />
+    </>
+  );
 }
