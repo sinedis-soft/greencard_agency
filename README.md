@@ -47,3 +47,172 @@ Create `.env` based on `.env.example` and configure:
 - `SMTP_PASS` - SMTP password.
 - `SMTP_FROM` - From email address.
 - `DEAL_REPORT_EMAIL_TO` - email address to receive per-deal full reports.
+
+## SEO landing pages and locale indexation
+
+Localized SEO landing pages live under the language-prefixed App Router tree:
+
+```text
+app/[lang]/route/<source-country>/<destination-country>/page.tsx
+```
+
+Current route landing pages:
+
+- `/[lang]/route/belarus/poland`
+- `/[lang]/route/georgia/romania`
+
+The public URL always starts with the locale, for example:
+
+- `/be/route/belarus/poland`
+- `/en/route/georgia/romania`
+
+### Central route metadata
+
+All indexable app routes are listed in `app/seo.ts` in `ROUTE_META`. This metadata drives:
+
+- `sitemap.xml` URL generation.
+- `hreflang` alternates.
+- canonical metadata helpers.
+- static params for SEO landing pages.
+- locale availability checks used by the home page SEO carousel.
+
+Example:
+
+```ts
+export const ROUTE_META = {
+  "/route/belarus/poland": {
+    lastModified: "2026-05-14",
+    disabledLocales: ["pl"],
+  },
+  "/route/georgia/romania": { lastModified: "2026-05-14" },
+} as const;
+```
+
+`lastModified` is the date used in the sitemap. Update it when the page content changes materially.
+
+### Disabling or enabling a route for a locale
+
+Use `disabledLocales` on the route entry in `app/seo.ts`.
+
+To disable the Polish version of Belarus -> Poland while keeping the Belarusian version enabled:
+
+```ts
+"/route/belarus/poland": {
+  lastModified: "2026-05-14",
+  disabledLocales: ["pl"],
+},
+```
+
+Result:
+
+- `/be/route/belarus/poland` is generated, appears in the sitemap, appears in `hreflang`, and may be shown in the home SEO carousel.
+- `/pl/route/belarus/poland` is not generated as a static SEO landing page, is excluded from the sitemap and `hreflang`, and is hidden from the home SEO carousel.
+
+To re-enable a locale, remove it from `disabledLocales`. If no locales are disabled, remove `disabledLocales` entirely:
+
+```ts
+"/route/belarus/poland": { lastModified: "2026-05-14" },
+```
+
+### Required SEO landing page pattern
+
+Each SEO landing page should define a route constant and use the SEO helpers from `app/seo.ts`:
+
+```ts
+const BELARUS_POLAND_ROUTE = "/route/belarus/poland";
+
+export function generateStaticParams() {
+  return routeStaticParams(BELARUS_POLAND_ROUTE);
+}
+```
+
+In `generateMetadata`, guard disabled locale-route combinations:
+
+```ts
+if (!isRouteLocaleIndexable(lang, BELARUS_POLAND_ROUTE)) {
+  return { robots: { index: false, follow: false } };
+}
+```
+
+In the page component, also guard direct access:
+
+```ts
+if (!isRouteLocaleIndexable(lang, BELARUS_POLAND_ROUTE)) {
+  notFound();
+}
+```
+
+Use the same route constant for:
+
+- `pageAlternates(lang, ROUTE)`
+- `pageSocialMetadata(lang, ROUTE, title, description)`
+- FAQ JSON-LD `@id`
+- `BreadcrumbListJsonLd` `pagePath`
+
+This keeps canonical URLs, structured data, sitemap and page rendering in sync.
+
+### Adding a new route SEO page
+
+Example: add Armenia -> Germany.
+
+1. Create the route page:
+
+```text
+app/[lang]/route/armenia/germany/page.tsx
+```
+
+2. Add route metadata in `app/seo.ts`:
+
+```ts
+"/route/armenia/germany": {
+  lastModified: "2026-06-11",
+  disabledLocales: ["pl", "tr"], // optional
+},
+```
+
+3. Add or reuse a localized SEO dictionary for the page content and carousel copy.
+
+4. In the page file, use the required pattern above with:
+
+```ts
+const ARMENIA_GERMANY_ROUTE = "/route/armenia/germany";
+```
+
+5. Run the verification commands below.
+
+### Adding a page to the home SEO carousel
+
+The home page SEO carousel is built in `app/components/Home.tsx` from the `seoCards` array. Add a card only through `isRouteLocaleIndexable` so disabled locale-route combinations stay hidden.
+
+Example:
+
+```ts
+isRouteLocaleIndexable(lang, "/route/armenia/germany")
+  ? {
+      href: `/${lang}/route/armenia/germany`,
+      title: armeniaGermany.carousel.cardTitle,
+      text: armeniaGermany.carousel.cardText,
+      cta: armeniaGermany.carousel.cta,
+    }
+  : null,
+```
+
+The JSX renders `seoCards.map(...)`, so after adding an item to the array no extra markup is needed.
+
+If every SEO card is disabled for the current locale, the whole carousel section is not rendered.
+
+### Verification after SEO route changes
+
+After changing SEO route metadata, route pages, sitemap behavior or the home SEO carousel, run:
+
+```bash
+npm run lint
+npx tsc --noEmit
+npm run build
+```
+
+If dictionaries covered by the relation checker are changed, also run:
+
+```bash
+npm run check:relations
+```

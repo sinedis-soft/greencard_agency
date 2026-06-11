@@ -1,62 +1,54 @@
+import { notFound } from "next/navigation";
 import type { Lang } from "@/app/dictionaries/header";
 import { LOCALES } from "@/app/dictionaries/header";
-import { pageAlternates, pageSocialMetadata, toAbsolute } from "@/app/seo";
-import { getGeorgiaRomaniaOcDictionary } from "@/app/dictionaries/seo-landings/georgiaRomaniaOc";
+import {
+  isRouteLocaleIndexable,
+  pageAlternates,
+  pageSocialMetadata,
+  routeStaticParams,
+  toAbsolute,
+} from "@/app/seo";
+import { getBelarusPolandOcDictionary } from "@/app/dictionaries/seo-landings/belarusPolandOc";
 import { BreadcrumbListJsonLd } from "@/app/components/StructuredData";
 import Calculator from "@/app/components/Calculator";
+
+const BELARUS_POLAND_ROUTE = "/route/belarus/poland";
+
+export function generateStaticParams() {
+  return routeStaticParams(BELARUS_POLAND_ROUTE);
+}
 
 function normalizeLang(value: string): Lang {
   return (LOCALES as readonly string[]).includes(value) ? (value as Lang) : "ru";
 }
 
 function FaqJsonLd({ lang }: { lang: Lang }) {
-  const t = getGeorgiaRomaniaOcDictionary(lang);
-  const homeCrumbByLang: Record<Lang, string> = {
-    ru: "Главная",
-    pl: "Strona główna",
-    en: "Home",
-    be: "Галоўная",
-    uk: "Головна",
-
-    ro: "Acasă",
-    sr: "Почетна",
-    sq: "Kryefaqja",
-
-    kk: "Басты бет",
-    uz: "Bosh sahifa",
-    az: "Ana səhifə",
-
-    tr: "Ana Sayfa",
-
-    hy: "Գլխավոր",
-    ka: "მთავარი",
-
-    fa: "صفحه اصلی",
-
-    ckb: "سەرەکی",
-    kmr: "Rûpela Sereke",
-
-    ar: "الرئيسية",
-
-    he: "דף הבית",
-
-    mn: "Нүүр хуудас",
-  };
-  const data = {"@context":"https://schema.org","@type":"FAQPage","@id":toAbsolute(`/${lang}/georgia-romania-oc#faq`),mainEntity:t.faq.items.map((item)=>({"@type":"Question",name:item.q,acceptedAnswer:{"@type":"Answer",text:item.a}}))};
+  const t = getBelarusPolandOcDictionary(lang);
+  const data = {"@context":"https://schema.org","@type":"FAQPage","@id":toAbsolute(`/${lang}${BELARUS_POLAND_ROUTE}#faq`),mainEntity:t.faq.items.map((item)=>({"@type":"Question",name:item.q,acceptedAnswer:{"@type":"Answer",text:item.a}}))};
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data).replace(/</g, "\\u003c") }} />;
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }) {
   const { lang: rawLang } = await params;
   const lang = normalizeLang(rawLang);
-  const t = getGeorgiaRomaniaOcDictionary(lang);
-  return { alternates: pageAlternates(lang, "/georgia-romania-oc"), title: t.seo.title, description: t.seo.description, ...pageSocialMetadata(lang, "/georgia-romania-oc", t.seo.title, t.seo.description) };
+
+  if (!isRouteLocaleIndexable(lang, BELARUS_POLAND_ROUTE)) {
+    return { robots: { index: false, follow: false } };
+  }
+
+  const t = getBelarusPolandOcDictionary(lang);
+  return { alternates: pageAlternates(lang, BELARUS_POLAND_ROUTE), title: t.seo.title, description: t.seo.description, ...pageSocialMetadata(lang, BELARUS_POLAND_ROUTE, t.seo.title, t.seo.description) };
 }
 
-export default async function GeorgiaRomaniaOcPage({ params }: { params: Promise<{ lang: string }> }) {
+export default async function BelarusPolandOcPage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang: rawLang } = await params;
   const lang = normalizeLang(rawLang);
-  const t = getGeorgiaRomaniaOcDictionary(lang);
+
+  if (!isRouteLocaleIndexable(lang, BELARUS_POLAND_ROUTE)) {
+    notFound();
+  }
+
+  const t = getBelarusPolandOcDictionary(lang);
   const homeCrumbByLang: Record<Lang, string> = {
     ru: "Главная",
     pl: "Strona główna",
@@ -91,7 +83,7 @@ export default async function GeorgiaRomaniaOcPage({ params }: { params: Promise
 
   return (
     <main id="main">
-      <BreadcrumbListJsonLd lang={lang} pageName={t.breadcrumbTitle} pagePath="/georgia-romania-oc" />
+      <BreadcrumbListJsonLd lang={lang} pageName={t.breadcrumbTitle} pagePath={BELARUS_POLAND_ROUTE} />
       <FaqJsonLd lang={lang} />
       <nav aria-label="Breadcrumb" className="container" style={{ paddingTop: "16px" }}>
         <ol style={{ display: "flex", gap: "8px", listStyle: "none", padding: 0, margin: 0, color: "#4b5563", fontSize: "14px" }}>
@@ -113,7 +105,7 @@ export default async function GeorgiaRomaniaOcPage({ params }: { params: Promise
             </div>
           </div>
         </div>
-      </section>
+          </section>
       <section className="section"><div className="container"><h2 className="section__title">{t.what.title}</h2><p>{t.what.text}</p></div></section>
       <section className="section"><div className="container"><h2 className="section__title">{t.who.title}</h2><ul>{t.who.items.map((i) => <li key={i}>{i}</li>)}</ul></div></section>
       <section className="section"><div className="container"><h2 className="section__title">{t.how.title}</h2><ol>{t.how.steps.map((i) => <li key={i}>{i}</li>)}</ol></div></section>
