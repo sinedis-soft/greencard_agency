@@ -1,4 +1,4 @@
-import type { Lang } from "@/app/dictionaries/header";
+import { LOCALES, type Lang } from "@/app/dictionaries/header";
 import { getHomeDictionary } from "@/app/dictionaries/home";
 import { SITE_URL, toAbsolute } from "@/app/seo";
 
@@ -38,18 +38,7 @@ const OPENING_HOURS = [
   },
 ];
 
-const AVAILABLE_LANGUAGES = [
-  "ru",
-  "pl",
-  "en",
-  "be",
-  "uz",
-  "ka",
-  "kk",
-  "tr",
-  "fa",
-  "hy",
-] as const;
+const AVAILABLE_LANGUAGES = [...LOCALES];
 
 /**
  * sameAs должен содержать внешние официальные профили бренда.

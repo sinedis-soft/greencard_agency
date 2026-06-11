@@ -2,6 +2,11 @@ import { LOCALES, type Lang } from "@/app/dictionaries/header";
 
 export const SITE_URL = "https://greencard.agency";
 
+type RouteMeta = {
+  lastModified: string;
+  disabledLocales?: readonly Lang[];
+};
+
 export const ROUTE_META = {
   "": { lastModified: "2026-05-08" },
   "/about": { lastModified: "2026-05-08" },
@@ -10,34 +15,79 @@ export const ROUTE_META = {
   "/rules": { lastModified: "2026-05-08" },
   "/privacy": { lastModified: "2026-05-08" },
   "/cookiepolicy": { lastModified: "2026-05-08" },
-  "/belarus-poland-oc": { lastModified: "2026-05-14" },
-  "/georgia-romania-oc": { lastModified: "2026-05-14" },
-} as const;
+  "/route/belarus/poland": {
+    lastModified: "2026-05-14",
+    disabledLocales: ["pl"],
+  },
+  "/route/georgia/romania": { lastModified: "2026-05-14" },
+} as const satisfies Record<string, RouteMeta>;
 
 export const ROUTES = Object.keys(ROUTE_META) as Array<keyof typeof ROUTE_META>;
 ;
 
 export type AppRoute = keyof typeof ROUTE_META;
 
+function normalizeRoute(route: string = ""): string {
+  return route === "/" ? "" : route;
+}
+
+function getRouteMeta(route: string): RouteMeta | undefined {
+  const normalizedRoute = normalizeRoute(route);
+
+  return Object.hasOwn(ROUTE_META, normalizedRoute)
+    ? ROUTE_META[normalizedRoute as AppRoute]
+    : undefined;
+}
+
 export function routeLastModified(route: AppRoute): Date {
   return new Date(ROUTE_META[route].lastModified);
 }
 
+export function routeLocales(route: string = ""): Lang[] {
+  const disabledLocales = new Set<Lang>(getRouteMeta(route)?.disabledLocales ?? []);
+
+  return LOCALES.filter((locale) => !disabledLocales.has(locale));
+}
+
+export function isRouteLocaleIndexable(lang: Lang, route: string = ""): boolean {
+  return routeLocales(route).includes(lang);
+}
+
+export function routeStaticParams(route: string): Array<{ lang: Lang }> {
+  return routeLocales(route).map((lang) => ({ lang }));
+}
+
 export const REGIONAL_HREFLANG_MAP: Record<Lang, string> = {
   ru: "ru",
-  pl: "pl-PL",
   en: "en",
+  pl: "pl-PL",
+
   be: "be-BY",
-  uz: "uz-UZ",
-  ka: "ka-GE",
+  uk: "uk-UA",
+
   kk: "kk-KZ",
+  uz: "uz-UZ",
+  az: "az-AZ",
+
   tr: "tr-TR",
-  fa: "fa",
-  hy: "hy-AM", // Armenia regional target
+  ka: "ka-GE",
+  hy: "hy-AM",
+
+  fa: "fa-IR",
+  ckb: "ku-IQ",
+  kmr: "ku-TR",
+  ar: "ar",
+  he: "he-IL",
+
+  ro: "ro-RO",
+  sr: "sr-RS",
+  sq: "sq-AL",
+
+  mn: "mn-MN",
 };
 
 export function localePath(lang: Lang, route: string = ""): string {
-  const normalizedRoute = route === "/" ? "" : route;
+  const normalizedRoute = normalizeRoute(route);
 
   return `/${lang}${normalizedRoute}`;
 }
@@ -47,10 +97,12 @@ export function toAbsolute(path: string): string {
 }
 
 export function buildHreflangAlternates(route: string = ""): Record<string, string> {
-  const normalizedRoute = route === "/" ? "" : route;
+  const normalizedRoute = normalizeRoute(route);
+  const locales = routeLocales(normalizedRoute);
+  const defaultLocale = locales.includes("en") ? "en" : locales[0];
 
   const alternates = Object.fromEntries(
-    LOCALES.map((locale) => [
+    locales.map((locale) => [
       REGIONAL_HREFLANG_MAP[locale],
       toAbsolute(localePath(locale, normalizedRoute)),
     ]),
@@ -58,12 +110,14 @@ export function buildHreflangAlternates(route: string = ""): Record<string, stri
 
   return {
     ...alternates,
-    "x-default": toAbsolute(localePath("en", normalizedRoute)),
+    ...(defaultLocale
+      ? { "x-default": toAbsolute(localePath(defaultLocale, normalizedRoute)) }
+      : {}),
   };
 }
 
 export function pageAlternates(lang: Lang, route: string = "") {
-  const normalizedRoute = route === "/" ? "" : route;
+  const normalizedRoute = normalizeRoute(route);
 
   return {
     canonical: localePath(lang, normalizedRoute),
@@ -73,7 +127,7 @@ export function pageAlternates(lang: Lang, route: string = "") {
 
 
 export function pageSocialMetadata(lang: Lang, route: string, title: string, description: string) {
-  const normalizedRoute = route === "/" ? "" : route;
+  const normalizedRoute = normalizeRoute(route);
   const url = localePath(lang, normalizedRoute);
 
   return {

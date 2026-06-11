@@ -10,11 +10,32 @@ import { keepShortWords } from "@/app/utils/typography";
 import { FaqPageJsonLd } from "@/app/components/StructuredData";
 import { getBelarusPolandOcDictionary } from "@/app/dictionaries/seo-landings/belarusPolandOc";
 import { getGeorgiaRomaniaOcDictionary } from "@/app/dictionaries/seo-landings/georgiaRomaniaOc";
+import { isRouteLocaleIndexable } from "@/app/seo";
 
 export default function Home({ lang }: { lang: Lang }) {
   const t = getHomeDictionary(lang);
   const landing = getBelarusPolandOcDictionary(lang);
   const georgiaRomania = getGeorgiaRomaniaOcDictionary(lang);
+  const seoCards = [
+    isRouteLocaleIndexable(lang, "/route/belarus/poland")
+      ? {
+          href: `/${lang}/route/belarus/poland`,
+          title: landing.carousel.cardTitle,
+          text: landing.carousel.cardText,
+          cta: landing.carousel.cta,
+        }
+      : null,
+    isRouteLocaleIndexable(lang, "/route/georgia/romania")
+      ? {
+          href: `/${lang}/route/georgia/romania`,
+          title: georgiaRomania.carousel.cardTitle,
+          text: georgiaRomania.carousel.cardText,
+          cta: georgiaRomania.carousel.cta,
+        }
+      : null,
+  ].filter((card): card is { href: string; title: string; text: string; cta: string } =>
+    Boolean(card),
+  );
 
   return (
     <main id="main">
@@ -187,28 +208,27 @@ export default function Home({ lang }: { lang: Lang }) {
           </div>
         </div>
       </section>
-      <section className="section">
-        <div className="container">
-          <div className="section__hd">
-            <div>
-              <h2 className="section__title">{landing.carousel.title}</h2>
+      {seoCards.length > 0 ? (
+        <section className="section">
+          <div className="container">
+            <div className="section__hd">
+              <div>
+                <h2 className="section__title">{landing.carousel.title}</h2>
+              </div>
+            </div>
+
+            <div className="seo-carousel">
+              {seoCards.map((card) => (
+                <a className="seo-mini-card" href={card.href} key={card.href}>
+                  <h3>{card.title}</h3>
+                  <p>{card.text}</p>
+                  <span>{card.cta}</span>
+                </a>
+              ))}
             </div>
           </div>
-
-          <div className="seo-carousel">
-            <a className="seo-mini-card" href={`/${lang}/belarus-poland-oc`}>
-              <h3>{landing.carousel.cardTitle}</h3>
-              <p>{landing.carousel.cardText}</p>
-              <span>{landing.carousel.cta}</span>
-            </a>
-            <a className="seo-mini-card" href={`/${lang}/georgia-romania-oc`}>
-              <h3>{georgiaRomania.carousel.cardTitle}</h3>
-              <p>{georgiaRomania.carousel.cardText}</p>
-              <span>{georgiaRomania.carousel.cta}</span>
-            </a>
-          </div>
-        </div>
-      </section>
+        </section>
+      ) : null}
 
     </main>
   );
