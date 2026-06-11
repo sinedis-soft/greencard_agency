@@ -13,14 +13,33 @@ import RulesPage from "@/app/components/RulesPage";
 const breadcrumbTitleByLang: Record<Lang, string> = {
   ru: "Правила",
   pl: "Regulamin",
-  en: "Rules",
+  en: "Terms and Conditions",
   be: "Правілы",
-  uz: "Qoidalar",
-  ka: "წესები",
+  uk: "Правила",
+
+  ro: "Termeni și condiții",
+  sr: "Правила коришћења",
+  sq: "Kushtet dhe rregullat",
+
   kk: "Ережелер",
-  tr: "Kurallar",
-  fa: "قوانین",
-  hy: "Կանոններ",
+  uz: "Qoidalar",
+  az: "Qaydalar",
+
+  tr: "Kullanım Koşulları",
+
+  hy: "Օգտագործման կանոններ",
+  ka: "გამოყენების წესები",
+
+  fa: "شرایط و قوانین",
+
+  ckb: "یاسا و مەرجەکان",
+  kmr: "Merc û Şert",
+
+  ar: "الشروط والأحكام",
+
+  he: "תנאים והגבלות",
+
+  mn: "Үйлчилгээний нөхцөл",
 };
 
 function normalizeLang(value: string): Lang {

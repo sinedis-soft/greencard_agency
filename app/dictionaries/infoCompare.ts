@@ -443,6 +443,414 @@ export const infoCompareDictionary: Record<Lang, InfoCompareDictionary> = {
     note:
       "Եթե վստահ չեք, թե ինչ է ձեզ անհրաժեշտ, հայտում նշեք երթուղին և գրանցման երկիրը։ Մենք կհուշենք՝ բավարար կլինի արդյոք «Green Card»-ը, թե անհրաժեշտ կլինի սահմանային ապահովագրություն։",
   },
+  ckb: {
+    kicker: "زاراوەکان",
+    title: "بیمەی سنووری (OC Graniczne) ≠ گرین کارت",
+
+    leftBlocks: [
+      {
+        strong: "بیمەی سنووری (OC Graniczne)",
+        text:
+          "— بیمەنامەی بەرپرسیاری شارستانییە کە کاتی چوونە ناو یەکێتی ئەورووپا بۆ ئامرازە گواستنەوە تۆمارکراوەکان لە وڵاتانی دەرەوەی ناوچەی ئابووری ئەورووپا دەر دەکرێت، ئەگەر «گرین کارت»ی کارات پێ نەبێت. ئەم بیمەنامەیە تەنها بۆ ماوەیەکی دیاریکراو و لەو وڵاتانەدا کارا دەبێت کە لە بیمەنامەکەدا هاتوون.",
+      },
+      {
+        strong: "گرین کارت",
+        text:
+          "— بیمەنامەیەکی نێودەوڵەتی بەرپرسیاری شارستانییە کە پێش گەشت لە وڵاتی تۆمارکردنی ئۆتۆمبێلەکەت وەردەگریت و لە وڵاتە ئەندامەکانی سیستەمی «گرین کارت» بەکاردێت.",
+      },
+    ],
+
+    rightTitle: "کام یەک پێویستتە؟",
+
+    rows: [
+      {
+        title: "گرین کارت",
+        text:
+          "دەتوانیت لە وڵاتی خۆت بیمەنامەی گرین کارت وەربگریت و وڵاتی مەبەستیش گرین کارت قبووڵ دەکات.",
+      },
+      {
+        title: "بیمەی سنووری",
+        text:
+          "بەبێ گرین کارتی کارا دەچیتە ناو یەکێتی ئەورووپا و ئۆتۆمبێلەکەت لە دەرەوەی ناوچەی ئابووری ئەورووپا تۆمار کراوە.",
+      },
+      {
+        title: "خزمەتگوزاری ئێمە",
+        text:
+          "یارمەتیت دەدەین بە شێوەی دوورەوە بیمەی سنووری بۆ چوونە ناو پۆڵەندا و وڵاتانی تری یەکێتی ئەورووپا وەربگریت.",
+      },
+    ],
+
+    note:
+      "ئەگەر دڵنیانیت کام جۆری بیمە پێویستتە، لە داواکارییەکەدا ڕێگاکە و وڵاتی تۆمارکردنی ئۆتۆمبێلەکە بنووسە. پێت دەڵێین ئایا گرین کارت گونجاوە یان بیمەی سنووری پێویستە.",
+  },
+  kmr: {
+    kicker: "TERM",
+    title: "Peymana Sîgorteya Sînorî (OC Graniczne) ≠ Green Card",
+
+    leftBlocks: [
+      {
+        strong: "Peymana Sîgorteya Sînorî (OC Graniczne)",
+        text:
+          "— polîçeyek berpirsiyariya sivîl e ku dema ketina Yekîtiya Ewropayê ji bo wesayîtên ku li welatên derveyî Herêma Aborî ya Ewropayê hatine qeydkirin tê derxistin, heke hûn Green Card-a derbasdar nebin. Ev polîçe tenê ji bo demek diyarkirî û li welatên ku di polîçeyê de hatine destnîşankirin derbasdar e.",
+      },
+      {
+        strong: "Green Card",
+        text:
+          "— polîçeyek navneteweyî ya berpirsiyariya sivîl e ku hûn wê berî rêketinê li welatê qeydkirina wesayîtê derdixin û li welatên endamê pergala Green Card bikar tînin.",
+      },
+    ],
+
+    rightTitle: "Hûn bi rastî çi hewce ne?",
+
+    rows: [
+      {
+        title: "Green Card",
+        text:
+          "Hûn dikarin Green Card li welatê xwe derxînin û welata ku hûn lê diçin Green Card qebûl dike.",
+      },
+      {
+        title: "Peymana Sîgorteya Sînorî",
+        text:
+          "Hûn bê Green Card-a derbasdar dikevin Yekîtiya Ewropayê û wesayîta we li derveyî Herêma Aborî ya Ewropayê qeydkirî ye.",
+      },
+      {
+        title: "Xizmeta me",
+        text:
+          "Em alîkariyê dikin ku hûn Peymana Sîgorteya Sînorî ji dûr ve derxînin, bo nimûne ji bo ketina Polonya û welatên din ên Yekîtiya Ewropayê.",
+      },
+    ],
+
+    note:
+      "Heke hûn ne bawer in ku kîjan berhem hewce ye, di daxwazê de rê û welata qeydkirina wesayîtê binivîsin. Em ê ji we re bêjin ka Green Card bes e an jî sîgorteya sînorî pêwîst e.",
+  },
+  ar: {
+    kicker: "المصطلحات",
+    title: "تأمين الحدود (OC Graniczne) ≠ البطاقة الخضراء",
+
+    leftBlocks: [
+      {
+        strong: "تأمين الحدود (OC Graniczne)",
+        text:
+          "هو وثيقة تأمين للمسؤولية المدنية يتم إصدارها عند دخول الاتحاد الأوروبي للمركبات المسجلة في دول خارج المنطقة الاقتصادية الأوروبية، وذلك في حال عدم توفر بطاقة خضراء سارية المفعول. تكون الوثيقة محددة المدة وتسري فقط في الدول المذكورة فيها.",
+      },
+      {
+        strong: "البطاقة الخضراء",
+        text:
+          "هي وثيقة تأمين دولية للمسؤولية المدنية يتم إصدارها في بلد تسجيل المركبة قبل السفر، وتُستخدم في الدول الأعضاء في نظام البطاقة الخضراء.",
+      },
+    ],
+
+    rightTitle: "ما التأمين الذي تحتاجه؟",
+
+    rows: [
+      {
+        title: "البطاقة الخضراء",
+        text:
+          "إذا كان بإمكانك إصدار البطاقة الخضراء في بلدك وكانت دولة الدخول تقبل هذا النوع من التأمين.",
+      },
+      {
+        title: "تأمين الحدود",
+        text:
+          "إذا كنت تدخل الاتحاد الأوروبي دون بطاقة خضراء سارية وكانت مركبتك مسجلة خارج المنطقة الاقتصادية الأوروبية.",
+      },
+      {
+        title: "خدمتنا",
+        text:
+          "نساعدك على إصدار تأمين الحدود عن بُعد لدخول بولندا ودول الاتحاد الأوروبي الأخرى.",
+      },
+    ],
+
+    note:
+      "إذا لم تكن متأكدًا من نوع التأمين المناسب، فاذكر مسار رحلتك وبلد تسجيل المركبة في الطلب. سنوضح لك ما إذا كانت البطاقة الخضراء كافية أو إذا كنت بحاجة إلى تأمين حدودي.",
+  },
+
+  uk: {
+    kicker: "ТЕРМІНИ",
+    title: "Договір прикордонного страхування (OC graniczne) ≠ Зелена картка",
+
+    leftBlocks: [
+      {
+        strong: "Договір прикордонного страхування (OC graniczne)",
+        text:
+          "— це поліс страхування цивільної відповідальності, який оформлюється під час в’їзду до ЄС щодо транспортних засобів, зареєстрованих у країнах, що не входять до Європейського економічного простору, якщо у вас немає чинної «Зеленої картки». Поліс діє протягом обмеженого строку та лише в зазначених країнах.",
+      },
+      {
+        strong: "Зелена картка",
+        text:
+          "— міжнародний поліс страхування цивільної відповідальності, який оформлюється в країні реєстрації автомобіля до виїзду та використовується в країнах — учасницях системи «Зелена картка».",
+      },
+    ],
+
+    rightTitle: "Що потрібно саме вам?",
+
+    rows: [
+      {
+        title: "Зелена картка",
+        text:
+          "У вас є можливість оформити поліс «Зелена картка» у своїй країні, а країна в’їзду приймає цей вид страхування.",
+      },
+      {
+        title: "Договір прикордонного страхування",
+        text:
+          "Ви в’їжджаєте до ЄС без чинної «Зеленої картки», а автомобіль зареєстрований за межами Європейського економічного простору.",
+      },
+      {
+        title: "Наш сервіс",
+        text:
+          "Ми допомагаємо дистанційно оформити договір прикордонного страхування для в’їзду, наприклад, до Польщі та інших країн ЄС.",
+      },
+    ],
+
+    note:
+      "Якщо ви не впевнені, який поліс вам потрібен, вкажіть маршрут і країну реєстрації транспортного засобу в заявці. Ми підкажемо, чи підійде «Зелена картка», чи буде потрібне прикордонне страхування.",
+  },
+
+  he: {
+    kicker: "מונחים",
+    title: "ביטוח גבול (OC Graniczne) ≠ גרין קארד",
+
+    leftBlocks: [
+      {
+        strong: "ביטוח גבול (OC Graniczne)",
+        text:
+          "— פוליסת ביטוח אחריות כלפי צד שלישי המונפקת בעת כניסה לאיחוד האירופי עבור כלי רכב הרשומים במדינות שאינן חלק מהמרחב הכלכלי האירופי, כאשר אין ברשותכם פוליסת 'גרין קארד' בתוקף. הפוליסה תקפה לתקופה מוגבלת ורק במדינות המצוינות בה.",
+      },
+      {
+        strong: "גרין קארד",
+        text:
+          "— פוליסת ביטוח אחריות בינלאומית המונפקת במדינת הרישום של הרכב לפני היציאה לחו״ל ומשמשת במדינות החברות במערכת 'גרין קארד'.",
+      },
+    ],
+
+    rightTitle: "איזה ביטוח אתם צריכים?",
+
+    rows: [
+      {
+        title: "גרין קארד",
+        text:
+          "יש לכם אפשרות להנפיק פוליסת גרין קארד במדינתכם, ומדינת היעד מכירה במערכת 'גרין קארד'.",
+      },
+      {
+        title: "ביטוח גבול",
+        text:
+          "אתם נכנסים לאיחוד האירופי ללא פוליסת 'גרין קארד' בתוקף, והרכב רשום מחוץ למרחב הכלכלי האירופי.",
+      },
+      {
+        title: "השירות שלנו",
+        text:
+          "אנו מסייעים בהנפקה מרחוק של ביטוח גבול לצורך כניסה לפולין ולמדינות נוספות באיחוד האירופי.",
+      },
+    ],
+
+    note:
+      "אם אינכם בטוחים איזה סוג ביטוח נדרש לכם, ציינו בבקשה את מסלול הנסיעה ואת מדינת הרישום של הרכב בטופס הבקשה. אנו נבדוק האם גרין קארד מתאים למקרה שלכם או שנדרש ביטוח גבול.",
+  },
+
+  az: {
+    kicker: "TERMİNLƏR",
+    title: "Sərhəd sığortası müqaviləsi (OC graniczne) ≠ Yaşıl Kart",
+
+    leftBlocks: [
+      {
+        strong: "Sərhəd sığortası müqaviləsi (OC graniczne)",
+        text:
+          "— qüvvədə olan «Yaşıl Kart»ınız olmadığı halda, Avropa İqtisadi Məkanına daxil olmayan ölkələrdə qeydiyyatdan keçmiş nəqliyyat vasitələrinin Aİ ərazisinə daxil olması zamanı rəsmiləşdirilən mülki məsuliyyət sığortası polisidir. Polis məhdud müddət ərzində və yalnız göstərilən ölkələrdə qüvvədə olur.",
+      },
+      {
+        strong: "Yaşıl Kart",
+        text:
+          "— avtomobilin qeydiyyatda olduğu ölkədə səfərdən əvvəl rəsmiləşdirilən və «Yaşıl Kart» sisteminə üzv ölkələrdə istifadə olunan beynəlxalq mülki məsuliyyət sığortası polisidir.",
+      },
+    ],
+
+    rightTitle: "Sizə hansı sığorta lazımdır?",
+
+    rows: [
+      {
+        title: "Yaşıl Kart",
+        text:
+          "Sığorta polisini öz ölkənizdə rəsmiləşdirmək imkanınız var və giriş etdiyiniz ölkə «Yaşıl Kart»ı qəbul edir.",
+      },
+      {
+        title: "Sərhəd sığortası müqaviləsi",
+        text:
+          "Siz qüvvədə olan «Yaşıl Kart» olmadan Aİ ərazisinə daxil olursunuz və avtomobil Avropa İqtisadi Məkanından kənarda qeydiyyatdan keçib.",
+      },
+      {
+        title: "Bizim xidmət",
+        text:
+          "Biz Polşaya və digər Aİ ölkələrinə giriş üçün sərhəd sığortası müqaviləsinin məsafədən rəsmiləşdirilməsinə kömək edirik.",
+      },
+    ],
+
+    note:
+      "Hansı sığortaya ehtiyacınız olduğuna əmin deyilsinizsə, müraciətdə marşrutu və avtomobilin qeydiyyat ölkəsini göstərin. Biz sizə «Yaşıl Kart»ın uyğun olub-olmadığını və ya sərhəd sığortasının tələb olunduğunu izah edəcəyik.",
+  },
+
+  ro: {
+    kicker: "TERMENI",
+    title: "Asigurarea de frontieră (OC graniczne) ≠ Cartea Verde",
+
+    leftBlocks: [
+      {
+        strong: "Asigurarea de frontieră (OC graniczne)",
+        text:
+          "— este o poliță de răspundere civilă auto emisă la intrarea în Uniunea Europeană pentru vehiculele înmatriculate în țări din afara Spațiului Economic European, în cazul în care nu dețineți o poliță «Carte Verde» valabilă. Polița este valabilă pentru o perioadă limitată și numai în țările indicate în document.",
+      },
+      {
+        strong: "Cartea Verde",
+        text:
+          "— este o poliță internațională de răspundere civilă auto pe care o încheiați în țara de înmatriculare a vehiculului înainte de plecare și o utilizați în țările participante la sistemul «Carte Verde».",
+      },
+    ],
+
+    rightTitle: "De ce aveți nevoie?",
+
+    rows: [
+      {
+        title: "Carte Verde",
+        text:
+          "Aveți posibilitatea să încheiați polița Carte Verde în țara dumneavoastră, iar țara de destinație acceptă sistemul «Carte Verde».",
+      },
+      {
+        title: "Asigurare de frontieră",
+        text:
+          "Intrați în Uniunea Europeană fără o poliță «Carte Verde» valabilă, iar vehiculul este înmatriculat în afara Spațiului Economic European.",
+      },
+      {
+        title: "Serviciul nostru",
+        text:
+          "Vă ajutăm să încheiați de la distanță o asigurare de frontieră pentru intrarea în Polonia și în alte țări ale Uniunii Europene.",
+      },
+    ],
+
+    note:
+      "Dacă nu sunteți sigur ce tip de asigurare vă este necesar, indicați ruta și țara de înmatriculare în cerere. Vă vom informa dacă este suficientă o «Carte Verde» sau dacă este necesară asigurarea de frontieră.",
+  },
+
+  sr: {
+    kicker: "TERMINI",
+    title: "Polisa graničnog osiguranja (OC graniczne) ≠ Zelena karta",
+
+    leftBlocks: [
+      {
+        strong: "Polisa graničnog osiguranja (OC graniczne)",
+        text:
+          "— predstavlja polisu osiguranja od građanske odgovornosti koja se ugovara prilikom ulaska u EU za vozila registrovana u državama koje nisu članice Evropskog ekonomskog prostora, ukoliko ne posedujete važeću „Zelenu kartu“. Polisa važi ograničen vremenski period i samo u navedenim državama.",
+      },
+      {
+        strong: "Zelena karta",
+        text:
+          "— međunarodna polisa osiguranja od građanske odgovornosti koju ugovarate u državi registracije vozila pre putovanja i koristite u državama članicama sistema „Zelena karta“.",
+      },
+    ],
+
+    rightTitle: "Šta vam je potrebno?",
+
+    rows: [
+      {
+        title: "Zelena karta",
+        text:
+          "Imate mogućnost da ugovorite Zelenu kartu u svojoj zemlji, a država u koju ulazite prihvata sistem „Zelena karta“.",
+      },
+      {
+        title: "Polisa graničnog osiguranja",
+        text:
+          "Ulazite u EU bez važeće „Zelene karte“, a vozilo je registrovano van Evropskog ekonomskog prostora.",
+      },
+      {
+        title: "Naša usluga",
+        text:
+          "Pomažemo u daljinskom ugovaranju polise graničnog osiguranja za ulazak, na primer, u Poljsku i druge države Evropske unije.",
+      },
+    ],
+
+    note:
+      "Ako niste sigurni koja vrsta osiguranja vam je potrebna, navedite rutu putovanja i državu registracije vozila u zahtevu. Pomoći ćemo vam da utvrdite da li je dovoljna „Zelena karta“ ili je potrebno granično osiguranje.",
+  },
+
+  sq: {
+    kicker: "TERMAT",
+    title: "Sigurimi kufitar (OC graniczne) ≠ Green Card",
+
+    leftBlocks: [
+      {
+        strong: "Sigurimi kufitar (OC graniczne)",
+        text:
+          "— është një policë e përgjegjësisë civile që lëshohet gjatë hyrjes në BE për automjetet e regjistruara në vende jashtë Zonës Ekonomike Evropiane, nëse nuk keni një Green Card të vlefshme. Polica është e vlefshme për një periudhë të kufizuar dhe vetëm në vendet e përcaktuara në të.",
+      },
+      {
+        strong: "Green Card",
+        text:
+          "— është një policë ndërkombëtare e përgjegjësisë civile që lëshohet në vendin ku është regjistruar automjeti para nisjes dhe përdoret në vendet pjesëmarrëse në sistemin Green Card.",
+      },
+    ],
+
+    rightTitle: "Çfarë ju nevojitet juve?",
+
+    rows: [
+      {
+        title: "Green Card",
+        text:
+          "Ju keni mundësinë të lëshoni Green Card në vendin tuaj dhe vendi ku po hyni e pranon Green Card.",
+      },
+      {
+        title: "Sigurimi ndërkufitar",
+        text:
+          "Ju po hyni në BE pa një Green Card të vlefshme dhe automjeti është i regjistruar jashtë Zonës Ekonomike Evropiane.",
+      },
+      {
+        title: "Shërbimi ynë",
+        text:
+          "Ne ju ndihmojmë të lëshoni në distancë një kontratë sigurimi ndërkufitar për hyrje, për shembull, në Poloni dhe në vende të tjera të Bashkimit Evropian.",
+      },
+    ],
+
+    note:
+      "Nëse nuk jeni të sigurt se çfarë ju nevojitet, tregoni itinerarin dhe vendin e regjistrimit të automjetit në aplikim. Ne do t'ju këshillojmë nëse mjafton Green Card apo nëse nevojitet sigurimi kufitar.",
+  },
+
+  mn: {
+    kicker: "НЭР ТОМЬЁО",
+    title: "Хилийн даатгалын гэрээ (OC graniczne) ≠ Ногоон карт",
+
+    leftBlocks: [
+      {
+        strong: "Хилийн даатгалын гэрээ (OC graniczne)",
+        text:
+          "— нь Европын Холбоонд нэвтрэх үед Европын эдийн засгийн бүсэд харьяалагддаггүй улсад бүртгэлтэй тээврийн хэрэгсэлд зориулан олгогддог иргэний хариуцлагын даатгал юм. Хэрэв танд хүчинтэй «Ногоон карт» байхгүй бол энэхүү полис шаардлагатай. Полис нь хязгаарлагдмал хугацаанд болон зөвхөн заасан улсуудад хүчинтэй байдаг.",
+      },
+      {
+        strong: "Ногоон карт",
+        text:
+          "— нь автомашинаа гадаад улс руу явахаас өмнө бүртгэлтэй улсдаа авдаг олон улсын иргэний хариуцлагын даатгал бөгөөд «Ногоон карт» системийн гишүүн орнуудад ашиглагддаг.",
+      },
+    ],
+
+    rightTitle: "Танд аль нь хэрэгтэй вэ?",
+
+    rows: [
+      {
+        title: "Ногоон карт",
+        text:
+          "Та өөрийн улсад Ногоон картын полис авах боломжтой бөгөөд зорчих улс тань «Ногоон карт»-ыг хүлээн зөвшөөрдөг.",
+      },
+      {
+        title: "Хил дамнасан даатгалын гэрээ",
+        text:
+          "Та хүчинтэй «Ногоон карт»-гүйгээр Европын Холбоонд нэвтэрч байгаа бөгөөд таны автомашин Европын эдийн засгийн бүсээс гадуур бүртгэлтэй.",
+      },
+      {
+        title: "Манай үйлчилгээ",
+        text:
+          "Бид Польш болон Европын Холбооны бусад улс руу нэвтрэхэд шаардлагатай хил дамнасан даатгалын гэрээг алсаас бүрдүүлэхэд тусалдаг.",
+      },
+    ],
+
+    note:
+      "Хэрэв танд ямар даатгал хэрэгтэйгээ мэдэхгүй байвал хүсэлтдээ маршрутаа болон автомашины бүртгэлтэй улсыг заана уу. Бид «Ногоон карт» тохирох эсэх, эсвэл хилийн даатгал шаардлагатай эсэхийг тайлбарлаж өгнө.",
+  },
+
 };
 
 export function getInfoCompareDictionary(lang: Lang) {

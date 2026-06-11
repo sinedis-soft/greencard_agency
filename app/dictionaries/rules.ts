@@ -21,7 +21,7 @@ const ru: RulesDictionary = {
         "SINEDIS является страховым агентом, действующим от имени нескольких страховых компаний на основании предоставленных полномочий.",
         "Пользователь — физическое или юридическое лицо, использующее сервис SINEDIS или Contact Center.",
         "Сервис — интернет-платформа SINEDIS, доступная через сайты https://sinedis.pl и https://greencard.agency.",
-        "Contact Center — телефонный сервис SINEDIS: +48 571203097.",
+        "Contact Center — телефонный сервис SINEDIS: +48 573581333.",
         "Консультант — сотрудник SINEDIS, выполняющий агентские действия.",
         "Услуги — электронные услуги, включая подготовку к заключению договора страхования, дистанционное заключение договоров и оплату страховой премии.",
         "Страховщик — страховая компания, от имени которой SINEDIS осуществляет агентскую деятельность.",
@@ -143,7 +143,7 @@ const ru: RulesDictionary = {
         "REGON: 52350998300000",
         "",
         "E-mail: info@sinedis.pl",
-        "Телефон Contact Center: +48 571203097",
+        "Телефон Contact Center: +48 573581333",
         "",
         "Сайты:",
         "https://sinedis.pl",
@@ -167,7 +167,7 @@ const pl: RulesDictionary = {
         "SINEDIS jest agentem ubezpieczeniowym działającym w imieniu kilku zakładów ubezpieczeń na podstawie udzielonych pełnomocnictw.",
         "Użytkownik — osoba fizyczna lub prawna korzystająca z serwisu SINEDIS lub Contact Center.",
         "Serwis — platforma internetowa SINEDIS dostępna pod adresami https://sinedis.pl oraz https://greencard.agency.",
-        "Contact Center — telefoniczny serwis SINEDIS: +48 571203097.",
+        "Contact Center — telefoniczny serwis SINEDIS: +48 573581333.",
         "Konsultant — pracownik SINEDIS wykonujący czynności agencyjne.",
         "Usługi — usługi świadczone drogą elektroniczną, obejmujące przygotowanie do zawarcia umowy ubezpieczenia, zawieranie umów na odległość oraz opłacanie składki ubezpieczeniowej.",
         "Ubezpieczyciel — zakład ubezpieczeń, w imieniu którego SINEDIS wykonuje czynności agencyjne.",
@@ -291,7 +291,7 @@ const pl: RulesDictionary = {
         "REGON: 52350998300000",
         "",
         "E-mail: info@sinedis.pl",
-        "Telefon Contact Center: +48 571203097",
+        "Telefon Contact Center: +48 573581333",
         "",
         "Strony internetowe:",
         "https://sinedis.pl",
@@ -315,7 +315,7 @@ const en: RulesDictionary = {
         "SINEDIS is an insurance agent acting on behalf of multiple insurance undertakings under granted powers of attorney.",
         "User — an individual or legal entity using the SINEDIS service or Contact Center.",
         "Service — the SINEDIS online platform available via https://sinedis.pl and https://greencard.agency.",
-        "Contact Center — the SINEDIS telephone service: +48 571203097.",
+        "Contact Center — the SINEDIS telephone service: +48 573581333.",
         "Consultant — a SINEDIS employee performing insurance agency activities.",
         "Services — electronic services including preparation for the conclusion of insurance agreements, remote conclusion of agreements, and payment of insurance premiums.",
         "Insurer — the insurance undertaking on whose behalf SINEDIS performs agency activities.",
@@ -439,7 +439,7 @@ const en: RulesDictionary = {
         "REGON: 52350998300000",
         "",
         "E-mail: info@sinedis.pl",
-        "Contact Center phone: +48 571203097",
+        "Contact Center phone: +48 573581333",
         "",
         "Websites:",
         "https://sinedis.pl",
@@ -463,7 +463,7 @@ const be: RulesDictionary = {
         "SINEDIS з'яўляецца страхавым агентам, які дзейнічае ад імя некалькіх страхавых кампаній на падставе прадастаўленых паўнамоцтваў.",
         "Карыстальнік — фізічная або юрыдычная асоба, якая выкарыстоўвае сэрвіс SINEDIS або Contact Center.",
         "Сэрвіс — інтэрнэт-платформа SINEDIS, даступная праз сайты https://sinedis.pl і https://greencard.agency.",
-        "Contact Center — тэлефонны сэрвіс SINEDIS: +48 571203097.",
+        "Contact Center — тэлефонны сэрвіс SINEDIS: +48 573581333.",
         "Кансультант — супрацоўнік SINEDIS, які выконвае агентскія дзеянні.",
         "Паслугі — электронныя паслугі, уключаючы падрыхтоўку да заключэння дагавора страхавання, дыстанцыйнае заключэнне дагавораў і аплату страхавой прэміі.",
         "Страхоўшчык — страхавая кампанія, ад імя якой SINEDIS ажыццяўляе агентскую дзейнасць.",
@@ -588,7 +588,7 @@ const be: RulesDictionary = {
         "REGON: 52350998300000",
         "",
         "E-mail: info@sinedis.pl",
-        "Тэлефон Contact Center: +48 571203097",
+        "Тэлефон Contact Center: +48 573581333",
         "",
         "Сайты:",
         "https://sinedis.pl",
@@ -615,7 +615,7 @@ const uz: RulesDictionary = {
         "SINEDIS berilgan vakolatlar asosida bir nechta sug‘urta kompaniyalari nomidan faoliyat yurituvchi sug‘urta agentidir.",
         "Foydalanuvchi — SINEDIS servisi yoki Contact Center xizmatidan foydalanuvchi jismoniy yoki yuridik shaxs.",
         "Servis — https://sinedis.pl va https://greencard.agency saytlarida mavjud bo‘lgan SINEDIS internet-platformasi.",
-        "Contact Center — SINEDIS telefon xizmati: +48 571203097.",
+        "Contact Center — SINEDIS telefon xizmati: +48 573581333.",
         "Konsultant — agentlik faoliyatini amalga oshiruvchi SINEDIS xodimi.",
         "Xizmatlar — sug‘urta shartnomasini tuzishga tayyorgarlik, masofadan sug‘urta shartnomalarini tuzish va sug‘urta mukofotini to‘lashni o‘z ichiga olgan elektron xizmatlar.",
         "Sug‘urtalovchi — SINEDIS agentlik faoliyatini amalga oshirayotgan sug‘urta kompaniyasi.",
@@ -750,7 +750,7 @@ const uz: RulesDictionary = {
         "REGON: 52350998300000",
         "",
         "E-mail: info@sinedis.pl",
-        "Contact Center telefoni: +48 571203097",
+        "Contact Center telefoni: +48 573581333",
         "",
         "Saytlar:",
         "https://sinedis.pl",
@@ -774,7 +774,7 @@ const ka: RulesDictionary = {
         "SINEDIS წარმოადგენს სადაზღვევო აგენტს, რომელიც მოქმედებს რამდენიმე სადაზღვევო კომპანიის სახელით მინიჭებული უფლებამოსილების საფუძველზე.",
         "მომხმარებელი — ფიზიკური ან იურიდიული პირი, რომელიც იყენებს SINEDIS-ის სერვისს ან Contact Center-ს.",
         "სერვისი — SINEDIS-ის ინტერნეტ-პლატფორმა, რომელიც ხელმისაწვდომია ვებგვერდებზე https://sinedis.pl და https://greencard.agency.",
-        "Contact Center — SINEDIS-ის სატელეფონო სერვისი: +48 571203097.",
+        "Contact Center — SINEDIS-ის სატელეფონო სერვისი: +48 573581333.",
         "კონსულტანტი — SINEDIS-ის თანამშრომელი, რომელიც ახორციელებს სააგენტო საქმიანობას.",
         "მომსახურებები — ელექტრონული მომსახურებები, მათ შორის დაზღვევის ხელშეკრულების გაფორმებისთვის მომზადება, დისტანციური გაფორმება და სადაზღვევო პრემიის გადახდა.",
         "მზღვეველი — სადაზღვევო კომპანია, რომლის სახელითაც SINEDIS ახორციელებს სააგენტო საქმიანობას.",
@@ -896,7 +896,7 @@ const ka: RulesDictionary = {
         "REGON: 52350998300000",
         "",
         "E-mail: info@sinedis.pl",
-        "Contact Center-ის ტელეფონი: +48 571203097",
+        "Contact Center-ის ტელეფონი: +48 573581333",
         "",
         "ვებგვერდები:",
         "https://sinedis.pl",
@@ -920,7 +920,7 @@ const kk: RulesDictionary = {
         "SINEDIS берілген өкілеттіктер негізінде бірнеше сақтандыру компаниясының атынан әрекет ететін сақтандыру агенті болып табылады.",
         "Пайдаланушы — SINEDIS сервисін немесе Contact Center қызметін пайдаланатын жеке немесе заңды тұлға.",
         "Сервис — https://sinedis.pl және https://greencard.agency сайттары арқылы қолжетімді SINEDIS интернет-платформасы.",
-        "Contact Center — SINEDIS телефон қызметі: +48 571203097.",
+        "Contact Center — SINEDIS телефон қызметі: +48 573581333.",
         "Кеңесші — агенттік әрекеттерді орындайтын SINEDIS қызметкері.",
         "Қызметтер — сақтандыру шартын жасасуға дайындықты, шарттарды қашықтан жасауды және сақтандыру сыйлықақысын төлеуді қоса алғанда электрондық қызметтер.",
         "Сақтандырушы — SINEDIS агенттік қызметті жүзеге асыратын сақтандыру компаниясы.",
@@ -1044,7 +1044,7 @@ const kk: RulesDictionary = {
         "REGON: 52350998300000",
         "",
         "E-mail: info@sinedis.pl",
-        "Contact Center телефоны: +48 571203097",
+        "Contact Center телефоны: +48 573581333",
         "",
         "Сайттар:",
         "https://sinedis.pl",
@@ -1068,7 +1068,7 @@ const tr: RulesDictionary = {
         "SINEDIS, verilen yetkilere dayanarak birden fazla sigorta şirketi adına faaliyet gösteren bir sigorta acentesidir.",
         "Kullanıcı — SINEDIS hizmetini veya Contact Center hizmetini kullanan gerçek veya tüzel kişi.",
         "Hizmet — https://sinedis.pl ve https://greencard.agency internet siteleri üzerinden erişilebilen SINEDIS çevrim içi platformu.",
-        "Contact Center — SINEDIS telefon hizmeti: +48 571203097.",
+        "Contact Center — SINEDIS telefon hizmeti: +48 573581333.",
         "Danışman — acentelik faaliyetlerini gerçekleştiren SINEDIS çalışanı.",
         "Hizmetler — sigorta sözleşmesinin hazırlanması, uzaktan sigorta sözleşmesi kurulması ve sigorta primi ödemesi dahil elektronik hizmetler.",
         "Sigortacı — SINEDIS’in acentelik faaliyetini yürüttüğü sigorta şirketi.",
@@ -1190,7 +1190,7 @@ const tr: RulesDictionary = {
         "REGON: 52350998300000",
         "",
         "E-posta: info@sinedis.pl",
-        "Contact Center Telefonu: +48 571203097",
+        "Contact Center Telefonu: +48 573581333",
         "",
         "Web siteleri:",
         "https://sinedis.pl",
@@ -1214,7 +1214,7 @@ const fa: RulesDictionary = {
         "SINEDIS به‌عنوان نماینده بیمه و بر اساس اختیارات اعطاشده از سوی چندین شرکت بیمه فعالیت می‌کند.",
         "کاربر — شخص حقیقی یا حقوقی که از سرویس SINEDIS یا Contact Center استفاده می‌کند.",
         "سرویس — پلتفرم اینترنتی SINEDIS که از طریق وب‌سایت‌های https://sinedis.pl و https://greencard.agency در دسترس است.",
-        "Contact Center — مرکز تماس تلفنی SINEDIS: +48 571203097.",
+        "Contact Center — مرکز تماس تلفنی SINEDIS: +48573581333.",
         "مشاور — کارمند SINEDIS که فعالیت‌های نمایندگی بیمه را انجام می‌دهد.",
         "خدمات — خدمات الکترونیکی شامل آماده‌سازی برای انعقاد قرارداد بیمه، انعقاد از راه دور قراردادها و پرداخت حق بیمه.",
         "بیمه‌گر — شرکت بیمه‌ای که SINEDIS از طرف آن فعالیت نمایندگی انجام می‌دهد.",
@@ -1336,7 +1336,7 @@ const fa: RulesDictionary = {
         "REGON: 52350998300000",
         "",
         "E-mail: info@sinedis.pl",
-        "تلفن Contact Center: +48 571203097",
+        "تلفن Contact Center: +48573581333",
         "",
         "وب‌سایت‌ها:",
         "https://sinedis.pl",
@@ -1360,7 +1360,7 @@ const hy: RulesDictionary = {
         "SINEDIS-ը հանդիսանում է ապահովագրական գործակալ, որը գործում է մի քանի ապահովագրական ընկերությունների անունից՝ տրամադրված լիազորությունների հիման վրա։",
         "Օգտատեր — ֆիզիկական կամ իրավաբանական անձ, որն օգտագործում է SINEDIS ծառայությունը կամ Contact Center-ը։",
         "Ծառայություն — SINEDIS ինտերնետային հարթակը, որը հասանելի է https://sinedis.pl և https://greencard.agency կայքերի միջոցով։",
-        "Contact Center — SINEDIS-ի հեռախոսային ծառայությունը՝ +48 571203097։",
+        "Contact Center — SINEDIS-ի հեռախոսային ծառայությունը՝ +48 573581333",
         "Խորհրդատու — SINEDIS-ի աշխատակից, որը կատարում է գործակալական գործողություններ։",
         "Ծառայություններ — էլեկտրոնային ծառայություններ, ներառյալ ապահովագրության պայմանագրի կնքման նախապատրաստումը, պայմանագրերի հեռավար կնքումը և ապահովագրավճարի վճարումը։",
         "Ապահովագրող — ապահովագրական ընկերություն, որի անունից SINEDIS-ը իրականացնում է գործակալական գործունեություն։",
@@ -1485,7 +1485,7 @@ const hy: RulesDictionary = {
         "REGON: 52350998300000",
         "",
         "E-mail: info@sinedis.pl",
-        "Contact Center հեռախոս՝ +48 571203097",
+        "Contact Center հեռախոս՝ +48 573581333",
         "",
         "Կայքեր՝",
         "https://sinedis.pl",
@@ -1493,6 +1493,1489 @@ const hy: RulesDictionary = {
       ],
     },
   ],
+};
+
+const ckb: RulesDictionary = {
+  pageTitle: "ڕێنمایی",
+  subtitle:
+    "بۆ پێشکەشکردنی خزمەتگوزارییە ئەلیکترۆنییەکان و بەستنی گرێبەستی بیمە بە شێوەی دوورەوە لە ڕێگەی SINEDIS Sp. z o.o.",
+  updatedAt: "15.03.2024",
+
+  sections: [
+    {
+      title: "§ 1. پێناسەکان",
+      paragraphs: [
+        "SINEDIS — SINEDIS Spółka z ograniczoną odpowiedzialnością، ul. H. Dobrzańskiego Hubala 22D، 01-473 Warszawa، Polska، KRS: 0000999636، NIP: 5242953841، REGON: 52350998300000، ئیمەیڵ: info@sinedis.pl.",
+        "SINEDIS وەکیلی بیمەیە و لە ناوی چەند کۆمپانیای بیمەوە، بەپێی دەسەڵاتە پێدراوەکان، کار دەکات.",
+        "بەکارهێنەر — کەسی ئاسایی یان کەسی یاساییە کە خزمەتگوزارییەکانی SINEDIS یان Contact Center بەکاردەهێنێت.",
+        "خزمەتگوزاری — پلاتفۆڕمی ئینتەرنێتی SINEDISە کە لە ڕێگەی ماڵپەڕەکانی https://sinedis.pl و https://greencard.agency بەردەستە.",
+        "Contact Center — خزمەتگوزاری تەلەفۆنی SINEDIS: +48573581333.",
+        "ڕاوێژکار — کارمەندی SINEDISە کە کردارەکانی وەکایەتی بیمە ئەنجام دەدات.",
+        "خزمەتگوزارییەکان — خزمەتگوزارییە ئەلیکترۆنییەکان، لەوانە ئامادەکاری بۆ بەستنی گرێبەستی بیمە، بەستنی گرێبەست بە شێوەی دوورەوە و پارەدانی پارەی بیمە.",
+        "بیمەکەر — کۆمپانیای بیمەیە کە SINEDIS لە ناوی ئەوەوە چالاکی وەکایەتی بیمە ئەنجام دەدات.",
+        "بیمەگرتوو — بەکارهێنەرە کە گرێبەستی بیمە دەبەستێت.",
+        "بیمەنامە — بەڵگەنامەیەکە کە بەستنی گرێبەستی بیمە پشتڕاست دەکاتەوە.",
+        "OWU — مەرجە گشتییەکانی بیمە، کە پێش بەستنی گرێبەست پێشکەش بە بەکارهێنەر دەکرێن.",
+        "سیاسەتی پاراستنی نهێنی — ڕێساکانی مامەڵەکردن لەگەڵ داتای کەسی و بەکارهێنانی خزمەتگوزارییەکە.",
+      ],
+    },
+
+    {
+      title: "§ 2. بڕگە گشتییەکان",
+      paragraphs: [
+        "ئەم ڕێنماییە شێوازی پێشکەشکردنی خزمەتگوزارییەکان بە شێوەی ئەلیکترۆنی و بەستنی گرێبەستەکانی بیمە بە شێوەی دوورەوە لە ڕێگەی SINEDIS دیاری دەکات.",
+        "ڕێنماییەکە بە خۆڕایی بڵاو دەکرێتەوە و بۆ دابەزاندن، پاشەکەوتکردن و چاپکردن بەردەستە.",
+        "بەکارهێنەر پێویستە پێش دەستپێکردنی بەکارهێنانی خزمەتگوزارییەکان خۆی بە ڕێنماییەکە ئاشنا بکات.",
+        "بەکارهێنانی خزمەتگوزارییەکە واتە ڕەزامەندی بەکارهێنەر بە مەرجەکانی ڕێنماییەکە، لەوانەش مامەڵەکردن لەگەڵ داتای کەسی.",
+        "پەیوەندی نێوان لایەنەکان بەپێی یاسای پۆڵەندا ڕێکدەخرێت، لەوانە ڕێساکانی خزمەتگوزاری دوورەوە، ناوەندایەتی بیمە، پاراستنی داتای کەسی و مافەکانی بەکارهێنەر.",
+        "SINEDIS وەک وەکیلی بیمەی تۆمارکراو لە تۆماری KNF کار دەکات.",
+        "دەتوانرێت تۆماربوونی وەکیل لە ڕێگەی تۆماری KNF بپشکنرێت: https://rpu.knf.gov.pl.",
+        "کۆمسیۆنی SINEDIS لە ناو پارەی بیمەدا هەژمار کراوە و خەرجیی زیادە بۆ کڕیار دروست ناکات.",
+      ],
+    },
+
+    {
+      title: "§ 3. بەستن و کۆتاییهێنان بە گرێبەستی پێشکەشکردنی خزمەتگوزارییە ئەلیکترۆنییەکان",
+      paragraphs: [
+        "دەستپێکردنی بەکارهێنانی خزمەتگوزارییەکە واتە بەستنی گرێبەستی پێشکەشکردنی خزمەتگوزارییە ئەلیکترۆنییەکان بەبێ واژۆکردنی بەڵگەنامەیەکی جیاواز.",
+        "بۆ Contact Center، دەستپێکردنی خزمەتگوزاری لە کاتی دەستپێکردنی گفتوگۆ لەگەڵ ڕاوێژکارەوە هەژمار دەکرێت.",
+        "بەکارهێنەر دەتوانێت لە هەر کاتێکدا بەکارهێنانی خزمەتگوزارییەکان بوەستێنێت.",
+        "گرێبەستی پێشکەشکردنی خزمەتگوزارییە ئەلیکترۆنییەکان بە شێوەی ئۆتۆماتیکی دوای دەرچوونی بەکارهێنەر لە خزمەتگوزارییەکە یان تەواوبوونی گفتوگۆ لەگەڵ ڕاوێژکار کۆتایی دێت.",
+      ],
+    },
+
+    {
+      title: "§ 4. ڕێساکانی گشتی پێشکەشکردنی خزمەتگوزارییەکان",
+      paragraphs: [
+        "خزمەتگوزارییەکە بۆ وەرگرتنی زانیاری دەربارەی بەرهەمەکانی بیمە، هەژمارکردنی پێشنیارەکان، بەستنی گرێبەستەکانی بیمە و دەستگەیشتن بە بەڵگەنامەکان دانراوە.",
+        "خزمەتگوزاری ئۆنلاین بە درێژایی شەو و ڕۆژ کار دەکات، Contact Center بە پێی کاتی دیاریکراو کار دەکات.",
+        "بەکارهێنەر پێویستە زانیاریی ڕاست، تەواو و نوێ پێشکەش بکات.",
+        "بەکارهێنەر بەرپرسیارە لە ئەنجامەکانی پێشکەشکردنی زانیاریی نادروست یان ناتەواو.",
+        "SINEDIS مافی پشکنینی زانیارییە پێشکەشکراوەکان هەیە.",
+        "لە کاری خزمەتگوزارییەکەدا دەکرێت پچڕانی تەکنیکی هەبێت کە پەیوەندی بە چاکسازی، نوێکردنەوە یان پاشەکەوتکردنی داتاوە هەبێت.",
+        "SINEDIS مافی هەیە لە حاڵەتی هەڕەشەی ئاسایش یان پێشێلکردنی ڕێنماییەکەدا، دەستگەیشتن بە خزمەتگوزارییەکە بە شێوەی کاتی سنووردار بکات.",
+        "ناردنی ناوەڕۆکی نایاسایی، زیانگەیەن یان سووکایەتیئامێز لە ڕێگەی خزمەتگوزارییەکەوە قەدەغەیە.",
+        "بەکارهێنانی خزمەتگوزارییەکە خۆڕاییە، جگە لە ئەرکی پارەدانی پارەی بیمە بەپێی گرێبەستە بەستراوەکان.",
+      ],
+    },
+
+    {
+      title: "§ 5. بەستنی گرێبەستی بیمە و پارەدانی پارەی بیمە",
+      paragraphs: [
+        "بەکارهێنەر بە شێوەی سەربەخۆ بەرهەمی بیمە، ڕادەی پاراستن و بڕی بیمە هەڵدەبژێرێت.",
+        "پێش بەستنی گرێبەست، بەکارهێنەر زانیاری دەربارەی بیمەکەر، نرخی بیمە، مەرجەکانی پارەدان، ماوەکان، مافی پاشگەزبوونەوە و شێوازی پێشکەشکردنی سکاڵا وەردەگرێت.",
+        "مەرجی بەستنی گرێبەست، دیاریکردنی دروستی زانیارییەکان و قبووڵکردنی مەرجەکانی بیمەیە.",
+        "بەکارهێنەر پێویستە بنەمای یاسایی هەبێت بۆ گواستنەوەی داتای کەسانی سێیەم.",
+        "گرێبەستی بیمە بە بەستراو هەژمار دەکرێت دوای هەڵبژاردنی هەڵبژاردەی کڕین و پارەدانی پارەی بیمە.",
+        "پارەدان دەتوانرێت بە کارتی بانکی یان گواستنەوەی ئەلیکترۆنی لە ڕێگەی TPAY ئەنجام بدرێت.",
+        "دوای بەستنی گرێبەست، بەکارهێنەر بیمەنامەی ئەلیکترۆنی وەردەگرێت.",
+        "بەکارهێنەر مافی هەیە لە ماوەی 30 ڕۆژدا لە گرێبەستی بیمە پاشگەز ببێتەوە، ئەگەر یاسا یان سروشتی بەرهەمی بیمە بە جۆرێکی تر دیاری نەکردبێت.",
+        "بۆ گرێبەستەکانی بیمەی کورتخایەن، مافی پاشگەزبوونەوە دەکرێت سنووردار بکرێت.",
+      ],
+    },
+
+    {
+      title: "§ 6. سیاسەتی پاراستنی نهێنی",
+      paragraphs: [
+        "SINEDIS گرنگییەکی تایبەت بە پاراستنی داتای کەسیی بەکارهێنەران دەدات.",
+        "بەپێی سروشتی مامەڵەکردن لەگەڵ داتا، بەڕێوەبەرانی داتا دەتوانن کۆمپانیاکانی بیمە و SINEDIS بن.",
+        "پێشکەشکردنی داتای کەسی خۆبەخشانەیە، بەڵام بۆ ئامادەکردنی پێشنیار و بەستنی گرێبەستی بیمە پێویستە.",
+        "داتا بەپێی GDPR و یاسای پۆڵەندا مامەڵەی پێوە دەکرێت.",
+        "تۆمارە سیستەمییەکان و ناونیشانی IP دەتوانن بۆ مەبەستی تەکنیکی و ئاماری بەکاربهێنرێن.",
+        "خزمەتگوزارییەکە HTTPS و ڕێکارەکانی تری ئاسایش بەکاردەهێنێت بۆ پاراستنی داتای نێردراو.",
+        "گفتوگۆ تەلەفۆنییەکان لەگەڵ Contact Center دەکرێت تۆمار بکرێن.",
+        "سیاسەتی وردی کوکی لە ماڵپەڕی SINEDIS بەردەستە.",
+      ],
+    },
+
+    {
+      title: "§ 7. شێوازی مامەڵەکردن لەگەڵ سکاڵاکان",
+      paragraphs: [
+        "بەکارهێنەر مافی هەیە سکاڵا بە شێوەی نووسراو، زارەکی یان ئەلیکترۆنی پێشکەش بکات.",
+        "سکاڵاکان دەتوانرێت لە ڕێگەی فۆڕمی ماڵپەڕ یان ئیمەیڵی reklamacje@sinedis.pl بنێردرێن.",
+        "سکاڵاکە پێویستە زانیاریی ناساندنی بەکارهێنەر، وەسفی بارودۆخ و داواکارییەکان لەخۆ بگرێت.",
+        "SINEDIS سکاڵاکە لە ماوەی 30 ڕۆژدا پشکنین دەکات، و لە حاڵەتە ئاڵۆزەکاندا — نەدواتر لە 60 ڕۆژ.",
+        "وەڵام بە شێوەی سەرەکی بە فۆڕمی نووسراو پێشکەش دەکرێت.",
+        "بەکارهێنەر مافی هەیە پەیوەندی بە ئۆمبۆدسمانی دارایی، دادگای ناوبژیوانی KNF یان دادگای گشتی بکات.",
+      ],
+    },
+
+    {
+      title: "§ 8. چوونە بواری جێبەجێکردن و گۆڕینی ڕێنماییەکە",
+      paragraphs: [
+        "ڕێنماییەکە لە 21ی تشرینی دووەمی 2023 چووەتە بواری جێبەجێکردن.",
+        "SINEDIS مافی هەیە لە هەر کاتێکدا ڕێنماییەکە بگۆڕێت.",
+        "وەشانی نوێی ڕێنماییەکە لە ماڵپەڕەکە بڵاو دەکرێتەوە و دەتوانرێت بە ئیمەیڵیش بۆ بەکارهێنەران بنێردرێت.",
+      ],
+    },
+
+    {
+      title: "§ 9. بڕگە کۆتاییەکان",
+      paragraphs: [
+        "یاسای کۆماری پۆڵەندا بۆ ڕێنماییەکە و خزمەتگوزارییەکانی SINEDIS جێبەجێ دەبێت.",
+        "ناکۆکییەکان لەلایەن دادگاکانی گشتی یان بە شێوازەکانی تری چارەسەرکردنی ناکۆکی کە یاسا دیاری کردووە، پشکنین دەکرێن.",
+        "پەیوەندیکردن لەگەڵ بەکارهێنەران دەتوانێت بە زمانی پۆڵەندی، بێلارووسی یان ڕووسی ئەنجام بدرێت.",
+        "ماتریاڵەکانی خزمەتگوزارییەکە بە یاسای مافی دانەر پارێزراون.",
+      ],
+    },
+
+    {
+      title: "زانیارییە فەرمییەکان",
+      paragraphs: [
+        "SINEDIS Spółka z ograniczoną odpowiedzialnością",
+        "ul. H. Dobrzańskiego Hubala 22D",
+        "01-473 Warszawa, Polska",
+        "",
+        "KRS: 0000999636",
+        "NIP: 5242953841",
+        "REGON: 52350998300000",
+        "",
+        "ئیمەیڵ: info@sinedis.pl",
+        "تەلەفۆنی Contact Center: +48573581333",
+        "",
+        "ماڵپەڕەکان:",
+        "https://sinedis.pl",
+        "https://greencard.agency",
+      ],
+    },
+  ],
+  
+};
+const kmr: RulesDictionary = {
+  pageTitle: "RÊZIKNAME",
+  subtitle:
+    "ji bo pêşkêşkirina xizmetên elektronîkî û girêdana peymanên sîgorteyê ji dûr ve bi rêya SINEDIS Sp. z o.o.",
+  updatedAt: "15.03.2024",
+
+  sections: [
+    {
+      title: "§ 1. Danasîn",
+
+      paragraphs: [
+        "SINEDIS — SINEDIS Spółka z ograniczoną odpowiedzialnością, ul. H. Dobrzańskiego Hubala 22D, 01-473 Warszawa, Polonya, KRS: 0000999636, NIP: 5242953841, REGON: 52350998300000, e-mail: info@sinedis.pl.",
+        "SINEDIS ajanek sîgorteyê ye ku li ser navê çend şirketên sîgorteyê, li gorî desthilatên ku ji wî re hatine dayîn, tevdigere.",
+        "Bikarhêner — kesek ferdî an jî kesek qanûnî ye ku xizmeta SINEDIS an Contact Center bikar tîne.",
+        "Xizmet — platforma înternetê ya SINEDIS e ku bi rêya malperên https://sinedis.pl û https://greencard.agency tê gihîştin.",
+        "Contact Center — xizmeta telefonî ya SINEDIS: +48 573581333.",
+        "Şêwirmend — karmendek SINEDIS e ku karên ajanî pêk tîne.",
+        "Xizmet — xizmetên elektronîkî ne ku amadekirina peymana sîgorteyê, girêdana peymanan ji dûr ve û dravdana primê sîgorteyê dihewînin.",
+        "Şirketa sîgorteyê — şirketa sîgorteyê ye ku SINEDIS li ser navê wê çalakiya ajanî pêk tîne.",
+        "Sîgortegir — bikarhênerê ku peymana sîgorteyê girêdide.",
+        "Polîçe — belgeya ku girêdana peymana sîgorteyê piştrast dike.",
+        "OWU — Mercên Giştî yên Sîgorteyê ne ku berî girêdana peymanê ji bikarhêner re têne pêşkêşkirin.",
+        "Polîtîkaya nepeniyê — rêzikên pêvajokirina daneyên kesane û bikaranîna xizmetê.",
+      ],
+    },
+
+    {
+      title: "§ 2. Hikmên Giştî",
+
+      paragraphs: [
+        "Ev Rêzikname rêbaza pêşkêşkirina xizmetan bi awayê elektronîkî û girêdana peymanên sîgorteyê ji dûr ve bi rêya SINEDIS diyar dike.",
+        "Rêzikname bê pere tê belavkirin û ji bo daxistin, tomar kirin û çapkirinê berdest e.",
+        "Bikarhêner divê berî destpêkirina bikaranîna xizmetan bi Rêziknameyê re nas be.",
+        "Bikaranîna xizmetê pejirandina şertên Rêziknameyê ji aliyê bikarhêner ve tê maneyê, di nav de jî pêvajokirina daneyên kesane.",
+        "Li ser têkiliyên navbera aliyan de qanûnên Polonyayê têne sepandin, di nav de jî rêzikên xizmetên ji dûr ve, navbeynkarîya sîgorteyê, parastina daneyên kesane û mafên xerîdaran.",
+        "SINEDIS wekî ajanek sîgorteyê ku di qeyda KNF de hatiye tomar kirin tevdigere.",
+        "Qeydkirina ajanê dikare bi rêya qeyda KNF were kontrolkirin: https://rpu.knf.gov.pl.",
+        "Komîsyona SINEDIS di nav primê sîgorteyê de cih digire û ji bo xerîdar mesrefên zêde çênake.",
+      ],
+    },
+
+    {
+      title: "§ 3. Girêdan û Dawîkirina Peymana Xizmetên Elektronîkî",
+
+      paragraphs: [
+        "Destpêkirina bikaranîna xizmetê tê maneya girêdana peymana xizmetên elektronîkî bêyî îmzekirina belgeyek cuda.",
+        "Ji bo Contact Center, destpêka pêşkêşkirina xizmetê destpêka axaftina bi şêwirmend re tê hesibandin.",
+        "Bikarhêner dikare her dem bikaranîna xizmetan rawestîne.",
+        "Peymana xizmetên elektronîkî piştî derketina bikarhêner ji xizmetê an dawîbûna axaftina bi şêwirmend re bi awayekî otomatîkî diqede.",
+      ],
+    },
+
+    {
+      title: "§ 4. Rêzikên Giştî yên Pêşkêşkirina Xizmetan",
+
+      paragraphs: [
+        "Xizmet ji bo wergirtina agahdariyên derbarê berhemên sîgorteyê, hesabkirina pêşniyaran, girêdana peymanên sîgorteyê û gihîştina belgeyan hatiye amadekirin.",
+        "Xizmeta serhêl 24 demjimêran dixebite, Contact Center li gorî dema xebatê ya diyarkirî kar dike.",
+        "Bikarhêner mecbûr e daneyên rast, temam û nûjen pêşkêş bike.",
+        "Bikarhêner berpirsiyar e ji bo encamên şandina agahdariyên şaş an netemam.",
+        "SINEDIS mafê kontrolkirina daneyên pêşkêşkirî heye.",
+        "Di xebata xizmetê de qutbûnên teknîkî dikarin çêbibin ku bi xizmetkirin, nûvekirin an kopiyên parastinê ve girêdayî ne.",
+        "SINEDIS dikare di rewşa metirsiyên ewlehiyê an binpêkirina Rêziknameyê de gihîştina xizmetê bi awayekî demkî sînordar bike.",
+        "Şandina naveroka neqanûnî, zirardar an heqaretkar bi rêya xizmetê qedexe ye.",
+        "Bikaranîna xizmetê belaş e, ji bilî mecbûriya dravdana primê sîgorteyê ya peymanên ku hatine girêdan.",
+      ],
+    },
+
+    {
+      title: "§ 5. Girêdana Peymana Sîgorteyê û Dravdana Primê Sîgorteyê",
+
+      paragraphs: [
+        "Bikarhêner bi serê xwe berhema sîgorteyê, asta parastinê û meblağa sîgorteyê hilbijêre.",
+        "Berî girêdana peymanê, bikarhêner agahdarî derbarê şirketa sîgorteyê, mesrefa sîgorteyê, şertên dravdanê, demjimêran, mafê vekişînê û rêbaza şikayetkirinê werdigire.",
+        "Merca girêdana peymanê pêşkêşkirina rast a daneyan û pejirandina şertên sîgorteyê ye.",
+        "Bikarhêner mecbûr e bingehên qanûnî hebe ji bo şandina daneyên kesên sêyem.",
+        "Peymana sîgorteyê piştî hilbijartina vebijarka kirînê û dravdana primê sîgorteyê hatiye girêdan tê hesibandin.",
+        "Dravdan dikare bi karta bankeyê an veguhastina elektronîkî ya TPAY were kirin.",
+        "Piştî girêdana peymanê, bikarhêner polîçeyek elektronîkî werdigire.",
+        "Bikarhêner maf heye ku di nav 30 rojan de ji peymana sîgorteyê vekişe, heke qanûn an taybetmendiya berhema sîgorteyê şertê din diyar nekibe.",
+        "Ji bo peymanên sîgorteyê yên kurtdem, mafê vekişînê dikare were sînordarkirin.",
+      ],
+    },
+    {
+      title: "§ 6. Polîtîkaya Nepeniyê",
+
+      paragraphs: [
+        "SINEDIS baldarîyek taybet dide parastina daneyên kesane yên bikarhêneran.",
+        "Li gorî cûreya pêvajokirinê, rêvebirên danean dikarin hem şirketên sîgorteyê û hem jî SINEDIS bin.",
+        "Pêşkêşkirina daneyên kesane dilxwazî ye, lê ji bo amadekirina pêşniyarê û girêdana peymana sîgorteyê pêwîst e.",
+        "Dane li gorî GDPR û qanûnên Polonyayê têne pêvajokirin.",
+        "Tomarên sîstemê û navnîşanên IP dikarin ji bo armancên teknîkî û statîstîkî werin bikaranîn.",
+        "Xizmet ji bo parastina daneyên ku têne veguhestin HTTPS û tedbîrên din ên ewlehiyê bikar tîne.",
+        "Axaftinên telefonî bi Contact Center re dikarin werin tomar kirin.",
+        "Polîtîkaya cookieyan a berfireh li ser malpera SINEDIS berdest e.",
+      ],
+    },
+
+    {
+      title: "§ 7. Rêbaza Nirxandina Şikayetan",
+
+      paragraphs: [
+        "Bikarhêner maf heye ku şikayetê bi nivîs, devkî an elektronîkî pêşkêş bike.",
+        "Şikayet dikarin bi forma li ser malperê an bi e-mail: reklamacje@sinedis.pl werin şandin.",
+        "Şikayet divê agahdariyên nasnameyê yên bikarhêner, ravekirina rewşê û daxwazên wî dihewîne.",
+        "SINEDIS di nav 30 rojan de şikayetê dinirxîne, û di rewşên tevlihev de ne derengtir ji 60 rojan.",
+        "Bersiv bi awayekî sereke bi nivîs tê pêşkêşkirin.",
+        "Bikarhêner maf heye ku serî li Ombudsmanê Aborî, Dadgeha Tahkîmê ya KNF an dadgeha giştî bide.",
+      ],
+    },
+
+    {
+      title: "§ 8. Ketina Meriyetê û Guhertina Rêziknameyê",
+
+      paragraphs: [
+        "Ev Rêzikname di 21ê Mijdara 2023-an de kete meriyetê.",
+        "SINEDIS maf heye ku her dem Rêziknameyê biguherîne.",
+        "Guhertoya nû ya Rêziknameyê li ser malperê tê weşandin û dikare bi e-mail ji bikarhêneran re jî were şandin.",
+      ],
+    },
+
+    {
+      title: "§ 9. Hikmên Dawî",
+
+      paragraphs: [
+        "Li ser vê Rêziknameyê û xizmetên SINEDIS qanûnên Komara Polonyayê têne sepandin.",
+        "Nakokî li dadgehên giştî an bi rêbazên din ên çareserkirinê yên ku qanûn destnîşan dike tên nirxandin.",
+        "Têkilî bi bikarhêneran re dikare bi zimanê polonî, belarusî an rûsî were kirin.",
+        "Materyalên xizmetê bi qanûnên mafên nivîskarî têne parastin.",
+      ],
+    },
+
+    {
+      title: "Agahdariyên Fermî",
+
+      paragraphs: [
+        "SINEDIS Spółka z ograniczoną odpowiedzialnością",
+        "ul. H. Dobrzańskiego Hubala 22D",
+        "01-473 Warszawa, Polonya",
+        "",
+
+        "KRS: 0000999636",
+        "NIP: 5242953841",
+        "REGON: 52350998300000",
+        "",
+
+        "E-mail: info@sinedis.pl",
+        "Telefona Contact Center: +48 573581333",
+        "",
+
+        "Malper:",
+        "https://sinedis.pl",
+        "https://greencard.agency",
+      ],
+    },
+  ],
+};
+
+const ar: RulesDictionary = {
+  pageTitle: "اللائحة",
+  subtitle:
+    "لتقديم الخدمات الإلكترونية وإبرام عقود التأمين عن بُعد عبر SINEDIS Sp. z o.o.",
+  updatedAt: "15.03.2024",
+
+  sections: [
+    {
+      title: "§ 1. التعاريف",
+      paragraphs: [
+        "SINEDIS — شركة SINEDIS Spółka z ograniczoną odpowiedzialnością، العنوان: ul. H. Dobrzańskiego Hubala 22D، 01-473 Warszawa، بولندا، KRS: 0000999636، NIP: 5242953841، REGON: 52350998300000، البريد الإلكتروني: info@sinedis.pl.",
+        "تعمل SINEDIS كوكيل تأمين نيابةً عن عدة شركات تأمين بموجب الصلاحيات الممنوحة لها.",
+        "المستخدم — شخص طبيعي أو اعتباري يستخدم خدمة SINEDIS أو مركز الاتصال.",
+        "الخدمة — منصة SINEDIS الإلكترونية المتاحة عبر موقعي https://sinedis.pl و https://greencard.agency.",
+        "مركز الاتصال (Contact Center) — خدمة الهاتف الخاصة بـ SINEDIS على الرقم: +48573581333.",
+        "المستشار — موظف لدى SINEDIS يقوم بأعمال الوساطة التأمينية.",
+        "الخدمات — الخدمات الإلكترونية، بما في ذلك التحضير لإبرام عقد التأمين، وإبرام العقود عن بُعد، وسداد أقساط التأمين.",
+        "شركة التأمين — شركة التأمين التي تمارس SINEDIS النشاط التأميني بالنيابة عنها.",
+        "حامل الوثيقة — المستخدم الذي يبرم عقد التأمين.",
+        "وثيقة التأمين — المستند الذي يثبت إبرام عقد التأمين.",
+        "OWU — الشروط العامة للتأمين التي تُقدَّم للمستخدم قبل إبرام العقد.",
+        "سياسة الخصوصية — القواعد المنظمة لمعالجة البيانات الشخصية واستخدام الخدمة.",
+      ],
+    },
+
+    {
+      title: "§ 2. الأحكام العامة",
+      paragraphs: [
+        "تحدد هذه اللائحة قواعد تقديم الخدمات الإلكترونية وإبرام عقود التأمين عن بُعد عبر SINEDIS.",
+        "تُتاح هذه اللائحة مجانًا ويمكن تنزيلها وحفظها وطباعتها.",
+        "يلتزم المستخدم بالاطلاع على هذه اللائحة قبل البدء في استخدام الخدمات.",
+        "يُعد استخدام الخدمة موافقةً من المستخدم على أحكام هذه اللائحة، بما في ذلك معالجة البيانات الشخصية.",
+        "تخضع العلاقة بين الأطراف لأحكام القانون البولندي، بما في ذلك القواعد المتعلقة بالخدمات المقدمة عن بُعد، والوساطة التأمينية، وحماية البيانات الشخصية، وحقوق المستهلك.",
+        "تعمل SINEDIS كوكيل تأمين مسجل في سجل هيئة الرقابة المالية البولندية (KNF).",
+        "يمكن التحقق من تسجيل الوكيل عبر سجل KNF على الرابط: https://rpu.knf.gov.pl.",
+        "تُدرج عمولة SINEDIS ضمن قسط التأمين ولا تترتب عليها أي تكاليف إضافية بالنسبة للعميل.",
+      ],
+    },
+
+    {
+      title: "§ 3. إبرام وإنهاء عقد تقديم الخدمات الإلكترونية",
+      paragraphs: [
+        "يُعد بدء استخدام الخدمة إبرامًا لعقد تقديم الخدمات الإلكترونية دون الحاجة إلى توقيع مستند منفصل.",
+        "بالنسبة لمركز الاتصال، يُعتبر بدء المحادثة مع المستشار بداية تقديم الخدمة.",
+        "يجوز للمستخدم التوقف عن استخدام الخدمات في أي وقت.",
+        "ينتهي عقد تقديم الخدمات الإلكترونية تلقائيًا عند مغادرة المستخدم للخدمة أو عند انتهاء المحادثة مع المستشار.",
+      ],
+    },
+
+    {
+      title: "§ 4. القواعد العامة لتقديم الخدمات",
+      paragraphs: [
+        "تهدف الخدمة إلى توفير معلومات حول المنتجات التأمينية، وحساب العروض التأمينية، وإبرام عقود التأمين، والوصول إلى المستندات ذات الصلة.",
+        "تعمل الخدمة الإلكترونية على مدار الساعة، بينما يعمل مركز الاتصال وفقًا لساعات العمل المحددة.",
+        "يلتزم المستخدم بتقديم بيانات صحيحة وكاملة ومحدثة.",
+        "يتحمل المستخدم المسؤولية عن النتائج المترتبة على تقديم بيانات غير صحيحة أو غير مكتملة.",
+        "يحق لـ SINEDIS التحقق من البيانات المقدمة.",
+        "قد تتخلل عمل الخدمة فترات توقف فنية لأغراض الصيانة أو التحديث أو النسخ الاحتياطي.",
+        "يحق لـ SINEDIS تقييد الوصول إلى الخدمة مؤقتًا في حال وجود تهديدات أمنية أو انتهاك لأحكام هذه اللائحة.",
+        "يُحظر إرسال أي محتوى غير قانوني أو ضار أو مسيء عبر الخدمة.",
+        "استخدام الخدمة مجاني، باستثناء الالتزام بسداد أقساط التأمين المترتبة على العقود المبرمة.",
+      ],
+    },
+
+    {
+      title: "§ 5. إبرام عقد التأمين وسداد قسط التأمين",
+      paragraphs: [
+        "يقوم المستخدم باختيار المنتج التأميني ونطاق التغطية ومبلغ التأمين بشكل مستقل.",
+        "قبل إبرام العقد، يحصل المستخدم على معلومات تتعلق بشركة التأمين، وتكلفة التأمين، وشروط الدفع، والمدة، وحق الانسحاب، وآلية تقديم الشكاوى.",
+        "يشترط لإبرام العقد إدخال البيانات بشكل صحيح وقبول شروط التأمين.",
+        "يلتزم المستخدم بامتلاك أساس قانوني يسمح له بتقديم بيانات الأشخاص الآخرين.",
+        "يُعتبر عقد التأمين مبرمًا بعد اختيار خيار الشراء وسداد قسط التأمين.",
+        "يمكن سداد القسط بواسطة بطاقة مصرفية أو تحويل إلكتروني عبر نظام TPAY.",
+        "بعد إبرام العقد، يحصل المستخدم على وثيقة تأمين إلكترونية.",
+        "يحق للمستخدم الانسحاب من عقد التأمين خلال 30 يومًا ما لم ينص القانون أو طبيعة المنتج التأميني على خلاف ذلك.",
+        "بالنسبة لعقود التأمين قصيرة الأجل، قد يكون حق الانسحاب محدودًا.",
+      ],
+    },
+    {
+      title: "§ 6. سياسة الخصوصية",
+      paragraphs: [
+        "تولي SINEDIS اهتمامًا خاصًا بحماية البيانات الشخصية للمستخدمين.",
+        "قد تكون شركات التأمين وSINEDIS جهاتٍ مسؤولة عن معالجة البيانات بحسب طبيعة المعالجة.",
+        "يُعد تقديم البيانات الشخصية أمرًا اختياريًا، ولكنه ضروري لإعداد العرض التأميني وإبرام عقد التأمين.",
+        "تتم معالجة البيانات وفقًا للائحة العامة لحماية البيانات (GDPR) والتشريعات البولندية المعمول بها.",
+        "يجوز استخدام سجلات النظام وعناوين IP لأغراض تقنية وإحصائية.",
+        "تستخدم الخدمة بروتوكول HTTPS وغيرها من التدابير الأمنية لحماية البيانات المنقولة.",
+        "قد يتم تسجيل المكالمات الهاتفية مع مركز الاتصال (Contact Center).",
+        "تتوفر سياسة ملفات تعريف الارتباط (Cookies) التفصيلية على موقع SINEDIS.",
+      ],
+    },
+
+    {
+      title: "§ 7. إجراءات معالجة الشكاوى",
+      paragraphs: [
+        "يحق للمستخدم تقديم شكوى كتابيًا أو شفهيًا أو إلكترونيًا.",
+        "يمكن إرسال الشكاوى عبر النموذج المتاح على الموقع الإلكتروني أو عبر البريد الإلكتروني: reklamacje@sinedis.pl.",
+        "يجب أن تتضمن الشكوى بيانات تعريف المستخدم ووصفًا للحالة والمتطلبات المطلوبة.",
+        "تقوم SINEDIS بدراسة الشكوى خلال 30 يومًا، وفي الحالات المعقدة خلال مدة لا تتجاوز 60 يومًا.",
+        "يتم تقديم الرد في المقام الأول بشكل كتابي.",
+        "يحق للمستخدم اللجوء إلى أمين المظالم المالي أو محكمة التحكيم التابعة لهيئة KNF أو إلى المحاكم المختصة.",
+      ],
+    },
+
+    {
+      title: "§ 8. سريان اللائحة وتعديلها",
+      paragraphs: [
+        "دخلت هذه اللائحة حيز التنفيذ في 21 نوفمبر 2023.",
+        "يحق لـ SINEDIS تعديل هذه اللائحة في أي وقت.",
+        "يتم نشر النسخة الجديدة من اللائحة على الموقع الإلكتروني، ويجوز إرسالها إلى المستخدمين عبر البريد الإلكتروني.",
+      ],
+    },
+
+    {
+      title: "§ 9. الأحكام الختامية",
+      paragraphs: [
+        "تخضع هذه اللائحة والخدمات المقدمة من SINEDIS لقوانين جمهورية بولندا.",
+        "تُفصل النزاعات من قبل المحاكم المختصة أو من خلال وسائل التسوية الأخرى المنصوص عليها قانونًا.",
+        "يمكن أن يتم التواصل مع المستخدمين باللغة البولندية أو البيلاروسية أو الروسية.",
+        "جميع المواد المنشورة ضمن الخدمة محمية بموجب قوانين حقوق النشر والتأليف.",
+      ],
+    },
+
+    {
+      title: "البيانات الرسمية",
+      paragraphs: [
+        "SINEDIS Spółka z ograniczoną odpowiedzialnością",
+        "ul. H. Dobrzańskiego Hubala 22D",
+        "01-473 Warszawa, Polska",
+        "",
+        "KRS: 0000999636",
+        "NIP: 5242953841",
+        "REGON: 52350998300000",
+        "",
+        "البريد الإلكتروني: info@sinedis.pl",
+        "هاتف مركز الاتصال: +48573581333",
+        "",
+        "المواقع الإلكترونية:",
+        "https://sinedis.pl",
+        "https://greencard.agency",
+      ],
+    },
+  ],
+};
+
+const uk: RulesDictionary = {
+  pageTitle: "РЕГЛАМЕНТ",
+  subtitle:
+    "надання електронних послуг та укладення договорів страхування дистанційно через SINEDIS Sp. z o.o.",
+  updatedAt: "15.03.2024",
+
+  sections: [
+    {
+      title: "§ 1. Визначення",
+      paragraphs: [
+        "SINEDIS — SINEDIS Spółka z ograniczoną odpowiedzialnością, ul. H. Dobrzańskiego Hubala 22D, 01-473 Warszawa, Polska, KRS: 0000999636, NIP: 5242953841, REGON: 52350998300000, e-mail: info@sinedis.pl.",
+        "SINEDIS є страховим агентом, який діє від імені кількох страхових компаній на підставі наданих повноважень.",
+        "Користувач — фізична або юридична особа, яка користується сервісом SINEDIS або Contact Center.",
+        "Сервіс — інтернет-платформа SINEDIS, доступна через сайти https://sinedis.pl та https://greencard.agency.",
+        "Contact Center — телефонний сервіс SINEDIS: +48 573581333.",
+        "Консультант — працівник SINEDIS, який здійснює агентську діяльність.",
+        "Послуги — електронні послуги, включаючи підготовку до укладення договору страхування, дистанційне укладення договорів та оплату страхової премії.",
+        "Страховик — страхова компанія, від імені якої SINEDIS здійснює агентську діяльність.",
+        "Страхувальник — користувач, який укладає договір страхування.",
+        "Поліс — документ, що підтверджує укладення договору страхування.",
+        "OWU — загальні умови страхування, які надаються користувачеві до укладення договору.",
+        "Політика конфіденційності — правила обробки персональних даних і використання сервісу.",
+      ],
+    },
+
+    {
+      title: "§ 2. Загальні положення",
+      paragraphs: [
+        "Цей Регламент визначає порядок надання послуг в електронній формі та укладення договорів страхування дистанційно через SINEDIS.",
+        "Регламент розміщується безкоштовно та доступний для завантаження, збереження і друку.",
+        "Користувач зобов’язаний ознайомитися з Регламентом до початку використання послуг.",
+        "Використання сервісу означає згоду користувача з умовами Регламенту, включаючи обробку персональних даних.",
+        "До правовідносин сторін застосовуються положення законодавства Польщі, включаючи норми щодо дистанційних послуг, страхового посередництва, захисту персональних даних та прав споживачів.",
+        "SINEDIS діє як страховий агент, зареєстрований у реєстрі KNF.",
+        "Перевірити реєстрацію агента можна через реєстр KNF: https://rpu.knf.gov.pl.",
+        "Комісійна винагорода SINEDIS включена до страхової премії та не створює для клієнта додаткових витрат.",
+      ],
+    },
+
+    {
+      title: "§ 3. Укладення та припинення договору про надання електронних послуг",
+      paragraphs: [
+        "Початок використання сервісу означає укладення договору про надання електронних послуг без підписання окремого документа.",
+        "Для Contact Center початком надання послуг вважається початок розмови з консультантом.",
+        "Користувач може припинити користування послугами в будь-який час.",
+        "Договір про надання електронних послуг припиняється автоматично після виходу користувача із сервісу або завершення розмови з консультантом.",
+      ],
+    },
+
+    {
+      title: "§ 4. Загальні правила надання послуг",
+      paragraphs: [
+        "Сервіс призначений для отримання інформації про страхові продукти, розрахунку пропозицій, укладення договорів страхування та доступу до документів.",
+        "Онлайн-сервіс працює цілодобово, Contact Center — відповідно до встановленого графіка.",
+        "Користувач зобов’язаний надавати достовірні, повні та актуальні дані.",
+        "Користувач несе відповідальність за наслідки надання неправдивої або неповної інформації.",
+        "SINEDIS має право перевіряти надані дані.",
+        "У роботі сервісу можливі технічні перерви, пов’язані з обслуговуванням, оновленнями або резервним копіюванням.",
+        "SINEDIS має право тимчасово обмежити доступ до сервісу у разі загроз безпеці або порушення положень Регламенту.",
+        "Забороняється передавати через сервіс незаконний, шкідливий або образливий контент.",
+        "Користування сервісом є безкоштовним, за винятком обов’язку сплати страхової премії за укладеними договорами.",
+      ],
+    },
+    {
+      title: "§ 5. Укладення договору страхування та сплата страхової премії",
+      paragraphs: [
+        "Користувач самостійно обирає страховий продукт, обсяг страхового покриття та страхову суму.",
+        "Перед укладенням договору користувач отримує інформацію про страховика, вартість страхування, умови оплати, строки, право на відмову від договору та порядок подання скарг.",
+        "Умовою укладення договору є коректне зазначення даних та прийняття умов страхування.",
+        "Користувач зобов’язаний мати законні підстави для передачі персональних даних третіх осіб.",
+        "Договір страхування вважається укладеним після вибору опції придбання та сплати страхової премії.",
+        "Оплата може здійснюватися банківською карткою або електронним переказом через TPAY.",
+        "Після укладення договору користувач отримує електронний страховий поліс.",
+        "Користувач має право відмовитися від договору страхування протягом 30 днів, якщо інше не передбачено законодавством або характером страхового продукту.",
+        "Для короткострокових договорів страхування право на відмову може бути обмежене.",
+      ],
+    },
+
+    {
+      title: "§ 6. Політика конфіденційності",
+      paragraphs: [
+        "SINEDIS приділяє особливу увагу захисту персональних даних користувачів.",
+        "Адміністраторами персональних даних можуть бути страхові компанії та SINEDIS залежно від характеру обробки.",
+        "Надання персональних даних є добровільним, але необхідним для підготовки пропозиції та укладення договору страхування.",
+        "Дані обробляються відповідно до GDPR та законодавства Польщі.",
+        "Системні журнали та IP-адреси можуть використовуватися для технічних і статистичних цілей.",
+        "Сервіс використовує HTTPS та інші заходи безпеки для захисту переданих даних.",
+        "Телефонні розмови з Contact Center можуть записуватися.",
+        "Детальна політика щодо файлів cookie доступна на сайті SINEDIS.",
+      ],
+    },
+
+    {
+      title: "§ 7. Порядок розгляду скарг",
+      paragraphs: [
+        "Користувач має право подати скаргу в письмовій, усній або електронній формі.",
+        "Скарги можуть надсилатися через форму на сайті або на e-mail: reklamacje@sinedis.pl.",
+        "Скарга повинна містити ідентифікаційні дані користувача, опис ситуації та вимоги заявника.",
+        "SINEDIS розглядає скаргу протягом 30 днів, а в складних випадках — не пізніше ніж протягом 60 днів.",
+        "Відповідь надається переважно у письмовій формі.",
+        "Користувач має право звернутися до фінансового омбудсмена, арбітражного суду KNF або суду загальної юрисдикції.",
+      ],
+    },
+
+    {
+      title: "§ 8. Набрання чинності та зміни Регламенту",
+      paragraphs: [
+        "Регламент набрав чинності 21 листопада 2023 року.",
+        "SINEDIS має право змінювати Регламент у будь-який час.",
+        "Нова редакція Регламенту публікується на сайті та може надсилатися користувачам електронною поштою.",
+      ],
+    },
+
+    {
+      title: "§ 9. Прикінцеві положення",
+      paragraphs: [
+        "До Регламенту та послуг SINEDIS застосовується право Республіки Польща.",
+        "Спори розглядаються судами загальної юрисдикції або іншими передбаченими законом способами врегулювання.",
+        "Взаємодія з користувачами може здійснюватися польською, білоруською або російською мовами.",
+        "Матеріали сервісу захищені законодавством про авторське право.",
+      ],
+    },
+
+    {
+      title: "Офіційні дані",
+      paragraphs: [
+        "SINEDIS Spółka z ograniczoną odpowiedzialnością",
+        "ul. H. Dobrzańskiego Hubala 22D",
+        "01-473 Warszawa, Polska",
+        "",
+        "KRS: 0000999636",
+        "NIP: 5242953841",
+        "REGON: 52350998300000",
+        "",
+        "E-mail: info@sinedis.pl",
+        "Телефон Contact Center: +48 573581333",
+        "",
+        "Сайти:",
+        "https://sinedis.pl",
+        "https://greencard.agency",
+      ],
+    },
+  ],
+};
+const he: RulesDictionary = {
+
+  pageTitle: "תקנון",
+
+  subtitle:
+    "למתן שירותים אלקטרוניים ולכריתת חוזי ביטוח מרחוק באמצעות SINEDIS Sp. z o.o.",
+
+  updatedAt: "15.03.2024",
+
+  sections: [
+    {
+      title: "§ 1. הגדרות",
+      paragraphs: [
+        "SINEDIS — SINEDIS Spółka z ograniczoną odpowiedzialnością, ul. H. Dobrzańskiego Hubala 22D, 01-473 Warszawa, Polska, KRS: 0000999636, NIP: 5242953841, REGON: 52350998300000, e-mail: info@sinedis.pl.",
+        "SINEDIS היא סוכנות ביטוח הפועלת מטעמן של מספר חברות ביטוח מכוח ייפויי כוח והרשאות מתאימים.",
+        "משתמש — אדם פרטי או תאגיד המשתמש בשירותי SINEDIS או במוקד השירות הטלפוני.",
+        "השירות — פלטפורמת האינטרנט של SINEDIS הזמינה בכתובות https://sinedis.pl ו-https://greencard.agency.",
+        "מוקד השירות (Contact Center) — השירות הטלפוני של SINEDIS: +48 573581333.",
+        "יועץ — עובד SINEDIS המבצע פעולות תיווך ביטוחי.",
+        "שירותים — שירותים אלקטרוניים, לרבות הכנה לכריתת חוזה ביטוח, כריתת חוזי ביטוח מרחוק ותשלום פרמיית ביטוח.",
+        "מבטח — חברת הביטוח שבשמה SINEDIS פועלת כסוכן ביטוח.",
+        "מבוטח / בעל פוליסה — משתמש המתקשר בחוזה ביטוח.",
+        "פוליסה — מסמך המאשר את כריתת חוזה הביטוח.",
+        "OWU — תנאי הביטוח הכלליים הנמסרים למשתמש לפני כריתת החוזה.",
+        "מדיניות פרטיות — כללי עיבוד הנתונים האישיים והשימוש בשירות.",
+      ],
+    },
+
+    {
+      title: "§ 2. הוראות כלליות",
+      paragraphs: [
+        "תקנון זה מסדיר את אופן מתן השירותים האלקטרוניים ואת הליך כריתת חוזי הביטוח מרחוק באמצעות SINEDIS.",
+        "התקנון מפורסם ללא תשלום וזמין להורדה, שמירה והדפסה.",
+        "על המשתמש לעיין בתקנון לפני תחילת השימוש בשירותים.",
+        "השימוש בשירות מהווה הסכמה של המשתמש לתנאי התקנון, לרבות לעיבוד הנתונים האישיים.",
+        "על היחסים בין הצדדים יחול הדין הפולני, לרבות הוראות הנוגעות לשירותים מרחוק, תיווך ביטוחי, הגנת מידע אישי וזכויות צרכנים.",
+        "SINEDIS פועלת כסוכן ביטוח הרשום במרשם KNF.",
+        "ניתן לאמת את רישום הסוכן במרשם KNF בכתובת: https://rpu.knf.gov.pl.",
+        "עמלת התיווך של SINEDIS כלולה בפרמיית הביטוח ואינה יוצרת עלויות נוספות ללקוח.",
+      ],
+    },
+
+    {
+      title: "§ 3. כריתה וסיום של הסכם למתן שירותים אלקטרוניים",
+      paragraphs: [
+        "תחילת השימוש בשירות מהווה כריתת הסכם למתן שירותים אלקטרוניים ללא צורך בחתימה על מסמך נפרד.",
+        "במוקד השירות, תחילת מתן השירותים נחשבת למועד תחילת השיחה עם היועץ.",
+        "המשתמש רשאי להפסיק את השימוש בשירותים בכל עת.",
+        "ההסכם למתן שירותים אלקטרוניים מסתיים אוטומטית עם יציאת המשתמש מהשירות או עם סיום השיחה עם היועץ.",
+      ],
+    },
+
+    {
+      title: "§ 4. כללים כלליים למתן השירותים",
+      paragraphs: [
+        "השירות מיועד לקבלת מידע על מוצרי ביטוח, חישוב הצעות ביטוח, כריתת חוזי ביטוח וגישה למסמכים.",
+        "השירות המקוון פועל 24 שעות ביממה, בעוד שמוקד השירות פועל בהתאם לשעות הפעילות שנקבעו.",
+        "המשתמש מחויב למסור נתונים נכונים, מלאים ומעודכנים.",
+        "המשתמש נושא באחריות להשלכות של מסירת מידע שגוי או חלקי.",
+        "ל-SINEDIS הזכות לאמת את הנתונים שנמסרו.",
+        "ייתכנו הפסקות טכניות בשירות עקב תחזוקה, עדכונים או גיבויים.",
+        "ל-SINEDIS הזכות להגביל זמנית את הגישה לשירות במקרה של סיכון אבטחתי או הפרת הוראות התקנון.",
+        "אסור להעביר באמצעות השירות תכנים בלתי חוקיים, מזיקים או פוגעניים.",
+        "השימוש בשירות הוא ללא תשלום, למעט החובה לשלם את פרמיית הביטוח בגין חוזי ביטוח שנכרתו.",
+      ],
+    },
+    {
+      title: "§ 5. כריתת חוזה ביטוח ותשלום פרמיית הביטוח",
+      paragraphs: [
+        "המשתמש בוחר באופן עצמאי את מוצר הביטוח, היקף הכיסוי וסכום הביטוח.",
+        "לפני כריתת החוזה, המשתמש מקבל מידע על המבטח, עלות הביטוח, תנאי התשלום, המועדים, זכות הביטול והליך הגשת תלונות.",
+        "תנאי לכריתת החוזה הוא מסירת נתונים נכונים וקבלת תנאי הביטוח.",
+        "המשתמש מחויב להחזיק בבסיס משפטי מתאים למסירת נתונים של צדדים שלישיים.",
+        "חוזה הביטוח נחשב ככרות לאחר בחירת אפשרות הרכישה ותשלום פרמיית הביטוח.",
+        "התשלום יכול להתבצע באמצעות כרטיס בנקאי או העברה אלקטרונית דרך TPAY.",
+        "לאחר כריתת החוזה, המשתמש מקבל פוליסה אלקטרונית.",
+        "המשתמש רשאי לבטל את חוזה הביטוח בתוך 30 ימים, אלא אם הדין או אופי מוצר הביטוח קובעים אחרת.",
+        "ביטוחים לתקופה קצרה עשויים להיות כפופים להגבלות בנוגע לזכות הביטול.",
+      ],
+    },
+
+    {
+      title: "§ 6. מדיניות פרטיות",
+      paragraphs: [
+        "SINEDIS מקדישה תשומת לב מיוחדת להגנה על הנתונים האישיים של המשתמשים.",
+        "מנהלי הנתונים עשויים להיות חברות הביטוח ו-SINEDIS, בהתאם לאופי העיבוד.",
+        "מסירת נתונים אישיים היא וולונטרית, אך נדרשת לצורך הכנת הצעת ביטוח וכריתת חוזה ביטוח.",
+        "הנתונים מעובדים בהתאם ל-GDPR ולחקיקה הפולנית.",
+        "יומני מערכת וכתובות IP עשויים לשמש למטרות טכניות וסטטיסטיות.",
+        "השירות משתמש ב-HTTPS ובאמצעי אבטחה נוספים להגנה על הנתונים המועברים.",
+        "שיחות טלפון עם מוקד השירות עשויות להיות מוקלטות.",
+        "מדיניות Cookies מפורטת זמינה באתר של SINEDIS.",
+      ],
+    },
+
+    {
+      title: "§ 7. הליך טיפול בתלונות",
+      paragraphs: [
+        "המשתמש רשאי להגיש תלונה בכתב, בעל פה או באמצעים אלקטרוניים.",
+        "ניתן לשלוח תלונות באמצעות הטופס באתר או לכתובת הדוא״ל: reklamacje@sinedis.pl.",
+        "על התלונה לכלול את פרטי הזיהוי של המשתמש, תיאור המקרה והדרישות המבוקשות.",
+        "SINEDIS תטפל בתלונה בתוך 30 ימים, ובמקרים מורכבים — לא יאוחר מ-60 ימים.",
+        "המענה יינתן בעיקר בכתב.",
+        "המשתמש רשאי לפנות לנציב הפיננסי, לבית הדין לבוררות של KNF או לבית משפט מוסמך.",
+      ],
+    },
+
+    {
+      title: "§ 8. כניסת התקנון לתוקף ושינויים בו",
+      paragraphs: [
+        "תקנון זה נכנס לתוקף ביום 21 בנובמבר 2023.",
+        "ל-SINEDIS הזכות לשנות את התקנון בכל עת.",
+        "הגרסה החדשה של התקנון תפורסם באתר ויכולה להישלח למשתמשים באמצעות דוא״ל.",
+      ],
+    },
+
+    {
+      title: "§ 9. הוראות סופיות",
+      paragraphs: [
+        "על התקנון ועל השירותים של SINEDIS חל דינה של רפובליקת פולין.",
+        "מחלוקות יוכרעו על ידי בתי המשפט המוסמכים או בדרכים אחרות ליישוב סכסוכים המותרות על פי דין.",
+        "התקשורת עם המשתמשים עשויה להתבצע בשפה הפולנית, הבלארוסית או הרוסית.",
+        "תכני השירות מוגנים על פי דיני זכויות יוצרים.",
+      ],
+    },
+
+    {
+      title: "פרטים רשמיים",
+      paragraphs: [
+        "SINEDIS Spółka z ograniczoną odpowiedzialnością",
+        "ul. H. Dobrzańskiego Hubala 22D",
+        "01-473 Warszawa, Polska",
+        "",
+        "KRS: 0000999636",
+        "NIP: 5242953841",
+        "REGON: 52350998300000",
+        "",
+        "E-mail: info@sinedis.pl",
+        "טלפון מוקד השירות: +48 573581333",
+        "",
+        "אתרי אינטרנט:",
+        "https://sinedis.pl",
+        "https://greencard.agency",
+      ],
+    },
+  ],
+
+};
+
+const az: RulesDictionary = {
+
+  pageTitle: "REQLAMENT",
+
+  subtitle:
+    "SINEDIS Sp. z o.o. vasitəsilə məsafədən elektron xidmətlərin göstərilməsi və sığorta müqavilələrinin bağlanması qaydaları",
+
+  updatedAt: "15.03.2024",
+
+  sections: [
+    {
+      title: "§ 1. Təriflər",
+      paragraphs: [
+        "SINEDIS — SINEDIS Spółka z ograniczoną odpowiedzialnością, ul. H. Dobrzańskiego Hubala 22D, 01-473 Warszawa, Polska, KRS: 0000999636, NIP: 5242953841, REGON: 52350998300000, e-mail: info@sinedis.pl.",
+        "SINEDIS verilmiş səlahiyyətlər əsasında bir neçə sığorta şirkətinin adından fəaliyyət göstərən sığorta agentidir.",
+        "İstifadəçi — SINEDIS xidmətindən və ya Contact Center-dən istifadə edən fiziki və ya hüquqi şəxs.",
+        "Xidmət — https://sinedis.pl və https://greencard.agency internet saytları vasitəsilə əlçatan olan SINEDIS onlayn platforması.",
+        "Contact Center — SINEDIS-in telefon xidməti: +48 573581333.",
+        "Məsləhətçi — agent funksiyalarını yerinə yetirən SINEDIS əməkdaşı.",
+        "Xidmətlər — sığorta müqaviləsinin bağlanmasına hazırlıq, məsafədən sığorta müqavilələrinin bağlanması və sığorta haqqının ödənilməsi daxil olmaqla elektron xidmətlər.",
+        "Sığortaçı — SINEDIS-in agent fəaliyyəti həyata keçirdiyi sığorta şirkəti.",
+        "Sığortalı — sığorta müqaviləsi bağlayan istifadəçi.",
+        "Polis — sığorta müqaviləsinin bağlandığını təsdiq edən sənəd.",
+        "OWU — müqavilə bağlanmazdan əvvəl istifadəçiyə təqdim edilən ümumi sığorta şərtləri.",
+        "Məxfilik siyasəti — şəxsi məlumatların emalı və xidmətdən istifadə qaydaları.",
+      ],
+    },
+
+    {
+      title: "§ 2. Ümumi müddəalar",
+      paragraphs: [
+        "Bu Reqlament SINEDIS vasitəsilə elektron xidmətlərin göstərilməsi və məsafədən sığorta müqavilələrinin bağlanması qaydasını müəyyən edir.",
+        "Reqlament ödənişsiz şəkildə yerləşdirilir və yükləmə, saxlanma və çap üçün əlçatandır.",
+        "İstifadəçi xidmətlərdən istifadə etməyə başlamazdan əvvəl Reqlamentlə tanış olmalıdır.",
+        "Xidmətdən istifadə istifadəçinin şəxsi məlumatların emalı da daxil olmaqla Reqlamentin şərtləri ilə razılaşması deməkdir.",
+        "Tərəflər arasındakı münasibətlərə Polşa qanunvericiliyinin müddəaları, o cümlədən məsafədən göstərilən xidmətlər, sığorta vasitəçiliyi, şəxsi məlumatların qorunması və istehlakçı hüquqları ilə bağlı normalar tətbiq edilir.",
+        "SINEDIS KNF reyestrində qeydiyyatdan keçmiş sığorta agenti kimi fəaliyyət göstərir.",
+        "Agentin qeydiyyatını KNF reyestri vasitəsilə yoxlamaq olar: https://rpu.knf.gov.pl.",
+        "SINEDIS-in komissiya mükafatı sığorta haqqına daxildir və müştəri üçün əlavə xərc yaratmır.",
+      ],
+    },
+
+    {
+      title: "§ 3. Elektron xidmətlərin göstərilməsi müqaviləsinin bağlanması və xitamı",
+      paragraphs: [
+        "Xidmətdən istifadəyə başlanılması ayrıca sənəd imzalanmadan elektron xidmətlərin göstərilməsi müqaviləsinin bağlanması hesab olunur.",
+        "Contact Center üçün xidmətin göstərilməsinin başlanğıcı məsləhətçi ilə danışığın başlanması hesab edilir.",
+        "İstifadəçi istənilən vaxt xidmətlərdən istifadəni dayandıra bilər.",
+        "Elektron xidmətlərin göstərilməsi müqaviləsi istifadəçi xidmətdən çıxdıqda və ya məsləhətçi ilə danışıq başa çatdıqda avtomatik olaraq qüvvədən düşür.",
+      ],
+    },
+
+    {
+      title: "§ 4. Xidmətlərin göstərilməsinin ümumi qaydaları",
+      paragraphs: [
+        "Xidmət sığorta məhsulları haqqında məlumat əldə etmək, təkliflərin hesablanması, sığorta müqavilələrinin bağlanması və sənədlərə çıxış üçün nəzərdə tutulmuşdur.",
+        "Onlayn xidmət sutkanın 24 saatı fəaliyyət göstərir, Contact Center isə müəyyən olunmuş iş qrafiki üzrə işləyir.",
+        "İstifadəçi düzgün, tam və aktual məlumat təqdim etməyə borcludur.",
+        "İstifadəçi yalan və ya natamam məlumat təqdim edilməsinin nəticələrinə görə məsuliyyət daşıyır.",
+        "SINEDIS təqdim olunan məlumatları yoxlamaq hüququna malikdir.",
+        "Xidmətin fəaliyyətində texniki xidmət, yenilənmə və ya ehtiyat nüsxələrin yaradılması ilə əlaqədar texniki fasilələr mümkündür.",
+        "SINEDIS təhlükəsizlik təhdidləri və ya Reqlamentin pozulması hallarında xidmətə çıxışı müvəqqəti məhdudlaşdırmaq hüququna malikdir.",
+        "Xidmət vasitəsilə qanunsuz, zərərli və ya təhqiredici məzmunun ötürülməsi qadağandır.",
+        "Bağlanmış müqavilələr üzrə sığorta haqqının ödənilməsi öhdəliyi istisna olmaqla, xidmətdən istifadə ödənişsizdir.",
+      ],
+    },
+    {
+      title: "§ 5. Sığorta müqaviləsinin bağlanması və sığorta haqqının ödənilməsi",
+      paragraphs: [
+        "İstifadəçi sığorta məhsulunu, sığorta təminatının həcmini və sığorta məbləğini müstəqil şəkildə seçir.",
+        "Müqavilə bağlanmazdan əvvəl istifadəçi sığortaçı, sığortanın dəyəri, ödəniş şərtləri, müddətlər, imtina hüququ və şikayətlərin təqdim edilməsi qaydası barədə məlumat alır.",
+        "Müqavilənin bağlanması üçün məlumatların düzgün göstərilməsi və sığorta şərtlərinin qəbul edilməsi zəruridir.",
+        "İstifadəçi üçüncü şəxslərin məlumatlarını təqdim etmək üçün qanuni əsaslara malik olmalıdır.",
+        "Sığorta müqaviləsi alış seçimi təsdiqləndikdən və sığorta haqqı ödənildikdən sonra bağlanmış hesab olunur.",
+        "Ödəniş TPAY vasitəsilə bank kartı və ya elektron köçürmə ilə həyata keçirilə bilər.",
+        "Müqavilə bağlandıqdan sonra istifadəçi elektron sığorta polisini əldə edir.",
+        "Əgər qanunvericilikdə və ya sığorta məhsulunun xüsusiyyətlərində başqa hal nəzərdə tutulmayıbsa, istifadəçi 30 gün ərzində sığorta müqaviləsindən imtina etmək hüququna malikdir.",
+        "Qısamüddətli sığorta müqavilələri üçün imtina hüququ məhdudlaşdırıla bilər.",
+      ],
+    },
+
+    {
+      title: "§ 6. Məxfilik siyasəti",
+      paragraphs: [
+        "SINEDIS istifadəçilərin şəxsi məlumatlarının qorunmasına xüsusi diqqət yetirir.",
+        "Emalın xarakterindən asılı olaraq məlumatların inzibatçıları sığorta şirkətləri və ya SINEDIS ola bilər.",
+        "Şəxsi məlumatların təqdim edilməsi könüllüdür, lakin sığorta təklifinin hazırlanması və müqavilənin bağlanması üçün zəruridir.",
+        "Məlumatlar GDPR və Polşa qanunvericiliyinə uyğun olaraq emal edilir.",
+        "Sistem jurnalları və IP ünvanları texniki və statistik məqsədlərlə istifadə oluna bilər.",
+        "Xidmət ötürülən məlumatların qorunması üçün HTTPS və digər təhlükəsizlik tədbirlərindən istifadə edir.",
+        "Contact Center ilə telefon danışıqları qeydə alına bilər.",
+        "Cookie faylları siyasətinin ətraflı mətni SINEDIS saytında mövcuddur.",
+      ],
+    },
+
+    {
+      title: "§ 7. Şikayətlərə baxılması qaydası",
+      paragraphs: [
+        "İstifadəçi şikayəti yazılı, şifahi və ya elektron formada təqdim etmək hüququna malikdir.",
+        "Şikayətlər sayt üzərindəki forma vasitəsilə və ya reklamacje@sinedis.pl elektron poçt ünvanına göndərilə bilər.",
+        "Şikayətdə istifadəçinin identifikasiya məlumatları, vəziyyətin təsviri və tələblər göstərilməlidir.",
+        "SINEDIS şikayətə 30 gün ərzində, mürəkkəb hallarda isə ən geci 60 gün müddətində baxır.",
+        "Cavab əsasən yazılı formada təqdim edilir.",
+        "İstifadəçi maliyyə ombudsmanına, KNF arbitraj məhkəməsinə və ya ümumi yurisdiksiya məhkəməsinə müraciət etmək hüququna malikdir.",
+      ],
+    },
+
+    {
+      title: "§ 8. Reqlamentin qüvvəyə minməsi və dəyişdirilməsi",
+      paragraphs: [
+        "Bu Reqlament 21 noyabr 2023-cü il tarixindən qüvvəyə minmişdir.",
+        "SINEDIS istənilən vaxt Reqlamentə dəyişiklik etmək hüququna malikdir.",
+        "Reqlamentin yeni redaksiyası saytda dərc olunur və istifadəçilərə elektron poçt vasitəsilə göndərilə bilər.",
+      ],
+    },
+
+    {
+      title: "§ 9. Yekun müddəalar",
+      paragraphs: [
+        "Bu Reqlamentə və SINEDIS tərəfindən göstərilən xidmətlərə Polşa Respublikasının hüququ tətbiq olunur.",
+        "Mübahisələr ümumi yurisdiksiya məhkəmələri və ya qanunla nəzərdə tutulmuş digər həll üsulları vasitəsilə baxılır.",
+        "İstifadəçilərlə ünsiyyət polyak, belarus və ya rus dillərində həyata keçirilə bilər.",
+        "Xidmətin materialları müəllif hüquqları haqqında qanunvericiliklə qorunur.",
+      ],
+    },
+
+    {
+      title: "Rəsmi məlumatlar",
+      paragraphs: [
+        "SINEDIS Spółka z ograniczoną odpowiedzialnością",
+        "ul. H. Dobrzańskiego Hubala 22D",
+        "01-473 Warszawa, Polska",
+        "",
+        "KRS: 0000999636",
+        "NIP: 5242953841",
+        "REGON: 52350998300000",
+        "",
+        "E-mail: info@sinedis.pl",
+        "Contact Center telefonu: +48 573581333",
+        "",
+        "Veb-saytlar:",
+        "https://sinedis.pl",
+        "https://greencard.agency",
+      ],
+    },
+  ],
+
+};
+const ro: RulesDictionary = {
+
+  pageTitle: "REGULAMENT",
+
+  subtitle:
+    "privind furnizarea serviciilor electronice și încheierea contractelor de asigurare la distanță prin intermediul SINEDIS Sp. z o.o.",
+
+  updatedAt: "15.03.2024",
+
+  sections: [
+    {
+      title: "§ 1. Definiții",
+      paragraphs: [
+        "SINEDIS — SINEDIS Spółka z ograniczoną odpowiedzialnością, ul. H. Dobrzańskiego Hubala 22D, 01-473 Warszawa, Polska, KRS: 0000999636, NIP: 5242953841, REGON: 52350998300000, e-mail: info@sinedis.pl.",
+        "SINEDIS este un agent de asigurare care acționează în numele mai multor societăți de asigurare în baza împuternicirilor acordate.",
+        "Utilizator — persoană fizică sau juridică care utilizează serviciul SINEDIS sau Contact Center-ul.",
+        "Serviciu — platforma online SINEDIS, disponibilă prin intermediul site-urilor https://sinedis.pl și https://greencard.agency.",
+        "Contact Center — serviciul telefonic SINEDIS: +48 573581333.",
+        "Consultant — angajat al SINEDIS care desfășoară activități de intermediere în asigurări.",
+        "Servicii — servicii electronice, inclusiv pregătirea pentru încheierea contractului de asigurare, încheierea contractelor la distanță și plata primei de asigurare.",
+        "Asigurător — societatea de asigurare în numele căreia SINEDIS desfășoară activitate de intermediere.",
+        "Contractant al asigurării — utilizatorul care încheie contractul de asigurare.",
+        "Poliță — documentul care confirmă încheierea contractului de asigurare.",
+        "OWU — condițiile generale de asigurare puse la dispoziția utilizatorului înainte de încheierea contractului.",
+        "Politica de confidențialitate — regulile privind prelucrarea datelor cu caracter personal și utilizarea serviciului.",
+      ],
+    },
+
+    {
+      title: "§ 2. Dispoziții generale",
+      paragraphs: [
+        "Prezentul Regulament stabilește regulile de furnizare a serviciilor pe cale electronică și de încheiere a contractelor de asigurare la distanță prin intermediul SINEDIS.",
+        "Regulamentul este pus la dispoziție gratuit și poate fi descărcat, salvat și tipărit.",
+        "Utilizatorul este obligat să se familiarizeze cu Regulamentul înainte de utilizarea serviciilor.",
+        "Utilizarea serviciului constituie acceptarea de către utilizator a prevederilor Regulamentului, inclusiv a regulilor privind prelucrarea datelor cu caracter personal.",
+        "Relațiile dintre părți sunt reglementate de legislația poloneză, inclusiv normele privind serviciile la distanță, intermedierea în asigurări, protecția datelor cu caracter personal și drepturile consumatorilor.",
+        "SINEDIS acționează ca agent de asigurare înregistrat în registrul KNF.",
+        "Înregistrarea agentului poate fi verificată în registrul KNF: https://rpu.knf.gov.pl.",
+        "Comisionul primit de SINEDIS este inclus în prima de asigurare și nu generează costuri suplimentare pentru client.",
+      ],
+    },
+
+    {
+      title: "§ 3. Încheierea și încetarea contractului de furnizare a serviciilor electronice",
+      paragraphs: [
+        "Începerea utilizării serviciului reprezintă încheierea contractului de furnizare a serviciilor electronice fără semnarea unui document separat.",
+        "În cazul Contact Center-ului, furnizarea serviciului începe odată cu inițierea conversației cu consultantul.",
+        "Utilizatorul poate înceta utilizarea serviciilor în orice moment.",
+        "Contractul de furnizare a serviciilor electronice încetează automat după părăsirea serviciului de către utilizator sau după încheierea conversației cu consultantul.",
+      ],
+    },
+
+    {
+      title: "§ 4. Reguli generale privind furnizarea serviciilor",
+      paragraphs: [
+        "Serviciul este destinat obținerii de informații despre produsele de asigurare, calculării ofertelor, încheierii contractelor de asigurare și accesării documentelor.",
+        "Serviciul online funcționează non-stop, iar Contact Center-ul funcționează conform programului stabilit.",
+        "Utilizatorul este obligat să furnizeze date corecte, complete și actualizate.",
+        "Utilizatorul este responsabil pentru consecințele furnizării de informații false sau incomplete.",
+        "SINEDIS are dreptul să verifice datele furnizate.",
+        "În funcționarea serviciului pot apărea întreruperi tehnice legate de mentenanță, actualizări sau realizarea copiilor de siguranță.",
+        "SINEDIS are dreptul să limiteze temporar accesul la serviciu în cazul unor amenințări la adresa securității sau al încălcării prevederilor Regulamentului.",
+        "Este interzisă transmiterea prin intermediul serviciului a oricărui conținut ilegal, dăunător sau ofensator.",
+        "Utilizarea serviciului este gratuită, cu excepția obligației de plată a primei de asigurare pentru contractele încheiate.",
+      ],
+    },
+    {
+      title: "§ 5. Încheierea contractului de asigurare și plata primei de asigurare",
+      paragraphs: [
+        "Utilizatorul selectează în mod independent produsul de asigurare, nivelul de acoperire și suma asigurată.",
+        "Înainte de încheierea contractului, utilizatorul primește informații privind asigurătorul, costul asigurării, condițiile de plată, termenele aplicabile, dreptul de retragere și procedura de depunere a reclamațiilor.",
+        "Încheierea contractului este condiționată de furnizarea corectă a datelor și de acceptarea condițiilor de asigurare.",
+        "Utilizatorul este obligat să dețină temeiul legal pentru transmiterea datelor cu caracter personal ale terților.",
+        "Contractul de asigurare se consideră încheiat după selectarea opțiunii de cumpărare și achitarea primei de asigurare.",
+        "Plata poate fi efectuată cu cardul bancar sau prin transfer electronic prin intermediul TPAY.",
+        "După încheierea contractului, utilizatorul primește polița în format electronic.",
+        "Utilizatorul are dreptul să se retragă din contractul de asigurare în termen de 30 de zile, cu excepția situațiilor în care legislația sau natura produsului de asigurare prevede altfel.",
+        "În cazul contractelor de asigurare pe termen scurt, dreptul de retragere poate fi limitat.",
+      ],
+    },
+
+    {
+      title: "§ 6. Politica de confidențialitate",
+      paragraphs: [
+        "SINEDIS acordă o atenție deosebită protecției datelor cu caracter personal ale utilizatorilor.",
+        "Operatorii datelor pot fi societățile de asigurare și SINEDIS, în funcție de natura prelucrării.",
+        "Furnizarea datelor cu caracter personal este voluntară, însă este necesară pentru pregătirea unei oferte și pentru încheierea contractului de asigurare.",
+        "Datele sunt prelucrate în conformitate cu GDPR și legislația Republicii Polonia.",
+        "Jurnalele de sistem și adresele IP pot fi utilizate în scopuri tehnice și statistice.",
+        "Serviciul utilizează protocolul HTTPS și alte măsuri de securitate pentru protejarea datelor transmise.",
+        "Convorbirile telefonice cu Contact Center-ul pot fi înregistrate.",
+        "Politica detaliată privind cookie-urile este disponibilă pe site-ul SINEDIS.",
+      ],
+    },
+
+    {
+      title: "§ 7. Procedura de soluționare a reclamațiilor",
+      paragraphs: [
+        "Utilizatorul are dreptul să depună o reclamație în formă scrisă, verbală sau electronică.",
+        "Reclamațiile pot fi transmise prin formularul disponibil pe site sau la adresa de e-mail: reklamacje@sinedis.pl.",
+        "Reclamația trebuie să conțină datele de identificare ale utilizatorului, descrierea situației și solicitările acestuia.",
+        "SINEDIS examinează reclamația în termen de 30 de zile, iar în cazuri complexe — cel târziu în termen de 60 de zile.",
+        "Răspunsul este furnizat, de regulă, în formă scrisă.",
+        "Utilizatorul are dreptul să se adreseze Ombudsmanului Financiar, Curții de Arbitraj a KNF sau instanței de drept comun competente.",
+      ],
+    },
+
+    {
+      title: "§ 8. Intrarea în vigoare și modificarea Regulamentului",
+      paragraphs: [
+        "Prezentul Regulament a intrat în vigoare la 21 noiembrie 2023.",
+        "SINEDIS are dreptul să modifice Regulamentul în orice moment.",
+        "Noua versiune a Regulamentului este publicată pe site și poate fi transmisă utilizatorilor prin e-mail.",
+      ],
+    },
+
+    {
+      title: "§ 9. Dispoziții finale",
+      paragraphs: [
+        "Prezentul Regulament și serviciile furnizate de SINEDIS sunt guvernate de legislația Republicii Polonia.",
+        "Litigiile sunt soluționate de instanțele de drept comun sau prin alte modalități de soluționare prevăzute de lege.",
+        "Comunicarea cu utilizatorii poate avea loc în limba polonă, belarusă sau rusă.",
+        "Materialele disponibile în cadrul serviciului sunt protejate de legislația privind drepturile de autor.",
+      ],
+    },
+
+    {
+      title: "Date oficiale",
+      paragraphs: [
+        "SINEDIS Spółka z ograniczoną odpowiedzialnością",
+        "ul. H. Dobrzańskiego Hubala 22D",
+        "01-473 Warszawa, Polska",
+        "",
+        "KRS: 0000999636",
+        "NIP: 5242953841",
+        "REGON: 52350998300000",
+        "",
+        "E-mail: info@sinedis.pl",
+        "Telefon Contact Center: +48 573581333",
+        "",
+        "Site-uri:",
+        "https://sinedis.pl",
+        "https://greencard.agency",
+      ],
+    },
+  ],
+
+};
+const sr: RulesDictionary = {
+
+  pageTitle: "PRAVILNIK",
+
+  subtitle:
+    "o pružanju elektronskih usluga i zaključenju ugovora o osiguranju na daljinu putem društva SINEDIS Sp. z o.o.",
+
+  updatedAt: "15.03.2024",
+
+  sections: [
+    {
+      title: "§ 1. Definicije",
+      paragraphs: [
+        "SINEDIS — SINEDIS Spółka z ograniczoną odpowiedzialnością, ul. H. Dobrzańskiego Hubala 22D, 01-473 Warszawa, Poljska, KRS: 0000999636, NIP: 5242953841, REGON: 52350998300000, e-mail: info@sinedis.pl.",
+        "SINEDIS je agent osiguranja koji deluje u ime više osiguravajućih društava na osnovu datih ovlašćenja.",
+        "Korisnik — fizičko ili pravno lice koje koristi servis SINEDIS ili Contact Center.",
+        "Servis — internet platforma SINEDIS dostupna putem sajtova https://sinedis.pl i https://greencard.agency.",
+        "Contact Center — telefonski servis društva SINEDIS: +48 573581333.",
+        "Konsultant — zaposleni u društvu SINEDIS koji obavlja poslove zastupanja u osiguranju.",
+        "Usluge — elektronske usluge, uključujući pripremu za zaključenje ugovora o osiguranju, zaključenje ugovora na daljinu i plaćanje premije osiguranja.",
+        "Osiguravač — osiguravajuće društvo u čije ime SINEDIS obavlja poslove zastupanja u osiguranju.",
+        "Ugovarač osiguranja — korisnik koji zaključuje ugovor o osiguranju.",
+        "Polisa — dokument koji potvrđuje zaključenje ugovora o osiguranju.",
+        "OWU — opšti uslovi osiguranja koji se korisniku dostavljaju pre zaključenja ugovora.",
+        "Politika privatnosti — pravila obrade ličnih podataka i korišćenja servisa.",
+      ],
+    },
+
+    {
+      title: "§ 2. Opšte odredbe",
+      paragraphs: [
+        "Ovim Pravilnikom uređuju se pravila pružanja usluga elektronskim putem i zaključenja ugovora o osiguranju na daljinu putem društva SINEDIS.",
+        "Pravilnik je dostupan besplatno i može se preuzeti, sačuvati i odštampati.",
+        "Korisnik je dužan da se upozna sa sadržajem Pravilnika pre početka korišćenja usluga.",
+        "Korišćenje servisa predstavlja prihvatanje odredaba ovog Pravilnika, uključujući obradu ličnih podataka.",
+        "Na odnose između strana primenjuje se zakonodavstvo Republike Poljske, uključujući propise o pružanju usluga na daljinu, posredovanju u osiguranju, zaštiti ličnih podataka i pravima potrošača.",
+        "SINEDIS posluje kao agent osiguranja upisan u registar KNF.",
+        "Registracija agenta može se proveriti putem registra KNF: https://rpu.knf.gov.pl.",
+        "Provizijska naknada društva SINEDIS uključena je u premiju osiguranja i ne predstavlja dodatni trošak za klijenta.",
+      ],
+    },
+
+    {
+      title: "§ 3. Zaključenje i prestanak ugovora o pružanju elektronskih usluga",
+      paragraphs: [
+        "Početak korišćenja servisa smatra se zaključenjem ugovora o pružanju elektronskih usluga bez potrebe za potpisivanjem posebnog dokumenta.",
+        "Kod Contact Center usluge, početkom pružanja usluge smatra se početak razgovora sa konsultantom.",
+        "Korisnik može prestati da koristi usluge u bilo kom trenutku.",
+        "Ugovor o pružanju elektronskih usluga automatski prestaje nakon što korisnik napusti servis ili po završetku razgovora sa konsultantom.",
+      ],
+    },
+
+    {
+      title: "§ 4. Opšta pravila pružanja usluga",
+      paragraphs: [
+        "Servis je namenjen pružanju informacija o proizvodima osiguranja, izračunavanju ponuda, zaključenju ugovora o osiguranju i pristupu dokumentaciji.",
+        "Online servis dostupan je 24 časa dnevno, dok Contact Center radi prema utvrđenom radnom vremenu.",
+        "Korisnik je dužan da dostavlja tačne, potpune i ažurne podatke.",
+        "Korisnik snosi odgovornost za posledice dostavljanja netačnih ili nepotpunih informacija.",
+        "SINEDIS ima pravo da proverava dostavljene podatke.",
+        "U radu servisa mogu nastati tehnički prekidi povezani sa održavanjem sistema, ažuriranjima ili izradom rezervnih kopija.",
+        "SINEDIS ima pravo da privremeno ograniči pristup servisu u slučaju bezbednosnih pretnji ili kršenja odredaba Pravilnika.",
+        "Zabranjeno je slanje ili objavljivanje putem servisa nezakonitog, štetnog ili uvredljivog sadržaja.",
+        "Korišćenje servisa je besplatno, osim obaveze plaćanja premije osiguranja po zaključenim ugovorima.",
+      ],
+    },
+    {
+      title: "§ 5. Zaključenje ugovora o osiguranju i plaćanje premije osiguranja",
+      paragraphs: [
+        "Korisnik samostalno bira proizvod osiguranja, obim pokrića i osiguranu sumu.",
+        "Pre zaključenja ugovora korisnik dobija informacije o osiguravaču, ceni osiguranja, uslovima plaćanja, rokovima, pravu na odustanak i načinu podnošenja pritužbi.",
+        "Uslov za zaključenje ugovora jeste tačno unošenje podataka i prihvatanje uslova osiguranja.",
+        "Korisnik je dužan da poseduje zakonski osnov za dostavljanje podataka trećih lica.",
+        "Ugovor o osiguranju smatra se zaključenim nakon izbora opcije kupovine i plaćanja premije osiguranja.",
+        "Plaćanje se može izvršiti bankovnom karticom ili elektronskim transferom putem sistema TPAY.",
+        "Nakon zaključenja ugovora korisnik dobija elektronsku polisu.",
+        "Korisnik ima pravo da odustane od ugovora o osiguranju u roku od 30 dana, osim ako zakonom ili prirodom proizvoda osiguranja nije drugačije određeno.",
+        "Kod kratkoročnih ugovora o osiguranju pravo na odustanak može biti ograničeno.",
+      ],
+    },
+
+    {
+      title: "§ 6. Politika privatnosti",
+      paragraphs: [
+        "SINEDIS posvećuje posebnu pažnju zaštiti ličnih podataka korisnika.",
+        "Rukovaoci podacima mogu biti osiguravajuća društva i SINEDIS, u zavisnosti od prirode obrade podataka.",
+        "Dostavljanje ličnih podataka je dobrovoljno, ali neophodno za pripremu ponude i zaključenje ugovora o osiguranju.",
+        "Podaci se obrađuju u skladu sa GDPR-om i zakonodavstvom Republike Poljske.",
+        "Sistemski dnevnici i IP adrese mogu se koristiti u tehničke i statističke svrhe.",
+        "Servis koristi HTTPS i druge bezbednosne mere radi zaštite prenetih podataka.",
+        "Telefonski razgovori sa Contact Center službom mogu biti snimani.",
+        "Detaljna politika kolačića dostupna je na internet stranici društva SINEDIS.",
+      ],
+    },
+
+    {
+      title: "§ 7. Postupak rešavanja pritužbi",
+      paragraphs: [
+        "Korisnik ima pravo da podnese pritužbu u pisanom, usmenom ili elektronskom obliku.",
+        "Pritužbe se mogu podneti putem obrasca na sajtu ili slanjem na e-mail adresu: reklamacje@sinedis.pl.",
+        "Pritužba treba da sadrži identifikacione podatke korisnika, opis situacije i zahtev podnosioca.",
+        "SINEDIS razmatra pritužbu u roku od 30 dana, a u složenijim slučajevima najkasnije u roku od 60 dana.",
+        "Odgovor se dostavlja prvenstveno u pisanom obliku.",
+        "Korisnik ima pravo da se obrati finansijskom ombudsmanu, arbitražnom sudu KNF-a ili nadležnom sudu opšte nadležnosti.",
+      ],
+    },
+
+    {
+      title: "§ 8. Stupanje na snagu i izmene Pravilnika",
+      paragraphs: [
+        "Ovaj Pravilnik stupio je na snagu 21. novembra 2023. godine.",
+        "SINEDIS ima pravo da izmeni Pravilnik u bilo kom trenutku.",
+        "Nova verzija Pravilnika objavljuje se na sajtu i može biti poslata korisnicima putem e-maila.",
+      ],
+    },
+
+    {
+      title: "§ 9. Završne odredbe",
+      paragraphs: [
+        "Na ovaj Pravilnik i usluge društva SINEDIS primenjuje se pravo Republike Poljske.",
+        "Sporovi se rešavaju pred sudovima opšte nadležnosti ili na druge načine predviđene zakonom.",
+        "Komunikacija sa korisnicima može se odvijati na poljskom, beloruskom ili ruskom jeziku.",
+        "Materijali dostupni putem servisa zaštićeni su propisima o autorskom pravu.",
+      ],
+    },
+
+    {
+      title: "Zvanični podaci",
+      paragraphs: [
+        "SINEDIS Spółka z ograniczoną odpowiedzialnością",
+        "ul. H. Dobrzańskiego Hubala 22D",
+        "01-473 Warszawa, Poljska",
+        "",
+        "KRS: 0000999636",
+        "NIP: 5242953841",
+        "REGON: 52350998300000",
+        "",
+        "E-mail: info@sinedis.pl",
+        "Telefon Contact Center: +48 573581333",
+        "",
+        "Sajtovi:",
+        "https://sinedis.pl",
+        "https://greencard.agency",
+      ],
+    },
+  ],
+
+};
+const sq: RulesDictionary = {
+
+  pageTitle: "RREGULLORE",
+
+  subtitle:
+    "për ofrimin e shërbimeve elektronike dhe lidhjen e kontratave të sigurimit në distancë përmes SINEDIS Sp. z o.o.",
+
+  updatedAt: "15.03.2024",
+
+  sections: [
+    {
+      title: "§ 1. Përkufizimet",
+      paragraphs: [
+        "SINEDIS — SINEDIS Spółka z ograniczoną odpowiedzialnością, ul. H. Dobrzańskiego Hubala 22D, 01-473 Warszawa, Poloni, KRS: 0000999636, NIP: 5242953841, REGON: 52350998300000, e-mail: info@sinedis.pl.",
+        "SINEDIS është një agjent sigurimesh që vepron në emër të disa shoqërive të sigurimeve mbi bazën e autorizimeve të dhëna.",
+        "Përdoruesi — person fizik ose juridik që përdor shërbimin SINEDIS ose Contact Center.",
+        "Shërbimi — platforma online e SINEDIS, e disponueshme përmes faqeve https://sinedis.pl dhe https://greencard.agency.",
+        "Contact Center — shërbimi telefonik i SINEDIS: +48 573581333.",
+        "Konsulenti — punonjës i SINEDIS që kryen veprime agjentore.",
+        "Shërbimet — shërbime elektronike, përfshirë përgatitjen për lidhjen e kontratës së sigurimit, lidhjen e kontratave në distancë dhe pagesën e primit të sigurimit.",
+        "Siguruesi — shoqëria e sigurimeve në emër të së cilës SINEDIS ushtron veprimtari agjentore.",
+        "I siguruari (Policëmbajtësi) — përdoruesi që lidh kontratën e sigurimit.",
+        "Polica — dokumenti që konfirmon lidhjen e kontratës së sigurimit.",
+        "OWU — kushtet e përgjithshme të sigurimit, të vëna në dispozicion të përdoruesit para lidhjes së kontratës.",
+        "Politika e privatësisë — rregullat për përpunimin e të dhënave personale dhe përdorimin e shërbimit.",
+      ],
+    },
+
+    {
+      title: "§ 2. Dispozita të përgjithshme",
+      paragraphs: [
+        "Kjo Rregullore përcakton rregullat për ofrimin e shërbimeve në rrugë elektronike dhe lidhjen e kontratave të sigurimit në distancë përmes SINEDIS.",
+        "Rregullorja publikohet pa pagesë dhe është e disponueshme për shkarkim, ruajtje dhe printim.",
+        "Përdoruesi është i detyruar të njihet me Rregulloren para fillimit të përdorimit të shërbimeve.",
+        "Përdorimi i shërbimit nënkupton pranimin nga përdoruesi të kushteve të kësaj Rregulloreje, përfshirë përpunimin e të dhënave personale.",
+        "Marrëdhëniet ndërmjet palëve rregullohen nga legjislacioni polak, përfshirë dispozitat mbi shërbimet në distancë, ndërmjetësimin në sigurime, mbrojtjen e të dhënave personale dhe të drejtat e konsumatorit.",
+        "SINEDIS vepron si agjent sigurimesh i regjistruar në regjistrin e KNF.",
+        "Regjistrimi i agjentit mund të verifikohet përmes regjistrit të KNF: https://rpu.knf.gov.pl.",
+        "Komisioni i SINEDIS është i përfshirë në primin e sigurimit dhe nuk krijon kosto shtesë për klientin.",
+      ],
+    },
+
+    {
+      title: "§ 3. Lidhja dhe përfundimi i kontratës për ofrimin e shërbimeve elektronike",
+      paragraphs: [
+        "Fillimi i përdorimit të shërbimit nënkupton lidhjen e një kontrate për ofrimin e shërbimeve elektronike pa nënshkrimin e një dokumenti të veçantë.",
+        "Për Contact Center, fillimi i ofrimit të shërbimit konsiderohet fillimi i bisedës me konsulentin.",
+        "Përdoruesi mund të ndërpresë përdorimin e shërbimeve në çdo kohë.",
+        "Kontrata për ofrimin e shërbimeve elektronike përfundon automatikisht pas largimit të përdoruesit nga shërbimi ose pas përfundimit të bisedës me konsulentin.",
+      ],
+    },
+
+    {
+      title: "§ 4. Rregullat e përgjithshme për ofrimin e shërbimeve",
+      paragraphs: [
+        "Shërbimi është i destinuar për marrjen e informacionit mbi produktet e sigurimit, llogaritjen e ofertave, lidhjen e kontratave të sigurimit dhe aksesin në dokumente.",
+        "Shërbimi online funksionon 24 orë në ditë, ndërsa Contact Center sipas orarit të përcaktuar.",
+        "Përdoruesi është i detyruar të japë të dhëna të sakta, të plota dhe të përditësuara.",
+        "Përdoruesi mban përgjegjësi për pasojat e dhënies së informacionit të rremë ose të paplotë.",
+        "SINEDIS ka të drejtë të verifikojë të dhënat e paraqitura.",
+        "Në funksionimin e shërbimit mund të ketë ndërprerje teknike të lidhura me mirëmbajtjen, përditësimet ose kopjet rezervë.",
+        "SINEDIS ka të drejtë të kufizojë përkohësisht aksesin në shërbim në rast të kërcënimeve ndaj sigurisë ose shkeljeve të kësaj Rregulloreje.",
+        "Ndalohet transmetimi përmes shërbimit i përmbajtjeve të paligjshme, të dëmshme ose fyese.",
+        "Përdorimi i shërbimit është pa pagesë, me përjashtim të detyrimit për të paguar primin e sigurimit sipas kontratave të lidhura.",
+      ],
+    },
+    {
+      title: "§ 5. Lidhja e kontratës së sigurimit dhe pagesa e primit të sigurimit",
+      paragraphs: [
+        "Përdoruesi zgjedh në mënyrë të pavarur produktin e sigurimit, nivelin e mbulimit dhe shumën e sigurimit.",
+        "Përpara lidhjes së kontratës, përdoruesi merr informacion mbi siguruesin, koston e sigurimit, kushtet e pagesës, afatet, të drejtën e tërheqjes dhe procedurën e paraqitjes së ankesave.",
+        "Kusht për lidhjen e kontratës është dhënia e saktë e të dhënave dhe pranimi i kushteve të sigurimit.",
+        "Përdoruesi është i detyruar të ketë bazë ligjore për transmetimin e të dhënave personale të palëve të treta.",
+        "Kontrata e sigurimit konsiderohet e lidhur pas zgjedhjes së opsionit të blerjes dhe pagesës së primit të sigurimit.",
+        "Pagesa mund të kryhet me kartë bankare ose me transfertë elektronike përmes TPAY.",
+        "Pas lidhjes së kontratës, përdoruesi merr policën elektronike.",
+        "Përdoruesi ka të drejtë të tërhiqet nga kontrata e sigurimit brenda 30 ditëve, përveç rasteve kur legjislacioni ose natyra e produktit të sigurimit parashikon ndryshe.",
+        "Për kontratat afatshkurtra të sigurimit, e drejta e tërheqjes mund të jetë e kufizuar.",
+      ],
+    },
+
+    {
+      title: "§ 6. Politika e privatësisë",
+      paragraphs: [
+        "SINEDIS i kushton vëmendje të veçantë mbrojtjes së të dhënave personale të përdoruesve.",
+        "Administratorë të të dhënave mund të jenë shoqëritë e sigurimeve dhe SINEDIS, në varësi të natyrës së përpunimit.",
+        "Dhënia e të dhënave personale është vullnetare, por e nevojshme për përgatitjen e ofertës dhe lidhjen e kontratës së sigurimit.",
+        "Të dhënat përpunohen në përputhje me GDPR dhe legjislacionin e Polonisë.",
+        "Regjistrat e sistemit dhe adresat IP mund të përdoren për qëllime teknike dhe statistikore.",
+        "Shërbimi përdor HTTPS dhe masa të tjera sigurie për mbrojtjen e të dhënave të transmetuara.",
+        "Bisedat telefonike me Contact Center mund të regjistrohen.",
+        "Politika e detajuar e cookie-ve është e disponueshme në faqen e internetit të SINEDIS.",
+      ],
+    },
+
+    {
+      title: "§ 7. Procedura e shqyrtimit të ankesave",
+      paragraphs: [
+        "Përdoruesi ka të drejtë të paraqesë ankesë me shkrim, verbalisht ose në formë elektronike.",
+        "Ankesat mund të dërgohen përmes formularit në faqe ose në adresën e e-mailit: reklamacje@sinedis.pl.",
+        "Ankesa duhet të përmbajë të dhënat identifikuese të përdoruesit, përshkrimin e situatës dhe kërkesën e tij.",
+        "SINEDIS e shqyrton ankesën brenda 30 ditëve, ndërsa në raste të ndërlikuara jo më vonë se 60 ditë.",
+        "Përgjigjja jepet kryesisht në formë të shkruar.",
+        "Përdoruesi ka të drejtë t'i drejtohet Ombudsmanit Financiar, Gjykatës së Arbitrazhit pranë KNF ose gjykatës së juridiksionit të përgjithshëm.",
+      ],
+    },
+
+    {
+      title: "§ 8. Hyrja në fuqi dhe ndryshimi i Rregullores",
+      paragraphs: [
+        "Kjo Rregullore ka hyrë në fuqi më 21 nëntor 2023.",
+        "SINEDIS ka të drejtë të ndryshojë Rregulloren në çdo kohë.",
+        "Versioni i ri i Rregullores publikohet në faqen e internetit dhe mund t'u dërgohet përdoruesve me e-mail.",
+      ],
+    },
+
+    {
+      title: "§ 9. Dispozita përfundimtare",
+      paragraphs: [
+        "Për këtë Rregullore dhe për shërbimet e SINEDIS zbatohet e drejta e Republikës së Polonisë.",
+        "Mosmarrëveshjet shqyrtohen nga gjykatat e juridiksionit të përgjithshëm ose përmes mënyrave të tjera të zgjidhjes së mosmarrëveshjeve të parashikuara nga ligji.",
+        "Komunikimi me përdoruesit mund të zhvillohet në gjuhën polake, bjelloruse ose ruse.",
+        "Materialet e shërbimit mbrohen nga legjislacioni për të drejtën e autorit.",
+      ],
+    },
+
+    {
+      title: "Të dhënat zyrtare",
+      paragraphs: [
+        "SINEDIS Spółka z ograniczoną odpowiedzialnością",
+        "ul. H. Dobrzańskiego Hubala 22D",
+        "01-473 Warszawa, Poloni",
+        "",
+        "KRS: 0000999636",
+        "NIP: 5242953841",
+        "REGON: 52350998300000",
+        "",
+        "E-mail: info@sinedis.pl",
+        "Telefoni i Contact Center: +48 573581333",
+        "",
+        "Faqet e internetit:",
+        "https://sinedis.pl",
+        "https://greencard.agency",
+      ],
+    },
+  ],
+
+};
+const mn: RulesDictionary = {
+
+  pageTitle: "ЖУРАМ",
+
+  subtitle:
+    "SINEDIS Sp. z o.o.-оор дамжуулан цахим үйлчилгээ үзүүлэх болон зайнаас даатгалын гэрээ байгуулах журам",
+
+  updatedAt: "15.03.2024",
+
+  sections: [
+    {
+      title: "§ 1. Тодорхойлолтууд",
+      paragraphs: [
+        "SINEDIS — SINEDIS Spółka z ograniczoną odpowiedzialnością, ul. H. Dobrzańskiego Hubala 22D, 01-473 Warszawa, Polska, KRS: 0000999636, NIP: 5242953841, REGON: 52350998300000, e-mail: info@sinedis.pl.",
+        "SINEDIS нь олгогдсон итгэмжлэлийн үндсэн дээр хэд хэдэн даатгалын компанийн нэрийн өмнөөс үйл ажиллагаа явуулдаг даатгалын төлөөлөгч юм.",
+        "Хэрэглэгч — SINEDIS үйлчилгээ эсвэл Contact Center-ийг ашиглаж буй хувь хүн эсвэл хуулийн этгээд.",
+        "Үйлчилгээ — https://sinedis.pl болон https://greencard.agency вэбсайтаар дамжуулан ашиглах боломжтой SINEDIS-ийн интернет платформ.",
+        "Contact Center — SINEDIS-ийн утасны үйлчилгээ: +48 573581333.",
+        "Зөвлөх — төлөөлөгчийн үйл ажиллагаа хэрэгжүүлдэг SINEDIS-ийн ажилтан.",
+        "Үйлчилгээ — даатгалын гэрээ байгуулах бэлтгэл, зайнаас гэрээ байгуулах болон даатгалын шимтгэл төлөх зэрэг цахим үйлчилгээнүүд.",
+        "Даатгагч — SINEDIS төлөөлөгчийн үйл ажиллагаа явуулж буй даатгалын компани.",
+        "Даатгуулагч — даатгалын гэрээ байгуулж буй хэрэглэгч.",
+        "Полис — даатгалын гэрээ байгуулсныг баталгаажуулах баримт бичиг.",
+        "OWU — даатгалын ерөнхий нөхцөл бөгөөд гэрээ байгуулахаас өмнө хэрэглэгчид танилцуулна.",
+        "Нууцлалын бодлого — хувийн мэдээлэл боловсруулах болон үйлчилгээг ашиглах журам.",
+      ],
+    },
+
+    {
+      title: "§ 2. Ерөнхий заалтууд",
+      paragraphs: [
+        "Энэхүү Журам нь SINEDIS-ээр дамжуулан цахим үйлчилгээ үзүүлэх болон зайнаас даатгалын гэрээ байгуулах журмыг тодорхойлно.",
+        "Журам нь үнэ төлбөргүй нийтлэгдэж, татаж авах, хадгалах болон хэвлэх боломжтой.",
+        "Хэрэглэгч үйлчилгээ ашиглахаасаа өмнө Журамтай танилцах үүрэгтэй.",
+        "Үйлчилгээг ашиглах нь хэрэглэгч энэхүү Журмын нөхцөл, түүний дотор хувийн мэдээлэл боловсруулахтай холбоотой нөхцөлийг зөвшөөрсөнд тооцогдоно.",
+        "Талуудын харилцаанд Польш Улсын хууль тогтоомж, түүний дотор зайнаас үйлчилгээ үзүүлэх, даатгалын зуучлал, хувийн мэдээлэл хамгаалах болон хэрэглэгчийн эрхийн тухай хууль тогтоомж үйлчилнэ.",
+        "SINEDIS нь KNF-ийн бүртгэлд бүртгэлтэй даатгалын төлөөлөгчөөр үйл ажиллагаа явуулдаг.",
+        "Төлөөлөгчийн бүртгэлийг KNF-ийн бүртгэлээс шалгах боломжтой: https://rpu.knf.gov.pl.",
+        "SINEDIS-ийн комиссын урамшуулал нь даатгалын шимтгэлд багтсан байдаг бөгөөд хэрэглэгчид нэмэлт зардал үүсгэдэггүй.",
+      ],
+    },
+
+    {
+      title: "§ 3. Цахим үйлчилгээ үзүүлэх гэрээ байгуулах болон дуусгавар болгох",
+      paragraphs: [
+        "Үйлчилгээг ашиглаж эхэлснээр тусдаа баримт бичигт гарын үсэг зурахгүйгээр цахим үйлчилгээ үзүүлэх гэрээ байгуулагдсан гэж үзнэ.",
+        "Contact Center-ийн хувьд үйлчилгээ үзүүлж эхлэх мөч нь зөвлөхтэй хийсэн яриа эхэлсэн үе байна.",
+        "Хэрэглэгч хүссэн үедээ үйлчилгээг ашиглахаа зогсоож болно.",
+        "Цахим үйлчилгээ үзүүлэх гэрээ нь хэрэглэгч үйлчилгээнээс гарсан эсвэл зөвлөхтэй хийсэн яриа дууссан үед автоматаар дуусгавар болно.",
+      ],
+    },
+
+    {
+      title: "§ 4. Үйлчилгээ үзүүлэх ерөнхий журам",
+      paragraphs: [
+        "Үйлчилгээ нь даатгалын бүтээгдэхүүний талаар мэдээлэл авах, санал тооцоолох, даатгалын гэрээ байгуулах болон баримт бичигт хандахад зориулагдсан.",
+        "Онлайн үйлчилгээ нь 24 цагийн турш ажиллах бөгөөд Contact Center нь тогтоосон цагийн хуваарийн дагуу ажиллана.",
+        "Хэрэглэгч үнэн зөв, бүрэн бөгөөд шинэчилсэн мэдээлэл өгөх үүрэгтэй.",
+        "Худал эсвэл бүрэн бус мэдээлэл өгсний үр дагаврыг хэрэглэгч өөрөө хариуцна.",
+        "SINEDIS нь өгсөн мэдээллийг шалгах эрхтэй.",
+        "Үйлчилгээний ажиллагаанд засвар үйлчилгээ, шинэчлэл эсвэл нөөц хуулбар хийхтэй холбоотой техникийн завсарлага гарч болно.",
+        "Аюулгүй байдалд заналхийлэл үүссэн эсвэл Журмыг зөрчсөн тохиолдолд SINEDIS нь үйлчилгээнд хандах эрхийг түр хугацаагаар хязгаарлах эрхтэй.",
+        "Үйлчилгээгээр дамжуулан хууль бус, хортой эсвэл доромжилсон агуулга дамжуулахыг хориглоно.",
+        "Үйлчилгээг ашиглах нь үнэ төлбөргүй бөгөөд зөвхөн байгуулсан даатгалын гэрээний дагуу даатгалын шимтгэл төлөх үүрэг хэвээр үлдэнэ.",
+      ],
+    },
+    {
+      title: "§ 5. Даатгалын гэрээ байгуулах болон даатгалын шимтгэл төлөх",
+      paragraphs: [
+        "Хэрэглэгч даатгалын бүтээгдэхүүн, хамгаалалтын хүрээ болон даатгалын дүнг өөрөө сонгоно.",
+        "Гэрээ байгуулахаас өмнө хэрэглэгч даатгагч, даатгалын үнэ, төлбөрийн нөхцөл, хугацаа, гэрээнээс татгалзах эрх болон гомдол гаргах журмын талаар мэдээлэл авна.",
+        "Гэрээ байгуулахын тулд мэдээллийг зөв оруулах болон даатгалын нөхцөлийг хүлээн зөвшөөрсөн байх шаардлагатай.",
+        "Хэрэглэгч гуравдагч этгээдийн мэдээллийг дамжуулах хууль ёсны үндэслэлтэй байх үүрэгтэй.",
+        "Даатгалын бүтээгдэхүүнийг худалдан авах сонголтыг хийж, даатгалын шимтгэлийг төлсний дараа даатгалын гэрээг байгуулсанд тооцно.",
+        "Төлбөрийг банкны карт эсвэл TPAY системээр дамжуулсан цахим шилжүүлгээр хийж болно.",
+        "Гэрээ байгуулагдсаны дараа хэрэглэгч цахим полис хүлээн авна.",
+        "Хууль тогтоомж эсвэл тухайн даатгалын бүтээгдэхүүний онцлогоор өөрөөр заагаагүй бол хэрэглэгч даатгалын гэрээнээс 30 хоногийн дотор татгалзах эрхтэй.",
+        "Богино хугацааны даатгалын гэрээний хувьд татгалзах эрх хязгаарлагдаж болно.",
+      ],
+    },
+
+    {
+      title: "§ 6. Нууцлалын бодлого",
+      paragraphs: [
+        "SINEDIS нь хэрэглэгчдийн хувийн мэдээллийг хамгаалахад онцгой анхаарал хандуулдаг.",
+        "Өгөгдөл боловсруулах шинж чанараас хамааран өгөгдлийн администратор нь даатгалын компани эсвэл SINEDIS байж болно.",
+        "Хувийн мэдээлэл өгөх нь сайн дурын үндсэн дээр хийгддэг боловч даатгалын санал бэлтгэх болон гэрээ байгуулахад шаардлагатай.",
+        "Өгөгдлийг GDPR болон Польш Улсын хууль тогтоомжийн дагуу боловсруулдаг.",
+        "Системийн бүртгэл болон IP хаягийг техникийн болон статистикийн зорилгоор ашиглаж болно.",
+        "Үйлчилгээ нь дамжуулж буй мэдээллийг хамгаалах зорилгоор HTTPS болон бусад аюулгүй байдлын арга хэмжээг ашигладаг.",
+        "Contact Center-тэй хийсэн утасны яриаг бичиж авч болно.",
+        "Cookie ашиглах дэлгэрэнгүй бодлого нь SINEDIS-ийн вэбсайтад байрладаг.",
+      ],
+    },
+
+    {
+      title: "§ 7. Гомдол шийдвэрлэх журам",
+      paragraphs: [
+        "Хэрэглэгч гомдлоо бичгээр, амаар эсвэл цахим хэлбэрээр гаргах эрхтэй.",
+        "Гомдлыг вэбсайт дээрх маягтаар эсвэл reklamacje@sinedis.pl цахим шуудангийн хаягаар илгээж болно.",
+        "Гомдолд хэрэглэгчийг таних мэдээлэл, нөхцөл байдлын тайлбар болон шаардлагыг тусгасан байх ёстой.",
+        "SINEDIS нь гомдлыг 30 хоногийн дотор, төвөгтэй тохиолдолд 60 хоногоос хэтрүүлэхгүйгээр шийдвэрлэнэ.",
+        "Хариуг ихэвчлэн бичгээр өгдөг.",
+        "Хэрэглэгч санхүүгийн омбудсмен, KNF-ийн арбитрын шүүх эсвэл ердийн шүүхэд хандах эрхтэй.",
+      ],
+    },
+
+    {
+      title: "§ 8. Журам хүчин төгөлдөр болох болон өөрчлөх",
+      paragraphs: [
+        "Энэхүү Журам 2023 оны 11 дүгээр сарын 21-ний өдөр хүчин төгөлдөр болсон.",
+        "SINEDIS нь Журамд хүссэн үедээ өөрчлөлт оруулах эрхтэй.",
+        "Журмын шинэчилсэн хувилбарыг вэбсайтад нийтлэх бөгөөд шаардлагатай тохиолдолд хэрэглэгчдэд цахим шуудангаар илгээж болно.",
+      ],
+    },
+
+    {
+      title: "§ 9. Эцсийн заалтууд",
+      paragraphs: [
+        "Энэхүү Журам болон SINEDIS-ийн үйлчилгээнд Бүгд Найрамдах Польш Улсын хууль тогтоомж үйлчилнэ.",
+        "Маргааныг ердийн шүүхээр эсвэл хуульд заасан бусад журмаар шийдвэрлэнэ.",
+        "Хэрэглэгчтэй харилцах ажиллагааг польш, беларусь эсвэл орос хэлээр явуулж болно.",
+        "Үйлчилгээний материалууд нь зохиогчийн эрхийн тухай хууль тогтоомжоор хамгаалагдсан.",
+      ],
+    },
+
+    {
+      title: "Албан ёсны мэдээлэл",
+      paragraphs: [
+        "SINEDIS Spółka z ograniczoną odpowiedzialnością",
+        "ul. H. Dobrzańskiego Hubala 22D",
+        "01-473 Warszawa, Polska",
+        "",
+        "KRS: 0000999636",
+        "NIP: 5242953841",
+        "REGON: 52350998300000",
+        "",
+        "E-mail: info@sinedis.pl",
+        "Contact Center утас: +48 573581333",
+        "",
+        "Вэбсайтууд:",
+        "https://sinedis.pl",
+        "https://greencard.agency",
+      ],
+    },
+  ],
+
 };
 
 const dictionaries: Record<Lang, RulesDictionary> = {
@@ -1506,6 +2989,16 @@ const dictionaries: Record<Lang, RulesDictionary> = {
   tr,
   fa,
   hy,
+  ckb,
+  kmr,
+  ar,
+  uk,
+  az,
+  he,
+  ro,
+  sr,
+  sq,
+  mn,
 };
 
 export function getRulesDictionary(lang: Lang): RulesDictionary {

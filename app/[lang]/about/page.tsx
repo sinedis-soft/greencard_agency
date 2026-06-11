@@ -13,14 +13,33 @@ import AboutPage from "@/app/components/AboutPage";
 const breadcrumbTitleByLang: Record<Lang, string> = {
   ru: "О нас",
   pl: "O nas",
-  en: "About",
+  en: "About Us",
   be: "Пра нас",
-  uz: "Biz haqimizda",
-  ka: "ჩვენ შესახებ",
+  uk: "Про нас",
+
+  ro: "Despre noi",
+  sr: "О нама",
+  sq: "Rreth nesh",
+
   kk: "Біз туралы",
+  uz: "Biz haqimizda",
+  az: "Haqqımızda",
+
   tr: "Hakkımızda",
-  fa: "درباره ما",
+
   hy: "Մեր մասին",
+  ka: "ჩვენ შესახებ",
+
+  fa: "درباره ما",
+
+  ckb: "دەربارەی ئێمە",
+  kmr: "Derbarê Me",
+
+  ar: "من نحن",
+
+  he: "אודותינו",
+
+  mn: "Бидний тухай",
 };
 
 function normalizeLang(value: string): Lang {

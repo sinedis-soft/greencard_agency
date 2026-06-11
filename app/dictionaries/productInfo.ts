@@ -1496,6 +1496,1492 @@ const hy: CookiesPolicyDictionary = {
 };
 
 
+const ckb: CookiesPolicyDictionary = {
+  pageTitle: "زانیاری دەربارەی بەرهەم",
+
+  sections: [
+    {
+      title: "OC Graniczne (بیمەی سنووری بەرپرسیاری شارستانی)",
+    },
+
+    {
+      title: "1. زانیاری گشتی",
+      paragraphs: [
+        "OC Graniczne بیمەیەکی زۆرەکی بەرپرسیاری شارستانیی خاوەنانی ئامرازە گواستنەوەکانە، کە بۆ ئامرازە گواستنەوە تۆمارکراوەکان لە دەرەوەی ناوچەی ئابووری ئەورووپا و بۆ چوونە ناو ئەو وڵاتانەی سیستەمی بیمەی زۆرەکی بەرپرسیاری شارستانی قبووڵ دەکەن، دانراوە.",
+        "ئەم بیمەیە بەکاردەهێندرێت کاتێک بڕوانامەی نێودەوڵەتی بیمەی Green Cardی کارا نییە، کە لە ناوچەی ئابووری ئەورووپا قبووڵ بکرێت.",
+        "ئەم بەرهەمە بەپێی یاسای پۆڵەندا سەبارەت بە بیمەی زۆرەکی بەرپرسیاری شارستانیی خاوەنانی ئامرازە گواستنەوەکان دەردەکرێت.",
+      ],
+    },
+
+    {
+      title: "2. مەبەستی بیمە",
+      paragraphs: [
+        "مەبەستی OC Graniczne دابینکردنی پاراستنی زۆرەکی بەرپرسیاری شارستانیی خاوەن یان شۆفێری ئامرازی گواستنەوەیە.",
+        "",
+        "ئەم بیمەیە پێویستە:",
+        "",
+        "• کاتی چوونە ناو وڵاتانی ناوچەی ئابووری ئەورووپا؛",
+        "• کاتی بەشداری ئامرازی گواستنەوە لە هاتوچۆی ڕێگادا؛",
+        "• کاتێک Green Cardی کارا نییە.",
+        "",
+        "بەبێ گرێبەستی کارای بیمەی زۆرەکی، بەشداری ئامرازی گواستنەوە لە هاتوچۆی ڕێگادا قەدەغەیە.",
+      ],
+    },
+
+    {
+      title: "3. بیمەکە چی دەگرێتەوە",
+      paragraphs: [
+        "ئەم بیمەیە بەرپرسیاری شارستانیی خاوەن و/یان شۆفێری ئامرازی گواستنەوە دەگرێتەوە بۆ زیانی گەیەنراو بە کەسانی سێیەم لە پەیوەندی بە بەکارهێنانی ئامرازی گواستنەوە.",
+        "",
+        "ئەمانە دەگرێتەوە:",
+        "",
+        "• زیان بە ژیان و تەندروستی کەسانی سێیەم؛",
+        "• برینداریی جەستەیی؛",
+        "• زیانی ماڵی کەسانی سێیەم؛",
+        "• تێکچوون یان لەناوچوونی ئامرازە گواستنەوەکانی کەسانی سێیەم.",
+        "",
+        "بیمەکەر لە چوارچێوەی بڕە بیمەییەکاندا بەرپرسیارە کە لەلایەن یاساوە دیاری کراون.",
+      ],
+    },
+
+    {
+      title: "4. چی ناگرێتەوە",
+      paragraphs: [
+        "ئەم بیمەیە ئەمانە ناگرێتەوە:",
+        "",
+        "• زیان بە ئامرازی گواستنەوەی خودی بیمەگرتوو؛",
+        "• زیانە کەسییەکانی خاوەنی ئامرازی گواستنەوە؛",
+        "• زیان بە ژینگە؛",
+        "• ئەو حاڵەتانەی کە لە یاسا و مەرجەکانی بیمەدا دیاری نەکراون.",
+        "",
+        "هەروەها ئەو زیانانە ناگرێتەوە کە شۆفێری هەمان ئامرازی گواستنەوە بە خاوەنی ئامرازەکەی گەیاندووە.",
+      ],
+    },
+
+    {
+      title: "5. سنووردارییەکانی پاراستنی بیمە",
+      paragraphs: [
+        "بیمەکەر مافی هەیە داوای گەڕاندنەوەی قەرەبووی دراو بکات لە شۆفێری ئامرازی گواستنەوە، لەو حاڵەتانەدا کە یاسا دیاری کردووە.",
+        "",
+        "بە تایبەتی، ئەگەر شۆفێر:",
+        "",
+        "• بە ئەنقەست زیانی گەیاندبێت؛",
+        "• ئامرازی گواستنەوەی لە دۆخی سەرخۆشی یان ژێر کاریگەری ماددەی هۆشبەر لێخوڕیبێت؛",
+        "• مۆڵەتی پێویستی لێخوڕینی نەبووبێت؛",
+        "• بە ڕێگەی تاوانکاری دەستی بەسەر ئامرازی گواستنەوەدا گرتبێت؛",
+        "• لە شوێنی ڕووداو ڕایکردبێت.",
+      ],
+    },
+
+    {
+      title: "6. ناوچەی کارایی",
+      paragraphs: [
+        "OC Graniczne کارا دەبێت:",
+        "",
+        "• لە وڵاتانی ناوچەی ئابووری ئەورووپا؛",
+        "• لە سویسرا؛",
+        "• لەو وڵاتانەدا کە بیورۆ نیشتمانییەکانیان ئەندامی سیستەمی ناسینەوەی هاوبەشی بیمەی زۆرەکی بەرپرسیاری شارستانین.",
+        "",
+        "ناوچەی وردی کارایی بەپێی مەرجەکانی بیمەنامە دیاری دەکرێت.",
+      ],
+    },
+
+    {
+      title: "7. ماوەی کارایی",
+      paragraphs: [
+        "بیمەکە بۆ ئەو ماوەیە دەبەسترێت کە لە بیمەنامەکەدا دیاری کراوە.",
+        "",
+        "گرێبەست دەتوانرێت ببەسترێت:",
+        "",
+        "• بۆ 12 مانگ؛",
+        "• یان بۆ ماوەیەکی کورتتر، لەو حاڵەتانەدا کە یاسا ڕێگەی پێدەدات.",
+        "",
+        "پاراستنی بیمەیی لەو بەروارەوە دەست پێدەکات کە لە بیمەنامەکەدا دیاری کراوە.",
+      ],
+    },
+
+    {
+      title: "8. ئەرکەکانی بیمەگرتوو",
+      paragraphs: [
+        "بیمەگرتوو پێویستە:",
+        "",
+        "• کاتی وەرگرتنی بیمە زانیاریی ڕاست پێشکەش بکات؛",
+        "• پارەی بیمە لە ماوەی دیاریکراودا بدات؛",
+        "• لە ڕوودانی حاڵەتی بیمەیی، بیمەکەر ئاگادار بکاتەوە؛",
+        "• هەنگاو بنێت بۆ کەمکردنەوەی ئەنجامەکانی ڕووداو؛",
+        "• ئەگەر پێویست بوو، پۆلیس ئاگادار بکاتەوە؛",
+        "• زانیاری بیمەنامەکە بدات بە بەشدارانی تری ڕووداوی هاتوچۆ.",
+      ],
+    },
+
+    {
+      title: "9. کۆتاییهاتنی گرێبەست",
+      paragraphs: [
+        "گرێبەستی بیمە کۆتایی دێت:",
+        "",
+        "• بە تەواوبوونی ماوەی کارایی؛",
+        "• کاتێک ئامرازی گواستنەوە لە تۆمارکردن دەردەهێندرێت؛",
+        "• کاتێک ئامرازی گواستنەوە لە دەرەوەی وڵات تۆمار دەکرێت؛",
+        "• لە حاڵەتەکانی هەڵوەشاندنەوەی گرێبەست کە یاسا دیاری کردووە.",
+      ],
+    },
+
+    {
+      title: "10. زانیاری گرنگ",
+      paragraphs: [
+        "• OC Graniczne جۆرێکی زۆرەکی بیمەیە کاتێک Green Cardی کارا نییە.",
+        "• بیمەنامەکە تەنها بەرپرسیاری شارستانی بەرامبەر کەسانی سێیەم دەگرێتەوە.",
+        "• بیمەنامەکە زیانی ئامرازی گواستنەوەی خودی خاوەنەکە ناگرێتەوە.",
+        "• مەرجەکانی بیمە و شێوازی چارەسەری زیان لەلایەن بیمەکەر و یاسای کارا دیاری دەکرێن.",
+      ],
+    },
+
+    {
+      title: "11. ڕێکخستنی یاسایی",
+      paragraphs: [
+        "ئەم بەرهەمە بەپێی یاسای کۆماری پۆڵەندا سەبارەت بە بیمەی زۆرەکی بەرپرسیاری شارستانیی خاوەنانی ئامرازە گواستنەوەکان، هەروەها ڕێساکانی سیستەمی نێودەوڵەتی ناسینەوەی بیمەی بەرپرسیاری شارستانی ڕێکدەخرێت.",
+      ],
+    },
+  ],
+};
+const kmr: CookiesPolicyDictionary = {
+  pageTitle: "Agahdariya Berhemê",
+
+  sections: [
+    {
+      title: "OC Graniczne (Sîgorteya Sînorî ya Berpirsiyariya Sivîl)",
+    },
+
+    {
+      title: "1. Agahdariya Giştî",
+      paragraphs: [
+        "OC Graniczne sîgorteyek mecbûrî ya berpirsiyariya sivîl a xwediyên wesayîtan e ku ji bo wesayîtên ku li derveyî Herêma Aborî ya Ewropayê hatine qeydkirin û dikevin nav welatên ku pergala sîgorteya mecbûrî ya berpirsiyariya sivîl nas dikin, hatiye taybetkirin.",
+        "Ev sîgorte di rewşên ku sertîfîkaya navneteweyî ya Green Card a derbasdar û li Herêma Aborî ya Ewropayê pejirandî tune be de tê bikaranîn.",
+        "Berhem li gorî qanûnên Polonyayê yên derbarê sîgorteya mecbûrî ya berpirsiyariya sivîl a xwediyên wesayîtan de tê derxistin.",
+      ],
+    },
+
+    {
+      title: "2. Armanca Sîgorteyê",
+      paragraphs: [
+        "Armanca OC Graniczne ew e ku parastina mecbûrî ya berpirsiyariya sivîl a xwedî an ajokarê wesayîtê peyda bike.",
+        "",
+        "Sîgorte di van rewşan de pêwîst e:",
+        "",
+        "• dema ketina wesayîtê li herêma welatên EEA;",
+        "• dema beşdarbûna wesayîtê di trafîka rêyan de;",
+        "• dema ku Green Card a derbasdar tune be.",
+        "",
+        "Bêyî peymana sîgorteya mecbûrî ya derbasdar, beşdarbûna wesayîtê di trafîka rêyan de qedexe ye.",
+      ],
+    },
+
+    {
+      title: "3. Sîgorte Çi Diparêze",
+      paragraphs: [
+        "Sîgorte berpirsiyariya sivîl a xwedî û/an ajokarê wesayîtê ji bo ziyana ku bi karanîna wesayîtê ji kesên sêyem re çêdibe diparêze.",
+        "",
+        "Parastin evan dihewîne:",
+        "",
+        "• ziyana jiyan û tenduristiya kesên sêyem;",
+        "• birînên laşî;",
+        "• ziyana milkê kesên sêyem;",
+        "• zirarkirin an hilweşandina wesayîtên kesên sêyem.",
+        "",
+        "Şirketa sîgorteyê di nav sînorên meblağên sîgorteyê yên ku qanûn diyar dike de berpirsiyar e.",
+      ],
+    },
+
+    {
+      title: "4. Çi Nayê Parastin",
+      paragraphs: [
+        "Sîgorte van tiştan naparêze:",
+        "",
+        "• ziyana wesayîta xwe ya sîgortegir;",
+        "• zirarên kesane yên xwediyê wesayîtê;",
+        "• ziyana jîngehê;",
+        "• rewşên ku di qanûn û şertên sîgorteyê de nehatine pêşbînîkirin.",
+        "",
+        "Her weha zirarên ku ajokar ji xwediyê heman wesayîtê re çêdike jî nayên parastin.",
+      ],
+    },
+
+    {
+      title: "5. Sînorkirinên Parastina Sîgorteyê",
+      paragraphs: [
+        "Şirketa sîgorteyê maf heye ku di rewşên ku qanûn diyar dike de vegerandina pereya ku daye ji ajokarê wesayîtê bixwaze.",
+        "",
+        "Bi taybetî heke ajokar:",
+        "",
+        "• bi qestî zirar çêkiribe;",
+        "• di rewşa serxweşbûnê an di bin bandora narkotîkan de ajotibe;",
+        "• mafê ajotinê yê pêwîst tune bibe;",
+        "• wesayît bi rêyek neqanûnî bi dest xistibe;",
+        "• ji cihê bûyerê reviyabe.",
+      ],
+    },
+
+    {
+      title: "6. Herêma Derbasdariyê",
+      paragraphs: [
+        "OC Graniczne derbasdar e:",
+        "",
+        "• li welatên Herêma Aborî ya Ewropayê;",
+        "• li Swîsreyê;",
+        "• li dewletên ku buroyên wan ên neteweyî beşdarê pergala pejirandina hevdu ya sîgorteya mecbûrî ya berpirsiyariya sivîl in.",
+        "",
+        "Herêma rastîn a derbasdariyê di şertên polîçeya sîgorteyê de tê diyarkirin.",
+      ],
+    },
+
+    {
+      title: "7. Dema Derbasdariyê",
+      paragraphs: [
+        "Sîgorte ji bo dema ku di polîçeya sîgorteyê de hatiye destnîşankirin tê girêdan.",
+        "",
+        "Peyman dikare were girêdan:",
+        "",
+        "• ji bo 12 mehan;",
+        "• an jî ji bo demeke kurtir di rewşên ku qanûn diyar dike de.",
+        "",
+        "Parastina sîgorteyê ji dîroka ku di polîçeyê de hatiye nivîsandin dest pê dike.",
+      ],
+    },
+
+    {
+      title: "8. Erkên Sîgortegir",
+      paragraphs: [
+        "Sîgortegir mecbûr e:",
+        "",
+        "• dema derxistina sîgorteyê agahdariyên rast pêşkêş bike;",
+        "• primê sîgorteyê di demê de bide;",
+        "• bûyera sîgorteyê ji şirketa sîgorteyê re ragihîne;",
+        "• ji bo kêmkirina encamên bûyerê tedbîr bigire;",
+        "• heke pêwîst be polîsan agahdar bike;",
+        "• ji beşdarên din ên qezayê re agahdariyên polîçeya sîgorteyê pêşkêş bike.",
+      ],
+    },
+
+    {
+      title: "9. Dawîbûna Peymanê",
+      paragraphs: [
+        "Peymana sîgorteyê di van rewşan de diqede:",
+        "",
+        "• bi dawîbûna demê;",
+        "• bi rakirina wesayîtê ji qeydkirinê;",
+        "• bi qeydkirina wesayîtê li derveyî welatê qeydkirinê;",
+        "• di rewşên ku qanûn ji bo betalkirina peymanê destnîşan dike de.",
+      ],
+    },
+
+    {
+      title: "10. Agahdariyên Girîng",
+      paragraphs: [
+        "• OC Graniczne cureyek sîgorteya mecbûrî ye dema ku Green Card a derbasdar tune be.",
+        "• Polîçe tenê berpirsiyariya sivîl li hember kesên sêyem diparêze.",
+        "• Polîçe ziyana wesayîta xwe naparêze.",
+        "• Şertên sîgorteyê û rêbaza çareserkirina ziraran ji aliyê şirketa sîgorteyê û qanûnên derbasdar ve têne diyarkirin.",
+      ],
+    },
+
+    {
+      title: "11. Rêveberiya Qanûnî",
+      paragraphs: [
+        "Ev berhem bi qanûnên Komara Polonyayê yên derbarê sîgorteya mecbûrî ya berpirsiyariya sivîl a xwediyên wesayîtan û her weha bi rêzikên pergala pejirandina navneteweyî ya sîgorteya berpirsiyariya sivîl tê rêvebirin.",
+      ],
+    },
+  ],
+};
+const ar: CookiesPolicyDictionary = {
+  pageTitle: "معلومات المنتج",
+
+  sections: [
+    {
+      title: "تأمين الحدود للمسؤولية المدنية (OC Graniczne)",
+    },
+
+    {
+      title: "1. معلومات عامة",
+      paragraphs: [
+        "OC Graniczne هو تأمين إلزامي للمسؤولية المدنية لمالكي المركبات، مخصص للمركبات المسجلة خارج المنطقة الاقتصادية الأوروبية والتي تدخل أراضي الدول التي تعترف بنظام التأمين الإلزامي للمسؤولية المدنية.",
+        "يُطبق هذا التأمين في حال عدم وجود شهادة تأمين دولية سارية من نوع البطاقة الخضراء (Green Card) معترف بها داخل المنطقة الاقتصادية الأوروبية.",
+        "يتم إصدار هذا المنتج وفقًا للتشريعات البولندية الخاصة بالتأمين الإلزامي للمسؤولية المدنية لمالكي المركبات.",
+      ],
+    },
+
+    {
+      title: "2. الغرض من التأمين",
+      paragraphs: [
+        "يهدف تأمين OC Graniczne إلى ضمان وجود تغطية إلزامية للمسؤولية المدنية لمالك المركبة أو سائقها.",
+        "",
+        "يكون التأمين مطلوبًا:",
+        "",
+        "• عند دخول المركبة إلى أراضي دول المنطقة الاقتصادية الأوروبية؛",
+        "• عند مشاركة المركبة في حركة المرور على الطرق؛",
+        "• عند عدم وجود بطاقة خضراء (Green Card) سارية المفعول.",
+        "",
+        "لا يجوز للمركبة المشاركة في حركة المرور دون وجود عقد تأمين إلزامي ساري المفعول.",
+      ],
+    },
+
+    {
+      title: "3. ما الذي يغطيه التأمين؟",
+      paragraphs: [
+        "يغطي التأمين المسؤولية المدنية لمالك المركبة و/أو سائقها عن الأضرار التي تلحق بالغير نتيجة استخدام المركبة.",
+        "",
+        "تشمل التغطية:",
+        "",
+        "• الأضرار التي تصيب حياة أو صحة الغير؛",
+        "• الإصابات الجسدية؛",
+        "• الأضرار التي تلحق بممتلكات الغير؛",
+        "• تلف أو تدمير مركبات الغير.",
+        "",
+        "تكون مسؤولية شركة التأمين ضمن حدود مبالغ التأمين المحددة بموجب القانون.",
+      ],
+    },
+
+    {
+      title: "4. ما الذي لا يغطيه التأمين؟",
+      paragraphs: [
+        "لا يغطي التأمين:",
+        "",
+        "• الأضرار التي تلحق بالمركبة الخاصة بالمؤمَّن له؛",
+        "• الخسائر الشخصية لمالك المركبة؛",
+        "• الأضرار البيئية؛",
+        "• الحالات غير المنصوص عليها في القانون أو شروط التأمين.",
+        "",
+        "كما لا يغطي الأضرار التي يتسبب بها سائق المركبة لمالك المركبة نفسها.",
+      ],
+    },
+
+    {
+      title: "5. قيود التغطية التأمينية",
+      paragraphs: [
+        "يحق لشركة التأمين المطالبة باسترداد التعويض المدفوع من سائق المركبة في الحالات التي ينص عليها القانون.",
+        "",
+        "وعلى وجه الخصوص إذا كان السائق:",
+        "",
+        "• قد تسبب بالضرر عمدًا؛",
+        "• يقود المركبة تحت تأثير الكحول أو المخدرات؛",
+        "• لا يحمل رخصة قيادة صالحة أو مناسبة؛",
+        "• حصل على المركبة بوسائل غير قانونية؛",
+        "• فرّ من مكان الحادث.",
+      ],
+    },
+
+    {
+      title: "6. نطاق التغطية الجغرافي",
+      paragraphs: [
+        "يسري تأمين OC Graniczne في:",
+        "",
+        "• دول المنطقة الاقتصادية الأوروبية؛",
+        "• سويسرا؛",
+        "• الدول التي تشارك مكاتب التأمين الوطنية فيها في نظام الاعتراف المتبادل بالتأمين الإلزامي للمسؤولية المدنية.",
+        "",
+        "ويتم تحديد النطاق الجغرافي الدقيق في وثيقة التأمين.",
+      ],
+    },
+
+    {
+      title: "7. مدة التأمين",
+      paragraphs: [
+        "يُبرم عقد التأمين للمدة المحددة في وثيقة التأمين.",
+        "",
+        "يمكن إبرام العقد:",
+        "",
+        "• لمدة 12 شهرًا؛",
+        "• أو لمدة أقصر في الحالات التي يسمح بها القانون.",
+        "",
+        "تبدأ التغطية التأمينية اعتبارًا من التاريخ المحدد في الوثيقة.",
+      ],
+    },
+
+    {
+      title: "8. التزامات المؤمن له",
+      paragraphs: [
+        "يلتزم المؤمن له بما يلي:",
+        "",
+        "• تقديم معلومات صحيحة عند طلب التأمين؛",
+        "• سداد قسط التأمين في المواعيد المحددة؛",
+        "• إخطار شركة التأمين بوقوع الحادث المؤمن عليه؛",
+        "• اتخاذ الإجراءات اللازمة للحد من آثار الحادث؛",
+        "• إبلاغ الشرطة عند الضرورة؛",
+        "• تزويد الأطراف الأخرى في الحادث بمعلومات وثيقة التأمين.",
+      ],
+    },
+
+    {
+      title: "9. انتهاء عقد التأمين",
+      paragraphs: [
+        "ينتهي عقد التأمين في الحالات التالية:",
+        "",
+        "• انتهاء مدة التأمين؛",
+        "• شطب تسجيل المركبة؛",
+        "• إعادة تسجيل المركبة خارج الدولة؛",
+        "• الحالات الأخرى المنصوص عليها قانونًا لإنهاء العقد.",
+      ],
+    },
+
+    {
+      title: "10. معلومات مهمة",
+      paragraphs: [
+        "• يعتبر OC Graniczne تأمينًا إلزاميًا عند عدم وجود بطاقة خضراء (Green Card) سارية.",
+        "• تغطي الوثيقة المسؤولية المدنية تجاه الغير فقط.",
+        "• لا تغطي الوثيقة الأضرار التي تلحق بالمركبة الخاصة بالمؤمَّن له.",
+        "• تحدد شروط التأمين وآلية تسوية المطالبات وفقًا لشروط شركة التأمين والتشريعات النافذة.",
+      ],
+    },
+
+    {
+      title: "11. التنظيم القانوني",
+      paragraphs: [
+        "يخضع هذا المنتج للتشريعات البولندية الخاصة بالتأمين الإلزامي للمسؤولية المدنية لمالكي المركبات، وكذلك لقواعد نظام الاعتراف الدولي بتأمين المسؤولية المدنية.",
+      ],
+    },
+  ],
+};
+
+const uk: CookiesPolicyDictionary = {
+  pageTitle: "Інформація про страховий продукт",
+
+  sections: [
+    {
+      title: "OC Graniczne (прикордонне страхування цивільної відповідальності)",
+    },
+
+    {
+      title: "1. Загальна інформація",
+      paragraphs: [
+        "OC Graniczne — це обов’язкове страхування цивільної відповідальності власників транспортних засобів, призначене для транспортних засобів, зареєстрованих за межами Європейського економічного простору та таких, що в’їжджають на територію країн, які визнають систему обов’язкового страхування цивільної відповідальності.",
+        "Страхування застосовується у випадках відсутності чинного міжнародного страхового сертифіката Green Card, який визнається на території Європейського економічного простору.",
+        "Продукт оформлюється відповідно до законодавства Польщі щодо обов’язкового страхування цивільної відповідальності власників транспортних засобів.",
+      ],
+    },
+
+    {
+      title: "2. Призначення страхування",
+      paragraphs: [
+        "Мета OC Graniczne — забезпечити наявність обов’язкового страхового покриття цивільної відповідальності власника або водія транспортного засобу.",
+        "",
+        "Страхування необхідне:",
+        "",
+        "• під час в’їзду транспортного засобу на територію країн ЄЕП;",
+        "• під час участі транспортного засобу в дорожньому русі;",
+        "• за відсутності чинного Green Card.",
+        "",
+        "Без чинного договору обов’язкового страхування участь транспортного засобу в дорожньому русі заборонена.",
+      ],
+    },
+
+    {
+      title: "3. Що покриває страхування",
+      paragraphs: [
+        "Страхування покриває цивільну відповідальність власника та/або водія транспортного засобу за шкоду, заподіяну третім особам у зв’язку з використанням транспортного засобу.",
+        "",
+        "Покриваються:",
+        "",
+        "• шкода життю та здоров’ю третіх осіб;",
+        "• тілесні ушкодження;",
+        "• майнова шкода, завдана третім особам;",
+        "• пошкодження або знищення транспортних засобів третіх осіб.",
+        "",
+        "Страховик несе відповідальність у межах страхових сум, установлених законодавством.",
+      ],
+    },
+
+    {
+      title: "4. Що не покривається",
+      paragraphs: [
+        "Страхування не покриває:",
+        "",
+        "• шкоду власному транспортному засобу страхувальника;",
+        "• особисті збитки власника транспортного засобу;",
+        "• шкоду навколишньому середовищу;",
+        "• випадки, не передбачені законодавством та умовами страхування.",
+        "",
+        "Також не покриваються збитки, завдані власнику транспортного засобу самим водієм цього транспортного засобу.",
+      ],
+    },
+
+    {
+      title: "5. Обмеження страхового покриття",
+      paragraphs: [
+        "Страховик має право вимагати повернення виплаченого відшкодування від водія транспортного засобу у випадках, передбачених законодавством.",
+        "",
+        "Зокрема, якщо водій:",
+        "",
+        "• заподіяв шкоду умисно;",
+        "• керував транспортним засобом у стані алкогольного або наркотичного сп’яніння;",
+        "• не мав необхідного права на керування транспортним засобом;",
+        "• заволодів транспортним засобом злочинним шляхом;",
+        "• залишив місце події.",
+      ],
+    },
+
+    {
+      title: "6. Територія дії",
+      paragraphs: [
+        "OC Graniczne діє:",
+        "",
+        "• у країнах Європейського економічного простору;",
+        "• у Швейцарії;",
+        "• у державах, національні бюро яких є учасниками системи взаємного визнання обов’язкового страхування цивільної відповідальності.",
+        "",
+        "Точна територія дії визначається умовами страхового поліса.",
+      ],
+    },
+
+    {
+      title: "7. Строк дії",
+      paragraphs: [
+        "Страхування укладається на строк, зазначений у страховому полісі.",
+        "",
+        "Договір може бути укладений:",
+        "",
+        "• на 12 місяців;",
+        "• або на коротший строк у випадках, передбачених законодавством.",
+        "",
+        "Страховий захист починає діяти з дати, зазначеної в полісі.",
+      ],
+    },
+
+    {
+      title: "8. Обов’язки страхувальника",
+      paragraphs: [
+        "Страхувальник зобов’язаний:",
+        "",
+        "• надати достовірну інформацію під час оформлення страхування;",
+        "• сплатити страхову премію у встановлені строки;",
+        "• повідомити страховика про настання страхового випадку;",
+        "• вжити заходів для зменшення наслідків події;",
+        "• за потреби повідомити поліцію;",
+        "• надати іншим учасникам ДТП інформацію про страховий поліс.",
+      ],
+    },
+
+    {
+      title: "9. Припинення дії договору",
+      paragraphs: [
+        "Договір страхування припиняється:",
+        "",
+        "• після закінчення строку дії;",
+        "• у разі зняття транспортного засобу з реєстрації;",
+        "• у разі реєстрації транспортного засобу за межами країни;",
+        "• у випадках розірвання договору, передбачених законодавством.",
+      ],
+    },
+
+    {
+      title: "10. Важлива інформація",
+      paragraphs: [
+        "• OC Graniczne є обов’язковим видом страхування за відсутності чинного Green Card.",
+        "• Поліс покриває виключно цивільну відповідальність перед третіми особами.",
+        "• Поліс не покриває шкоду власному транспортному засобу.",
+        "• Умови страхування та порядок врегулювання збитків визначаються страховиком і чинним законодавством.",
+      ],
+    },
+
+    {
+      title: "11. Правове регулювання",
+      paragraphs: [
+        "Продукт регулюється законодавством Республіки Польща щодо обов’язкового страхування цивільної відповідальності власників транспортних засобів, а також правилами системи міжнародного визнання страхування цивільної відповідальності.",
+      ],
+    },
+  ],
+};
+const he: CookiesPolicyDictionary = {
+  pageTitle: "מידע על המוצר",
+
+  sections: [
+    {
+      title: "OC Graniczne (ביטוח גבול לאחריות כלפי צד שלישי)",
+    },
+
+    {
+      title: "1. מידע כללי",
+      paragraphs: [
+        "OC Graniczne הוא ביטוח חובה לאחריות כלפי צד שלישי לבעלי כלי רכב, המיועד לכלי רכב הרשומים מחוץ לאזור הכלכלי האירופי ונכנסים למדינות המכירות במערכת ביטוח החובה לאחריות כלפי צד שלישי.",
+        "הביטוח נדרש כאשר אין ברשות הנהג או בעל הרכב תעודת ביטוח בינלאומית Green Card תקפה המוכרת בתחומי האזור הכלכלי האירופי.",
+        "המוצר מונפק בהתאם לחקיקה הפולנית בנושא ביטוח חובה לאחריות כלפי צד שלישי לבעלי כלי רכב.",
+      ],
+    },
+
+    {
+      title: "2. מטרת הביטוח",
+      paragraphs: [
+        "מטרת OC Graniczne היא להבטיח קיומו של כיסוי ביטוחי חובה לאחריות כלפי צד שלישי עבור בעל הרכב או הנהג.",
+        "",
+        "הביטוח נדרש:",
+        "",
+        "• בעת כניסת כלי רכב לשטח מדינות האזור הכלכלי האירופי;",
+        "• בעת השתתפות כלי הרכב בתנועה בכביש;",
+        "• כאשר אין Green Card תקף.",
+        "",
+        "ללא ביטוח חובה תקף אסור לכלי הרכב להשתתף בתנועה בכביש.",
+      ],
+    },
+
+    {
+      title: "3. מה מכסה הביטוח",
+      paragraphs: [
+        "הביטוח מכסה את אחריותו האזרחית של בעל הרכב ו/או הנהג בגין נזקים שנגרמו לצדדים שלישיים עקב השימוש ברכב.",
+        "",
+        "הכיסוי כולל:",
+        "",
+        "• פגיעה בחיים ובבריאות של צדדים שלישיים;",
+        "• נזקי גוף;",
+        "• נזק לרכוש של צדדים שלישיים;",
+        "• פגיעה או השמדה של כלי רכב השייכים לצדדים שלישיים.",
+        "",
+        "המבטח אחראי עד לגבולות סכומי הביטוח שנקבעו בחוק.",
+      ],
+    },
+
+    {
+      title: "4. מה אינו מכוסה",
+      paragraphs: [
+        "הביטוח אינו מכסה:",
+        "",
+        "• נזק לרכבו של בעל הפוליסה;",
+        "• הפסדים אישיים של בעל הרכב;",
+        "• נזק לסביבה;",
+        "• מקרים שאינם מכוסים על פי החוק ותנאי הביטוח.",
+        "",
+        "כמו כן, הביטוח אינו מכסה נזקים שנגרמו לבעל הרכב על ידי הנהג של אותו רכב.",
+      ],
+    },
+
+    {
+      title: "5. מגבלות הכיסוי הביטוחי",
+      paragraphs: [
+        "למבטח הזכות לדרוש מהנהג החזר של תגמולי הביטוח ששולמו במקרים הקבועים בחוק.",
+        "",
+        "בפרט כאשר הנהג:",
+        "",
+        "• גרם לנזק במכוון;",
+        "• נהג תחת השפעת אלכוהול או סמים;",
+        "• לא החזיק ברישיון נהיגה תקף ומתאים;",
+        "• השיג את הרכב בדרך פלילית;",
+        "• נמלט ממקום האירוע.",
+      ],
+    },
+
+    {
+      title: "6. תחום הכיסוי הגאוגרפי",
+      paragraphs: [
+        "OC Graniczne תקף:",
+        "",
+        "• במדינות האזור הכלכלי האירופי;",
+        "• בשווייץ;",
+        "• במדינות שהלשכות הלאומיות שלהן חברות במערכת ההכרה ההדדית של ביטוח חובה לאחריות כלפי צד שלישי.",
+        "",
+        "תחום הכיסוי המדויק נקבע בהתאם לתנאי הפוליסה.",
+      ],
+    },
+
+    {
+      title: "7. תקופת הביטוח",
+      paragraphs: [
+        "הביטוח נערך לתקופה המצוינת בפוליסה.",
+        "",
+        "החוזה יכול להיערך:",
+        "",
+        "• ל-12 חודשים;",
+        "• או לתקופה קצרה יותר במקרים המותרים על פי החוק.",
+        "",
+        "הכיסוי הביטוחי נכנס לתוקף במועד המצוין בפוליסה.",
+      ],
+    },
+
+    {
+      title: "8. חובות בעל הפוליסה",
+      paragraphs: [
+        "על בעל הפוליסה:",
+        "",
+        "• למסור מידע נכון ומלא בעת עריכת הביטוח;",
+        "• לשלם את פרמיית הביטוח במועד;",
+        "• להודיע למבטח על קרות מקרה ביטוח;",
+        "• לנקוט באמצעים לצמצום הנזק;",
+        "• להודיע למשטרה במקרה הצורך;",
+        "• למסור לצדדים האחרים המעורבים בתאונה את פרטי הביטוח.",
+      ],
+    },
+
+    {
+      title: "9. סיום תוקף החוזה",
+      paragraphs: [
+        "חוזה הביטוח מסתיים:",
+        "",
+        "• בתום תקופת הביטוח;",
+        "• בעת ביטול רישום הרכב;",
+        "• בעת רישום הרכב במדינה אחרת;",
+        "• במקרים נוספים הקבועים בחוק לסיום החוזה.",
+      ],
+    },
+
+    {
+      title: "10. מידע חשוב",
+      paragraphs: [
+        "• OC Graniczne הוא ביטוח חובה כאשר אין Green Card תקף.",
+        "• הפוליסה מכסה אך ורק אחריות כלפי צדדים שלישיים.",
+        "• הפוליסה אינה מכסה נזק לרכב המבוטח עצמו.",
+        "• תנאי הביטוח והליך יישוב התביעות נקבעים על ידי המבטח ובהתאם לדין החל.",
+      ],
+    },
+
+    {
+      title: "11. הסדרה משפטית",
+      paragraphs: [
+        "המוצר כפוף לחקיקה של רפובליקת פולין בנושא ביטוח חובה לאחריות כלפי צד שלישי לבעלי כלי רכב וכן לכללי מערכת ההכרה הבינלאומית בביטוח אחריות כלפי צד שלישי.",
+      ],
+    },
+  ],
+};
+
+const az: CookiesPolicyDictionary = {
+  pageTitle: "Məhsul haqqında məlumat",
+
+  sections: [
+    {
+      title: "OC Graniczne (sərhəd mülki məsuliyyət sığortası)",
+    },
+
+    {
+      title: "1. Ümumi məlumat",
+      paragraphs: [
+        "OC Graniczne Avropa İqtisadi Məkanından kənarda qeydiyyatdan keçmiş və mülki məsuliyyətin icbari sığortası sistemini tanıyan ölkələrin ərazisinə daxil olan nəqliyyat vasitələri üçün nəzərdə tutulmuş icbari mülki məsuliyyət sığortasıdır.",
+        "Bu sığorta Avropa İqtisadi Məkanında tanınan qüvvədə olan Green Card beynəlxalq sığorta sertifikatı olmadıqda tətbiq edilir.",
+        "Məhsul Polşanın nəqliyyat vasitəsi sahiblərinin icbari mülki məsuliyyət sığortası haqqında qanunvericiliyinə uyğun olaraq rəsmiləşdirilir.",
+      ],
+    },
+
+    {
+      title: "2. Sığortanın məqsədi",
+      paragraphs: [
+        "OC Graniczne-nin məqsədi nəqliyyat vasitəsinin sahibi və ya sürücüsünün icbari mülki məsuliyyət sığortası təminatına malik olmasını təmin etməkdir.",
+        "",
+        "Sığorta aşağıdakı hallarda tələb olunur:",
+        "",
+        "• nəqliyyat vasitəsi AİM ölkələrinin ərazisinə daxil olduqda;",
+        "• nəqliyyat vasitəsi yol hərəkətində iştirak etdikdə;",
+        "• qüvvədə olan Green Card olmadıqda.",
+        "",
+        "Qüvvədə olan icbari sığorta müqaviləsi olmadan nəqliyyat vasitəsinin yol hərəkətində iştirakı qadağandır.",
+      ],
+    },
+
+    {
+      title: "3. Sığorta nəyi əhatə edir",
+      paragraphs: [
+        "Sığorta nəqliyyat vasitəsinin istifadəsi nəticəsində üçüncü şəxslərə vurulmuş zərərə görə nəqliyyat vasitəsi sahibinin və/və ya sürücüsünün mülki məsuliyyətini əhatə edir.",
+        "",
+        "Aşağıdakılar əhatə olunur:",
+        "",
+        "• üçüncü şəxslərin həyatına və sağlamlığına vurulmuş zərər;",
+        "• bədən xəsarətləri;",
+        "• üçüncü şəxslərin əmlakına vurulmuş zərər;",
+        "• üçüncü şəxslərə məxsus nəqliyyat vasitələrinin zədələnməsi və ya məhv edilməsi.",
+        "",
+        "Sığortaçı qanunvericiliklə müəyyən edilmiş sığorta məbləğləri həddində məsuliyyət daşıyır.",
+      ],
+    },
+
+    {
+      title: "4. Nə əhatə olunmur",
+      paragraphs: [
+        "Sığorta aşağıdakı halları əhatə etmir:",
+        "",
+        "• sığortalının öz nəqliyyat vasitəsinə vurulmuş zərəri;",
+        "• nəqliyyat vasitəsi sahibinin şəxsi zərərlərini;",
+        "• ətraf mühitə vurulmuş zərəri;",
+        "• qanunvericilikdə və sığorta şərtlərində nəzərdə tutulmayan halları.",
+        "",
+        "Həmçinin həmin nəqliyyat vasitəsinin sürücüsü tərəfindən nəqliyyat vasitəsinin sahibinə vurulan zərərlər də əhatə olunmur.",
+      ],
+    },
+
+    {
+      title: "5. Sığorta təminatının məhdudiyyətləri",
+      paragraphs: [
+        "Sığortaçı qanunvericilikdə nəzərdə tutulmuş hallarda ödənilmiş sığorta kompensasiyasının sürücüdən geri qaytarılmasını tələb etmək hüququna malikdir.",
+        "",
+        "Xüsusilə sürücü:",
+        "",
+        "• zərəri qəsdən vurduqda;",
+        "• nəqliyyat vasitəsini alkoqol və ya narkotik təsiri altında idarə etdikdə;",
+        "• tələb olunan sürücülük hüququna malik olmadıqda;",
+        "• nəqliyyat vasitəsini qanunsuz yolla əldə etdikdə;",
+        "• hadisə yerindən qaçdıqda.",
+      ],
+    },
+
+    {
+      title: "6. Qüvvədə olduğu ərazi",
+      paragraphs: [
+        "OC Graniczne aşağıdakı ərazilərdə qüvvədədir:",
+        "",
+        "• Avropa İqtisadi Məkanı ölkələrində;",
+        "• İsveçrədə;",
+        "• milli büroları icbari mülki məsuliyyət sığortasının qarşılıqlı tanınması sisteminə qoşulmuş dövlətlərdə.",
+        "",
+        "Qüvvədə olduğu dəqiq ərazi sığorta polisinin şərtləri ilə müəyyən edilir.",
+      ],
+    },
+
+    {
+      title: "7. Qüvvədə olma müddəti",
+      paragraphs: [
+        "Sığorta müqaviləsi sığorta polisində göstərilən müddətə bağlanır.",
+        "",
+        "Müqavilə aşağıdakı müddətlərə bağlana bilər:",
+        "",
+        "• 12 ay müddətinə;",
+        "• və ya qanunvericilikdə nəzərdə tutulmuş hallarda daha qısa müddətə.",
+        "",
+        "Sığorta təminatı polisdə göstərilən tarixdən qüvvəyə minir.",
+      ],
+    },
+
+    {
+      title: "8. Sığortalının öhdəlikləri",
+      paragraphs: [
+        "Sığortalı aşağıdakı öhdəliklərə malikdir:",
+        "",
+        "• sığorta rəsmiləşdirilərkən düzgün məlumat təqdim etmək;",
+        "• sığorta haqqını müəyyən olunmuş müddətlərdə ödəmək;",
+        "• sığorta hadisəsi baş verdikdə sığortaçını məlumatlandırmaq;",
+        "• hadisənin nəticələrinin azaldılması üçün tədbirlər görmək;",
+        "• zəruri hallarda polisi məlumatlandırmaq;",
+        "• yol-nəqliyyat hadisəsinin digər iştirakçılarına sığorta polisi barədə məlumat vermək.",
+      ],
+    },
+
+    {
+      title: "9. Müqavilənin qüvvədən düşməsi",
+      paragraphs: [
+        "Sığorta müqaviləsi aşağıdakı hallarda başa çatır:",
+        "",
+        "• müddətin sona çatması ilə;",
+        "• nəqliyyat vasitəsinin qeydiyyatdan çıxarılması ilə;",
+        "• nəqliyyat vasitəsinin başqa ölkədə qeydiyyata alınması ilə;",
+        "• qanunvericilikdə nəzərdə tutulmuş digər ləğvetmə hallarında.",
+      ],
+    },
+
+    {
+      title: "10. Vacib məlumat",
+      paragraphs: [
+        "• OC Graniczne qüvvədə olan Green Card olmadıqda icbari sığorta növüdür.",
+        "• Polis yalnız üçüncü şəxslər qarşısında mülki məsuliyyəti əhatə edir.",
+        "• Polis sığortalının öz nəqliyyat vasitəsinə vurulan zərəri əhatə etmir.",
+        "• Sığorta şərtləri və zərərlərin tənzimlənməsi qaydası sığortaçı və qüvvədə olan qanunvericilik tərəfindən müəyyən edilir.",
+      ],
+    },
+
+    {
+      title: "11. Hüquqi tənzimləmə",
+      paragraphs: [
+        "Məhsul Polşa Respublikasının nəqliyyat vasitəsi sahiblərinin icbari mülki məsuliyyət sığortası haqqında qanunvericiliyi, eləcə də mülki məsuliyyət sığortasının beynəlxalq tanınması sisteminin qaydaları ilə tənzimlənir.",
+      ],
+    },
+  ],
+};
+
+const ro: CookiesPolicyDictionary = {
+  pageTitle: "Informații despre produs",
+
+  sections: [
+    {
+      title: "OC Graniczne (asigurare de frontieră de răspundere civilă auto)",
+    },
+
+    {
+      title: "1. Informații generale",
+      paragraphs: [
+        "OC Graniczne este o asigurare obligatorie de răspundere civilă auto destinată vehiculelor înmatriculate în afara Spațiului Economic European care intră pe teritoriul statelor ce recunosc sistemul de asigurare obligatorie de răspundere civilă auto.",
+        "Asigurarea se aplică în situațiile în care nu există un certificat internațional de asigurare Carte Verde (Green Card) valabil și recunoscut pe teritoriul Spațiului Economic European.",
+        "Produsul este emis în conformitate cu legislația poloneză privind asigurarea obligatorie de răspundere civilă a proprietarilor de vehicule.",
+      ],
+    },
+
+    {
+      title: "2. Scopul asigurării",
+      paragraphs: [
+        "Scopul OC Graniczne este de a asigura existența acoperirii obligatorii de răspundere civilă pentru proprietarul sau conducătorul vehiculului.",
+        "",
+        "Asigurarea este necesară:",
+        "",
+        "• la intrarea vehiculului pe teritoriul statelor din SEE;",
+        "• pentru participarea vehiculului la traficul rutier;",
+        "• în lipsa unei polițe Carte Verde (Green Card) valabile.",
+        "",
+        "Participarea vehiculului la traficul rutier este interzisă fără un contract valabil de asigurare obligatorie.",
+      ],
+    },
+
+    {
+      title: "3. Ce acoperă asigurarea",
+      paragraphs: [
+        "Asigurarea acoperă răspunderea civilă a proprietarului și/sau a conducătorului vehiculului pentru prejudiciile cauzate terților ca urmare a utilizării vehiculului.",
+        "",
+        "Sunt acoperite:",
+        "",
+        "• prejudiciile aduse vieții și sănătății terților;",
+        "• vătămările corporale;",
+        "• daunele materiale cauzate terților;",
+        "• deteriorarea sau distrugerea vehiculelor aparținând terților.",
+        "",
+        "Asigurătorul răspunde în limitele sumelor asigurate prevăzute de legislația aplicabilă.",
+      ],
+    },
+
+    {
+      title: "4. Ce nu este acoperit",
+      paragraphs: [
+        "Asigurarea nu acoperă:",
+        "",
+        "• daunele produse propriului vehicul al asiguratului;",
+        "• pierderile personale ale proprietarului vehiculului;",
+        "• daunele aduse mediului înconjurător;",
+        "• cazurile care nu sunt prevăzute de legislație și de condițiile de asigurare.",
+        "",
+        "De asemenea, nu sunt acoperite prejudiciile cauzate proprietarului vehiculului de către conducătorul aceluiași vehicul.",
+      ],
+    },
+
+    {
+      title: "5. Limitări ale acoperirii de asigurare",
+      paragraphs: [
+        "Asigurătorul are dreptul să solicite recuperarea despăgubirilor plătite de la conducătorul vehiculului în cazurile prevăzute de lege.",
+        "",
+        "În special dacă acesta:",
+        "",
+        "• a provocat prejudiciul în mod intenționat;",
+        "• conducea vehiculul sub influența alcoolului sau a substanțelor narcotice;",
+        "• nu deținea permisul de conducere necesar;",
+        "• a obținut vehiculul prin mijloace ilegale;",
+        "• a părăsit locul accidentului.",
+      ],
+    },
+
+    {
+      title: "6. Teritoriul de valabilitate",
+      paragraphs: [
+        "OC Graniczne este valabilă:",
+        "",
+        "• în statele Spațiului Economic European;",
+        "• în Elveția;",
+        "• în statele ale căror birouri naționale sunt membre ale sistemului de recunoaștere reciprocă a asigurării obligatorii de răspundere civilă.",
+        "",
+        "Teritoriul exact de valabilitate este stabilit prin condițiile poliței de asigurare.",
+      ],
+    },
+
+    {
+      title: "7. Perioada de valabilitate",
+      paragraphs: [
+        "Asigurarea este încheiată pentru perioada indicată în polița de asigurare.",
+        "",
+        "Contractul poate fi încheiat:",
+        "",
+        "• pentru 12 luni;",
+        "• sau pentru o perioadă mai scurtă în cazurile prevăzute de lege.",
+        "",
+        "Protecția de asigurare începe la data indicată în poliță.",
+      ],
+    },
+
+    {
+      title: "8. Obligațiile asiguratului",
+      paragraphs: [
+        "Asiguratul este obligat:",
+        "",
+        "• să furnizeze informații corecte la încheierea asigurării;",
+        "• să achite prima de asigurare în termenele stabilite;",
+        "• să informeze asigurătorul despre producerea evenimentului asigurat;",
+        "• să ia măsuri pentru limitarea consecințelor incidentului;",
+        "• să anunțe poliția, dacă este necesar;",
+        "• să furnizeze celorlalte părți implicate în accident informațiile privind polița de asigurare.",
+      ],
+    },
+
+    {
+      title: "9. Încetarea contractului",
+      paragraphs: [
+        "Contractul de asigurare încetează:",
+        "",
+        "• la expirarea perioadei de valabilitate;",
+        "• la radierea vehiculului din evidențe;",
+        "• la înmatricularea vehiculului într-o altă țară;",
+        "• în cazurile de reziliere prevăzute de legislație.",
+      ],
+    },
+
+    {
+      title: "10. Informații importante",
+      paragraphs: [
+        "• OC Graniczne este o asigurare obligatorie în lipsa unei polițe Carte Verde (Green Card) valabile.",
+        "• Polița acoperă exclusiv răspunderea civilă față de terți.",
+        "• Polița nu acoperă daunele produse propriului vehicul.",
+        "• Condițiile de asigurare și procedura de soluționare a daunelor sunt stabilite de asigurător și de legislația în vigoare.",
+      ],
+    },
+
+    {
+      title: "11. Reglementare juridică",
+      paragraphs: [
+        "Produsul este reglementat de legislația Republicii Polonia privind asigurarea obligatorie de răspundere civilă a proprietarilor de vehicule, precum și de regulile sistemului internațional de recunoaștere a asigurării de răspundere civilă auto.",
+      ],
+    },
+  ],
+};
+
+const sr: CookiesPolicyDictionary = {
+  pageTitle: "Informacije o proizvodu",
+
+  sections: [
+    {
+      title: "OC Graniczne (granično osiguranje od građanske odgovornosti)",
+    },
+
+    {
+      title: "1. Opšte informacije",
+      paragraphs: [
+        "OC Graniczne je obavezno osiguranje od građanske odgovornosti vlasnika motornih vozila namenjeno vozilima registrovanim van Evropskog ekonomskog prostora koja ulaze na teritoriju država koje priznaju sistem obaveznog osiguranja od građanske odgovornosti.",
+        "Osiguranje se primenjuje u slučajevima kada ne postoji važeći međunarodni sertifikat osiguranja Zelena karta (Green Card), priznat na teritoriji Evropskog ekonomskog prostora.",
+        "Proizvod se ugovara u skladu sa poljskim zakonodavstvom o obaveznom osiguranju od građanske odgovornosti vlasnika motornih vozila.",
+      ],
+    },
+
+    {
+      title: "2. Svrha osiguranja",
+      paragraphs: [
+        "Svrha OC Graniczne osiguranja jeste obezbeđivanje obaveznog osiguravajućeg pokrića građanske odgovornosti vlasnika ili vozača motornog vozila.",
+        "",
+        "Osiguranje je potrebno:",
+        "",
+        "• prilikom ulaska vozila na teritoriju država Evropskog ekonomskog prostora;",
+        "• tokom učestvovanja vozila u saobraćaju;",
+        "• kada ne postoji važeća Zelena karta (Green Card).",
+        "",
+        "Bez važećeg ugovora o obaveznom osiguranju vozilo ne sme učestvovati u saobraćaju.",
+      ],
+    },
+
+    {
+      title: "3. Šta osiguranje pokriva",
+      paragraphs: [
+        "Osiguranje pokriva građansku odgovornost vlasnika i/ili vozača vozila za štetu nanetu trećim licima usled korišćenja vozila.",
+        "",
+        "Pokriveni su:",
+        "",
+        "• šteta po život i zdravlje trećih lica;",
+        "• telesne povrede;",
+        "• materijalna šteta naneta trećim licima;",
+        "• oštećenje ili uništenje vozila trećih lica.",
+        "",
+        "Osiguravač odgovara do visine osiguranih suma propisanih zakonom.",
+      ],
+    },
+
+    {
+      title: "4. Šta nije pokriveno",
+      paragraphs: [
+        "Osiguranje ne pokriva:",
+        "",
+        "• štetu na sopstvenom vozilu ugovarača osiguranja;",
+        "• lične gubitke vlasnika vozila;",
+        "• štetu nanetu životnoj sredini;",
+        "• slučajeve koji nisu predviđeni zakonom i uslovima osiguranja.",
+        "",
+        "Takođe nisu pokriveni gubici koje vozač predmetnog vozila prouzrokuje vlasniku tog vozila.",
+      ],
+    },
+
+    {
+      title: "5. Ograničenja osiguravajućeg pokrića",
+      paragraphs: [
+        "Osiguravač ima pravo da zahteva povraćaj isplaćene naknade štete od vozača vozila u slučajevima predviđenim zakonom.",
+        "",
+        "Posebno ako je vozač:",
+        "",
+        "• namerno prouzrokovao štetu;",
+        "• upravljao vozilom pod uticajem alkohola ili opojnih sredstava;",
+        "• upravljao bez potrebne vozačke dozvole;",
+        "• protivpravno pribavio vozilo;",
+        "• napustio mesto saobraćajne nezgode.",
+      ],
+    },
+
+    {
+      title: "6. Teritorijalno važenje",
+      paragraphs: [
+        "OC Graniczne važi:",
+        "",
+        "• u državama Evropskog ekonomskog prostora;",
+        "• u Švajcarskoj;",
+        "• u državama čiji su nacionalni biroi članovi sistema uzajamnog priznavanja obaveznog osiguranja od građanske odgovornosti.",
+        "",
+        "Tačna teritorija važenja određena je uslovima osiguravajuće polise.",
+      ],
+    },
+
+    {
+      title: "7. Period važenja",
+      paragraphs: [
+        "Osiguranje se zaključuje na period naveden u polisi osiguranja.",
+        "",
+        "Ugovor može biti zaključen:",
+        "",
+        "• na 12 meseci;",
+        "• ili na kraći period u slučajevima predviđenim zakonom.",
+        "",
+        "Osiguravajuće pokriće počinje da važi od datuma navedenog u polisi.",
+      ],
+    },
+
+    {
+      title: "8. Obaveze ugovarača osiguranja",
+      paragraphs: [
+        "Ugovarač osiguranja je dužan da:",
+        "",
+        "• pruži tačne i potpune informacije prilikom ugovaranja osiguranja;",
+        "• plati premiju osiguranja u propisanom roku;",
+        "• obavesti osiguravača o nastanku osiguranog slučaja;",
+        "• preduzme mere za smanjenje posledica događaja;",
+        "• po potrebi obavesti policiju;",
+        "• drugim učesnicima saobraćajne nezgode pruži informacije o polisi osiguranja.",
+      ],
+    },
+
+    {
+      title: "9. Prestanak ugovora",
+      paragraphs: [
+        "Ugovor o osiguranju prestaje:",
+        "",
+        "• istekom perioda važenja;",
+        "• odjavom vozila iz registra;",
+        "• registracijom vozila van države;",
+        "• u slučajevima raskida ugovora predviđenim zakonom.",
+      ],
+    },
+
+    {
+      title: "10. Važne informacije",
+      paragraphs: [
+        "• OC Graniczne predstavlja obaveznu vrstu osiguranja kada ne postoji važeća Zelena karta (Green Card).",
+        "• Polisa pokriva isključivo građansku odgovornost prema trećim licima.",
+        "• Polisa ne pokriva štetu na sopstvenom vozilu.",
+        "• Uslove osiguranja i postupak rešavanja šteta određuju osiguravač i važeći propisi.",
+      ],
+    },
+
+    {
+      title: "11. Pravno uređenje",
+      paragraphs: [
+        "Proizvod je regulisan zakonodavstvom Republike Poljske o obaveznom osiguranju od građanske odgovornosti vlasnika motornih vozila, kao i pravilima sistema međunarodnog priznavanja osiguranja od građanske odgovornosti.",
+      ],
+    },
+  ],
+};
+const sq: CookiesPolicyDictionary = {
+  pageTitle: "Informacion mbi produktin",
+
+  sections: [
+    {
+      title: "OC Graniczne (sigurimi kufitar i përgjegjësisë civile)",
+    },
+
+    {
+      title: "1. Informacion i përgjithshëm",
+      paragraphs: [
+        "OC Graniczne është sigurim i detyrueshëm i përgjegjësisë civile për pronarët e mjeteve motorike, i destinuar për automjetet e regjistruara jashtë Zonës Ekonomike Evropiane që hyjnë në territorin e vendeve që njohin sistemin e sigurimit të detyrueshëm të përgjegjësisë civile.",
+        "Sigurimi zbatohet në rastet kur mungon një certifikatë ndërkombëtare e vlefshme sigurimi Green Card, e njohur në territorin e Zonës Ekonomike Evropiane.",
+        "Produkti lëshohet në përputhje me legjislacionin polak për sigurimin e detyrueshëm të përgjegjësisë civile të pronarëve të mjeteve motorike.",
+      ],
+    },
+
+    {
+      title: "2. Qëllimi i sigurimit",
+      paragraphs: [
+        "Qëllimi i OC Graniczne është të sigurojë ekzistencën e mbulimit të detyrueshëm të përgjegjësisë civile për pronarin ose drejtuesin e automjetit.",
+        "",
+        "Sigurimi kërkohet:",
+        "",
+        "• gjatë hyrjes së automjetit në territorin e vendeve të ZEE-së;",
+        "• gjatë pjesëmarrjes së automjetit në trafikun rrugor;",
+        "• në mungesë të një Green Card të vlefshme.",
+        "",
+        "Pa një kontratë të vlefshme sigurimi të detyrueshëm, pjesëmarrja e automjetit në trafikun rrugor është e ndaluar.",
+      ],
+    },
+
+    {
+      title: "3. Çfarë mbulon sigurimi",
+      paragraphs: [
+        "Sigurimi mbulon përgjegjësinë civile të pronarit dhe/ose drejtuesit të automjetit për dëmet e shkaktuara palëve të treta në lidhje me përdorimin e automjetit.",
+        "",
+        "Mbulohen:",
+        "",
+        "• dëmtimet e jetës dhe shëndetit të palëve të treta;",
+        "• lëndimet trupore;",
+        "• dëmet materiale ndaj palëve të treta;",
+        "• dëmtimi ose shkatërrimi i automjeteve të palëve të treta.",
+        "",
+        "Siguruesi mban përgjegjësi brenda kufijve të shumave të sigurimit të përcaktuara nga legjislacioni.",
+      ],
+    },
+
+    {
+      title: "4. Çfarë nuk mbulohet",
+      paragraphs: [
+        "Sigurimi nuk mbulon:",
+        "",
+        "• dëmet ndaj automjetit të vetë të siguruarit;",
+        "• humbjet personale të pronarit të automjetit;",
+        "• dëmet ndaj mjedisit;",
+        "• rastet që nuk parashikohen nga legjislacioni dhe kushtet e sigurimit.",
+        "",
+        "Gjithashtu nuk mbulohen dëmet e shkaktuara pronarit të automjetit nga vetë drejtuesi i atij automjeti.",
+      ],
+    },
+
+    {
+      title: "5. Kufizimet e mbulimit të sigurimit",
+      paragraphs: [
+        "Siguruesi ka të drejtë të kërkojë kthimin e dëmshpërblimit të paguar nga drejtuesi i automjetit në rastet e parashikuara nga legjislacioni.",
+        "",
+        "Në veçanti, nëse drejtuesi:",
+        "",
+        "• ka shkaktuar dëmin me dashje;",
+        "• ka drejtuar automjetin nën ndikimin e alkoolit ose substancave narkotike;",
+        "• nuk ka pasur lejen e nevojshme të drejtimit;",
+        "• e ka përvetësuar automjetin në mënyrë të paligjshme;",
+        "• është larguar nga vendi i ngjarjes.",
+      ],
+    },
+
+    {
+      title: "6. Territori i vlefshmërisë",
+      paragraphs: [
+        "OC Graniczne është i vlefshëm:",
+        "",
+        "• në vendet e Zonës Ekonomike Evropiane;",
+        "• në Zvicër;",
+        "• në shtetet, zyrat kombëtare të të cilave janë pjesë e sistemit të njohjes reciproke të sigurimit të detyrueshëm të përgjegjësisë civile.",
+        "",
+        "Territori i saktë i vlefshmërisë përcaktohet nga kushtet e policës së sigurimit.",
+      ],
+    },
+
+    {
+      title: "7. Periudha e vlefshmërisë",
+      paragraphs: [
+        "Sigurimi lidhet për periudhën e përcaktuar në policën e sigurimit.",
+        "",
+        "Kontrata mund të lidhet:",
+        "",
+        "• për 12 muaj;",
+        "• ose për një periudhë më të shkurtër në rastet e parashikuara nga legjislacioni.",
+        "",
+        "Mbrojtja e sigurimit fillon nga data e shënuar në policë.",
+      ],
+    },
+
+    {
+      title: "8. Detyrimet e të siguruarit",
+      paragraphs: [
+        "I siguruari është i detyruar:",
+        "",
+        "• të japë informacion të saktë gjatë aplikimit për sigurim;",
+        "• të paguajë primin e sigurimit brenda afateve të përcaktuara;",
+        "• të njoftojë siguruesin për ndodhjen e një ngjarjeje të siguruar;",
+        "• të marrë masa për të kufizuar pasojat e ngjarjes;",
+        "• të njoftojë policinë kur kjo është e nevojshme;",
+        "• t'u japë pjesëmarrësve të tjerë në aksident informacion mbi policën e sigurimit.",
+      ],
+    },
+
+    {
+      title: "9. Përfundimi i kontratës",
+      paragraphs: [
+        "Kontrata e sigurimit përfundon:",
+        "",
+        "• me skadimin e afatit të vlefshmërisë;",
+        "• me çregjistrimin e automjetit;",
+        "• me regjistrimin e automjetit në një vend tjetër;",
+        "• në rastet e zgjidhjes së kontratës të parashikuara nga legjislacioni.",
+      ],
+    },
+
+    {
+      title: "10. Informacion i rëndësishëm",
+      paragraphs: [
+        "• OC Graniczne është një lloj sigurimi i detyrueshëm në mungesë të një Green Card të vlefshme.",
+        "• Polica mbulon ekskluzivisht përgjegjësinë civile ndaj palëve të treta.",
+        "• Polica nuk mbulon dëmet ndaj automjetit të vetë të siguruarit.",
+        "• Kushtet e sigurimit dhe procedura e trajtimit të dëmeve përcaktohen nga siguruesi dhe legjislacioni në fuqi.",
+      ],
+    },
+
+    {
+      title: "11. Rregullimi ligjor",
+      paragraphs: [
+        "Produkti rregullohet nga legjislacioni i Republikës së Polonisë për sigurimin e detyrueshëm të përgjegjësisë civile të pronarëve të mjeteve motorike, si dhe nga rregullat e sistemit ndërkombëtar të njohjes së sigurimit të përgjegjësisë civile.",
+      ],
+    },
+  ],
+};
+const mn: CookiesPolicyDictionary = {
+  pageTitle: "Бүтээгдэхүүний мэдээлэл",
+
+  sections: [
+    {
+      title: "OC Graniczne (иргэний хариуцлагын хилийн даатгал)",
+    },
+
+    {
+      title: "1. Ерөнхий мэдээлэл",
+      paragraphs: [
+        "OC Graniczne нь Европын эдийн засгийн бүсээс гадуур бүртгэлтэй бөгөөд иргэний хариуцлагын заавал даатгалын тогтолцоог хүлээн зөвшөөрдөг улс орнуудын нутаг дэвсгэрт нэвтэрч буй тээврийн хэрэгсэлд зориулсан иргэний хариуцлагын заавал даатгал юм.",
+        "Энэхүү даатгал нь Европын эдийн засгийн бүсийн нутаг дэвсгэрт хүчинтэй олон улсын Green Card даатгалын гэрчилгээ байхгүй тохиолдолд хэрэглэгдэнэ.",
+        "Бүтээгдэхүүнийг Польш Улсын тээврийн хэрэгслийн эзэмшигчдийн иргэний хариуцлагын заавал даатгалын тухай хууль тогтоомжийн дагуу олгодог.",
+      ],
+    },
+
+    {
+      title: "2. Даатгалын зориулалт",
+      paragraphs: [
+        "OC Graniczne-ийн зорилго нь тээврийн хэрэгслийн эзэмшигч эсвэл жолоочийн иргэний хариуцлагын заавал даатгалын хамгаалалтыг хангах явдал юм.",
+        "",
+        "Даатгал шаардлагатай нөхцөлүүд:",
+        "",
+        "• тээврийн хэрэгсэл ЕЭЗ-ийн орнуудын нутаг дэвсгэрт нэвтрэх үед;",
+        "• тээврийн хэрэгсэл замын хөдөлгөөнд оролцох үед;",
+        "• хүчинтэй Green Card байхгүй үед.",
+        "",
+        "Хүчинтэй заавал даатгалын гэрээгүйгээр тээврийн хэрэгслийг замын хөдөлгөөнд оролцуулахыг хориглоно.",
+      ],
+    },
+
+    {
+      title: "3. Даатгал юуг хамардаг вэ",
+      paragraphs: [
+        "Даатгал нь тээврийн хэрэгслийг ашигласантай холбоотойгоор гуравдагч этгээдэд учруулсан хохирлын төлөө тээврийн хэрэгслийн эзэмшигч болон/эсвэл жолоочийн иргэний хариуцлагыг хамарна.",
+        "",
+        "Дараах хохирлыг хамарна:",
+        "",
+        "• гуравдагч этгээдийн амь нас, эрүүл мэндэд учруулсан хохирол;",
+        "• бие махбодын гэмтэл;",
+        "• гуравдагч этгээдийн эд хөрөнгийн хохирол;",
+        "• гуравдагч этгээдийн тээврийн хэрэгслийн гэмтэл, устгал.",
+        "",
+        "Даатгагч нь хууль тогтоомжоор тогтоосон даатгалын хариуцлагын дээд хэмжээнд нөхөн төлбөр олгоно.",
+      ],
+    },
+
+    {
+      title: "4. Юуг хамруулахгүй вэ",
+      paragraphs: [
+        "Даатгал дараах зүйлийг хамруулахгүй:",
+        "",
+        "• даатгуулагчийн өөрийн тээврийн хэрэгсэлд учирсан хохирол;",
+        "• тээврийн хэрэгслийн эзэмшигчийн хувийн хохирол;",
+        "• байгаль орчинд учруулсан хохирол;",
+        "• хууль тогтоомж болон даатгалын нөхцөлд заагаагүй тохиолдлууд.",
+        "",
+        "Мөн тухайн тээврийн хэрэгслийн жолоочоос эзэмшигчид учруулсан хохирлыг нөхөн төлөхгүй.",
+      ],
+    },
+
+    {
+      title: "5. Даатгалын хамгаалалтын хязгаарлалт",
+      paragraphs: [
+        "Даатгагч нь хуульд заасан тохиолдолд төлсөн нөхөн төлбөрийг жолоочоос буцаан нэхэмжлэх эрхтэй.",
+        "",
+        "Ялангуяа жолооч:",
+        "",
+        "• санаатайгаар хохирол учруулсан;",
+        "• согтууруулах ундаа эсвэл мансууруулах бодисын нөлөөн дор тээврийн хэрэгсэл жолоодсон;",
+        "• шаардлагатай жолоодох эрхгүй байсан;",
+        "• тээврийн хэрэгслийг хууль бусаар эзэмшсэн;",
+        "• ослын газраас зугтсан бол.",
+      ],
+    },
+
+    {
+      title: "6. Үйлчлэх нутаг дэвсгэр",
+      paragraphs: [
+        "OC Graniczne нь дараах нутаг дэвсгэрт хүчинтэй:",
+        "",
+        "• Европын эдийн засгийн бүсийн орнууд;",
+        "• Швейцар;",
+        "• иргэний хариуцлагын заавал даатгалын харилцан хүлээн зөвшөөрөх тогтолцоонд оролцогч үндэсний товчоодтой улсууд.",
+        "",
+        "Үйлчлэх тодорхой нутаг дэвсгэрийг даатгалын полисын нөхцөлөөр тогтооно.",
+      ],
+    },
+
+    {
+      title: "7. Хүчинтэй хугацаа",
+      paragraphs: [
+        "Даатгалын гэрээг полист заасан хугацаагаар байгуулна.",
+        "",
+        "Гэрээг дараах хугацаагаар байгуулж болно:",
+        "",
+        "• 12 сар;",
+        "• эсвэл хууль тогтоомжид заасан тохиолдолд түүнээс богино хугацаагаар.",
+        "",
+        "Даатгалын хамгаалалт нь полист заасан өдрөөс эхэлнэ.",
+      ],
+    },
+
+    {
+      title: "8. Даатгуулагчийн үүрэг",
+      paragraphs: [
+        "Даатгуулагч дараах үүрэгтэй:",
+        "",
+        "• даатгал бүрдүүлэх үед үнэн зөв мэдээлэл өгөх;",
+        "• даатгалын шимтгэлийг хугацаанд нь төлөх;",
+        "• даатгалын тохиолдол гарсан тухай даатгагчид мэдэгдэх;",
+        "• ослын үр дагаврыг бууруулах арга хэмжээ авах;",
+        "• шаардлагатай бол цагдаад мэдэгдэх;",
+        "• зам тээврийн ослын бусад оролцогчдод даатгалын полисын мэдээллийг өгөх.",
+      ],
+    },
+
+    {
+      title: "9. Гэрээ дуусгавар болох",
+      paragraphs: [
+        "Даатгалын гэрээ дараах тохиолдолд дуусгавар болно:",
+        "",
+        "• хүчинтэй хугацаа дуусах;",
+        "• тээврийн хэрэгслийг бүртгэлээс хасах;",
+        "• тээврийн хэрэгслийг өөр улсад бүртгүүлэх;",
+        "• хууль тогтоомжид заасан бусад гэрээ цуцлах үндэслэлээр.",
+      ],
+    },
+
+    {
+      title: "10. Чухал мэдээлэл",
+      paragraphs: [
+        "• OC Graniczne нь хүчинтэй Green Card байхгүй үед заавал шаардагдах даатгалын төрөл юм.",
+        "• Полис нь зөвхөн гуравдагч этгээдийн өмнө хүлээх иргэний хариуцлагыг хамарна.",
+        "• Полис нь өөрийн тээврийн хэрэгсэлд учирсан хохирлыг нөхөн төлөхгүй.",
+        "• Даатгалын нөхцөл болон хохирол барагдуулах журмыг даатгагч болон хүчин төгөлдөр хууль тогтоомж тодорхойлно.",
+      ],
+    },
+
+    {
+      title: "11. Эрх зүйн зохицуулалт",
+      paragraphs: [
+        "Энэхүү бүтээгдэхүүн нь Польш Улсын тээврийн хэрэгслийн эзэмшигчдийн иргэний хариуцлагын заавал даатгалын тухай хууль тогтоомж болон иргэний хариуцлагын даатгалыг олон улсын хэмжээнд харилцан хүлээн зөвшөөрөх тогтолцооны дүрмээр зохицуулагдана.",
+      ],
+    },
+  ],
+};
+
+
 const dictionaries: Partial<Record<Lang, CookiesPolicyDictionary>> = {
   ru,
   pl,
@@ -1507,6 +2993,16 @@ const dictionaries: Partial<Record<Lang, CookiesPolicyDictionary>> = {
   tr,
   fa,
   hy,
+  ckb,
+  kmr,
+  ar,
+  uk,
+  az,
+  he,
+  ro,
+  sr,
+  sq,
+  mn,
 };
 
 export function getProductInfoDictionary(lang: Lang): CookiesPolicyDictionary {

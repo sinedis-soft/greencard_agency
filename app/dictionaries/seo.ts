@@ -414,6 +414,407 @@ export const seoDictionary: Record<Lang, SeoDictionaryBase> = {
         "Տեղեկատվություն cookie ֆայլերի և վերլուծական գործիքների մասին՝ միջսահմանային ապահովագրության ձևակերպման կայքում։",
     },
   },
+  ckb: {
+    home: {
+      title: "بیمەی سنووری بۆ گواستنەوەکاران و کەسانی ئاسایی",
+      description:
+        "بیمەی MTPLی سنووری بۆ گواستنەوە نێودەوڵەتی: گرین کارت، بیمەی سنووری، گرین کارت بۆ یەکێتی ئەورووپا و OC Graniczne.",
+    },
+
+    about: {
+      title: "دەربارەی ئێمە — ئاجانسێکی بیمەیی مۆڵەتپێدراو",
+      description:
+        "ئاجانسی بیمەی پۆڵەندی بۆ گەشتیاران: وەرگرتنی بیمەی سنووری بۆ وڵاتانی ناوچەی ئابووری ئەورووپا.",
+    },
+
+    contacts: {
+      title: "پەیوەندییەکان — وەرگرتنی بیمەی سنووری",
+      description:
+        "پەیوەندی بە وەکیلی بیمەی سنووری بکە بۆ گەشت بە ڕێگاکانی EU و non-EU.",
+    },
+
+    productInfo: {
+      title:
+        "بەرهەم و پاراستن — Green Card / MTPLی سنووری / OC Graniczne",
+      description:
+        "مەرجەکان و ڕادەی پاراستنی بیمەی سنووری: گرین کارت، بیمەی سنووری، ڕێگاکانی ترانزیتی EU و وڵاتانی هاوسێ.",
+    },
+
+    rules: {
+      title: "یاسا و مەرجەکانی خزمەتگوزاری",
+      description:
+        "یاسا و ڕێنماییەکانی وەرگرتن و بەکارهێنانی بیمەی سنووری و گرین کارت بۆ گەشتە نێودەوڵەتییەکان.",
+    },
+
+    privacy: {
+      title: "سیاسەتی پاراستنی نهێنی",
+      description:
+        "زانیاری دەربارەی چۆنیەتی مامەڵەکردن لەگەڵ داتای کەسیی کڕیاران لە کاتی وەرگرتنی بیمەی MTPLی نێودەوڵەتی.",
+    },
+
+    cookiePolicy: {
+      title: "سیاسەتی کوکی",
+      description:
+        "زانیاری دەربارەی فایلەکانی کوکی و ئامرازەکانی شیکاری لە ماڵپەڕی وەرگرتنی بیمەی سنووری.",
+    },
+  },
+  kmr: {
+    home: {
+      title: "Sîgorteya sînorî ji bo barhilgiran û kesên ferdî",
+      description:
+        "Sîgorteya MTPL ya transsînorî ji bo veguhastinên navneteweyî: Green Card, border insurance, Green Card ji bo Yekîtiya Ewropayê, OC graniczna.",
+    },
+    about: {
+      title: "Derbarê me de — ajansa sîgorteyê ya bi lîsans",
+      description:
+        "Ajansa sîgorteyê ya Polonyayê ji bo rêwîtiyê: derxistina sîgorteya sînorî ji bo welatên Herêma Aborî ya Ewropayê.",
+    },
+    contacts: {
+      title: "Têkilî — derxistina border insurance",
+      description:
+        "Bi ajanê sîgorteya sînorî re têkilî daynin ji bo rêwîtiyên li ser rêyên EU û non-EU.",
+    },
+    productInfo: {
+      title:
+        "Berhem û parastin — Green Card / MTPL cross-border / OC graniczna",
+      description:
+        "Merc û parastina sîgorteya transsînorî: Green Card, border insurance, rêyên transit ên EU û welatên cîran.",
+    },
+    rules: {
+      title: "Rêzikên pêşkêşkirina xizmetan",
+      description:
+        "Rêzikên derxistin û bikaranîna border insurance û Green Card ji bo rêwîtiyên bi ser sînoran re.",
+    },
+    privacy: {
+      title: "Polîtîkaya nepeniyê",
+      description:
+        "Çawa agahdariyên kesane yên xerîdaran dema derxistina sîgorteya MTPL ya navneteweyî têne pêvajokirin.",
+    },
+    cookiePolicy: {
+      title: "Polîtîkaya cookies",
+      description:
+        "Agahdarî derbarê pelên cookie û analîtîkê li ser malpera derxistina sîgorteya transsînorî.",
+    },
+  },
+  ar: {
+    home: {
+      title: "تأمين الحدود للشركات الناقلة والأفراد",
+      description:
+        "تأمين MTPL عابر للحدود للنقل الدولي: البطاقة الخضراء، تأمين الحدود، التأمين الأخضر للاتحاد الأوروبي، OC Graniczna.",
+    },
+
+    about: {
+      title: "من نحن — وكالة تأمين مرخصة",
+      description:
+        "وكالة تأمين بولندية للمسافرين، متخصصة في إصدار تأمين الحدود للدخول إلى دول المنطقة الاقتصادية الأوروبية.",
+    },
+
+    contacts: {
+      title: "اتصل بنا — إصدار تأمين الحدود",
+      description:
+        "تواصل مع وكيل تأمين الحدود للمسافرين على الطرق بين دول الاتحاد الأوروبي والدول الأخرى.",
+    },
+
+    productInfo: {
+      title:
+        "المنتج والتغطية — البطاقة الخضراء / MTPL عابر للحدود / OC Graniczna",
+      description:
+        "شروط ونطاق تغطية التأمين العابر للحدود، بما في ذلك البطاقة الخضراء وتأمين الحدود لرحلات العبور داخل الاتحاد الأوروبي والدول المجاورة.",
+    },
+
+    rules: {
+      title: "شروط وأحكام تقديم الخدمات",
+      description:
+        "القواعد المنظمة لإصدار واستخدام تأمين الحدود والبطاقة الخضراء أثناء السفر عبر الحدود الدولية.",
+    },
+
+    privacy: {
+      title: "سياسة الخصوصية",
+      description:
+        "كيفية معالجة البيانات الشخصية للعملاء عند إصدار تأمين MTPL الدولي.",
+    },
+
+    cookiePolicy: {
+      title: "سياسة ملفات تعريف الارتباط",
+      description:
+        "معلومات حول ملفات تعريف الارتباط وأدوات التحليل المستخدمة على موقع إصدار التأمين العابر للحدود.",
+    },
+  },
+
+
+  uk: {
+    home: {
+      title: "Прикордонне страхування для перевізників і фізичних осіб",
+      description:
+        "Транскордонне страхування цивільної відповідальності для міжнародних перевезень: Green Card, border insurance, Зелена картка до Євросоюзу, OC graniczne.",
+    },
+    about: {
+      title: "Про нас — ліцензоване страхове агентство",
+      description:
+        "Польське страхове агентство для подорожуючих: оформлення прикордонного страхування для поїздок до країн Європейського економічного простору.",
+    },
+    contacts: {
+      title: "Контакти — оформити прикордонне страхування",
+      description:
+        "Зв’яжіться зі страховим агентом для оформлення прикордонного страхування під час подорожей маршрутами між країнами ЄС та за його межами.",
+    },
+    productInfo: {
+      title:
+        "Страховий продукт і покриття — Green Card / MTPL cross-border / OC graniczne",
+      description:
+        "Умови та страхове покриття транскордонного страхування: Green Card, border insurance, маршрути транзиту через країни ЄС та сусідні держави.",
+    },
+    rules: {
+      title: "Правила надання послуг",
+      description:
+        "Правила оформлення та використання прикордонного страхування і Green Card для міжнародних поїздок.",
+    },
+    privacy: {
+      title: "Політика конфіденційності",
+      description:
+        "Як обробляються персональні дані клієнтів під час оформлення міжнародного страхування цивільної відповідальності власників транспортних засобів.",
+    },
+    cookiePolicy: {
+      title: "Політика використання файлів cookie",
+      description:
+        "Інформація про файли cookie та аналітику на сайті оформлення транскордонного страхування.",
+    },
+  },
+
+  he: {
+    home: {
+      title: "ביטוח גבול לנהגים פרטיים ולחברות הובלה",
+      description:
+        "ביטוח MTPL חוצה גבולות לנסיעות בינלאומיות: Green Card, ביטוח גבול, גרין קארד לאיחוד האירופי ו-OC Graniczne.",
+    },
+    about: {
+      title: "אודותינו — סוכנות ביטוח בעלת רישיון",
+      description:
+        "סוכנות ביטוח פולנית לנוסעים ולנהגים, המתמחה בהנפקת ביטוח גבול למדינות המרחב הכלכלי האירופי.",
+    },
+    contacts: {
+      title: "יצירת קשר — הנפקת ביטוח גבול",
+      description:
+        "צרו קשר עם סוכן ביטוח גבול לקבלת כיסוי לנסיעות בין מדינות האיחוד האירופי ומדינות מחוץ לאיחוד.",
+    },
+    productInfo: {
+      title:
+        "מידע על המוצר והכיסוי — Green Card / MTPL Cross-Border / OC Graniczne",
+      description:
+        "תנאי הביטוח והכיסוי לביטוח חוצה גבולות: Green Card, ביטוח גבול, מסלולי מעבר באיחוד האירופי ומדינות שכנות.",
+    },
+    rules: {
+      title: "תנאי השירות",
+      description:
+        "כללי ההנפקה והשימוש בביטוח גבול וב-Green Card לנסיעות בין מדינות.",
+    },
+    privacy: {
+      title: "מדיניות פרטיות",
+      description:
+        "אופן עיבוד הנתונים האישיים של לקוחות בעת הנפקת ביטוח MTPL בינלאומי.",
+    },
+    cookiePolicy: {
+      title: "מדיניות Cookies",
+      description:
+        "מידע על קובצי Cookie וכלי אנליטיקה באתר להנפקת ביטוח חוצה גבולות.",
+    },
+  },
+
+  az: {
+    home: {
+      title: "Yükdaşıyıcılar və fiziki şəxslər üçün sərhəd sığortası",
+      description:
+        "Beynəlxalq daşımalar üçün transsərhəd MTPL sığortası: Green Card, border insurance, Avropa İttifaqı üçün Yaşıl Kart, OC graniczne.",
+    },
+    about: {
+      title: "Haqqımızda — lisenziyalı sığorta agentliyi",
+      description:
+        "Səyahət edənlər üçün Polşa sığorta agentliyi: Avropa İqtisadi Məkanına daxil olan ölkələr üçün sərhəd sığortasının rəsmiləşdirilməsi.",
+    },
+    contacts: {
+      title: "Əlaqə — border insurance rəsmiləşdirilməsi",
+      description:
+        "Aİ və Aİ-yə daxil olmayan ölkələr üzrə marşrutlarla səyahət edənlər üçün sərhəd sığortası agenti ilə əlaqə saxlayın.",
+    },
+    productInfo: {
+      title:
+        "Məhsul və sığorta təminatı — Green Card / MTPL cross-border / OC graniczna",
+      description:
+        "Transsərhəd sığortanın şərtləri və təminatı: Green Card, border insurance, Aİ tranzit marşrutları və qonşu ölkələr.",
+    },
+    rules: {
+      title: "Xidmətlərin göstərilməsi qaydaları",
+      description:
+        "Sərhəd sığortası və Green Card polisinin rəsmiləşdirilməsi və istifadəsi qaydaları.",
+    },
+    privacy: {
+      title: "Məxfilik siyasəti",
+      description:
+        "Beynəlxalq MTPL sığortasının rəsmiləşdirilməsi zamanı müştərilərin şəxsi məlumatlarının emalı qaydası.",
+    },
+    cookiePolicy: {
+      title: "Cookie siyasəti",
+      description:
+        "Transsərhəd sığortanın rəsmiləşdirilməsi saytında istifadə olunan cookie faylları və analitika haqqında məlumat.",
+    },
+  },
+
+  ro: {
+    home: {
+      title: "Asigurare de frontieră pentru transportatori și persoane fizice",
+      description:
+        "Asigurare MTPL transfrontalieră pentru transporturi internaționale: Carte Verde, asigurare de frontieră, Carte Verde pentru Uniunea Europeană, OC graniczne.",
+    },
+    about: {
+      title: "Despre noi — agenție de asigurări autorizată",
+      description:
+        "Agenție de asigurări din Polonia pentru călători: emiterea asigurărilor de frontieră pentru țările din Spațiul Economic European.",
+    },
+    contacts: {
+      title: "Contacte — solicită asigurare de frontieră",
+      description:
+        "Contactați un agent de asigurări de frontieră pentru călătorii pe rute între țări din UE și din afara UE.",
+    },
+    productInfo: {
+      title:
+        "Produs și acoperire — Carte Verde / MTPL transfrontalieră / OC graniczne",
+      description:
+        "Condiții și acoperire pentru asigurarea transfrontalieră: Carte Verde, asigurare de frontieră, tranzit în UE și țările învecinate.",
+    },
+    rules: {
+      title: "Termeni și condiții de utilizare",
+      description:
+        "Reguli privind emiterea și utilizarea asigurării de frontieră și a poliței Carte Verde pentru călătorii internaționale.",
+    },
+    privacy: {
+      title: "Politica de confidențialitate",
+      description:
+        "Modul în care sunt prelucrate datele cu caracter personal ale clienților la emiterea asigurării internaționale MTPL.",
+    },
+    cookiePolicy: {
+      title: "Politica privind fișierele cookie",
+      description:
+        "Informații despre utilizarea fișierelor cookie și a instrumentelor de analiză pe site-ul de emitere a asigurărilor transfrontaliere.",
+    },
+  },
+
+  sr: {
+    home: {
+      title: "Granično osiguranje za prevoznike i fizička lica",
+      description:
+        "MTPL osiguranje za međunarodni saobraćaj: Zelena karta, granično osiguranje, Zelena karta za Evropsku uniju, OC graniczne.",
+    },
+    about: {
+      title: "O nama — licencirana agencija za osiguranje",
+      description:
+        "Poljska agencija za osiguranje namenjena putnicima: ugovaranje graničnog osiguranja za zemlje Evropskog ekonomskog prostora.",
+    },
+    contacts: {
+      title: "Kontakti — ugovaranje graničnog osiguranja",
+      description:
+        "Kontaktirajte agenta za granično osiguranje za putovanja na relacijama između država EU i zemalja van EU.",
+    },
+    productInfo: {
+      title:
+        "Proizvod i osiguravajuće pokriće — Zelena karta / prekogranično MTPL osiguranje / OC graniczne",
+      description:
+        "Uslovi i pokriće prekograničnog osiguranja: Zelena karta, granično osiguranje, tranzitne rute kroz EU i susedne države.",
+    },
+    rules: {
+      title: "Pravila pružanja usluga",
+      description:
+        "Pravila ugovaranja i korišćenja graničnog osiguranja i Zelene karte za međunarodna putovanja.",
+    },
+    privacy: {
+      title: "Politika privatnosti",
+      description:
+        "Način obrade ličnih podataka klijenata prilikom ugovaranja međunarodnog MTPL osiguranja.",
+    },
+    cookiePolicy: {
+      title: "Politika kolačića",
+      description:
+        "Informacije o kolačićima i analitičkim alatima na sajtu za ugovaranje prekograničnog osiguranja.",
+    },
+  },
+
+  sq: {
+    home: {
+      title: "Sigurim kufitar për transportues mallrash dhe individë",
+      description:
+        "Sigurim ndërkufitar MTPL për transport ndërkombëtar: Green Card, border insurance, Kartoni i Gjelbër për Bashkimin Evropian, OC graniczne.",
+    },
+    about: {
+      title: "Rreth nesh — agjenci sigurimesh e licencuar",
+      description:
+        "Agjenci polake sigurimesh për udhëtarët: lëshimi i sigurimit kufitar për vendet e Zonës Ekonomike Evropiane.",
+    },
+    contacts: {
+      title: "Kontaktet — aplikoni për border insurance",
+      description:
+        "Kontaktoni një agjent të sigurimit kufitar për udhëtime në itinerare brenda dhe jashtë BE-së.",
+    },
+    productInfo: {
+      title:
+        "Produkti dhe mbulimi — Green Card / MTPL ndërkufitar / OC graniczne",
+      description:
+        "Kushtet dhe mbulimi i sigurimit ndërkufitar: Green Card, border insurance, itinerare tranziti në BE dhe vendet fqinje.",
+    },
+    rules: {
+      title: "Rregullat e ofrimit të shërbimeve",
+      description:
+        "Rregullat për lëshimin dhe përdorimin e border insurance dhe Green Card për udhëtime ndërkufitare.",
+    },
+    privacy: {
+      title: "Politika e privatësisë",
+      description:
+        "Si përpunohen të dhënat personale të klientëve gjatë lëshimit të sigurimit ndërkombëtar MTPL.",
+    },
+    cookiePolicy: {
+      title: "Politika e cookies",
+      description:
+        "Informacion mbi skedarët cookie dhe analitikën në faqen e internetit për lëshimin e sigurimit ndërkufitar.",
+    },
+  },
+
+  mn: {
+    home: {
+      title: "Ачаа тээвэрлэгчид болон хувь хүмүүст зориулсан хилийн даатгал",
+      description:
+        "Олон улсын тээвэрт зориулсан хил дамнасан MTPL даатгал: Green Card, border insurance, Европын Холбоонд зориулсан Ногоон карт, OC graniczna.",
+    },
+    about: {
+      title: "Бидний тухай — тусгай зөвшөөрөлтэй даатгалын агентлаг",
+      description:
+        "Аялагчдад зориулсан Польшийн даатгалын агентлаг: Европын эдийн засгийн бүсийн орнуудад зориулсан хилийн даатгалын бүрдүүлэлт.",
+    },
+    contacts: {
+      title: "Холбоо барих — border insurance бүрдүүлэх",
+      description:
+        "ЕХ болон ЕХ-ны бус чиглэлээр зорчигчдод зориулсан хилийн даатгалын зөвлөхтэй холбогдоорой.",
+    },
+    productInfo: {
+      title:
+        "Бүтээгдэхүүн ба хамрах хүрээ — Green Card / MTPL cross-border / OC graniczna",
+      description:
+        "Хил дамнасан даатгалын нөхцөл ба хамгаалалт: Green Card, border insurance, ЕХ-ны транзит маршрут болон хөрш орнууд.",
+    },
+    rules: {
+      title: "Үйлчилгээ үзүүлэх журам",
+      description:
+        "Хил дамнасан даатгал болон Green Card-ыг хилээр зорчих үед бүрдүүлэх, ашиглах журам.",
+    },
+    privacy: {
+      title: "Нууцлалын бодлого",
+      description:
+        "Олон улсын MTPL даатгал бүрдүүлэх үед харилцагчийн хувийн мэдээллийг хэрхэн боловсруулдаг тухай.",
+    },
+    cookiePolicy: {
+      title: "Cookie файлын бодлого",
+      description:
+        "Хил дамнасан даатгалын вебсайт дээр ашиглагдах cookie файл болон аналитикийн талаарх мэдээлэл.",
+    },
+  },
+
 };
 
 

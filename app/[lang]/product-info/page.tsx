@@ -8,14 +8,33 @@ import { BreadcrumbListJsonLd } from "@/app/components/StructuredData";
 const breadcrumbTitleByLang: Record<Lang, string> = {
   ru: "Информация о продукте",
   pl: "Informacje o produkcie",
-  en: "Product info",
+  en: "Product Information",
   be: "Інфармацыя пра прадукт",
-  uz: "Mahsulot haqida",
-  ka: "პროდუქტის ინფორმაცია",
+  uk: "Інформація про продукт",
+
+  ro: "Informații despre produs",
+  sr: "Информације о производу",
+  sq: "Informacion mbi produktin",
+
   kk: "Өнім туралы ақпарат",
-  tr: "Ürün bilgisi",
+  uz: "Mahsulot haqida ma'lumot",
+  az: "Məhsul haqqında məlumat",
+
+  tr: "Ürün bilgileri",
+
+  hy: "Ապրանքի մասին տեղեկություն",
+  ka: "ინფორმაცია პროდუქტის შესახებ",
+
   fa: "اطلاعات محصول",
-  hy: "Ապրանքի մասին",
+
+  ckb: "زانیاری دەربارەی بەرهەم",
+  kmr: "Agahdariya Derbarê Berhemê",
+
+  ar: "معلومات المنتج",
+
+  he: "מידע על המוצר",
+
+  mn: "Бүтээгдэхүүний мэдээлэл",
 };
 
 function normalizeLang(value: string): Lang {

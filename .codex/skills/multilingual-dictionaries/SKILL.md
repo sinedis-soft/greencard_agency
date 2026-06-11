@@ -10,7 +10,7 @@ AGENTS.md already defines repo-wide i18n and safety rules. Use this focused chec
 ## Checklist
 
 - Preserve dictionary shapes, keys, exported getters, and TypeScript types.
-- Update every relevant locale (`ru`, `pl`, `en`, `be`, `uz`, `ka`, `kk`, `tr`, `fa`, `hy`) or report gaps.
+- Update every relevant locale ("ru", "pl", "en", "be", "uz", "ka", "kk", "tr", "fa","hy","ckb", "ar", "kmr") or report gaps.
 - Avoid single-language literals in shared components.
 - Keep insurance/legal/privacy/cookie terms natural and legally careful, not literal machine translations.
 - Keep SEO copy aligned with existing SEO dictionaries/helpers.

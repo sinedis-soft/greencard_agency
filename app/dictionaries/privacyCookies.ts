@@ -2215,6 +2215,2096 @@ const hy: CookiesPolicyDictionary = {
   ],
 };
 
+const ckb: CookiesPolicyDictionary = {
+  pageTitle: "سیاسەتی بەکارهێنانی فایلەکانی Cookie",
+
+  sections: [
+    {
+      title: "Green Card Agency (یەکێتی ئەورووپا / پۆڵەندا)",
+    },
+
+    {
+      title: "1. Cookie چییە و بۆچی بەکاردەهێندرێت",
+      paragraphs: [
+        "فایلەکانی Cookie فایلێکی دەقی بچوکن کە لەسەر ئامێری بەکارهێنەر پاشەکەوت دەکرێن کاتێک ماڵپەڕەکە سەردەکات. ئەمانە یارمەتیدەدەن بۆ:",
+        "",
+        "• دڵنیابوون لە کاری دروستی ماڵپەڕ،",
+        "• بیرخستنەوەی هەڵبژاردەکانی بەکارهێنەر (بۆ نموونە زمان)،",
+        "• شیکردنەوەی بەکارهێنانی ماڵپەڕ،",
+        "• لە حاڵەتی هەبوونی ڕەزامەندی — پیشاندانی ڕیکلامی پەیوەندیدار.",
+        "",
+        "بەکارهێنانی Cookie بەپێی GDPR و ePrivacy Directive ڕێکخراوە.",
+        "",
+        "لە یەکەم سەردانی ماڵپەڕ، بەکارهێنەر بانەرێک دەبینێت و دەتوانێت:",
+        "",
+        "• هەموو Cookie ـەکان قبووڵ بکات،",
+        "• Cookie ـە ناپێویستەکان ڕەت بکاتەوە،",
+        "• هاوپۆلەکان ڕێکبخات.",
+        "",
+        "ڕەزامەندی دەتوانرێت لە هەر کاتێکدا لە ڕێگەی «ڕێکخستنەکانی Cookie» گەڕێندرێتەوە.",
+      ],
+    },
+
+    {
+      title: "2. هاوپۆلەکانی Cookie",
+    },
+
+    {
+      title: "2.1 Cookie ـە بە تەواوی پێویستەکان (Essential)",
+      paragraphs: [
+        "ئەم Cookie ـانە پێویستیان بە ڕەزامەندی نییە، چونکە کاری ماڵپەڕەکە دابین دەکەن.",
+        "",
+        "نموونەکان:",
+      ],
+
+      tables: [
+        {
+          headers: ["ناو", "ماوەی هەڵگرتن", "مەبەست"],
+          rows: [
+            [
+              "cookie_consent",
+              "تا 12 مانگ",
+              "بیرخستنەوەی هەڵبژاردنی بەکارهێنەر",
+            ],
+            [
+              "NEXT_LOCALE / lang",
+              "تا 12 مانگ",
+              "پاراستنی زمانی هەڵبژێردراو",
+            ],
+            [
+              "session / security",
+              "دانیشتن / تا 12 مانگ",
+              "ئاسایش و کاری فۆڕمەکان",
+            ],
+          ],
+        },
+      ],
+    },
+
+    {
+      title: "",
+      paragraphs: [
+        "ناچالاککردنیان بەبێ تێکدانی کاری ماڵپەڕەکە ئەستەمە.",
+      ],
+    },
+
+    {
+      title: "2.2 Cookie ـە ئامارییەکان (Statistics) — تەنها بە ڕەزامەندی",
+      paragraphs: [
+        "بۆ شیکردنەوەی ڕەفتاری بەکارهێنەران و باشترکردنی ماڵپەڕ بەکاردەهێندرێن.",
+        "",
+        "Google Analytics 4",
+        "",
+        "Cookie ـە بەکارهاتووەکان:",
+        "",
+        "• _ga — ناسێنەری بەکارهێنەر (تا 2 ساڵ)",
+        "• _ga_* — دۆخی دانیشتن",
+        "",
+        "تایبەتمەندییەکان:",
+        "",
+        "• نەناساندنی IP چالاک کراوە",
+        "• داتا بۆ ناسینەوەی ڕاستەوخۆی کەس بەکارناهێندرێت",
+        "• دەکرێت داتا بۆ دەرەوەی یەکێتی ئەورووپا بگوازرێتەوە (بە بەکارهێنانی SCC)",
+        "",
+        "گرنگ: بەبێ ڕەزامەندی بەکارهێنەر، Google Analytics بار ناکرێت.",
+      ],
+    },
+
+    {
+      title: "2.3 Cookie ـە مارکێتینگییەکان (Marketing) — تەنها بە ڕەزامەندی",
+      paragraphs: [
+        "بۆ ڕیکلامی کەسی‌کراو و هەڵسەنگاندنی کاریگەری کامپەینەکان بەکاردەهێندرێن.",
+        "",
+        "لە یەکێتی ئەورووپا پێشنیار دەکرێت ئەمانە بەکاربهێنرێن:",
+        "",
+        "• Google Ads",
+        "• Meta Pixel",
+        "",
+        "مەبەست:",
+        "",
+        "• شوێنکەوتنی سەرچاوەکانی هاتوچۆ",
+        "• ڕیتارگێتینگ",
+        "• هەڵسەنگاندنی گۆڕانکارییەکان (Conversions)",
+        "",
+        "ماوەی هەڵگرتن لەلایەن دابینکەرەکانەوە دیاری دەکرێت (بە گشتی 13–24 مانگ).",
+      ],
+    },
+
+    {
+      title: "2.4 Cookie ـە کارکردییەکان (Functional)",
+      paragraphs: [
+        "یارمەتیدەدەن بۆ باشترکردنی ئەزموونی بەکارهێنەر:",
+        "",
+        "• پاراستنی هەڵبژاردەکان،",
+        "• تاقیکردنەوەی A/B،",
+        "• لوکالایزەکردنی ڕووکار.",
+      ],
+    },
+
+    {
+      title: "3. بەڕێوەبردنی Cookie",
+      paragraphs: [
+        "بەکارهێنەر دەتوانێت:",
+        "",
+        "• ڕێکخستنەکان لە ڕێگەی «ڕێکخستنەکانی Cookie» بگۆڕێت،",
+        "• Cookie ـەکان لە ڕێکخستنەکانی وێبگەڕ بسڕێتەوە،",
+        "• مامەڵەکردنی داتا سنووردار بکات.",
+        "",
+        "بەستەرەکانی بەڕێوەبردنی ڕیکلام:",
+      ],
+
+      links: [
+        {
+          label: "Google:",
+          text: "https://adssettings.google.com",
+          href: "https://adssettings.google.com",
+        },
+        {
+          label: "Meta:",
+          text: "https://www.facebook.com/adpreferences",
+          href: "https://www.facebook.com/adpreferences",
+        },
+      ],
+    },
+
+    {
+      title: "",
+      paragraphs: [
+        "ڕەتکردنەوەی Cookie دەکرێت هەندێک لە کاراییەکانی ماڵپەڕ سنووردار بکات.",
+      ],
+    },
+
+    {
+      title: "4. بنەمای یاسایی مامەڵەکردنی داتا",
+      tables: [
+        {
+          headers: ["هاوپۆل", "بنەما"],
+          rows: [
+            [
+              "پێویستەکان",
+              "بەرژەوەندی یاسایی (دابینکردنی کاری ماڵپەڕ)",
+            ],
+            [
+              "ئامارییەکان",
+              "ڕەزامەندی بەکارهێنەر",
+            ],
+            [
+              "مارکێتینگ",
+              "ڕەزامەندی بەکارهێنەر",
+            ],
+          ],
+        },
+      ],
+
+      paragraphs: [
+        "ڕەزامەندی:",
+        "",
+        "• بە ئازادی دراوە،",
+        "• دیاریکراوە،",
+        "• بە ئاگاداری تەواوەوە دراوە،",
+        "• دەتوانرێت لە هەر کاتێکدا گەڕێندرێتەوە.",
+      ],
+    },
+
+    {
+      title: "5. گواستنەوەی داتا بۆ لایەنی سێیەم",
+      paragraphs: [
+        "داتا دەکرێت بگوازرێتەوە بۆ:",
+        "",
+        "• دابینکەرانی شیکاری (Google)،",
+        "• پلاتفۆڕمە ڕیکلامییەکان (Meta، Google)،",
+        "• بەڵێندەرانی IT.",
+        "",
+        "گواستنەوەی داتا بۆ دەرەوەی یەکێتی ئەورووپا بەپێی داواکارییەکانی GDPR و SCC ئەنجام دەدرێت.",
+      ],
+    },
+
+    {
+      title: "6. ماوەی هەڵگرتن",
+      paragraphs: [
+        "Cookie ـەکان بەم شێوەیە هەڵدەگیرێن:",
+        "",
+        "• Cookie ـە دانیشتنییەکان — تا داخستنی وێبگەڕ،",
+        "• Cookie ـە هەمیشەییەکان — تا 24 مانگ (یان تا کاتی سڕینەوەیان لەلایەن بەکارهێنەرەوە).",
+      ],
+    },
+
+    {
+      title: "7. مافەکانی بەکارهێنەر",
+      paragraphs: [
+        "بەپێی GDPR، بەکارهێنەر مافی ئەمانەی هەیە:",
+        "",
+        "• دەستگەیشتن بە داتا،",
+        "• ڕاستکردنەوە،",
+        "• سڕینەوە،",
+        "• سنووردارکردنی مامەڵەکردن،",
+        "• گواستنەوەی داتا،",
+        "• گەڕاندنەوەی ڕەزامەندی.",
+        "",
+        "سکاڵا دەتوانرێت پێشکەش بکرێت بۆ",
+        "Latvian Data State Inspectorate.",
+      ],
+    },
+
+    {
+      title: "8. گۆڕانکاری لە سیاسەتەکەدا",
+      paragraphs: [
+        "ئەم سیاسەتە دەکرێت نوێ بکرێتەوە. نوێترین وەشان هەمیشە لە ماڵپەڕ بڵاو دەکرێتەوە.",
+      ],
+    },
+  ],
+};
+const kmr: CookiesPolicyDictionary = {
+  pageTitle: "Polîtîkaya Bikaranîna Pelên Cookie",
+
+  sections: [
+    {
+      title: "Green Card Agency (Yekîtiya Ewropayê / Polonya)",
+    },
+
+    {
+      title: "1. Cookie çi ne û ji bo çi têne bikaranîn",
+      paragraphs: [
+        "Pelên cookie pelên nivîsê yên biçûk in ku dema serdana malperê li ser amûra bikarhêner têne tomar kirin. Ew rê didin ku:",
+        "",
+        "• xebata rast a malperê were peydakirin,",
+        "• mîhengên bikarhêner werin bîranîn (mînak: ziman),",
+        "• bikaranîna malperê were analîzkirin,",
+        "• heke pejirandin hebe, reklamanên têkildar werin nîşandan.",
+        "",
+        "Bikaranîna cookieyan bi GDPR û ePrivacy Directive tê rêvebirin.",
+        "",
+        "Di serdana yekem a malperê de, bikarhêner bannerek dibîne û dikare:",
+        "",
+        "• hemû cookieyan qebûl bike,",
+        "• cookieyên ne pêwîst red bike,",
+        "• kategoriyan mîheng bike.",
+        "",
+        "Pejirandin dikare her dem bi rêya «Mîhengên Cookieyan» were paşvekişandin.",
+      ],
+    },
+
+    {
+      title: "2. Kategoriyên Cookieyan",
+    },
+
+    {
+      title: "2.1 Cookieyên Bi Tevayî Pêwîst (Essential)",
+      paragraphs: [
+        "Ev cookie ne hewce ne ku pejirandinê bistînin, ji ber ku xebata malperê peyda dikin.",
+        "",
+        "Mînak:",
+      ],
+
+      tables: [
+        {
+          headers: ["Nav", "Dema Tomarkirinê", "Armanc"],
+          rows: [
+            ["cookie_consent", "heta 12 mehan", "Hilbijartina bikarhêner tê bîranîn"],
+            ["NEXT_LOCALE / lang", "heta 12 mehan", "Ziman diparêze"],
+            ["session / security", "session / heta 12 mehan", "Ewlehî û xebata forman"],
+          ],
+        },
+      ],
+    },
+
+    {
+      title: "",
+      paragraphs: [
+        "Bêyî xebata malperê têk biçe, ne gengaz e ku ev cookie werin neçalakkirin.",
+      ],
+    },
+
+    {
+      title: "2.2 Cookieyên Analîtîkî (Statistics) — tenê bi pejirandinê",
+      paragraphs: [
+        "Ji bo analîzkirina tevgera bikarhêneran û baştirkirina malperê têne bikaranîn.",
+        "",
+        "Google Analytics 4",
+        "",
+        "Cookieyên ku têne bikaranîn:",
+        "",
+        "• _ga — nasnameya bikarhêner (heta 2 salan)",
+        "• _ga_* — rewşa sessionê",
+        "",
+        "Taybetmendî:",
+        "",
+        "• anonîmkirina IP çalak e",
+        "• dane ji bo nasandina rasterast nayên bikaranîn",
+        "• gengaz e dane li derveyî Yekîtiya Ewropayê werin veguhestin (bi SCC)",
+        "",
+        "Girîng: bêyî pejirandina bikarhêner Google Analytics nayê barkirin.",
+      ],
+    },
+
+    {
+      title: "2.3 Cookieyên Reklamê (Marketing) — tenê bi pejirandinê",
+      paragraphs: [
+        "Ji bo reklama kesane û nirxandina bandora kampanyayan têne bikaranîn.",
+        "",
+        "Di Yekîtiya Ewropayê de bi gelemperî ev têne bikaranîn:",
+        "",
+        "• Google Ads",
+        "• Meta Pixel",
+        "",
+        "Armanc:",
+        "",
+        "• şopandina çavkaniyên trafîkê",
+        "• retargeting",
+        "• nirxandina conversionan",
+        "",
+        "Dema tomarkirinê ji aliyê peydakera xizmetê ve tê diyarkirin (bi gelemperî 13–24 meh).",
+      ],
+    },
+
+    {
+      title: "2.4 Cookieyên Fonksiyonel (Functional)",
+      paragraphs: [
+        "Ew alîkariyê dikin ku ezmûna bikarhênerê baştir bibe:",
+        "",
+        "• parastina tercîhan,",
+        "• testên A/B,",
+        "• lokalîzekirina navrûyê.",
+      ],
+    },
+
+    {
+      title: "3. Rêvebirina Cookieyan",
+      paragraphs: [
+        "Bikarhêner dikare:",
+        "",
+        "• mîhengan bi rêya «Mîhengên Cookieyan» biguherîne,",
+        "• cookieyan di mîhengên gerokê de jê bibe,",
+        "• pêvajokirina daneyan sînordar bike.",
+        "",
+        "Girêdanên rêvebirina reklamê:",
+      ],
+
+      links: [
+        {
+          label: "Google:",
+          text: "https://adssettings.google.com",
+          href: "https://adssettings.google.com",
+        },
+        {
+          label: "Meta:",
+          text: "https://www.facebook.com/adpreferences",
+          href: "https://www.facebook.com/adpreferences",
+        },
+      ],
+    },
+
+    {
+      title: "",
+      paragraphs: [
+        "Redkirina cookieyan dikare hin fonksiyonên malperê sînordar bike.",
+      ],
+    },
+
+    {
+      title: "4. Bingehên Qanûnî yên Pêvajokirinê",
+
+      tables: [
+        {
+          headers: ["Kategori", "Bingeh"],
+          rows: [
+            ["Pêwîst", "Berjewendiya qanûnî (xebata malperê)"],
+            ["Analîtîkî", "Pejirandina bikarhêner"],
+            ["Marketing", "Pejirandina bikarhêner"],
+          ],
+        },
+      ],
+
+      paragraphs: [
+        "Pejirandin:",
+        "",
+        "• bi azadî hatiye dayîn,",
+        "• taybet e,",
+        "• bi agahdarî hatiye dayîn,",
+        "• her dem dikare were paşvekişandin.",
+      ],
+    },
+
+    {
+      title: "5. Veguhastina Daneyan ji Kesên Sêyem Re",
+      paragraphs: [
+        "Dane dikarin ji van re werin veguhestin:",
+        "",
+        "• peydakera xizmetên analîtîkî (Google),",
+        "• platformên reklamê (Meta, Google),",
+        "• peymankarên IT.",
+        "",
+        "Veguhastina daneyan li derveyî Yekîtiya Ewropayê li gorî daxwazên GDPR (SCC) tê kirin.",
+      ],
+    },
+
+    {
+      title: "6. Dema Tomarkirinê",
+      paragraphs: [
+        "Cookie têne parastin:",
+        "",
+        "• cookieyên sessionê — heta girtina gerokê,",
+        "• cookieyên domdar — heta 24 mehan (an heta jêbirina wan ji aliyê bikarhêner ve).",
+      ],
+    },
+
+    {
+      title: "7. Mafên Bikarhêner",
+      paragraphs: [
+        "Li gorî GDPR, bikarhêner maf heye:",
+        "",
+        "• gihîştina daneyan,",
+        "• rastkirina daneyan,",
+        "• jêbirina daneyan,",
+        "• sînordarkirina pêvajokirinê,",
+        "• veguhastina daneyan,",
+        "• paşvekişandina pejirandinê.",
+        "",
+        "Şikayet dikare ji bo",
+        "Latvian Data State Inspectorate",
+        "were pêşkêşkirin.",
+      ],
+    },
+
+    {
+      title: "8. Guhertinên Polîtîkayê",
+      paragraphs: [
+        "Ev polîtîka dikare were nûvekirin. Guhertoya herî nû li ser malperê tê weşandin.",
+      ],
+    },
+  ],
+};
+const ar: CookiesPolicyDictionary = {
+  pageTitle: "سياسة استخدام ملفات تعريف الارتباط (Cookies)",
+
+  sections: [
+    {
+      title: "Green Card Agency (الاتحاد الأوروبي / بولندا)",
+    },
+
+    {
+      title: "1. ما هي ملفات تعريف الارتباط ولماذا تُستخدم؟",
+      paragraphs: [
+        "ملفات تعريف الارتباط (Cookies) هي ملفات نصية صغيرة يتم حفظها على جهاز المستخدم عند زيارة الموقع الإلكتروني. وهي تتيح:",
+        "",
+        "• ضمان التشغيل السليم للموقع الإلكتروني،",
+        "• تذكر تفضيلات المستخدم (مثل اللغة)،",
+        "• تحليل كيفية استخدام الموقع،",
+        "• عرض إعلانات ملائمة عند الحصول على موافقة المستخدم.",
+        "",
+        "يخضع استخدام ملفات تعريف الارتباط لأحكام اللائحة العامة لحماية البيانات (GDPR) وتوجيه الخصوصية والاتصالات الإلكترونية (ePrivacy Directive).",
+        "",
+        "عند زيارة الموقع لأول مرة، يظهر للمستخدم إشعار ملفات تعريف الارتباط ويمكنه:",
+        "",
+        "• قبول جميع ملفات تعريف الارتباط،",
+        "• رفض الملفات غير الضرورية،",
+        "• تخصيص فئات ملفات تعريف الارتباط.",
+        "",
+        "يمكن سحب الموافقة في أي وقت من خلال «إعدادات ملفات تعريف الارتباط».",
+      ],
+    },
+
+    {
+      title: "2. فئات ملفات تعريف الارتباط",
+    },
+
+    {
+      title: "2.1 ملفات تعريف الارتباط الضرورية (Essential)",
+      paragraphs: [
+        "لا تتطلب هذه الملفات موافقة المستخدم لأنها ضرورية لتشغيل الموقع الإلكتروني.",
+        "",
+        "أمثلة:",
+      ],
+
+      tables: [
+        {
+          headers: ["الاسم", "مدة التخزين", "الغرض"],
+          rows: [
+            [
+              "cookie_consent",
+              "حتى 12 شهرًا",
+              "تذكر اختيار المستخدم بشأن ملفات تعريف الارتباط",
+            ],
+            [
+              "NEXT_LOCALE / lang",
+              "حتى 12 شهرًا",
+              "حفظ لغة المستخدم",
+            ],
+            [
+              "session / security",
+              "مدة الجلسة / حتى 12 شهرًا",
+              "الأمان وتشغيل النماذج",
+            ],
+          ],
+        },
+      ],
+    },
+
+    {
+      title: "",
+      paragraphs: [
+        "لا يمكن تعطيل هذه الملفات دون التأثير على وظائف الموقع الأساسية.",
+      ],
+    },
+
+    {
+      title: "2.2 ملفات التحليل والإحصاءات (Statistics) — بموافقة المستخدم فقط",
+      paragraphs: [
+        "تُستخدم لتحليل سلوك المستخدمين وتحسين الموقع الإلكتروني.",
+        "",
+        "Google Analytics 4",
+        "",
+        "Google Analytics",
+        "",
+        "ملفات تعريف الارتباط المستخدمة:",
+        "",
+        "• _ga — معرف المستخدم (حتى سنتين)",
+        "• _ga_* — معلومات حالة الجلسة",
+        "",
+        "الخصائص:",
+        "",
+        "• تفعيل إخفاء عنوان IP",
+        "• لا تُستخدم البيانات للتعرف المباشر على المستخدم",
+        "• قد يتم نقل البيانات خارج الاتحاد الأوروبي وفق البنود التعاقدية القياسية (SCC)",
+        "",
+        "مهم: لا يتم تحميل Google Analytics دون موافقة المستخدم.",
+      ],
+    },
+
+    {
+      title: "2.3 ملفات التسويق (Marketing) — بموافقة المستخدم فقط",
+      paragraphs: [
+        "تُستخدم للإعلانات المخصصة وقياس فعالية الحملات التسويقية.",
+        "",
+        "في الاتحاد الأوروبي يُوصى عادة باستخدام:",
+        "",
+        "• Google Ads",
+        "• Meta Pixel",
+        "",
+        "الأغراض:",
+        "",
+        "• تتبع مصادر الزيارات",
+        "• إعادة الاستهداف (Retargeting)",
+        "• قياس التحويلات",
+        "",
+        "يتم تحديد مدة التخزين من قبل مزودي الخدمة (عادةً من 13 إلى 24 شهرًا).",
+      ],
+    },
+
+    {
+      title: "2.4 ملفات الوظائف الإضافية (Functional)",
+      paragraphs: [
+        "تساعد على تحسين تجربة المستخدم، مثل:",
+        "",
+        "• حفظ التفضيلات،",
+        "• إجراء اختبارات A/B،",
+        "• تخصيص الواجهة بحسب اللغة أو المنطقة.",
+      ],
+    },
+
+    {
+      title: "3. إدارة ملفات تعريف الارتباط",
+      paragraphs: [
+        "يمكن للمستخدم:",
+        "",
+        "• تعديل الإعدادات من خلال «إعدادات ملفات تعريف الارتباط»،",
+        "• حذف ملفات تعريف الارتباط من خلال إعدادات المتصفح،",
+        "• تقييد معالجة البيانات.",
+        "",
+        "روابط إدارة الإعلانات:",
+      ],
+
+      links: [
+        {
+          label: "Google:",
+          text: "https://adssettings.google.com",
+          href: "https://adssettings.google.com",
+        },
+        {
+          label: "Meta:",
+          text: "https://www.facebook.com/adpreferences",
+          href: "https://www.facebook.com/adpreferences",
+        },
+      ],
+    },
+
+    {
+      title: "",
+      paragraphs: [
+        "قد يؤدي رفض ملفات تعريف الارتباط إلى تقليل بعض وظائف الموقع الإلكتروني.",
+      ],
+    },
+
+    {
+      title: "4. الأساس القانوني للمعالجة",
+      tables: [
+        {
+          headers: ["الفئة", "الأساس القانوني"],
+          rows: [
+            [
+              "الملفات الضرورية",
+              "المصلحة المشروعة (ضمان تشغيل الموقع)",
+            ],
+            [
+              "الملفات التحليلية",
+              "موافقة المستخدم",
+            ],
+            [
+              "الملفات التسويقية",
+              "موافقة المستخدم",
+            ],
+          ],
+        },
+      ],
+
+      paragraphs: [
+        "يجب أن تكون الموافقة:",
+        "",
+        "• حرة الاختيار،",
+        "• محددة بوضوح،",
+        "• مبنية على معلومات كافية،",
+        "• قابلة للسحب في أي وقت.",
+      ],
+    },
+
+    {
+      title: "5. نقل البيانات إلى أطراف ثالثة",
+      paragraphs: [
+        "قد يتم نقل البيانات إلى:",
+        "",
+        "• مزودي خدمات التحليل (Google)،",
+        "• منصات الإعلان (Meta وGoogle)،",
+        "• مزودي خدمات تقنية المعلومات.",
+        "",
+        "يتم نقل البيانات خارج الاتحاد الأوروبي وفقًا لمتطلبات اللائحة العامة لحماية البيانات (GDPR) والبنود التعاقدية القياسية (SCC).",
+      ],
+    },
+
+    {
+      title: "6. مدة الاحتفاظ",
+      paragraphs: [
+        "يتم الاحتفاظ بملفات تعريف الارتباط كما يلي:",
+        "",
+        "• ملفات الجلسة: حتى إغلاق المتصفح،",
+        "• الملفات الدائمة: حتى 24 شهرًا أو حتى حذفها من قبل المستخدم.",
+      ],
+    },
+
+    {
+      title: "7. حقوق المستخدم",
+      paragraphs: [
+        "وفقًا للائحة العامة لحماية البيانات (GDPR)، يحق للمستخدم:",
+        "",
+        "• الوصول إلى بياناته الشخصية،",
+        "• تصحيح البيانات،",
+        "• حذف البيانات،",
+        "• تقييد المعالجة،",
+        "• نقل البيانات،",
+        "• سحب الموافقة في أي وقت.",
+        "",
+        "كما يمكن تقديم شكوى إلى:",
+        "هيئة حماية البيانات الحكومية في لاتفيا (Latvian Data State Inspectorate).",
+      ],
+    },
+
+    {
+      title: "8. التعديلات على السياسة",
+      paragraphs: [
+        "يجوز تحديث هذه السياسة من وقت لآخر. ويتم نشر النسخة الحالية دائمًا على الموقع الإلكتروني.",
+      ],
+    },
+  ],
+};
+
+const uk: CookiesPolicyDictionary = {
+  pageTitle: "Політика використання файлів cookie",
+  sections: [
+    {
+      title: "Green card agency (ЄС / Польща)",
+    },
+    {
+      title: "1. Що таке файли cookie та для чого вони використовуються",
+      paragraphs: [
+        "Файли cookie — це невеликі текстові файли, які зберігаються на пристрої користувача під час відвідування сайту. Вони дозволяють:",
+        "",
+        "• забезпечувати коректну роботу сайту,",
+        "• запам’ятовувати налаштування користувача (наприклад, мову),",
+        "• аналізувати використання сайту,",
+        "• за наявності згоди — показувати релевантну рекламу.",
+        "",
+        "Використання файлів cookie регулюється GDPR та Директивою ePrivacy.",
+        "",
+        "Під час першого відвідування сайту користувач бачить банер і може:",
+        "",
+        "• прийняти всі файли cookie,",
+        "• відхилити необов’язкові,",
+        "• налаштувати категорії.",
+        "",
+        "Згоду можна відкликати в будь-який момент через розділ «Налаштування cookie».",
+      ],
+    },
+    {
+      title: "2. Категорії файлів cookie",
+    },
+    {
+      title: "2.1 Суворо необхідні (Essential)",
+      paragraphs: [
+        "Ці файли cookie не потребують згоди, оскільки забезпечують функціонування сайту.",
+        "",
+        "Приклади:",
+      ],
+      tables: [
+        {
+          headers: ["Назва", "Строк зберігання", "Призначення"],
+          rows: [
+            ["cookie_consent", "до 12 місяців", "Запам’ятовує вибір користувача"],
+            ["NEXT_LOCALE / lang", "до 12 місяців", "Зберігає вибрану мову"],
+            ["session / security", "сесія / до 12 місяців", "Безпека та робота форм"],
+          ],
+        },
+      ],
+    },
+    {
+      title: "",
+      paragraphs: ["Вимкнення неможливе без порушення роботи сайту."],
+    },
+    {
+      title: "2.2 Аналітичні (Statistics) — лише за згодою",
+      paragraphs: [
+        "Використовуються для аналізу поведінки користувачів та покращення сайту.",
+        "",
+        "Google Analytics 4",
+        "",
+        "Google Analytics",
+        "",
+        "Використовувані файли cookie:",
+        "",
+        "• _ga — ідентифікатор користувача (до 2 років)",
+        "• _ga_* — стан сесії",
+        "",
+        "Особливості:",
+        "",
+        "• анонімізація IP-адреси увімкнена",
+        "• дані не використовуються для прямої ідентифікації",
+        "• можлива передача даних за межі ЄС (із застосуванням стандартних договірних положень SCC)",
+        "",
+        "Важливо: без згоди користувача Google Analytics не завантажується.",
+      ],
+    },
+    {
+      title: "2.3 Маркетингові (Marketing) — лише за згодою",
+      paragraphs: [
+        "Використовуються для персоналізованої реклами та оцінки ефективності рекламних кампаній.",
+        "",
+        "У ЄС рекомендується використовувати:",
+        "",
+        "• Google Ads",
+        "• Meta Pixel",
+        "",
+        "Призначення:",
+        "",
+        "• відстеження джерел трафіку",
+        "• ретаргетинг",
+        "• оцінка конверсій",
+        "",
+        "Строк зберігання визначається провайдерами (зазвичай до 13–24 місяців).",
+      ],
+    },
+    {
+      title: "2.4 Функціональні (Functional)",
+      paragraphs: [
+        "Дозволяють покращити користувацький досвід:",
+        "",
+        "• збереження налаштувань користувача,",
+        "• A/B-тестування,",
+        "• локалізація інтерфейсу.",
+      ],
+    },
+    {
+      title: "3. Керування файлами cookie",
+      paragraphs: [
+        "Користувач може:",
+        "",
+        "• змінити налаштування через розділ «Налаштування cookie»,",
+        "• видалити файли cookie через налаштування браузера,",
+        "• обмежити обробку даних.",
+        "",
+        "Посилання для керування рекламою:",
+      ],
+      links: [
+        { label: "Google:", text: "https://adssettings.google.com", href: "https://adssettings.google.com" },
+        { label: "Meta:", text: "https://www.facebook.com/adpreferences", href: "https://www.facebook.com/adpreferences" },
+      ],
+    },
+    {
+      title: "",
+      paragraphs: ["Відмова від файлів cookie може обмежити функціональність сайту."],
+    },
+    {
+      title: "4. Правові підстави обробки",
+      tables: [
+        {
+          headers: ["Категорія", "Підстава"],
+          rows: [
+            ["Необхідні", "Законний інтерес (забезпечення роботи сайту)"],
+            ["Аналітичні", "Згода користувача"],
+            ["Маркетингові", "Згода користувача"],
+          ],
+        },
+      ],
+      paragraphs: [
+        "Згода:",
+        "",
+        "• надається добровільно,",
+        "• є конкретною,",
+        "• є поінформованою,",
+        "• може бути відкликана в будь-який момент.",
+      ],
+    },
+    {
+      title: "5. Передача даних третім особам",
+      paragraphs: [
+        "Дані можуть передаватися:",
+        "",
+        "• постачальникам аналітичних сервісів (Google),",
+        "• рекламним платформам (Meta, Google),",
+        "• ІТ-підрядникам.",
+        "",
+        "Передача за межі ЄС здійснюється з дотриманням вимог GDPR (SCC).",
+      ],
+    },
+    {
+      title: "6. Строк зберігання",
+      paragraphs: [
+        "Файли cookie зберігаються:",
+        "",
+        "• сесійні — до закриття браузера,",
+        "• постійні — до 24 місяців (або до видалення користувачем).",
+      ],
+    },
+    {
+      title: "7. Права користувача",
+      paragraphs: [
+        "Відповідно до GDPR користувач має право:",
+        "",
+        "• на доступ до даних,",
+        "• на виправлення даних,",
+        "• на видалення даних,",
+        "• на обмеження обробки,",
+        "• на перенесення даних,",
+        "• на відкликання згоди.",
+        "",
+        "Скаргу можна подати до",
+        "Latvian Data State Inspectorate.",
+      ],
+    },
+    {
+      title: "8. Зміни до політики",
+      paragraphs: ["Політика може оновлюватися. Актуальна версія публікується на сайті."],
+    },
+  ],
+};
+
+const he: CookiesPolicyDictionary = {
+  pageTitle: "מדיניות השימוש בקובצי Cookie",
+  sections: [
+    {
+      title: "Green Card Agency (האיחוד האירופי / פולין)",
+    },
+    {
+      title: "1. מה הם קובצי Cookie ולשם מה הם משמשים",
+      paragraphs: [
+        "קובצי Cookie הם קבצי טקסט קטנים הנשמרים במכשיר המשתמש בעת ביקור באתר. הם מאפשרים:",
+        "",
+        "• להבטיח את פעילותו התקינה של האתר;",
+        "• לזכור העדפות משתמש (למשל שפה);",
+        "• לנתח את השימוש באתר;",
+        "• בכפוף להסכמה – להציג פרסום רלוונטי.",
+        "",
+        "השימוש בקובצי Cookie מוסדר על ידי ה-GDPR ועל ידי ePrivacy Directive.",
+        "",
+        "בעת הביקור הראשון באתר, המשתמש רואה הודעת Cookie ויכול:",
+        "",
+        "• לאשר את כל קובצי ה-Cookie;",
+        "• לדחות קובצי Cookie שאינם הכרחיים;",
+        "• להגדיר קטגוריות באופן פרטני.",
+        "",
+        "ניתן לבטל את ההסכמה בכל עת באמצעות «הגדרות Cookie».",
+      ],
+    },
+    {
+      title: "2. קטגוריות של קובצי Cookie",
+    },
+    {
+      title: "2.1 קובצי Cookie הכרחיים (Essential)",
+      paragraphs: [
+        "קובצי Cookie אלה אינם דורשים הסכמה, שכן הם נחוצים לתפקודו התקין של האתר.",
+        "",
+        "דוגמאות:",
+      ],
+      tables: [
+        {
+          headers: ["שם", "תקופת שמירה", "מטרה"],
+          rows: [
+            ["cookie_consent", "עד 12 חודשים", "שמירת בחירת המשתמש"],
+            ["NEXT_LOCALE / lang", "עד 12 חודשים", "שמירת שפת הממשק"],
+            ["session / security", "משך ההפעלה / עד 12 חודשים", "אבטחה ותפקוד טפסים"],
+          ],
+        },
+      ],
+    },
+    {
+      title: "",
+      paragraphs: ["לא ניתן להשביתם מבלי לפגוע בתפקוד האתר."],
+    },
+    {
+      title: "2.2 קובצי Cookie אנליטיים (Statistics) — בכפוף להסכמה בלבד",
+      paragraphs: [
+        "משמשים לניתוח התנהגות המשתמשים ולשיפור האתר.",
+        "",
+        "Google Analytics 4",
+        "",
+        "Google Analytics",
+        "",
+        "קובצי Cookie בשימוש:",
+        "",
+        "• _ga — מזהה משתמש (עד שנתיים)",
+        "• _ga_* — מצב ההפעלה",
+        "",
+        "מאפיינים:",
+        "",
+        "• אנונימיזציה של כתובת IP מופעלת",
+        "• הנתונים אינם משמשים לזיהוי ישיר של המשתמש",
+        "• ייתכן שהנתונים יועברו מחוץ לאיחוד האירופי (בכפוף ל-Standard Contractual Clauses – SCC)",
+        "",
+        "חשוב: ללא הסכמת המשתמש, Google Analytics לא ייטען.",
+      ],
+    },
+    {
+      title: "2.3 קובצי Cookie שיווקיים (Marketing) — בכפוף להסכמה בלבד",
+      paragraphs: [
+        "משמשים להצגת פרסום מותאם אישית ולהערכת אפקטיביות של קמפיינים.",
+        "",
+        "באיחוד האירופי מומלץ להשתמש ב:",
+        "",
+        "• Google Ads",
+        "• Meta Pixel",
+        "",
+        "מטרות:",
+        "",
+        "• מעקב אחר מקורות תנועה",
+        "• רימרקטינג (Retargeting)",
+        "• מדידת המרות",
+        "",
+        "תקופת השמירה נקבעת על ידי הספקים (בדרך כלל עד 13–24 חודשים).",
+      ],
+    },
+    {
+      title: "2.4 קובצי Cookie פונקציונליים (Functional)",
+      paragraphs: [
+        "מאפשרים לשפר את חוויית המשתמש:",
+        "",
+        "• שמירת העדפות;",
+        "• בדיקות A/B;",
+        "• התאמת הממשק לשפה ולמיקום.",
+      ],
+    },
+    {
+      title: "3. ניהול קובצי Cookie",
+      paragraphs: [
+        "המשתמש יכול:",
+        "",
+        "• לשנות את ההגדרות באמצעות «הגדרות Cookie»;",
+        "• למחוק קובצי Cookie דרך הגדרות הדפדפן;",
+        "• להגביל את עיבוד הנתונים.",
+        "",
+        "קישורים לניהול פרסום מותאם:",
+      ],
+      links: [
+        {
+          label: "Google:",
+          text: "https://adssettings.google.com",
+          href: "https://adssettings.google.com"
+        },
+        {
+          label: "Meta:",
+          text: "https://www.facebook.com/adpreferences",
+          href: "https://www.facebook.com/adpreferences"
+        },
+      ],
+    },
+    {
+      title: "",
+      paragraphs: ["דחיית קובצי Cookie עשויה להגביל חלק מהפונקציות באתר."],
+    },
+    {
+      title: "4. הבסיס המשפטי לעיבוד הנתונים",
+      tables: [
+        {
+          headers: ["קטגוריה", "בסיס משפטי"],
+          rows: [
+            ["הכרחיים", "אינטרס לגיטימי (הבטחת פעילות האתר)"],
+            ["אנליטיים", "הסכמת המשתמש"],
+            ["שיווקיים", "הסכמת המשתמש"],
+          ],
+        },
+      ],
+      paragraphs: [
+        "ההסכמה היא:",
+        "",
+        "• חופשית;",
+        "• ספציפית;",
+        "• מדעת;",
+        "• ניתנת לביטול בכל עת.",
+      ],
+    },
+    {
+      title: "5. העברת נתונים לצדדים שלישיים",
+      paragraphs: [
+        "הנתונים עשויים להיות מועברים ל:",
+        "",
+        "• ספקי שירותי אנליטיקה (Google);",
+        "• פלטפורמות פרסום (Meta, Google);",
+        "• ספקי שירותי IT.",
+        "",
+        "העברת נתונים מחוץ לאיחוד האירופי מתבצעת בהתאם לדרישות ה-GDPR באמצעות SCC.",
+      ],
+    },
+    {
+      title: "6. תקופת שמירת הנתונים",
+      paragraphs: [
+        "קובצי Cookie נשמרים:",
+        "",
+        "• קובצי Session – עד לסגירת הדפדפן;",
+        "• קובצי Cookie קבועים – עד 24 חודשים (או עד למחיקתם על ידי המשתמש).",
+      ],
+    },
+    {
+      title: "7. זכויות המשתמש",
+      paragraphs: [
+        "בהתאם ל-GDPR, למשתמש הזכות:",
+        "",
+        "• לקבל גישה לנתוניו;",
+        "• לתקן נתונים;",
+        "• למחוק נתונים;",
+        "• להגביל את עיבוד הנתונים;",
+        "• לנייד את הנתונים;",
+        "• לבטל את הסכמתו.",
+        "",
+        "ניתן להגיש תלונה ל-",
+        "Latvian Data State Inspectorate.",
+      ],
+    },
+    {
+      title: "8. שינויים במדיניות",
+      paragraphs: [
+        "מדיניות זו עשויה להתעדכן מעת לעת. הגרסה העדכנית ביותר תפורסם באתר."
+      ],
+    },
+  ],
+};
+const AZ: CookiesPolicyDictionary = {
+  pageTitle: "Cookie fayllarından istifadə siyasəti",
+
+  sections: [
+    {
+      title: "Green Card Agency (Aİ / Polşa)",
+    },
+
+    {
+      title: "1. Cookie faylları nədir və nə üçün istifadə olunur",
+      paragraphs: [
+        "Cookie faylları istifadəçi saytı ziyarət etdikdə onun cihazında saxlanılan kiçik mətn fayllarıdır. Onlar aşağıdakılara imkan verir:",
+        "",
+        "• saytın düzgün işləməsini təmin etmək,",
+        "• istifadəçi ayarlarını yadda saxlamaq (məsələn, dili),",
+        "• saytın istifadəsini təhlil etmək,",
+        "• razılıq olduqda istifadəçiyə uyğun reklam göstərmək.",
+        "",
+        "Cookie fayllarının istifadəsi GDPR və ePrivacy Directive ilə tənzimlənir.",
+        "",
+        "Sayta ilk giriş zamanı istifadəçi banner görür və aşağıdakı seçimlərə malik olur:",
+        "",
+        "• bütün cookie fayllarını qəbul etmək,",
+        "• qeyri-zəruri cookie fayllarını rədd etmək,",
+        "• kateqoriyaları fərdi qaydada tənzimləmək.",
+        "",
+        "Razılıq istənilən vaxt «Cookie ayarları» bölməsi vasitəsilə geri götürülə bilər.",
+      ],
+    },
+
+    {
+      title: "2. Cookie kateqoriyaları",
+    },
+
+    {
+      title: "2.1 Məcburi (Essential)",
+      paragraphs: [
+        "Bu cookie faylları saytın fəaliyyətini təmin etdiyinə görə istifadəçi razılığı tələb etmir.",
+        "",
+        "Nümunələr:",
+      ],
+      tables: [
+        {
+          headers: ["Adı", "Saxlanma müddəti", "Təyinatı"],
+          rows: [
+            ["cookie_consent", "12 aya qədər", "İstifadəçinin seçimini yadda saxlayır"],
+            ["NEXT_LOCALE / lang", "12 aya qədər", "Dil seçimini saxlayır"],
+            ["session / security", "sessiya / 12 aya qədər", "Təhlükəsizlik və formaların işləməsi"],
+          ],
+        },
+      ],
+    },
+
+    {
+      title: "",
+      paragraphs: [
+        "Bu cookie fayllarını söndürmək saytın düzgün işləməsinə mane ola bilər.",
+      ],
+    },
+
+    {
+      title: "2.2 Analitik (Statistics) — yalnız razılıq əsasında",
+      paragraphs: [
+        "İstifadəçilərin davranışını təhlil etmək və saytı təkmilləşdirmək üçün istifadə olunur.",
+        "",
+        "Google Analytics 4",
+        "",
+        "Google Analytics",
+        "",
+        "İstifadə olunan cookie faylları:",
+        "",
+        "• _ga — istifadəçi identifikatoru (2 ilə qədər)",
+        "• _ga_* — sessiya vəziyyəti",
+        "",
+        "Xüsusiyyətlər:",
+        "",
+        "• IP anonimləşdirilməsi aktivdir",
+        "• məlumatlar birbaşa identifikasiya üçün istifadə edilmir",
+        "• məlumatların Aİ hüdudlarından kənara ötürülməsi mümkündür (standart müqavilə müddəaları — SCC tətbiq edilməklə)",
+        "",
+        "Vacib: istifadəçinin razılığı olmadan Google Analytics yüklənmir.",
+      ],
+    },
+
+    {
+      title: "2.3 Marketinq (Marketing) — yalnız razılıq əsasında",
+      paragraphs: [
+        "Fərdiləşdirilmiş reklam və reklam kampaniyalarının effektivliyinin qiymətləndirilməsi üçün istifadə olunur.",
+        "",
+        "Aİ-də istifadə olunması tövsiyə edilir:",
+        "",
+        "• Google Ads",
+        "• Meta Pixel",
+        "",
+        "Təyinatı:",
+        "",
+        "• trafik mənbələrinin izlənməsi",
+        "• retarqetinq",
+        "• konversiyaların ölçülməsi",
+        "",
+        "Saxlanma müddəti xidmət təminatçıları tərəfindən müəyyən edilir (adətən 13–24 aya qədər).",
+      ],
+    },
+
+    {
+      title: "2.4 Funksional (Functional)",
+      paragraphs: [
+        "İstifadəçi təcrübəsini yaxşılaşdırmağa kömək edir:",
+        "",
+        "• seçimlərin yadda saxlanılması,",
+        "• A/B testləri,",
+        "• interfeysin lokallaşdırılması.",
+      ],
+    },
+
+    {
+      title: "3. Cookie fayllarının idarə olunması",
+      paragraphs: [
+        "İstifadəçi aşağıdakı imkanlara malikdir:",
+        "",
+        "• «Cookie ayarları» vasitəsilə seçimləri dəyişmək,",
+        "• brauzer ayarları vasitəsilə cookie fayllarını silmək,",
+        "• məlumatların emalını məhdudlaşdırmaq.",
+        "",
+        "Reklam ayarlarının idarə olunması üçün keçidlər:",
+      ],
+      links: [
+        {
+          label: "Google:",
+          text: "https://adssettings.google.com",
+          href: "https://adssettings.google.com",
+        },
+        {
+          label: "Meta:",
+          text: "https://www.facebook.com/adpreferences",
+          href: "https://www.facebook.com/adpreferences",
+        },
+      ],
+    },
+
+    {
+      title: "",
+      paragraphs: [
+        "Cookie fayllarından imtina edilməsi saytın bəzi funksiyalarını məhdudlaşdıra bilər.",
+      ],
+    },
+
+    {
+      title: "4. Məlumatların emalının hüquqi əsasları",
+      tables: [
+        {
+          headers: ["Kateqoriya", "Hüquqi əsas"],
+          rows: [
+            ["Məcburi", "Qanuni maraq (saytın fəaliyyətinin təmin edilməsi)"],
+            ["Analitik", "İstifadəçinin razılığı"],
+            ["Marketinq", "İstifadəçinin razılığı"],
+          ],
+        },
+      ],
+      paragraphs: [
+        "Razılıq:",
+        "",
+        "• sərbəst verilir,",
+        "• konkret olur,",
+        "• məlumatlandırılmış şəkildə verilir,",
+        "• istənilən vaxt geri götürülə bilər.",
+      ],
+    },
+
+    {
+      title: "5. Məlumatların üçüncü şəxslərə ötürülməsi",
+      paragraphs: [
+        "Məlumatlar aşağıdakılara ötürülə bilər:",
+        "",
+        "• analitika xidmətləri təminatçılarına (Google),",
+        "• reklam platformalarına (Meta, Google),",
+        "• İT podratçılarına.",
+        "",
+        "Aİ hüdudlarından kənara ötürülmə GDPR tələblərinə uyğun olaraq (SCC mexanizmi tətbiq edilməklə) həyata keçirilir.",
+      ],
+    },
+
+    {
+      title: "6. Saxlanma müddəti",
+      paragraphs: [
+        "Cookie faylları aşağıdakı müddətlərdə saxlanılır:",
+        "",
+        "• sessiya cookie faylları — brauzer bağlanana qədər,",
+        "• daimi cookie faylları — 24 aya qədər (və ya istifadəçi tərəfindən silinənədək).",
+      ],
+    },
+
+    {
+      title: "7. İstifadəçinin hüquqları",
+      paragraphs: [
+        "GDPR-ə uyğun olaraq istifadəçi aşağıdakı hüquqlara malikdir:",
+        "",
+        "• məlumatlara çıxış əldə etmək,",
+        "• məlumatların düzəldilməsini tələb etmək,",
+        "• məlumatların silinməsini tələb etmək,",
+        "• emalın məhdudlaşdırılmasını tələb etmək,",
+        "• məlumatların daşınmasını tələb etmək,",
+        "• verilmiş razılığı geri götürmək.",
+        "",
+        "Şikayət aşağıdakı quruma təqdim edilə bilər:",
+        "Latvian Data State Inspectorate.",
+      ],
+    },
+
+    {
+      title: "8. Siyasətdə dəyişikliklər",
+      paragraphs: [
+        "Bu siyasət yenilənə bilər. Aktual versiya saytda dərc olunur.",
+      ],
+    },
+  ],
+};
+const RO: CookiesPolicyDictionary = {
+  pageTitle: "Politica privind utilizarea fișierelor cookie",
+  sections: [
+    {
+      title: "Green Card Agency (UE / Polonia)",
+    },
+    {
+      title: "1. Ce sunt fișierele cookie și pentru ce sunt utilizate",
+      paragraphs: [
+        "Fișierele cookie sunt fișiere text de mici dimensiuni care sunt stocate pe dispozitivul utilizatorului atunci când acesta vizitează site-ul. Acestea permit:",
+        "",
+        "• funcționarea corectă a site-ului,",
+        "• memorarea preferințelor utilizatorului (de exemplu, limba),",
+        "• analizarea modului de utilizare a site-ului,",
+        "• afișarea de publicitate relevantă, dacă utilizatorul și-a dat consimțământul.",
+        "",
+        "Utilizarea fișierelor cookie este reglementată de GDPR și de Directiva ePrivacy.",
+        "",
+        "La prima vizită pe site, utilizatorul vede un banner și poate:",
+        "",
+        "• accepta toate cookie-urile,",
+        "• respinge cookie-urile neesențiale,",
+        "• configura categoriile de cookie-uri.",
+        "",
+        "Consimțământul poate fi retras în orice moment prin intermediul opțiunii „Setări cookie”.",
+      ],
+    },
+    {
+      title: "2. Categorii de cookie-uri",
+    },
+    {
+      title: "2.1 Strict necesare (Essential)",
+      paragraphs: [
+        "Aceste cookie-uri nu necesită consimțământ, deoarece sunt necesare pentru funcționarea site-ului.",
+        "",
+        "Exemple:",
+      ],
+      tables: [
+        {
+          headers: ["Denumire", "Perioadă de stocare", "Scop"],
+          rows: [
+            ["cookie_consent", "până la 12 luni", "Memorează alegerea utilizatorului"],
+            ["NEXT_LOCALE / lang", "până la 12 luni", "Salvează limba selectată"],
+            ["session / security", "sesiune / până la 12 luni", "Securitate și funcționarea formularelor"],
+          ],
+        },
+      ],
+    },
+    {
+      title: "",
+      paragraphs: ["Dezactivarea acestora nu este posibilă fără afectarea funcționării site-ului."],
+    },
+    {
+      title: "2.2 Analitice (Statistics) — numai cu consimțământ",
+      paragraphs: [
+        "Sunt utilizate pentru analizarea comportamentului utilizatorilor și îmbunătățirea site-ului.",
+        "",
+        "Google Analytics 4",
+        "",
+        "Google Analytics",
+        "",
+        "Cookie-uri utilizate:",
+        "",
+        "• _ga — identificator al utilizatorului (până la 2 ani)",
+        "• _ga_* — informații privind sesiunea",
+        "",
+        "Caracteristici:",
+        "",
+        "• anonimizarea adresei IP este activată",
+        "• datele nu sunt utilizate pentru identificarea directă a persoanelor",
+        "• este posibil transferul datelor în afara UE (cu aplicarea Clauzelor Contractuale Standard — SCC)",
+        "",
+        "Important: fără consimțământul utilizatorului, Google Analytics nu este încărcat.",
+      ],
+    },
+    {
+      title: "2.3 Marketing (Marketing) — numai cu consimțământ",
+      paragraphs: [
+        "Sunt utilizate pentru publicitate personalizată și evaluarea eficienței campaniilor.",
+        "",
+        "În UE se recomandă utilizarea:",
+        "",
+        "• Google Ads",
+        "• Meta Pixel",
+        "",
+        "Scop:",
+        "",
+        "• urmărirea surselor de trafic",
+        "• remarketing",
+        "• măsurarea conversiilor",
+        "",
+        "Perioada de stocare este stabilită de furnizori (de regulă între 13 și 24 de luni).",
+      ],
+    },
+    {
+      title: "2.4 Funcționale (Functional)",
+      paragraphs: [
+        "Permit îmbunătățirea experienței utilizatorului:",
+        "",
+        "• salvarea preferințelor,",
+        "• testare A/B,",
+        "• localizarea interfeței.",
+      ],
+    },
+    {
+      title: "3. Gestionarea cookie-urilor",
+      paragraphs: [
+        "Utilizatorul poate:",
+        "",
+        "• modifica setările prin opțiunea „Setări cookie”,",
+        "• șterge cookie-urile din setările browserului,",
+        "• limita prelucrarea datelor.",
+        "",
+        "Linkuri pentru gestionarea preferințelor de publicitate:",
+      ],
+      links: [
+        { label: "Google:", text: "https://adssettings.google.com", href: "https://adssettings.google.com" },
+        { label: "Meta:", text: "https://www.facebook.com/adpreferences", href: "https://www.facebook.com/adpreferences" },
+      ],
+    },
+    {
+      title: "",
+      paragraphs: ["Refuzul utilizării cookie-urilor poate limita funcționalitatea site-ului."],
+    },
+    {
+      title: "4. Temeiul juridic al prelucrării",
+      tables: [
+        {
+          headers: ["Categorie", "Temei juridic"],
+          rows: [
+            ["Necesare", "Interes legitim (asigurarea funcționării site-ului)"],
+            ["Analitice", "Consimțământul utilizatorului"],
+            ["Marketing", "Consimțământul utilizatorului"],
+          ],
+        },
+      ],
+      paragraphs: [
+        "Consimțământul este:",
+        "",
+        "• acordat în mod liber,",
+        "• specific,",
+        "• informat,",
+        "• poate fi retras în orice moment.",
+      ],
+    },
+    {
+      title: "5. Transferul datelor către terți",
+      paragraphs: [
+        "Datele pot fi transmise către:",
+        "",
+        "• furnizori de servicii analitice (Google),",
+        "• platforme de publicitate (Meta, Google),",
+        "• furnizori de servicii IT.",
+        "",
+        "Transferul în afara UE se realizează în conformitate cu cerințele GDPR (SCC).",
+      ],
+    },
+    {
+      title: "6. Perioada de stocare",
+      paragraphs: [
+        "Cookie-urile sunt stocate:",
+        "",
+        "• cookie-uri de sesiune — până la închiderea browserului,",
+        "• cookie-uri persistente — până la 24 de luni (sau până la ștergerea lor de către utilizator).",
+      ],
+    },
+    {
+      title: "7. Drepturile utilizatorului",
+      paragraphs: [
+        "În conformitate cu GDPR, utilizatorul are dreptul:",
+        "",
+        "• de acces la date,",
+        "• de rectificare,",
+        "• de ștergere,",
+        "• de restricționare a prelucrării,",
+        "• la portabilitatea datelor,",
+        "• de retragere a consimțământului.",
+        "",
+        "O plângere poate fi depusă la",
+        "Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal (ANSPDCP).",
+      ],
+    },
+    {
+      title: "8. Modificări ale politicii",
+      paragraphs: [
+        "Această politică poate fi actualizată. Versiunea actuală este publicată pe site.",
+      ],
+    },
+  ],
+};
+
+const SR: CookiesPolicyDictionary = {
+  pageTitle: "Politika korišćenja kolačića",
+  sections: [
+    {
+      title: "Green card agency (EU / Poljska)",
+    },
+    {
+      title: "1. Šta su kolačići i zašto se koriste",
+      paragraphs: [
+        "Kolačići (cookie) su male tekstualne datoteke koje se čuvaju na uređaju korisnika prilikom posete sajtu. Oni omogućavaju:",
+        "",
+        "• pravilno funkcionisanje sajta,",
+        "• pamćenje korisničkih podešavanja (na primer jezika),",
+        "• analizu korišćenja sajta,",
+        "• prikazivanje relevantnih oglasa uz prethodnu saglasnost korisnika.",
+        "",
+        "Korišćenje kolačića regulisano je GDPR-om i Direktivom o privatnosti i elektronskim komunikacijama (ePrivacy Directive).",
+        "",
+        "Prilikom prve posete sajtu korisnik vidi obaveštenje i može da:",
+        "",
+        "• prihvati sve kolačiće,",
+        "• odbije neobavezne kolačiće,",
+        "• podesi pojedinačne kategorije.",
+        "",
+        "Saglasnost se može povući u bilo kom trenutku putem opcije „Podešavanja kolačića“.",
+      ],
+    },
+    {
+      title: "2. Kategorije kolačića",
+    },
+    {
+      title: "2.1 Strogo neophodni (Essential)",
+      paragraphs: [
+        "Ovi kolačići ne zahtevaju saglasnost jer obezbeđuju funkcionisanje sajta.",
+        "",
+        "Primeri:",
+      ],
+      tables: [
+        {
+          headers: ["Naziv", "Period čuvanja", "Svrha"],
+          rows: [
+            ["cookie_consent", "do 12 meseci", "Pamti izbor korisnika"],
+            ["NEXT_LOCALE / lang", "do 12 meseci", "Čuva izabrani jezik"],
+            ["session / security", "sesija / do 12 meseci", "Bezbednost i rad obrazaca"],
+          ],
+        },
+      ],
+    },
+    {
+      title: "",
+      paragraphs: ["Onemogućavanje ovih kolačića nije moguće bez narušavanja funkcionalnosti sajta."],
+    },
+    {
+      title: "2.2 Analitički (Statistics) — samo uz saglasnost",
+      paragraphs: [
+        "Koriste se za analizu ponašanja korisnika i unapređenje sajta.",
+        "",
+        "Google Analytics 4",
+        "",
+        "Google Analytics",
+        "",
+        "Korišćeni kolačići:",
+        "",
+        "• _ga — identifikator korisnika (do 2 godine)",
+        "• _ga_* — stanje sesije",
+        "",
+        "Karakteristike:",
+        "",
+        "• anonimización IP adrese je omogućena",
+        "• podaci se ne koriste za direktnu identifikaciju korisnika",
+        "• podaci mogu biti preneti van EU (uz primenu standardnih ugovornih klauzula — SCC)",
+        "",
+        "Važno: bez saglasnosti korisnika Google Analytics se ne učitava.",
+      ],
+    },
+    {
+      title: "2.3 Marketinški (Marketing) — samo uz saglasnost",
+      paragraphs: [
+        "Koriste se za personalizovano oglašavanje i merenje efikasnosti marketinških kampanja.",
+        "",
+        "U EU se preporučuje korišćenje:",
+        "",
+        "• Google Ads",
+        "• Meta Pixel",
+        "",
+        "Namena:",
+        "",
+        "• praćenje izvora saobraćaja",
+        "• remarketing",
+        "• merenje konverzija",
+        "",
+        "Period čuvanja određuju pružaoci usluga (obično do 13–24 meseca).",
+      ],
+    },
+    {
+      title: "2.4 Funkcionalni (Functional)",
+      paragraphs: [
+        "Omogućavaju bolje korisničko iskustvo:",
+        "",
+        "• čuvanje korisničkih preferencija,",
+        "• A/B testiranje,",
+        "• lokalizaciju interfejsa.",
+      ],
+    },
+    {
+      title: "3. Upravljanje kolačićima",
+      paragraphs: [
+        "Korisnik može da:",
+        "",
+        "• promeni podešavanja putem opcije „Podešavanja kolačića“,",
+        "• obriše kolačiće kroz podešavanja pregledača,",
+        "• ograniči obradu podataka.",
+        "",
+        "Linkovi za upravljanje oglašavanjem:",
+      ],
+      links: [
+        { label: "Google:", text: "https://adssettings.google.com", href: "https://adssettings.google.com" },
+        { label: "Meta:", text: "https://www.facebook.com/adpreferences", href: "https://www.facebook.com/adpreferences" },
+      ],
+    },
+    {
+      title: "",
+      paragraphs: ["Odbijanje kolačića može ograničiti funkcionalnost sajta."],
+    },
+    {
+      title: "4. Pravni osnov za obradu podataka",
+      tables: [
+        {
+          headers: ["Kategorija", "Pravni osnov"],
+          rows: [
+            ["Neophodni", "Legitimni interes (obezbeđivanje rada sajta)"],
+            ["Analitički", "Saglasnost korisnika"],
+            ["Marketinški", "Saglasnost korisnika"],
+          ],
+        },
+      ],
+      paragraphs: [
+        "Saglasnost je:",
+        "",
+        "• data dobrovoljno,",
+        "• konkretna,",
+        "• informisana,",
+        "• može biti povučena u bilo kom trenutku.",
+      ],
+    },
+    {
+      title: "5. Prenos podataka trećim licima",
+      paragraphs: [
+        "Podaci mogu biti prosleđeni:",
+        "",
+        "• pružaocima analitičkih usluga (Google),",
+        "• oglašivačkim platformama (Meta, Google),",
+        "• IT izvođačima i partnerima.",
+        "",
+        "Prenos podataka van EU vrši se u skladu sa zahtevima GDPR-a (SCC).",
+      ],
+    },
+    {
+      title: "6. Period čuvanja",
+      paragraphs: [
+        "Kolačići se čuvaju:",
+        "",
+        "• sesijski — do zatvaranja pregledača,",
+        "• trajni — do 24 meseca (ili do njihovog brisanja od strane korisnika).",
+      ],
+    },
+    {
+      title: "7. Prava korisnika",
+      paragraphs: [
+        "U skladu sa GDPR-om korisnik ima pravo:",
+        "",
+        "• na pristup podacima,",
+        "• na ispravku podataka,",
+        "• na brisanje podataka,",
+        "• na ograničenje obrade,",
+        "• na prenosivost podataka,",
+        "• na povlačenje saglasnosti.",
+        "",
+        "Pritužba se može podneti instituciji",
+        "Latvian Data State Inspectorate.",
+      ],
+    },
+    {
+      title: "8. Izmene politike",
+      paragraphs: ["Ova politika može biti ažurirana. Važeća verzija objavljuje se na sajtu."],
+    },
+  ],
+};
+
+const SQ: CookiesPolicyDictionary = {
+  pageTitle: "Politika e përdorimit të cookie-ve",
+  sections: [
+    {
+      title: "Green Card Agency (BE / Poloni)",
+    },
+    {
+      title: "1. Çfarë janë cookie-t dhe për çfarë përdoren",
+      paragraphs: [
+        "Cookie-t janë skedarë të vegjël tekstualë që ruhen në pajisjen e përdoruesit gjatë vizitës në faqen e internetit. Ato mundësojnë:",
+        "",
+        "• funksionimin korrekt të faqes së internetit,",
+        "• ruajtjen e preferencave të përdoruesit (p.sh. gjuhën),",
+        "• analizimin e përdorimit të faqes,",
+        "• në rast se është dhënë pëlqimi — shfaqjen e reklamave relevante.",
+        "",
+        "Përdorimi i cookie-ve rregullohet nga GDPR dhe Direktiva e Privatësisë Elektronike (ePrivacy Directive).",
+        "",
+        "Gjatë vizitës së parë në faqe, përdoruesi sheh një baner dhe mund të:",
+        "",
+        "• pranojë të gjitha cookie-t,",
+        "• refuzojë cookie-t jo të domosdoshme,",
+        "• konfigurojë kategoritë.",
+        "",
+        "Pëlqimi mund të tërhiqet në çdo kohë përmes seksionit «Cilësimet e cookie-ve».",
+      ],
+    },
+    {
+      title: "2. Kategoritë e cookie-ve",
+    },
+    {
+      title: "2.1 Cookie-t rreptësisht të nevojshme (Essential)",
+      paragraphs: [
+        "Këto cookie nuk kërkojnë pëlqim, pasi sigurojnë funksionimin e faqes së internetit.",
+        "",
+        "Shembuj:",
+      ],
+      tables: [
+        {
+          headers: ["Emërtimi", "Afati i ruajtjes", "Qëllimi"],
+          rows: [
+            ["cookie_consent", "deri në 12 muaj", "Ruajnë zgjedhjen e përdoruesit"],
+            ["NEXT_LOCALE / lang", "deri në 12 muaj", "Ruajnë gjuhën"],
+            ["session / security", "sesion / deri në 12 muaj", "Siguria dhe funksionimi i formularëve"],
+          ],
+        },
+      ],
+    },
+    {
+      title: "",
+      paragraphs: ["Çaktivizimi i tyre nuk është i mundur pa ndikuar në funksionimin e faqes."],
+    },
+    {
+      title: "2.2 Cookie-t analitike (Statistics) — vetëm me pëlqim",
+      paragraphs: [
+        "Përdoren për analizimin e sjelljes së përdoruesve dhe përmirësimin e faqes së internetit.",
+        "",
+        "Google Analytics 4",
+        "",
+        "Google Analytics",
+        "",
+        "Cookie-t e përdorura:",
+        "",
+        "• _ga — identifikues i përdoruesit (deri në 2 vjet)",
+        "• _ga_* — gjendja e sesionit",
+        "",
+        "Veçori:",
+        "",
+        "• anonimizimi i IP-së është aktivizuar",
+        "• të dhënat nuk përdoren për identifikim të drejtpërdrejtë",
+        "• të dhënat mund të transferohen jashtë BE-së (duke përdorur Klauzolat Standarde Kontraktuale — SCC)",
+        "",
+        "E rëndësishme: pa pëlqimin e përdoruesit, Google Analytics nuk ngarkohet.",
+      ],
+    },
+    {
+      title: "2.3 Cookie-t marketingu (Marketing) — vetëm me pëlqim",
+      paragraphs: [
+        "Përdoren për reklamim të personalizuar dhe për vlerësimin e efektivitetit të fushatave.",
+        "",
+        "Në BE rekomandohet përdorimi i:",
+        "",
+        "• Google Ads",
+        "• Meta Pixel",
+        "",
+        "Qëllimi:",
+        "",
+        "• gjurmimi i burimeve të trafikut",
+        "• retargetimi",
+        "• matja e konvertimeve",
+        "",
+        "Afati i ruajtjes përcaktohet nga ofruesit e shërbimeve (zakonisht deri në 13–24 muaj).",
+      ],
+    },
+    {
+      title: "2.4 Cookie-t funksionale (Functional)",
+      paragraphs: [
+        "Mundësojnë përmirësimin e përvojës së përdoruesit:",
+        "",
+        "• ruajtjen e preferencave,",
+        "• testimin A/B,",
+        "• lokalizimin e ndërfaqes.",
+      ],
+    },
+    {
+      title: "3. Menaxhimi i cookie-ve",
+      paragraphs: [
+        "Përdoruesi mund të:",
+        "",
+        "• ndryshojë cilësimet përmes seksionit «Cilësimet e cookie-ve»,",
+        "• fshijë cookie-t përmes cilësimeve të shfletuesit,",
+        "• kufizojë përpunimin e të dhënave.",
+        "",
+        "Lidhje për menaxhimin e reklamave:",
+      ],
+      links: [
+        { label: "Google:", text: "https://adssettings.google.com", href: "https://adssettings.google.com" },
+        { label: "Meta:", text: "https://www.facebook.com/adpreferences", href: "https://www.facebook.com/adpreferences" },
+      ],
+    },
+    {
+      title: "",
+      paragraphs: ["Refuzimi i cookie-ve mund të kufizojë funksionalitetin e faqes së internetit."],
+    },
+    {
+      title: "4. Bazat ligjore të përpunimit",
+      tables: [
+        {
+          headers: ["Kategoria", "Baza ligjore"],
+          rows: [
+            ["Cookie të nevojshme", "Interes legjitim (sigurimi i funksionimit të faqes)"],
+            ["Cookie analitike", "Pëlqimi i përdoruesit"],
+            ["Cookie marketingu", "Pëlqimi i përdoruesit"],
+          ],
+        },
+      ],
+      paragraphs: [
+        "Pëlqimi është:",
+        "",
+        "• dhënë lirisht,",
+        "• specifik,",
+        "• i informuar,",
+        "• mund të tërhiqet në çdo kohë.",
+      ],
+    },
+    {
+      title: "5. Transferimi i të dhënave te palët e treta",
+      paragraphs: [
+        "Të dhënat mund të transferohen te:",
+        "",
+        "• ofruesit e shërbimeve analitike (Google),",
+        "• platformat reklamuese (Meta, Google),",
+        "• kontraktorët IT.",
+        "",
+        "Transferimi jashtë BE-së kryhet në përputhje me kërkesat e GDPR (SCC).",
+      ],
+    },
+    {
+      title: "6. Afati i ruajtjes",
+      paragraphs: [
+        "Cookie-t ruhen:",
+        "",
+        "• cookie-t e sesionit — deri në mbylljen e shfletuesit,",
+        "• cookie-t e përhershme — deri në 24 muaj (ose deri në fshirjen e tyre nga përdoruesi).",
+      ],
+    },
+    {
+      title: "7. Të drejtat e përdoruesit",
+      paragraphs: [
+        "Në përputhje me GDPR, përdoruesi ka të drejtë:",
+        "",
+        "• të ketë qasje në të dhënat e tij,",
+        "• të kërkojë korrigjimin e tyre,",
+        "• të kërkojë fshirjen e tyre,",
+        "• të kufizojë përpunimin,",
+        "• të kërkojë bartjen e të dhënave,",
+        "• të tërheqë pëlqimin.",
+        "",
+        "Ankesa mund të paraqitet pranë",
+        "Latvian Data State Inspectorate.",
+      ],
+    },
+    {
+      title: "8. Ndryshimet në politikë",
+      paragraphs: [
+        "Kjo politikë mund të përditësohet. Versioni aktual publikohet në faqen e internetit."
+      ],
+    },
+  ],
+};
+
+const MN: CookiesPolicyDictionary = {
+  pageTitle: "Cookie файл ашиглах бодлого",
+
+  sections: [
+    {
+      title: "Green Card Agency (ЕХ / Польш)",
+    },
+
+    {
+      title: "1. Cookie гэж юу вэ, юунд ашиглагддаг вэ",
+      paragraphs: [
+        "Cookie файл нь вэбсайт зочлох үед хэрэглэгчийн төхөөрөмжид хадгалагддаг жижиг текст файл юм. Эдгээр нь дараах боломжийг олгодог:",
+        "",
+        "• вэбсайтын хэвийн ажиллагааг хангах,",
+        "• хэрэглэгчийн тохиргоог хадгалах (жишээлбэл, хэлний сонголт),",
+        "• вэбсайтын ашиглалтад дүн шинжилгээ хийх,",
+        "• зөвшөөрөл өгсөн тохиолдолд холбогдох зар сурталчилгаа үзүүлэх.",
+        "",
+        "Cookie файлын ашиглалтыг GDPR болон ePrivacy Directive зохицуулдаг.",
+        "",
+        "Вэбсайтад анх удаа зочлох үед хэрэглэгч баннер харж дараах сонголтуудыг хийх боломжтой:",
+        "",
+        "• бүх cookie-г зөвшөөрөх,",
+        "• шаардлагагүй cookie-г татгалзах,",
+        "• ангилал тус бүрийг тохируулах.",
+        "",
+        "Зөвшөөрлөө хүссэн үедээ «Cookie тохиргоо»-гоор дамжуулан буцаан татаж болно.",
+      ],
+    },
+
+    {
+      title: "2. Cookie-ийн ангиллууд",
+    },
+
+    {
+      title: "2.1 Зайлшгүй шаардлагатай (Essential)",
+      paragraphs: [
+        "Эдгээр cookie нь вэбсайтын ажиллагааг хангадаг тул хэрэглэгчийн зөвшөөрөл шаарддаггүй.",
+        "",
+        "Жишээ:",
+      ],
+      tables: [
+        {
+          headers: ["Нэр", "Хадгалах хугацаа", "Зориулалт"],
+          rows: [
+            ["cookie_consent", "12 сар хүртэл", "Хэрэглэгчийн сонголтыг хадгална"],
+            ["NEXT_LOCALE / lang", "12 сар хүртэл", "Хэлийг хадгална"],
+            ["session / security", "сессийн хугацаа / 12 сар хүртэл", "Аюулгүй байдал болон маягтын ажиллагаа"],
+          ],
+        },
+      ],
+    },
+
+    {
+      title: "",
+      paragraphs: ["Эдгээрийг идэвхгүй болговол вэбсайт хэвийн ажиллахгүй байж болно."],
+    },
+
+    {
+      title: "2.2 Аналитикийн (Statistics) — зөвхөн зөвшөөрөлтэйгээр",
+      paragraphs: [
+        "Хэрэглэгчийн зан төлөвийг шинжлэх болон вэбсайтыг сайжруулах зорилгоор ашиглагддаг.",
+        "",
+        "Google Analytics 4",
+        "",
+        "Google Analytics",
+        "",
+        "Ашиглагдах cookie:",
+        "",
+        "• _ga — хэрэглэгчийн таних тэмдэг (2 жил хүртэл)",
+        "• _ga_* — сессийн төлөв",
+        "",
+        "Онцлог:",
+        "",
+        "• IP хаягийг нэргүйжүүлэх тохиргоо идэвхтэй",
+        "• өгөгдлийг шууд танихад ашигладаггүй",
+        "• өгөгдөл ЕХ-ноос гадуур дамжуулагдаж болох бөгөөд стандарт гэрээний заалт (SCC) хэрэглэнэ",
+        "",
+        "Чухал: хэрэглэгчийн зөвшөөрөлгүйгээр Google Analytics ачаалагдахгүй.",
+      ],
+    },
+
+    {
+      title: "2.3 Маркетингийн (Marketing) — зөвхөн зөвшөөрөлтэйгээр",
+      paragraphs: [
+        "Хувьчилсан сурталчилгаа үзүүлэх болон кампанит ажлын үр нөлөөг үнэлэхэд ашиглагдана.",
+        "",
+        "ЕХ-д дараах үйлчилгээг ашиглахыг зөвлөдөг:",
+        "",
+        "• Google Ads",
+        "• Meta Pixel",
+        "",
+        "Зориулалт:",
+        "",
+        "• урсгалын эх үүсвэрийг хянах",
+        "• ретаргетинг хийх",
+        "• хөрвөлтийн үзүүлэлтийг хэмжих",
+        "",
+        "Хадгалах хугацааг үйлчилгээ үзүүлэгчид тогтоодог (ихэвчлэн 13–24 сар хүртэл).",
+      ],
+    },
+
+    {
+      title: "2.4 Функциональ (Functional)",
+      paragraphs: [
+        "Хэрэглэгчийн туршлагыг сайжруулахад ашиглагдана:",
+        "",
+        "• тохиргоо хадгалах,",
+        "• A/B тест хийх,",
+        "• интерфэйсийг нутагшуулах.",
+      ],
+    },
+
+    {
+      title: "3. Cookie удирдах",
+      paragraphs: [
+        "Хэрэглэгч дараах боломжтой:",
+        "",
+        "• «Cookie тохиргоо»-гоор дамжуулан тохиргоогоо өөрчлөх,",
+        "• хөтчийн тохиргоогоор cookie устгах,",
+        "• өгөгдөл боловсруулахыг хязгаарлах.",
+        "",
+        "Сурталчилгааны тохиргоог удирдах холбоосууд:",
+      ],
+      links: [
+        {
+          label: "Google:",
+          text: "https://adssettings.google.com",
+          href: "https://adssettings.google.com",
+        },
+        {
+          label: "Meta:",
+          text: "https://www.facebook.com/adpreferences",
+          href: "https://www.facebook.com/adpreferences",
+        },
+      ],
+    },
+
+    {
+      title: "",
+      paragraphs: ["Cookie ашиглахаас татгалзвал вэбсайтын зарим функц хязгаарлагдаж болзошгүй."],
+    },
+
+    {
+      title: "4. Өгөгдөл боловсруулах эрх зүйн үндэслэл",
+      tables: [
+        {
+          headers: ["Ангилал", "Үндэслэл"],
+          rows: [
+            ["Зайлшгүй шаардлагатай", "Хууль ёсны ашиг сонирхол (вэбсайтын ажиллагааг хангах)"],
+            ["Аналитикийн", "Хэрэглэгчийн зөвшөөрөл"],
+            ["Маркетингийн", "Хэрэглэгчийн зөвшөөрөл"],
+          ],
+        },
+      ],
+      paragraphs: [
+        "Зөвшөөрөл нь:",
+        "",
+        "• сайн дурын үндсэн дээр өгөгдсөн,",
+        "• тодорхой,",
+        "• мэдээлэлтэйгээр өгөгдсөн,",
+        "• хүссэн үедээ цуцлагдах боломжтой байна.",
+      ],
+    },
+
+    {
+      title: "5. Өгөгдлийг гуравдагч этгээдэд дамжуулах",
+      paragraphs: [
+        "Өгөгдөл дараах этгээдэд дамжуулагдаж болно:",
+        "",
+        "• аналитикийн үйлчилгээ үзүүлэгчид (Google),",
+        "• зар сурталчилгааны платформууд (Meta, Google),",
+        "• мэдээллийн технологийн гэрээт гүйцэтгэгчид.",
+        "",
+        "ЕХ-ноос гадуур дамжуулалт нь GDPR-ийн шаардлагын дагуу (SCC ашиглан) хийгддэг.",
+      ],
+    },
+
+    {
+      title: "6. Хадгалах хугацаа",
+      paragraphs: [
+        "Cookie файлууд дараах хугацаагаар хадгалагдана:",
+        "",
+        "• сессийн cookie — хөтөч хаагдах хүртэл,",
+        "• байнгын cookie — 24 сар хүртэл (эсвэл хэрэглэгч устгах хүртэл).",
+      ],
+    },
+
+    {
+      title: "7. Хэрэглэгчийн эрх",
+      paragraphs: [
+        "GDPR-ийн дагуу хэрэглэгч дараах эрхтэй:",
+        "",
+        "• өгөгдөлдөө хандах,",
+        "• засвар оруулах,",
+        "• устгуулах,",
+        "• боловсруулалтыг хязгаарлуулах,",
+        "• өгөгдөл шилжүүлэх,",
+        "• зөвшөөрлөө буцаан татах.",
+        "",
+        "Гомдлыг",
+        "Latvian Data State Inspectorate-д гаргаж болно.",
+      ],
+    },
+
+    {
+      title: "8. Бодлогод оруулах өөрчлөлт",
+      paragraphs: [
+        "Энэхүү бодлогыг шинэчилж болно. Хамгийн сүүлийн хувилбарыг вэбсайтад нийтэлнэ.",
+      ],
+    },
+  ],
+};
+
 const dictionaries: Record<Lang, CookiesPolicyDictionary> = {
   ru,
   pl,
@@ -2226,6 +4316,16 @@ const dictionaries: Record<Lang, CookiesPolicyDictionary> = {
   tr,
   fa,
   hy,
+  ckb,
+  kmr,
+  ar,
+  uk,
+  az: AZ,
+  he,
+  ro: RO,
+  sr: SR,
+  sq: SQ,
+  mn: MN,
 };
 
 export function getCookiesPolicyDictionary(lang: Lang): CookiesPolicyDictionary {

@@ -18,12 +18,29 @@ const breadcrumbTitleByLang: Record<Lang, string> = {
   pl: "Kontakt",
   en: "Contacts",
   be: "Кантакты",
-  uz: "Kontaktlar",
-  ka: "კონტაქტები",
+  uk: "Контакти",
+
+  ro: "Contacte",
+  sr: "Kontakt",
+  sq: "Kontakt",
+
   kk: "Байланыс",
+  uz: "Kontaktlar",
+  az: "Əlaqə",
+
   tr: "İletişim",
-  fa: "تماس با ما",
+
   hy: "Կոնտակտներ",
+  ka: "კონტაქტები",
+
+  fa: "تماس با ما",
+  ar: "اتصل بنا",
+  ckb: "پەیوەندی",
+  kmr: "Têkilî",
+
+  he: "צור קשר",
+
+  mn: "Холбоо барих",
 };
 
 function normalizeLang(value: string): Lang {

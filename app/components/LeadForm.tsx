@@ -360,17 +360,127 @@ export default function LeadForm(props: { lang: Lang }) {
 
 
   const modalTexts: Record<Lang, { success: string; partial: string }> = {
-    ru: { success: "Ваша заявка УСПЕШНО отправлена! С вами может связаться менеджер через почту или мессенджеры для уточнения информации", partial: "Ваша заявка отправлена! Но есть проблема с прикрепленными файлами, с вами свяжется менеджер через почту или мессенджеры для уточнения информации" },
-    pl: { success: "Twoje zgłoszenie zostało POMYŚLNIE wysłane! Menedżer może skontaktować się z Tobą przez e-mail lub komunikatory, aby doprecyzować informacje.", partial: "Twoje zgłoszenie zostało wysłane! Wystąpił problem z załączonymi plikami, menedżer skontaktuje się z Tobą przez e-mail lub komunikatory, aby doprecyzować informacje." },
-    en: { success: "Your request was SUCCESSFULLY sent! A manager may contact you via email or messengers to уточнить information.", partial: "Your request was sent! There is an issue with attached files, a manager will contact you via email or messengers to clarify details." },
-    be: { success: "Ваша заяўка ПАСПЯХОВА адпраўлена! З вамі можа звязацца менеджар праз пошту або месенджары для ўдакладнення інфармацыі.", partial: "Ваша заяўка адпраўлена! Але ёсць праблема з прымацаванымі файламі, з вамі звяжацца менеджар праз пошту або месенджары для ўдакладнення інфармацыі." },
-    uz: { success: "Arizangiz MUVAFFAQIYATLI yuborildi! Menejer ma’lumotlarni aniqlashtirish uchun siz bilan e-pochta yoki messenjerlar orqali bog‘lanishi mumkin.", partial: "Arizangiz yuborildi! Ammo biriktirilgan fayllar bilan muammo bor, menejer ma’lumotlarni aniqlashtirish uchun siz bilan e-pochta yoki messenjerlar orqali bog‘lanadi." },
-    ka: { success: "თქვენი განაცხადი წარმატებით გაიგზავნა! ინფორმაციის დასაზუსტებლად მენეჯერი შეიძლება დაგიკავშირდეთ ელფოსტით ან მესენჯერებით.", partial: "თქვენი განაცხადი გაიგზავნა! მაგრამ მიმაგრებულ ფაილებზე პრობლემაა, მენეჯერი დაგიკავშირდებათ ელფოსტით ან მესენჯერებით ინფორმაციის დასაზუსტებლად." },
-    kk: { success: "Өтініміңіз СӘТТІ жіберілді! Ақпаратты нақтылау үшін менеджер сізбен пошта немесе мессенджерлер арқылы байланысуы мүмкін.", partial: "Өтініміңіз жіберілді! Бірақ тіркелген файлдарда мәселе бар, ақпаратты нақтылау үшін менеджер сізбен пошта немесе мессенджерлер арқылы байланысады." },
-    tr: { success: "Başvurunuz BAŞARIYLA gönderildi! Bilgileri netleştirmek için yönetici sizinle e-posta veya mesajlaşma uygulamaları üzerinden iletişime geçebilir.", partial: "Başvurunuz gönderildi! Ancak ekli dosyalarda bir sorun var, yönetici bilgileri netleştirmek için sizinle e-posta veya mesajlaşma uygulamaları üzerinden iletişime geçecektir." },
-    fa: { success: "درخواست شما با موفقیت ارسال شد! ممکن است مدیر برای تکمیل اطلاعات از طریق ایمیل یا پیام‌رسان‌ها با شما تماس بگیرد.", partial: "درخواست شما ارسال شد! اما مشکلی در فایل‌های پیوست وجود دارد و مدیر برای تکمیل اطلاعات از طریق ایمیل یا پیام‌رسان‌ها با شما تماس می‌گیرد." },
-    hy: { success: "Ձեր հայտը ՀԱՋՈՂՈՒԹՅԱՄԲ ուղարկվել է։ Տվյալները ճշտելու համար մենեջերը կարող է կապվել ձեզ հետ էլ․փոստով կամ մեսենջերներով։", partial: "Ձեր հայտը ուղարկվել է։ Բայց կցված ֆայլերի հետ խնդիր կա, և մենեջերը կկապվի ձեզ հետ էլ․փոստով կամ մեսենջերներով՝ տվյալները ճշտելու համար։" },
-  };
+  ru: {
+    success:
+      "Ваша заявка успешно отправлена. Менеджер может связаться с вами по электронной почте или через мессенджеры для уточнения информации.",
+    partial:
+      "Ваша заявка отправлена, но возникла проблема с прикреплёнными файлами. Менеджер свяжется с вами по электронной почте или через мессенджеры для уточнения информации.",
+  },
+  en: {
+    success:
+      "Your request has been successfully sent. A manager may contact you by email or messenger to clarify the information.",
+    partial:
+      "Your request has been sent, but there is a problem with the attached files. A manager will contact you by email or messenger to clarify the information.",
+  },
+  pl: {
+    success:
+      "Twoje zgłoszenie zostało pomyślnie wysłane. Menedżer może skontaktować się z Tobą e-mailem lub przez komunikator, aby doprecyzować informacje.",
+    partial:
+      "Twoje zgłoszenie zostało wysłane, ale wystąpił problem z załączonymi plikami. Menedżer skontaktuje się z Tobą e-mailem lub przez komunikator, aby doprecyzować informacje.",
+  },
+  be: {
+    success:
+      "Ваша заяўка паспяхова адпраўлена. Менеджар можа звязацца з вамі па электроннай пошце або праз месенджары для ўдакладнення інфармацыі.",
+    partial:
+      "Ваша заяўка адпраўлена, але ўзнікла праблема з прымацаванымі файламі. Менеджар звяжацца з вамі па электроннай пошце або праз месенджары для ўдакладнення інфармацыі.",
+  },
+  uk: {
+    success:
+      "Вашу заявку успішно надіслано. Менеджер може зв’язатися з вами електронною поштою або через месенджери для уточнення інформації.",
+    partial:
+      "Вашу заявку надіслано, але виникла проблема з прикріпленими файлами. Менеджер зв’яжеться з вами електронною поштою або через месенджери для уточнення інформації.",
+  },
+  kk: {
+    success:
+      "Өтініміңіз сәтті жіберілді. Ақпаратты нақтылау үшін менеджер сізбен электрондық пошта немесе мессенджерлер арқылы байланысуы мүмкін.",
+    partial:
+      "Өтініміңіз жіберілді, бірақ тіркелген файлдарда мәселе бар. Ақпаратты нақтылау үшін менеджер сізбен электрондық пошта немесе мессенджерлер арқылы байланысады.",
+  },
+  uz: {
+    success:
+      "Arizangiz muvaffaqiyatli yuborildi. Menejer ma’lumotlarni aniqlashtirish uchun siz bilan e-pochta yoki messenjerlar orqali bog‘lanishi mumkin.",
+    partial:
+      "Arizangiz yuborildi, ammo biriktirilgan fayllar bilan muammo yuzaga keldi. Menejer ma’lumotlarni aniqlashtirish uchun siz bilan e-pochta yoki messenjerlar orqali bog‘lanadi.",
+  },
+  az: {
+    success:
+      "Müraciətiniz uğurla göndərildi. Məlumatları dəqiqləşdirmək üçün menecer sizinlə e-poçt və ya messencerlər vasitəsilə əlaqə saxlaya bilər.",
+    partial:
+      "Müraciətiniz göndərildi, lakin əlavə edilmiş fayllarla bağlı problem yarandı. Məlumatları dəqiqləşdirmək üçün menecer sizinlə e-poçt və ya messencerlər vasitəsilə əlaqə saxlayacaq.",
+  },
+  tr: {
+    success:
+      "Başvurunuz başarıyla gönderildi. Bilgileri netleştirmek için bir yönetici sizinle e-posta veya mesajlaşma uygulamaları üzerinden iletişime geçebilir.",
+    partial:
+      "Başvurunuz gönderildi, ancak ekli dosyalarla ilgili bir sorun oluştu. Bilgileri netleştirmek için bir yönetici sizinle e-posta veya mesajlaşma uygulamaları üzerinden iletişime geçecektir.",
+  },
+  ka: {
+    success:
+      "თქვენი განაცხადი წარმატებით გაიგზავნა. ინფორმაციის დასაზუსტებლად მენეჯერი შეიძლება დაგიკავშირდეთ ელფოსტით ან მესენჯერებით.",
+    partial:
+      "თქვენი განაცხადი გაიგზავნა, მაგრამ მიმაგრებულ ფაილებთან დაკავშირებით პრობლემა წარმოიშვა. ინფორმაციის დასაზუსტებლად მენეჯერი დაგიკავშირდებათ ელფოსტით ან მესენჯერებით.",
+  },
+  hy: {
+    success:
+      "Ձեր հայտը հաջողությամբ ուղարկվել է։ Տեղեկությունները ճշտելու համար մենեջերը կարող է կապվել ձեզ հետ էլ․ փոստով կամ մեսենջերներով։",
+    partial:
+      "Ձեր հայտը ուղարկվել է, բայց կցված ֆայլերի հետ խնդիր է առաջացել։ Տեղեկությունները ճշտելու համար մենեջերը կկապվի ձեզ հետ էլ․ փոստով կամ մեսենջերներով։",
+  },
+  fa: {
+    success:
+      "درخواست شما با موفقیت ارسال شد. ممکن است مدیر برای تکمیل اطلاعات از طریق ایمیل یا پیام‌رسان‌ها با شما تماس بگیرد.",
+    partial:
+      "درخواست شما ارسال شد، اما مشکلی در فایل‌های پیوست وجود دارد. مدیر برای تکمیل اطلاعات از طریق ایمیل یا پیام‌رسان‌ها با شما تماس خواهد گرفت.",
+  },
+  ckb: {
+    success:
+      "داواکارییەکەت بە سەرکەوتوویی نێردرا. بۆ ڕوونکردنەوەی زانیارییەکان، بەڕێوەبەر دەتوانێت لە ڕێگەی ئیمەیڵ یان مێسنجەرەکان پەیوەندیت پێوە بکات.",
+    partial:
+      "داواکارییەکەت نێردرا، بەڵام کێشەیەک لە فایلە هاوپێچکراوەکاندا هەیە. بۆ ڕوونکردنەوەی زانیارییەکان، بەڕێوەبەر لە ڕێگەی ئیمەیڵ یان مێسنجەرەکان پەیوەندیت پێوە دەکات.",
+  },
+  kmr: {
+    success:
+      "Daxwaza we bi serkeftî hate şandin. Dibe ku rêveber ji bo zelalkirina agahdariyan bi e-mail an messengeran bi we re têkilî dayne.",
+    partial:
+      "Daxwaza we hate şandin, lê pirsgirêkek bi pelên girêdayî re derket. Rêveber dê ji bo zelalkirina agahdariyan bi e-mail an messengeran bi we re têkilî dayne.",
+  },
+  ar: {
+    success:
+      "تم إرسال طلبك بنجاح. قد يتواصل معك أحد المختصين عبر البريد الإلكتروني أو تطبيقات المراسلة لتأكيد المعلومات أو استكمالها.",
+    partial:
+      "تم إرسال طلبك، ولكن حدثت مشكلة في الملفات المرفقة. سيتواصل معك أحد المختصين عبر البريد الإلكتروني أو تطبيقات المراسلة لتوضيح المعلومات المطلوبة.",
+  },
+  he: {
+    success:
+      "הבקשה שלך נשלחה בהצלחה. מנהל עשוי ליצור איתך קשר בדוא״ל או באמצעות מסנג׳רים כדי להבהיר את המידע.",
+    partial:
+      "הבקשה שלך נשלחה, אך קיימת בעיה עם הקבצים המצורפים. מנהל יצור איתך קשר בדוא״ל או באמצעות מסנג׳רים כדי להבהיר את המידע.",
+  },
+  ro: {
+    success:
+      "Cererea dumneavoastră a fost trimisă cu succes. Un manager vă poate contacta prin e-mail sau mesagerie pentru clarificarea informațiilor.",
+    partial:
+      "Cererea dumneavoastră a fost trimisă, dar a apărut o problemă cu fișierele atașate. Un manager vă va contacta prin e-mail sau mesagerie pentru clarificarea informațiilor.",
+  },
+  sr: {
+    success:
+      "Ваш захтев је успешно послат. Менаџер може да вас контактира путем е-поште или месинџера ради појашњења информација.",
+    partial:
+      "Ваш захтев је послат, али постоји проблем са приложеним датотекама. Менаџер ће вас контактирати путем е-поште или месинџера ради појашњења информација.",
+  },
+  sq: {
+    success:
+      "Kërkesa juaj u dërgua me sukses. Një menaxher mund t’ju kontaktojë me e-mail ose përmes aplikacioneve të mesazheve për të sqaruar informacionin.",
+    partial:
+      "Kërkesa juaj u dërgua, por ka një problem me skedarët e bashkëngjitur. Një menaxher do t’ju kontaktojë me e-mail ose përmes aplikacioneve të mesazheve për të sqaruar informacionin.",
+  },
+  mn: {
+    success:
+      "Таны хүсэлт амжилттай илгээгдлээ. Мэдээллийг тодруулахын тулд менежер тантай имэйл эсвэл мессенжерээр холбогдож болно.",
+    partial:
+      "Таны хүсэлт илгээгдсэн боловч хавсаргасан файлуудтай холбоотой асуудал гарлаа. Мэдээллийг тодруулахын тулд менежер тантай имэйл эсвэл мессенжерээр холбогдоно.",
+  },
+};
 
   return (
     <section className="section" id="buy" aria-label={t.title}>

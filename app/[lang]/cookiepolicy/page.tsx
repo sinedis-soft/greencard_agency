@@ -11,16 +11,35 @@ import { getSeoDictionary } from "@/app/dictionaries/seo";
 import { BreadcrumbListJsonLd } from "@/app/components/StructuredData";
 
 const breadcrumbTitleByLang: Record<Lang, string> = {
-  ru: "Cookie политика",
-  pl: "Polityka cookie",
-  en: "Cookie policy",
-  be: "Палітыка cookie",
-  uz: "Cookie siyosati",
-  ka: "Cookie პოლიტიკა",
-  kk: "Cookie саясаты",
-  tr: "Çerez politikası",
-  fa: "سیاست کوکی",
-  hy: "Cookie քաղաքականություն",
+  ru: "Политика использования файлов cookie",
+  pl: "Polityka plików cookie",
+  en: "Cookie Policy",
+  be: "Палітыка выкарыстання файлаў cookie",
+  uk: "Політика використання файлів cookie",
+
+  ro: "Politica privind cookie-urile",
+  sr: "Политика колачића",
+  sq: "Politika e cookies",
+
+  kk: "Cookie файлдарының саясаты",
+  uz: "Cookie fayllari siyosati",
+  az: "Kuki faylları siyasəti",
+
+  tr: "Çerez Politikası",
+
+  hy: "Քուքի քաղաքականություն",
+  ka: "ქუქი-ფაილების პოლიტიკა",
+
+  fa: "سیاست کوکی‌ها",
+
+  ckb: "سیاسەتی کوکییەکان",
+  kmr: "Polîtîkaya Cookieyan",
+
+  ar: "سياسة ملفات تعريف الارتباط",
+
+  he: "מדיניות קובצי Cookie",
+
+  mn: "Күүки файлын бодлого",
 };
 
 function normalizeLang(value: string): Lang {

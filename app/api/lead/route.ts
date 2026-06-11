@@ -40,9 +40,72 @@ const engineTypeMap: Record<string, string> = { petrol: "133", diesel: "135", Ga
 const powerUnitMap: Record<string, string> = { kw: "145", ph: "147" };
 function isVehicleStringField(field: string): field is VehicleStringField { return vehicleStringFields.includes(field as VehicleStringField); }
 
-const langToComm: Record<string, string> = { ru: "3937", pl: "3955", en: "3953", be:"3935", uz: "3947", kg: "3949", ka: "3941", kk: "3945", tr: "3957", fa: "3953", mn: "3953", hy: "3943" };
+const langToComm: Record<string, string> = {
+  be: "3935", // Белорусский
+  ru: "3937", // Русский
+  uk: "3939", // Украинский
 
-const countryMap: Record<string, string> = { AR: "529", AZ: "531", BY: "123", GE: "523", KZ: "385", KG: "527", MD: "521", MN: "383", RU: "125", TR: "2253", UA: "519", UZ: "525", OTHER: "411" };
+  ka: "3941", // Грузинский
+  hy: "3943", // Армянский
+  kk: "3945", // Казахский
+  uz: "3947", // Узбекский
+  kg: "3949", // Кыргызский
+  az: "3951", // Азербайджанский
+
+  en: "3953", // Английский
+  pl: "3955", // Польский
+  tr: "3957", // Турецкий
+
+  ar: "4761",  // Арабский
+  ckb: "4763", // Центральнокурдский (сорани)
+  kmr: "4765", // Севернокурдский (курманджи)
+
+  ro: "4767", // Румынский
+  sr: "4769", // Сербский
+  sq: "4771", // Албанский
+  fa: "4773", // Персидский
+  he: "4775", // Иврит
+  mn: "4777", // Монгольский
+};
+
+const countryMap: Record<string, string> = {
+  AM: "529",
+  AZ: "531",
+  BY: "123",
+  GE: "523",
+  KZ: "385",
+  KG: "527",
+  MD: "521",
+  MN: "383",
+  RU: "125",
+  TR: "2253",
+  UA: "519",
+  UZ: "525",
+
+  AE: "4779",
+  BH: "4781",
+  DZ: "4783",
+  EG: "4785",
+  GB: "4787",
+  IL: "4789",
+  IQ: "4791",
+  IR: "4793",
+  JO: "4795",
+  KW: "4797",
+  LB: "4799",
+  LY: "4801",
+  MA: "4803",
+  OM: "4805",
+  QA: "4807",
+  SA: "4809",
+  SY: "4811",
+  TN: "4813",
+  US: "4815",
+  YE: "4817",
+
+  OTHER: "411",
+};
+
 const vehicleTypeMap: Record<string, string> = { car: "127", trailer: "129", bus: "131", moto: "217", special: "457", truck: "453" };
 const periodMap: Record<string, string> = { "30": "115", "90": "117", "180": "119", "365": "121" };
 

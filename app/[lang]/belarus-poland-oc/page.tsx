@@ -11,7 +11,37 @@ function normalizeLang(value: string): Lang {
 
 function FaqJsonLd({ lang }: { lang: Lang }) {
   const t = getBelarusPolandOcDictionary(lang);
-  const homeCrumbByLang: Record<Lang, string> = { ru: "Главная", pl: "Strona główna", en: "Home", be: "Галоўная", uz: "Bosh sahifa", ka: "მთავარი", kk: "Басты бет", tr: "Ana Sayfa", fa: "صفحه اصلی", hy: "Գլխավոր" };
+  const homeCrumbByLang: Record<Lang, string> = {
+    ru: "Главная",
+    pl: "Strona główna",
+    en: "Home",
+    be: "Галоўная",
+    uk: "Головна",
+
+    ro: "Acasă",
+    sr: "Почетна",
+    sq: "Kryefaqja",
+
+    kk: "Басты бет",
+    uz: "Bosh sahifa",
+    az: "Ana səhifə",
+
+    tr: "Ana Sayfa",
+
+    hy: "Գլխավոր",
+    ka: "მთავარი",
+
+    fa: "صفحه اصلی",
+
+    ckb: "سەرەکی",
+    kmr: "Rûpela Sereke",
+
+    ar: "الرئيسية",
+
+    he: "דף הבית",
+
+    mn: "Нүүр хуудас",
+  };
   const data = {"@context":"https://schema.org","@type":"FAQPage","@id":toAbsolute(`/${lang}/belarus-poland-oc#faq`),mainEntity:t.faq.items.map((item)=>({"@type":"Question",name:item.q,acceptedAnswer:{"@type":"Answer",text:item.a}}))};
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data).replace(/</g, "\\u003c") }} />;
 }
@@ -27,7 +57,37 @@ export default async function BelarusPolandOcPage({ params }: { params: Promise<
   const { lang: rawLang } = await params;
   const lang = normalizeLang(rawLang);
   const t = getBelarusPolandOcDictionary(lang);
-  const homeCrumbByLang: Record<Lang, string> = { ru: "Главная", pl: "Strona główna", en: "Home", be: "Галоўная", uz: "Bosh sahifa", ka: "მთავარი", kk: "Басты бет", tr: "Ana Sayfa", fa: "صفحه اصلی", hy: "Գլխավոր" };
+  const homeCrumbByLang: Record<Lang, string> = {
+    ru: "Главная",
+    pl: "Strona główna",
+    en: "Home",
+    be: "Галоўная",
+    uk: "Головна",
+
+    ro: "Acasă",
+    sr: "Почетна",
+    sq: "Kryefaqja",
+
+    kk: "Басты бет",
+    uz: "Bosh sahifa",
+    az: "Ana səhifə",
+
+    tr: "Ana Sayfa",
+
+    hy: "Գլխավոր",
+    ka: "მთავარი",
+
+    fa: "صفحه اصلی",
+
+    ckb: "سەرەکی",
+    kmr: "Rûpela Sereke",
+
+    ar: "الرئيسية",
+
+    he: "דף הבית",
+
+    mn: "Нүүр хуудас",
+  };
 
   return (
     <main id="main">

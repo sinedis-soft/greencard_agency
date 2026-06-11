@@ -371,6 +371,346 @@ export const calculatorDictionary: Record<Lang, CalculatorDictionary> = {
     resultHint: " ",
     note: " ",
   },
+  ckb: {
+    title: "ژمێرکاری نرخ",
+    badge: "~ 1 خولەک",
+    intro: "ماوەی بیمە و جۆری ئامرازەکە هەڵبژێرە.",
+
+    fields: {
+      vehicle: {
+        label: "جۆری ئامراز",
+        options: [
+          { value: "car", label: "ئۆتۆمبێلی سواری" },
+          { value: "moto", label: "ماتۆڕ" },
+          { value: "van", label: "پاس" },
+          { value: "truck", label: "بارهەڵگر" },
+          { value: "trailer", label: "پاشکۆ" },
+          { value: "special", label: "ئامرازە تایبەتەکان" },
+        ],
+      },
+      term: {
+        label: "ماوەی بیمە",
+        options: [
+          { value: "30", label: "1 مانگ" },
+          { value: "60", label: "2 مانگ" },
+          { value: "90", label: "3 مانگ" },
+          { value: "180", label: "6 مانگ" },
+          { value: "365", label: "12 مانگ" },
+        ],
+      },
+    },
+
+    button: "هەژمارکردنی نرخ",
+    resultTitle: "نرخی خەمڵێندراو",
+    resultHint: " ",
+    note: " ",
+  },  
+  kmr: {
+    title: "Hesabkera Bihayê",
+    badge: "~ 1 deqîqe",
+    intro: "Demjimêra sîgorteyê û cureya wesayîtê hilbijêrin.",
+
+    fields: {
+      vehicle: {
+        label: "Cureya wesayîtê",
+        options: [
+          { value: "car", label: "Otomobîl" },
+          { value: "moto", label: "Motorsîklet" },
+          { value: "van", label: "Otobûs" },
+          { value: "truck", label: "Kamyon" },
+          { value: "trailer", label: "Rimork" },
+          { value: "special", label: "Makîneyên taybet" },
+        ],
+      },
+      term: {
+        label: "Dema sîgorteyê",
+        options: [
+          { value: "30", label: "1 meh" },
+          { value: "60", label: "2 meh" },
+          { value: "90", label: "3 meh" },
+          { value: "180", label: "6 meh" },
+          { value: "365", label: "12 meh" },
+        ],
+      },
+    },
+
+    button: "Hesab bike",
+    resultTitle: "Bihayê texmînî",
+    resultHint: " ",
+    note: " ",
+  },
+  ar: {
+    title: "حاسبة التكلفة",
+    badge: "~ دقيقة واحدة",
+    intro: "اختر مدة التأمين ونوع المركبة.",
+
+    fields: {
+      vehicle: {
+        label: "نوع المركبة",
+        options: [
+          { value: "car", label: "سيارات ركاب" },
+          { value: "moto", label: "دراجات نارية" },
+          { value: "van", label: "حافلات" },
+          { value: "truck", label: "شاحنات" },
+          { value: "trailer", label: "مقطورات" },
+          { value: "special", label: "مركبات خاصة" },
+        ],
+      },
+      term: {
+        label: "مدة التأمين",
+        options: [
+          { value: "30", label: "شهر واحد" },
+          { value: "60", label: "شهران" },
+          { value: "90", label: "3 أشهر" },
+          { value: "180", label: "6 أشهر" },
+          { value: "365", label: "12 شهرًا" },
+        ],
+      },
+    },
+
+    button: "احسب",
+    resultTitle: "التكلفة التقديرية",
+    resultHint: " ",
+    note: " ",
+  },
+  he: {
+    title: "מחשבון עלות הביטוח",
+    badge: "~ דקה אחת",
+    intro: "בחרו את תקופת הביטוח ואת סוג הרכב.",
+
+    fields: {
+      vehicle: {
+        label: "סוג הרכב",
+        options: [
+          { value: "car", label: "רכב פרטי" },
+          { value: "moto", label: "אופנועים" },
+          { value: "van", label: "אוטובוסים" },
+          { value: "truck", label: "משאיות" },
+          { value: "trailer", label: "נגררים" },
+          { value: "special", label: "ציוד הנדסי וכלים מיוחדים" },
+        ],
+      },
+      term: {
+        label: "תקופת הביטוח",
+        options: [
+          { value: "30", label: "חודש אחד" },
+          { value: "60", label: "חודשיים" },
+          { value: "90", label: "3 חודשים" },
+          { value: "180", label: "6 חודשים" },
+          { value: "365", label: "12 חודשים" },
+        ],
+      },
+    },
+
+    button: "חשב עלות",
+    resultTitle: "עלות משוערת",
+    resultHint: " ",
+    note: " ",
+  },
+  uk: {
+    title: "Калькулятор вартості",
+    badge: "~ 1 хвилина",
+    intro: "Оберіть строк страхування та тип транспортного засобу.",
+
+    fields: {
+      vehicle: {
+        label: "Тип ТЗ",
+        options: [
+          { value: "car", label: "Легкові автомобілі" },
+          { value: "moto", label: "Мотоцикли" },
+          { value: "van", label: "Автобуси" },
+          { value: "truck", label: "Вантажні автомобілі" },
+          { value: "trailer", label: "Причепи" },
+          { value: "special", label: "Спецтехніка" },
+        ],
+      },
+      term: {
+        label: "Строк страхування",
+        options: [
+          { value: "30", label: "1 місяць" },
+          { value: "60", label: "2 місяці" },
+          { value: "90", label: "3 місяці" },
+          { value: "180", label: "6 місяців" },
+          { value: "365", label: "12 місяців" },
+        ],
+      },
+    },
+
+    button: "Розрахувати",
+    resultTitle: "Орієнтовна вартість",
+    resultHint: " ",
+    note: " ",
+  },
+  az: {
+    title: "Qiymət kalkulyatoru",
+    badge: "~ 1 dəqiqə",
+    intro: "Sığorta müddətini və nəqliyyat vasitəsinin növünü seçin.",
+
+    fields: {
+      vehicle: {
+        label: "Nəqliyyat vasitəsinin növü",
+        options: [
+          { value: "car", label: "Minik avtomobilləri" },
+          { value: "moto", label: "Motosikletlər" },
+          { value: "van", label: "Avtobuslar" },
+          { value: "truck", label: "Yük avtomobilləri" },
+          { value: "trailer", label: "Qoşqular" },
+          { value: "special", label: "Xüsusi texnika" },
+        ],
+      },
+      term: {
+        label: "Sığorta müddəti",
+        options: [
+          { value: "30", label: "1 ay" },
+          { value: "60", label: "2 ay" },
+          { value: "90", label: "3 ay" },
+          { value: "180", label: "6 ay" },
+          { value: "365", label: "12 ay" },
+        ],
+      },
+    },
+
+    button: "Hesabla",
+    resultTitle: "Təxmini qiymət",
+    resultHint: " ",
+    note: " ",
+  },
+  ro: {
+    title: "Calculator de cost",
+    badge: "~ 1 minut",
+    intro: "Selectați perioada de asigurare și tipul vehiculului.",
+
+    fields: {
+      vehicle: {
+        label: "Tipul vehiculului",
+        options: [
+          { value: "car", label: "Autoturisme" },
+          { value: "moto", label: "Motociclete" },
+          { value: "van", label: "Autobuze" },
+          { value: "truck", label: "Camioane" },
+          { value: "trailer", label: "Remorci" },
+          { value: "special", label: "Vehicule speciale" },
+        ],
+      },
+      term: {
+        label: "Perioada de asigurare",
+        options: [
+          { value: "30", label: "1 lună" },
+          { value: "60", label: "2 luni" },
+          { value: "90", label: "3 luni" },
+          { value: "180", label: "6 luni" },
+          { value: "365", label: "12 luni" },
+        ],
+      },
+    },
+
+    button: "Calculează",
+    resultTitle: "Cost estimativ",
+    resultHint: " ",
+    note: " ",
+  },
+  sr: {
+    title: "Kalkulator cene",
+    badge: "~ 1 minut",
+    intro: "Izaberite period osiguranja i vrstu vozila.",
+
+    fields: {
+      vehicle: {
+        label: "Vrsta vozila",
+        options: [
+          { value: "car", label: "Putnička vozila" },
+          { value: "moto", label: "Motocikli" },
+          { value: "van", label: "Autobusi" },
+          { value: "truck", label: "Teretna vozila" },
+          { value: "trailer", label: "Prikolice" },
+          { value: "special", label: "Specijalna vozila" },
+        ],
+      },
+      term: {
+        label: "Period osiguranja",
+        options: [
+          { value: "30", label: "1 mesec" },
+          { value: "60", label: "2 meseca" },
+          { value: "90", label: "3 meseca" },
+          { value: "180", label: "6 meseci" },
+          { value: "365", label: "12 meseci" },
+        ],
+      },
+    },
+
+    button: "Izračunaj",
+    resultTitle: "Okvirna cena",
+    resultHint: " ",
+    note: " ",
+  },
+  sq: {
+    title: "Llogaritësi i kostos",
+    badge: "~ 1 minutë",
+    intro: "Zgjidhni periudhën e sigurimit dhe llojin e mjetit.",
+
+    fields: {
+      vehicle: {
+        label: "Lloji i mjetit",
+        options: [
+          { value: "car", label: "Automjete pasagjerësh" },
+          { value: "moto", label: "Motocikleta" },
+          { value: "van", label: "Autobusë" },
+          { value: "truck", label: "Automjete të mallrave" },
+          { value: "trailer", label: "Rimorkio" },
+          { value: "special", label: "Mjete speciale" },
+        ],
+      },
+      term: {
+        label: "Periudha e sigurimit",
+        options: [
+          { value: "30", label: "1 muaj" },
+          { value: "60", label: "2 muaj" },
+          { value: "90", label: "3 muaj" },
+          { value: "180", label: "6 muaj" },
+          { value: "365", label: "12 muaj" },
+        ],
+      },
+    },
+
+    button: "Llogarit",
+    resultTitle: "Kosto e përafërt",
+    resultHint: " ",
+    note: " ",
+  },
+  mn: {
+    title: "Үнийн тооцоолуур",
+    badge: "~ 1 минут",
+    intro: "Даатгалын хугацаа болон тээврийн хэрэгслийн төрлийг сонгоно уу.",
+
+    fields: {
+      vehicle: {
+        label: "Тээврийн хэрэгслийн төрөл",
+        options: [
+          { value: "car", label: "Суудлын автомашин" },
+          { value: "moto", label: "Мотоцикл" },
+          { value: "van", label: "Автобус" },
+          { value: "truck", label: "Ачааны автомашин" },
+          { value: "trailer", label: "Чиргүүл" },
+          { value: "special", label: "Тусгай зориулалтын техник" },
+        ],
+      },
+      term: {
+        label: "Даатгалын хугацаа",
+        options: [
+          { value: "30", label: "1 сар" },
+          { value: "60", label: "2 сар" },
+          { value: "90", label: "3 сар" },
+          { value: "180", label: "6 сар" },
+          { value: "365", label: "12 сар" },
+        ],
+      },
+    },
+
+    button: "Тооцоолох",
+    resultTitle: "Урьдчилсан үнэ",
+    resultHint: " ",
+    note: " ",
+  },
 }
 
 export function getCalculatorDictionary(lang: Lang): CalculatorDictionary {

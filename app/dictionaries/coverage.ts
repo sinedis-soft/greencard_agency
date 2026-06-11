@@ -237,6 +237,232 @@ const DICT: Record<Lang, CoverageDict> = {
       },
     ],
   },
+
+  ckb: {
+    title: "ناوچەی پاراستن و مەرجەکان",
+    mapAlt: "وڵاتەکانی شمولی گرێبەستی بیمەی سنووری",
+    mapCaption: " ",
+    items: [
+      {
+        title: "ناوچەی کارایی",
+        text:
+          "بیمەنامەکە لەو وڵاتانەدا کارا دەبێت کە لەسەر نەخشەکە نیشان دراون. A - نەمسا، B - بەلجیکا، BG - بولگاریا، CY - قوبرس، CZ - چیک، D - ئەڵمانیا، DK - دانیمارک، E - ئیسپانیا، EST - ئێستۆنیا، F - فەڕەنسا، FIN - فینلەندا، GR - یۆنان، H - مەجارستان، HR - کرۆواتیا، I - ئیتاڵیا، IRL - ئیرلەندا، IS - ئایسلەندا، L - لۆکسەمبۆرگ، LT - لیتوانیا، LV - لاتویا، M - ماڵتا، N - نەرویج، NL - هۆڵەندا، P - پورتوگال، PL - پۆڵەندا، RO - ڕۆمانیا، S - سوید، SK - سلۆڤاکیا، SLO - سلۆڤینیا، CH - سویسرا.",
+      },
+      {
+        title: "جۆرەکانی ئامرازە گواستنەوەکان",
+        text:
+          "ئۆتۆمبێلی سواری، ماتۆڕ، ئامرازە بارهەڵگرەکان، پاشکۆ و پاس.",
+      },
+      {
+        title: "ماوەی کارایی",
+        text:
+          "کەمترین ماوە 1 مانگە و زۆرترین ماوە 1 ساڵە.",
+      },
+    ],
+  },
+  kmr: {
+    title: "Herêma Berfirehbûnê û Mercan",
+    mapAlt: "Welatên ku peymana sîgorteya sînorî lê derbasdar e",
+    mapCaption: " ",
+    items: [
+      {
+        title: "Herêma berfirehbûnê",
+        text:
+          "Polîçe li welatên ku li ser nexşeyê hatine nîşandan derbasdar e. A - Awusturya, B - Belçîka, BG - Bulgaristan, CY - Qibris, CZ - Çekya, D - Almanya, DK - Danîmarka, E - Spanya, EST - Estonya, F - Fransa, FIN - Fînlandiya, GR - Yewnanistan, H - Macaristan, HR - Xirwatistan, I - Îtalya, IRL - Îrlanda, IS - Îzlanda, L - Luksembûrg, LT - Lîtvanya, LV - Letonya, M - Malta, N - Norwêc, NL - Hollanda, P - Portekîz, PL - Polonya, RO - Romanya, S - Swêd, SK - Slovakya, SLO - Slovenya, CH - Swîsre.",
+      },
+      {
+        title: "Cureyên wesayîtan",
+        text:
+          "Otomobîl, motorsîklet, wesayîtên barhilgir, rimork, otobûs.",
+      },
+      {
+        title: "Dema derbasdariyê",
+        text:
+          "Demjimêra herî kêm 1 meh e. Demjimêra herî zêde 1 sal e.",
+      },
+    ],
+  },
+  ar: {
+    title: "نطاق التغطية والشروط",
+    mapAlt: "الدول التي يغطيها عقد التأمين الحدودي",
+    mapCaption: " ",
+    items: [
+      {
+        title: "نطاق التغطية الجغرافي",
+        text:
+          "تسري وثيقة التأمين في الدول الموضحة على الخريطة: A - النمسا، B - بلجيكا، BG - بلغاريا، CY - قبرص، CZ - التشيك، D - ألمانيا، DK - الدنمارك، E - إسبانيا، EST - إستونيا، F - فرنسا، FIN - فنلندا، GR - اليونان، H - المجر، HR - كرواتيا، I - إيطاليا، IRL - أيرلندا، IS - آيسلندا، L - لوكسمبورغ، LT - ليتوانيا، LV - لاتفيا، M - مالطا، N - النرويج، NL - هولندا، P - البرتغال، PL - بولندا، RO - رومانيا، S - السويد، SK - سلوفاكيا، SLO - سلوفينيا، CH - سويسرا.",
+      },
+      {
+        title: "أنواع المركبات",
+        text:
+          "السيارات الخاصة، الدراجات النارية، الشاحنات، المقطورات، والحافلات.",
+      },
+      {
+        title: "مدة التأمين",
+        text:
+          "الحد الأدنى لمدة التأمين شهر واحد، والحد الأقصى سنة واحدة.",
+      },
+    ],
+  },
+
+  uk: {
+    title: "Територія покриття та умови",
+    mapAlt: "Країни дії договору транскордонного страхування",
+    mapCaption: " ",
+    items: [
+      {
+        title: "Територія дії",
+        text:
+          "Поліс діє в країнах, позначених на карті. A - Австрія, B - Бельгія, BG - Болгарія, CY - Кіпр, CZ - Чехія, D - Німеччина, DK - Данія, E - Іспанія, EST - Естонія, F - Франція, FIN - Фінляндія, GR - Греція, H - Угорщина, HR - Хорватія, I - Італія, IRL - Ірландія, IS - Ісландія, L - Люксембург, LT - Литва, LV - Латвія, M - Мальта, N - Норвегія, NL - Нідерланди, P - Португалія, PL - Польща, RO - Румунія, S - Швеція, SK - Словаччина, SLO - Словенія, CH - Швейцарія.",
+      },
+      {
+        title: "Типи транспортних засобів",
+        text:
+          "Легкові автомобілі, мотоцикли, вантажний транспорт, причепи, автобуси.",
+      },
+      {
+        title: "Строк дії",
+        text:
+          "Мінімальний строк — 1 місяць. Максимальний — 1 рік.",
+      },
+    ],
+  },
+
+  he: {
+    title: "אזור הכיסוי ותנאי הביטוח",
+    mapAlt: "מדינות שבהן תקף ביטוח הגבול",
+    mapCaption: " ",
+    items: [
+      {
+        title: "אזור הכיסוי",
+        text:
+          "הפוליסה תקפה במדינות המסומנות במפה. A - אוסטריה, B - בלגיה, BG - בולגריה, CY - קפריסין, CZ - צ'כיה, D - גרמניה, DK - דנמרק, E - ספרד, EST - אסטוניה, F - צרפת, FIN - פינלנד, GR - יוון, H - הונגריה, HR - קרואטיה, I - איטליה, IRL - אירלנד, IS - איסלנד, L - לוקסמבורג, LT - ליטא, LV - לטביה, M - מלטה, N - נורווגיה, NL - הולנד, P - פורטוגל, PL - פולין, RO - רומניה, S - שוודיה, SK - סלובקיה, SLO - סלובניה, CH - שווייץ.",
+      },
+      {
+        title: "סוגי כלי רכב",
+        text: "רכבים פרטיים, אופנועים, משאיות, נגררים ואוטובוסים.",
+      },
+      {
+        title: "תקופת הביטוח",
+        text: "התקופה המינימלית היא חודש אחד. התקופה המקסימלית היא שנה אחת.",
+      },
+    ],
+  },
+
+  az: {
+    title: "Əhatə dairəsi və şərtlər",
+    mapAlt: "Transsərhəd sığorta müqaviləsinin qüvvədə olduğu ölkələr",
+    mapCaption: " ",
+
+    items: [
+      {
+        title: "Qüvvədə olduğu ərazi",
+        text:
+          "Polis xəritədə göstərilən ölkələrdə qüvvədədir. A - Avstriya, B - Belçika, BG - Bolqarıstan, CY - Kipr, CZ - Çexiya, D - Almaniya, DK - Danimarka, E - İspaniya, EST - Estoniya, F - Fransa, FIN - Finlandiya, GR - Yunanıstan, H - Macarıstan, HR - Xorvatiya, I - İtaliya, IRL - İrlandiya, IS - İslandiya, L - Lüksemburq, LT - Litva, LV - Latviya, M - Malta, N - Norveç, NL - Niderland, P - Portuqaliya, PL - Polşa, RO - Rumıniya, S - İsveç, SK - Slovakiya, SLO - Sloveniya, CH - İsveçrə.",
+      },
+      {
+        title: "Nəqliyyat vasitələrinin növləri",
+        text:
+          "Minik avtomobilləri, motosikletlər, yük nəqliyyatı, qoşqular və avtobuslar.",
+      },
+      {
+        title: "Qüvvədə olma müddəti",
+        text:
+          "Minimum müddət — 1 ay. Maksimum müddət — 1 il.",
+      },
+    ],
+  },
+
+  ro: {
+    title: "Zona de acoperire și condiții",
+    mapAlt: "Țările în care este valabilă asigurarea de frontieră",
+    mapCaption: " ",
+    items: [
+      {
+        title: "Teritoriul de valabilitate",
+        text:
+          "Polița este valabilă în țările marcate pe hartă. A - Austria, B - Belgia, BG - Bulgaria, CY - Cipru, CZ - Cehia, D - Germania, DK - Danemarca, E - Spania, EST - Estonia, F - Franța, FIN - Finlanda, GR - Grecia, H - Ungaria, HR - Croația, I - Italia, IRL - Irlanda, IS - Islanda, L - Luxemburg, LT - Lituania, LV - Letonia, M - Malta, N - Norvegia, NL - Țările de Jos, P - Portugalia, PL - Polonia, RO - România, S - Suedia, SK - Slovacia, SLO - Slovenia, CH - Elveția.",
+      },
+      {
+        title: "Tipuri de vehicule",
+        text:
+          "Autoturisme, motociclete, vehicule de transport marfă, remorci și autobuze.",
+      },
+      {
+        title: "Perioada de valabilitate",
+        text:
+          "Perioada minimă este de 1 lună. Perioada maximă este de 1 an.",
+      },
+    ],
+  },
+
+  sr: {
+    title: "Teritorijalno pokriće i uslovi",
+    mapAlt: "Države u kojima važi polisa prekograničnog osiguranja",
+    mapCaption: " ",
+    items: [
+      {
+        title: "Teritorija važenja",
+        text:
+          "Polisa važi u državama označenim na karti. A - Austrija, B - Belgija, BG - Bugarska, CY - Kipar, CZ - Češka, D - Nemačka, DK - Danska, E - Španija, EST - Estonija, F - Francuska, FIN - Finska, GR - Grčka, H - Mađarska, HR - Hrvatska, I - Italija, IRL - Irska, IS - Island, L - Luksemburg, LT - Litvanija, LV - Letonija, M - Malta, N - Norveška, NL - Holandija, P - Portugal, PL - Poljska, RO - Rumunija, S - Švedska, SK - Slovačka, SLO - Slovenija, CH - Švajcarska.",
+      },
+      {
+        title: "Vrste vozila",
+        text: "Putnička vozila, motocikli, teretna vozila, prikolice i autobusi.",
+      },
+      {
+        title: "Period važenja",
+        text: "Minimalni period važenja je 1 mesec. Maksimalni period važenja je 1 godina.",
+      },
+    ],
+  },
+
+  sq: {
+    title: "Zona e mbulimit dhe kushtet",
+    mapAlt: "Vendet ku është i vlefshëm sigurimi ndërkufitar",
+    mapCaption: " ",
+    items: [
+      {
+        title: "Territori i vlefshmërisë",
+        text:
+          "Polica është e vlefshme në vendet e shënuara në hartë. A - Austri, B - Belgjikë, BG - Bullgari, CY - Qipro, CZ - Çeki, D - Gjermani, DK - Danimarkë, E - Spanjë, EST - Estoni, F - Francë, FIN - Finlandë, GR - Greqi, H - Hungari, HR - Kroaci, I - Itali, IRL - Irlandë, IS - Islandë, L - Luksemburg, LT - Lituani, LV - Letoni, M - Maltë, N - Norvegji, NL - Holandë, P - Portugali, PL - Poloni, RO - Rumani, S - Suedi, SK - Sllovaki, SLO - Slloveni, CH - Zvicër.",
+      },
+      {
+        title: "Llojet e automjeteve",
+        text: "Automjete pasagjerësh, motoçikleta, automjete mallrash, rimorkio dhe autobusë.",
+      },
+      {
+        title: "Periudha e vlefshmërisë",
+        text: "Periudha minimale është 1 muaj. Periudha maksimale është 1 vit.",
+      },
+    ],
+  },
+
+  mn: {
+    title: "Хамрах хүрээ ба нөхцөл",
+
+    mapAlt: "Хил дамнасан даатгалын гэрээ хүчинтэй үйлчлэх орнууд",
+
+    mapCaption: " ",
+
+    items: [
+      {
+        title: "Үйлчлэх нутаг дэвсгэр",
+        text:
+          "Полис нь газрын зураг дээр тэмдэглэгдсэн улсуудад хүчинтэй. A - Австри, B - Бельги, BG - Болгар, CY - Кипр, CZ - Чех, D - Герман, DK - Дани, E - Испани, EST - Эстон, F - Франц, FIN - Финланд, GR - Грек, H - Унгар, HR - Хорват, I - Итали, IRL - Ирланд, IS - Исланд, L - Люксембург, LT - Литва, LV - Латви, M - Мальта, N - Норвеги, NL - Нидерланд, P - Португал, PL - Польш, RO - Румын, S - Швед, SK - Словак, SLO - Словени, CH - Швейцар.",
+      },
+      {
+        title: "Тээврийн хэрэгслийн төрөл",
+        text:
+          "Суудлын автомашин, мотоцикл, ачааны тээврийн хэрэгсэл, чиргүүл, автобус.",
+      },
+      {
+        title: "Хүчинтэй хугацаа",
+        text:
+          "Хамгийн бага хугацаа — 1 сар. Хамгийн их хугацаа — 1 жил.",
+      },
+    ],
+  },
 };
 
 export function getCoverageDictionary(lang: Lang): CoverageDict {

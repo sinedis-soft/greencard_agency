@@ -81,17 +81,33 @@ export default function ContactFeedbackForm({ lang }: { lang: Lang }) {
 
 
   const successMessages: Record<Lang, string> = {
-    ru: "Ваша заявка УСПЕШНО отправлена! С вами может связаться менеджер через почту или мессенджеры для уточнения информации",
-    pl: "Twoje zgłoszenie zostało POMYŚLNIE wysłane! Menedżer może skontaktować się z Tobą przez e-mail lub komunikatory, aby doprecyzować informacje.",
-    en: "Your request was SUCCESSFULLY sent! A manager may contact you via email or messengers to clarify details.",
-    be: "Ваша заяўка ПАСПЯХОВА адпраўлена! З вамі можа звязацца менеджар праз пошту або месенджары для ўдакладнення інфармацыі.",
-    uz: "Arizangiz MUVAFFAQIYATLI yuborildi! Menejer ma’lumotlarni aniqlashtirish uchun siz bilan e-pochta yoki messenjerlar orqali bog‘lanishi mumkin.",
-    ka: "თქვენი განაცხადი წარმატებით გაიგზავნა! ინფორმაციის დასაზუსტებლად მენეჯერი შეიძლება დაგიკავშირდეთ ელფოსტით ან მესენჯერებით.",
-    kk: "Өтініміңіз СӘТТІ жіберілді! Ақпаратты нақтылау үшін менеджер сізбен пошта немесе мессенджерлер арқылы байланысуы мүмкін.",
-    tr: "Başvurunuz BAŞARIYLA gönderildi! Bilgileri netleştirmek için yönetici sizinle e-posta veya mesajlaşma uygulamaları üzerinden iletişime geçebilir.",
-    fa: "درخواست شما با موفقیت ارسال شد! ممکن است مدیر برای تکمیل اطلاعات از طریق ایمیل یا پیام‌رسان‌ها با شما تماس بگیرد.",
-    hy: "Ձեր հայտը ՀԱՋՈՂՈՒԹՅԱՄԲ ուղարկվել է։ Տվյալները ճշտելու համար մենեջերը կարող է կապվել ձեզ հետ էլ․փոստով կամ մեսենջերներով։",
-  };
+  ru: "Ваша заявка успешно отправлена. Менеджер может связаться с вами по электронной почте или через мессенджеры для уточнения информации.",
+  en: "Your request has been successfully sent. A manager may contact you by email or messenger to clarify the information.",
+  pl: "Twoje zgłoszenie zostało pomyślnie wysłane. Menedżer może skontaktować się z Tobą e-mailem lub przez komunikator, aby doprecyzować informacje.",
+  be: "Ваша заяўка паспяхова адпраўлена. Менеджар можа звязацца з вамі па электроннай пошце або праз месенджары для ўдакладнення інфармацыі.",
+  uk: "Вашу заявку успішно надіслано. Менеджер може зв’язатися з вами електронною поштою або через месенджери для уточнення інформації.",
+
+  kk: "Өтініміңіз сәтті жіберілді. Ақпаратты нақтылау үшін менеджер сізбен электрондық пошта немесе мессенджерлер арқылы байланысуы мүмкін.",
+  uz: "Arizangiz muvaffaqiyatli yuborildi. Menejer ma’lumotlarni aniqlashtirish uchun siz bilan e-pochta yoki messenjerlar orqali bog‘lanishi mumkin.",
+  az: "Müraciətiniz uğurla göndərildi. Məlumatları dəqiqləşdirmək üçün menecer sizinlə e-poçt və ya messencerlər vasitəsilə əlaqə saxlaya bilər.",
+
+  tr: "Başvurunuz başarıyla gönderildi. Bilgileri netleştirmek için bir yönetici sizinle e-posta veya mesajlaşma uygulamaları üzerinden iletişime geçebilir.",
+
+  ka: "თქვენი განაცხადი წარმატებით გაიგზავნა. ინფორმაციის დასაზუსტებლად მენეჯერი შეიძლება დაგიკავშირდეთ ელფოსტით ან მესენჯერებით.",
+  hy: "Ձեր հայտը հաջողությամբ ուղարկվել է։ Տեղեկությունները ճշտելու համար մենեջերը կարող է կապվել ձեզ հետ էլ․ փոստով կամ մեսենջերներով։",
+
+  fa: "درخواست شما با موفقیت ارسال شد. ممکن است مدیر برای تکمیل اطلاعات از طریق ایمیل یا پیام‌رسان‌ها با شما تماس بگیرد.",
+  ckb: "داواکارییەکەت بە سەرکەوتوویی نێردرا. بۆ ڕوونکردنەوەی زانیارییەکان، بەڕێوەبەر دەتوانێت لە ڕێگەی ئیمەیڵ یان مێسنجەرەکان پەیوەندیت پێوە بکات.",
+  kmr: "Daxwaza we bi serkeftî hate şandin. Dibe ku rêveber ji bo zelalkirina agahdariyan bi e-mail an messengeran bi we re têkilî dayne.",
+  ar: "تم إرسال طلبك بنجاح. قد يتواصل معك أحد المختصين عبر البريد الإلكتروني أو تطبيقات المراسلة لتأكيد المعلومات أو استكمالها.",
+  he: "הבקשה שלך נשלחה בהצלחה. מנהל עשוי ליצור איתך קשר בדוא״ל או באמצעות מסנג׳רים כדי להבהיר את המידע.",
+
+  ro: "Cererea dumneavoastră a fost trimisă cu succes. Un manager vă poate contacta prin e-mail sau mesagerie pentru clarificarea informațiilor.",
+  sr: "Ваш захтев је успешно послат. Менаџер може да вас контактира путем е-поште или месинџера ради појашњења информација.",
+  sq: "Kërkesa juaj u dërgua me sukses. Një menaxher mund t’ju kontaktojë me e-mail ose përmes aplikacioneve të mesazheve për të sqaruar informacionin.",
+
+  mn: "Таны хүсэлт амжилттай илгээгдлээ. Мэдээллийг тодруулахын тулд менежер тантай имэйл эсвэл мессенжерээр холбогдож болно.",
+};
 
   return (
     <section className="contact-form-section">

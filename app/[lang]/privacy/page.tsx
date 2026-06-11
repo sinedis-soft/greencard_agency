@@ -10,12 +10,31 @@ const breadcrumbTitleByLang: Record<Lang, string> = {
   pl: "Prywatność",
   en: "Privacy",
   be: "Прыватнасць",
-  uz: "Maxfiylik",
-  ka: "კონფიდენციალურობა",
+  uk: "Конфіденційність",
+
+  ro: "Confidențialitate",
+  sr: "Приватност",
+  sq: "Privatësia",
+
   kk: "Құпиялылық",
+  uz: "Maxfiylik",
+  az: "Məxfilik",
+
   tr: "Gizlilik",
-  fa: "حریم خصوصی",
+
   hy: "Գաղտնիություն",
+  ka: "კონფიდენციალურობა",
+
+  fa: "حریم خصوصی",
+
+  ckb: "نهێنی",
+  kmr: "Nehênî",
+
+  ar: "الخصوصية",
+
+  he: "פרטיות",
+
+  mn: "Нууцлал",
 };
 
 function normalizeLang(value: string): Lang {

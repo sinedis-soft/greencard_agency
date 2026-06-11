@@ -3,7 +3,7 @@ import { LOCALES, Lang } from "@/app/dictionaries/header";
 import { pageAlternates, pageSocialMetadata } from "@/app/seo";
 import { getSeoDictionary } from "@/app/dictionaries/seo";
 function normalizeLang(value: string): Lang {
-  return (LOCALES as readonly string[]).includes(value) ? (value as Lang) : "ru";
+  return (LOCALES as readonly string[]).includes(value) ? (value as Lang) : "en";
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }) {
@@ -28,7 +28,7 @@ export default async function Page({
   const { lang: rawLang } = await params;
   const lang = (LOCALES as readonly string[]).includes(rawLang)
     ? (rawLang as Lang)
-    : "ru";
+    : "en";
 
   return <Home lang={lang} />;
 }

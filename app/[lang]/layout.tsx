@@ -23,8 +23,10 @@ function normalizeLang(rawLang: string): Lang {
     : "ru";
 }
 
+const RTL_LANGS: readonly Lang[] = ["fa", "ar", "ckb", "he"];
+
 function getDirection(lang: Lang): "rtl" | "ltr" {
-  return lang === "fa" ? "rtl" : "ltr";
+  return RTL_LANGS.includes(lang) ? "rtl" : "ltr";
 }
 
 export default async function LangLayout({

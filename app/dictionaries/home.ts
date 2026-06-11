@@ -2005,10 +2005,1789 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
       ],
     },
   },
+
+  ckb: {
+    hero: {
+      kicker: "وەرگرتنی ئۆنلاین",
+      title: "بیمەی سنووری (OC Graniczne) — خێرا و بەبێ هەنگاوی زیادە",
+      lead:
+        "نرخ هەژمار بکە، داواکارییەکە پڕبکەرەوە و بیمەنامەی PDF وەربگرە. بۆ ئۆتۆمبێلە تۆمارکراوەکان لە دەرەوەی یەکێتی ئەورووپا، بیمەنامەکە بە ئاسانی لە بنکەی زانیاری بیمەی کۆماری پۆڵەندا (UFG) دەپشکنرێت.",
+      meta: [
+        "بیمەنامەی PDF دوای تەواوبوونی وەرگرتن",
+        "پشتگیری لە ڕێگەی مێسنجەرەکان",
+        "مەرجە ڕوون و تێگەیشتراوەکان",
+      ],
+      ctaCalc: "هەژمارکردنی نرخ",
+      ctaBuy: "وەرگرتنی بیمەنامە",
+    },
+
+    calc: {
+      title: "ژمێرکاری نرخ",
+      badge: "~ 1 خولەک",
+      desc: "ژمێرکارێکی سادەی نرخ",
+      termLabel: "ماوە",
+      vehicleLabel: "جۆری ئامراز",
+      termOptions: [
+        { value: "30", label: "30 ڕۆژ" },
+        { value: "60", label: "60 ڕۆژ" },
+        { value: "90", label: "90 ڕۆژ" },
+        { value: "180", label: "180 ڕۆژ" },
+        { value: "365", label: "364 ڕۆژ" },
+      ],
+      vehicleOptions: [
+        { value: "car", label: "ئۆتۆمبێلی سواری" },
+        { value: "van", label: "پاس" },
+        { value: "truck", label: "بارهەڵگر" },
+        { value: "trailer", label: "پاشکۆ" },
+        { value: "special", label: "ئامرازە تایبەتەکان" },
+      ],
+      button: "هەژمارکردن",
+      note: "note",
+    },
+
+    process: {
+      title: "چۆن کار دەکات",
+      desc: "هەنگاو بە هەنگاو: هەژمارکردن → زانیاری → پارەدان → بیمەنامە.",
+      steps: [
+        {
+          title: "هەژمار بکە",
+          text: "جۆری ئامراز و ماوەی بیمە هەڵبژێرە.",
+        },
+        {
+          title: "زانیارییەکان پڕبکەرەوە",
+          text: "ناونیشانی تۆمارکردن، ژمارەی تابلۆ، VIN و زانیارییەکانی پەیوەندی.",
+        },
+        {
+          title: "پارە بدە",
+          text: "دوای ئامادەکردنی بیمەنامە، زانیارییەکانی پارەدان بۆت دەنێرین.",
+        },
+        {
+          title: "بیمەنامەی PDF وەربگرە",
+          text: "هەرکات پشتڕاستکردنەوەی پارەدان وەرگرین.",
+        },
+      ],
+    },
+
+    why: {
+      title: "بۆچی ئێمە هەڵدەبژێرن",
+      desc: "سەرنجمان لەسەر خێرایی، ڕوونی و دروستی وەرگرتنە.",
+      items: [
+        {
+          title: "خێرا",
+          text: "کەمترین هەنگاو و ڕێکخستنێکی ڕوون.",
+        },
+        {
+          title: "تێگەیشتراو",
+          text: "جیاوازییەکانی بەرهەمەکان بە زمانی سادە ڕوون دەکەینەوە.",
+        },
+        {
+          title: "کارامە",
+          text: "پشت بە پشکنینە فەرمییەکان و داواکارییە یاسایییەکان دەبەستین.",
+        },
+        {
+          title: "پشتگیری",
+          text: "لە پرسیارەکانی وەرگرتن و پشکنینی بیمەنامەدا یارمەتیت دەدەین.",
+        },
+      ],
+    },
+
+    form: {
+      title: "فۆڕمی داواکاری",
+      desc: "زانیارییەکان پڕبکەرەوە — بیمەنامەکەت ئامادە دەکەین و زانیارییەکانی پارەدان بۆت دەنێرین.",
+    },
+
+    faq: {
+      title: "پرسیارە باوەکان",
+      desc: "وەڵامی کورتی پرسیارە دووبارەبووەکان.",
+      items: [
+        {
+          q: "وەرگرتن چەند کات دەخایەنێت؟",
+          a: "بە گشتی 10–20 خولەک ئەگەر هەموو زانیارییەکان ئامادە بن. بەڵام پێشنیار دەکەین بیمەنامەکە 1–2 ڕۆژ پێش دەستپێکردنی پاراستن وەربگرن.",
+        },
+        {
+          q: "ئایا دەتوانم بە کارت پارە بدەم؟",
+          a: "ئێستا تەنها SWIFT، SEPA، P2P و پارەدانی BLIK بەردەستن. دوای ئامادەکردنی بیمەنامە، پارە دەدەن و PDF وەردەگرن.",
+        },
+        {
+          q: "ئایا ئەمە هەمان «گرین کارت»ە؟",
+          a: "نەخێر. ئەمانە دوو بەرهەمی جیاوازن و یاساکانیان جیاوازن.",
+        },
+        {
+          q: "ئەم بیمەیە چییە؟",
+          a: "ئەمە بیمەیەکی زۆرەکی بەرپرسیاری شارستانییە بۆ خاوەن یان بەکارهێنەری ئامرازە گواستنەوەکان، کە لە پۆڵەندا و وڵاتانی یەکێتی ئەورووپا کارا دەبێت.",
+        },
+        {
+          q: "بیمەکە چی دەگرێتەوە؟",
+          a: `پاراستنەکە ئەمانە دەگرێتەوە:
+  • زیانی ژیان یان تەندروستی قوربانییەکان؛
+  • زیانی ماڵی بە کەسانی سێیەم.
+
+  کەمترین بڕی پاراستنی دڵنیایی:
+  • 29 876 400 PLN بۆ زیانی جەستەیی؛
+  • 6 021 600 PLN بۆ زیانی ماڵی.`,
+        },
+        {
+          q: "بیمەکە چی ناگرێتەوە؟",
+          a: `• پاسکیل و ئامرازە نەمیکانیکییەکان؛
+  • زیان بە خاوەنی ئۆتۆمبێل؛
+  • زیان بە ژینگە.`,
+        },
+        {
+          q: "لە چ حاڵەتێکدا مافی گەڕاندنەوەی پارە (Regress) هەیە؟",
+          a: `کۆمپانیای بیمە دەتوانێت بڕی پارەی دراو گەڕێنێتەوە ئەگەر شۆفێر:
+  • بە ئەنقەست کاریکردبێت؛
+  • سەرخۆش یان ژێر کاریگەری ماددەی هۆشبەر بووبێت؛
+  • مۆڵەتی لێخوڕینی نەبووبێت؛
+  • لە شوێنی ڕووداو ڕاکردبێت؛
+  • ئۆتۆمبێلێکی دزراوی بەکارهێنابێت.`,
+        },
+        {
+          q: "بیمەنامەکە کەی دەست پێدەکات و کەی کۆتایی دێت؟",
+          a: `دەستپێک:
+  بەرواری دەرکردنی بیمەنامە.
+
+  ماوەی کارایی:
+  30 تا 364 ڕۆژ.
+
+  کۆتایی هاتن:
+  • تەواوبوونی ماوە؛
+  • دزران یان لەکارخستنی ئۆتۆمبێل؛
+  • سڕینەوەی تۆمارکردن.`,
+        },
+      ],
+    },
+
+    verify: {
+      title: "پشکنینی دروستی بیمەنامە",
+      lead:
+        "ئەگەر دەتەوێت دڵنیابیت لەوەی بیمەنامەکەت چالاکە، دەتوانیت سوود لە بنکە فەرمییەکانی بیمە وەربگریت. لە خوارەوە بەستەرەکانی پۆڵەندا، لاتویا و لیتوانیا هەن.",
+      items: [
+        {
+          code: "PL",
+          country: "پۆڵەندا",
+          org: "UFG — Ubezpieczeniowy Fundusz Gwarancyjny",
+          desc: "پشکنینی دروستی بیمەی OC بە ژمارەی تۆمارکردن یان VIN لە بنکەی فەرمی UFG.",
+          cta: "چوونە ماڵپەڕی UFG",
+          href: "https://www.ufg.pl/",
+        },
+        {
+          code: "LV",
+          country: "لاتویا",
+          org: "LTAB — Latvijas Transportlīdzekļu apdrošinātāju birojs",
+          desc: "پشکنینی بیمەی زۆرەکی OCTA بۆ ئامرازە تۆمارکراوەکانی لاتویا.",
+          cta: "پشکنین لە ڕێگەی LTAB",
+          href: "https://www.ltab.lv/",
+        },
+        {
+          code: "LT",
+          country: "لیتوانیا",
+          org: "CAB — Motor Insurers’ Bureau of Lithuania",
+          desc: "خزمەتگوزاری پشکنینی دروستی بیمەی بەرپرسیاری شارستانیی زۆرەکی لە لیتوانیا.",
+          cta: "پشکنین لە ڕێگەی CAB",
+          href: "https://www.cab.lt/",
+        },
+      ],
+    },
+  },
+  kmr: {
+    hero: {
+      kicker: "Derxistina serhêl",
+      title: "Peymana sîgorteya sînorî (OC Graniczne) — bi lez û bê gavên zêde",
+      lead:
+        "Mesrefê hesab bikin, daxwazê dagirin û polîçeya PDF bistînin. Ji bo wesayîtên ku li derveyî Yekîtiya Ewropayê hatine qeydkirin, polîçe bi hêsanî di databasa fermî ya sîgorteyê ya Polonyayê (UFG) de tê kontrolkirin.",
+      meta: [
+        "Polîçeya PDF piştî derxistinê",
+        "Piştgiriya di messengeran de",
+        "Mercên zelal û hêsan"
+      ],
+      ctaCalc: "Mesrefê hesab bike",
+      ctaBuy: "Polîçe derxe",
+    },
+
+    calc: {
+      title: "Hesabkera Mesrefê",
+      badge: "~ 1 deqîqe",
+      desc: "hesabkerek hêsan a tarîfeyan",
+      termLabel: "Dem",
+      vehicleLabel: "Cureya wesayîtê",
+      termOptions: [
+        { value: "30", label: "30 roj" },
+        { value: "60", label: "60 roj" },
+        { value: "90", label: "90 roj" },
+        { value: "180", label: "180 roj" },
+        { value: "365", label: "364 roj" },
+      ],
+      vehicleOptions: [
+        { value: "car", label: "Otomobîl" },
+        { value: "van", label: "Otobûs" },
+        { value: "truck", label: "Kamyon" },
+        { value: "trailer", label: "Rimork" },
+        { value: "special", label: "Makîneyên taybet" },
+      ],
+      button: "Hesab bike",
+      note: "not",
+    },
+
+    process: {
+      title: "Çawa dixebite",
+      desc: "Bi gav bi gav: hesabkirin → agahdarî → dravdan → polîçe.",
+      steps: [
+        {
+          title: "Hesab bikin",
+          text: "Cureya wesayîtê û dema sîgorteyê hilbijêrin.",
+        },
+        {
+          title: "Agahdariyan dagirin",
+          text: "Navnîşana qeydkirinê, plaka, VIN û agahdariyên têkilî.",
+        },
+        {
+          title: "Drav bidin",
+          text: "Piştî amadekirina polîçeyê em agahdariyên dravdanê ji we re dişînin.",
+        },
+        {
+          title: "Polîçeya PDF bistînin",
+          text: "Yekser piştî ku em pejirandina dravdanê bistînin.",
+        },
+      ],
+    },
+
+    why: {
+      title: "Çima me hilbijêrin",
+      desc: "Armanca me lez, zelalî û rastiya derxistinê ye.",
+      items: [
+        {
+          title: "Lez",
+          text: "Kêmtirîn gav û pêkhatineke zelal.",
+        },
+        {
+          title: "Hêsan tê fêmkirin",
+          text: "Cudahiya berheman bi zimanek sade şîrove dikin.",
+        },
+        {
+          title: "Pratîk",
+          text: "Em li gorî kontrol û daxwazên fermî tevdigerin.",
+        },
+        {
+          title: "Piştgirî",
+          text: "Di pirsên derbarê derxistin û kontrolkirinê de alîkariyê dikin.",
+        },
+      ],
+    },
+
+    form: {
+      title: "Forma daxwazê",
+      desc: "Agahdariyan dagirin — em ê polîçeyê amade bikin û agahdariyên dravdanê ji we re bişînin.",
+    },
+
+    faq: {
+      title: "FAQ",
+      desc: "Bersivên kurt ji bo pirsên herî gelemperî.",
+      items: [
+        {
+          q: "Derxistina polîçeyê çiqas dem digire?",
+          a: "Bi gelemperî 10–20 deqîqe digire heke hemû agahdarî amade bin. Lê em pêşniyar dikin ku polîçeyê 1–2 roj berî destpêka pêdivî ya parastinê derxînin.",
+        },
+        {
+          q: "Ma ez dikarim bi kartê drav bidim?",
+          a: "Niha tenê veguhastinên SWIFT, SEPA, P2P û dravdana BLIK hene. Piştî amadekirina polîçeyê, hûn drav didin û polîçeya PDF distînin.",
+        },
+        {
+          q: "Ev heman tişt e ku 'Green Card'?",
+          a: "Na. Ev du berhemên cuda ne û rêzikên wan jî cuda ne.",
+        },
+        {
+          q: "Ev çi cure sîgorteyek e?",
+          a: "Ev sîgorteya mecbûrî ya berpirsiyariya xwedan an bikarhênerên wesayîtên motorî ye ku li Polonya û Yekîtiya Ewropayê derbasdar e.",
+        },
+        {
+          q: "Sîgorte çi diparêze?",
+          a: `Parastin evan dihewîne:
+  • Ziyana jiyanê an tenduristiya kesên zarar dîtî;
+  • Ziyana milkî ya kesên sêyem.
+
+  Meblağên herî kêm yên garantîkirî:
+  • 29 876 400 PLN — ji bo birînên laşî;
+  • 6 021 600 PLN — ji bo ziyana milkî.`,
+        },
+        {
+          q: "Sîgorte çi naxweşe?",
+          a: `• Bisîklet û wesayîtên bêmotor;
+  • Ziyana xwediyê wesayîtê;
+  • Ziyana jîngehê.`,
+        },
+        {
+          q: "Di kîjan rewşan de regres gengaz e?",
+          a: `Şirketa sîgorteyê dikare drava dayî vegerîne heke ajokar:
+  • Bi qestî hereket kiriye;
+  • Serxweş an di bin bandora narkotîkan de bûye;
+  • Mafê ajotinê tune bûye;
+  • Ji cihê qezayê reviye;
+  • Wesayîteke dizî bikar aniye.`,
+        },
+        {
+          q: "Polîçe kengê dest pê dike û kengê diqede?",
+          a: `Destpêk: roja derxistina polîçeyê.
+
+  Demjimêra derbasdariyê: 30–364 roj.
+
+  Dawî:
+  • Bi qedandina demê;
+  • Bi dizîn an derxistina wesayîtê ji karanînê;
+  • Bi rakirina qeydkirinê.`,
+        },
+      ],
+    },
+
+    verify: {
+      title: "Kontrolkirina derbasdariya polîçeyê",
+      lead:
+        "Heke hûn dixwazin piştrast bibin ku polîçeya we çalak e, databasa fermî ya buroyên sîgorteyê bikar bînin. Li jêr girêdanên Polonya, Letonya û Lîtvanyayê hene.",
+      items: [
+        {
+          code: "PL",
+          country: "Polonya",
+          org: "UFG — Ubezpieczeniowy Fundusz Gwarancyjny",
+          desc: "Kontrolkirina derbasdariya polîçeya OC bi plaka an VIN di databasa fermî ya UFG de.",
+          cta: "Biçe malpera UFG",
+          href: "https://www.ufg.pl/",
+        },
+        {
+          code: "LV",
+          country: "Letonya",
+          org: "LTAB — Latvijas Transportlīdzekļu apdrošinātāju birojs",
+          desc: "Kontrolkirina sîgorteya mecbûrî ya OCTA ji bo wesayîtên ku li Letonyayê hatine qeydkirin.",
+          cta: "Bi LTAB kontrol bike",
+          href: "https://www.ltab.lv/",
+        },
+        {
+          code: "LT",
+          country: "Lîtvanya",
+          org: "CAB — Motor Insurers’ Bureau of Lithuania",
+          desc: "Xizmeta kontrolkirina derbasdariya sîgorteya mecbûrî ya berpirsiyariya sivîl li Lîtvanyayê.",
+          cta: "Bi CAB kontrol bike",
+          href: "https://www.cab.lt/",
+        },
+      ],
+    },
+  },
+  ar: {
+    hero: {
+      kicker: "إصدار التأمين عبر الإنترنت",
+      title: "تأمين الحدود (OC Graniczne) — بسرعة ودون إجراءات معقدة",
+      lead:
+        "احسب التكلفة، أرسل الطلب، واحصل على وثيقة التأمين بصيغة PDF. بالنسبة للمركبات المسجلة خارج الاتحاد الأوروبي، يمكن التحقق من الوثيقة بسهولة عبر قاعدة بيانات التأمين البولندية (UFG).",
+      meta: [
+        "وثيقة PDF بعد الإصدار",
+        "دعم عبر تطبيقات المراسلة",
+        "شروط واضحة ومفهومة",
+      ],
+      ctaCalc: "احسب التكلفة",
+      ctaBuy: "إصدار الوثيقة",
+    },
+
+    calc: {
+      title: "حاسبة التكلفة",
+      badge: "~ دقيقة واحدة",
+      desc: "حاسبة تعرفة بسيطة",
+      termLabel: "المدة",
+      vehicleLabel: "نوع المركبة",
+      termOptions: [
+        { value: "30", label: "30 يومًا" },
+        { value: "60", label: "60 يومًا" },
+        { value: "90", label: "90 يومًا" },
+        { value: "180", label: "180 يومًا" },
+        { value: "365", label: "364 يومًا" },
+      ],
+      vehicleOptions: [
+        { value: "car", label: "سيارات ركاب" },
+        { value: "van", label: "حافلات" },
+        { value: "truck", label: "شاحنات" },
+        { value: "trailer", label: "مقطورات" },
+        { value: "special", label: "مركبات خاصة" },
+      ],
+      button: "احسب",
+      note: "note",
+    },
+
+    process: {
+      title: "كيف يتم الإصدار",
+      desc: "الخطوات: الحساب → البيانات → الدفع → الوثيقة.",
+      steps: [
+        {
+          title: "احسب التكلفة",
+          text: "اختر نوع المركبة ومدة التأمين.",
+        },
+        {
+          title: "أدخل البيانات",
+          text: "عنوان التسجيل، رقم اللوحة، رقم VIN وبيانات التواصل.",
+        },
+        {
+          title: "ادفع",
+          text: "بعد إعداد الوثيقة سنرسل لك بيانات الدفع.",
+        },
+        {
+          title: "استلم وثيقة PDF",
+          text: "فور استلامنا لتأكيد الدفع.",
+        },
+      ],
+    },
+
+    why: {
+      title: "لماذا يختارنا العملاء",
+      desc: "نركز على السرعة والوضوح وصحة الإصدار.",
+      items: [
+        {
+          title: "سريع",
+          text: "أقل عدد ممكن من الخطوات مع عملية واضحة.",
+        },
+        {
+          title: "واضح",
+          text: "نشرح الفروقات بين المنتجات التأمينية بلغة بسيطة.",
+        },
+        {
+          title: "عملي",
+          text: "نعتمد على المتطلبات الرسمية وإجراءات التحقق المعتمدة.",
+        },
+        {
+          title: "الدعم",
+          text: "نساعد في جميع الاستفسارات المتعلقة بالإصدار والتحقق.",
+        },
+      ],
+    },
+
+    form: {
+      title: "نموذج الطلب",
+      desc: "املأ البيانات وسنقوم بإعداد الوثيقة وإرسال معلومات الدفع.",
+    },
+
+    faq: {
+      title: "الأسئلة الشائعة",
+      desc: "إجابات مختصرة على أكثر الأسئلة شيوعًا.",
+      items: [
+        {
+          q: "كم يستغرق إصدار الوثيقة؟",
+          a: "عادةً من 10 إلى 20 دقيقة عند توفر جميع البيانات. ومع ذلك، نوصي بإصدار الوثيقة قبل يوم أو يومين من تاريخ بدء التغطية المطلوب.",
+        },
+        {
+          q: "هل يمكن الدفع بالبطاقة؟",
+          a: "في الوقت الحالي تتوفر فقط تحويلات SWIFT وSEPA وP2P بالإضافة إلى الدفع عبر BLIK. بعد إعداد الوثيقة تقوم بالدفع ثم تستلم نسخة PDF.",
+        },
+        {
+          q: "هل هذا هو نفسه نظام البطاقة الخضراء؟",
+          a: "لا. هذه منتجات مختلفة وتخضع لقواعد مختلفة.",
+        },
+        {
+          q: "ما نوع هذا التأمين؟",
+          a: "هو تأمين إلزامي للمسؤولية المدنية لمالكي أو مستخدمي المركبات الآلية، ساري المفعول في بولندا ودول الاتحاد الأوروبي.",
+        },
+        {
+          q: "ماذا يغطي التأمين؟",
+          a: `تشمل التغطية:
+  • الأضرار الجسدية أو الصحية التي تلحق بالمتضررين؛
+  • الأضرار المادية التي تصيب الغير.
+
+  الحدود الدنيا المضمونة للتغطية:
+  • 29,876,400 زلوتي بولندي للأضرار الجسدية؛
+  • 6,021,600 زلوتي بولندي للأضرار المادية.`,
+        },
+        {
+          q: "ما الذي لا يغطيه التأمين؟",
+          a: `• الدراجات الهوائية والمركبات غير الآلية؛
+  • الأضرار التي تلحق بمالك المركبة؛
+  • الأضرار البيئية.`,
+        },
+        {
+          q: "في أي حالات يحق لشركة التأمين الرجوع على السائق؟",
+          a: `يحق لشركة التأمين المطالبة باسترداد المبالغ المدفوعة إذا كان السائق:
+  • قد تسبب بالحادث عمدًا؛
+  • تحت تأثير الكحول أو المخدرات؛
+  • يقود دون رخصة؛
+  • فرّ من مكان الحادث؛
+  • استخدم مركبة مسروقة.`,
+        },
+        {
+          q: "متى يبدأ وينتهي سريان الوثيقة؟",
+          a: `بداية التغطية: تاريخ إصدار الوثيقة.
+
+  مدة التغطية: من 30 إلى 364 يومًا.
+
+  تنتهي الوثيقة في الحالات التالية:
+  • انتهاء مدة التأمين؛
+  • سرقة المركبة أو شطبها؛
+  • إلغاء تسجيل المركبة.`,
+        },
+      ],
+    },
+
+    verify: {
+      title: "التحقق من صلاحية الوثيقة",
+      lead:
+        "إذا كنت ترغب في التأكد من أن وثيقة التأمين الخاصة بك فعالة بالفعل، يمكنك استخدام قواعد البيانات الرسمية لمكاتب التأمين. فيما يلي روابط خدمات التحقق في بولندا ولاتفيا وليتوانيا.",
+      items: [
+        {
+          code: "PL",
+          country: "بولندا",
+          org: "UFG — Ubezpieczeniowy Fundusz Gwarancyjny",
+          desc: "التحقق من صلاحية تأمين OC باستخدام رقم التسجيل أو رقم VIN عبر قاعدة بيانات UFG الرسمية.",
+          cta: "الانتقال إلى موقع UFG",
+          href: "https://www.ufg.pl/",
+        },
+        {
+          code: "LV",
+          country: "لاتفيا",
+          org: "LTAB — Latvijas Transportlīdzekļu apdrošinātāju birojs",
+          desc: "التحقق من تأمين OCTA الإلزامي للمركبات المسجلة في لاتفيا.",
+          cta: "التحقق عبر LTAB",
+          href: "https://www.ltab.lv/",
+        },
+        {
+          code: "LT",
+          country: "ليتوانيا",
+          org: "CAB — Motor Insurers’ Bureau of Lithuania",
+          desc: "خدمة التحقق من صلاحية وثيقة التأمين الإلزامي للمسؤولية المدنية في ليتوانيا.",
+          cta: "التحقق عبر CAB",
+          href: "https://www.cab.lt/",
+        },
+      ],
+    },
+  },
+  uk: {
+    hero: {
+      kicker: "Онлайн-оформлення",
+      title: "Договір прикордонного страхування (OC graniczne) — швидко та без зайвих кроків",
+      lead:
+        "Розрахуйте вартість, заповніть заявку та отримайте PDF-поліс. Для автомобілів із країн, зареєстрованих за межами ЄС, поліс можна легко перевірити в базі страхування Республіки Польща (UFG).",
+      meta: ["PDF-поліс після оформлення", "Підтримка в месенджерах", "Зрозумілі умови"],
+      ctaCalc: "Розрахувати вартість",
+      ctaBuy: "Оформити поліс",
+    },
+
+    calc: {
+      title: "Калькулятор вартості",
+      badge: "~ 1 хвилина",
+      desc: "простий тарифний калькулятор",
+      termLabel: "Строк",
+      vehicleLabel: "Тип ТЗ",
+      termOptions: [
+        { value: "30", label: "30 днів" },
+        { value: "60", label: "60 днів" },
+        { value: "90", label: "90 днів" },
+        { value: "180", label: "180 днів" },
+        { value: "365", label: "364 дні" },
+      ],
+      vehicleOptions: [
+        { value: "car", label: "Легкові автомобілі" },
+        { value: "van", label: "Автобуси" },
+        { value: "truck", label: "Вантажні автомобілі" },
+        { value: "trailer", label: "Причепи" },
+        { value: "special", label: "Спецтехніка" },
+      ],
+      button: "Розрахувати",
+      note: "note",
+    },
+
+    process: {
+      title: "Як це працює",
+      desc: "Покроково: розрахунок → дані → оплата → поліс.",
+      steps: [
+        {
+          title: "Розрахуйте",
+          text: "Оберіть тип транспортного засобу та строк страхування."
+        },
+        {
+          title: "Заповніть дані",
+          text: "Адреса реєстрації, державний номер, VIN та контактні дані."
+        },
+        {
+          title: "Оплатіть",
+          text: "Після підготовки поліса ми надішлемо вам реквізити для оплати."
+        },
+        {
+          title: "Отримайте PDF-поліс",
+          text: "Одразу після отримання нами підтвердження оплати."
+        },
+      ],
+    },
+
+    why: {
+      title: "Чому обирають нас",
+      desc: "Фокус на швидкості, зрозумілості та правильності оформлення.",
+      items: [
+        {
+          title: "Швидко",
+          text: "Мінімум кроків і зрозуміла структура."
+        },
+        {
+          title: "Зрозуміло",
+          text: "Пояснюємо відмінності між страховими продуктами простою мовою."
+        },
+        {
+          title: "Практично",
+          text: "Орієнтуємося на офіційні перевірки та чинні вимоги."
+        },
+        {
+          title: "Підтримка",
+          text: "Допомагаємо з питаннями щодо оформлення та перевірки."
+        },
+      ],
+    },
+
+    form: {
+      title: "Форма заявки",
+      desc: "Заповніть дані — ми підготуємо поліс і надішлемо реквізити для оплати.",
+    },
+
+    faq: {
+      title: "FAQ",
+      desc: "Короткі відповіді на поширені запитання.",
+      items: [
+        {
+          q: "Скільки часу займає оформлення?",
+          a: "Зазвичай 10–20 хвилин за наявності всіх необхідних даних. Однак загальна рекомендація — оформлювати поліс за один-два дні до потрібної дати початку дії страхового покриття."
+        },
+        {
+          q: "Чи можна оплатити карткою?",
+          a: "Наразі доступні лише SWIFT, SEPA та P2P-перекази, а також оплата через BLIK. Після підготовки поліса ви здійснюєте оплату та отримуєте PDF-документ."
+        },
+        {
+          q: "Це те саме, що «Зелена картка»?",
+          a: "Ні. Це різні страхові продукти та різні правила."
+        },
+        {
+          q: "Що це за страховка?",
+          a: "Це обов’язкове страхування цивільної відповідальності власників або користувачів механічних транспортних засобів, яке діє на території Польщі та країн ЄС."
+        },
+        {
+          q: "Що покриває страховка?",
+          a: `Покриття включає:
+            • Шкоду життю або здоров’ю потерпілих;
+            • Майнову шкоду, завдану третім особам.
+
+            Мінімальні гарантовані страхові суми:
+            • 29 876 400 PLN — тілесні ушкодження;
+            • 6 021 600 PLN — майнова шкода.`
+        },
+        {
+          q: "Що не покриває страховка?",
+          a: `• велосипеди та немеханічні транспортні засоби;
+              • шкоду власнику автомобіля;
+              • шкоду навколишньому середовищу.`
+        },
+        {
+          q: "У яких випадках можливий регрес?",
+          a: `Страхова компанія має право стягнути виплачену суму, якщо водій:
+            • діяв умисно;
+            • перебував у стані алкогольного або наркотичного сп’яніння;
+            • не мав права керування;
+            • залишив місце ДТП;
+            • використовував викрадений автомобіль.`
+        },
+        {
+          q: "Коли починає діяти та коли закінчується поліс?",
+          a: `Початок дії: дата видачі поліса.
+
+              Строк дії: 30–364 дні.
+
+              Припинення дії:
+              • закінчення строку;
+              • викрадення або списання автомобіля;
+              • зняття з реєстрації.`
+        },
+      ],
+    },
+
+    verify: {
+      title: "Перевірка чинності поліса",
+      lead:
+        "Якщо ви хочете переконатися, що ваш поліс дійсно активний, скористайтеся офіційними базами страхових бюро. Нижче наведено посилання на сервіси для Польщі, Латвії та Литви.",
+      items: [
+        {
+          code: "PL",
+          country: "Польща",
+          org: "UFG — Ubezpieczeniowy Fundusz Gwarancyjny",
+          desc: "Перевірка чинності поліса OC за державним номером або VIN в офіційній базі UFG.",
+          cta: "Перейти на сайт UFG",
+          href: "https://www.ufg.pl/",
+        },
+        {
+          code: "LV",
+          country: "Латвія",
+          org: "LTAB — Latvijas Transportlīdzekļu apdrošinātāju birojs",
+          desc: "Перевірка обов’язкового страхування OCTA для транспортних засобів, зареєстрованих у Латвії.",
+          cta: "Перевірити через LTAB",
+          href: "https://www.ltab.lv/",
+        },
+        {
+          code: "LT",
+          country: "Литва",
+          org: "CAB — Motor Insurers’ Bureau of Lithuania",
+          desc: "Сервіс перевірки чинності поліса обов’язкового страхування цивільної відповідальності в Литві.",
+          cta: "Перевірити через CAB",
+          href: "https://www.cab.lt/",
+        },
+      ],
+    },
+  },
+
+
+  he: {
+    hero: {
+      kicker: "הנפקה מקוונת",
+      title: "ביטוח גבול (OC Graniczne) — במהירות וללא שלבים מיותרים",
+      lead:
+        "חשבו את העלות, מלאו את הבקשה וקבלו פוליסה בפורמט PDF. מיועד לרכבים הרשומים במדינות מחוץ לאיחוד האירופי — ניתן לאמת את הפוליסה בקלות במאגר הביטוח הרשמי של פולין (UFG).",
+      meta: ["פוליסת PDF לאחר ההנפקה", "תמיכה במסנג'רים", "תנאים ברורים"],
+      ctaCalc: "חשב עלות",
+      ctaBuy: "הנפקת פוליסה",
+    },
+
+    calc: {
+      title: "מחשבון עלות",
+      badge: "~ דקה אחת",
+      desc: "מחשבון תעריפים פשוט",
+      termLabel: "תקופה",
+      vehicleLabel: "סוג רכב",
+      termOptions: [
+        { value: "30", label: "30 ימים" },
+        { value: "60", label: "60 ימים" },
+        { value: "90", label: "90 ימים" },
+        { value: "180", label: "180 ימים" },
+        { value: "365", label: "364 ימים" },
+      ],
+      vehicleOptions: [
+        { value: "car", label: "רכב פרטי" },
+        { value: "van", label: "אוטובוסים" },
+        { value: "truck", label: "משאיות" },
+        { value: "trailer", label: "נגררים" },
+        { value: "special", label: "ציוד הנדסי וכלים מיוחדים" },
+      ],
+      button: "חשב",
+      note: "note",
+    },
+
+    process: {
+      title: "איך זה עובד",
+      desc: "שלב אחר שלב: חישוב → פרטים → תשלום → פוליסה.",
+      steps: [
+        {
+          title: "חשב את העלות",
+          text: "בחר את סוג הרכב ואת תקופת הביטוח."
+        },
+        {
+          title: "מלא את הפרטים",
+          text: "כתובת רישום, מספר רישוי, VIN ופרטי קשר."
+        },
+        {
+          title: "בצע תשלום",
+          text: "לאחר הכנת הפוליסה נשלח אליך את פרטי התשלום."
+        },
+        {
+          title: "קבל פוליסת PDF",
+          text: "מיד לאחר קבלת אישור התשלום אצלנו."
+        },
+      ],
+    },
+
+    why: {
+      title: "למה בוחרים בנו",
+      desc: "דגש על מהירות, בהירות ודיוק בהנפקה.",
+      items: [
+        {
+          title: "מהיר",
+          text: "מינימום שלבים ותהליך ברור."
+        },
+        {
+          title: "ברור",
+          text: "אנו מסבירים את ההבדלים בין המוצרים בשפה פשוטה."
+        },
+        {
+          title: "מעשי",
+          text: "אנו פועלים בהתאם לבדיקות ולדרישות הרשמיות."
+        },
+        {
+          title: "תמיכה",
+          text: "מסייעים בכל שאלה לגבי ההנפקה ואימות הפוליסה."
+        },
+      ],
+    },
+
+    form: {
+      title: "טופס בקשה",
+      desc: "מלאו את הפרטים — אנו נכין את הפוליסה ונשלח לכם את פרטי התשלום.",
+    },
+
+    faq: {
+      title: "שאלות נפוצות",
+      desc: "תשובות קצרות לשאלות נפוצות.",
+      items: [
+        {
+          q: "כמה זמן לוקח להנפיק את הפוליסה?",
+          a: "בדרך כלל 10–20 דקות כאשר כל המידע הנדרש זמין. עם זאת, מומלץ להנפיק את הפוליסה יום או יומיים לפני מועד תחילת הכיסוי המבוקש."
+        },
+        {
+          q: "האם ניתן לשלם בכרטיס אשראי?",
+          a: "בשלב זה זמינים רק העברות SWIFT, SEPA ו-P2P וכן תשלום באמצעות BLIK. לאחר הכנת הפוליסה תבצעו את התשלום ותקבלו את קובץ ה-PDF."
+        },
+        {
+          q: "האם זה אותו דבר כמו 'גרין קארד'?",
+          a: "לא. מדובר במוצרים שונים עם כללים שונים."
+        },
+        {
+          q: "איזה סוג ביטוח זה?",
+          a: "זהו ביטוח חובה לאחריות צד שלישי לבעלי או משתמשי כלי רכב מנועיים, התקף בפולין ובמדינות האיחוד האירופי."
+        },
+        {
+          q: "מה מכסה הביטוח?",
+          a: `הכיסוי כולל:
+            • נזקי גוף או פגיעה בבריאות של נפגעים;
+            • נזק לרכוש של צדדים שלישיים.
+
+            סכומי הכיסוי המינימליים:
+            • 29,876,400 PLN — נזקי גוף;
+            • 6,021,600 PLN — נזקי רכוש.`
+        },
+        {
+          q: "מה הביטוח אינו מכסה?",
+          a: `• אופניים וכלי רכב שאינם ממונעים;
+              • נזק לבעל הרכב;
+              • נזק לסביבה.`
+        },
+        {
+          q: "באילו מקרים ייתכן שיבוב (רגרס)?",
+          a: `חברת הביטוח רשאית לדרוש החזר מהנהג אם:
+            • פעל במכוון;
+            • היה תחת השפעת אלכוהול או סמים;
+            • נהג ללא רישיון תקף;
+            • נמלט מזירת התאונה;
+            • השתמש ברכב גנוב.`
+        },
+        {
+          q: "מתי הפוליסה מתחילה ומסתיימת?",
+          a: `תחילת הכיסוי: תאריך הנפקת הפוליסה.
+
+              תקופת הביטוח: 30–364 ימים.
+
+              סיום הכיסוי:
+              • בתום תקופת הביטוח;
+              • במקרה של גניבה או גריטת הרכב;
+              • במקרה של ביטול רישום הרכב.`
+        },
+      ],
+    },
+
+    verify: {
+      title: "בדיקת תוקף הפוליסה",
+      lead:
+        "אם ברצונכם לוודא שהפוליסה שלכם פעילה, ניתן להשתמש במאגרי המידע הרשמיים של לשכות הביטוח. להלן קישורים לשירותי האימות בפולין, לטביה וליטא.",
+      items: [
+        {
+          code: "PL",
+          country: "פולין",
+          org: "UFG — Ubezpieczeniowy Fundusz Gwarancyjny",
+          desc: "בדיקת תוקף ביטוח OC לפי מספר רישוי או VIN במאגר הרשמי של UFG.",
+          cta: "מעבר לאתר UFG",
+          href: "https://www.ufg.pl/",
+        },
+        {
+          code: "LV",
+          country: "לטביה",
+          org: "LTAB — Latvijas Transportlīdzekļu apdrošinātāju birojs",
+          desc: "בדיקת ביטוח החובה OCTA לכלי רכב הרשומים בלטביה.",
+          cta: "בדיקה דרך LTAB",
+          href: "https://www.ltab.lv/",
+        },
+        {
+          code: "LT",
+          country: "ליטא",
+          org: "CAB — Motor Insurers’ Bureau of Lithuania",
+          desc: "שירות לבדיקת תוקף ביטוח החובה לאחריות צד שלישי בליטא.",
+          cta: "בדיקה דרך CAB",
+          href: "https://www.cab.lt/",
+        },
+      ],
+    },
+  },
+
+
+  az: {
+    hero: {
+      kicker: "Onlayn rəsmiləşdirmə",
+      title: "Sərhəd sığortası müqaviləsi (OC graniczne) — sürətli və əlavə mərhələlər olmadan",
+      lead:
+        "Qiyməti hesablayın, müraciəti doldurun və PDF polisi əldə edin. Aİ hüdudlarından kənarda qeydiyyatdan keçmiş nəqliyyat vasitələri üçün polis Polşa Respublikasının sığorta bazasında (UFG) asanlıqla yoxlanıla bilər.",
+      meta: ["Rəsmiləşdirmədən sonra PDF polis", "Mesencerlərdə dəstək", "Aydın şərtlər"],
+      ctaCalc: "Qiyməti hesabla",
+      ctaBuy: "Polisi rəsmiləşdir",
+    },
+
+    calc: {
+      title: "Qiymət kalkulyatoru",
+      badge: "~ 1 dəqiqə",
+      desc: "sadə tarif kalkulyatoru",
+      termLabel: "Müddət",
+      vehicleLabel: "Nəqliyyat vasitəsinin növü",
+      termOptions: [
+        { value: "30", label: "30 gün" },
+        { value: "60", label: "60 gün" },
+        { value: "90", label: "90 gün" },
+        { value: "180", label: "180 gün" },
+        { value: "365", label: "364 gün" },
+      ],
+      vehicleOptions: [
+        { value: "car", label: "Minik avtomobilləri" },
+        { value: "van", label: "Avtobuslar" },
+        { value: "truck", label: "Yük avtomobilləri" },
+        { value: "trailer", label: "Qoşqular" },
+        { value: "special", label: "Xüsusi texnika" },
+      ],
+      button: "Hesabla",
+      note: "note",
+    },
+
+    process: {
+      title: "Bu necə işləyir",
+      desc: "Addım-addım: hesablama → məlumatlar → ödəniş → polis.",
+      steps: [
+        {
+          title: "Hesablayın",
+          text: "Nəqliyyat vasitəsinin növünü və sığorta müddətini seçin.",
+        },
+        {
+          title: "Məlumatları doldurun",
+          text: "Qeydiyyat ünvanı, dövlət nömrə nişanı, VIN və əlaqə məlumatları.",
+        },
+        {
+          title: "Ödəniş edin",
+          text: "Polis hazırlandıqdan sonra ödəniş rekvizitlərini sizə göndərəcəyik.",
+        },
+        {
+          title: "PDF polisi əldə edin",
+          text: "Ödəniş təsdiqini aldıqdan dərhal sonra.",
+        },
+      ],
+    },
+
+    why: {
+      title: "Niyə bizi seçirlər",
+      desc: "Sürətə, aydınlığa və düzgün rəsmiləşdirməyə fokuslanırıq.",
+      items: [
+        {
+          title: "Sürətli",
+          text: "Minimum addım və aydın proses.",
+        },
+        {
+          title: "Aydın",
+          text: "Məhsullar arasındakı fərqləri sadə dillə izah edirik.",
+        },
+        {
+          title: "Praktik",
+          text: "Rəsmi yoxlamalara və tələblərə əsaslanırıq.",
+        },
+        {
+          title: "Dəstək",
+          text: "Rəsmiləşdirmə və yoxlama ilə bağlı suallarda kömək edirik.",
+        },
+      ],
+    },
+
+    form: {
+      title: "Müraciət forması",
+      desc: "Məlumatları doldurun — polisi hazırlayacaq və ödəniş məlumatlarını sizə göndərəcəyik.",
+    },
+
+    faq: {
+      title: "Tez-tez verilən suallar",
+      desc: "Ən çox verilən suallara qısa cavablar.",
+      items: [
+        {
+          q: "Rəsmiləşdirmə nə qədər vaxt aparır?",
+          a: "Bütün məlumatlar təqdim edildikdə adətən 10–20 dəqiqə çəkir. Lakin ümumi tövsiyə odur ki, polisi qüvvəyə minmə tarixindən 1–2 gün əvvəl rəsmiləşdirəsiniz.",
+        },
+        {
+          q: "Kartla ödəniş etmək mümkündürmü?",
+          a: "Hazırda yalnız SWIFT, SEPA və P2P köçürmələri, həmçinin BLIK ödənişi mümkündür. Polis hazırlandıqdan sonra ödəniş edir və PDF sənədini əldə edirsiniz.",
+        },
+        {
+          q: "Bu, «Yaşıl Kart» ilə eynidirmi?",
+          a: "Xeyr. Bunlar fərqli məhsullar və fərqli qaydalardır.",
+        },
+        {
+          q: "Bu hansı sığortadır?",
+          a: "Bu, Polşa və Aİ ərazisində qüvvədə olan nəqliyyat vasitəsi sahiblərinin və ya istifadəçilərinin mülki məsuliyyətinin məcburi sığortasıdır.",
+        },
+        {
+          q: "Sığorta nələri əhatə edir?",
+          a: `Əhatə dairəsinə daxildir:
+              • Zərərçəkənlərin həyatına və sağlamlığına vurulan zərər;
+              • Üçüncü şəxslərin əmlakına vurulan zərər.
+
+              Minimum təminat məbləğləri:
+              • 29 876 400 PLN — bədən xəsarətləri üzrə;
+              • 6 021 600 PLN — əmlak zərəri üzrə.`,
+        },
+        {
+          q: "Sığorta nələri əhatə etmir?",
+          a: `• velosipedlər və mexaniki olmayan nəqliyyat vasitələri;
+              • avtomobil sahibinə vurulan zərər;
+              • ətraf mühitə vurulan zərər.`,
+        },
+        {
+          q: "Hansı hallarda reqres tələbi irəli sürülə bilər?",
+          a: `Sürücü:
+              • qəsdən hərəkət etdikdə;
+              • spirtli içki və ya narkotik təsiri altında olduqda;
+              • sürücülük hüququ olmadıqda;
+              • hadisə yerindən qaçdıqda;
+              • oğurlanmış avtomobildən istifadə etdikdə,
+              sığortaçı ödənilmiş məbləği geri tələb edə bilər.`,
+        },
+        {
+          q: "Polis nə vaxt başlayır və nə vaxt başa çatır?",
+          a: `Başlanğıc: polisin verildiyi tarix.
+
+              Müddət: 30–364 gün.
+
+              Xitam:
+              • müddətin başa çatması;
+              • avtomobilin oğurlanması və ya silinməsi;
+              • qeydiyyatdan çıxarılması.`,
+        },
+      ],
+    },
+
+    verify: {
+      title: "Polisin etibarlılığının yoxlanılması",
+      lead:
+        "Polisinizin həqiqətən qüvvədə olduğuna əmin olmaq istəyirsinizsə, rəsmi sığorta bürolarının məlumat bazalarından istifadə edin. Aşağıda Polşa, Latviya və Litva üzrə yoxlama xidmətlərinə keçidlər təqdim olunub.",
+      items: [
+        {
+          code: "PL",
+          country: "Polşa",
+          org: "UFG — Ubezpieczeniowy Fundusz Gwarancyjny",
+          desc: "UFG-nin rəsmi bazasında dövlət qeydiyyat nömrəsi və ya VIN üzrə OC polisinin etibarlılığının yoxlanılması.",
+          cta: "UFG saytına keç",
+          href: "https://www.ufg.pl/",
+        },
+        {
+          code: "LV",
+          country: "Latviya",
+          org: "LTAB — Latvijas Transportlīdzekļu apdrošinātāju birojs",
+          desc: "Latviyada qeydiyyatdan keçmiş nəqliyyat vasitələri üçün məcburi OCTA sığortasının yoxlanılması.",
+          cta: "LTAB vasitəsilə yoxla",
+          href: "https://www.ltab.lv/",
+        },
+        {
+          code: "LT",
+          country: "Litva",
+          org: "CAB — Motor Insurers’ Bureau of Lithuania",
+          desc: "Litvada məcburi mülki məsuliyyət sığortası polisinin etibarlılığını yoxlama xidməti.",
+          cta: "CAB vasitəsilə yoxla",
+          href: "https://www.cab.lt/",
+        },
+      ],
+    },
+  },
+
+  ro: {
+    hero: {
+      kicker: "Emitere online",
+      title: "Asigurare de frontieră (OC graniczne) — rapid și fără pași inutili",
+      lead:
+        "Calculați costul, completați cererea și primiți polița în format PDF. Pentru vehiculele înmatriculate în afara UE, polița poate fi verificată cu ușurință în baza de date a asigurărilor din Polonia (UFG).",
+      meta: ["Poliță PDF după emitere", "Asistență prin mesagerie", "Condiții clare"],
+      ctaCalc: "Calculează costul",
+      ctaBuy: "Solicită polița",
+    },
+
+    calc: {
+      title: "Calculator de cost",
+      badge: "~ 1 minut",
+      desc: "calculator tarifar simplu",
+      termLabel: "Perioadă",
+      vehicleLabel: "Tipul vehiculului",
+      termOptions: [
+        { value: "30", label: "30 de zile" },
+        { value: "60", label: "60 de zile" },
+        { value: "90", label: "90 de zile" },
+        { value: "180", label: "180 de zile" },
+        { value: "365", label: "364 de zile" },
+      ],
+      vehicleOptions: [
+        { value: "car", label: "Autoturisme" },
+        { value: "van", label: "Autobuze" },
+        { value: "truck", label: "Camioane" },
+        { value: "trailer", label: "Remorci" },
+        { value: "special", label: "Vehicule speciale" },
+      ],
+      button: "Calculează",
+      note: "note",
+    },
+
+    process: {
+      title: "Cum funcționează",
+      desc: "Pas cu pas: calcul → date → plată → poliță.",
+      steps: [
+        {
+          title: "Calculează",
+          text: "Selectați tipul vehiculului și perioada de asigurare.",
+        },
+        {
+          title: "Completați datele",
+          text: "Adresa de înmatriculare, numărul de înmatriculare, VIN-ul și datele de contact.",
+        },
+        {
+          title: "Achitați",
+          text: "După pregătirea poliței, vă vom trimite detaliile pentru plată.",
+        },
+        {
+          title: "Primiți polița PDF",
+          text: "Imediat după primirea confirmării plății.",
+        },
+      ],
+    },
+
+    why: {
+      title: "De ce ne aleg clienții",
+      desc: "Accent pe rapiditate, claritate și emitere corectă.",
+      items: [
+        {
+          title: "Rapid",
+          text: "Număr minim de pași și structură clară.",
+        },
+        {
+          title: "Clar",
+          text: "Explicăm diferențele dintre produse într-un limbaj simplu.",
+        },
+        {
+          title: "Practic",
+          text: "Ne orientăm după verificările și cerințele oficiale.",
+        },
+        {
+          title: "Asistență",
+          text: "Vă ajutăm cu întrebările privind emiterea și verificarea poliței.",
+        },
+      ],
+    },
+
+    form: {
+      title: "Formular de solicitare",
+      desc: "Completați datele — vom pregăti polița și vă vom trimite detaliile pentru plată.",
+    },
+
+    faq: {
+      title: "FAQ",
+      desc: "Răspunsuri scurte la cele mai frecvente întrebări.",
+      items: [
+        {
+          q: "Cât timp durează emiterea?",
+          a: "De regulă, 10–20 de minute dacă toate datele necesare sunt disponibile. Totuși, recomandăm emiterea poliței cu una-două zile înainte de data la care aveți nevoie de începerea acoperirii.",
+        },
+        {
+          q: "Se poate plăti cu cardul?",
+          a: "În prezent sunt disponibile doar transferurile SWIFT, SEPA și P2P, precum și plata prin BLIK. După pregătirea poliței, efectuați plata și primiți documentul PDF.",
+        },
+        {
+          q: "Este aceeași asigurare ca «Cartea Verde»?",
+          a: "Nu. Sunt produse diferite și se aplică reguli diferite.",
+        },
+        {
+          q: "Ce tip de asigurare este aceasta?",
+          a: "Este asigurarea obligatorie de răspundere civilă pentru proprietarii sau utilizatorii vehiculelor cu motor, valabilă pe teritoriul Poloniei și al Uniunii Europene.",
+        },
+        {
+          q: "Ce acoperă asigurarea?",
+          a: `Acoperirea include:
+              • Vătămarea vieții sau sănătății persoanelor prejudiciate;
+              • Daune materiale cauzate terților.
+
+              Sume minime garantate:
+              • 29 876 400 PLN — vătămări corporale;
+              • 6 021 600 PLN — daune materiale.`,
+        },
+        {
+          q: "Ce nu acoperă asigurarea?",
+          a: `• bicicletele și vehiculele fără motor;
+              • daunele suferite de proprietarul vehiculului;
+              • daunele aduse mediului înconjurător.`,
+        },
+        {
+          q: "În ce situații este posibil regresul?",
+          a: `Asigurătorul are dreptul să recupereze suma plătită dacă șoferul:
+              • a acționat intenționat;
+              • se afla sub influența alcoolului sau a drogurilor;
+              • nu deținea permis de conducere;
+              • a părăsit locul accidentului;
+              • utiliza un vehicul furat.`,
+        },
+        {
+          q: "Când începe și când încetează polița?",
+          a: `Început: data emiterii poliței.
+
+              Perioada de valabilitate: 30–364 de zile.
+
+              Încetare:
+              • expirarea perioadei de valabilitate;
+              • furtul sau casarea vehiculului;
+              • radierea din circulație.`,
+        },
+      ],
+    },
+
+    verify: {
+      title: "Verificarea valabilității poliței",
+      lead:
+        "Dacă doriți să verificați dacă polița dumneavoastră este activă, utilizați bazele de date oficiale ale birourilor de asigurări. Mai jos găsiți linkuri către serviciile din Polonia, Letonia și Lituania.",
+      items: [
+        {
+          code: "PL",
+          country: "Polonia",
+          org: "UFG — Ubezpieczeniowy Fundusz Gwarancyjny",
+          desc: "Verificarea valabilității poliței OC după numărul de înmatriculare sau VIN în baza oficială UFG.",
+          cta: "Accesați site-ul UFG",
+          href: "https://www.ufg.pl/",
+        },
+        {
+          code: "LV",
+          country: "Letonia",
+          org: "LTAB — Latvijas Transportlīdzekļu apdrošinātāju birojs",
+          desc: "Verificarea asigurării obligatorii OCTA pentru vehiculele înmatriculate în Letonia.",
+          cta: "Verifică prin LTAB",
+          href: "https://www.ltab.lv/",
+        },
+        {
+          code: "LT",
+          country: "Lituania",
+          org: "CAB — Motor Insurers’ Bureau of Lithuania",
+          desc: "Serviciu de verificare a valabilității poliței de asigurare obligatorie de răspundere civilă auto în Lituania.",
+          cta: "Verifică prin CAB",
+          href: "https://www.cab.lt/",
+        },
+      ],
+    },
+  },
+
+  sr: {
+    hero: {
+      kicker: "Online ugovaranje",
+      title: "Polisa graničnog osiguranja (OC graniczne) — brzo i bez suvišnih koraka",
+      lead:
+        "Izračunajte cenu, popunite zahtev i preuzmite PDF polisu. Za vozila registrovana van EU — polisu je moguće jednostavno proveriti u bazi osiguranja Republike Poljske (UFG).",
+      meta: ["PDF polisa nakon izdavanja", "Podrška putem mesindžera", "Jasni uslovi"],
+      ctaCalc: "Izračunaj cenu",
+      ctaBuy: "Ugovori polisu",
+    },
+
+    calc: {
+      title: "Kalkulator cene",
+      badge: "~ 1 minut",
+      desc: "jednostavan kalkulator tarifa",
+      termLabel: "Period",
+      vehicleLabel: "Vrsta vozila",
+      termOptions: [
+        { value: "30", label: "30 dana" },
+        { value: "60", label: "60 dana" },
+        { value: "90", label: "90 dana" },
+        { value: "180", label: "180 dana" },
+        { value: "365", label: "364 dana" },
+      ],
+      vehicleOptions: [
+        { value: "car", label: "Putnička vozila" },
+        { value: "van", label: "Autobusi" },
+        { value: "truck", label: "Teretna vozila" },
+        { value: "trailer", label: "Prikolice" },
+        { value: "special", label: "Specijalna vozila" },
+      ],
+      button: "Izračunaj",
+      note: "note",
+    },
+
+    process: {
+      title: "Kako funkcioniše",
+      desc: "Korak po korak: obračun → podaci → plaćanje → polisa.",
+      steps: [
+        { title: "Izračunajte cenu", text: "Izaberite vrstu vozila i period osiguranja." },
+        { title: "Popunite podatke", text: "Adresa registracije, registarski broj, VIN i kontakt podaci." },
+        { title: "Izvršite uplatu", text: "Nakon pripreme polise poslaćemo vam podatke za plaćanje." },
+        { title: "Preuzmite PDF polisu", text: "Odmah nakon što primimo potvrdu o uplati." },
+      ],
+    },
+
+    why: {
+      title: "Zašto nas klijenti biraju",
+      desc: "Fokusirani smo na brzinu, jasnoću i tačnost ugovaranja.",
+      items: [
+        { title: "Brzo", text: "Minimalan broj koraka i jasna struktura procesa." },
+        { title: "Jasno", text: "Objašnjavamo razlike između proizvoda jednostavnim jezikom." },
+        { title: "Praktično", text: "Oslanjamo se na zvanične provere i važeće zahteve." },
+        { title: "Podrška", text: "Pomažemo u vezi sa ugovaranjem i proverom polise." },
+      ],
+    },
+
+    form: {
+      title: "Obrazac zahteva",
+      desc: "Popunite podatke — pripremićemo polisu i poslati vam podatke za uplatu.",
+    },
+
+    faq: {
+      title: "FAQ",
+      desc: "Kratki odgovori na najčešća pitanja.",
+      items: [
+        {
+          q: "Koliko traje izdavanje polise?",
+          a: "Obično 10–20 minuta ako su svi podaci dostupni. Ipak, preporučujemo da polisu ugovorite jedan do dva dana pre početka osiguravajućeg pokrića."
+        },
+        {
+          q: "Da li je moguće platiti karticom?",
+          a: "Trenutno su dostupni samo SWIFT, SEPA i P2P transferi, kao i BLIK plaćanja. Nakon pripreme polise izvršavate uplatu i dobijate PDF dokument."
+        },
+        {
+          q: "Da li je ovo isto što i „zelena karta”?",
+          a: "Ne. To su različiti proizvodi i podležu različitim pravilima."
+        },
+        {
+          q: "Koja je ovo vrsta osiguranja?",
+          a: "To je obavezno osiguranje od odgovornosti vlasnika ili korisnika motornih vozila koje važi na teritoriji Poljske i Evropske unije."
+        },
+        {
+          q: "Šta pokriva osiguranje?",
+          a: `Pokriće obuhvata:
+              • Štetu nastalu usled smrti ili povrede trećih lica;
+              • Materijalnu štetu pričinjenu trećim licima.
+
+              Minimalne garantovane sume:
+              • 29 876 400 PLN — telesne povrede;
+              • 6 021 600 PLN — materijalna šteta.`
+        },
+        {
+          q: "Šta osiguranje ne pokriva?",
+          a: `• bicikle i nemotorna vozila;
+              • štetu vlasniku vozila;
+              • štetu životnoj sredini.`
+        },
+        {
+          q: "U kojim slučajevima je moguć regres?",
+          a: `Osiguravač ima pravo da zahteva povraćaj isplaćenog iznosa ako je vozač:
+              • postupao namerno;
+              • bio pod dejstvom alkohola ili narkotika;
+              • upravljao bez važeće vozačke dozvole;
+              • napustio mesto saobraćajne nezgode;
+              • koristio ukradeno vozilo.`
+        },
+        {
+          q: "Kada polisa počinje i prestaje da važi?",
+          a: `Početak važenja: datum izdavanja polise.
+
+              Period važenja: 30–364 dana.
+
+              Prestanak važenja:
+              • istekom perioda osiguranja;
+              • krađom ili rashodovanjem vozila;
+              • odjavom vozila iz registra.`
+        },
+      ],
+    },
+
+    verify: {
+      title: "Provera važenja polise",
+      lead:
+        "Ako želite da proverite da li je vaša polisa aktivna, koristite zvanične baze podataka osiguravajućih biroa. U nastavku se nalaze linkovi za Poljsku, Letoniju i Litvaniju.",
+      items: [
+        {
+          code: "PL",
+          country: "Poljska",
+          org: "UFG — Ubezpieczeniowy Fundusz Gwarancyjny",
+          desc: "Provera važenja OC polise prema registarskom broju ili VIN-u u zvaničnoj bazi UFG.",
+          cta: "Posetite UFG",
+          href: "https://www.ufg.pl/",
+        },
+        {
+          code: "LV",
+          country: "Letonija",
+          org: "LTAB — Latvijas Transportlīdzekļu apdrošinātāju birojs",
+          desc: "Provera obaveznog OCTA osiguranja za vozila registrovana u Letoniji.",
+          cta: "Proveri putem LTAB-a",
+          href: "https://www.ltab.lv/",
+        },
+        {
+          code: "LT",
+          country: "Litvanija",
+          org: "CAB — Motor Insurers’ Bureau of Lithuania",
+          desc: "Servis za proveru važenja polise obaveznog osiguranja od građanske odgovornosti u Litvaniji.",
+          cta: "Proveri putem CAB-a",
+          href: "https://www.cab.lt/",
+        },
+      ],
+    },
+  },
+
+  sq: {
+    hero: {
+      kicker: "Aplikim online",
+      title: "Kontrata e sigurimit kufitar (OC graniczne) — shpejt dhe pa hapa të panevojshëm",
+      lead:
+        "Llogaritni koston, plotësoni aplikimin dhe merrni policën në format PDF. Për automjetet e regjistruara jashtë BE-së, polica mund të verifikohet lehtësisht në bazën e të dhënave të sigurimeve të Republikës së Polonisë (UFG).",
+      meta: [
+        "Policë PDF pas lëshimit",
+        "Mbështetje në mesazherë",
+        "Kushte të qarta"
+      ],
+      ctaCalc: "Llogarit koston",
+      ctaBuy: "Apliko për policën",
+    },
+
+    calc: {
+      title: "Llogaritësi i kostos",
+      badge: "~ 1 minutë",
+      desc: "llogaritës i thjeshtë tarifash",
+      termLabel: "Afati",
+      vehicleLabel: "Lloji i automjetit",
+      termOptions: [
+        { value: "30", label: "30 ditë" },
+        { value: "60", label: "60 ditë" },
+        { value: "90", label: "90 ditë" },
+        { value: "180", label: "180 ditë" },
+        { value: "365", label: "364 ditë" },
+      ],
+      vehicleOptions: [
+        { value: "car", label: "Automjete pasagjerësh" },
+        { value: "van", label: "Autobusë" },
+        { value: "truck", label: "Automjete të mallrave" },
+        { value: "trailer", label: "Rimorkio" },
+        { value: "special", label: "Mjete speciale" },
+      ],
+      button: "Llogarit",
+      note: "note",
+    },
+
+    process: {
+      title: "Si funksionon",
+      desc: "Hap pas hapi: llogaritja → të dhënat → pagesa → polica.",
+      steps: [
+        {
+          title: "Llogaritni",
+          text: "Zgjidhni llojin e automjetit dhe periudhën e sigurimit."
+        },
+        {
+          title: "Plotësoni të dhënat",
+          text: "Adresa e regjistrimit, targa, VIN dhe kontaktet."
+        },
+        {
+          title: "Kryeni pagesën",
+          text: "Pasi të përgatitet polica, do t'ju dërgojmë të dhënat për pagesë."
+        },
+        {
+          title: "Merrni policën PDF",
+          text: "Menjëherë pasi të marrim konfirmimin e pagesës."
+        },
+      ],
+    },
+
+    why: {
+      title: "Pse na zgjedhin klientët",
+      desc: "Fokus te shpejtësia, qartësia dhe korrektësia e lëshimit të policës.",
+      items: [
+        {
+          title: "Shpejt",
+          text: "Minimum hapash dhe strukturë e qartë."
+        },
+        {
+          title: "E kuptueshme",
+          text: "Shpjegojmë dallimet mes produkteve me gjuhë të thjeshtë."
+        },
+        {
+          title: "Praktike",
+          text: "Mbështetemi në kontrollet dhe kërkesat zyrtare."
+        },
+        {
+          title: "Mbështetje",
+          text: "Ndihmojmë me pyetjet lidhur me aplikimin dhe verifikimin."
+        },
+      ],
+    },
+
+    form: {
+      title: "Formulari i aplikimit",
+      desc: "Plotësoni të dhënat — ne do të përgatisim policën dhe do t'ju dërgojmë të dhënat për pagesë.",
+    },
+
+    faq: {
+      title: "FAQ",
+      desc: "Përgjigje të shkurtra për pyetjet më të shpeshta.",
+      items: [
+        {
+          q: "Sa kohë zgjat lëshimi i policës?",
+          a: "Zakonisht 10–20 minuta nëse disponohen të gjitha të dhënat. Megjithatë, rekomandojmë që polica të porositet 1–2 ditë përpara datës së nevojshme të fillimit të mbulimit."
+        },
+        {
+          q: "A mund të paguaj me kartë?",
+          a: "Aktualisht janë të disponueshme vetëm transfertat SWIFT, SEPA dhe P2P, si dhe pagesat me BLIK. Pas përgatitjes së policës, ju kryeni pagesën dhe merrni policën PDF."
+        },
+        {
+          q: "A është kjo e njëjtë me 'Green Card'?",
+          a: "Jo. Këto janë produkte të ndryshme dhe zbatohen rregulla të ndryshme."
+        },
+        {
+          q: "Çfarë është ky sigurim?",
+          a: "Ky është sigurimi i detyrueshëm i përgjegjësisë civile për pronarët ose përdoruesit e automjeteve motorike, i vlefshëm në Poloni dhe në Bashkimin Evropian."
+        },
+        {
+          q: "Çfarë mbulon sigurimi?",
+          a: `Mbulimi përfshin:
+              • Dëmtime të jetës ose shëndetit të personave të dëmtuar;
+              • Dëme materiale ndaj palëve të treta.
+
+              Shumat minimale të garantuara:
+              • 29 876 400 PLN — dëmtime trupore;
+              • 6 021 600 PLN — dëme materiale.`
+        },
+        {
+          q: "Çfarë nuk mbulon sigurimi?",
+          a: `• biçikletat dhe mjetet jo-motorike;
+              • dëmet ndaj pronarit të automjetit;
+              • dëmet ndaj mjedisit.`
+        },
+        {
+          q: "Në cilat raste është i mundur regresi?",
+          a: `Siguruesi ka të drejtë të kërkojë rimbursimin e shumës së paguar nëse drejtuesi:
+              • ka vepruar me dashje;
+              • ka qenë nën ndikimin e alkoolit ose drogës;
+              • nuk ka pasur leje drejtimi;
+              • është larguar nga vendi i aksidentit;
+              • ka përdorur një automjet të vjedhur.`
+        },
+        {
+          q: "Kur fillon dhe kur përfundon polica?",
+          a: `Fillimi: data e lëshimit të policës.
+
+              Kohëzgjatja: 30–364 ditë.
+
+              Përfundimi:
+              • skadimi i afatit;
+              • vjedhja ose çregjistrimi i automjetit;
+              • heqja nga regjistri.`
+        },
+      ],
+    },
+
+    verify: {
+      title: "Verifikimi i vlefshmërisë së policës",
+      lead:
+        "Nëse dëshironi të siguroheni që polica juaj është aktive, përdorni bazat zyrtare të të dhënave të byrove të sigurimeve. Më poshtë gjeni lidhjet për Poloninë, Letoninë dhe Lituaninë.",
+      items: [
+        {
+          code: "PL",
+          country: "Poloni",
+          org: "UFG — Ubezpieczeniowy Fundusz Gwarancyjny",
+          desc: "Verifikimi i vlefshmërisë së policës OC sipas numrit të regjistrimit ose VIN në bazën zyrtare të UFG.",
+          cta: "Shko në faqen e UFG",
+          href: "https://www.ufg.pl/",
+        },
+        {
+          code: "LV",
+          country: "Letoni",
+          org: "LTAB — Latvijas Transportlīdzekļu apdrošinātāju birojs",
+          desc: "Verifikimi i sigurimit të detyrueshëm OCTA për automjetet e regjistruara në Letoni.",
+          cta: "Verifiko përmes LTAB",
+          href: "https://www.ltab.lv/",
+        },
+        {
+          code: "LT",
+          country: "Lituani",
+          org: "CAB — Motor Insurers’ Bureau of Lithuania",
+          desc: "Shërbim për verifikimin e vlefshmërisë së policës së detyrueshme të përgjegjësisë civile në Lituani.",
+          cta: "Verifiko përmes CAB",
+          href: "https://www.cab.lt/",
+        },
+      ],
+    },
+  },
+
+  mn: {
+    hero: {
+      kicker: "Онлайнаар бүрдүүлэх",
+      title: "Хилийн даатгалын гэрээ (OC graniczne) — хурдан, илүүц алхамгүй",
+      lead:
+        "Үнийг тооцоолж, хүсэлтээ бөглөөд PDF полисоо аваарай. ЕХ-ноос гадуур бүртгэлтэй тээврийн хэрэгсэлд зориулсан энэхүү полисыг Польш Улсын даатгалын сангийн (UFG) мэдээллийн сангаар хялбархан шалгах боломжтой.",
+      meta: ["Бүрдүүлсний дараа PDF полис", "Мессенжерээр дэмжлэг", "Ойлгомжтой нөхцөл"],
+      ctaCalc: "Үнийг тооцоолох",
+      ctaBuy: "Полис бүрдүүлэх",
+    },
+
+    calc: {
+      title: "Үнийн тооцоолуур",
+      badge: "~ 1 минут",
+      desc: "энгийн тарифын тооцоолуур",
+      termLabel: "Хугацаа",
+      vehicleLabel: "Тээврийн хэрэгслийн төрөл",
+      termOptions: [
+        { value: "30", label: "30 хоног" },
+        { value: "60", label: "60 хоног" },
+        { value: "90", label: "90 хоног" },
+        { value: "180", label: "180 хоног" },
+        { value: "365", label: "364 хоног" },
+      ],
+      vehicleOptions: [
+        { value: "car", label: "Суудлын автомашин" },
+        { value: "van", label: "Автобус" },
+        { value: "truck", label: "Ачааны автомашин" },
+        { value: "trailer", label: "Чиргүүл" },
+        { value: "special", label: "Тусгай зориулалтын техник" },
+      ],
+      button: "Тооцоолох",
+      note: "note",
+    },
+
+    process: {
+      title: "Хэрхэн ажилладаг вэ",
+      desc: "Алхам алхмаар: тооцоолол → мэдээлэл → төлбөр → полис.",
+      steps: [
+        {
+          title: "Тооцоолох",
+          text: "Тээврийн хэрэгслийн төрөл болон даатгалын хугацааг сонгоно уу.",
+        },
+        {
+          title: "Мэдээллээ бөглөх",
+          text: "Бүртгэлийн хаяг, улсын дугаар, VIN болон холбоо барих мэдээлэл.",
+        },
+        {
+          title: "Төлбөр төлөх",
+          text: "Полисыг бэлтгэсний дараа бид төлбөрийн мэдээллийг танд илгээнэ.",
+        },
+        {
+          title: "PDF полис авах",
+          text: "Төлбөр баталгаажсаны дараа шууд илгээнэ.",
+        },
+      ],
+    },
+
+    why: {
+      title: "Яагаад биднийг сонгодог вэ",
+      desc: "Хурд, ойлгомжтой байдал, зөв бүрдүүлэлтэд төвлөрдөг.",
+      items: [
+        {
+          title: "Хурдан",
+          text: "Хамгийн бага алхам, ойлгомжтой бүтэц.",
+        },
+        {
+          title: "Ойлгомжтой",
+          text: "Даатгалын бүтээгдэхүүний ялгааг энгийн хэлээр тайлбарладаг.",
+        },
+        {
+          title: "Практик",
+          text: "Албан ёсны шалгалт болон шаардлагад нийцүүлэн ажилладаг.",
+        },
+        {
+          title: "Дэмжлэг",
+          text: "Бүрдүүлэлт болон шалгалттай холбоотой асуултад тусалдаг.",
+        },
+      ],
+    },
+
+    form: {
+      title: "Хүсэлтийн маягт",
+      desc: "Мэдээллээ бөглөнө үү — бид полисыг бэлтгэж, төлбөрийн мэдээллийг илгээнэ.",
+    },
+
+    faq: {
+      title: "FAQ",
+      desc: "Түгээмэл асуултын товч хариултууд.",
+      items: [
+        {
+          q: "Бүрдүүлэлт хэр хугацаа шаарддаг вэ?",
+          a: "Ихэнх тохиолдолд бүх мэдээлэл бүрэн бол 10–20 минут шаарддаг. Гэхдээ даатгалыг хүчин төгөлдөр болох өдрөөс 1–2 хоногийн өмнө бүрдүүлэхийг зөвлөж байна.",
+        },
+        {
+          q: "Банкны картаар төлөх боломжтой юу?",
+          a: "Одоогоор зөвхөн SWIFT, SEPA, P2P шилжүүлэг болон BLIK төлбөр хүлээн авч байна. Полисыг бэлтгэсний дараа та төлбөрөө хийж, PDF хувилбараа авна.",
+        },
+        {
+          q: "Энэ нь «Ногоон карт» мөн үү?",
+          a: "Үгүй. Эдгээр нь өөр өөр бүтээгдэхүүн бөгөөд өөр журамтай.",
+        },
+        {
+          q: "Энэ ямар төрлийн даатгал вэ?",
+          a: "Энэ нь Польш болон Европын Холбооны нутаг дэвсгэрт хүчинтэй, механик тээврийн хэрэгслийн өмчлөгч болон ашиглагчийн иргэний хариуцлагын заавал даатгал юм.",
+        },
+        {
+          q: "Даатгал юуг хамардаг вэ?",
+          a: `Хамрах хүрээ:
+
+  • Хохирогчийн амь нас, эрүүл мэндэд учирсан хохирол;
+  • Гуравдагч этгээдийн эд хөрөнгийн хохирол.
+
+  Хамгийн бага баталгаат нөхөн төлбөрийн хэмжээ:
+
+  • 29 876 400 PLN — бие махбодын гэмтэл;
+  • 6 021 600 PLN — эд хөрөнгийн хохирол.`,
+        },
+        {
+          q: "Даатгал юуг хамардаггүй вэ?",
+          a: `• Унадаг дугуй болон механик бус тээврийн хэрэгсэл;
+  • Автомашины эзэмшигчид учирсан хохирол;
+  • Байгаль орчинд учирсан хохирол.`,
+        },
+        {
+          q: "Ямар тохиолдолд даатгагч нөхөн төлбөрөө буцаан нэхэмжилж болох вэ?",
+          a: `Даатгалын компани дараах тохиолдолд төлсөн нөхөн төлбөрөө буцаан нэхэмжлэх эрхтэй:
+
+  • Санаатай үйлдэл гаргасан;
+  • Согтууруулах ундаа эсвэл мансууруулах бодисын нөлөөнд байсан;
+  • Жолоодох эрхгүй байсан;
+  • Зам тээврийн ослын газраас зугтсан;
+  • Хулгайлагдсан автомашин ашигласан.`,
+        },
+        {
+          q: "Полис хэзээ эхэлж, хэзээ дуусдаг вэ?",
+          a: `Эхлэх хугацаа: полис олгосон өдөр.
+
+  Хүчинтэй хугацаа: 30–364 хоног.
+
+  Хүчин төгөлдөр байдал дуусах нөхцөл:
+
+  • Хугацаа дуусах;
+  • Автомашин хулгайлагдах эсвэл ашиглалтаас гарах;
+  • Бүртгэлээс хасагдах.`,
+        },
+      ],
+    },
+
+    verify: {
+      title: "Полисын хүчинтэй эсэхийг шалгах",
+      lead:
+        "Хэрэв та өөрийн полис үнэхээр хүчинтэй эсэхийг шалгахыг хүсвэл даатгалын товчоодын албан ёсны мэдээллийн санг ашиглана уу. Доорх холбоосууд нь Польш, Латви, Литвийн шалгах үйлчилгээнд хөтөлнө.",
+      items: [
+        {
+          code: "PL",
+          country: "Польш",
+          org: "UFG — Ubezpieczeniowy Fundusz Gwarancyjny",
+          desc: "UFG-ийн албан ёсны мэдээллийн санд улсын дугаар эсвэл VIN кодоор OC даатгалын хүчинтэй байдлыг шалгах боломжтой.",
+          cta: "UFG вэбсайт руу орох",
+          href: "https://www.ufg.pl/",
+        },
+        {
+          code: "LV",
+          country: "Латви",
+          org: "LTAB — Latvijas Transportlīdzekļu apdrošinātāju birojs",
+          desc: "Латвид бүртгэлтэй тээврийн хэрэгслийн OCTA заавал даатгалын хүчинтэй байдлыг шалгах үйлчилгээ.",
+          cta: "LTAB-аар шалгах",
+          href: "https://www.ltab.lv/",
+        },
+        {
+          code: "LT",
+          country: "Литва",
+          org: "CAB — Motor Insurers’ Bureau of Lithuania",
+          desc: "Литвад хүчинтэй иргэний хариуцлагын заавал даатгалын полисыг шалгах үйлчилгээ.",
+          cta: "CAB-аар шалгах",
+          href: "https://www.cab.lt/",
+        },
+      ],
+    },
+  },
+
 };
 
 // Утилита: если переводы ещё не готовы, берём RU.
 export function getHomeDictionary(lang: Lang): HomeDictionary {
   const d = homeDictionary[lang];
-  return d ? d : homeDictionary.ru;
+  return d ? d : homeDictionary.en;
 }
