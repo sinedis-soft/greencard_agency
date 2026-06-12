@@ -2695,3 +2695,390 @@ footer {
     width: 100%;
   }
 }
+
+/* ============================================================
+   20) Route landing pages
+   ============================================================ */
+
+.route-breadcrumb {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.route-breadcrumb__list {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: var(--text-600);
+  font-size: 14px;
+}
+
+.route-breadcrumb__list a {
+  color: var(--brand-primary);
+  font-weight: 800;
+}
+
+.route-hero {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(760px 420px at 16% 6%, rgba(123, 174, 55, 0.24), rgba(123, 174, 55, 0) 64%),
+    radial-gradient(680px 360px at 86% 8%, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0) 60%),
+    linear-gradient(135deg, var(--brand-primary-soft) 0%, var(--brand-primary) 50%, var(--brand-primary-dark) 100%);
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.route-hero::after {
+  content: "";
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0;
+  height: 112px;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(244, 246, 246, 0.14));
+}
+
+.route-hero__grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 0.76fr);
+  gap: clamp(28px, 5vw, 64px);
+  align-items: center;
+  padding: clamp(48px, 7vw, 86px) 0 clamp(48px, 7vw, 78px);
+}
+
+.route-hero__content {
+  max-width: 760px;
+}
+
+.route-hero__title {
+  max-width: 17ch;
+}
+
+.route-hero__lead {
+  max-width: 62ch;
+}
+
+.route-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.route-hero__secondary {
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.22);
+}
+
+.route-hero__secondary:hover {
+  background: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+}
+
+.route-hero__signals,
+.route-support-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.route-hero__signals li,
+.route-support-list li {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 34px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.route-hero__signals li {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.route-hero__signals li::before,
+.route-support-list li::before,
+.route-checklist li::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  flex: 0 0 auto;
+  background: var(--brand-accent);
+  box-shadow: 0 0 0 4px rgba(123, 174, 55, 0.16);
+}
+
+.route-hero__calculator {
+  position: relative;
+}
+
+.route-hero__calculator .panel {
+  position: relative;
+  z-index: 1;
+  border-radius: 26px;
+  border-color: rgba(255, 255, 255, 0.24);
+  box-shadow: 0 34px 80px rgba(0, 29, 26, 0.3);
+}
+
+.route-hero__calculator-glow {
+  position: absolute;
+  inset: -26px -20px auto auto;
+  width: 180px;
+  height: 180px;
+  border-radius: 999px;
+  background: rgba(123, 174, 55, 0.22);
+  filter: blur(28px);
+}
+
+.route-overview,
+.route-details,
+.route-faq {
+  background: var(--surface-soft);
+}
+
+.route-overview__grid,
+.route-details__grid,
+.route-faq__grid {
+  display: grid;
+  gap: 18px;
+}
+
+.route-overview__grid {
+  grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
+}
+
+.route-details__grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.route-faq__grid {
+  grid-template-columns: minmax(220px, 0.36fr) minmax(0, 1fr);
+  align-items: start;
+}
+
+.route-card {
+  position: relative;
+  height: 100%;
+  padding: clamp(22px, 3vw, 32px);
+  border: 1px solid rgba(0, 63, 57, 0.09);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 18px 48px rgba(0, 47, 43, 0.08);
+}
+
+.route-card--featured {
+  background:
+    radial-gradient(520px 220px at 100% 0%, rgba(123, 174, 55, 0.14), rgba(123, 174, 55, 0)),
+    #ffffff;
+}
+
+.route-card p,
+.route-cta__panel p {
+  margin: 12px 0 0;
+  color: var(--text-700);
+  font-size: 16px;
+  line-height: 1.72;
+}
+
+.route-card__eyebrow,
+.route-section-head__count,
+.route-step__number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 42px;
+  height: 30px;
+  padding: 0 10px;
+  border-radius: 999px;
+  background: var(--brand-accent-soft);
+  color: var(--brand-primary);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  margin-bottom: 14px;
+}
+
+.route-checklist {
+  display: grid;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0;
+}
+
+.route-checklist li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  align-items: start;
+  color: var(--text-700);
+  line-height: 1.52;
+}
+
+.route-checklist li::before {
+  margin-top: 8px;
+}
+
+.route-section-head {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.route-section-head__line {
+  height: 1px;
+  flex: 1 1 auto;
+  background: linear-gradient(90deg, rgba(0, 63, 57, 0.18), rgba(0, 63, 57, 0));
+}
+
+.route-step-grid {
+  counter-reset: route-step;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.route-step {
+  min-height: 148px;
+  padding: 20px;
+  border: 1px solid rgba(0, 63, 57, 0.09);
+  border-radius: 24px;
+  background: #ffffff;
+  box-shadow: 0 16px 34px rgba(0, 47, 43, 0.06);
+  color: var(--text-700);
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.route-step__number {
+  margin-bottom: 18px;
+}
+
+.route-cta__panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: clamp(24px, 4vw, 38px);
+  border-radius: 30px;
+  background:
+    radial-gradient(420px 180px at 90% 0%, rgba(123, 174, 55, 0.16), rgba(123, 174, 55, 0)),
+    linear-gradient(135deg, #ffffff, var(--surface-soft));
+  border: 1px solid rgba(0, 63, 57, 0.1);
+  box-shadow: var(--shadow-1);
+}
+
+.route-cta__panel > div {
+  max-width: 720px;
+}
+
+.route-support-list {
+  margin-top: 14px;
+}
+
+.route-support-list li {
+  background: #ffffff;
+  border: 1px solid rgba(0, 63, 57, 0.08);
+  color: var(--text-700);
+}
+
+.route-faq__intro {
+  position: sticky;
+  top: 112px;
+}
+
+.route-faq__list {
+  max-width: none;
+}
+
+@media (max-width: 980px) {
+  .route-hero__grid,
+  .route-overview__grid,
+  .route-details__grid,
+  .route-faq__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .route-hero__title {
+    max-width: 22ch;
+  }
+
+  .route-step-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .route-faq__intro {
+    position: static;
+  }
+}
+
+@media (max-width: 760px) {
+  .route-breadcrumb {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .route-breadcrumb__list {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 2px;
+  }
+
+  .route-hero__grid {
+    padding: 38px 0 42px;
+  }
+
+  .route-hero__calculator {
+    min-width: 0;
+  }
+
+  .route-hero__actions .btn,
+  .route-cta__panel .btn {
+    width: 100%;
+  }
+
+  .route-hero__signals,
+  .route-support-list {
+    flex-direction: column;
+  }
+
+  .route-hero__signals li,
+  .route-support-list li {
+    width: 100%;
+  }
+
+  .route-step-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .route-step {
+    min-height: auto;
+  }
+
+  .route-cta__panel {
+    align-items: stretch;
+    flex-direction: column;
+  }
+}
