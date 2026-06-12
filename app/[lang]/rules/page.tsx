@@ -43,29 +43,54 @@ const breadcrumbTitleByLang: Record<Lang, string> = {
 };
 
 function normalizeLang(value: string): Lang {
-  return (LOCALES as readonly string[]).includes(value) ? (value as Lang) : "ru";
+  return (LOCALES as readonly string[]).includes(value)
+    ? (value as Lang)
+    : "ru";
 }
 
-export function generateStaticParams() { return LOCALES.map((lang) => ({ lang })); }
+export function generateStaticParams() {
+  return LOCALES.map((lang) => ({ lang }));
+}
 
-export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
-  const { lang: rawLang } = await params;const lang = normalizeLang(rawLang);
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang: rawLang } = await params;
+  const lang = normalizeLang(rawLang);
 
   const seo = getSeoDictionary(lang);
 
   return {
+    robots: { index: false, follow: true },
     alternates: pageAlternates(lang, "/rules"),
     title: seo.rules.title,
     description: seo.rules.description,
-    ...pageSocialMetadata(lang, "/rules", seo.rules.title, seo.rules.description),
+    ...pageSocialMetadata(
+      lang,
+      "/rules",
+      seo.rules.title,
+      seo.rules.description,
+    ),
   };
 }
 
-export default async function Page({ params }: { params: Promise<{ lang: string }> }) {
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
   const { lang: rawLang } = await params;
   const lang = normalizeLang(rawLang);
-  return <>
-    <BreadcrumbListJsonLd lang={lang} pageName={breadcrumbTitleByLang[lang]} pagePath="/rules" />
-    <RulesPage t={getRulesDictionary(lang)} />
-  </>;
+  return (
+    <>
+      <BreadcrumbListJsonLd
+        lang={lang}
+        pageName={breadcrumbTitleByLang[lang]}
+        pagePath="/rules"
+      />
+      <RulesPage t={getRulesDictionary(lang)} />
+    </>
+  );
 }

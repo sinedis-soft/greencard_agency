@@ -43,7 +43,9 @@ const breadcrumbTitleByLang: Record<Lang, string> = {
 };
 
 function normalizeLang(value: string): Lang {
-  return (LOCALES as readonly string[]).includes(value) ? (value as Lang) : "ru";
+  return (LOCALES as readonly string[]).includes(value)
+    ? (value as Lang)
+    : "ru";
 }
 
 export function generateStaticParams() {
@@ -61,10 +63,16 @@ export async function generateMetadata({
   const seo = getSeoDictionary(lang);
 
   return {
+    robots: { index: false, follow: true },
     alternates: pageAlternates(lang, "/cookiepolicy"),
     title: seo.cookiePolicy.title,
     description: seo.cookiePolicy.description,
-    ...pageSocialMetadata(lang, "/cookiepolicy", seo.cookiePolicy.title, seo.cookiePolicy.description),
+    ...pageSocialMetadata(
+      lang,
+      "/cookiepolicy",
+      seo.cookiePolicy.title,
+      seo.cookiePolicy.description,
+    ),
   };
 }
 
@@ -77,8 +85,14 @@ export default async function Page({
   const lang = normalizeLang(rawLang);
   const t = getCookiesPolicyDictionary(lang);
 
-  return <>
-    <BreadcrumbListJsonLd lang={lang} pageName={breadcrumbTitleByLang[lang]} pagePath="/cookiepolicy" />
-    <CookiesPolicyPage lang={lang} t={t} />
-  </>;
+  return (
+    <>
+      <BreadcrumbListJsonLd
+        lang={lang}
+        pageName={breadcrumbTitleByLang[lang]}
+        pagePath="/cookiepolicy"
+      />
+      <CookiesPolicyPage lang={lang} t={t} />
+    </>
+  );
 }
