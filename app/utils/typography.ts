@@ -9,3 +9,5 @@ export function keepTypography(input?: string | null): string {
     .replace(/([№§])\s+/g, "$1\u00A0")
     .replace(/(^|\s)(—|–|-)\s+/g, "$1$2\u00A0");
 }
+
+export const keepShortWords = keepTypography;
