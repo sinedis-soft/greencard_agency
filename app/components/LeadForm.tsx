@@ -112,10 +112,6 @@ function validateFiles(
   return true;
 }
 
-function isValidVIN(vin: string): boolean {
-  return vin.length === 17;
-}
-
 function todayISO(): string {
   const d = new Date();
   const yyyy = d.getFullYear();
@@ -483,8 +479,8 @@ export default function LeadForm(props: { lang: Lang }) {
 };
 
   return (
-    <section className="section" id="buy" aria-label={t.title}>
-      <div className="container">
+    <div className="lead-form-card" aria-label={t.title}>
+      <div className="lead-form-card__inner">
         <div className="panel__hd">
           <div className="panel__title">{t.title}</div>
         </div>
@@ -1076,17 +1072,28 @@ export default function LeadForm(props: { lang: Lang }) {
       </div>
 
       <style jsx>{`
-        .container {
-          padding-left: 12px;
-          padding-right: 12px;
+        .lead-form-card {
+          position: relative;
+          border: 1px solid rgba(0, 63, 57, 0.1);
+          border-radius: 28px;
+          background:
+            radial-gradient(720px 320px at 0% 0%, rgba(123, 174, 55, 0.16), transparent 58%),
+            linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(248, 250, 249, 0.96));
+          box-shadow: 0 28px 70px rgba(0, 47, 43, 0.12);
+          overflow: hidden;
+        }
+
+        .lead-form-card__inner {
+          position: relative;
         }
 
         .panel__hd {
-          padding: 14px 14px 8px 14px;
+          padding: clamp(20px, 3vw, 28px) clamp(18px, 3vw, 30px) 12px;
+          border-bottom: 0;
         }
 
         .panel__body {
-          padding: 0 14px 14px 14px;
+          padding: 0 clamp(18px, 3vw, 30px) clamp(20px, 3vw, 30px);
         }
 
         .panel__title,
@@ -1099,27 +1106,55 @@ export default function LeadForm(props: { lang: Lang }) {
           word-break: break-word;
         }
 
+        .panel__title {
+          color: var(--brand-primary);
+          font-size: clamp(22px, 2.4vw, 30px);
+          line-height: 1.15;
+          letter-spacing: -0.04em;
+        }
+
         .help--top {
-          margin: 0 0 10px 0;
+          max-width: 78ch;
+          margin: 0 0 16px 0;
+          color: var(--text-700);
+          font-size: 15px;
+          line-height: 1.6;
         }
 
         .steps {
           display: grid;
           grid-template-columns: 1fr 1fr;
-          gap: 10px;
-          margin: 12px 0;
+          gap: 12px;
+          margin: 16px 0 18px;
         }
 
         .step {
-          border: 1px solid rgba(148, 163, 184, 0.35);
-          border-radius: 14px;
-          padding: 10px 12px;
-          opacity: 0.65;
+          position: relative;
+          border: 1px solid rgba(0, 63, 57, 0.1);
+          border-radius: 18px;
+          padding: 13px 14px;
+          background: rgba(255, 255, 255, 0.76);
+          color: var(--text-700);
+          opacity: 0.76;
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
         }
 
         .step--active {
           opacity: 1;
-          border-color: currentColor;
+          border-color: rgba(123, 174, 55, 0.38);
+          background: #ffffff;
+          box-shadow: 0 14px 34px rgba(0, 47, 43, 0.08);
+        }
+
+        .step--active::before {
+          content: "";
+          position: absolute;
+          inset-inline-start: 14px;
+          top: -1px;
+          width: 48px;
+          height: 3px;
+          border-radius: 0 0 999px 999px;
+          background: var(--brand-accent);
         }
 
         .step span {
@@ -1130,7 +1165,8 @@ export default function LeadForm(props: { lang: Lang }) {
 
         .step b {
           display: block;
-          margin-top: 3px;
+          margin-top: 4px;
+          color: var(--text-900);
           font-size: 14px;
           line-height: 1.25;
         }
@@ -1140,16 +1176,20 @@ export default function LeadForm(props: { lang: Lang }) {
         }
 
         .hr {
-          margin: 12px 0;
+          height: 1px;
+          margin: 16px 0;
+          background: linear-gradient(90deg, rgba(0, 63, 57, 0.12), rgba(0, 63, 57, 0));
         }
 
         .legend {
-          margin: 0 0 8px 0;
-          font-weight: 600;
+          margin: 0 0 12px 0;
+          color: var(--brand-primary);
+          font-weight: 900;
+          letter-spacing: -0.01em;
         }
 
         .field {
-          margin: 0 0 10px 0;
+          margin: 0 0 12px 0;
           min-width: 0;
         }
 
@@ -1167,6 +1207,29 @@ export default function LeadForm(props: { lang: Lang }) {
           max-width: 100%;
           box-sizing: border-box;
           min-width: 0;
+        }
+
+        .input,
+        select,
+        textarea {
+          border-color: rgba(0, 63, 57, 0.14);
+          background: rgba(255, 255, 255, 0.92);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9);
+        }
+
+        .input:focus,
+        select:focus,
+        textarea:focus {
+          border-color: rgba(123, 174, 55, 0.76);
+          box-shadow: 0 0 0 4px rgba(123, 174, 55, 0.16);
+          outline: 0;
+        }
+
+        .file {
+          padding: 12px;
+          border: 1px dashed rgba(0, 63, 57, 0.22);
+          border-radius: 16px;
+          background: rgba(255, 255, 255, 0.72);
         }
 
         .check {
@@ -1204,11 +1267,11 @@ export default function LeadForm(props: { lang: Lang }) {
         }
 
         .estimate-box {
-          margin-top: 14px;
-          padding: 14px 16px;
-          border-radius: 14px;
-          border: 1px solid rgba(191, 21, 40, 0.22);
-          background: rgba(191, 21, 40, 0.06);
+          margin-top: 16px;
+          padding: 16px 18px;
+          border-radius: 18px;
+          border: 1px solid rgba(123, 174, 55, 0.3);
+          background: var(--brand-accent-soft);
         }
 
         .estimate-box__title {
@@ -1231,16 +1294,26 @@ export default function LeadForm(props: { lang: Lang }) {
         }
 
         .block {
-          margin-top: 12px;
+          margin-top: 14px;
+          padding: 16px;
+          border: 1px solid rgba(0, 63, 57, 0.08);
+          border-radius: 20px;
+          background: rgba(255, 255, 255, 0.58);
         }
 
         .block__title {
-          font-weight: 600;
-          margin: 0 0 10px 0;
+          color: var(--brand-primary);
+          font-weight: 900;
+          margin: 0 0 12px 0;
         }
 
         .vehicle {
-          margin-top: 12px;
+          margin-top: 14px;
+          padding: 16px;
+          border: 1px solid rgba(0, 63, 57, 0.1);
+          border-radius: 22px;
+          background: rgba(255, 255, 255, 0.72);
+          box-shadow: 0 14px 34px rgba(0, 47, 43, 0.06);
         }
 
         .vehicle__top {
@@ -1253,7 +1326,8 @@ export default function LeadForm(props: { lang: Lang }) {
         }
 
         .vehicle__title {
-          font-weight: 600;
+          color: var(--brand-primary);
+          font-weight: 900;
           line-height: 1.2;
           min-width: 0;
         }
@@ -1282,12 +1356,16 @@ export default function LeadForm(props: { lang: Lang }) {
         }
 
         @media (max-width: 520px) {
+          .lead-form-card {
+            border-radius: 22px;
+          }
+
           .panel__hd {
-            padding: 12px 12px 8px 12px;
+            padding: 18px 14px 8px;
           }
 
           .panel__body {
-            padding: 0 12px 12px 12px;
+            padding: 0 14px 18px;
           }
 
           .steps {
@@ -1305,6 +1383,6 @@ export default function LeadForm(props: { lang: Lang }) {
         }
       `}</style>
           <SubmissionModal isOpen={outcome !== "none"} onClose={() => setOutcome("none")} title={outcome === "partial" ? "Green Card Agency" : "Green Card Agency"} message={outcome === "partial" ? modalTexts[props.lang].partial : modalTexts[props.lang].success} variant={outcome === "partial" ? "partial" : "success"} />
-    </section>
+    </div>
   );
 }
