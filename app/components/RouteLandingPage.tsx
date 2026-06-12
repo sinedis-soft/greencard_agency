@@ -44,6 +44,7 @@ export default function RouteLandingPage({ lang, dictionary: t }: RouteLandingPa
   const topSignals = [t.what.title, t.price.title, t.validity.title];
   const supportSignals = t.who.items.slice(0, 3);
 
+
   return (
     <>
       <nav aria-label="Breadcrumb" className="route-breadcrumb container">
@@ -80,10 +81,12 @@ export default function RouteLandingPage({ lang, dictionary: t }: RouteLandingPa
               </ul>
             </div>
 
+
             <div className="route-hero__calculator">
               <div className="route-hero__calculator-glow" aria-hidden="true" />
               <Calculator lang={lang} />
             </div>
+
           </div>
         </div>
       </section>

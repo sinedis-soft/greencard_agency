@@ -2746,7 +2746,9 @@ footer {
   position: relative;
   z-index: 1;
   display: grid;
+
   grid-template-columns: minmax(0, 1fr) minmax(0, 420px);
+
   gap: clamp(28px, 5vw, 64px);
   align-items: center;
   padding: clamp(48px, 7vw, 86px) 0 clamp(48px, 7vw, 78px);
@@ -2827,10 +2829,12 @@ footer {
 
 .route-hero__calculator {
   position: relative;
+
   min-width: 0;
   width: 100%;
   max-width: 420px;
   justify-self: end;
+
 }
 
 .route-hero__calculator .panel {
@@ -2838,6 +2842,7 @@ footer {
   z-index: 1;
   border-radius: 26px;
   border-color: rgba(255, 255, 255, 0.24);
+
   width: 100%;
   box-shadow: 0 34px 80px rgba(0, 29, 26, 0.3);
 }
@@ -2851,6 +2856,7 @@ footer {
   white-space: normal;
   line-height: 1.25;
 }
+
 
 .route-hero__calculator-glow {
   position: absolute;
@@ -2911,6 +2917,7 @@ footer {
   font-size: 16px;
   line-height: 1.72;
 }
+
 
 .route-step__number {
   display: inline-flex;
@@ -3038,10 +3045,12 @@ footer {
     max-width: 22ch;
   }
 
+
   .route-hero__calculator {
     max-width: 620px;
     justify-self: stretch;
   }
+
 
   .route-step-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -3065,6 +3074,7 @@ footer {
   }
 
   .route-hero__grid {
+
     gap: 22px;
     padding: 30px 0 34px;
   }
@@ -3088,10 +3098,12 @@ footer {
   .route-hero__actions {
     gap: 10px;
     margin-bottom: 16px;
+
   }
 
   .route-hero__calculator {
     min-width: 0;
+
     max-width: none;
     justify-self: stretch;
   }
@@ -3116,6 +3128,7 @@ footer {
 
   .route-hero__calculator .calc-result__value {
     font-size: 20px;
+
   }
 
   .route-hero__actions .btn,
@@ -3123,9 +3136,11 @@ footer {
     width: 100%;
   }
 
+
   .route-hero__signals {
     display: none;
   }
+
 
   .route-support-list {
     flex-direction: column;
