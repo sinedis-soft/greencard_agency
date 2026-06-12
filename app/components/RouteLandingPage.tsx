@@ -43,7 +43,7 @@ const homeCrumbByLang: Record<Lang, string> = {
 export default function RouteLandingPage({ lang, dictionary: t }: RouteLandingPageProps) {
   const topSignals = [t.what.title, t.price.title, t.validity.title];
   const supportSignals = t.who.items.slice(0, 3);
-  const stepCount = String(t.how.steps.length).padStart(2, "0");
+
 
   return (
     <>
@@ -81,10 +81,12 @@ export default function RouteLandingPage({ lang, dictionary: t }: RouteLandingPa
               </ul>
             </div>
 
-            <aside className="route-hero__calculator" id="calc" aria-label={t.price.title}>
+
+            <div className="route-hero__calculator">
               <div className="route-hero__calculator-glow" aria-hidden="true" />
               <Calculator lang={lang} />
-            </aside>
+            </div>
+
           </div>
         </div>
       </section>
@@ -92,12 +94,10 @@ export default function RouteLandingPage({ lang, dictionary: t }: RouteLandingPa
       <section className="route-overview section">
         <div className="container route-overview__grid">
           <article className="route-card route-card--featured">
-            <div className="route-card__eyebrow">01</div>
             <h2 className="section__title">{t.what.title}</h2>
             <p>{t.what.text}</p>
           </article>
           <article className="route-card route-card--compact">
-            <div className="route-card__eyebrow">02</div>
             <h2 className="section__title">{t.who.title}</h2>
             <ul className="route-checklist">
               {t.who.items.map((item) => (
@@ -112,7 +112,6 @@ export default function RouteLandingPage({ lang, dictionary: t }: RouteLandingPa
         <div className="container">
           <div className="route-section-head">
             <div>
-              <span className="route-section-head__count">{stepCount}</span>
               <h2 className="section__title">{t.how.title}</h2>
             </div>
             <div className="route-section-head__line" aria-hidden="true" />
@@ -131,12 +130,10 @@ export default function RouteLandingPage({ lang, dictionary: t }: RouteLandingPa
       <section className="route-details section">
         <div className="container route-details__grid">
           <article className="route-card route-card--detail">
-            <div className="route-card__eyebrow">03</div>
             <h2 className="section__title">{t.price.title}</h2>
             <p>{t.price.text}</p>
           </article>
           <article className="route-card route-card--detail">
-            <div className="route-card__eyebrow">04</div>
             <h2 className="section__title">{t.validity.title}</h2>
             <p>{t.validity.text}</p>
           </article>
@@ -165,7 +162,6 @@ export default function RouteLandingPage({ lang, dictionary: t }: RouteLandingPa
       <section className="route-faq section" id="faq">
         <div className="container route-faq__grid">
           <div className="route-faq__intro">
-            <span className="route-card__eyebrow">FAQ</span>
             <h2 className="section__title">{t.faq.title}</h2>
           </div>
           <div className="faq route-faq__list">
