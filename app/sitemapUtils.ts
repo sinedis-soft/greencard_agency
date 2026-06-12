@@ -10,8 +10,10 @@ import {
 } from "@/app/seo";
 
 const SITEMAP_CONTENT_TYPE = "application/xml; charset=utf-8";
+
 const SITEMAP_CACHE_CONTROL =
   "public, max-age=0, s-maxage=3600, stale-while-revalidate=86400";
+
 
 const SITEMAP_MAIN_ROUTES = [
   "",
@@ -119,9 +121,11 @@ export function buildSitemapIndexXml(): string {
 export function xmlResponse(body: string): Response {
   return new Response(body, {
     headers: {
+
       "Cache-Control": SITEMAP_CACHE_CONTROL,
       "Content-Type": SITEMAP_CONTENT_TYPE,
       "X-Content-Type-Options": "nosniff",
+
     },
   });
 }
