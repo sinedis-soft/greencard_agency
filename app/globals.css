@@ -621,6 +621,13 @@ header.site-header {
   align-items: center;
 }
 
+.hero-title {
+  max-width: 14ch;
+  text-wrap: balance;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
 .kicker {
   display: flex;
   align-items: center;
@@ -1970,6 +1977,11 @@ footer {
 @media (max-width: 760px) {
   .hero__grid {
     padding: 34px 0 38px;
+  }
+
+  .hero-title {
+    max-width: 100%;
+    text-wrap: balance;
   }
 
   .h1 {
