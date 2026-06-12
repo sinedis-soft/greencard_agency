@@ -20,11 +20,9 @@ export default function CoverageBlock({ lang }: Props) {
 
           <div className="coverage__grid">
             <div className="coverage__left">
-              {t.items.map((item, index) => (
+              {t.items.map((item) => (
                 <article className="coverage__item" key={item.title}>
-                  <span className="coverage__dot" aria-hidden="true">
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
+                  <span className="coverage__dot" aria-hidden="true" />
                   <div className="coverage__item-body">
                     <h3 className="coverage__item-title">{item.title}</h3>
                     <p className="coverage__item-text">{item.text}</p>

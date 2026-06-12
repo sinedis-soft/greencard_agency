@@ -1,5 +1,4 @@
 // app/components/Home.tsx
-import Image from "next/image";
 import type { Lang } from "@/app/dictionaries/header";
 import { getHomeDictionary } from "@/app/dictionaries/home";
 import InfoCompare from "@/app/components/InfoCompare";
@@ -138,10 +137,8 @@ export default function Home({ lang }: { lang: Lang }) {
             </div>
           </div>
 
-          <div className="panel">
-            <div className="panel__body">
-              <LeadForm lang={lang} />
-            </div>
+          <div className="lead-form-shell">
+            <LeadForm lang={lang} />
           </div>
         </div>
       </section>
@@ -217,12 +214,13 @@ export default function Home({ lang }: { lang: Lang }) {
               </div>
             </div>
 
-            <div className="seo-carousel">
+            <div className="seo-carousel" aria-label={landing.carousel.title}>
               {seoCards.map((card) => (
                 <a className="seo-mini-card" href={card.href} key={card.href}>
+                  <span className="seo-mini-card__eyebrow">Route guide</span>
                   <h3>{card.title}</h3>
                   <p>{card.text}</p>
-                  <span>{card.cta}</span>
+                  <span className="seo-mini-card__cta">{card.cta}</span>
                 </a>
               ))}
             </div>

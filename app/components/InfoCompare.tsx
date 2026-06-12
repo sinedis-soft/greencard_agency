@@ -15,11 +15,9 @@ export default function InfoCompare({ lang }: { lang: Lang }) {
             <h2 className="info-compare__title">{t.title}</h2>
 
             <div className="info-compare__definitions">
-              {t.leftBlocks.map((block, index) => (
+              {t.leftBlocks.map((block) => (
                 <article className="info-compare__definition" key={block.strong}>
-                  <span className="info-compare__definition-index" aria-hidden="true">
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
+                  <span className="info-compare__definition-index" aria-hidden="true" />
                   <p className="info-compare__p">
                     <strong>{block.strong}</strong> {block.text}
                   </p>
@@ -35,11 +33,9 @@ export default function InfoCompare({ lang }: { lang: Lang }) {
 
             <div className="panel__body info-compare__right-body">
               <div className="info-compare__rows">
-                {t.rows.map((row, index) => (
+                {t.rows.map((row) => (
                   <div className="info-compare__row" key={row.title}>
-                    <div className="info-compare__row-marker" aria-hidden="true">
-                      {String(index + 1).padStart(2, "0")}
-                    </div>
+                    <div className="info-compare__row-marker" aria-hidden="true" />
                     <div>
                       <div className="info-compare__row-title">{row.title}</div>
                       <div className="info-compare__row-text">{row.text}</div>
