@@ -695,7 +695,8 @@ header.site-header {
   overflow: hidden;
 }
 
-.hero .panel {
+.hero .panel,
+.route-hero .panel {
   background: rgba(255, 255, 255, 0.1);
   border-color: rgba(255, 255, 255, 0.2);
   color: #ffffff;
@@ -712,7 +713,8 @@ header.site-header {
   gap: 10px;
 }
 
-.hero .panel__hd {
+.hero .panel__hd,
+.route-hero .panel__hd {
   border-bottom-color: rgba(255, 255, 255, 0.12);
 }
 
@@ -721,7 +723,8 @@ header.site-header {
   letter-spacing: -0.2px;
 }
 
-.hero .panel__title {
+.hero .panel__title,
+.route-hero .panel__title {
   color: #ffffff;
 }
 
@@ -832,11 +835,13 @@ textarea:hover {
   color: var(--text-600);
 }
 
-.hero label {
+.hero label,
+.route-hero label {
   color: rgba(255, 255, 255, 0.88);
 }
 
-.hero .help {
+.hero .help,
+.route-hero .help {
   color: rgba(255, 255, 255, 0.84);
 }
 
@@ -1574,12 +1579,14 @@ details[open] summary .muted {
   background: var(--surface-soft);
 }
 
-.hero .calc-result {
+.hero .calc-result,
+.route-hero .calc-result {
   border-color: rgba(255, 255, 255, 0.7);
   background: rgba(255, 255, 255, 0.96);
 }
 
-.hero .calc-result .help {
+.hero .calc-result .help,
+.route-hero .calc-result .help {
   color: var(--text-600);
 }
 
@@ -2725,9 +2732,9 @@ footer {
   position: relative;
   overflow: hidden;
   background:
-    radial-gradient(760px 420px at 16% 6%, rgba(123, 174, 55, 0.24), rgba(123, 174, 55, 0) 64%),
-    radial-gradient(680px 360px at 86% 8%, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0) 60%),
-    linear-gradient(135deg, var(--brand-primary-soft) 0%, var(--brand-primary) 50%, var(--brand-primary-dark) 100%);
+    radial-gradient(780px 380px at 22% 12%, rgba(123, 174, 55, 0.2), rgba(123, 174, 55, 0) 62%),
+    radial-gradient(760px 360px at 82% 0%, rgba(200, 169, 91, 0.13), rgba(200, 169, 91, 0) 58%),
+    linear-gradient(135deg, var(--brand-primary-soft) 0%, var(--brand-primary) 46%, var(--brand-primary-dark) 100%);
   color: #ffffff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
@@ -2747,23 +2754,26 @@ footer {
   z-index: 1;
   display: grid;
 
-  grid-template-columns: minmax(0, 1fr) minmax(0, 420px);
-
-  gap: clamp(28px, 5vw, 64px);
+  grid-template-columns: minmax(0, 1.12fr) minmax(320px, 0.72fr);
+  gap: clamp(24px, 4vw, 48px);
   align-items: center;
-  padding: clamp(48px, 7vw, 86px) 0 clamp(48px, 7vw, 78px);
+  padding: clamp(44px, 7vw, 78px) 0 clamp(42px, 6vw, 66px);
 }
 
 .route-hero__content {
+  min-width: 0;
   max-width: 760px;
 }
 
 .route-hero__title {
   max-width: 17ch;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .route-hero__lead {
   max-width: 62ch;
+  overflow-wrap: break-word;
 }
 
 .route-hero__actions {
@@ -2834,7 +2844,6 @@ footer {
   width: 100%;
   max-width: 420px;
   justify-self: end;
-
 }
 
 .route-hero__calculator .panel {
@@ -3074,9 +3083,8 @@ footer {
   }
 
   .route-hero__grid {
-
     gap: 22px;
-    padding: 30px 0 34px;
+    padding: 34px 0 38px;
   }
 
   .route-hero__content {
@@ -3085,7 +3093,7 @@ footer {
 
   .route-hero__title {
     max-width: 100%;
-    font-size: clamp(28px, 8.4vw, 38px);
+    font-size: clamp(30px, 9.4vw, 42px);
     line-height: 1.08;
   }
 
@@ -3098,12 +3106,10 @@ footer {
   .route-hero__actions {
     gap: 10px;
     margin-bottom: 16px;
-
   }
 
   .route-hero__calculator {
     min-width: 0;
-
     max-width: none;
     justify-self: stretch;
   }
@@ -3134,6 +3140,11 @@ footer {
   .route-hero__actions .btn,
   .route-cta__panel .btn {
     width: 100%;
+    height: auto;
+    min-height: var(--btn-h);
+    padding-block: 10px;
+    text-align: center;
+    white-space: normal;
   }
 
 
