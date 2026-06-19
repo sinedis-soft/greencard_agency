@@ -115,7 +115,15 @@ export default function CookieConsent({ lang }: { lang: Lang }) {
                         disabled={locked}
                         onChange={(e) => setDraft((prev) => ({ ...prev, [c.key]: e.target.checked, necessary: true }))}
                       />
-                      <span className={["cc-toggle__track", locked ? "is-locked" : checked ? "is-on" : "is-off"].join(" ")} />
+                      <span
+                        className={[
+                          "cc-toggle__track",
+                          checked ? "is-on" : "is-off",
+                          locked ? "is-locked" : "",
+                        ]
+                          .filter(Boolean)
+                          .join(" ")}
+                      />
                     </label>
                   </div>
                 );
