@@ -8,7 +8,7 @@ import { getCookieDictionary, type CookieCategoryKey } from "@/app/dictionaries/
 type ConsentState = Record<CookieCategoryKey, boolean>;
 
 const COOKIE_NAME = "deda_cookie_consent_v2";
-const ONE_YEAR_SEC = 60 * 60 * 24 * 365;
+const MAX_COOKIE_AGE_SEC = 60 * 60 * 24 * 400;
 
 const DEFAULT_STATE: ConsentState = {
   necessary: true,
@@ -42,7 +42,7 @@ function readCookieValue(name: string): string | null {
 function writeConsent(state: ConsentState) {
   const value = encodeURIComponent(JSON.stringify({ ...state, necessary: true }));
   const secure = typeof window !== "undefined" && window.location.protocol === "https:" ? "; Secure" : "";
-  document.cookie = `${COOKIE_NAME}=${value}; Path=/; Max-Age=${ONE_YEAR_SEC}; SameSite=Lax${secure}`;
+  document.cookie = `${COOKIE_NAME}=${value}; Path=/; Max-Age=${MAX_COOKIE_AGE_SEC}; SameSite=Lax${secure}`;
 }
 
 export default function CookieConsent({ lang }: { lang: Lang }) {
@@ -58,7 +58,10 @@ export default function CookieConsent({ lang }: { lang: Lang }) {
     if (typeof window === "undefined") return DEFAULT_STATE;
     return safeParseConsent(readCookieValue(COOKIE_NAME)) ?? DEFAULT_STATE;
   });
-  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [isOpen, setIsOpen] = useState<boolean>(() => {
+    if (typeof window === "undefined") return false;
+    return safeParseConsent(readCookieValue(COOKIE_NAME)) === null;
+  });
 
   function save(next: ConsentState) {
     const normalized: ConsentState = { ...next, necessary: true };
@@ -112,14 +115,24 @@ export default function CookieConsent({ lang }: { lang: Lang }) {
                         disabled={locked}
                         onChange={(e) => setDraft((prev) => ({ ...prev, [c.key]: e.target.checked, necessary: true }))}
                       />
-                      <span className={["cc-toggle__track", locked ? "is-locked" : checked ? "is-on" : "is-off"].join(" ")} />
+                      <span
+                        className={[
+                          "cc-toggle__track",
+                          checked ? "is-on" : "is-off",
+                          locked ? "is-locked" : "",
+                        ]
+                          .filter(Boolean)
+                          .join(" ")}
+                      />
                     </label>
                   </div>
                 );
               })}
             </div>
 
-            <p className="cc-policy">{t.policyText} <Link href={policyUrl} className="link" onClick={() => setIsOpen(false)}>{t.policyLabel}</Link>.</p>
+            <p className="cc-policy">{t.policyText} <Link href={policyUrl} className="link" onClick={() => {
+                if (!mustChoose) setIsOpen(false);
+              }}>{t.policyLabel}</Link>.</p>
 
             <div className="cc-actions">
               <button type="button" className="btn btn-ghost" onClick={() => save({ necessary: true, functional: false, marketing: false })}>{t.rejectAllBtn}</button>

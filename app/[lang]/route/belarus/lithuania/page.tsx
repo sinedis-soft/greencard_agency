@@ -12,10 +12,10 @@ import { getbelarusLithuaniaOcDictionary } from "@/app/dictionaries/seo-landings
 import { BreadcrumbListJsonLd } from "@/app/components/StructuredData";
 import RouteLandingPage from "@/app/components/RouteLandingPage";
 
-const BELARUS_POLAND_ROUTE = "/route/belarus/lithuania";
+const BELARUS_LITHUANIA_ROUTE = "/route/belarus/lithuania";
 
 export function generateStaticParams() {
-  return routeStaticParams(BELARUS_POLAND_ROUTE);
+  return routeStaticParams(BELARUS_LITHUANIA_ROUTE);
 }
 
 function normalizeLang(value: string): Lang {
@@ -24,7 +24,7 @@ function normalizeLang(value: string): Lang {
 
 function FaqJsonLd({ lang }: { lang: Lang }) {
   const t = getbelarusLithuaniaOcDictionary(lang);
-  const data = {"@context":"https://schema.org","@type":"FAQPage","@id":toAbsolute(`/${lang}${BELARUS_POLAND_ROUTE}#faq`),mainEntity:t.faq.items.map((item)=>({"@type":"Question",name:item.q,acceptedAnswer:{"@type":"Answer",text:item.a}}))};
+  const data = {"@context":"https://schema.org","@type":"FAQPage","@id":toAbsolute(`/${lang}${BELARUS_LITHUANIA_ROUTE}#faq`),mainEntity:t.faq.items.map((item)=>({"@type":"Question",name:item.q,acceptedAnswer:{"@type":"Answer",text:item.a}}))};
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data).replace(/</g, "\\u003c") }} />;
 }
 
@@ -32,27 +32,27 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   const { lang: rawLang } = await params;
   const lang = normalizeLang(rawLang);
 
-  if (!isRouteLocaleIndexable(lang, BELARUS_POLAND_ROUTE)) {
+  if (!isRouteLocaleIndexable(lang, BELARUS_LITHUANIA_ROUTE)) {
     return { robots: { index: false, follow: false } };
   }
 
-  const t = getBelarusPolandOcDictionary(lang);
-  return { alternates: pageAlternates(lang, BELARUS_POLAND_ROUTE), title: t.seo.title, description: t.seo.description, ...pageSocialMetadata(lang, BELARUS_POLAND_ROUTE, t.seo.title, t.seo.description) };
+  const t = getbelarusLithuaniaOcDictionary(lang);
+  return { alternates: pageAlternates(lang, BELARUS_LITHUANIA_ROUTE), title: t.seo.title, description: t.seo.description, ...pageSocialMetadata(lang, BELARUS_LITHUANIA_ROUTE, t.seo.title, t.seo.description) };
 }
 
-export default async function BelarusPolandOcPage({ params }: { params: Promise<{ lang: string }> }) {
+export default async function BelarusLithuaniaOcPage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang: rawLang } = await params;
   const lang = normalizeLang(rawLang);
 
-  if (!isRouteLocaleIndexable(lang, BELARUS_POLAND_ROUTE)) {
+  if (!isRouteLocaleIndexable(lang, BELARUS_LITHUANIA_ROUTE)) {
     notFound();
   }
 
-  const t = getBelarusPolandOcDictionary(lang);
+  const t = getbelarusLithuaniaOcDictionary(lang);
 
   return (
     <main id="main">
-      <BreadcrumbListJsonLd lang={lang} pageName={t.breadcrumbTitle} pagePath={BELARUS_POLAND_ROUTE} />
+      <BreadcrumbListJsonLd lang={lang} pageName={t.breadcrumbTitle} pagePath={BELARUS_LITHUANIA_ROUTE} />
       <FaqJsonLd lang={lang} />
       <RouteLandingPage lang={lang} dictionary={t} />
     </main>
