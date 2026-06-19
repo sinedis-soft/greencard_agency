@@ -3175,3 +3175,44 @@ footer {
     flex-direction: column;
   }
 }
+
+.language-first-choice {
+  position: fixed;
+  inset: 0;
+  z-index: 160;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: #ffffff;
+}
+
+.language-first-choice__grid {
+  width: min(880px, 100%);
+  display: grid;
+  grid-template-columns: repeat(4, minmax(140px, 1fr));
+  gap: 12px;
+}
+
+.language-first-choice__button {
+  min-height: 48px;
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  background: #ffffff;
+  color: var(--brand-primary);
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 8px 22px rgba(0, 47, 43, 0.08);
+}
+
+.language-first-choice__button:hover,
+.language-first-choice__button:focus-visible {
+  border-color: var(--brand-accent);
+  box-shadow: var(--focus);
+}
+
+@media (max-width: 760px) {
+  .language-first-choice__grid {
+    grid-template-columns: repeat(2, minmax(120px, 1fr));
+  }
+}
