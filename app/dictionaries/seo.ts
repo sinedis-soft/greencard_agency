@@ -25,7 +25,7 @@ type SeoDictionary = SeoDictionaryBase & { georgiaRomaniaOc: RouteSeo; belarusPo
 export const seoDictionary: Record<Lang, SeoDictionaryBase> = {
   ru: {
     home: {
-      title: "Пограничная страховка (OC graniczne) онлайн | SINEDIS",
+      title: "Пограничная страховка (OC graniczne) онлайн | SINEDIS.",
       description:
         "Оформите пограничную страховку для въезда в Польшу и ЕС: расчёт, заявка, оплата и PDF-полис.",
     },
@@ -64,7 +64,7 @@ export const seoDictionary: Record<Lang, SeoDictionaryBase> = {
 
   pl: {
     home: {
-      title: "Ubezpieczenie graniczne (OC graniczne) online | SINEDIS",
+      title: "Ubezpieczenie graniczne (OC graniczne) online | SINEDIS.",
       description:
         "Zawrzyj ubezpieczenie graniczne na wjazd do Polski i UE: kalkulacja, wniosek, płatność i polisa PDF.",
     },
@@ -103,7 +103,7 @@ export const seoDictionary: Record<Lang, SeoDictionaryBase> = {
 
   en: {
     home: {
-      title: "Border insurance (OC graniczne) online | SINEDIS",
+      title: "Border insurance (OC graniczne) online | SINEDIS.",
       description:
         "Arrange border insurance for entry to Poland and the EU: calculation, application, payment and PDF policy.",
     },
@@ -142,7 +142,7 @@ export const seoDictionary: Record<Lang, SeoDictionaryBase> = {
 
   be: {
     home: {
-      title: "Памежная страхоўка (OC graniczne) онлайн | SINEDIS",
+      title: "Памежная страхоўка (OC graniczne) онлайн | SINEDIS.",
       description:
         "Аформіце памежную страхоўку для ўезду ў Польшчу і ЕС: разлік, заяўка, аплата і PDF-поліс.",
     },
@@ -181,7 +181,7 @@ export const seoDictionary: Record<Lang, SeoDictionaryBase> = {
 
   uz: {
     home: {
-      title: "Chegara sug‘urtasi (OC graniczne) onlayn | SINEDIS",
+      title: "Chegara sug‘urtasi (OC graniczne) onlayn | SINEDIS.",
       description:
         "Polsha va YIga kirish uchun chegara sug‘urtasini rasmiylashtiring: hisob-kitob, ariza, to‘lov va PDF-polis.",
     },
@@ -220,7 +220,7 @@ export const seoDictionary: Record<Lang, SeoDictionaryBase> = {
 
   ka: {
     home: {
-      title: "სასაზღვრო დაზღვევა (OC graniczne) ონლაინ | SINEDIS",
+      title: "სასაზღვრო დაზღვევა (OC graniczne) ონლაინ | SINEDIS.",
       description:
         "გააფორმეთ სასაზღვრო დაზღვევა პოლონეთსა და ევროკავშირში შესასვლელად: კალკულაცია, განაცხადი, გადახდა და PDF პოლისი.",
     },
@@ -259,7 +259,7 @@ export const seoDictionary: Record<Lang, SeoDictionaryBase> = {
 
   kk: {
     home: {
-      title: "Шекаралық сақтандыру (OC graniczne) онлайн | SINEDIS",
+      title: "Шекаралық сақтандыру (OC graniczne) онлайн | SINEDIS.",
       description:
         "Польша мен ЕО-ға кіру үшін шекаралық сақтандыруды рәсімдеңіз: есептеу, өтінім, төлем және PDF-полис.",
     },
@@ -298,7 +298,7 @@ export const seoDictionary: Record<Lang, SeoDictionaryBase> = {
 
   tr: {
     home: {
-      title: "Sınır sigortası (OC graniczne) online | SINEDIS",
+      title: "Sınır sigortası (OC graniczne) online | SINEDIS.",
       description:
         "Polonya ve AB’ye giriş için sınır sigortası düzenleyin: hesaplama, başvuru, ödeme ve PDF poliçe.",
     },
@@ -337,7 +337,7 @@ export const seoDictionary: Record<Lang, SeoDictionaryBase> = {
 
   fa: {
     home: {
-      title: "بیمه مرزی (OC graniczne) آنلاین | SINEDIS",
+      title: "بیمه مرزی (OC graniczne) آنلاین | SINEDIS.",
       description:
         "برای ورود به لهستان و اتحادیه اروپا بیمه مرزی تهیه کنید: محاسبه، درخواست، پرداخت و بیمه‌نامه PDF.",
     },
@@ -376,7 +376,7 @@ export const seoDictionary: Record<Lang, SeoDictionaryBase> = {
 
   hy: {
     home: {
-      title: "Սահմանային ապահովագրություն (OC graniczne) առցանց | SINEDIS",
+      title: "Սահմանային ապահովագրություն (OC graniczne) առցանց | SINEDIS.",
       description:
         "Ձևակերպեք սահմանային ապահովագրություն Լեհաստան և ԵՄ մուտքի համար՝ հաշվարկ, հայտ, վճարում և PDF պոլիս։",
     },
@@ -414,7 +414,7 @@ export const seoDictionary: Record<Lang, SeoDictionaryBase> = {
   },
   ckb: {
     home: {
-      title: "بیمەی سنووری (OC graniczne) ئۆنلاین | SINEDIS",
+      title: "بیمەی سنووری (OC graniczne) ئۆنلاین | SINEDIS.",
       description:
         "بۆ چوونە ناو پۆڵەندا و یەکێتیی ئەوروپا بیمەی سنووری بکە: ژماردن، داواکاری، پارەدان و پۆلیسی PDF.",
     },
@@ -458,7 +458,7 @@ export const seoDictionary: Record<Lang, SeoDictionaryBase> = {
   },
   kmr: {
     home: {
-      title: "Sîgorteya sînorî (OC graniczne) online | SINEDIS",
+      title: "Sîgorteya sînorî (OC graniczne) online | SINEDIS.",
       description:
         "Ji bo ketina Polonya û YE sîgorteya sînorî çêkin: hesab, daxwaz, dayîn û polîçeya PDF.",
     },
@@ -496,7 +496,7 @@ export const seoDictionary: Record<Lang, SeoDictionaryBase> = {
   },
   ar: {
     home: {
-      title: "تأمين حدودي (OC graniczne) عبر الإنترنت | SINEDIS",
+      title: "تأمين حدودي (OC graniczne) عبر الإنترنت | SINEDIS.",
       description:
         "استخرج التأمين الحدودي للدخول إلى بولندا والاتحاد الأوروبي: حساب السعر، الطلب، الدفع ووثيقة PDF.",
     },
@@ -542,7 +542,7 @@ export const seoDictionary: Record<Lang, SeoDictionaryBase> = {
 
   uk: {
     home: {
-      title: "Прикордонне страхування (OC graniczne) онлайн | SINEDIS",
+      title: "Прикордонне страхування (OC graniczne) онлайн | SINEDIS.",
       description:
         "Оформіть прикордонне страхування для в’їзду до Польщі та ЄС: розрахунок, заявка, оплата і PDF-поліс.",
     },
@@ -581,7 +581,7 @@ export const seoDictionary: Record<Lang, SeoDictionaryBase> = {
 
   he: {
     home: {
-      title: "ביטוח גבול (OC graniczne) אונליין | SINEDIS",
+      title: "ביטוח גבול (OC graniczne) אונליין | SINEDIS.",
       description:
         "הנפיקו ביטוח גבול לכניסה לפולין ולאיחוד האירופי: חישוב, בקשה, תשלום ופוליסה ב-PDF.",
     },
@@ -620,7 +620,7 @@ export const seoDictionary: Record<Lang, SeoDictionaryBase> = {
 
   az: {
     home: {
-      title: "Sərhəd sığortası (OC graniczne) onlayn | SINEDIS",
+      title: "Sərhəd sığortası (OC graniczne) onlayn | SINEDIS.",
       description:
         "Polşa və Aİ-yə giriş üçün sərhəd sığortasını rəsmiləşdirin: hesablama, müraciət, ödəniş və PDF polis.",
     },
@@ -659,7 +659,7 @@ export const seoDictionary: Record<Lang, SeoDictionaryBase> = {
 
   ro: {
     home: {
-      title: "Asigurare de frontieră (OC graniczne) online | SINEDIS",
+      title: "Asigurare de frontieră (OC graniczne) online | SINEDIS.",
       description:
         "Încheiați asigurare de frontieră pentru intrarea în Polonia și UE: calcul, cerere, plată și poliță PDF.",
     },
@@ -698,7 +698,7 @@ export const seoDictionary: Record<Lang, SeoDictionaryBase> = {
 
   sr: {
     home: {
-      title: "Granično osiguranje (OC graniczne) online | SINEDIS",
+      title: "Granično osiguranje (OC graniczne) online | SINEDIS.",
       description:
         "Ugovorite granično osiguranje za ulazak u Poljsku i EU: obračun, zahtev, plaćanje i PDF polisa.",
     },
@@ -737,7 +737,7 @@ export const seoDictionary: Record<Lang, SeoDictionaryBase> = {
 
   sq: {
     home: {
-      title: "Sigurim kufitar (OC graniczne) online | SINEDIS",
+      title: "Sigurim kufitar (OC graniczne) online | SINEDIS.",
       description:
         "Pajisuni me sigurim kufitar për hyrje në Poloni dhe BE: përllogaritje, aplikim, pagesë dhe policë PDF.",
     },
@@ -776,7 +776,7 @@ export const seoDictionary: Record<Lang, SeoDictionaryBase> = {
 
   mn: {
     home: {
-      title: "Хилийн даатгал (OC graniczne) онлайн | SINEDIS",
+      title: "Хилийн даатгал (OC graniczne) онлайн | SINEDIS.",
       description:
         "Польш болон ЕХ-нд нэвтрэх хилийн даатгалыг бүрдүүлнэ үү: тооцоо, хүсэлт, төлбөр болон PDF полис.",
     },
