@@ -4,8 +4,8 @@ export const SITE_URL = "https://greencard.agency";
 
 export const SOCIAL_PREVIEW_IMAGE = {
   url: toAbsolute("/og_twitter_image.png"),
-  width: 1731,
-  height: 909,
+  width: 1200,
+  height: 630,
   alt: "SINEDIS border insurance online for Poland and the EU",
 } as const;
 
