@@ -6,7 +6,6 @@ import Calculator from "@/app/components/Calculator";
 import LeadForm from "@/app/components/LeadForm";
 import CoverageBlock from "@/app/components/CoverageBlock";
 import { keepShortWords } from "@/app/utils/typography";
-import { FaqPageJsonLd } from "@/app/components/StructuredData";
 import { getBelarusPolandOcDictionary } from "@/app/dictionaries/seo-landings/belarusPolandOc";
 import { getGeorgiaRomaniaOcDictionary } from "@/app/dictionaries/seo-landings/georgiaRomaniaOc";
 import { isRouteLocaleIndexable } from "@/app/seo";
@@ -38,8 +37,6 @@ export default function Home({ lang }: { lang: Lang }) {
 
   return (
     <main id="main">
-      <FaqPageJsonLd lang={lang} />
-
       <section className="hero">
         <div className="container">
           <div className="hero__grid">

@@ -1,5 +1,4 @@
 import { LOCALES, type Lang } from "@/app/dictionaries/header";
-import { getHomeDictionary } from "@/app/dictionaries/home";
 import { SITE_URL, toAbsolute } from "@/app/seo";
 
 type JsonLdProps = {
@@ -183,26 +182,6 @@ export function InsuranceAgencyJsonLd({ lang }: { lang: Lang }) {
         },
       ],
     },
-  };
-
-  return <JsonLd data={data} />;
-}
-
-export function FaqPageJsonLd({ lang }: { lang: Lang }) {
-  const faqItems = getHomeDictionary(lang).faq.items;
-
-  const data = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "@id": toAbsolute(`/${lang}#faq`),
-    mainEntity: faqItems.map((item) => ({
-      "@type": "Question",
-      name: item.q,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: item.a,
-      },
-    })),
   };
 
   return <JsonLd data={data} />;
