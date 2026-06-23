@@ -6,7 +6,6 @@ import {
   pageAlternates,
   pageSocialMetadata,
   routeStaticParams,
-  toAbsolute,
 } from "@/app/seo";
 import { getBelarusPolandOcDictionary } from "@/app/dictionaries/seo-landings/belarusPolandOc";
 import { BreadcrumbListJsonLd } from "@/app/components/StructuredData";
@@ -20,12 +19,6 @@ export function generateStaticParams() {
 
 function normalizeLang(value: string): Lang {
   return (LOCALES as readonly string[]).includes(value) ? (value as Lang) : "ru";
-}
-
-function FaqJsonLd({ lang }: { lang: Lang }) {
-  const t = getBelarusPolandOcDictionary(lang);
-  const data = {"@context":"https://schema.org","@type":"FAQPage","@id":toAbsolute(`/${lang}${BELARUS_POLAND_ROUTE}#faq`),mainEntity:t.faq.items.map((item)=>({"@type":"Question",name:item.q,acceptedAnswer:{"@type":"Answer",text:item.a}}))};
-  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data).replace(/</g, "\\u003c") }} />;
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }) {
@@ -53,7 +46,6 @@ export default async function BelarusPolandOcPage({ params }: { params: Promise<
   return (
     <main id="main">
       <BreadcrumbListJsonLd lang={lang} pageName={t.breadcrumbTitle} pagePath={BELARUS_POLAND_ROUTE} />
-      <FaqJsonLd lang={lang} />
       <RouteLandingPage lang={lang} dictionary={t} />
     </main>
   );

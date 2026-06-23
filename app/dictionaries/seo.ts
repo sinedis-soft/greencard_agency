@@ -25,9 +25,9 @@ type SeoDictionary = SeoDictionaryBase & { georgiaRomaniaOc: RouteSeo; belarusPo
 export const seoDictionary: Record<Lang, SeoDictionaryBase> = {
   ru: {
     home: {
-      title: "Border insurance для грузоперевозчиков и физических лиц",
+      title: "Пограничная страховка (OC graniczne) онлайн | SINEDIS",
       description:
-        "Трансграничная MTPL-страховка для международных перевозок: Green Card, border insurance, Зеленая карта в Евросоюз, OC graniczna.",
+        "Оформите пограничную страховку для въезда в Польшу и ЕС: расчёт, заявка, оплата и PDF-полис.",
     },
     about: {
       title: "О нас — страховое агентство с лицензией",
@@ -64,9 +64,9 @@ export const seoDictionary: Record<Lang, SeoDictionaryBase> = {
 
   pl: {
     home: {
-      title: "Border insurance dla przewoźników i klientów indywidualnych",
+      title: "Ubezpieczenie graniczne (OC graniczne) online | SINEDIS",
       description:
-        "Transgraniczne ubezpieczenie MTPL dla transportu międzynarodowego: Zielona Karta, border insurance, Zielona Karta do Unii Europejskiej, OC graniczne.",
+        "Zawrzyj ubezpieczenie graniczne na wjazd do Polski i UE: kalkulacja, wniosek, płatność i polisa PDF.",
     },
     about: {
       title: "O nas — licencjonowana agencja ubezpieczeniowa",
@@ -103,9 +103,9 @@ export const seoDictionary: Record<Lang, SeoDictionaryBase> = {
 
   en: {
     home: {
-      title: "Border Insurance for Hauliers and Private Individuals",
+      title: "Border insurance (OC graniczne) online | SINEDIS",
       description:
-        "Cross-border MTPL insurance for international transport: Green Card, border insurance, Green Card for the European Union, OC graniczna.",
+        "Arrange border insurance for entry to Poland and the EU: calculation, application, payment and PDF policy.",
     },
     about: {
       title: "About Us — Licensed Insurance Agency",
@@ -142,9 +142,9 @@ export const seoDictionary: Record<Lang, SeoDictionaryBase> = {
 
   be: {
     home: {
-      title: "Border insurance для грузаперавозчыкаў і фізічных асоб",
+      title: "Памежная страхоўка (OC graniczne) онлайн | SINEDIS",
       description:
-        "Трансгранічнае MTPL-страхаванне для міжнародных перавозак: Green Card, border insurance, Зялёная карта ў Еўрапейскі саюз, OC graniczna.",
+        "Аформіце памежную страхоўку для ўезду ў Польшчу і ЕС: разлік, заяўка, аплата і PDF-поліс.",
     },
     about: {
       title: "Пра нас — страхавое агенцтва з ліцэнзіяй",
@@ -181,9 +181,9 @@ export const seoDictionary: Record<Lang, SeoDictionaryBase> = {
 
   uz: {
     home: {
-      title: "Yuk tashuvchilar va jismoniy shaxslar uchun border insurance",
+      title: "Chegara sug‘urtasi (OC graniczne) onlayn | SINEDIS",
       description:
-        "Xalqaro tashuvlar uchun transchegaraviy MTPL sug‘urtasi: Green Card, border insurance, Yevropa Ittifoqiga Green Card, OC graniczna.",
+        "Polsha va YIga kirish uchun chegara sug‘urtasini rasmiylashtiring: hisob-kitob, ariza, to‘lov va PDF-polis.",
     },
     about: {
       title: "Biz haqimizda — litsenziyaga ega sug‘urta agentligi",
@@ -220,10 +220,9 @@ export const seoDictionary: Record<Lang, SeoDictionaryBase> = {
 
   ka: {
     home: {
-      title:
-        "Border insurance ტვირთგადამზიდავებისა და ფიზიკური პირებისთვის",
+      title: "სასაზღვრო დაზღვევა (OC graniczne) ონლაინ | SINEDIS",
       description:
-        "საერთაშორისო MTPL დაზღვევა საერთაშორისო გადაზიდვებისთვის: Green Card, border insurance, მწვანე ბარათი ევროკავშირის ქვეყნებისთვის, OC graniczna.",
+        "გააფორმეთ სასაზღვრო დაზღვევა პოლონეთსა და ევროკავშირში შესასვლელად: კალკულაცია, განაცხადი, გადახდა და PDF პოლისი.",
     },
     about: {
       title: "ჩვენ შესახებ — ლიცენზირებული სადაზღვევო სააგენტო",
@@ -260,10 +259,9 @@ export const seoDictionary: Record<Lang, SeoDictionaryBase> = {
 
   kk: {
     home: {
-      title:
-        "Жүк тасымалдаушылар мен жеке тұлғаларға арналған border insurance",
+      title: "Шекаралық сақтандыру (OC graniczne) онлайн | SINEDIS",
       description:
-        "Халықаралық тасымалдарға арналған трансшекаралық MTPL-сақтандыру: Green Card, border insurance, Еуроодаққа арналған Green Card, OC graniczna.",
+        "Польша мен ЕО-ға кіру үшін шекаралық сақтандыруды рәсімдеңіз: есептеу, өтінім, төлем және PDF-полис.",
     },
     about: {
       title: "Біз туралы — лицензиясы бар сақтандыру агенттігі",
@@ -300,9 +298,9 @@ export const seoDictionary: Record<Lang, SeoDictionaryBase> = {
 
   tr: {
     home: {
-      title: "Yük taşımacıları ve bireyler için border insurance",
+      title: "Sınır sigortası (OC graniczne) online | SINEDIS",
       description:
-        "Uluslararası taşımacılık için sınır ötesi MTPL sigortası: Green Card, border insurance, Avrupa Birliği için Yeşil Kart, OC graniczna.",
+        "Polonya ve AB’ye giriş için sınır sigortası düzenleyin: hesaplama, başvuru, ödeme ve PDF poliçe.",
     },
     about: {
       title: "Hakkımızda — lisanslı sigorta acentesi",
@@ -339,9 +337,9 @@ export const seoDictionary: Record<Lang, SeoDictionaryBase> = {
 
   fa: {
     home: {
-      title: "بیمه مرزی برای شرکت‌های حمل‌ونقل و اشخاص حقیقی",
+      title: "بیمه مرزی (OC graniczne) آنلاین | SINEDIS",
       description:
-        "بیمه مسئولیت مدنی فرامرزی (MTPL) برای حمل‌ونقل بین‌المللی: گرین کارت، بیمه مرزی، گرین کارت برای اتحادیه اروپا و OC graniczna.",
+        "برای ورود به لهستان و اتحادیه اروپا بیمه مرزی تهیه کنید: محاسبه، درخواست، پرداخت و بیمه‌نامه PDF.",
     },
     about: {
       title: "درباره ما — آژانس بیمه دارای مجوز",
@@ -378,9 +376,9 @@ export const seoDictionary: Record<Lang, SeoDictionaryBase> = {
 
   hy: {
     home: {
-      title: "Border insurance բեռնափոխադրողների և ֆիզիկական անձանց համար",
+      title: "Սահմանային ապահովագրություն (OC graniczne) առցանց | SINEDIS",
       description:
-        "Միջսահմանային MTPL ապահովագրություն միջազգային փոխադրումների համար՝ Green Card, border insurance, Եվրոպական միության համար նախատեսված Green Card, OC graniczna։",
+        "Ձևակերպեք սահմանային ապահովագրություն Լեհաստան և ԵՄ մուտքի համար՝ հաշվարկ, հայտ, վճարում և PDF պոլիս։",
     },
     about: {
       title: "Մեր մասին — լիցենզավորված ապահովագրական գործակալություն",
@@ -416,9 +414,9 @@ export const seoDictionary: Record<Lang, SeoDictionaryBase> = {
   },
   ckb: {
     home: {
-      title: "بیمەی سنووری بۆ گواستنەوەکاران و کەسانی ئاسایی",
+      title: "بیمەی سنووری (OC graniczne) ئۆنلاین | SINEDIS",
       description:
-        "بیمەی MTPLی سنووری بۆ گواستنەوە نێودەوڵەتی: گرین کارت، بیمەی سنووری، گرین کارت بۆ یەکێتی ئەورووپا و OC Graniczne.",
+        "بۆ چوونە ناو پۆڵەندا و یەکێتیی ئەوروپا بیمەی سنووری بکە: ژماردن، داواکاری، پارەدان و پۆلیسی PDF.",
     },
 
     about: {
@@ -460,9 +458,9 @@ export const seoDictionary: Record<Lang, SeoDictionaryBase> = {
   },
   kmr: {
     home: {
-      title: "Sîgorteya sînorî ji bo barhilgiran û kesên ferdî",
+      title: "Sîgorteya sînorî (OC graniczne) online | SINEDIS",
       description:
-        "Sîgorteya MTPL ya transsînorî ji bo veguhastinên navneteweyî: Green Card, border insurance, Green Card ji bo Yekîtiya Ewropayê, OC graniczna.",
+        "Ji bo ketina Polonya û YE sîgorteya sînorî çêkin: hesab, daxwaz, dayîn û polîçeya PDF.",
     },
     about: {
       title: "Derbarê me de — ajansa sîgorteyê ya bi lîsans",
@@ -498,9 +496,9 @@ export const seoDictionary: Record<Lang, SeoDictionaryBase> = {
   },
   ar: {
     home: {
-      title: "تأمين الحدود للشركات الناقلة والأفراد",
+      title: "تأمين حدودي (OC graniczne) عبر الإنترنت | SINEDIS",
       description:
-        "تأمين MTPL عابر للحدود للنقل الدولي: البطاقة الخضراء، تأمين الحدود، التأمين الأخضر للاتحاد الأوروبي، OC Graniczna.",
+        "استخرج التأمين الحدودي للدخول إلى بولندا والاتحاد الأوروبي: حساب السعر، الطلب، الدفع ووثيقة PDF.",
     },
 
     about: {
@@ -544,9 +542,9 @@ export const seoDictionary: Record<Lang, SeoDictionaryBase> = {
 
   uk: {
     home: {
-      title: "Прикордонне страхування для перевізників і фізичних осіб",
+      title: "Прикордонне страхування (OC graniczne) онлайн | SINEDIS",
       description:
-        "Транскордонне страхування цивільної відповідальності для міжнародних перевезень: Green Card, border insurance, Зелена картка до Євросоюзу, OC graniczne.",
+        "Оформіть прикордонне страхування для в’їзду до Польщі та ЄС: розрахунок, заявка, оплата і PDF-поліс.",
     },
     about: {
       title: "Про нас — ліцензоване страхове агентство",
@@ -583,9 +581,9 @@ export const seoDictionary: Record<Lang, SeoDictionaryBase> = {
 
   he: {
     home: {
-      title: "ביטוח גבול לנהגים פרטיים ולחברות הובלה",
+      title: "ביטוח גבול (OC graniczne) אונליין | SINEDIS",
       description:
-        "ביטוח MTPL חוצה גבולות לנסיעות בינלאומיות: Green Card, ביטוח גבול, גרין קארד לאיחוד האירופי ו-OC Graniczne.",
+        "הנפיקו ביטוח גבול לכניסה לפולין ולאיחוד האירופי: חישוב, בקשה, תשלום ופוליסה ב-PDF.",
     },
     about: {
       title: "אודותינו — סוכנות ביטוח בעלת רישיון",
@@ -622,9 +620,9 @@ export const seoDictionary: Record<Lang, SeoDictionaryBase> = {
 
   az: {
     home: {
-      title: "Yükdaşıyıcılar və fiziki şəxslər üçün sərhəd sığortası",
+      title: "Sərhəd sığortası (OC graniczne) onlayn | SINEDIS",
       description:
-        "Beynəlxalq daşımalar üçün transsərhəd MTPL sığortası: Green Card, border insurance, Avropa İttifaqı üçün Yaşıl Kart, OC graniczne.",
+        "Polşa və Aİ-yə giriş üçün sərhəd sığortasını rəsmiləşdirin: hesablama, müraciət, ödəniş və PDF polis.",
     },
     about: {
       title: "Haqqımızda — lisenziyalı sığorta agentliyi",
@@ -661,9 +659,9 @@ export const seoDictionary: Record<Lang, SeoDictionaryBase> = {
 
   ro: {
     home: {
-      title: "Asigurare de frontieră pentru transportatori și persoane fizice",
+      title: "Asigurare de frontieră (OC graniczne) online | SINEDIS",
       description:
-        "Asigurare MTPL transfrontalieră pentru transporturi internaționale: Carte Verde, asigurare de frontieră, Carte Verde pentru Uniunea Europeană, OC graniczne.",
+        "Încheiați asigurare de frontieră pentru intrarea în Polonia și UE: calcul, cerere, plată și poliță PDF.",
     },
     about: {
       title: "Despre noi — agenție de asigurări autorizată",
@@ -700,9 +698,9 @@ export const seoDictionary: Record<Lang, SeoDictionaryBase> = {
 
   sr: {
     home: {
-      title: "Granično osiguranje za prevoznike i fizička lica",
+      title: "Granično osiguranje (OC graniczne) online | SINEDIS",
       description:
-        "MTPL osiguranje za međunarodni saobraćaj: Zelena karta, granično osiguranje, Zelena karta za Evropsku uniju, OC graniczne.",
+        "Ugovorite granično osiguranje za ulazak u Poljsku i EU: obračun, zahtev, plaćanje i PDF polisa.",
     },
     about: {
       title: "O nama — licencirana agencija za osiguranje",
@@ -739,9 +737,9 @@ export const seoDictionary: Record<Lang, SeoDictionaryBase> = {
 
   sq: {
     home: {
-      title: "Sigurim kufitar për transportues mallrash dhe individë",
+      title: "Sigurim kufitar (OC graniczne) online | SINEDIS",
       description:
-        "Sigurim ndërkufitar MTPL për transport ndërkombëtar: Green Card, border insurance, Kartoni i Gjelbër për Bashkimin Evropian, OC graniczne.",
+        "Pajisuni me sigurim kufitar për hyrje në Poloni dhe BE: përllogaritje, aplikim, pagesë dhe policë PDF.",
     },
     about: {
       title: "Rreth nesh — agjenci sigurimesh e licencuar",
@@ -778,9 +776,9 @@ export const seoDictionary: Record<Lang, SeoDictionaryBase> = {
 
   mn: {
     home: {
-      title: "Ачаа тээвэрлэгчид болон хувь хүмүүст зориулсан хилийн даатгал",
+      title: "Хилийн даатгал (OC graniczne) онлайн | SINEDIS",
       description:
-        "Олон улсын тээвэрт зориулсан хил дамнасан MTPL даатгал: Green Card, border insurance, Европын Холбоонд зориулсан Ногоон карт, OC graniczna.",
+        "Польш болон ЕХ-нд нэвтрэх хилийн даатгалыг бүрдүүлнэ үү: тооцоо, хүсэлт, төлбөр болон PDF полис.",
     },
     about: {
       title: "Бидний тухай — тусгай зөвшөөрөлтэй даатгалын агентлаг",
