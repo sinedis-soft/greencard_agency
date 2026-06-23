@@ -2,6 +2,13 @@ import { LOCALES, type Lang } from "@/app/dictionaries/header";
 
 export const SITE_URL = "https://greencard.agency";
 
+export const SOCIAL_PREVIEW_IMAGE = {
+  url: toAbsolute("/og_twitter_image.png"),
+  width: 1731,
+  height: 909,
+  alt: "SINEDIS border insurance online for Poland and the EU",
+} as const;
+
 type RouteMeta = {
   lastModified: string;
   disabledLocales?: readonly Lang[];
@@ -140,11 +147,13 @@ export function pageSocialMetadata(lang: Lang, route: string, title: string, des
       siteName: "Green card agency",
       title,
       description,
+      images: [SOCIAL_PREVIEW_IMAGE],
     },
     twitter: {
       card: "summary_large_image" as const,
       title,
       description,
+      images: [SOCIAL_PREVIEW_IMAGE.url],
     },
   };
 }
