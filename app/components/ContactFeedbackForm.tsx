@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import type { Lang } from "@/app/dictionaries/header";
 import { getContactFeedbackFormDictionary } from "@/app/dictionaries/contactFeedbackForm";
 import SubmissionModal from "@/app/components/SubmissionModal";
+import { keepTypography } from "@/app/utils/typography";
 
 type FormState = {
   firstName: string;
@@ -115,7 +116,7 @@ export default function ContactFeedbackForm({ lang }: { lang: Lang }) {
         <div className="contact-form-header">
           <div>
             <div className="contact-form-kicker">Contact</div>
-            <h2 className="contact-form-title">{dict.title}</h2>
+            <h2 className="contact-form-title">{keepTypography(dict.title)}</h2>
           </div>
         </div>
 

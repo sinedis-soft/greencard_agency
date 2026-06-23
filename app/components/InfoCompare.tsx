@@ -2,6 +2,7 @@
 
 import type { Lang } from "@/app/dictionaries/header";
 import { getInfoCompareDictionary } from "@/app/dictionaries/infoCompare";
+import { keepTypography } from "@/app/utils/typography";
 
 export default function InfoCompare({ lang }: { lang: Lang }) {
   const t = getInfoCompareDictionary(lang);
@@ -12,7 +13,7 @@ export default function InfoCompare({ lang }: { lang: Lang }) {
         <div className="info-compare">
           <div className="info-compare__content">
             <div className="info-compare__kicker">{t.kicker}</div>
-            <h2 className="info-compare__title">{t.title}</h2>
+            <h2 className="info-compare__title">{keepTypography(t.title)}</h2>
 
             <div className="info-compare__definitions">
               {t.leftBlocks.map((block) => (

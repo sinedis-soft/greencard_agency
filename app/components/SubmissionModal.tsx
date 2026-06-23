@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { keepTypography } from "@/app/utils/typography";
 
 type Variant = "success" | "partial";
 
@@ -26,7 +27,7 @@ export default function SubmissionModal({
     <div className="submit-modal__overlay" role="dialog" aria-modal="true" aria-label={title}>
       <div className="submit-modal__card" style={{ background: bg, color }}>
         <button className="submit-modal__close" onClick={onClose} aria-label="Close">✕</button>
-        <h3>{title}</h3>
+        <h3>{keepTypography(title)}</h3>
         <p>{message}</p>
       </div>
       <style jsx>{`

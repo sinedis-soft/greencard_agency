@@ -1,4 +1,5 @@
 import type { RulesDictionary } from "@/app/dictionaries/rules";
+import { keepTypography } from "@/app/utils/typography";
 
 function Paragraphs({ items }: { items: string[] }) {
   const blocks: Array<{ type: "spacer"; key: string } | { type: "p"; key: string; text: string } | { type: "ul"; key: string; items: string[] }> = [];
@@ -19,13 +20,13 @@ export default function RulesPage({ t }: { t: RulesDictionary }) {
     <main id="main" className="cp-page">
       <section className="section">
         <div className="container cp-container">
-          <h1 className="section__title cp-h1">{t.pageTitle}</h1>
+          <h1 className="section__title cp-h1">{keepTypography(t.pageTitle)}</h1>
           <p className="cp-p" style={{ marginBottom: 6 }}>{t.subtitle}</p>
           <p className="cp-updated" style={{ marginBottom: 20 }}>Дата обновления: {t.updatedAt}</p>
           <div className="panel cp-card"><div className="panel__body">
             {t.sections.map((s, idx) => (
               <div key={idx} style={{ marginBottom: 20 }}>
-                <h2 className="cp-h2">{s.title}</h2>
+                <h2 className="cp-h2">{keepTypography(s.title)}</h2>
                 <Paragraphs items={s.paragraphs} />
               </div>
             ))}

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import type { Lang } from "@/app/dictionaries/header";
 import { getFooterDictionary } from "@/app/dictionaries/footer";
+import { keepTypography } from "@/app/utils/typography";
 
 function withLang(lang: Lang, path: string) {
   return `/${lang}${path}`;
@@ -17,14 +18,14 @@ export default function Footer({ lang }: { lang: Lang }) {
         <div className="container">
           <div className="site-footer__grid">
             <div>
-              <h3 className="site-footer__title">{t.company}</h3>
+              <h3 className="site-footer__title">{keepTypography(t.company)}</h3>
               <div className="site-footer__links">
                 <Link href={withLang(lang, "/about")}>{t.about}</Link>
               </div>
             </div>
 
             <div>
-              <h3 className="site-footer__title">{t.contacts}</h3>
+              <h3 className="site-footer__title">{keepTypography(t.contacts)}</h3>
               <div className="site-footer__links">
                 <Link href={withLang(lang, "/contacts")}>
                   {t.contactsLink}
@@ -33,7 +34,7 @@ export default function Footer({ lang }: { lang: Lang }) {
             </div>
 
             <div>
-              <h3 className="site-footer__title">{t.more}</h3>
+              <h3 className="site-footer__title">{keepTypography(t.more)}</h3>
               <div className="site-footer__links">
                 <Link href={withLang(lang, "/rules")}>{t.rules}</Link>
                 <Link href={withLang(lang, "/product-info")}>{t.documents}</Link>
