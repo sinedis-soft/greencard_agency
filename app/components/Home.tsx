@@ -76,7 +76,7 @@ export default function Home({ lang }: { lang: Lang }) {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section section--process">
         <div className="container">
           <div className="section__hd">
             <div>
@@ -101,7 +101,7 @@ export default function Home({ lang }: { lang: Lang }) {
 
       <InfoCompare lang={lang} />
 
-      <section className="section">
+      <section className="section section--why">
         <div className="container">
           <div className="section__hd">
             <div>
@@ -116,7 +116,9 @@ export default function Home({ lang }: { lang: Lang }) {
                 <div className="card__body">
                   <div className="card__top">
                     <h3 className="card__title">{keepShortWords(w.title)}</h3>
-                    <span className="tag tag--green">OK</span>
+                    <span className="tag tag--green" aria-hidden="true">
+                      {String(idx + 1).padStart(2, "0")}
+                    </span>
                   </div>
                   <p className="card__text">{w.text}</p>
                 </div>
@@ -169,7 +171,7 @@ export default function Home({ lang }: { lang: Lang }) {
         </div>
       </section>
 
-      <section className="section" id="verify">
+      <section className="section section--trust" id="verify">
         <div className="container">
           <div className="section__hd">
             <div>
@@ -184,7 +186,7 @@ export default function Home({ lang }: { lang: Lang }) {
                 <div className="card__body">
                   <div className="card__top">
                     <h3 className="card__title">
-                      {v.code} — {v.country}
+                      {keepShortWords(`${v.code} — ${v.country}`)}
                     </h3>
                     <span className="tag tag--yellow">{v.code}</span>
                   </div>
@@ -210,7 +212,7 @@ export default function Home({ lang }: { lang: Lang }) {
           <div className="container">
             <div className="section__hd">
               <div>
-                <h2 className="section__title">{landing.carousel.title}</h2>
+                <h2 className="section__title">{keepShortWords(landing.carousel.title)}</h2>
               </div>
             </div>
 
@@ -218,7 +220,7 @@ export default function Home({ lang }: { lang: Lang }) {
               {seoCards.map((card) => (
                 <a className="seo-mini-card" href={card.href} key={card.href}>
                   <span className="seo-mini-card__eyebrow">Route guide</span>
-                  <h3>{card.title}</h3>
+                  <h3>{keepShortWords(card.title)}</h3>
                   <p>{card.text}</p>
                   <span className="seo-mini-card__cta">{card.cta}</span>
                 </a>

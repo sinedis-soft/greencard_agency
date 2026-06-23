@@ -6,6 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useMemo, useState } from "react";
 import { headerDictionary, LOCALES, LOCALE_META, Lang } from "@/app/dictionaries/header";
+import { keepTypography } from "@/app/utils/typography";
 
 function withLang(lang: Lang, path: string) {
   return `/${lang}${path}`;
@@ -159,7 +160,7 @@ export default function Header({ lang, active }: { lang: Lang; active?: Active }
         <div className="language-modal" role="dialog" aria-modal="true" aria-label={t.languageDialogTitle}>
           <div className="language-modal__card">
             <div className="language-modal__header">
-              <h2>{t.languageDialogTitle}</h2>
+              <h2>{keepTypography(t.languageDialogTitle)}</h2>
               <button type="button" onClick={() => setLanguageModalOpen(false)}>
                 {t.languageDialogClose}
               </button>
@@ -167,7 +168,7 @@ export default function Header({ lang, active }: { lang: Lang; active?: Active }
 
             {Object.entries(groupedLocales).map(([region, locales]) => (
               <section key={region} className="language-modal__region">
-                <h3>{region}</h3>
+                <h3>{keepTypography(region)}</h3>
                 <div className="language-modal__grid">
                   {locales.map((l) => (
                     <Link

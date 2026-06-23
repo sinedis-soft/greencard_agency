@@ -1,14 +1,15 @@
 import type { Lang } from "@/app/dictionaries/header";
 import type { CookiesPolicyDictionary, PolicyTable } from "@/app/dictionaries/privacyCookies";
+import { keepTypography } from "@/app/utils/typography";
 
 type Props = {
   lang: Lang;
   t: CookiesPolicyDictionary;
 };
 
-function SectionTitle({ children }: { children: React.ReactNode }) {
+function SectionTitle({ children }: { children: string }) {
   if (!children) return null;
-  return <h2 className="cp-h2">{children}</h2>;
+  return <h2 className="cp-h2">{keepTypography(children)}</h2>;
 }
 
 function PolicyTableView({ table }: { table: PolicyTable }) {
@@ -100,7 +101,7 @@ export default function CookiesPolicyPage({ t }: Props) {
     <main id="main" className="cp-page">
       <section className="section">
         <div className="container cp-container">
-          <h1 className="section__title cp-h1">{t.pageTitle}</h1>
+          <h1 className="section__title cp-h1">{keepTypography(t.pageTitle)}</h1>
 
           {t.updatedAt ? (
             <p className="cp-updated">

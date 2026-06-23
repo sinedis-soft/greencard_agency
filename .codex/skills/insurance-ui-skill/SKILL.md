@@ -48,6 +48,7 @@ Do not jump directly into code for substantial UI changes.
 
 - Use the repo typography tokens. If creating a new UI system from scratch, prefer Inter with a system-ui fallback.
 - Avoid decorative fonts.
+- Apply `keepTypography` from `app/utils/typography.ts` to every new heading (`h1`–`h6`) and heading-like title string in UI blocks so short words, opening quotes, `№`/`§`, and dash-led phrases stay together.
 - Recommended hierarchy:
   - H1: 40–46px, 800–900.
   - H2: 28–36px, 800.
