@@ -3,6 +3,7 @@ import Header from "@/app/components/Header";
 import Footer from "@/app/components/Footer";
 import CookieConsent from "@/app/components/CookieConsent";
 import LanguagePreferenceGate from "@/app/components/LanguagePreferenceGate";
+import BitrixSiteButton from "@/app/components/BitrixSiteButton";
 import type { Metadata } from "next";
 import { LOCALES, type Lang } from "@/app/dictionaries/header";
 import { SITE_URL, pageAlternates, pageSocialMetadata } from "@/app/seo";
@@ -69,6 +70,7 @@ export default async function LangLayout({
         <Footer lang={lang} />
         <CookieConsent lang={lang} />
         <LanguagePreferenceGate />
+        <BitrixSiteButton />
       </body>
     </html>
   );
