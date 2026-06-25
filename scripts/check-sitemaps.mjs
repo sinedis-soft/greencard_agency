@@ -44,12 +44,6 @@ function assertXmlEnvelope(path, body) {
     `${path} must start with an XML declaration`,
   );
 
-  if (path === "/sitemap.xml") {
-    assert(body.includes("<sitemapindex "), `${path} must include <sitemapindex>`);
-    assert(body.includes("<sitemap>"), `${path} must include sitemap entries`);
-    return;
-  }
-
   assert(body.includes("<urlset "), `${path} must include <urlset>`);
   assert(body.includes("<url>"), `${path} must include <url> entries`);
   assert(body.includes("<loc>"), `${path} must include <loc> entries`);
