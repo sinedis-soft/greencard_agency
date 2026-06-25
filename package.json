@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "check:relations": "node scripts/check-relations.mjs"
+    "check:relations": "node scripts/check-relations.mjs",
+    "check:sitemaps": "node scripts/check-sitemaps.mjs"
   },
   "dependencies": {
     "next": "16.1.6",
