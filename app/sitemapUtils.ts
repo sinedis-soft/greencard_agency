@@ -36,6 +36,11 @@ export const SITEMAP_SECTIONS = [
   },
 ] as const;
 
+export const SITEMAP_ALL_ROUTES = [
+  ...SITEMAP_MAIN_ROUTES,
+  ...SITEMAP_ROUTE_ROUTES,
+] as const;
+
 type SitemapRoute = (typeof SITEMAP_SECTIONS)[number]["routes"][number];
 
 type SitemapEntry = {
