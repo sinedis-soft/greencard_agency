@@ -38,12 +38,29 @@ function assert(condition, message) {
   }
 }
 
-function assertXmlEnvelope(path, body) {
+function assertXmlDeclaration(path, body) {
   assert(
     body.startsWith('<?xml version="1.0" encoding="UTF-8"?>'),
     `${path} must start with an XML declaration`,
   );
+}
 
+function assertSitemapIndex(path, body) {
+  assertXmlDeclaration(path, body);
+  assert(body.includes("<sitemapindex "), `${path} must include <sitemapindex>`);
+  assert(body.includes("<sitemap>"), `${path} must include <sitemap> entries`);
+  assert(
+    body.includes("<loc>https://greencard.agency/sitemap-main.xml</loc>"),
+    `${path} must include sitemap-main.xml`,
+  );
+  assert(
+    body.includes("<loc>https://greencard.agency/sitemap-routes.xml</loc>"),
+    `${path} must include sitemap-routes.xml`,
+  );
+}
+
+function assertUrlSitemap(path, body) {
+  assertXmlDeclaration(path, body);
   assert(body.includes("<urlset "), `${path} must include <urlset>`);
   assert(body.includes("<url>"), `${path} must include <url> entries`);
   assert(body.includes("<loc>"), `${path} must include <loc> entries`);
@@ -66,7 +83,11 @@ for (const path of sitemapPaths) {
       /^application\/xml\b|^text\/xml\b/i.test(response.contentType),
       `${path} returned unexpected Content-Type: ${response.contentType || "(missing)"}`,
     );
-    assertXmlEnvelope(path, response.body);
+    if (path === "/sitemap.xml") {
+      assertSitemapIndex(path, response.body);
+    } else {
+      assertUrlSitemap(path, response.body);
+    }
 
     console.log(`ok ${path}`);
   } catch (error) {
