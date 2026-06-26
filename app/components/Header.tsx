@@ -79,7 +79,13 @@ export default function Header({ lang, active }: { lang: Lang; active?: Active }
               {t.topContacts}
             </Link>
 
-            <button className="language-trigger" type="button" onClick={() => setLanguageModalOpen(true)}>
+            <button
+              className="language-trigger"
+              type="button"
+              aria-haspopup="dialog"
+              aria-expanded={isLanguageModalOpen}
+              onClick={() => setLanguageModalOpen(true)}
+            >
               <span aria-hidden="true">🌐</span>
               <span>{LOCALE_META[lang].nativeName}</span>
             </button>
@@ -163,10 +169,10 @@ export default function Header({ lang, active }: { lang: Lang; active?: Active }
         </div>
       </header>
       {isLanguageModalOpen && (
-        <div className="language-modal" role="dialog" aria-modal="true" aria-label={t.languageDialogTitle}>
+        <div className="language-modal" role="dialog" aria-modal="true" aria-labelledby="language-modal-title">
           <div className="language-modal__card">
             <div className="language-modal__header">
-              <h2>{keepTypography(t.languageDialogTitle)}</h2>
+              <h2 id="language-modal-title">{keepTypography(t.languageDialogTitle)}</h2>
               <button type="button" onClick={() => setLanguageModalOpen(false)}>
                 {t.languageDialogClose}
               </button>
