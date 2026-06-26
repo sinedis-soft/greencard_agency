@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState, useSyncExternalStore } from "react";
+import { useEffect, useMemo, useState, useSyncExternalStore } from "react";
 import type { Lang } from "@/app/dictionaries/header";
 import { getCookieDictionary, type CookieCategoryKey } from "@/app/dictionaries/cookies";
 
@@ -50,18 +50,19 @@ export default function CookieConsent({ lang }: { lang: Lang }) {
 
   const isHydrated = useSyncExternalStore(() => () => {}, () => true, () => false);
 
-  const [saved, setSaved] = useState<ConsentState | null>(() => {
-    if (typeof window === "undefined") return null;
-    return safeParseConsent(readCookieValue(COOKIE_NAME));
-  });
-  const [draft, setDraft] = useState<ConsentState>(() => {
-    if (typeof window === "undefined") return DEFAULT_STATE;
-    return safeParseConsent(readCookieValue(COOKIE_NAME)) ?? DEFAULT_STATE;
-  });
-  const [isOpen, setIsOpen] = useState<boolean>(() => {
-    if (typeof window === "undefined") return false;
-    return safeParseConsent(readCookieValue(COOKIE_NAME)) === null;
-  });
+  const [saved, setSaved] = useState<ConsentState | null>(null);
+  const [draft, setDraft] = useState<ConsentState>(DEFAULT_STATE);
+  const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    window.queueMicrotask(() => {
+      const parsedConsent = safeParseConsent(readCookieValue(COOKIE_NAME));
+
+      setSaved(parsedConsent);
+      setDraft(parsedConsent ?? DEFAULT_STATE);
+      setIsOpen(parsedConsent === null);
+    });
+  }, []);
 
   function save(next: ConsentState) {
     const normalized: ConsentState = { ...next, necessary: true };
@@ -85,11 +86,11 @@ export default function CookieConsent({ lang }: { lang: Lang }) {
       </button>
 
       {isOpen ? (
-        <div className="cc-overlay" role="dialog" aria-modal="true" aria-label={t.modalTitle}>
+        <div className="cc-overlay" role="dialog" aria-modal="true" aria-labelledby="cookie-consent-title">
           <div className="cc-modal">
             <div className="cc-head">
               <div>
-                <div className="cc-title">{t.modalTitle}</div>
+                <div id="cookie-consent-title" className="cc-title">{t.modalTitle}</div>
                 <p className="cc-text">{t.modalText}</p>
               </div>
               {!mustChoose ? (
@@ -104,8 +105,8 @@ export default function CookieConsent({ lang }: { lang: Lang }) {
                 return (
                   <div key={c.key} className="cc-cat">
                     <div className="cc-cat__text">
-                      <div className="cc-cat__name">{c.title}</div>
-                      <div className="cc-cat__desc">{c.description}</div>
+                      <div id={`cc-category-${c.key}-title`} className="cc-cat__name">{c.title}</div>
+                      <div id={`cc-category-${c.key}-description`} className="cc-cat__desc">{c.description}</div>
                     </div>
                     <label className="cc-toggle">
                       <input
@@ -113,6 +114,8 @@ export default function CookieConsent({ lang }: { lang: Lang }) {
                         className="sr-only"
                         checked={checked}
                         disabled={locked}
+                        aria-labelledby={`cc-category-${c.key}-title`}
+                        aria-describedby={`cc-category-${c.key}-description`}
                         onChange={(e) => setDraft((prev) => ({ ...prev, [c.key]: e.target.checked, necessary: true }))}
                       />
                       <span

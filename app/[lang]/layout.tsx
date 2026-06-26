@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-page-custom-font -- Google Fonts are intentionally linked for multilingual typography. */
 import Header from "@/app/components/Header";
 import Footer from "@/app/components/Footer";
 import CookieConsent from "@/app/components/CookieConsent";
@@ -13,6 +12,7 @@ import {
   OrganizationJsonLd,
   WebSiteJsonLd,
 } from "@/app/components/StructuredData";
+
 
 export const dynamicParams = false;
 
@@ -45,18 +45,6 @@ export default async function LangLayout({
 
   return (
     <html lang={lang} dir={dir}>
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Noto+Serif:wght@500;600;700&family=Noto+Sans+Georgian:wght@400;500;600;700&family=Noto+Sans+Armenian:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700&family=Noto+Sans+Hebrew:wght@400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
-      </head>
       <body
         className={`min-h-dvh flex flex-col ${
           dir === "rtl" ? "text-right" : "text-left"

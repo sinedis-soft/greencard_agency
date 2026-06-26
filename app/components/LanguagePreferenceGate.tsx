@@ -57,7 +57,15 @@ export default function LanguagePreferenceGate() {
   if (!needsLanguageChoice) return null;
 
   return (
-    <div className="language-first-choice" role="dialog" aria-modal="true">
+    <div
+      className="language-first-choice"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="language-first-choice-title"
+    >
+      <h1 id="language-first-choice-title" className="sr-only">
+        Choose language
+      </h1>
       <div className="language-first-choice__grid">
         {languageOptions.map(({ lang, label }) => (
           <button
