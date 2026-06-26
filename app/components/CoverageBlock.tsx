@@ -45,7 +45,7 @@ export default function CoverageBlock({ lang }: Props) {
                     alt={t.mapAlt}
                     width={1990}
                     height={2048}
-                    sizes="(max-width: 980px) 100vw, 560px"
+                    sizes="(max-width: 640px) calc(100vw - 68px), (max-width: 980px) 52vw, 520px"
                     className="coverage__map-img"
                   />
                 </div>
