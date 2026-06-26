@@ -90,7 +90,13 @@ export default function Header({ lang, active }: { lang: Lang; active?: Active }
       {/* Main header */}
       <header className="site-header">
         <div className="container">
-          <input id={toggleId} className="nav-toggle" type="checkbox" />
+          <input
+            id={toggleId}
+            className="nav-toggle"
+            type="checkbox"
+            aria-label={t.menu}
+            aria-controls={drawerId}
+          />
 
           <div className="header__row">
             <Link className="brand" href={withLang(lang, "/")} aria-label={t.nav.main}>
@@ -102,7 +108,7 @@ export default function Header({ lang, active }: { lang: Lang; active?: Active }
             </Link>
 
             {/* Desktop navigation */}
-            <nav className="nav" aria-label="Main menu">
+            <nav id="site-navigation" className="nav" aria-label="Main menu">
               {navItems.map((item) => (
                 <Link
                   key={item.id}
