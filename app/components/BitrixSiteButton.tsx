@@ -5,7 +5,9 @@ import { useEffect } from "react";
 const BITRIX_SITE_BUTTON_BASE_URL =
   "https://cdn.bitrix24.pl/b25731489/crm/site_button/loader_15_cgi7if.js";
 const BITRIX_SITE_BUTTON_SCRIPT_ID = "bitrix-site-button-loader";
+
 const BITRIX_SITE_BUTTON_DELAY_MS = 4000;
+
 const BITRIX_INTERACTION_EVENTS = ["scroll", "click", "mousemove", "touchstart", "keydown"] as const;
 
 function appendBitrixSiteButtonScript() {
