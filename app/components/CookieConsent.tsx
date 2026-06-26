@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState, useSyncExternalStore } from "react";
+import { useEffect, useMemo, useState, useSyncExternalStore } from "react";
 import type { Lang } from "@/app/dictionaries/header";
 import { getCookieDictionary, type CookieCategoryKey } from "@/app/dictionaries/cookies";
 
@@ -50,18 +50,19 @@ export default function CookieConsent({ lang }: { lang: Lang }) {
 
   const isHydrated = useSyncExternalStore(() => () => {}, () => true, () => false);
 
-  const [saved, setSaved] = useState<ConsentState | null>(() => {
-    if (typeof window === "undefined") return null;
-    return safeParseConsent(readCookieValue(COOKIE_NAME));
-  });
-  const [draft, setDraft] = useState<ConsentState>(() => {
-    if (typeof window === "undefined") return DEFAULT_STATE;
-    return safeParseConsent(readCookieValue(COOKIE_NAME)) ?? DEFAULT_STATE;
-  });
-  const [isOpen, setIsOpen] = useState<boolean>(() => {
-    if (typeof window === "undefined") return false;
-    return safeParseConsent(readCookieValue(COOKIE_NAME)) === null;
-  });
+  const [saved, setSaved] = useState<ConsentState | null>(null);
+  const [draft, setDraft] = useState<ConsentState>(DEFAULT_STATE);
+  const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    window.queueMicrotask(() => {
+      const parsedConsent = safeParseConsent(readCookieValue(COOKIE_NAME));
+
+      setSaved(parsedConsent);
+      setDraft(parsedConsent ?? DEFAULT_STATE);
+      setIsOpen(parsedConsent === null);
+    });
+  }, []);
 
   function save(next: ConsentState) {
     const normalized: ConsentState = { ...next, necessary: true };
