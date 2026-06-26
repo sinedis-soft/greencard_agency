@@ -24,10 +24,10 @@ export default function SubmissionModal({
   const color = variant === "partial" ? "#000" : "#1b2a12";
 
   return (
-    <div className="submit-modal__overlay" role="dialog" aria-modal="true" aria-label={title}>
+    <div className="submit-modal__overlay" role="dialog" aria-modal="true" aria-labelledby="submission-modal-title">
       <div className="submit-modal__card" style={{ background: bg, color }}>
-        <button className="submit-modal__close" onClick={onClose} aria-label="Close">✕</button>
-        <h3>{keepTypography(title)}</h3>
+        <button type="button" className="submit-modal__close" onClick={onClose} aria-label="Close">✕</button>
+        <h3 id="submission-modal-title">{keepTypography(title)}</h3>
         <p>{message}</p>
       </div>
       <style jsx>{`

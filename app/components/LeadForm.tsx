@@ -1,7 +1,7 @@
 // app/components/LeadForm.tsx
 "use client";
 
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useSyncExternalStore } from "react";
 import Link from "next/link";
 import type { Lang } from "@/app/dictionaries/header";
 import { getLeadFormDictionary } from "@/app/dictionaries/leadForm";
@@ -329,8 +329,8 @@ export default function LeadForm(props: { lang: Lang }) {
     }
   }
 
-  const minStartDate = todayISO();
-  const maxBirthDate = maxBirthDateISO();
+  const minStartDate = useSyncExternalStore(() => () => {}, todayISO, () => "");
+  const maxBirthDate = useSyncExternalStore(() => () => {}, maxBirthDateISO, () => "");
   const statusId = "lead-form-status";
 
   const estimatedTotal = (() => {
@@ -594,8 +594,9 @@ export default function LeadForm(props: { lang: Lang }) {
                     />
                   </div>
                   <div className="field">
-                      <label>{t.policyholder.persPass} *</label>
+                      <label htmlFor="policyholderPass">{t.policyholder.persPass} *</label>
                       <input
+                        id="policyholderPass"
                         name="policyholder_pass"
                         className="input"
                         required
@@ -631,6 +632,23 @@ export default function LeadForm(props: { lang: Lang }) {
               <div className="legend">{t.policy.legend}</div>
 
               {vehicleBlocks.map(function (id, idx) {
+                const fieldIds = {
+                  period: `vehicle-${id}-period`,
+                  startDate: `vehicle-${id}-start-date`,
+                  countryFrom: `vehicle-${id}-country-from`,
+                  vehicleType: `vehicle-${id}-type`,
+                  plate: `vehicle-${id}-plate`,
+                  vin: `vehicle-${id}-vin`,
+                  brend: `vehicle-${id}-brand`,
+                  year: `vehicle-${id}-year`,
+                  engineType: `vehicle-${id}-engine-type`,
+                  engineCapacity: `vehicle-${id}-engine-capacity`,
+                  vehiclePower: `vehicle-${id}-power`,
+                  powerUnit: `vehicle-${id}-power-unit`,
+                  comment: `vehicle-${id}-comment`,
+                  docs: `vehicle-${id}-docs`,
+                };
+
                 return (
                   <div key={id} className="vehicle">
                     <div className="vehicle__top">
@@ -652,8 +670,9 @@ export default function LeadForm(props: { lang: Lang }) {
 
                     <div className="row-2">
                       <div className="field">
-                        <label>{t.policy.period} *</label>
+                        <label htmlFor={fieldIds.period}>{t.policy.period} *</label>
                         <select
+                          id={fieldIds.period}
                           name={"vehicles[" + idx + "][period]"}
                           className="input"
                           defaultValue=""
@@ -682,8 +701,9 @@ export default function LeadForm(props: { lang: Lang }) {
                       </div>
 
                       <div className="field">
-                        <label>{t.policy.startDate} *</label>
+                        <label htmlFor={fieldIds.startDate}>{t.policy.startDate} *</label>
                         <input
+                          id={fieldIds.startDate}
                           type="date"
                           name={"vehicles[" + idx + "][startDate]"}
                           className="input"
@@ -695,8 +715,9 @@ export default function LeadForm(props: { lang: Lang }) {
 
                     <div className="row-2">
                       <div className="field">
-                        <label>{t.policy.countryFrom} *</label>
+                        <label htmlFor={fieldIds.countryFrom}>{t.policy.countryFrom} *</label>
                         <select
+                          id={fieldIds.countryFrom}
                           name={"vehicles[" + idx + "][countryFrom]"}
                           className="input"
                           defaultValue=""
@@ -714,8 +735,9 @@ export default function LeadForm(props: { lang: Lang }) {
                       </div>
 
                       <div className="field">
-                        <label>{t.policy.vehicleType} *</label>
+                        <label htmlFor={fieldIds.vehicleType}>{t.policy.vehicleType} *</label>
                         <select
+                          id={fieldIds.vehicleType}
                           name={"vehicles[" + idx + "][vehicleType]"}
                           className="input"
                           defaultValue=""
@@ -748,8 +770,9 @@ export default function LeadForm(props: { lang: Lang }) {
 
                     <div className="row-2">
                       <div className="field">
-                        <label>{t.policy.vehiclePlate} *</label>
+                        <label htmlFor={fieldIds.plate}>{t.policy.vehiclePlate} *</label>
                         <input
+                          id={fieldIds.plate}
                           name={"vehicles[" + idx + "][plate]"}
                           className="input"
                           required
@@ -760,8 +783,9 @@ export default function LeadForm(props: { lang: Lang }) {
                       </div>
 
                       <div className="field">
-                        <label>{t.policy.vehicleVin} *</label>
+                        <label htmlFor={fieldIds.vin}>{t.policy.vehicleVin} *</label>
                         <input
+                          id={fieldIds.vin}
                           name={"vehicles[" + idx + "][vin]"}
                           className="input"
                           required
@@ -776,17 +800,19 @@ export default function LeadForm(props: { lang: Lang }) {
                     </div>
                     <div className="row-2">
                       <div className="field">
-                        <label>{t.policy.vehicleBrend} *</label>
+                        <label htmlFor={fieldIds.brend}>{t.policy.vehicleBrend} *</label>
                         <input
+                          id={fieldIds.brend}
                           name={"vehicles[" + idx + "][brend]"}
                           className="input"
                           required
                         />
                       </div>
                         <div className="field">
-                          <label>{t.policy.vehicleYear} *</label>
+                          <label htmlFor={fieldIds.year}>{t.policy.vehicleYear} *</label>
 
                           <input
+                            id={fieldIds.year}
                             name={"vehicles[" + idx + "][year]"}
                             className="input"
                             required
@@ -815,8 +841,9 @@ export default function LeadForm(props: { lang: Lang }) {
 
                     <div className="row-2">
                       <div className="field">
-                        <label>{t.policy.engineType} *</label>
+                        <label htmlFor={fieldIds.engineType}>{t.policy.engineType} *</label>
                         <select
+                          id={fieldIds.engineType}
                           name={"vehicles[" + idx + "][engineType]"}
                           className="input"
                           defaultValue=""
@@ -845,9 +872,10 @@ export default function LeadForm(props: { lang: Lang }) {
                       </div>
 
                       <div className="field">
-                        <label>{t.policy.vehicleEngineCapacity} *</label>
+                        <label htmlFor={fieldIds.engineCapacity}>{t.policy.vehicleEngineCapacity} *</label>
 
                         <input
+                          id={fieldIds.engineCapacity}
                           name={"vehicles[" + idx + "][engineCapacity]"}
                           className="input"
                           required
@@ -874,9 +902,10 @@ export default function LeadForm(props: { lang: Lang }) {
 
                     <div className="row-2">
                       <div className="field">
-                        <label>{t.policy.vehiclePower} *</label>
+                        <label htmlFor={fieldIds.vehiclePower}>{t.policy.vehiclePower} *</label>
 
                         <input
+                          id={fieldIds.vehiclePower}
                           name={"vehicles[" + idx + "][vehiclePower]"}
                           className="input"
                           required
@@ -902,8 +931,9 @@ export default function LeadForm(props: { lang: Lang }) {
 
 
                       <div className="field">
-                        <label>{t.policy.powerUnit} *</label>
+                        <label htmlFor={fieldIds.powerUnit}>{t.policy.powerUnit} *</label>
                         <select
+                          id={fieldIds.powerUnit}
                           name={"vehicles[" + idx + "][powerUnit]"}
                           className="input"
                           defaultValue=""
@@ -935,8 +965,9 @@ export default function LeadForm(props: { lang: Lang }) {
                     </div>
 
                     <div className="field">
-                      <label>{t.policy.comment}</label>
+                      <label htmlFor={fieldIds.comment}>{t.policy.comment}</label>
                       <textarea
+                        id={fieldIds.comment}
                         name={"vehicles[" + idx + "][comment]"}
                         className="input"
                         rows={3}
@@ -944,11 +975,12 @@ export default function LeadForm(props: { lang: Lang }) {
                     </div>
 
                     <div className="field">
-                      <label>
+                      <label htmlFor={fieldIds.docs}>
                         {t.policy.docsLabel} *
                         {vehicleFileCounts[id] ? " (" + vehicleFileCounts[id] + ")" : ""}
                       </label>
                       <input
+                        id={fieldIds.docs}
                         type="file"
                         name={"vehicles[" + idx + "][docs]"}
                         multiple
