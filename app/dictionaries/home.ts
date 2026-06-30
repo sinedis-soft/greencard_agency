@@ -60,6 +60,26 @@ export interface HomeDictionary {
       href: string;
     }>;
   };
+
+  businessHours: {
+    openLabel: string;
+    closedLabel: string;
+
+    openDetails: string;
+
+    closingSoonHoursMinutes: string;
+    closingSoonHours: string;
+    closingSoonMinutes: string;
+    closingSoonExtra: string;
+
+    closedBeforeOpeningToday: string;
+    closedUntilTomorrow: string;
+    closedUntilMonday: string;
+    closedExtra: string;
+
+    timezoneNote: string;
+  };
+
 }
 
 export const homeDictionary: Record<Lang, HomeDictionary> = {
@@ -205,6 +225,31 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
         
         
       ],
+    },
+    businessHours: {
+      openLabel: "Сейчас открыто",
+      closedLabel: "Сейчас закрыто",
+
+      openDetails: "работаем до {time} по вашему времени",
+
+      closingSoonHoursMinutes:
+        "до конца рабочего дня осталось {hours} ч {minutes} мин",
+      closingSoonHours: "до конца рабочего дня осталось {hours} ч",
+      closingSoonMinutes: "до конца рабочего дня осталось {minutes} мин",
+      closingSoonExtra:
+        "Вы можете отправить заявку сейчас. Если потребуется ручная проверка, мы обработаем её до закрытия или в следующий рабочий день.",
+
+      closedBeforeOpeningToday:
+        "откроемся сегодня в {time} по вашему времени",
+      closedUntilTomorrow:
+        "откроемся завтра в {time} по вашему времени",
+      closedUntilMonday:
+        "откроемся в понедельник в {time} по вашему времени",
+      closedExtra:
+        "Вы можете отправить заявку сейчас — мы обработаем её в рабочее время.",
+
+      timezoneNote:
+        "Время показано по часовому поясу вашего устройства: {timezone}.",
     },
   },
   pl: {
@@ -405,6 +450,33 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
         },
       ],
     },
+    businessHours: {
+      openLabel: "Teraz otwarte",
+      closedLabel: "Teraz zamknięte",
+
+      openDetails: "pracujemy do {time} według czasu użytkownika",
+
+      closingSoonHoursMinutes:
+        "do końca dnia pracy pozostało {hours} godz. {minutes} min",
+      closingSoonHours:
+        "do końca dnia pracy pozostało {hours} godz.",
+      closingSoonMinutes:
+        "do końca dnia pracy pozostało {minutes} min",
+      closingSoonExtra:
+        "Można wysłać wniosek teraz. Jeżeli będzie wymagana ręczna weryfikacja, obsłużymy go przed zamknięciem albo w następnym dniu roboczym.",
+
+      closedBeforeOpeningToday:
+        "otworzymy dzisiaj o {time} według czasu użytkownika",
+      closedUntilTomorrow:
+        "otworzymy jutro o {time} według czasu użytkownika",
+      closedUntilMonday:
+        "otworzymy w poniedziałek o {time} według czasu użytkownika",
+      closedExtra:
+        "Można wysłać wniosek teraz — obsłużymy go w godzinach pracy.",
+
+      timezoneNote:
+        "Czas jest pokazany według strefy czasowej urządzenia: {timezone}.",
+    },
   },
   en: {
     hero: {
@@ -604,6 +676,33 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
         },
       ],
     },
+    businessHours: {
+      openLabel: "Open now",
+      closedLabel: "Closed now",
+
+      openDetails: "we work until {time} in your local time",
+
+      closingSoonHoursMinutes:
+        "the business day ends in {hours} h {minutes} min",
+      closingSoonHours:
+        "the business day ends in {hours} h",
+      closingSoonMinutes:
+        "the business day ends in {minutes} min",
+      closingSoonExtra:
+        "You can submit your request now. If manual review is required, we will process it before closing or on the next business day.",
+
+      closedBeforeOpeningToday:
+        "we open today at {time} in your local time",
+      closedUntilTomorrow:
+        "we open tomorrow at {time} in your local time",
+      closedUntilMonday:
+        "we open on Monday at {time} in your local time",
+      closedExtra:
+        "You can submit your request now — we will process it during business hours.",
+
+      timezoneNote:
+        "Time is shown according to your device time zone: {timezone}.",
+    },
   },
   be: {
     hero: {
@@ -802,6 +901,33 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
           href: "https://www.cab.lt/",
         },
       ],
+    },
+    businessHours: {
+      openLabel: "Адчынена",
+      closedLabel: "Зачынена",
+
+      openDetails: "мы працуем да {time} па вашым мясцовым часе",
+
+      closingSoonHoursMinutes:
+        "працоўны дзень заканчваецца праз {hours} г {minutes} хв",
+      closingSoonHours:
+        "працоўны дзень заканчваецца праз {hours} г",
+      closingSoonMinutes:
+        "працоўны дзень заканчваецца праз {minutes} хв",
+      closingSoonExtra:
+        "Вы можаце адправіць заяўку цяпер. Калі спатрэбіцца ручная праверка, мы апрацуем яе да закрыцця або ў наступны працоўны дзень.",
+
+      closedBeforeOpeningToday:
+        "мы адкрыемся сёння а {time} па вашым мясцовым часе",
+      closedUntilTomorrow:
+        "мы адкрыемся заўтра а {time} па вашым мясцовым часе",
+      closedUntilMonday:
+        "мы адкрыемся ў панядзелак а {time} па вашым мясцовым часе",
+      closedExtra:
+        "Вы можаце адправіць заяўку цяпер — мы апрацуем яе ў працоўны час.",
+
+      timezoneNote:
+        "Час паказаны паводле часавага пояса вашай прылады: {timezone}.",
     },
   },
   uz: {
@@ -1012,6 +1138,33 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
         },
       ],
     },
+    businessHours: {
+      openLabel: "Hozir ochiq",
+      closedLabel: "Hozir yopiq",
+
+      openDetails: "biz sizning mahalliy vaqtingiz bo‘yicha {time} gacha ishlaymiz",
+
+      closingSoonHoursMinutes:
+        "ish kuni {hours} soat {minutes} daqiqadan keyin tugaydi",
+      closingSoonHours:
+        "ish kuni {hours} soatdan keyin tugaydi",
+      closingSoonMinutes:
+        "ish kuni {minutes} daqiqadan keyin tugaydi",
+      closingSoonExtra:
+        "Arizangizni hozir yuborishingiz mumkin. Agar qo‘lda tekshirish talab qilinsa, uni yopilishdan oldin yoki keyingi ish kunida ko‘rib chiqamiz.",
+
+      closedBeforeOpeningToday:
+        "biz bugun sizning mahalliy vaqtingiz bo‘yicha {time} da ochilamiz",
+      closedUntilTomorrow:
+        "biz ertaga sizning mahalliy vaqtingiz bo‘yicha {time} da ochilamiz",
+      closedUntilMonday:
+        "biz dushanba kuni sizning mahalliy vaqtingiz bo‘yicha {time} da ochilamiz",
+      closedExtra:
+        "Arizangizni hozir yuborishingiz mumkin — biz uni ish vaqtida ko‘rib chiqamiz.",
+
+      timezoneNote:
+        "Vaqt qurilmangizdagi vaqt mintaqasiga muvofiq ko‘rsatilgan: {timezone}.",
+    },
   },
   ka: {
     hero: {
@@ -1209,6 +1362,33 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
           href: "https://www.cab.lt/",
         },
       ],
+    },
+    businessHours: {
+      openLabel: "ახლა ღიაა",
+      closedLabel: "ახლა დახურულია",
+
+      openDetails: "ვმუშაობთ {time}-მდე თქვენი ადგილობრივი დროით",
+
+      closingSoonHoursMinutes:
+        "სამუშაო დღე დასრულდება {hours} სთ {minutes} წთ-ში",
+      closingSoonHours:
+        "სამუშაო დღე დასრულდება {hours} სთ-ში",
+      closingSoonMinutes:
+        "სამუშაო დღე დასრულდება {minutes} წთ-ში",
+      closingSoonExtra:
+        "შეგიძლიათ განაცხადი ახლავე გამოგზავნოთ. თუ ხელით შემოწმება იქნება საჭირო, მას დახურვამდე ან მომდევნო სამუშაო დღეს განვიხილავთ.",
+
+      closedBeforeOpeningToday:
+        "დღეს გავიხსნებით {time}-ზე თქვენი ადგილობრივი დროით",
+      closedUntilTomorrow:
+        "ხვალ გავიხსნებით {time}-ზე თქვენი ადგილობრივი დროით",
+      closedUntilMonday:
+        "ორშაბათს გავიხსნებით {time}-ზე თქვენი ადგილობრივი დროით",
+      closedExtra:
+        "შეგიძლიათ განაცხადი ახლავე გამოგზავნოთ — მას სამუშაო საათებში განვიხილავთ.",
+
+      timezoneNote:
+        "დრო ნაჩვენებია თქვენი მოწყობილობის დროის სარტყლის მიხედვით: {timezone}.",
     },
   },
   kk: {
@@ -1408,6 +1588,33 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
         },
       ],
     },
+    businessHours: {
+      openLabel: "Қазір ашық",
+      closedLabel: "Қазір жабық",
+
+      openDetails: "сіздің жергілікті уақытыңыз бойынша {time}-ге дейін жұмыс істейміз",
+
+      closingSoonHoursMinutes:
+        "жұмыс күні {hours} сағ {minutes} мин кейін аяқталады",
+      closingSoonHours:
+        "жұмыс күні {hours} сағ кейін аяқталады",
+      closingSoonMinutes:
+        "жұмыс күні {minutes} мин кейін аяқталады",
+      closingSoonExtra:
+        "Өтінімді қазір жібере аласыз. Егер қолмен тексеру қажет болса, оны жабылғанға дейін немесе келесі жұмыс күні өңдейміз.",
+
+      closedBeforeOpeningToday:
+        "бүгін сіздің жергілікті уақытыңыз бойынша {time}-де ашыламыз",
+      closedUntilTomorrow:
+        "ертең сіздің жергілікті уақытыңыз бойынша {time}-де ашыламыз",
+      closedUntilMonday:
+        "дүйсенбі күні сіздің жергілікті уақытыңыз бойынша {time}-де ашыламыз",
+      closedExtra:
+        "Өтінімді қазір жібере аласыз — біз оны жұмыс уақытында өңдейміз.",
+
+      timezoneNote:
+        "Уақыт құрылғыңыздағы уақыт белдеуіне сәйкес көрсетілген: {timezone}.",
+    },
   },
   tr: {
     hero: {
@@ -1605,6 +1812,33 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
           href: "https://www.cab.lt/",
         },
       ],
+    },
+    businessHours: {
+      openLabel: "Şu anda açık",
+      closedLabel: "Şu anda kapalı",
+
+      openDetails: "yerel saatinize göre {time}’e kadar çalışıyoruz",
+
+      closingSoonHoursMinutes:
+        "mesai {hours} saat {minutes} dakika sonra sona eriyor",
+      closingSoonHours:
+        "mesai {hours} saat sonra sona eriyor",
+      closingSoonMinutes:
+        "mesai {minutes} dakika sonra sona eriyor",
+      closingSoonExtra:
+        "Başvurunuzu şimdi gönderebilirsiniz. Manuel inceleme gerekirse, başvurunuzu kapanıştan önce veya bir sonraki iş gününde işleme alırız.",
+
+      closedBeforeOpeningToday:
+        "bugün yerel saatinize göre {time}’de açılıyoruz",
+      closedUntilTomorrow:
+        "yarın yerel saatinize göre {time}’de açılıyoruz",
+      closedUntilMonday:
+        "pazartesi günü yerel saatinize göre {time}’de açılıyoruz",
+      closedExtra:
+        "Başvurunuzu şimdi gönderebilirsiniz — çalışma saatleri içinde işleme alırız.",
+
+      timezoneNote:
+        "Saat, cihazınızın saat dilimine göre gösterilir: {timezone}.",
     },
   },
   fa: {
@@ -1806,6 +2040,33 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
         },
       ],
     },
+    businessHours: {
+      openLabel: "اکنون باز است",
+      closedLabel: "اکنون بسته است",
+
+      openDetails: "ما تا ساعت {time} به وقت محلی شما کار می‌کنیم",
+
+      closingSoonHoursMinutes:
+        "روز کاری تا {hours} ساعت و {minutes} دقیقه دیگر به پایان می‌رسد",
+      closingSoonHours:
+        "روز کاری تا {hours} ساعت دیگر به پایان می‌رسد",
+      closingSoonMinutes:
+        "روز کاری تا {minutes} دقیقه دیگر به پایان می‌رسد",
+      closingSoonExtra:
+        "می‌توانید درخواست خود را همین حالا ارسال کنید. اگر بررسی دستی لازم باشد، آن را پیش از تعطیلی یا در روز کاری بعد پردازش می‌کنیم.",
+
+      closedBeforeOpeningToday:
+        "امروز ساعت {time} به وقت محلی شما باز می‌کنیم",
+      closedUntilTomorrow:
+        "فردا ساعت {time} به وقت محلی شما باز می‌کنیم",
+      closedUntilMonday:
+        "دوشنبه ساعت {time} به وقت محلی شما باز می‌کنیم",
+      closedExtra:
+        "می‌توانید درخواست خود را همین حالا ارسال کنید — آن را در ساعات کاری پردازش می‌کنیم.",
+
+      timezoneNote:
+        "زمان بر اساس منطقه زمانی دستگاه شما نمایش داده می‌شود: {timezone}.",
+    },
   },
   hy: {
     hero: {
@@ -2004,6 +2265,33 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
         },
       ],
     },
+    businessHours: {
+      openLabel: "Այժմ բաց է",
+      closedLabel: "Այժմ փակ է",
+
+      openDetails: "աշխատում ենք մինչև {time}-ը՝ ըստ ձեր տեղական ժամանակի",
+
+      closingSoonHoursMinutes:
+        "աշխատանքային օրը կավարտվի {hours} ժ {minutes} րոպեից",
+      closingSoonHours:
+        "աշխատանքային օրը կավարտվի {hours} ժամից",
+      closingSoonMinutes:
+        "աշխատանքային օրը կավարտվի {minutes} րոպեից",
+      closingSoonExtra:
+        "Կարող եք ձեր հայտը ուղարկել հիմա։ Եթե պահանջվի ձեռքով ստուգում, այն կմշակենք մինչև փակվելը կամ հաջորդ աշխատանքային օրը։",
+
+      closedBeforeOpeningToday:
+        "այսօր կբացվենք {time}-ին՝ ըստ ձեր տեղական ժամանակի",
+      closedUntilTomorrow:
+        "վաղը կբացվենք {time}-ին՝ ըստ ձեր տեղական ժամանակի",
+      closedUntilMonday:
+        "երկուշաբթի կբացվենք {time}-ին՝ ըստ ձեր տեղական ժամանակի",
+      closedExtra:
+        "Կարող եք ձեր հայտը ուղարկել հիմա — այն կմշակենք աշխատանքային ժամերին։",
+
+      timezoneNote:
+        "Ժամը ցուցադրվում է ըստ ձեր սարքի ժամային գոտու՝ {timezone}։",
+    },
   },
 
   ckb: {
@@ -2188,6 +2476,33 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
         },
       ],
     },
+    businessHours: {
+      openLabel: "ئێستا کراوەیە",
+      closedLabel: "ئێستا داخراوە",
+
+      openDetails: "ئێمە تا کاتژمێر {time} بە کاتی ناوخۆیی ئێوە کار دەکەین",
+
+      closingSoonHoursMinutes:
+        "ڕۆژی کاری دوای {hours} کاتژمێر و {minutes} خولەک کۆتایی دێت",
+      closingSoonHours:
+        "ڕۆژی کاری دوای {hours} کاتژمێر کۆتایی دێت",
+      closingSoonMinutes:
+        "ڕۆژی کاری دوای {minutes} خولەک کۆتایی دێت",
+      closingSoonExtra:
+        "دەتوانن داواکارییەکەتان ئێستا بنێرن. ئەگەر پێویست بە پشکنینی دەستی بوو، پێش داخستن یان لە ڕۆژی کاری داهاتوو چارەسەری دەکەین.",
+
+      closedBeforeOpeningToday:
+        "ئەمڕۆ لە کاتژمێر {time} بە کاتی ناوخۆیی ئێوە دەکرێینەوە",
+      closedUntilTomorrow:
+        "سبەی لە کاتژمێر {time} بە کاتی ناوخۆیی ئێوە دەکرێینەوە",
+      closedUntilMonday:
+        "دووشەممە لە کاتژمێر {time} بە کاتی ناوخۆیی ئێوە دەکرێینەوە",
+      closedExtra:
+        "دەتوانن داواکارییەکەتان ئێستا بنێرن — لە کاتی کاردا چارەسەری دەکەین.",
+
+      timezoneNote:
+        "کاتەکە بەپێی ناوچەی کاتی ئامێرەکەتان پیشان دەدرێت: {timezone}.",
+    },
   },
   kmr: {
     hero: {
@@ -2368,6 +2683,33 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
           href: "https://www.cab.lt/",
         },
       ],
+    },
+    businessHours: {
+      openLabel: "Niha vekirî ye",
+      closedLabel: "Niha girtî ye",
+
+      openDetails: "em heta saet {time} bi dema herêmî ya we dixebitin",
+
+      closingSoonHoursMinutes:
+        "roja xebatê piştî {hours} saet û {minutes} deqîqeyan diqede",
+      closingSoonHours:
+        "roja xebatê piştî {hours} saetan diqede",
+      closingSoonMinutes:
+        "roja xebatê piştî {minutes} deqîqeyan diqede",
+      closingSoonExtra:
+        "Hûn dikarin daxwaza xwe niha bişînin. Ger kontrola destan pêwîst be, em ê wê berî girtinê an roja xebatê ya dinê xử bikin.",
+
+      closedBeforeOpeningToday:
+        "em îro li saet {time} bi dema herêmî ya we vedibin",
+      closedUntilTomorrow:
+        "em sibê li saet {time} bi dema herêmî ya we vedibin",
+      closedUntilMonday:
+        "em roja duşemê li saet {time} bi dema herêmî ya we vedibin",
+      closedExtra:
+        "Hûn dikarin daxwaza xwe niha bişînin — em ê wê di demjimêrên xebatê de xử bikin.",
+
+      timezoneNote:
+        "Dem li gorî herêma demê ya amûra we tê nîşandan: {timezone}.",
     },
   },
   ar: {
@@ -2550,6 +2892,34 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
         },
       ],
     },
+
+    businessHours: {
+      openLabel: "مفتوح الآن",
+      closedLabel: "مغلق الآن",
+
+      openDetails: "نعمل حتى الساعة {time} حسب توقيتك المحلي",
+
+      closingSoonHoursMinutes:
+        "ينتهي يوم العمل بعد {hours} ساعة و{minutes} دقيقة",
+      closingSoonHours:
+        "ينتهي يوم العمل بعد {hours} ساعة",
+      closingSoonMinutes:
+        "ينتهي يوم العمل بعد {minutes} دقيقة",
+      closingSoonExtra:
+        "يمكنك إرسال طلبك الآن. إذا كانت هناك حاجة إلى مراجعة يدوية، فسنعالجه قبل الإغلاق أو في يوم العمل التالي.",
+
+      closedBeforeOpeningToday:
+        "نفتح اليوم الساعة {time} حسب توقيتك المحلي",
+      closedUntilTomorrow:
+        "نفتح غدًا الساعة {time} حسب توقيتك المحلي",
+      closedUntilMonday:
+        "نفتح يوم الاثنين الساعة {time} حسب توقيتك المحلي",
+      closedExtra:
+        "يمكنك إرسال طلبك الآن — وسنعالجه خلال ساعات العمل.",
+
+      timezoneNote:
+        "يُعرض الوقت وفقًا للمنطقة الزمنية في جهازك: {timezone}.",
+    },
   },
   uk: {
     hero: {
@@ -2726,6 +3096,33 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
           href: "https://www.cab.lt/",
         },
       ],
+    },
+    businessHours: {
+      openLabel: "Зараз відкрито",
+      closedLabel: "Зараз зачинено",
+
+      openDetails: "працюємо до {time} за вашим місцевим часом",
+
+      closingSoonHoursMinutes:
+        "робочий день закінчується через {hours} год {minutes} хв",
+      closingSoonHours:
+        "робочий день закінчується через {hours} год",
+      closingSoonMinutes:
+        "робочий день закінчується через {minutes} хв",
+      closingSoonExtra:
+        "Ви можете надіслати заявку зараз. Якщо буде потрібна ручна перевірка, ми опрацюємо її до закриття або наступного робочого дня.",
+
+      closedBeforeOpeningToday:
+        "ми відкриємося сьогодні о {time} за вашим місцевим часом",
+      closedUntilTomorrow:
+        "ми відкриємося завтра о {time} за вашим місцевим часом",
+      closedUntilMonday:
+        "ми відкриємося в понеділок о {time} за вашим місцевим часом",
+      closedExtra:
+        "Ви можете надіслати заявку зараз — ми опрацюємо її в робочий час.",
+
+      timezoneNote:
+        "Час показано відповідно до часового поясу вашого пристрою: {timezone}.",
     },
   },
 
@@ -2905,6 +3302,33 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
           href: "https://www.cab.lt/",
         },
       ],
+    },
+    businessHours: {
+      openLabel: "פתוח עכשיו",
+      closedLabel: "סגור עכשיו",
+
+      openDetails: "אנחנו עובדים עד {time} לפי הזמן המקומי שלך",
+
+      closingSoonHoursMinutes:
+        "יום העבודה מסתיים בעוד {hours} שעות ו-{minutes} דקות",
+      closingSoonHours:
+        "יום העבודה מסתיים בעוד {hours} שעות",
+      closingSoonMinutes:
+        "יום העבודה מסתיים בעוד {minutes} דקות",
+      closingSoonExtra:
+        "אפשר לשלוח את הבקשה כבר עכשיו. אם תידרש בדיקה ידנית, נטפל בה לפני הסגירה או ביום העבודה הבא.",
+
+      closedBeforeOpeningToday:
+        "נפתח היום בשעה {time} לפי הזמן המקומי שלך",
+      closedUntilTomorrow:
+        "נפתח מחר בשעה {time} לפי הזמן המקומי שלך",
+      closedUntilMonday:
+        "נפתח ביום שני בשעה {time} לפי הזמן המקומי שלך",
+      closedExtra:
+        "אפשר לשלוח את הבקשה כבר עכשיו — נטפל בה במהלך שעות העבודה.",
+
+      timezoneNote:
+        "השעה מוצגת לפי אזור הזמן של המכשיר שלך: {timezone}.",
     },
   },
 
@@ -3086,6 +3510,34 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
         },
       ],
     },
+
+    businessHours: {
+      openLabel: "Hazırda açıqdır",
+      closedLabel: "Hazırda bağlıdır",
+
+      openDetails: "sizin yerli vaxtınızla {time}-dək işləyirik",
+
+      closingSoonHoursMinutes:
+        "iş günü {hours} saat {minutes} dəqiqədən sonra başa çatır",
+      closingSoonHours:
+        "iş günü {hours} saatdan sonra başa çatır",
+      closingSoonMinutes:
+        "iş günü {minutes} dəqiqədən sonra başa çatır",
+      closingSoonExtra:
+        "Müraciətinizi indi göndərə bilərsiniz. Əgər əl ilə yoxlama tələb olunarsa, onu bağlanışdan əvvəl və ya növbəti iş günü emal edəcəyik.",
+
+      closedBeforeOpeningToday:
+        "bu gün sizin yerli vaxtınızla saat {time}-da açılırıq",
+      closedUntilTomorrow:
+        "sabah sizin yerli vaxtınızla saat {time}-da açılırıq",
+      closedUntilMonday:
+        "bazar ertəsi sizin yerli vaxtınızla saat {time}-da açılırıq",
+      closedExtra:
+        "Müraciətinizi indi göndərə bilərsiniz — onu iş saatları ərzində emal edəcəyik.",
+
+      timezoneNote:
+        "Vaxt cihazınızın saat qurşağına uyğun göstərilir: {timezone}.",
+    },
   },
 
   ro: {
@@ -3264,6 +3716,33 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
         },
       ],
     },
+    businessHours: {
+      openLabel: "Deschis acum",
+      closedLabel: "Închis acum",
+
+      openDetails: "lucrăm până la ora {time}, conform orei tale locale",
+
+      closingSoonHoursMinutes:
+        "programul de lucru se încheie peste {hours} h {minutes} min",
+      closingSoonHours:
+        "programul de lucru se încheie peste {hours} h",
+      closingSoonMinutes:
+        "programul de lucru se încheie peste {minutes} min",
+      closingSoonExtra:
+        "Poți trimite cererea acum. Dacă este necesară o verificare manuală, o vom procesa înainte de închidere sau în următoarea zi lucrătoare.",
+
+      closedBeforeOpeningToday:
+        "deschidem astăzi la ora {time}, conform orei tale locale",
+      closedUntilTomorrow:
+        "deschidem mâine la ora {time}, conform orei tale locale",
+      closedUntilMonday:
+        "deschidem luni la ora {time}, conform orei tale locale",
+      closedExtra:
+        "Poți trimite cererea acum — o vom procesa în timpul programului de lucru.",
+
+      timezoneNote:
+        "Ora este afișată conform fusului orar al dispozitivului tău: {timezone}.",
+    },
   },
 
   sr: {
@@ -3417,6 +3896,33 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
           href: "https://www.cab.lt/",
         },
       ],
+    },
+    businessHours: {
+      openLabel: "Trenutno otvoreno",
+      closedLabel: "Trenutno zatvoreno",
+
+      openDetails: "radimo do {time} po vašem lokalnom vremenu",
+
+      closingSoonHoursMinutes:
+        "radno vreme se završava za {hours} h {minutes} min",
+      closingSoonHours:
+        "radno vreme se završava za {hours} h",
+      closingSoonMinutes:
+        "radno vreme se završava za {minutes} min",
+      closingSoonExtra:
+        "Zahtev možete poslati sada. Ako bude potrebna ručna provera, obradićemo ga pre zatvaranja ili narednog radnog dana.",
+
+      closedBeforeOpeningToday:
+        "otvaramo danas u {time} po vašem lokalnom vremenu",
+      closedUntilTomorrow:
+        "otvaramo sutra u {time} po vašem lokalnom vremenu",
+      closedUntilMonday:
+        "otvaramo u ponedeljak u {time} po vašem lokalnom vremenu",
+      closedExtra:
+        "Zahtev možete poslati sada — obradićemo ga tokom radnog vremena.",
+
+      timezoneNote:
+        "Vreme je prikazano prema vremenskoj zoni vašeg uređaja: {timezone}.",
     },
   },
 
@@ -3600,6 +4106,33 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
         },
       ],
     },
+    businessHours: {
+      openLabel: "Hapur tani",
+      closedLabel: "Mbyllur tani",
+
+      openDetails: "punojmë deri në orën {time}, sipas orës suaj lokale",
+
+      closingSoonHoursMinutes:
+        "orari i punës përfundon pas {hours} orësh e {minutes} minutash",
+      closingSoonHours:
+        "orari i punës përfundon pas {hours} orësh",
+      closingSoonMinutes:
+        "orari i punës përfundon pas {minutes} minutash",
+      closingSoonExtra:
+        "Mund ta dërgoni kërkesën tani. Nëse nevojitet verifikim manual, do ta përpunojmë para mbylljes ose ditën tjetër të punës.",
+
+      closedBeforeOpeningToday:
+        "hapemi sot në orën {time}, sipas orës suaj lokale",
+      closedUntilTomorrow:
+        "hapemi nesër në orën {time}, sipas orës suaj lokale",
+      closedUntilMonday:
+        "hapemi të hënën në orën {time}, sipas orës suaj lokale",
+      closedExtra:
+        "Mund ta dërgoni kërkesën tani — do ta përpunojmë gjatë orarit të punës.",
+
+      timezoneNote:
+        "Ora shfaqet sipas zonës kohore të pajisjes suaj: {timezone}.",
+    },
   },
 
   mn: {
@@ -3782,8 +4315,35 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
         },
       ],
     },
-  },
+     businessHours: {
+        openLabel: "Одоо нээлттэй",
+        closedLabel: "Одоо хаалттай",
 
+        openDetails: "таны орон нутгийн цагаар {time} хүртэл ажиллана",
+
+        closingSoonHoursMinutes:
+          "ажлын өдөр {hours} цаг {minutes} минутын дараа дуусна",
+        closingSoonHours:
+          "ажлын өдөр {hours} цагийн дараа дуусна",
+        closingSoonMinutes:
+          "ажлын өдөр {minutes} минутын дараа дуусна",
+        closingSoonExtra:
+          "Та хүсэлтээ одоо илгээж болно. Хэрэв гараар шалгах шаардлагатай бол бид хаахаас өмнө эсвэл дараагийн ажлын өдөр боловсруулна.",
+
+        closedBeforeOpeningToday:
+          "өнөөдөр таны орон нутгийн цагаар {time}-д нээгдэнэ",
+        closedUntilTomorrow:
+          "маргааш таны орон нутгийн цагаар {time}-д нээгдэнэ",
+        closedUntilMonday:
+          "даваа гарагт таны орон нутгийн цагаар {time}-д нээгдэнэ",
+        closedExtra:
+          "Та хүсэлтээ одоо илгээж болно — бид ажлын цагаар боловсруулна.",
+
+        timezoneNote:
+          "Цагийг таны төхөөрөмжийн цагийн бүсийн дагуу харуулж байна: {timezone}.",
+      },
+  },
+ 
 };
 
 // Утилита: если переводы ещё не готовы, берём RU.

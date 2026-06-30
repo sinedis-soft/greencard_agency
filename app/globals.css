@@ -3375,3 +3375,48 @@ footer {
     grid-template-columns: repeat(2, minmax(120px, 1fr));
   }
 }
+
+.businessHoursBanner {
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  display: grid;
+  gap: 6px;
+  margin: 16px 0;
+  padding: 14px 16px;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.businessHoursBannerMain {
+  display: block;
+}
+
+.businessHoursBanner strong {
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.businessHoursBannerText {
+  margin: 0;
+}
+
+.businessHoursBanner small {
+  color: var(--color-muted);
+  display: block;
+  font-size: 12px;
+}
+
+.businessHoursBannerOpen {
+  background: #f2fbf6;
+  border-color: #bfe8cc;
+}
+
+.businessHoursBannerClosed {
+  background: #fff8ed;
+  border-color: #f2d3a0;
+}
+
+.businessHoursBannerClosingSoon {
+  background: #fff8ed;
+  border-color: #f2d3a0;
+}
