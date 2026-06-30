@@ -70,7 +70,7 @@
 
   /* Typography */
   --font-sans:
-    "Noto Sans",
+    var(--font-noto-sans, "Noto Sans"),
     system-ui,
     -apple-system,
     "Segoe UI",
@@ -79,37 +79,37 @@
     sans-serif;
 
   --font-display:
-    "Noto Serif",
-    "Noto Sans",
+    var(--font-noto-serif, "Noto Serif"),
+    var(--font-noto-sans, "Noto Sans"),
     system-ui,
     sans-serif;
 
   --font-georgian:
-    "Noto Sans Georgian",
-    "Noto Sans",
+    var(--font-noto-sans-georgian, "Noto Sans Georgian"),
+    var(--font-noto-sans, "Noto Sans"),
     sans-serif;
 
   --font-armenian:
-    "Noto Sans Armenian",
-    "Noto Sans",
+    var(--font-noto-sans-armenian, "Noto Sans Armenian"),
+    var(--font-noto-sans, "Noto Sans"),
     sans-serif;
 
   --font-arabic:
-    "Noto Naskh Arabic",
-    "Noto Sans Arabic",
+    var(--font-noto-naskh-arabic, "Noto Naskh Arabic"),
+    var(--font-noto-sans-arabic, "Noto Sans Arabic"),
     Tahoma,
     Arial,
     sans-serif;
 
   --font-arabic-ui:
-    "Noto Sans Arabic",
+    var(--font-noto-sans-arabic, "Noto Sans Arabic"),
     Tahoma,
     Arial,
     sans-serif;
 
   --font-hebrew:
-    "Noto Sans Hebrew",
-    "Noto Sans",
+    var(--font-noto-sans-hebrew, "Noto Sans Hebrew"),
+    var(--font-noto-sans, "Noto Sans"),
     Arial,
     sans-serif;
 
@@ -683,6 +683,37 @@ header.site-header {
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.68);
   display: inline-block;
+}
+
+
+/* Mobile first-screen performance: keep LCP text immediately paintable. */
+@media (max-width: 768px) {
+  .hero,
+  .hero *,
+  .route-hero,
+  .route-hero * {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .hero .h1,
+  .hero .lead,
+  .hero .kicker,
+  .hero__cta,
+  .hero .meta,
+  .route-hero__title,
+  .route-hero__lead,
+  .route-hero__eyebrow,
+  .route-hero__actions,
+  .route-hero__signals {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .hero .panel,
+  .route-hero .panel {
+    backdrop-filter: none;
+  }
 }
 
 /* Panel */

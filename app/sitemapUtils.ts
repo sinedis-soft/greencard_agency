@@ -1,5 +1,4 @@
 import {
-  ROUTE_META,
   SITE_URL,
   buildHreflangAlternates,
   localePath,
@@ -8,7 +7,9 @@ import {
   toAbsolute,
   type AppRoute,
 } from "@/app/seo";
+
 import type { MetadataRoute } from "next";
+
 
 const SITEMAP_CONTENT_TYPE = "application/xml; charset=utf-8";
 
@@ -37,10 +38,8 @@ export const SITEMAP_SECTIONS = [
   },
 ] as const;
 
-export const SITEMAP_ALL_ROUTES = [
-  ...SITEMAP_MAIN_ROUTES,
-  ...SITEMAP_ROUTE_ROUTES,
-] as const;
+export type SitemapRoute = (typeof SITEMAP_SECTIONS)[number]["routes"][number];
+
 
 export type SitemapRoute = (typeof SITEMAP_SECTIONS)[number]["routes"][number];
 
@@ -123,18 +122,10 @@ export function buildUrlSitemapXml(routes: readonly SitemapRoute[]): string {
 }
 
 export function buildSitemapIndexXml(): string {
-  const newestLastModified = new Date(
-    Math.max(
-      ...Object.values(ROUTE_META).map((meta) =>
-        new Date(meta.lastModified).getTime(),
-      ),
-    ),
-  ).toISOString();
-
   const sitemaps = SITEMAP_SECTIONS.map(
     (section) =>
-      `  <sitemap>\n    <loc>${escapeXml(new URL(section.path, SITE_URL).toString())}</loc>\n    <lastmod>${newestLastModified}</lastmod>\n  </sitemap>`,
-  ).join("\n\n");
+      `  <sitemap>\n    <loc>${escapeXml(new URL(section.path, SITE_URL).toString())}</loc>\n  </sitemap>`,
+  ).join("\n");
 
   return `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemaps}\n</sitemapindex>\n`;
 }

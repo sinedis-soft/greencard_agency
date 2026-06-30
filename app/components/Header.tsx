@@ -79,7 +79,13 @@ export default function Header({ lang, active }: { lang: Lang; active?: Active }
               {t.topContacts}
             </Link>
 
-            <button className="language-trigger" type="button" onClick={() => setLanguageModalOpen(true)}>
+            <button
+              className="language-trigger"
+              type="button"
+              aria-haspopup="dialog"
+              aria-expanded={isLanguageModalOpen}
+              onClick={() => setLanguageModalOpen(true)}
+            >
               <span aria-hidden="true">🌐</span>
               <span>{LOCALE_META[lang].nativeName}</span>
             </button>
@@ -90,7 +96,13 @@ export default function Header({ lang, active }: { lang: Lang; active?: Active }
       {/* Main header */}
       <header className="site-header">
         <div className="container">
-          <input id={toggleId} className="nav-toggle" type="checkbox" />
+          <input
+            id={toggleId}
+            className="nav-toggle"
+            type="checkbox"
+            aria-label={t.menu}
+            aria-controls={drawerId}
+          />
 
           <div className="header__row">
             <Link className="brand" href={withLang(lang, "/")} aria-label={t.nav.main}>
@@ -102,7 +114,7 @@ export default function Header({ lang, active }: { lang: Lang; active?: Active }
             </Link>
 
             {/* Desktop navigation */}
-            <nav className="nav" aria-label="Main menu">
+            <nav id="site-navigation" className="nav" aria-label="Main menu">
               {navItems.map((item) => (
                 <Link
                   key={item.id}
@@ -157,10 +169,10 @@ export default function Header({ lang, active }: { lang: Lang; active?: Active }
         </div>
       </header>
       {isLanguageModalOpen && (
-        <div className="language-modal" role="dialog" aria-modal="true" aria-label={t.languageDialogTitle}>
+        <div className="language-modal" role="dialog" aria-modal="true" aria-labelledby="language-modal-title">
           <div className="language-modal__card">
             <div className="language-modal__header">
-              <h2>{keepTypography(t.languageDialogTitle)}</h2>
+              <h2 id="language-modal-title">{keepTypography(t.languageDialogTitle)}</h2>
               <button type="button" onClick={() => setLanguageModalOpen(false)}>
                 {t.languageDialogClose}
               </button>
