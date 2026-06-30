@@ -9,6 +9,8 @@ import { keepShortWords } from "@/app/utils/typography";
 import { getBelarusPolandOcDictionary } from "@/app/dictionaries/seo-landings/belarusPolandOc";
 import { getGeorgiaRomaniaOcDictionary } from "@/app/dictionaries/seo-landings/georgiaRomaniaOc";
 import { isRouteLocaleIndexable } from "@/app/seo";
+import { BusinessHoursBanner } from "@/app/components/BusinessHoursBanner";
+
 
 export default function Home({ lang }: { lang: Lang }) {
   const t = getHomeDictionary(lang);
@@ -34,6 +36,8 @@ export default function Home({ lang }: { lang: Lang }) {
   ].filter((card): card is { href: string; title: string; text: string; cta: string } =>
     Boolean(card),
   );
+
+  
 
   return (
     <main id="main">
@@ -126,6 +130,8 @@ export default function Home({ lang }: { lang: Lang }) {
       </section>
 
       <CoverageBlock lang={lang} />
+      
+
 
       <section className="section" id="buy">
         <div className="container">
@@ -133,6 +139,7 @@ export default function Home({ lang }: { lang: Lang }) {
             <div>
               <h2 className="section__title">{keepShortWords(t.form.title)}</h2>
               <p className="section__desc">{t.form.desc}</p>
+              <BusinessHoursBanner dict={t.businessHours} />
             </div>
           </div>
 

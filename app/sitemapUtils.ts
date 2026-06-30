@@ -7,6 +7,10 @@ import {
   toAbsolute,
   type AppRoute,
 } from "@/app/seo";
+
+import type { MetadataRoute } from "next";
+
+
 const SITEMAP_CONTENT_TYPE = "application/xml; charset=utf-8";
 
 const SITEMAP_CACHE_CONTROL =
@@ -33,6 +37,9 @@ export const SITEMAP_SECTIONS = [
     routes: SITEMAP_ROUTE_ROUTES,
   },
 ] as const;
+
+export type SitemapRoute = (typeof SITEMAP_SECTIONS)[number]["routes"][number];
+
 
 export type SitemapRoute = (typeof SITEMAP_SECTIONS)[number]["routes"][number];
 
@@ -79,6 +86,20 @@ function createSitemapEntry(route: SitemapRoute): SitemapEntry[] {
     changeFrequency: routeChangeFrequency(route),
     priority: routePriority(route),
     alternates: buildHreflangAlternates(route),
+  }));
+}
+
+export function buildSitemapMetadata(
+  routes: readonly SitemapRoute[],
+): MetadataRoute.Sitemap {
+  return routes.flatMap(createSitemapEntry).map((entry) => ({
+    url: entry.url,
+    lastModified: entry.lastModified,
+    changeFrequency: entry.changeFrequency,
+    priority: Number(entry.priority),
+    alternates: {
+      languages: entry.alternates,
+    },
   }));
 }
 
