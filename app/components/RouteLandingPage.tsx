@@ -3,10 +3,39 @@ import type { Lang } from "@/app/dictionaries/header";
 import type { BelarusPolandOcDictionary } from "@/app/dictionaries/seo-landings/belarusPolandOc";
 import Calculator from "@/app/components/Calculator";
 import { keepTypography } from "@/app/utils/typography";
+import styles from "./RouteLandingPage.module.css";
 
 type RouteLandingPageProps = {
   lang: Lang;
   dictionary: BelarusPolandOcDictionary;
+};
+
+type RouteEnhancement = {
+  quickFacts: Array<{ label: string; value: string }>;
+  border: {
+    title: string;
+    lead: string;
+    items: Array<{ title: string; text: string }>;
+    note: string;
+  };
+  documents: {
+    title: string;
+    lead: string;
+    items: Array<{ title: string; text: string }>;
+  };
+  scenarios: {
+    title: string;
+    items: Array<{ title: string; text: string }>;
+  };
+  verification: {
+    title: string;
+    text: string;
+    steps: string[];
+  };
+  warning: {
+    title: string;
+    text: string;
+  };
 };
 
 const homeCrumbByLang: Record<Lang, string> = {
@@ -41,10 +70,108 @@ const homeCrumbByLang: Record<Lang, string> = {
   mn: "Нүүр хуудас",
 };
 
+const routeEnhancementsByLang: Partial<Record<Lang, RouteEnhancement>> = {
+  ru: {
+    quickFacts: [
+      { label: "Для каких номеров", value: "Беларуская регистрация" },
+      { label: "Где действует", value: "Польша, ЕЭЗ и Швейцария" },
+      { label: "Формат полиса", value: "PDF на email и в мессенджер" },
+      { label: "Проверка", value: "Через польскую базу UFG" },
+    ],
+    border: {
+      title: "Что важно знать перед границей Беларусь — Польша",
+      lead:
+        "OC graniczne — это обязательное страхование гражданской ответственности перед третьими лицами. Оно не заменяет КАСКО, не покрывает повреждение вашего автомобиля и не решает таможенные или миграционные вопросы.",
+      items: [
+        {
+          title: "Полис нужен до движения по Польше",
+          text:
+            "Если действующей «Зелёной карты» нет, автомобиль с регистрацией вне ЕЭЗ должен иметь местное пограничное страхование ответственности.",
+        },
+        {
+          title: "Проверьте собственника автомобиля",
+          text:
+            "Для белорусских номеров важно заранее проверить, кто указан собственником и будет ли этот человек находиться в автомобиле при пересечении границы.",
+        },
+        {
+          title: "PDF лучше распечатать",
+          text:
+            "Электронный файл обычно достаточен для пересылки клиенту, но на границе и при дорожной проверке удобнее иметь бумажную копию.",
+        },
+      ],
+      note:
+        "Если автомобиль оформлен на юридическое лицо или собственник не едет в машине, лучше заранее уточнить возможность въезда. Это не вопрос страхового тарифа, а риск отказа на границе.",
+    },
+    documents: {
+      title: "Какие данные нужны для оформления",
+      lead:
+        "Чем точнее данные в заявке, тем меньше риск ошибки в полисе и задержки перед поездкой.",
+      items: [
+        {
+          title: "Техпаспорт / свидетельство о регистрации",
+          text:
+            "Нужны данные автомобиля: номер, VIN, марка, модель, год, тип транспортного средства и параметры, влияющие на тариф.",
+        },
+        {
+          title: "Данные страхователя или водителя",
+          text:
+            "ФИО, контактный телефон, email и данные лица, на которое оформляется страхование, если они требуются для выпуска полиса.",
+        },
+        {
+          title: "Дата начала и срок",
+          text:
+            "Укажите день, с которого автомобиль должен быть застрахован. Минимальный практический срок для такого продукта — 30 дней.",
+        },
+        {
+          title: "Контакт для отправки полиса",
+          text:
+            "Готовый документ направляется в PDF. Проверьте email и мессенджер до оплаты, чтобы оператор мог быстро отправить полис.",
+        },
+      ],
+    },
+    scenarios: {
+      title: "Типовые ситуации клиентов",
+      items: [
+        {
+          title: "Едете в Польшу на личном автомобиле",
+          text:
+            "Нужен полис гражданской ответственности на период поездки, если нет действующей «Зелёной карты». Для короткой поездки обычно выбирают минимальный срок.",
+        },
+        {
+          title: "Польша используется как транзит",
+          text:
+            "Полис может понадобиться даже если конечная страна не Польша: автомобиль сначала въезжает на территорию Польши и далее движется по ЕС.",
+        },
+        {
+          title: "Нужно срочно перед выездом",
+          text:
+            "Онлайн-заявка помогает не искать страхового посредника у границы. Но лучше не оставлять оформление на последние минуты: возможны проверки данных и очереди у операторов.",
+        },
+      ],
+    },
+    verification: {
+      title: "Как убедиться, что полис действует",
+      text:
+        "После выпуска полиса сохраните PDF и проверьте дату начала. В польской базе UFG информация может появляться не мгновенно, поэтому отсутствие записи сразу после выпуска не всегда означает ошибку.",
+      steps: [
+        "Сверьте номер автомобиля и VIN в PDF.",
+        "Проверьте дату начала и окончания страхования.",
+        "Сохраните PDF в телефоне и отправьте копию себе на email.",
+        "При необходимости проверьте полис через сервис UFG после начала действия.",
+      ],
+    },
+    warning: {
+      title: "Чего эта страховка не покрывает",
+      text:
+        "OC graniczne покрывает ответственность перед третьими лицами. Оно не является КАСКО, не оплачивает ремонт вашего автомобиля после вашей вины, не покрывает поломку, эвакуацию, штрафы, таможенные расходы и отказ во въезде. Для таких рисков нужны отдельные продукты или организационная подготовка поездки.",
+    },
+  },
+};
+
 export default function RouteLandingPage({ lang, dictionary: t }: RouteLandingPageProps) {
   const topSignals = [t.what.title, t.price.title, t.validity.title];
   const supportSignals = t.who.items.slice(0, 3);
-
+  const enhancement = routeEnhancementsByLang[lang];
 
   return (
     <>
@@ -82,15 +209,28 @@ export default function RouteLandingPage({ lang, dictionary: t }: RouteLandingPa
               </ul>
             </div>
 
-
             <div className="route-hero__calculator">
               <div className="route-hero__calculator-glow" aria-hidden="true" />
               <Calculator lang={lang} />
             </div>
-
           </div>
         </div>
       </section>
+
+      {enhancement ? (
+        <section className={`section ${styles.quickFactsSection}`}>
+          <div className="container">
+            <div className={styles.quickFactsGrid}>
+              {enhancement.quickFacts.map((fact) => (
+                <article className={styles.quickFact} key={fact.label}>
+                  <span>{fact.label}</span>
+                  <strong>{fact.value}</strong>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+      ) : null}
 
       <section className="route-overview section">
         <div className="container route-overview__grid">
@@ -108,6 +248,27 @@ export default function RouteLandingPage({ lang, dictionary: t }: RouteLandingPa
           </article>
         </div>
       </section>
+
+      {enhancement ? (
+        <section className={`section ${styles.borderSection}`}>
+          <div className={`container ${styles.borderGrid}`}>
+            <article className={styles.borderLeadCard}>
+              <p className={styles.eyebrow}>Перед поездкой</p>
+              <h2>{keepTypography(enhancement.border.title)}</h2>
+              <p>{enhancement.border.lead}</p>
+              <div className={styles.warningBox}>{enhancement.border.note}</div>
+            </article>
+            <div className={styles.borderCards}>
+              {enhancement.border.items.map((item) => (
+                <article className={styles.borderCard} key={item.title}>
+                  <h3>{item.title}</h3>
+                  <p>{item.text}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+      ) : null}
 
       <section className="route-steps section">
         <div className="container">
@@ -128,6 +289,27 @@ export default function RouteLandingPage({ lang, dictionary: t }: RouteLandingPa
         </div>
       </section>
 
+      {enhancement ? (
+        <section className={`section ${styles.documentsSection}`}>
+          <div className="container">
+            <div className={styles.sectionHeader}>
+              <p className={styles.eyebrow}>Данные для выпуска</p>
+              <h2>{keepTypography(enhancement.documents.title)}</h2>
+              <p>{enhancement.documents.lead}</p>
+            </div>
+            <div className={styles.documentsGrid}>
+              {enhancement.documents.items.map((item, index) => (
+                <article className={styles.documentCard} key={item.title}>
+                  <span>{String(index + 1).padStart(2, "0")}</span>
+                  <h3>{item.title}</h3>
+                  <p>{item.text}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+      ) : null}
+
       <section className="route-details section">
         <div className="container route-details__grid">
           <article className="route-card route-card--detail">
@@ -140,6 +322,56 @@ export default function RouteLandingPage({ lang, dictionary: t }: RouteLandingPa
           </article>
         </div>
       </section>
+
+      {enhancement ? (
+        <section className={`section ${styles.scenariosSection}`}>
+          <div className="container">
+            <div className={styles.sectionHeaderCompact}>
+              <p className={styles.eyebrow}>Практика</p>
+              <h2>{keepTypography(enhancement.scenarios.title)}</h2>
+            </div>
+            <div className={styles.scenariosGrid}>
+              {enhancement.scenarios.items.map((item) => (
+                <article className={styles.scenarioCard} key={item.title}>
+                  <h3>{item.title}</h3>
+                  <p>{item.text}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+      ) : null}
+
+      {enhancement ? (
+        <section className={`section ${styles.verificationSection}`}>
+          <div className={`container ${styles.verificationGrid}`}>
+            <article className={styles.verificationCard}>
+              <p className={styles.eyebrow}>После выпуска</p>
+              <h2>{keepTypography(enhancement.verification.title)}</h2>
+              <p>{enhancement.verification.text}</p>
+            </article>
+            <ol className={styles.verificationSteps}>
+              {enhancement.verification.steps.map((step, index) => (
+                <li key={step}>
+                  <span>{String(index + 1).padStart(2, "0")}</span>
+                  <p>{step}</p>
+                </li>
+              ))}
+            </ol>
+          </div>
+        </section>
+      ) : null}
+
+      {enhancement ? (
+        <section className={`section ${styles.warningSection}`}>
+          <div className="container">
+            <article className={styles.coverageWarning}>
+              <h2>{keepTypography(enhancement.warning.title)}</h2>
+              <p>{enhancement.warning.text}</p>
+            </article>
+          </div>
+        </section>
+      ) : null}
 
       <section className="route-cta section">
         <div className="container">
