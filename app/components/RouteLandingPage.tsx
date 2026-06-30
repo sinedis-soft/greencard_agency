@@ -73,7 +73,7 @@ const homeCrumbByLang: Record<Lang, string> = {
 const routeEnhancementsByLang: Partial<Record<Lang, RouteEnhancement>> = {
   ru: {
     quickFacts: [
-      { label: "Для каких номеров", value: "Беларуская регистрация" },
+      { label: "Для каких номеров", value: "Белорусская регистрация" },
       { label: "Где действует", value: "Польша, ЕЭЗ и Швейцария" },
       { label: "Формат полиса", value: "PDF на email и в мессенджер" },
       { label: "Проверка", value: "Через польскую базу UFG" },
