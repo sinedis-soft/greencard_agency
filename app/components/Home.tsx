@@ -16,6 +16,7 @@ export default function Home({ lang }: { lang: Lang }) {
   const t = getHomeDictionary(lang);
   const landing = getBelarusPolandOcDictionary(lang);
   const georgiaRomania = getGeorgiaRomaniaOcDictionary(lang);
+  const guide = t.insuranceGuide;
   const seoCards = [
     isRouteLocaleIndexable(lang, "/route/belarus/poland")
       ? {
@@ -52,6 +53,8 @@ export default function Home({ lang }: { lang: Lang }) {
               <h1 className="h1">{keepShortWords(t.hero.title)}</h1>
               <p className="lead">{keepShortWords(t.hero.lead)}</p>
 
+              {guide ? <p className="hero__answer">{guide.directAnswer}</p> : null}
+
               <div className="hero__cta">
                 <a className="btn btn--ghost" href="#calc">
                   {t.hero.ctaCalc}
@@ -77,6 +80,52 @@ export default function Home({ lang }: { lang: Lang }) {
         </div>
       </section>
 
+      {guide ? (
+        <section className="section section--insurance-guide" aria-labelledby="insurance-guide-title">
+          <div className="container">
+            <div className="section__hd">
+              <div>
+                <h2 className="section__title" id="insurance-guide-title">
+                  {keepShortWords(guide.fit.title)}
+                </h2>
+                <p className="section__desc">{guide.directAnswer}</p>
+              </div>
+            </div>
+
+            <div className="insurance-guide-grid">
+              <article className="card insurance-guide-card">
+                <div className="card__body">
+                  <h3 className="card__title">{keepShortWords(guide.fit.title)}</h3>
+                  <ul className="insurance-list">
+                    {guide.fit.items.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                  <div className="card__cta">
+                    {guide.fit.links.map((link) => (
+                      <a className="btn btn--ghost" href={`/${lang}${link.href}`} key={link.href}>
+                        {link.label}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              </article>
+
+              <article className="card insurance-guide-card insurance-guide-card--warning">
+                <div className="card__body">
+                  <h3 className="card__title">{keepShortWords(guide.notFit.title)}</h3>
+                  <ul className="insurance-list">
+                    {guide.notFit.items.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      ) : null}
+
       <section className="section section--process">
         <div className="container">
           <div className="section__hd">
@@ -101,6 +150,79 @@ export default function Home({ lang }: { lang: Lang }) {
       </section>
 
       <InfoCompare lang={lang} />
+
+      {guide ? (
+        <section className="section section--insurance-details">
+          <div className="container">
+            <div className="insurance-detail-stack">
+              <article className="insurance-detail-panel">
+                <div>
+                  <h2 className="section__title">{keepShortWords(guide.notCovered.title)}</h2>
+                  <p className="section__desc">{guide.notCovered.text}</p>
+                </div>
+                <a className="btn btn--soft" href={guide.notCovered.link.href}>
+                  {guide.notCovered.link.label}
+                </a>
+              </article>
+
+              <div className="insurance-detail-grid">
+                <article className="card insurance-guide-card">
+                  <div className="card__body">
+                    <h2 className="card__title">{keepShortWords(guide.documents.title)}</h2>
+                    <p className="card__text">{guide.documents.text}</p>
+                    <ul className="insurance-list">
+                      {guide.documents.items.map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
+                    </ul>
+                    <div className="card__cta">
+                      <a className="btn btn--ghost" href={`/${lang}${guide.documents.link.href}`}>
+                        {guide.documents.link.label}
+                      </a>
+                    </div>
+                  </div>
+                </article>
+
+                <article className="card insurance-guide-card">
+                  <div className="card__body">
+                    <h2 className="card__title">{keepShortWords(guide.price.title)}</h2>
+                    <p className="card__text">{guide.price.text}</p>
+                    <ul className="insurance-list">
+                      {guide.price.items.map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </article>
+
+                <article className="card insurance-guide-card">
+                  <div className="card__body">
+                    <h2 className="card__title">{keepShortWords(guide.timing.title)}</h2>
+                    <p className="card__text">{guide.timing.text}</p>
+                  </div>
+                </article>
+
+                <article className="card insurance-guide-card">
+                  <div className="card__body">
+                    <h2 className="card__title">{keepShortWords(guide.checkPolicy.title)}</h2>
+                    <p className="card__text">{guide.checkPolicy.text}</p>
+                    <ul className="insurance-list insurance-list--compact">
+                      {guide.checkPolicy.items.map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
+                    </ul>
+                    <div className="card__cta">
+                      <a className="btn btn--ghost" href={guide.checkPolicy.link.href}>
+                        {guide.checkPolicy.link.label}
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+      ) : null}
 
       <section className="section section--why">
         <div className="container">
@@ -130,6 +252,24 @@ export default function Home({ lang }: { lang: Lang }) {
       </section>
 
       <CoverageBlock lang={lang} />
+
+      {guide ? (
+        <section className="section section--service-role">
+          <div className="container">
+            <article className="insurance-detail-panel insurance-detail-panel--service">
+              <div>
+                <h2 className="section__title">{keepShortWords(guide.service.title)}</h2>
+                <p className="section__desc">{guide.service.text}</p>
+              </div>
+              <ul className="insurance-list insurance-list--columns">
+                {guide.service.items.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </article>
+          </div>
+        </section>
+      ) : null}
       
 
 

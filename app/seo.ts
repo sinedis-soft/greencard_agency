@@ -27,6 +27,10 @@ export const ROUTE_META = {
     disabledLocales: ["pl"],
   },
   "/route/georgia/romania": { lastModified: "2026-05-14" },
+  "/route/uae": {
+    lastModified: "2026-07-02",
+    disabledLocales: ["be", "uk", "kk", "uz", "az", "tr", "ka", "hy", "fa", "ckb", "kmr", "ar", "he", "ro", "sr", "sq", "mn"],
+  },
 } as const satisfies Record<string, RouteMeta>;
 
 export const ROUTES = Object.keys(ROUTE_META) as Array<keyof typeof ROUTE_META>;

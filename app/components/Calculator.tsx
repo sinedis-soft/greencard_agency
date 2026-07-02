@@ -33,6 +33,16 @@ export default function Calculator({ lang }: { lang: Lang }) {
     return formatCurrency(price, "PLN", "pl-PL");
   }, [vehicle, term]);
 
+  function applyEstimateToForm() {
+    const detail = { vehicle, term };
+
+    if (typeof window !== "undefined") {
+      window.sessionStorage.setItem("calculatorSelection", JSON.stringify(detail));
+      window.dispatchEvent(new CustomEvent("calculatorSelectionChanged", { detail }));
+      document.getElementById("buy")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }
+
   return (
     <aside
       className="panel"
@@ -134,6 +144,10 @@ export default function Calculator({ lang }: { lang: Lang }) {
           <div className="help">
             {t.note}
           </div>
+
+          <button type="button" className="btn btn--primary btn--full" onClick={applyEstimateToForm}>
+            {t.button}
+          </button>
         </div>
       </div>
     </aside>
