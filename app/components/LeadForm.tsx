@@ -1,7 +1,7 @@
 // app/components/LeadForm.tsx
 "use client";
 
-import React, { useRef, useState, useSyncExternalStore } from "react";
+import React, { useEffect, useRef, useState, useSyncExternalStore } from "react";
 import Link from "next/link";
 import type { Lang } from "@/app/dictionaries/header";
 import { getLeadFormDictionary } from "@/app/dictionaries/leadForm";
@@ -164,6 +164,43 @@ export default function LeadForm(props: { lang: Lang }) {
   ];
   const maxSingleFileBytes = 10 * 1024 * 1024;
   const maxTotalFilesBytes = 20 * 1024 * 1024;
+
+  useEffect(() => {
+    function applyCalculatorSelection(selection: { vehicle?: unknown; term?: unknown }) {
+      const vehicleType = typeof selection.vehicle === "string" ? selection.vehicle : "";
+      const period = typeof selection.term === "string" ? selection.term : "";
+
+      if (!vehicleType && !period) return;
+
+      setVehiclePrices((prev) => ({
+        ...prev,
+        0: {
+          vehicleType,
+          period,
+        },
+      }));
+    }
+
+    try {
+      const savedSelection = window.sessionStorage.getItem("calculatorSelection");
+      if (savedSelection) {
+        applyCalculatorSelection(JSON.parse(savedSelection) as { vehicle?: unknown; term?: unknown });
+      }
+    } catch {
+      // ignore
+    }
+
+    function onCalculatorSelectionChanged(event: Event) {
+      const detail = (event as CustomEvent<{ vehicle?: unknown; term?: unknown }>).detail;
+      applyCalculatorSelection(detail || {});
+    }
+
+    window.addEventListener("calculatorSelectionChanged", onCalculatorSelectionChanged);
+
+    return () => {
+      window.removeEventListener("calculatorSelectionChanged", onCalculatorSelectionChanged);
+    };
+  }, []);
 
   function addVehicle() {
     setVehicleBlocks(function (prev) {
@@ -675,7 +712,7 @@ export default function LeadForm(props: { lang: Lang }) {
                           id={fieldIds.period}
                           name={"vehicles[" + idx + "][period]"}
                           className="input"
-                          defaultValue=""
+                          value={vehiclePrices[id]?.period || ""}
                           required
                           onChange={(e) => {
                             const value = e.currentTarget.value;
@@ -740,7 +777,7 @@ export default function LeadForm(props: { lang: Lang }) {
                           id={fieldIds.vehicleType}
                           name={"vehicles[" + idx + "][vehicleType]"}
                           className="input"
-                          defaultValue=""
+                          value={vehiclePrices[id]?.vehicleType || ""}
                           required
                           onChange={(e) => {
                             const value = e.currentTarget.value;

@@ -25,6 +25,7 @@ const SITEMAP_MAIN_ROUTES = [
 const SITEMAP_ROUTE_ROUTES = [
   "/route/belarus/poland",
   "/route/georgia/romania",
+  "/route/uae",
 ] as const satisfies readonly AppRoute[];
 
 export const SITEMAP_SECTIONS = [
@@ -38,10 +39,12 @@ export const SITEMAP_SECTIONS = [
   },
 ] as const;
 
-export type SitemapRoute = (typeof SITEMAP_SECTIONS)[number]["routes"][number];
+export const SITEMAP_ALL_ROUTES = [
+  ...SITEMAP_MAIN_ROUTES,
+  ...SITEMAP_ROUTE_ROUTES,
+] as const satisfies readonly AppRoute[];
 
-
-export type SitemapRoute = (typeof SITEMAP_SECTIONS)[number]["routes"][number];
+export type SitemapRoute = (typeof SITEMAP_ALL_ROUTES)[number];
 
 
 type SitemapEntry = {

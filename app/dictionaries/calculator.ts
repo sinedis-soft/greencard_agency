@@ -51,7 +51,7 @@ export const calculatorDictionary: Record<Lang, CalculatorDictionary> = {
       },
     },
 
-    button: "Рассчитать",
+    button: "Оформить по расчёту",
     resultTitle: "Ориентировочная стоимость",
     resultHint: " ",
     note: " ",
@@ -86,7 +86,7 @@ export const calculatorDictionary: Record<Lang, CalculatorDictionary> = {
       },
     },
 
-    button: "Oblicz",
+    button: "Przejdź do wniosku",
     resultTitle: "Orientacyjna składka",
     resultHint: " ",
     note: " ",
@@ -123,7 +123,7 @@ export const calculatorDictionary: Record<Lang, CalculatorDictionary> = {
       },
     },
 
-    button: "Calculate",
+    button: "Apply with this estimate",
     resultTitle: "Estimated Premium",
     resultHint: " ",
     note: " ",
@@ -157,7 +157,7 @@ export const calculatorDictionary: Record<Lang, CalculatorDictionary> = {
       },
     },
 
-    button: "Разлічыць",
+    button: "Аформіць па разліку",
     resultTitle: "Арыенціровачны кошт",
     resultHint: " ",
     note: " ",
@@ -191,7 +191,7 @@ export const calculatorDictionary: Record<Lang, CalculatorDictionary> = {
       },
     },
 
-    button: "Hisoblash",
+    button: "Hisob bo‘yicha ariza",
     resultTitle: "Taxminiy narx",
     resultHint: " ",
     note: " ",
@@ -226,7 +226,7 @@ export const calculatorDictionary: Record<Lang, CalculatorDictionary> = {
       },
     },
 
-    button: "გამოთვლა",
+    button: "განაცხადზე გადასვლა",
     resultTitle: "საორიენტაციო ღირებულება",
     resultHint: " ",
     note: " ",
@@ -261,7 +261,7 @@ export const calculatorDictionary: Record<Lang, CalculatorDictionary> = {
       },
     },
 
-    button: "Есептеу",
+    button: "Есеп бойынша өтінім",
     resultTitle: "Болжамды құны",
     resultHint: " ",
     note: " ",
@@ -296,7 +296,7 @@ export const calculatorDictionary: Record<Lang, CalculatorDictionary> = {
       },
     },
 
-    button: "Hesapla",
+    button: "Bu hesapla başvur",
     resultTitle: "Tahmini Maliyet",
     resultHint: " ",
     note: " ",
@@ -331,7 +331,7 @@ export const calculatorDictionary: Record<Lang, CalculatorDictionary> = {
       },
     },
 
-    button: "محاسبه",
+    button: "درخواست با این برآورد",
     resultTitle: "هزینه تقریبی",
     resultHint: " ",
     note: " ",
@@ -366,7 +366,7 @@ export const calculatorDictionary: Record<Lang, CalculatorDictionary> = {
       },
     },
 
-    button: "Հաշվել",
+    button: "Դիմել այս հաշվարկով",
     resultTitle: "Մոտավոր արժեք",
     resultHint: " ",
     note: " ",
@@ -400,7 +400,7 @@ export const calculatorDictionary: Record<Lang, CalculatorDictionary> = {
       },
     },
 
-    button: "هەژمارکردنی نرخ",
+    button: "داواکردن بەم خەملاندنە",
     resultTitle: "نرخی خەمڵێندراو",
     resultHint: " ",
     note: " ",
@@ -434,7 +434,7 @@ export const calculatorDictionary: Record<Lang, CalculatorDictionary> = {
       },
     },
 
-    button: "Hesab bike",
+    button: "Bi vê hesabê serî lê bide",
     resultTitle: "Bihayê texmînî",
     resultHint: " ",
     note: " ",
@@ -468,7 +468,7 @@ export const calculatorDictionary: Record<Lang, CalculatorDictionary> = {
       },
     },
 
-    button: "احسب",
+    button: "قدّم بهذا التقدير",
     resultTitle: "التكلفة التقديرية",
     resultHint: " ",
     note: " ",
@@ -502,7 +502,7 @@ export const calculatorDictionary: Record<Lang, CalculatorDictionary> = {
       },
     },
 
-    button: "חשב עלות",
+    button: "הגש לפי האומדן",
     resultTitle: "עלות משוערת",
     resultHint: " ",
     note: " ",
@@ -536,7 +536,7 @@ export const calculatorDictionary: Record<Lang, CalculatorDictionary> = {
       },
     },
 
-    button: "Розрахувати",
+    button: "Оформити за розрахунком",
     resultTitle: "Орієнтовна вартість",
     resultHint: " ",
     note: " ",
@@ -570,7 +570,7 @@ export const calculatorDictionary: Record<Lang, CalculatorDictionary> = {
       },
     },
 
-    button: "Hesabla",
+    button: "Bu hesabla müraciət et",
     resultTitle: "Təxmini qiymət",
     resultHint: " ",
     note: " ",
@@ -604,7 +604,7 @@ export const calculatorDictionary: Record<Lang, CalculatorDictionary> = {
       },
     },
 
-    button: "Calculează",
+    button: "Aplică pe baza estimării",
     resultTitle: "Cost estimativ",
     resultHint: " ",
     note: " ",
@@ -638,7 +638,7 @@ export const calculatorDictionary: Record<Lang, CalculatorDictionary> = {
       },
     },
 
-    button: "Izračunaj",
+    button: "Pošalji zahtev sa procenom",
     resultTitle: "Okvirna cena",
     resultHint: " ",
     note: " ",
@@ -672,7 +672,7 @@ export const calculatorDictionary: Record<Lang, CalculatorDictionary> = {
       },
     },
 
-    button: "Llogarit",
+    button: "Apliko me këtë vlerësim",
     resultTitle: "Kosto e përafërt",
     resultHint: " ",
     note: " ",
@@ -706,7 +706,7 @@ export const calculatorDictionary: Record<Lang, CalculatorDictionary> = {
       },
     },
 
-    button: "Тооцоолох",
+    button: "Энэ тооцоогоор хүсэлт илгээх",
     resultTitle: "Урьдчилсан үнэ",
     resultHint: " ",
     note: " ",

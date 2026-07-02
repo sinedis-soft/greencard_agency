@@ -1,7 +1,8 @@
 import Home from "@/app/components/Home";
 import { LOCALES, Lang } from "@/app/dictionaries/header";
-import { pageAlternates, pageSocialMetadata } from "@/app/seo";
+import { pageAlternates, pageSocialMetadata, toAbsolute } from "@/app/seo";
 import { getSeoDictionary } from "@/app/dictionaries/seo";
+import { getHomeDictionary } from "@/app/dictionaries/home";
 function normalizeLang(value: string): Lang {
   return (LOCALES as readonly string[]).includes(value) ? (value as Lang) : "en";
 }
@@ -30,5 +31,47 @@ export default async function Page({
     ? (rawLang as Lang)
     : "en";
 
-  return <Home lang={lang} />;
+  const home = getHomeDictionary(lang);
+  const serviceName = home.hero.title;
+  const serviceDescription = home.insuranceGuide?.directAnswer || home.hero.lead;
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": toAbsolute(`/${lang}#oc-graniczne-service`),
+      name: serviceName,
+      serviceType: "OC graniczne border insurance arrangement",
+      description: serviceDescription,
+      provider: {
+        "@id": toAbsolute(`/${lang}#organization`),
+      },
+      areaServed: ["PL", "EEA", "CH", "NO", "IS"],
+      url: toAbsolute(`/${lang}`),
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": toAbsolute(`/${lang}#faq`),
+      mainEntity: home.faq.items.map((item) => ({
+        "@type": "Question",
+        name: item.q,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: item.a,
+        },
+      })),
+    },
+  ];
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
+      <Home lang={lang} />
+    </>
+  );
 }

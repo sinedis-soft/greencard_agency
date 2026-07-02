@@ -25,9 +25,9 @@ type SeoDictionary = SeoDictionaryBase & { georgiaRomaniaOc: RouteSeo; belarusPo
 export const seoDictionary: Record<Lang, SeoDictionaryBase> = {
   ru: {
     home: {
-      title: "Пограничная страховка (OC graniczne) онлайн | SINEDIS.",
+      title: "OC graniczne онлайн для авто вне ЕЭЗ | Пограничная страховка",
       description:
-        "Оформите пограничную страховку для въезда в Польшу и ЕС: расчёт, заявка, оплата и PDF-полис.",
+        "OC graniczne для авто вне ЕЭЗ: страны покрытия, сроки, документы, стоимость и PDF-полис после проверки и оплаты.",
     },
     about: {
       title: "О нас — страховое агентство с лицензией",
