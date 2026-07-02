@@ -17,6 +17,13 @@ import {
   formatCurrency,
 } from "@/app/lib/insurancePrices";
 
+const CALCULATOR_SELECTION_KEY = "greenCardAgencyCalculatorSelection";
+
+type CalculatorSelection = {
+  vehicle: Vehicle;
+  term: Term;
+};
+
 export default function Calculator({ lang }: { lang: Lang }) {
   const t = getCalculatorDictionary(lang);
 
@@ -32,6 +39,39 @@ export default function Calculator({ lang }: { lang: Lang }) {
 
     return formatCurrency(price, "PLN", "pl-PL");
   }, [vehicle, term]);
+
+  function handleBuyPolicy() {
+    const selection: CalculatorSelection = {
+      vehicle,
+      term,
+    };
+
+    try {
+      window.sessionStorage.setItem(
+        CALCULATOR_SELECTION_KEY,
+        JSON.stringify(selection),
+      );
+
+      window.dispatchEvent(
+        new CustomEvent("calculator-selection-updated", {
+          detail: selection,
+        }),
+      );
+    } catch {
+      // ignore storage errors
+    }
+
+    const buySection = document.getElementById("buy");
+
+    if (buySection) {
+      buySection.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    } else {
+      window.location.hash = "buy";
+    }
+  }
 
   return (
     <aside
@@ -70,9 +110,7 @@ export default function Calculator({ lang }: { lang: Lang }) {
                 className="input"
                 value={vehicle}
                 onChange={(e) =>
-                  setVehicle(
-                    e.target.value as Vehicle
-                  )
+                  setVehicle(e.target.value as Vehicle)
                 }
               >
                 {t.fields.vehicle.options.map((o) => (
@@ -97,9 +135,7 @@ export default function Calculator({ lang }: { lang: Lang }) {
                 className="input"
                 value={term}
                 onChange={(e) =>
-                  setTerm(
-                    e.target.value as Term
-                  )
+                  setTerm(e.target.value as Term)
                 }
               >
                 {t.fields.term.options.map((o) => (
@@ -130,6 +166,14 @@ export default function Calculator({ lang }: { lang: Lang }) {
               {t.resultHint}
             </div>
           </div>
+
+          <button
+            type="button"
+            className="btn btn--primary"
+            onClick={handleBuyPolicy}
+          >
+            {t.buyButton}
+          </button>
 
           <div className="help">
             {t.note}

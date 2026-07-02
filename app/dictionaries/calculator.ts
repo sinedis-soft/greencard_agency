@@ -19,6 +19,7 @@ export interface CalculatorDictionary {
   resultTitle: string;
   resultHint: string;
   note: string;
+  buyButton: string;
 }
 
 export const calculatorDictionary: Record<Lang, CalculatorDictionary> = {
@@ -52,6 +53,7 @@ export const calculatorDictionary: Record<Lang, CalculatorDictionary> = {
     },
 
     button: "Рассчитать",
+    buyButton: "Купить полис",
     resultTitle: "Ориентировочная стоимость",
     resultHint: " ",
     note: " ",
@@ -87,6 +89,7 @@ export const calculatorDictionary: Record<Lang, CalculatorDictionary> = {
     },
 
     button: "Oblicz",
+    buyButton: "Kup polisę",
     resultTitle: "Orientacyjna składka",
     resultHint: " ",
     note: " ",
@@ -124,6 +127,7 @@ export const calculatorDictionary: Record<Lang, CalculatorDictionary> = {
     },
 
     button: "Calculate",
+    buyButton: "Buy policy",
     resultTitle: "Estimated Premium",
     resultHint: " ",
     note: " ",

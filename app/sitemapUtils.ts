@@ -40,10 +40,6 @@ export const SITEMAP_SECTIONS = [
 
 export type SitemapRoute = (typeof SITEMAP_SECTIONS)[number]["routes"][number];
 
-
-export type SitemapRoute = (typeof SITEMAP_SECTIONS)[number]["routes"][number];
-
-
 type SitemapEntry = {
   url: string;
   lastModified: Date;

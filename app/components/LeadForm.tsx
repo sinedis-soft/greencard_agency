@@ -1,7 +1,7 @@
 // app/components/LeadForm.tsx
 "use client";
 
-import React, { useRef, useState, useSyncExternalStore } from "react";
+import React, { useEffect, useRef, useState, useSyncExternalStore } from "react";
 import Link from "next/link";
 import type { Lang } from "@/app/dictionaries/header";
 import { getLeadFormDictionary } from "@/app/dictionaries/leadForm";
@@ -19,6 +19,26 @@ type VehiclePriceState = Record<
     period: string;
   }
 >;
+const CALCULATOR_SELECTION_KEY = "greenCardAgencyCalculatorSelection";
+
+type CalculatorSelection = {
+  vehicle: string;
+  term: string;
+};
+
+type CalculatorVehicle = "car" | "van" | "truck" | "trailer" | "special";
+
+function mapCalculatorVehicleToLeadFormVehicle(value: string): string {
+  const map: Record<CalculatorVehicle, string> = {
+    car: "car",
+    van: "van",
+    truck: "truck",
+    trailer: "trailer",
+    special: "special",
+  };
+
+  return map[value as CalculatorVehicle] || "";
+}
 
 function formatLatinName(raw: string): string {
   return raw.replace(/[^A-Za-z\s'-]/g, "");
@@ -153,6 +173,53 @@ export default function LeadForm(props: { lang: Lang }) {
   const [vehiclePrices, setVehiclePrices] = useState<VehiclePriceState>({});
 
   const formRef = useRef<HTMLFormElement | null>(null);
+
+  useEffect(() => {
+    function readSelectionFromStorage() {
+      try {
+        const raw = window.sessionStorage.getItem(CALCULATOR_SELECTION_KEY);
+        if (!raw) return;
+
+        const parsed = JSON.parse(raw) as CalculatorSelection;
+        applyCalculatorSelection(parsed);
+      } catch {
+        // ignore
+      }
+    }
+
+    function onSelectionUpdated(event: Event) {
+      const customEvent = event as CustomEvent<CalculatorSelection>;
+      applyCalculatorSelection(customEvent.detail);
+    }
+
+    readSelectionFromStorage();
+
+    window.addEventListener(
+      "calculator-selection-updated",
+      onSelectionUpdated,
+    );
+
+    return () => {
+      window.removeEventListener(
+        "calculator-selection-updated",
+        onSelectionUpdated,
+      );
+    };
+  }, []);
+
+  function applyCalculatorSelection(selection: CalculatorSelection) {
+    if (!selection.vehicle || !selection.term) return;
+
+    setVehiclePrices((prev) => ({
+      ...prev,
+      0: {
+        vehicleType: selection.vehicle,
+        period: selection.term,
+      },
+    }));
+
+    setStep(2);
+  }
 
   const forbiddenTypes = [
     "application/zip",
@@ -675,7 +742,7 @@ export default function LeadForm(props: { lang: Lang }) {
                           id={fieldIds.period}
                           name={"vehicles[" + idx + "][period]"}
                           className="input"
-                          defaultValue=""
+                          value={vehiclePrices[id]?.period || ""}
                           required
                           onChange={(e) => {
                             const value = e.currentTarget.value;
@@ -740,7 +807,7 @@ export default function LeadForm(props: { lang: Lang }) {
                           id={fieldIds.vehicleType}
                           name={"vehicles[" + idx + "][vehicleType]"}
                           className="input"
-                          defaultValue=""
+                          value={vehiclePrices[id]?.vehicleType || ""}
                           required
                           onChange={(e) => {
                             const value = e.currentTarget.value;
@@ -848,17 +915,6 @@ export default function LeadForm(props: { lang: Lang }) {
                           className="input"
                           defaultValue=""
                           required
-                          onChange={(e) => {
-                            const value = e.currentTarget.value;
-
-                            setVehiclePrices((prev) => ({
-                              ...prev,
-                              [id]: {
-                                vehicleType: value,
-                                period: prev[id]?.period || "",
-                              },
-                            }));
-                          }}
                         >
                           <option value="">{t.notSelected}</option>
                           {t.policy.options.engineTypes.map(function (o) {
@@ -938,17 +994,6 @@ export default function LeadForm(props: { lang: Lang }) {
                           className="input"
                           defaultValue=""
                           required
-                          onChange={(e) => {
-                            const value = e.currentTarget.value;
-
-                            setVehiclePrices((prev) => ({
-                              ...prev,
-                              [id]: {
-                                vehicleType: value,
-                                period: prev[id]?.period || "",
-                              },
-                            }));
-                          }}
                         >
                           <option value="">{t.notSelected}</option>
                           {t.policy.options.powerUnits.map(function (o) {
