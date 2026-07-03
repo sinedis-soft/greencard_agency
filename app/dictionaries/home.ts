@@ -365,8 +365,8 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
   },
   pl: {
     hero: {
-      kicker: "Zakup online",
-      title: "OC graniczne online dla pojazdu zarejestrowanego poza EOG",
+      kicker: "Zakup ",
+      title: "OC graniczne dla pojazdu zarejestrowanego poza EOG",
       lead:
         "Pomagamy zdalnie zawrzeć umowę ubezpieczenia granicznego na wjazd do Polski, UE oraz innych krajów wskazanych w polisie.",
       meta: ["Dla pojazdów spoza EOG", "Polisa PDF po weryfikacji", "Ochrona tylko w krajach z listy"],

@@ -68,7 +68,7 @@ export const seoDictionary: Record<Lang, SeoDictionaryBase> = {
 
   pl: {
     home: {
-      title: "Ubezpieczenie graniczne (OC graniczne) online | SINEDIS.",
+      title: "Ubezpieczenie graniczne (OC graniczne) | SINEDIS.",
       description:
         "Zawrzyj ubezpieczenie graniczne na wjazd do Polski i UE: kalkulacja, wniosek, płatność i polisa PDF.",
     },

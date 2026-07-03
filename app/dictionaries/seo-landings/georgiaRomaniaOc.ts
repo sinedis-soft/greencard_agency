@@ -75,7 +75,7 @@ const ru: BelarusPolandOcDictionary = {
 
 const pl: BelarusPolandOcDictionary = {
   seo: {
-    title: "Ubezpieczenie online dla samochodu z Gruzji do Rumunii",
+    title: "Ubezpieczenie dla samochodu z Gruzji do Rumunii",
     description:
       "Ubezpieczenie graniczne na podróż do Rumunii samochodem na gruzińskich numerach rejestracyjnych. Wniosek online, polisa PDF oraz wsparcie w komunikatorach.",
   },
@@ -85,7 +85,7 @@ const pl: BelarusPolandOcDictionary = {
     title:
       "Ubezpieczenie samochodu na gruzińskich numerach rejestracyjnych w Rumunii",
     lead:
-      "Zawarcie polisy online na podróż do Rumunii i innych krajów Europy. Przygotowanie dokumentów, kalkulacja kosztów oraz zdalna obsługa wniosku.",
+      "Zawarcie polisy na podróż do Rumunii i innych krajów Europy. Przygotowanie dokumentów, kalkulacja kosztów oraz zdalna obsługa wniosku.",
     cta: "Złóż wniosek",
   },
   what: {
