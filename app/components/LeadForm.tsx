@@ -132,7 +132,7 @@ function maxBirthDateISO(): string {
   return yyyy + "-" + mm + "-" + dd;
 }
 
-export default function LeadForm(props: { lang: Lang }) {
+export default function LeadForm(props: { lang: Lang; showOrderSummary?: boolean }) {
   const t = getLeadFormDictionary(props.lang);
 
   const [step, setStep] = useState<Step>(1);
@@ -374,6 +374,39 @@ export default function LeadForm(props: { lang: Lang }) {
   const maxBirthDate = useSyncExternalStore(() => () => {}, maxBirthDateISO, () => "");
   const statusId = "lead-form-status";
 
+
+  const orderSummaryTexts: Record<Lang, {
+    title: string;
+    selectedTariff: string;
+    term: string;
+    days: string;
+    vehicleType: string;
+    cost: string;
+    inPln: string;
+    notSelected: string;
+  }> = {
+    ru: { title: "Ваш заказ", selectedTariff: "Выбранный тариф", term: "Срок", days: "дней", vehicleType: "Тип ТС", cost: "Стоимость", inPln: "В PLN", notSelected: "Выберите в форме" },
+    en: { title: "Your order", selectedTariff: "Selected tariff", term: "Term", days: "days", vehicleType: "Vehicle type", cost: "Cost", inPln: "In PLN", notSelected: "Select in the form" },
+    pl: { title: "Twoje zamówienie", selectedTariff: "Wybrana taryfa", term: "Okres", days: "dni", vehicleType: "Typ pojazdu", cost: "Koszt", inPln: "W PLN", notSelected: "Wybierz w formularzu" },
+    be: { title: "Ваш заказ", selectedTariff: "Выбраны тарыф", term: "Тэрмін", days: "дзён", vehicleType: "Тып ТС", cost: "Кошт", inPln: "У PLN", notSelected: "Выберыце ў форме" },
+    uz: { title: "Buyurtmangiz", selectedTariff: "Tanlangan tarif", term: "Muddat", days: "kun", vehicleType: "Transport turi", cost: "Narx", inPln: "PLNda", notSelected: "Formada tanlang" },
+    ka: { title: "თქვენი შეკვეთა", selectedTariff: "არჩეული ტარიფი", term: "ვადა", days: "დღე", vehicleType: "ტრანსპორტის ტიპი", cost: "ღირებულება", inPln: "PLN-ში", notSelected: "აირჩიეთ ფორმაში" },
+    kk: { title: "Сіздің тапсырысыңыз", selectedTariff: "Таңдалған тариф", term: "Мерзім", days: "күн", vehicleType: "Көлік түрі", cost: "Құны", inPln: "PLN түрінде", notSelected: "Формада таңдаңыз" },
+    tr: { title: "Siparişiniz", selectedTariff: "Seçilen tarife", term: "Süre", days: "gün", vehicleType: "Araç tipi", cost: "Tutar", inPln: "PLN olarak", notSelected: "Formda seçin" },
+    fa: { title: "سفارش شما", selectedTariff: "تعرفه انتخاب‌شده", term: "مدت", days: "روز", vehicleType: "نوع وسیله نقلیه", cost: "هزینه", inPln: "به PLN", notSelected: "در فرم انتخاب کنید" },
+    hy: { title: "Ձեր պատվերը", selectedTariff: "Ընտրված սակագին", term: "Ժամկետ", days: "օր", vehicleType: "ՏՄ տեսակ", cost: "Արժեք", inPln: "PLN-ով", notSelected: "Ընտրեք ձևում" },
+    ckb: { title: "داواکارییەکەت", selectedTariff: "نرخی هەڵبژێردراو", term: "ماوە", days: "ڕۆژ", vehicleType: "جۆری ئۆتۆمبێل", cost: "تێچوو", inPln: "بە PLN", notSelected: "لە فۆرمەکە هەڵبژێرە" },
+    kmr: { title: "Sipariya we", selectedTariff: "Tarîfa hilbijartî", term: "Dem", days: "roj", vehicleType: "Cureyê wesayîtê", cost: "Nirx", inPln: "Bi PLN", notSelected: "Di formê de hilbijêrin" },
+    ar: { title: "طلبك", selectedTariff: "التعرفة المختارة", term: "المدة", days: "يومًا", vehicleType: "نوع المركبة", cost: "التكلفة", inPln: "بالزلوتي PLN", notSelected: "اختر في النموذج" },
+    uk: { title: "Ваше замовлення", selectedTariff: "Вибраний тариф", term: "Строк", days: "днів", vehicleType: "Тип ТЗ", cost: "Вартість", inPln: "У PLN", notSelected: "Виберіть у формі" },
+    he: { title: "ההזמנה שלך", selectedTariff: "תעריף שנבחר", term: "תקופה", days: "ימים", vehicleType: "סוג רכב", cost: "עלות", inPln: "ב-PLN", notSelected: "בחר בטופס" },
+    az: { title: "Sifarişiniz", selectedTariff: "Seçilmiş tarif", term: "Müddət", days: "gün", vehicleType: "Nəqliyyat növü", cost: "Qiymət", inPln: "PLN ilə", notSelected: "Formada seçin" },
+    ro: { title: "Comanda dvs.", selectedTariff: "Tariful selectat", term: "Perioada", days: "zile", vehicleType: "Tip vehicul", cost: "Cost", inPln: "În PLN", notSelected: "Selectați în formular" },
+    sr: { title: "Ваша поруџбина", selectedTariff: "Изабрана тарифа", term: "Рок", days: "дана", vehicleType: "Тип возила", cost: "Цена", inPln: "У PLN", notSelected: "Изаберите у форми" },
+    sq: { title: "Porosia juaj", selectedTariff: "Tarifa e zgjedhur", term: "Afati", days: "ditë", vehicleType: "Lloji i automjetit", cost: "Kosto", inPln: "Në PLN", notSelected: "Zgjidhni në formular" },
+    mn: { title: "Таны захиалга", selectedTariff: "Сонгосон тариф", term: "Хугацаа", days: "өдөр", vehicleType: "Тээврийн хэрэгслийн төрөл", cost: "Үнэ", inPln: "PLN-ээр", notSelected: "Маягтаас сонгоно уу" },
+  };
+
   const estimatedTotal = (() => {
     let total = 0;
     let hasPrice = false;
@@ -394,6 +427,18 @@ export default function LeadForm(props: { lang: Lang }) {
 
     return hasPrice ? total : null;
   })();
+
+
+
+  const firstVehicleSelection = vehiclePrices[vehicleBlocks[0]] || { vehicleType: "", period: "" };
+  const orderSummary = orderSummaryTexts[props.lang] || orderSummaryTexts.en;
+  const selectedVehicleTypeLabel =
+    t.policy.options.vehicleTypes.find((option) => option.value === firstVehicleSelection.vehicleType)?.label || orderSummary.notSelected;
+  const selectedPeriodLabel = firstVehicleSelection.period
+    ? `${firstVehicleSelection.period} ${orderSummary.days}`
+    : orderSummary.notSelected;
+  const selectedPrice = getPolicyPrice(firstVehicleSelection.vehicleType, firstVehicleSelection.period);
+  const selectedPriceLabel = selectedPrice !== null ? formatCurrency(selectedPrice, "PLN", "pl-PL") : orderSummary.notSelected;
 
 
   const modalTexts: Record<Lang, { success: string; partial: string }> = {
@@ -520,7 +565,33 @@ export default function LeadForm(props: { lang: Lang }) {
 };
 
   return (
-    <div className="lead-form-card" aria-label={t.title}>
+    <div className={props.showOrderSummary ? "lead-form-layout lead-form-layout--with-summary" : "lead-form-layout"}>
+      {props.showOrderSummary ? (
+        <aside className="order-summary-card" aria-label={orderSummary.title}>
+          <div className="order-summary-card__head">{orderSummary.title}</div>
+          <div className="order-summary-card__body">
+            <div className="order-summary-card__section-title">{orderSummary.selectedTariff}</div>
+            <div className="order-summary-card__selection">
+              <div className="order-summary-card__row">
+                <span>{orderSummary.term}:</span>
+                <b>{selectedPeriodLabel}</b>
+              </div>
+              <div className="order-summary-card__row">
+                <span>{orderSummary.vehicleType}:</span>
+                <b>{selectedVehicleTypeLabel}</b>
+              </div>
+            </div>
+            <div className="order-summary-card__divider" />
+            <div className="order-summary-card__section-title">{orderSummary.cost}</div>
+            <div className="order-summary-card__price-row">
+              <span>{orderSummary.inPln}:</span>
+              <strong>{selectedPriceLabel}</strong>
+            </div>
+          </div>
+        </aside>
+      ) : null}
+
+      <div className="lead-form-card" aria-label={t.title}>
       <div className="lead-form-card__inner">
         <div className="panel__hd">
           <div className="panel__title">{t.title}</div>
@@ -1145,8 +1216,88 @@ export default function LeadForm(props: { lang: Lang }) {
       </div>
 
       <style jsx>{`
+        .lead-form-layout {
+          display: grid;
+          gap: 24px;
+          align-items: start;
+        }
+
+        .lead-form-layout--with-summary {
+          grid-template-columns: minmax(0, 1fr) minmax(280px, 360px);
+        }
+
+        .order-summary-card {
+          position: sticky;
+          top: 96px;
+          grid-column: 2;
+          grid-row: 1;
+          border: 1px solid rgba(0, 63, 57, 0.1);
+          border-radius: 22px;
+          background: #ffffff;
+          box-shadow: 0 24px 58px rgba(0, 47, 43, 0.14);
+          overflow: hidden;
+        }
+
+        .order-summary-card__head {
+          padding: 20px 24px;
+          background: var(--brand-primary);
+          color: #ffffff;
+          font-size: 20px;
+          font-weight: 900;
+          letter-spacing: -0.02em;
+        }
+
+        .order-summary-card__body {
+          padding: 24px;
+        }
+
+        .order-summary-card__section-title {
+          color: var(--text-700);
+          font-weight: 900;
+          margin-bottom: 12px;
+        }
+
+        .order-summary-card__selection {
+          display: grid;
+          gap: 12px;
+          padding: 18px;
+          border-radius: 16px;
+          background: rgba(123, 174, 55, 0.1);
+        }
+
+        .order-summary-card__row,
+        .order-summary-card__price-row {
+          display: flex;
+          align-items: baseline;
+          justify-content: space-between;
+          gap: 16px;
+          color: var(--text-700);
+        }
+
+        .order-summary-card__row b {
+          color: var(--brand-primary);
+          text-align: end;
+          overflow-wrap: anywhere;
+        }
+
+        .order-summary-card__divider {
+          height: 1px;
+          margin: 18px 0;
+          background: rgba(0, 63, 57, 0.12);
+        }
+
+        .order-summary-card__price-row strong {
+          color: var(--brand-primary);
+          font-size: clamp(24px, 3vw, 32px);
+          line-height: 1;
+          letter-spacing: -0.04em;
+          white-space: nowrap;
+        }
+
         .lead-form-card {
           position: relative;
+          grid-column: 1;
+          grid-row: 1;
           border: 1px solid rgba(0, 63, 57, 0.1);
           border-radius: 28px;
           background:
@@ -1428,6 +1579,23 @@ export default function LeadForm(props: { lang: Lang }) {
           margin-top: 10px;
         }
 
+        @media (max-width: 900px) {
+          .lead-form-layout--with-summary {
+            grid-template-columns: 1fr;
+          }
+
+          .order-summary-card {
+            position: static;
+            grid-column: 1;
+            grid-row: 1;
+          }
+
+          .lead-form-card {
+            grid-column: 1;
+            grid-row: 2;
+          }
+        }
+
         @media (max-width: 520px) {
           .lead-form-card {
             border-radius: 22px;
@@ -1456,6 +1624,7 @@ export default function LeadForm(props: { lang: Lang }) {
         }
       `}</style>
           <SubmissionModal isOpen={outcome !== "none"} onClose={() => setOutcome("none")} title={outcome === "partial" ? "Green Card Agency" : "Green Card Agency"} message={outcome === "partial" ? modalTexts[props.lang].partial : modalTexts[props.lang].success} variant={outcome === "partial" ? "partial" : "success"} />
+      </div>
     </div>
   );
 }
