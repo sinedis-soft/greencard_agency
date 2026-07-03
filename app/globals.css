@@ -2211,6 +2211,16 @@ footer {
     text-wrap: balance;
   }
 
+  .hero .h1 {
+    max-width: 100%;
+    font-size: clamp(26px, 8.2vw, 38px);
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+    overflow-wrap: normal;
+    word-break: normal;
+    hyphens: auto;
+  }
+
   .h1 {
     max-width: 100%;
     font-size: clamp(30px, 9.4vw, 42px);
