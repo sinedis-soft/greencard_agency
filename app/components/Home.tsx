@@ -9,6 +9,8 @@ import CoverageBlock from "@/app/components/CoverageBlock";
 import { keepShortWords } from "@/app/utils/typography";
 import { getBelarusPolandOcDictionary } from "@/app/dictionaries/seo-landings/belarusPolandOc";
 import { getGeorgiaRomaniaOcDictionary } from "@/app/dictionaries/seo-landings/georgiaRomaniaOc";
+import { belarusLithuaniaOcDictionary } from "@/app/dictionaries/seo-landings/belarusLithuaniaOc";
+import { getUaeOcDictionary } from "@/app/dictionaries/seo-landings/uaeOc";
 import { isRouteLocaleIndexable } from "@/app/seo";
 import { BusinessHoursBanner } from "@/app/components/BusinessHoursBanner";
 
@@ -17,6 +19,8 @@ export default function Home({ lang }: { lang: Lang }) {
   const t = getHomeDictionary(lang);
   const landing = getBelarusPolandOcDictionary(lang);
   const georgiaRomania = getGeorgiaRomaniaOcDictionary(lang);
+  const belarusLithuania = belarusLithuaniaOcDictionary[lang];
+  const uaeOc = getUaeOcDictionary(lang);
   const guide = t.insuranceGuide;
   const seoCards = [
     isRouteLocaleIndexable(lang, "/route/belarus/poland")
@@ -33,6 +37,23 @@ export default function Home({ lang }: { lang: Lang }) {
           title: georgiaRomania.carousel.cardTitle,
           text: georgiaRomania.carousel.cardText,
           cta: georgiaRomania.carousel.cta,
+        }
+      : null,
+    isRouteLocaleIndexable(lang, "/route/belarus/lithuania")
+      ? {
+          href: `/${lang}/route/belarus/lithuania`,
+          title: belarusLithuania.carousel.cardTitle,
+          text: belarusLithuania.carousel.cardText,
+          cta: belarusLithuania.carousel.cta,
+        }
+      : null,
+
+    isRouteLocaleIndexable(lang, "/country/uae")
+      ? {
+          href: `/${lang}/country/uae`,
+          title: uaeOc.carousel.cardTitle,
+          text: uaeOc.carousel.cardText,
+          cta: uaeOc.carousel.cta,
         }
       : null,
   ].filter((card): card is { href: string; title: string; text: string; cta: string } =>
@@ -56,14 +77,7 @@ export default function Home({ lang }: { lang: Lang }) {
 
               {guide ? <p className="hero__answer">{guide.directAnswer}</p> : null}
 
-              <div className="hero__cta">
-                <a className="btn btn--ghost" href="#calc">
-                  {t.hero.ctaCalc}
-                </a>
-                <a className="btn btn--primary" href="#buy">
-                  {t.hero.ctaBuy}
-                </a>
-              </div>
+              
 
               <div className="meta" aria-label="Meta">
                 <span>{t.hero.meta[0]}</span>
@@ -252,7 +266,9 @@ export default function Home({ lang }: { lang: Lang }) {
         </div>
       </section>
 
-      <CoverageBlock lang={lang} />
+      <div id="coverage">
+        <CoverageBlock lang={lang} />
+      </div>
 
       {guide ? (
         <section className="section section--service-role">

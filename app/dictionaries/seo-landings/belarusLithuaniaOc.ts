@@ -72,7 +72,7 @@ const ru: belarusLithuaniaOcDictionary = {
       {
         q: "Можно ли пересекать белорусско-литовскую границу на автомобиле с белорусскими номерами?",
         a:
-          "Да, пересечение возможно при соблюдении действующих правил въезда, требований к документам и наличия действующего страхования гражданской ответственности. Перед поездкой рекомендуется проверить актуальные ограничения на выбранном пункте пропуска.",
+          "Да, пересечение возможно при соблюдении действующих правил въезда, наличия литовского вида на жительство, требований к документам и наличия действующего страхования гражданской ответственности. Перед поездкой рекомендуется проверить актуальные ограничения на выбранном пункте пропуска.",
       },
       {
         q: "Можно ли оформить онлайн, если я еще не пересек границу?",
@@ -103,160 +103,153 @@ const ru: belarusLithuaniaOcDictionary = {
   },
   carousel: {
     title: "Полезные страницы по направлениям",
-    cardTitle: "Страхование белорусского авто для поездки в Польшу",
+    cardTitle: "Страхование белорусского авто для поездки в Литву",
     cardText: "Условия, сроки, стоимость и оформление онлайн.",
     cta: "Открыть страницу",
   },
 };
 
-
-
 const en: belarusLithuaniaOcDictionary = {
   seo: {
-    title: "Insurance for a Belarusian Car Traveling to Poland",
+    title: "Insurance for a Belarus-registered vehicle traveling to Lithuania",
     description:
-      "Insurance оформление for travel to Poland. Online application, price calculation, and support via WhatsApp and Telegram.",
+      "OC graniczne for travel to Lithuania in a vehicle with Belarusian license plates. Online application, price calculation, and support via WhatsApp and Telegram.",
   },
-  breadcrumbTitle: "Insurance for a Belarusian Vehicle Traveling to Poland",
+  breadcrumbTitle: "Insurance for a Belarus-registered vehicle traveling to Lithuania",
   hero: {
-    kicker: "Insurance for Vehicles from Belarus",
-    title: "Insurance for Cars with Belarusian Plates Traveling to Poland",
+    kicker: "Insurance for vehicles traveling from Belarus to Lithuania",
+    title: "Auto insurance for a vehicle with Belarusian license plates in Lithuania",
     lead:
-      "Apply for a policy for entry and travel within Poland and the EU: online application, price calculation, and support via messengers.",
-    cta: "Apply for Insurance",
+      "Issuance of a Polish OC graniczne policy for travel to Lithuania in a vehicle registered in Belarus. The policy is suitable for entry into and travel within Lithuania and other covered countries, subject to the insurance terms.",
+    cta: "Submit an application",
   },
   what: {
-    title: "OC graniczne in Poland for a Vehicle with Belarusian Plates",
+    title: "What OC graniczne is for travel to Lithuania",
     text:
-      "If your vehicle is registered in Belarus and you plan to travel to Poland, a border insurance policy (OC graniczne) may be required for entry. This type of policy is issued for vehicles registered outside the European Economic Area if there is no valid Green Card insurance certificate. On this page, you can find out who needs OC graniczne, how the application process works, how much the insurance costs, and for what period it can be issued. After submitting the application, the policy is sent in PDF format.",
+      "OC graniczne is temporary mandatory third-party liability insurance for the owner of a motor vehicle. The policy is used for vehicles registered outside the European Economic Area when proof of liability insurance is required for operating the vehicle within EU countries.",
   },
   who: {
-    title: "Who Needs This Policy:",
+    title: "Who this insurance is suitable for",
     items: [
-      "Owners and drivers of vehicles registered in Belarus.",
-      "Those entering Poland with a private vehicle.",
-      "Those who need valid third-party liability insurance coverage.",
-      "Those who require temporary insurance for travel within the EU.",
-      "If the vehicle is traveling through Poland in transit.",
+      "Owners of vehicles with Belarusian license plates.",
+      "People planning to travel to Lithuania in their own vehicle.",
+      "Travelers transiting through Lithuania to other European Union countries.",
+      "Drivers who need proof of third-party liability insurance for the duration of their trip.",
     ],
   },
   how: {
-    title: "How to Apply",
+    title: "How to apply",
     steps: [
       "Submit an application through the form on the website.",
-      "Provide vehicle and driver details for the quotation.",
+      "Provide the vehicle and owner details for calculation.",
       "Pay the insurance premium using a convenient payment method.",
-      "Receive the completed policy and verification instructions.",
+      "Receive the issued policy and verification instructions.",
     ],
   },
   price: {
-    title: "Price",
+    title: "Cost",
     text:
-      "The price depends on the policy period and the type of vehicle. You can always check the estimated cost on the main page of the website using the online calculator.",
+      "The price depends on the policy term and the type of vehicle. You can view an estimated cost in the online calculator on the website’s home page.",
   },
   validity: {
-    title: "Policy Period",
+    title: "Validity periods",
     text:
-      "Policies are available for periods from 30 days to 364 days. The start date is selected during the application process, after which the coverage remains valid for the chosen period. If you do not see the required duration in the application form, specify it in the comments field.",
+      "Policies are available for terms from 30 days to 364 days. The start date is specified during issuance, after which the coverage applies for the selected period. If you do not see the required term when completing the application, specify this information in the comment field.",
   },
   form: {
-    title: "Application Form",
+    title: "Application form",
     desc:
-      "Click the button below to open the main page with the application form.",
+      "Click the button below — the home page with the application form will open.",
   },
   faq: {
     title: "FAQ",
     items: [
       {
-        q: "Can I cross the Belarus–Poland border with a car on Belarusian plates?",
+        q: "Can you cross the Belarus-Lithuania border in a vehicle with Belarusian license plates?",
         a:
-          "Yes, crossing the border is possible. However, it is important to understand that Poland introduced a rule requiring the vehicle owner to be present in the car if it has Belarusian plates. This means the vehicle cannot belong to a legal entity or to a person who is not present in the vehicle at the moment of crossing the border.",
+          "Yes, crossing is possible if the current entry rules are followed, a Lithuanian residence permit is available, document requirements are met, and valid third-party liability insurance is in place. Before the trip, it is recommended to check the current restrictions at the selected border crossing point.",
       },
       {
         q: "Can I apply online if I have not crossed the border yet?",
         a:
-          "Yes, you can submit an application in advance, but to receive the policy you must be physically located in Poland.",
+          "Yes, you can submit the application in advance to receive the policy by the required start date.",
       },
       {
-        q: "Is the policy valid only for trips within Poland?",
+        q: "Is the policy suitable for trips only within Lithuania?",
         a:
-          "The policy is issued for entry into Poland and may also be valid in the countries specified in the insurance terms (European Economic Area countries + Switzerland).",
+          "The policy is issued for travel to Lithuania and may be valid in the countries listed in the insurance terms: European Economic Area countries and Switzerland.",
       },
       {
-        q: "Can I insure a truck?",
+        q: "Can insurance be issued for a truck?",
         a:
-          "Yes, insurance is available for both passenger cars and trucks, but only for private individuals (for example, the driver).",
+          "Yes, issuance is available for both passenger vehicles and trucks, provided the vehicle meets the insurer’s requirements.",
       },
       {
-        q: "How quickly will I receive the policy?",
+        q: "How quickly is the policy delivered?",
         a:
-          "After payment confirmation, the policy is usually sent electronically within a short time. The timing depends on operator workload, but on average it takes about 10 minutes.",
+          "After payment is confirmed, the policy is usually sent electronically within a short time. The timing depends on operator workload, averaging about 10 minutes.",
       },
       {
-        q: "Where can I check the validity of the policy?",
+        q: "Where can I verify that the policy is valid?",
         a:
           "Verification is available through the official UFG service in Poland.",
       },
     ],
   },
   carousel: {
-    title: "Useful Pages by Destination",
-    cardTitle:
-      "Insurance for a Belarusian Vehicle Traveling to Poland",
-    cardText:
-      "Conditions, duration, pricing, and online application.",
-    cta: "Open Page",
+    title: "Useful route pages",
+    cardTitle: "Insurance for a Belarus-registered vehicle traveling to Lithuania",
+    cardText: "Terms, validity periods, cost, and online issuance.",
+    cta: "Open page",
   },
 };
 
 const be: belarusLithuaniaOcDictionary = {
   seo: {
-    title: "Страхоўка на беларускі аўтамабіль у Польшчу",
+    title: "Страхоўка на беларускі аўтамабіль у Літву",
     description:
-      "Афармленне страхоўкі для паездкі ў Польшчу. Анлайн-заяўка, разлік кошту, падтрымка ў WhatsApp і Telegram.",
+      "OC graniczne для паездкі ў Літву на аўтамабілі з беларускімі нумарамі. Анлайн-заяўка, разлік кошту, падтрымка ў WhatsApp і Telegram.",
   },
-  breadcrumbTitle: "Страхаванне беларускага аўто ў Польшчу",
+  breadcrumbTitle: "Страхаванне беларускага аўто ў Літву",
   hero: {
-    kicker: "Страхаванне для аўтамабіляў з Беларусі",
-    title: "Страхоўка ў Польшчу для аўтамабіляў на беларускіх нумарах",
+    kicker: "Страхаванне для аўтамабіляў з Беларусі ў Літву",
+    title: "Аўтастрахоўка для аўтамабіля з беларускімі нумарамі ў Літве",
     lead:
-      "Аформіце поліс для ўезду і паездак па Польшчы і ЕС: анлайн-заяўка, разлік кошту і суправаджэнне ў мэсэнджарах.",
-    cta: "Аформіць заяўку на страхоўку",
+      "Афармленне польскага поліса OC graniczne для паездкі ў Літву на аўтамабілі, зарэгістраваным у Беларусі. Поліс падыходзіць для ўезду і перамяшчэння па тэрыторыі Літвы і іншых краін пакрыцця згодна з умовамі страхавання.",
+    cta: "Падаць заяўку",
   },
   what: {
-    title:
-      "OC graniczne у Польшчу для аўтамабіля на беларускіх нумарах",
+    title: "Што такое OC graniczne для паездкі ў Літву",
     text:
-      "Калі аўтамабіль зарэгістраваны ў Беларусі і вы плануеце паездку ў Польшчу, для ўезду можа спатрэбіцца дагавор памежнага страхавання OC graniczne. Такі поліс афармляецца для транспартных сродкаў з рэгістрацыяй па-за межамі Еўрапейскай эканамічнай зоны, калі адсутнічае дзеючая «Зялёная карта». На гэтай старонцы вы можаце даведацца, каму патрэбны OC graniczne, як праходзіць афармленне, колькі каштуе страхоўка і на які тэрмін яе можна аформіць. Пасля падачы заяўкі поліс накіроўваецца ў PDF-фармаце.",
+      "OC graniczne — гэта часовае абавязковае страхаванне грамадзянскай адказнасці ўладальніка транспартнага сродку. Поліс выкарыстоўваецца для аўтамабіляў, зарэгістраваных за межамі Еўрапейскай эканамічнай зоны, калі патрабуецца пацвярджэнне наяўнасці страхавання адказнасці пры эксплуатацыі аўтамабіля на тэрыторыі краін ЕС.",
   },
   who: {
-    title: "Каму патрэбны гэты поліс:",
+    title: "Каму падыходзіць страхаванне",
     items: [
-      "Уладальнікам і кіроўцам аўтамабіляў, зарэгістраваных у Беларусі.",
-      "Тым, хто ўязджае ў Польшчу на асабістым аўтамабілі.",
-      "Тым, каму патрэбна дзеючая страхавая абарона адказнасці перад трэцімі асобамі.",
-      "Тым, каму неабходна часовае страхаванне для паездкі па ЕС.",
-      "Калі аўтамабіль накіроўваецца транзітам праз Польшчу.",
+      "Уладальнікам аўтамабіляў з беларускімі рэгістрацыйнымі нумарамі.",
+      "Асобам, якія плануюць паездку ў Літву на ўласным аўтамабілі.",
+      "Падарожнікам, якія едуць транзітам праз Літву ў іншыя краіны Еўрапейскага саюза.",
+      "Кіроўцам, якім патрэбна пацвярджэнне страхавання грамадзянскай адказнасці на перыяд паездкі.",
     ],
   },
   how: {
     title: "Як аформіць",
     steps: [
       "Пакіньце заяўку праз форму на сайце.",
-      "Перадайце дадзеныя аўтамабіля і кіроўцы для разліку.",
-      "Аплаціце страхавы ўзнос зручным спосабам.",
+      "Перадайце даныя аўтамабіля і ўладальніка для разліку.",
+      "Аплаціце страхавую прэмію зручным спосабам.",
       "Атрымайце гатовы поліс і інструкцыю па праверцы.",
     ],
   },
   price: {
     title: "Кошт",
     text:
-      "Кошт залежыць ад тэрміну дзеяння поліса і тыпу транспартнага сродку. Прыкладны кошт заўсёды можна паглядзець на галоўнай старонцы сайта ў анлайн-калькулятары.",
+      "Кошт залежыць ад тэрміну дзеяння поліса і тыпу транспартнага сродку. Арыенціровачны кошт можна паглядзець на галоўнай старонцы сайта ў анлайн-калькулятары.",
   },
   validity: {
     title: "Тэрміны дзеяння",
     text:
-      "Даступныя полісы на тэрмін ад 30 дзён да 364 дзён. Дата пачатку паказваецца пры афармленні, пасля чаго пакрыццё дзейнічае выбраны перыяд. Калі пры запаўненні заяўкі вы не бачыце патрэбнага вам тэрміну — укажыце гэтыя дадзеныя ў каментарыі.",
+      "Даступныя полісы на тэрмін ад 30 дзён да 364 дзён. Дата пачатку ўказваецца пры афармленні, пасля чаго пакрыццё дзейнічае выбраны перыяд. Калі пры запаўненні заяўкі вы не бачыце патрэбны тэрмін, укажыце гэтыя даныя ў каментарыі.",
   },
   form: {
     title: "Форма заяўкі",
@@ -267,33 +260,29 @@ const be: belarusLithuaniaOcDictionary = {
     title: "FAQ",
     items: [
       {
-        q:
-          "Ці можна перасякаць беларуска-польскую мяжу на аўтамабілі з беларускімі нумарамі?",
+        q: "Ці можна перасякаць беларуска-літоўскую мяжу на аўтамабілі з беларускімі нумарамі?",
         a:
-          "Так, перасякаць мяжу можна. Але важна разумець, што Польшча ўвяла правіла, паводле якога ў аўтамабілі з беларускімі нумарамі абавязкова павінен знаходзіцца ўладальнік аўтамабіля. Гэта азначае, што аўтамабіль не можа належаць юрыдычнай асобе або асобе, якой няма ў аўтамабілі ў момант перасячэння мяжы.",
+          "Так, перасячэнне магчыма пры выкананні дзеючых правілаў уезду, наяўнасці літоўскага віду на жыхарства, патрабаванняў да дакументаў і наяўнасці дзеючага страхавання грамадзянскай адказнасці. Перад паездкай рэкамендуецца праверыць актуальныя абмежаванні на выбраным пункце пропуску.",
       },
       {
-        q:
-          "Ці можна аформіць анлайн, калі я яшчэ не перасёк мяжу?",
+        q: "Ці можна аформіць анлайн, калі я яшчэ не перасёк мяжу?",
         a:
-          "Так, заяўку можна пакінуць загадзя, каб атрымаць поліс на патрэбную дату пачатку дзеяння.",
+          "Так, заяўку можна пакінуць загадзя, каб атрымаць поліс да патрэбнай даты пачатку дзеяння.",
       },
       {
-        q:
-          "Ці падыходзіць поліс толькі для паездак па Польшчы?",
+        q: "Ці падыходзіць поліс для паездак толькі па Літве?",
         a:
-          "Поліс афармляецца для ўезду ў Польшчу і можа дзейнічаць на тэрыторыі краін, указаных ва ўмовах страхавання (краіны Еўрапейскай эканамічнай зоны + Швейцарыя).",
+          "Поліс афармляецца для паездкі ў Літву і можа дзейнічаць на тэрыторыі краін, указаных ва ўмовах страхавання: краіны Еўрапейскай эканамічнай зоны і Швейцарыя.",
       },
       {
-        q:
-          "Ці можна аформіць страхоўку на грузавы аўтамабіль?",
+        q: "Ці можна аформіць страхоўку на грузавы аўтамабіль?",
         a:
-          "Так, афармленне даступна як для легкавога, так і для грузавога транспарту, але толькі на фізічную асобу (напрыклад, на кіроўцу).",
+          "Так, афармленне даступнае як для легкавога, так і для грузавога транспарту, калі транспартны сродак адпавядае ўмовам страхоўшчыка.",
       },
       {
         q: "Як хутка прыходзіць поліс?",
         a:
-          "Пасля пацвярджэння аплаты поліс звычайна адпраўляецца на працягу кароткага часу ў электронным выглядзе. Залежыць ад загружанасці аператараў, у сярэднім — каля 10 хвілін.",
+          "Пасля пацвярджэння аплаты поліс звычайна адпраўляецца ў электронным выглядзе на працягу кароткага часу. Тэрмін залежыць ад загружанасці аператараў, у сярэднім каля 10 хвілін.",
       },
       {
         q: "Дзе праверыць сапраўднасць поліса?",
@@ -304,601 +293,297 @@ const be: belarusLithuaniaOcDictionary = {
   },
   carousel: {
     title: "Карысныя старонкі па напрамках",
-    cardTitle:
-      "Страхаванне беларускага аўто для паездкі ў Польшчу",
-    cardText:
-      "Умовы, тэрміны, кошт і анлайн-афармленне.",
+    cardTitle: "Страхаванне беларускага аўто для паездкі ў Літву",
+    cardText: "Умовы, тэрміны, кошт і афармленне анлайн.",
     cta: "Адкрыць старонку",
   },
 };
 
-
-
 const ka: belarusLithuaniaOcDictionary = {
   seo: {
-    title: "ბელარუსულ ნომრიან ავტომობილზე დაზღვევა პოლონეთში",
+    title: "დაზღვევა ბელარუსული ავტომობილისთვის ლიტვაში",
     description:
-      "დაზღვევის გაფორმება პოლონეთში გამგზავრებისთვის. ონლაინ განაცხადი, ღირებულების გამოთვლა, მხარდაჭერა WhatsApp-სა და Telegram-ში.",
+      "OC graniczne ლიტვაში გასამგზავრებლად ბელარუსული ნომრებით რეგისტრირებული ავტომობილით. ონლაინ განაცხადი, ღირებულების გამოთვლა, მხარდაჭერა WhatsApp-სა და Telegram-ში.",
   },
-  breadcrumbTitle: "ბელარუსული ავტომობილის დაზღვევა პოლონეთში",
+  breadcrumbTitle: "ბელარუსული ავტომობილის დაზღვევა ლიტვაში",
   hero: {
-    kicker: "დაზღვევა ბელარუსში რეგისტრირებული ავტომობილებისთვის",
-    title: "დაზღვევა პოლონეთში ბელარუსული ნომრიანი ავტომობილებისთვის",
+    kicker: "დაზღვევა ბელარუსიდან ლიტვაში მიმავალი ავტომობილებისთვის",
+    title: "ავტოდაზღვევა ბელარუსული ნომრების მქონე ავტომობილისთვის ლიტვაში",
     lead:
-      "გააფორმეთ პოლისი პოლონეთსა და ევროკავშირის ქვეყნებში შესასვლელად და გადაადგილებისთვის: ონლაინ განაცხადი, ღირებულების გამოთვლა და მხარდაჭერა მესენჯერებში.",
-    cta: "დაზღვევაზე განაცხადის გაფორმება",
+      "პოლონური OC graniczne პოლისის გაფორმება ლიტვაში გასამგზავრებლად ბელარუსში რეგისტრირებული ავტომობილით. პოლისი შესაფერისია ლიტვაში შესვლისა და ლიტვის ტერიტორიაზე, ასევე დაფარვის სხვა ქვეყნებში გადაადგილებისთვის დაზღვევის პირობების შესაბამისად.",
+    cta: "განაცხადის გაგზავნა",
   },
   what: {
-    title:
-      "OC graniczne პოლონეთში ბელარუსული ნომრიანი ავტომობილისთვის",
+    title: "რა არის OC graniczne ლიტვაში მგზავრობისთვის",
     text:
-      "თუ ავტომობილი რეგისტრირებულია ბელარუსში და გეგმავთ პოლონეთში გამგზავრებას, შესასვლელად შესაძლოა საჭირო იყოს სასაზღვრო დაზღვევის ხელშეკრულება OC graniczne. ასეთი პოლისი გაიცემა იმ სატრანსპორტო საშუალებებისთვის, რომლებიც რეგისტრირებულია ევროპის ეკონომიკური ზონის ფარგლებს გარეთ, თუ არ არსებობს მოქმედი „მწვანე ბარათი“. ამ გვერდზე შეგიძლიათ გაიგოთ, ვის სჭირდება OC graniczne, როგორ ხდება გაფორმება, რა ღირს დაზღვევა და რა ვადით შეიძლება მისი გაფორმება. განაცხადის გაგზავნის შემდეგ პოლისი იგზავნება PDF ფორმატში.",
+      "OC graniczne არის სატრანსპორტო საშუალების მფლობელის სამოქალაქო პასუხისმგებლობის დროებითი სავალდებულო დაზღვევა. პოლისი გამოიყენება ევროპული ეკონომიკური ზონის გარეთ რეგისტრირებული ავტომობილებისთვის, როდესაც საჭიროა პასუხისმგებლობის დაზღვევის არსებობის დადასტურება ევროკავშირის ქვეყნების ტერიტორიაზე ავტომობილის გამოყენებისას.",
   },
   who: {
-    title: "ვის სჭირდება ეს პოლისი:",
+    title: "ვისთვის არის შესაფერისი ეს დაზღვევა",
     items: [
-      "ბელარუსში რეგისტრირებული ავტომობილების მფლობელებსა და მძღოლებს.",
-      "მათ, ვინც პოლონეთში პირადი ავტომობილით შედის.",
-      "მათ, ვისაც სჭირდება მოქმედი პასუხისმგებლობის დაზღვევა მესამე პირების წინაშე.",
-      "მათ, ვისაც ევროკავშირში მგზავრობისთვის დროებითი დაზღვევა ესაჭიროება.",
-      "თუ ავტომობილი პოლონეთის გავლით ტრანზიტით გადაადგილდება.",
+      "ბელარუსული სარეგისტრაციო ნომრების მქონე ავტომობილების მფლობელებისთვის.",
+      "პირებისთვის, რომლებიც საკუთარ ავტომობილით ლიტვაში გამგზავრებას გეგმავენ.",
+      "მოგზაურებისთვის, რომლებიც ლიტვის გავლით ტრანზიტით მიემგზავრებიან ევროკავშირის სხვა ქვეყნებში.",
+      "მძღოლებისთვის, რომლებსაც მგზავრობის პერიოდისთვის სამოქალაქო პასუხისმგებლობის დაზღვევის დადასტურება სჭირდებათ.",
     ],
   },
   how: {
-    title: "როგორ გავაფორმოთ",
+    title: "როგორ გაფორმდეს",
     steps: [
-      "დატოვეთ განაცხადი ვებგვერდის ფორმის საშუალებით.",
-      "გადმოგვიგზავნეთ ავტომობილისა და მძღოლის მონაცემები ღირებულების დასათვლელად.",
+      "დატოვეთ განაცხადი საიტზე განთავსებული ფორმის მეშვეობით.",
+      "გადმოგვცემთ ავტომობილისა და მფლობელის მონაცემებს ღირებულების გამოსათვლელად.",
       "გადაიხადეთ სადაზღვევო პრემია თქვენთვის მოსახერხებელი მეთოდით.",
-      "მიიღეთ მზა პოლისი და ინსტრუქცია მისი გადამოწმებისთვის.",
+      "მიიღეთ მზა პოლისი და შემოწმების ინსტრუქცია.",
     ],
   },
   price: {
     title: "ღირებულება",
     text:
-      "ფასი დამოკიდებულია პოლისის მოქმედების ვადასა და სატრანსპორტო საშუალების ტიპზე. სავარაუდო ღირებულების ნახვა ყოველთვის შესაძლებელია საიტის მთავარ გვერდზე ონლაინ-კალკულატორის საშუალებით.",
+      "ფასი დამოკიდებულია პოლისის მოქმედების ვადასა და სატრანსპორტო საშუალების ტიპზე. საორიენტაციო ღირებულების ნახვა შესაძლებელია საიტის მთავარ გვერდზე ონლაინ კალკულატორში.",
   },
   validity: {
     title: "მოქმედების ვადები",
     text:
-      "ხელმისაწვდომია პოლისები 30 დღიდან 364 დღემდე ვადით. დაწყების თარიღი მითითებულია გაფორმების დროს, რის შემდეგაც დაფარვა მოქმედებს არჩეული პერიოდის განმავლობაში. თუ განაცხადის შევსებისას თქვენთვის საჭირო ვადას ვერ ხედავთ — მიუთითეთ ეს ინფორმაცია კომენტარში.",
+      "ხელმისაწვდომია პოლისები 30 დღიდან 364 დღემდე ვადით. დაწყების თარიღი მიეთითება გაფორმებისას, რის შემდეგაც დაფარვა მოქმედებს არჩეული პერიოდის განმავლობაში. თუ განაცხადის შევსებისას საჭირო ვადას ვერ ხედავთ, მიუთითეთ ეს მონაცემები კომენტარში.",
   },
   form: {
     title: "განაცხადის ფორმა",
     desc:
-      "დააჭირეთ ქვემოთ მოცემულ ღილაკს — გაიხსნება მთავარი გვერდი განაცხადის ფორმით.",
+      "დააჭირეთ ქვემოთ მოცემულ ღილაკს — გაიხსნება მთავარი გვერდი გაფორმების ფორმით.",
   },
   faq: {
     title: "FAQ",
     items: [
       {
-        q: "შესაძლებელია თუ არა ბელარუსულ-პოლონური საზღვრის გადაკვეთა ბელარუსული ნომრიანი ავტომობილით?",
+        q: "შესაძლებელია თუ არა ბელარუსულ-ლიტვური საზღვრის გადაკვეთა ბელარუსული ნომრების მქონე ავტომობილით?",
         a:
-          "დიახ, საზღვრის გადაკვეთა შესაძლებელია. თუმცა მნიშვნელოვანია იცოდეთ, რომ პოლონეთში მოქმედებს წესი, რომლის მიხედვითაც ბელარუსული ნომრიანი ავტომობილის სალონში აუცილებლად უნდა იმყოფებოდეს ავტომობილის მფლობელი. ეს ნიშნავს, რომ ავტომობილი არ უნდა ეკუთვნოდეს იურიდიულ პირს ან პირს, რომელიც საზღვრის გადაკვეთის დროს ავტომობილში არ იმყოფება.",
+          "დიახ, საზღვრის გადაკვეთა შესაძლებელია მოქმედი შესვლის წესების, ლიტვის ბინადრობის ნებართვის არსებობის, დოკუმენტების მოთხოვნების და მოქმედი სამოქალაქო პასუხისმგებლობის დაზღვევის არსებობის პირობებში. გამგზავრებამდე რეკომენდებულია არჩეულ გამშვებ პუნქტზე მოქმედი შეზღუდვების გადამოწმება.",
       },
       {
-        q: "შესაძლებელია თუ არა ონლაინ გაფორმება, თუ ჯერ საზღვარი არ გადამიკვეთავს?",
+        q: "შესაძლებელია თუ არა ონლაინ გაფორმება, თუ საზღვარი ჯერ არ გადამიკვეთავს?",
         a:
-          "დიახ, განაცხადის დატოვება შესაძლებელია წინასწარ, რათა პოლისი მიიღოთ სასურველი დაწყების თარიღისთვის.",
+          "დიახ, განაცხადის დატოვება შესაძლებელია წინასწარ, რათა პოლისი მიიღოთ საჭირო დაწყების თარიღისთვის.",
       },
       {
-        q: "გამოდგება თუ არა პოლისი მხოლოდ პოლონეთში მგზავრობისთვის?",
+        q: "შესაფერისია თუ არა პოლისი მხოლოდ ლიტვაში მგზავრობისთვის?",
         a:
-          "პოლისი ფორმდება პოლონეთში შესასვლელად და შეიძლება მოქმედებდეს დაზღვევის პირობებში მითითებულ ქვეყნებში (ევროპის ეკონომიკური ზონის ქვეყნები + შვეიცარია).",
+          "პოლისი ფორმდება ლიტვაში მგზავრობისთვის და შეიძლება მოქმედებდეს დაზღვევის პირობებში მითითებულ ქვეყნებში: ევროპული ეკონომიკური ზონის ქვეყნებსა და შვეიცარიაში.",
       },
       {
-        q: "შესაძლებელია თუ არა სატვირთო ავტომობილის დაზღვევის გაფორმება?",
+        q: "შესაძლებელია თუ არა დაზღვევის გაფორმება სატვირთო ავტომობილზე?",
         a:
-          "დიახ, გაფორმება შესაძლებელია როგორც მსუბუქი, ისე სატვირთო ტრანსპორტისთვის, თუმცა მხოლოდ ფიზიკურ პირზე (მაგალითად, მძღოლზე).",
+          "დიახ, გაფორმება ხელმისაწვდომია როგორც მსუბუქი, ისე სატვირთო ტრანსპორტისთვის, თუ სატრანსპორტო საშუალება შეესაბამება მზღვეველის პირობებს.",
       },
       {
-        q: "რამდენად სწრაფად იგზავნება პოლისი?",
+        q: "რამდენად სწრაფად მოდის პოლისი?",
         a:
-          "გადახდის დადასტურების შემდეგ პოლისი, როგორც წესი, მოკლე დროში იგზავნება ელექტრონული ფორმით. ეს დამოკიდებულია ოპერატორების დატვირთვაზე, საშუალოდ დაახლოებით 10 წუთში.",
+          "გადახდის დადასტურების შემდეგ პოლისი, ჩვეულებრივ, ელექტრონულად იგზავნება მოკლე დროში. ვადა დამოკიდებულია ოპერატორების დატვირთვაზე, საშუალოდ დაახლოებით 10 წუთი.",
       },
       {
         q: "სად შეიძლება პოლისის ნამდვილობის შემოწმება?",
         a:
-          "შემოწმება შესაძლებელია პოლონეთის ოფიციალური UFG სერვისის საშუალებით.",
+          "შემოწმება შესაძლებელია პოლონეთში ოფიციალური UFG სერვისის მეშვეობით.",
       },
     ],
   },
   carousel: {
     title: "სასარგებლო გვერდები მიმართულებების მიხედვით",
-    cardTitle:
-      "ბელარუსული ავტომობილის დაზღვევა პოლონეთში მგზავრობისთვის",
-    cardText:
-      "პირობები, ვადები, ღირებულება და ონლაინ გაფორმება.",
+    cardTitle: "ბელარუსული ავტომობილის დაზღვევა ლიტვაში მგზავრობისთვის",
+    cardText: "პირობები, ვადები, ღირებულება და ონლაინ გაფორმება.",
     cta: "გვერდის გახსნა",
-  },
-};
-
-
-
-const tr: belarusLithuaniaOcDictionary = {
-  seo: {
-    title: "Belarus plakalı araçlar için Polonya sigortası",
-    description:
-      "Polonya seyahati için sigorta düzenlenmesi. Online başvuru, fiyat hesaplama, WhatsApp ve Telegram desteği.",
-  },
-  breadcrumbTitle: "Belarus plakalı araçlar için Polonya sigortası",
-  hero: {
-    kicker: "Belarus araçları için sigorta",
-    title: "Belarus plakalı araçlar için Polonya sigortası",
-    lead: "Polonya ve AB’ye giriş ile seyahatler için poliçenizi düzenleyin: online başvuru, fiyat hesaplama ve mesajlaşma uygulamalarında destek.",
-    cta: "Sigorta başvurusu yap",
-  },
-  what: {
-    title: "Belarus plakalı araçlar için Polonya OC graniczne sigortası",
-    text: "Araç Belarus’ta kayıtlıysa ve Polonya’ya seyahat planlıyorsanız, ülkeye giriş için OC graniczne sınır sigortası gerekebilir. Bu poliçe, geçerli bir “Yeşil Kart” bulunmayan ve Avrupa Ekonomik Alanı dışında kayıtlı araçlar için düzenlenir. Bu sayfada OC graniczne sigortasının kimler için gerekli olduğunu, nasıl düzenlendiğini, sigorta ücretini ve hangi süreler için yapılabileceğini öğrenebilirsiniz. Başvuru gönderildikten sonra poliçe PDF formatında iletilir.",
-  },
-  who: {
-    title: "Bu poliçe kimler için gereklidir:",
-    items: [
-      "Belarus’ta kayıtlı araçların sahipleri ve sürücüleri için.",
-      "Kendi aracıyla Polonya’ya giriş yapanlar için.",
-      "Üçüncü şahıslara karşı geçerli sorumluluk sigortası korumasına ihtiyaç duyanlar için.",
-      "AB içinde seyahat için geçici sigortaya ihtiyaç duyanlar için.",
-      "Araç Polonya üzerinden transit geçiş yapıyorsa.",
-    ],
-  },
-  how: {
-    title: "Nasıl düzenlenir",
-    steps: [
-      "Web sitesindeki form üzerinden başvuru bırakın.",
-      "Hesaplama için araç ve sürücü bilgilerini gönderin.",
-      "Sigorta primini size uygun bir yöntemle ödeyin.",
-      "Hazır poliçeyi ve kontrol talimatlarını alın.",
-    ],
-  },
-  price: {
-    title: "Fiyat",
-    text: "Fiyat, poliçenin geçerlilik süresine ve araç türüne bağlıdır. Yaklaşık maliyet her zaman sitenin ana sayfasındaki online hesaplayıcıda görülebilir.",
-  },
-  validity: {
-    title: "Geçerlilik süreleri",
-    text: "30 günden 364 güne kadar poliçeler mevcuttur. Başlangıç tarihi düzenleme sırasında belirtilir ve kapsam seçilen süre boyunca geçerli olur. Başvuru formunda ihtiyacınız olan süreyi göremiyorsanız, bu bilgiyi yorum kısmında belirtin.",
-  },
-  form: {
-    title: "Başvuru formu",
-    desc: "Aşağıdaki butona tıklayın — başvuru formunun bulunduğu ana sayfa açılacaktır.",
-  },
-  faq: {
-    title: "SSS",
-    items: [
-      {
-        q: "Belarus plakalı araçla Belarus-Polonya sınırı geçilebilir mi?",
-        a: "Evet, sınır geçilebilir. Ancak Polonya’nın, Belarus plakalı araçta araç sahibinin mutlaka bulunması gerektiği yönünde bir kural getirdiğini anlamak önemlidir. Bu da aracın tüzel kişiye ait olamayacağı veya sınır geçişi sırasında araç sahibi araçta bulunmuyorsa giriş yapılamayacağı anlamına gelir.",
-      },
-      {
-        q: "Sınırı henüz geçmediysem online başvuru yapabilir miyim?",
-        a: "Evet, poliçeyi gerekli başlangıç tarihine hazır almak için başvuruyu önceden bırakabilirsiniz.",
-      },
-      {
-        q: "Poliçe yalnızca Polonya içindeki seyahatler için mi geçerlidir?",
-        a: "Poliçe Polonya’ya giriş için düzenlenir ve sigorta şartlarında belirtilen ülkelerde geçerli olabilir (Avrupa Ekonomik Alanı ülkeleri + İsviçre).",
-      },
-      {
-        q: "Kamyon için sigorta yaptırmak mümkün mü?",
-        a: "Evet, sigorta hem binek araçlar hem de yük taşımacılığı araçları için düzenlenebilir, ancak yalnızca gerçek kişi adına (örneğin sürücü adına).",
-      },
-      {
-        q: "Poliçe ne kadar sürede gönderilir?",
-        a: "Ödeme onaylandıktan sonra poliçe genellikle kısa süre içinde elektronik formatta gönderilir. Operatörlerin yoğunluğuna bağlıdır, ortalama olarak yaklaşık 10 dakika sürer.",
-      },
-      {
-        q: "Poliçenin geçerliliği nereden kontrol edilir?",
-        a: "Kontrol, Polonya’daki resmi UFG servisi üzerinden yapılabilir.",
-      },
-    ],
-  },
-  carousel: {
-    title: "Yönlere göre faydalı sayfalar",
-    cardTitle: "Polonya seyahati için Belarus plakalı araç sigortası",
-    cardText: "Şartlar, süreler, fiyatlar ve online düzenleme.",
-    cta: "Sayfayı aç",
-  },
-};
-
-const fa: belarusLithuaniaOcDictionary = {
-  seo: {
-    title: "بیمه خودرو بلاروسی برای سفر به لهستان",
-    description:
-      "صدور بیمه برای سفر به لهستان. درخواست آنلاین، محاسبه هزینه، پشتیبانی در WhatsApp و Telegram.",
-  },
-  breadcrumbTitle: "بیمه خودروی بلاروسی برای لهستان",
-  hero: {
-    kicker: "بیمه برای خودروهای ثبت‌شده در بلاروس",
-    title: "بیمه سفر به لهستان برای خودروهای دارای پلاک بلاروس",
-    lead:
-      "برای ورود و سفر در لهستان و اتحادیه اروپا بیمه تهیه کنید: درخواست آنلاین، محاسبه هزینه و پشتیبانی از طریق پیام‌رسان‌ها.",
-    cta: "ثبت درخواست بیمه",
-  },
-  what: {
-    title: "بیمه OC graniczne لهستان برای خودروهای دارای پلاک بلاروس",
-    text:
-      "اگر خودرو در بلاروس ثبت شده و قصد سفر به لهستان را دارید، ممکن است برای ورود به این کشور به بیمه مرزی OC graniczne نیاز داشته باشید. این بیمه برای وسایل نقلیه ثبت‌شده خارج از منطقه اقتصادی اروپا صادر می‌شود، در صورتی که «گرین کارت» معتبر وجود نداشته باشد. در این صفحه می‌توانید بررسی کنید چه کسانی به OC graniczne نیاز دارند، روند صدور چگونه است، هزینه بیمه چقدر است و برای چه مدتی می‌توان آن را صادر کرد. پس از ثبت درخواست، بیمه‌نامه در قالب PDF ارسال می‌شود.",
-  },
-  who: {
-    title: "این بیمه برای چه کسانی لازم است:",
-    items: [
-      "مالکان و رانندگان خودروهای ثبت‌شده در بلاروس.",
-      "افرادی که با خودروی شخصی وارد لهستان می‌شوند.",
-      "افرادی که به پوشش معتبر مسئولیت در برابر اشخاص ثالث نیاز دارند.",
-      "افرادی که برای سفر در اتحادیه اروپا به بیمه موقت نیاز دارند.",
-      "در صورتی که خودرو از طریق لهستان به صورت ترانزیتی عبور کند.",
-    ],
-  },
-  how: {
-    title: "نحوه دریافت بیمه",
-    steps: [
-      "درخواست خود را از طریق فرم سایت ارسال کنید.",
-      "اطلاعات خودرو و راننده را برای محاسبه هزینه ارائه دهید.",
-      "حق بیمه را به روش مناسب پرداخت کنید.",
-      "بیمه‌نامه آماده و دستورالعمل بررسی اعتبار آن را دریافت کنید.",
-    ],
-  },
-  price: {
-    title: "هزینه",
-    text:
-      "قیمت به مدت اعتبار بیمه‌نامه و نوع وسیله نقلیه بستگی دارد. هزینه تقریبی را همیشه می‌توانید در صفحه اصلی سایت و از طریق ماشین‌حساب آنلاین مشاهده کنید.",
-  },
-  validity: {
-    title: "مدت اعتبار",
-    text:
-      "بیمه‌نامه‌ها برای بازه زمانی ۳۰ روز تا ۳۶۴ روز در دسترس هستند. تاریخ شروع هنگام ثبت مشخص می‌شود و پوشش برای مدت انتخاب‌شده معتبر خواهد بود. اگر هنگام تکمیل فرم، مدت موردنظر خود را مشاهده نمی‌کنید، آن را در بخش توضیحات ذکر کنید.",
-  },
-  form: {
-    title: "فرم درخواست",
-    desc:
-      "روی دکمه زیر کلیک کنید — صفحه اصلی با فرم صدور بیمه باز خواهد شد.",
-  },
-  faq: {
-    title: "سوالات متداول",
-    items: [
-      {
-        q: "آیا می‌توان با خودروی دارای پلاک بلاروس از مرز بلاروس و لهستان عبور کرد؟",
-        a:
-          "بله، عبور از مرز امکان‌پذیر است. اما باید توجه داشت که لهستان قانونی وضع کرده است که در خودروی دارای پلاک بلاروس، مالک خودرو باید حتماً حضور داشته باشد. این یعنی خودرو نمی‌تواند متعلق به شخص حقوقی باشد یا متعلق به شخصی باشد که هنگام عبور از مرز داخل خودرو حضور ندارد.",
-      },
-      {
-        q: "آیا می‌توان قبل از عبور از مرز، بیمه را آنلاین صادر کرد؟",
-        a:
-          "بله، می‌توانید از قبل درخواست ثبت کنید تا بیمه‌نامه در تاریخ موردنیاز شما فعال شود.",
-      },
-      {
-        q: "آیا این بیمه فقط برای سفر در لهستان معتبر است؟",
-        a:
-          "این بیمه برای ورود به لهستان صادر می‌شود و ممکن است در کشورهای ذکرشده در شرایط بیمه نیز معتبر باشد (کشورهای منطقه اقتصادی اروپا + سوئیس).",
-      },
-      {
-        q: "آیا می‌توان بیمه را برای کامیون صادر کرد؟",
-        a:
-          "بله، صدور بیمه هم برای خودروهای سواری و هم برای وسایل نقلیه باری امکان‌پذیر است، اما فقط برای اشخاص حقیقی (مثلاً راننده).",
-      },
-      {
-        q: "بیمه‌نامه با چه سرعتی ارسال می‌شود؟",
-        a:
-          "پس از تأیید پرداخت، بیمه‌نامه معمولاً در مدت کوتاهی به صورت الکترونیکی ارسال می‌شود. این موضوع به میزان شلوغی اپراتورها بستگی دارد، اما به طور متوسط حدود ۱۰ دقیقه زمان می‌برد.",
-      },
-      {
-        q: "اعتبار بیمه‌نامه را از کجا می‌توان بررسی کرد؟",
-        a:
-          "بررسی اعتبار از طریق سرویس رسمی UFG در لهستان امکان‌پذیر است.",
-      },
-    ],
-  },
-  carousel: {
-    title: "صفحات مفید بر اساس مسیرها",
-    cardTitle: "بیمه خودروی بلاروسی برای سفر به لهستان",
-    cardText: "شرایط، مدت اعتبار، هزینه و صدور آنلاین.",
-    cta: "باز کردن صفحه",
   },
 };
 
 const hy: belarusLithuaniaOcDictionary = {
   seo: {
-    title: "Ապահովագրություն բելառուսական համարանիշով մեքենայի համար Լեհաստան մեկնելու համար",
+    title: "Ապահովագրություն բելառուսական ավտոմեքենայի համար՝ դեպի Լիտվա",
     description:
-      "Ապահովագրության ձևակերպում Լեհաստան ուղևորության համար։ Առցանց հայտ, արժեքի հաշվարկ, աջակցություն WhatsApp և Telegram մեսենջերներում։",
+      "OC graniczne Լիտվա մեկնելու համար՝ բելառուսական համարանիշներով ավտոմեքենայով։ Առցանց հայտ, արժեքի հաշվարկ, աջակցություն WhatsApp-ում և Telegram-ում։",
   },
-  breadcrumbTitle: "Բելառուսական մեքենայի ապահովագրություն Լեհաստան մեկնելու համար",
+  breadcrumbTitle: "Բելառուսական ավտոմեքենայի ապահովագրություն դեպի Լիտվա",
   hero: {
-    kicker: "Ապահովագրություն Բելառուսից մեքենաների համար",
-    title: "Ապահովագրություն Լեհաստան մեկնելու համար բելառուսական համարանիշով մեքենաների համար",
-    lead: "Ձևակերպեք ապահովագրական պոլիս Լեհաստան և ԵՄ մուտք գործելու ու ճանապարհորդելու համար՝ առցանց հայտ, արժեքի հաշվարկ և աջակցություն մեսենջերներում։",
-    cta: "Ներկայացնել ապահովագրության հայտ",
+    kicker: "Ապահովագրություն Բելառուսից Լիտվա մեկնող ավտոմեքենաների համար",
+    title: "Ավտոապահովագրություն բելառուսական համարանիշներով ավտոմեքենայի համար Լիտվայում",
+    lead:
+      "Լեհական OC graniczne պոլիսի ձևակերպում՝ Լիտվա մեկնելու համար Բելառուսում գրանցված ավտոմեքենայով։ Պոլիսը հարմար է Լիտվա մուտք գործելու և Լիտվայի տարածքով, ինչպես նաև ապահովագրության պայմաններով նախատեսված այլ ծածկույթի երկրներով տեղաշարժվելու համար։",
+    cta: "Ներկայացնել հայտ",
   },
   what: {
-    title: "OC graniczne Լեհաստանի համար բելառուսական համարանիշով մեքենայի համար",
+    title: "Ինչ է OC graniczne-ն Լիտվա մեկնելու համար",
     text:
-      "Եթե մեքենան գրանցված է Բելառուսում և դուք նախատեսում եք ուղևորություն Լեհաստան, մուտքի համար կարող է պահանջվել սահմանային ապահովագրության պայմանագիր OC graniczne։ Այդպիսի պոլիսը ձևակերպվում է Եվրոպական տնտեսական գոտուց դուրս գրանցված տրանսպորտային միջոցների համար, եթե բացակայում է գործող «Կանաչ քարտը»։ Այս էջում կարող եք տեղեկանալ, թե ում է անհրաժեշտ OC graniczne-ը, ինչպես է կատարվում ձևակերպումը, որքան արժե ապահովագրությունը և ինչ ժամկետով կարելի է այն ձևակերպել։ Հայտը ներկայացնելուց հետո պոլիսը ուղարկվում է PDF ձևաչափով։",
+      "OC graniczne-ն տրանսպորտային միջոցի սեփականատիրոջ քաղաքացիական պատասխանատվության ժամանակավոր պարտադիր ապահովագրություն է։ Պոլիսը կիրառվում է Եվրոպական տնտեսական գոտուց դուրս գրանցված ավտոմեքենաների համար, երբ ԵՄ երկրների տարածքում ավտոմեքենան շահագործելիս պահանջվում է պատասխանատվության ապահովագրության առկայության հաստատում։",
   },
   who: {
-    title: "Ում է անհրաժեշտ այս պոլիսը․",
+    title: "Ում համար է հարմար այս ապահովագրությունը",
     items: [
-      "Բելառուսում գրանցված մեքենաների սեփականատերերին և վարորդներին։",
-      "Նրանց, ովքեր անձնական մեքենայով մուտք են գործում Լեհաստան։",
-      "Նրանց, ում անհրաժեշտ է գործող պատասխանատվության ապահովագրություն երրորդ անձանց նկատմամբ։",
-      "Նրանց, ում անհրաժեշտ է ժամանակավոր ապահովագրություն ԵՄ տարածքում ուղևորության համար։",
-      "Եթե մեքենան անցնում է Լեհաստանով տարանցիկ երթուղով։",
+      "Բելառուսական գրանցման համարանիշներով ավտոմեքենաների սեփականատերերի համար։",
+      "Անձանց համար, ովքեր ծրագրում են Լիտվա մեկնել սեփական ավտոմեքենայով։",
+      "Ճանապարհորդների համար, ովքեր Լիտվայով տարանցիկ մեկնում են Եվրոպական միության այլ երկրներ։",
+      "Վարորդների համար, որոնց անհրաժեշտ է քաղաքացիական պատասխանատվության ապահովագրության հաստատում ուղևորության ժամանակահատվածի համար։",
     ],
   },
   how: {
     title: "Ինչպես ձևակերպել",
     steps: [
-      "Լրացրեք հայտ կայքի ձևի միջոցով։",
-      "Տրամադրեք մեքենայի և վարորդի տվյալները հաշվարկի համար։",
-      "Վճարեք ապահովագրական վճարը հարմար եղանակով։",
-      "Ստացեք պատրաստի պոլիսը և ստուգման հրահանգները։",
+      "Թողեք հայտ կայքի ձևի միջոցով։",
+      "Փոխանցեք ավտոմեքենայի և սեփականատիրոջ տվյալները հաշվարկի համար։",
+      "Վճարեք ապահովագրավճարը ձեզ հարմար եղանակով։",
+      "Ստացեք պատրաստի պոլիսը և ստուգման հրահանգը։",
     ],
   },
   price: {
     title: "Արժեք",
     text:
-      "Գինը կախված է պոլիսի գործողության ժամկետից և տրանսպորտային միջոցի տեսակից։ Մոտավոր արժեքը միշտ կարելի է տեսնել կայքի գլխավոր էջի առցանց հաշվիչում։",
+      "Գինը կախված է պոլիսի գործողության ժամկետից և տրանսպորտային միջոցի տեսակից։ Մոտավոր արժեքը կարելի է տեսնել կայքի գլխավոր էջում՝ առցանց հաշվիչում։",
   },
   validity: {
     title: "Գործողության ժամկետներ",
     text:
-      "Հասանելի են պոլիսներ 30 օրից մինչև 364 օր ժամկետով։ Սկսման ամսաթիվը նշվում է ձևակերպման ընթացքում, որից հետո ապահովագրական ծածկույթը գործում է ընտրված ժամանակահատվածում։ Եթե հայտը լրացնելիս չեք տեսնում ձեզ անհրաժեշտ ժամկետը, նշեք այդ տվյալները մեկնաբանության դաշտում։",
+      "Հասանելի են պոլիսներ 30 օրից մինչև 364 օր ժամկետով։ Սկսման ամսաթիվը նշվում է ձևակերպման ժամանակ, որից հետո ծածկույթը գործում է ընտրված ժամանակահատվածում։ Եթե հայտը լրացնելիս չեք տեսնում անհրաժեշտ ժամկետը, նշեք այդ տվյալները մեկնաբանության մեջ։",
   },
   form: {
     title: "Հայտի ձև",
     desc:
-      "Սեղմեք ստորև գտնվող կոճակը — կբացվի գլխավոր էջը հայտի ձևով։",
+      "Սեղմեք ստորև գտնվող կոճակը․ կբացվի գլխավոր էջը ձևակերպման ձևով։",
   },
   faq: {
     title: "FAQ",
     items: [
       {
-        q: "Հնարավո՞ր է բելառուսական համարանիշով մեքենայով հատել Բելառուս-Լեհաստան սահմանը։",
-        a: "Այո, սահմանը հատել հնարավոր է։ Սակայն կարևոր է հասկանալ, որ Լեհաստանը սահմանել է կանոն, ըստ որի բելառուսական համարանիշով մեքենայում պարտադիր պետք է գտնվի մեքենայի սեփականատերը։ Սա նշանակում է, որ մեքենան չի կարող պատկանել իրավաբանական անձի կամ այն անձին, որը սահմանը հատելու պահին մեքենայում ներկա չէ։",
+        q: "Հնարավո՞ր է բելառուսական համարանիշներով ավտոմեքենայով հատել բելառուսա-լիտվական սահմանը։",
+        a:
+          "Այո, սահմանը հատելը հնարավոր է գործող մուտքի կանոնների պահպանման, Լիտվայի կացության իրավունքի առկայության, փաստաթղթերի պահանջների կատարման և գործող քաղաքացիական պատասխանատվության ապահովագրության առկայության դեպքում։ Մեկնելուց առաջ խորհուրդ է տրվում ստուգել ընտրված սահմանային անցակետում գործող սահմանափակումները։",
       },
       {
-        q: "Հնարավո՞ր է ձևակերպել առցանց, եթե ես դեռ չեմ հատել սահմանը։",
-        a: "Այո, կարող եք նախապես թողնել հայտը, որպեսզի ստանաք պոլիսը անհրաժեշտ մեկնարկի ամսաթվով։",
+        q: "Կարո՞ղ եմ ձևակերպել առցանց, եթե դեռ չեմ հատել սահմանը։",
+        a:
+          "Այո, հայտը կարելի է թողնել նախապես, որպեսզի պոլիսը ստանաք անհրաժեշտ մեկնարկի ամսաթվին։",
       },
       {
-        q: "Արդյո՞ք պոլիսը հարմար է միայն Լեհաստան ուղևորությունների համար։",
-        a: "Պոլիսը ձևակերպվում է Լեհաստան մուտք գործելու համար և կարող է գործել ապահովագրության պայմաններում նշված երկրների տարածքում (Եվրոպական տնտեսական գոտու երկրներ + Շվեյցարիա)։",
+        q: "Պոլիսը հարմար է միայն Լիտվայում ուղևորությունների համա՞ր։",
+        a:
+          "Պոլիսը ձևակերպվում է Լիտվա մեկնելու համար և կարող է գործել ապահովագրության պայմաններում նշված երկրներում՝ Եվրոպական տնտեսական գոտու երկրներում և Շվեյցարիայում։",
       },
       {
-        q: "Հնարավո՞ր է ապահովագրություն ձևակերպել բեռնատար մեքենայի համար։",
-        a: "Այո, ձևակերպումը հասանելի է ինչպես թեթև, այնպես էլ բեռնատար տրանսպորտի համար, սակայն միայն ֆիզիկական անձի անունով (օրինակ՝ վարորդի)։",
+        q: "Հնարավո՞ր է ապահովագրություն ձևակերպել բեռնատար ավտոմեքենայի համար։",
+        a:
+          "Այո, ձևակերպումը հասանելի է ինչպես մարդատար, այնպես էլ բեռնատար տրանսպորտի համար, եթե տրանսպորտային միջոցը համապատասխանում է ապահովագրողի պայմաններին։",
       },
       {
-        q: "Որքա՞ն արագ է ուղարկվում պոլիսը։",
-        a: "Վճարման հաստատումից հետո պոլիսը սովորաբար ուղարկվում է կարճ ժամանակում էլեկտրոնային ձևաչափով։ Դա կախված է օպերատորների ծանրաբեռնվածությունից, միջինում՝ մոտ 10 րոպեի ընթացքում։",
+        q: "Որքա՞ն արագ է ստացվում պոլիսը։",
+        a:
+          "Վճարման հաստատումից հետո պոլիսը սովորաբար ուղարկվում է էլեկտրոնային ձևով կարճ ժամանակում։ Ժամկետը կախված է օպերատորների ծանրաբեռնվածությունից, միջինում՝ մոտ 10 րոպե։",
       },
       {
         q: "Որտե՞ղ կարելի է ստուգել պոլիսի վավերականությունը։",
-        a: "Ստուգումը հնարավոր է Լեհաստանի պաշտոնական UFG ծառայության միջոցով։",
+        a:
+          "Ստուգումը հնարավոր է Լեհաստանի պաշտոնական UFG ծառայության միջոցով։",
       },
     ],
   },
   carousel: {
-    title: "Օգտակար էջեր ուղղությունների վերաբերյալ",
-    cardTitle:
-      "Բելառուսական մեքենայի ապահովագրություն Լեհաստան մեկնելու համար",
-    cardText:
-      "Պայմաններ, ժամկետներ, արժեք և առցանց ձևակերպում։",
+    title: "Օգտակար էջեր ըստ ուղղությունների",
+    cardTitle: "Բելառուսական ավտոմեքենայի ապահովագրություն Լիտվա մեկնելու համար",
+    cardText: "Պայմաններ, ժամկետներ, արժեք և առցանց ձևակերպում։",
     cta: "Բացել էջը",
   },
 };
 
 const ar: belarusLithuaniaOcDictionary = {
   seo: {
-    title: "تأمين سيارة بيلاروسية للسفر إلى بولندا",
+    title: "تأمين للسيارة البيلاروسية إلى ليتوانيا",
     description:
-      "إصدار تأمين للسفر إلى بولندا. طلب عبر الإنترنت، حساب التكلفة، ودعم عبر WhatsApp وTelegram.",
+      "OC graniczne للسفر إلى ليتوانيا بسيارة تحمل لوحات بيلاروسية. طلب إلكتروني، حساب التكلفة، ودعم عبر WhatsApp وTelegram.",
   },
-
-  breadcrumbTitle: "تأمين سيارة بيلاروسية للسفر إلى بولندا",
-
+  breadcrumbTitle: "تأمين سيارة بيلاروسية إلى ليتوانيا",
   hero: {
-    kicker: "تأمين للمركبات المسجلة في بيلاروس",
-    title: "تأمين الدخول إلى بولندا للمركبات ذات اللوحات البيلاروسية",
+    kicker: "تأمين للسيارات من بيلاروسيا إلى ليتوانيا",
+    title: "تأمين سيارة تحمل لوحات بيلاروسية في ليتوانيا",
     lead:
-      "احصل على وثيقة تأمين للدخول والتنقل داخل بولندا والاتحاد الأوروبي: طلب إلكتروني، حساب التكلفة، ودعم عبر تطبيقات المراسلة.",
-    cta: "تقديم طلب التأمين",
+      "إصدار وثيقة OC graniczne البولندية للسفر إلى ليتوانيا بسيارة مسجلة في بيلاروسيا. الوثيقة مناسبة للدخول والتنقل داخل أراضي ليتوانيا والدول الأخرى المشمولة بالتغطية وفقًا لشروط التأمين.",
+    cta: "تقديم الطلب",
   },
-
   what: {
-    title: "تأمين OC Graniczne للمركبات ذات اللوحات البيلاروسية",
+    title: "ما هو OC graniczne للسفر إلى ليتوانيا",
     text:
-      "إذا كانت مركبتك مسجلة في بيلاروس وتخطط للسفر إلى بولندا، فقد تحتاج إلى وثيقة تأمين حدودية OC Graniczne. يتم إصدار هذا التأمين للمركبات المسجلة خارج المنطقة الاقتصادية الأوروبية عند عدم وجود بطاقة خضراء (Green Card) سارية المفعول. في هذه الصفحة يمكنك معرفة من يحتاج إلى هذا التأمين، وكيفية إصداره، وتكلفته، والفترات المتاحة له. بعد تقديم الطلب، يتم إرسال الوثيقة بصيغة PDF.",
+      "OC graniczne هو تأمين إلزامي مؤقت للمسؤولية المدنية لمالك المركبة. تُستخدم الوثيقة للسيارات المسجلة خارج المنطقة الاقتصادية الأوروبية عندما يكون مطلوبًا إثبات وجود تأمين مسؤولية عند استخدام السيارة داخل أراضي دول الاتحاد الأوروبي.",
   },
-
   who: {
-    title: "من يحتاج إلى هذه الوثيقة؟",
+    title: "لمن يناسب هذا التأمين",
     items: [
-      "مالكو وسائقو المركبات المسجلة في بيلاروس.",
-      "الأشخاص الذين يدخلون بولندا بسياراتهم الخاصة.",
-      "من يحتاجون إلى تغطية تأمينية سارية للمسؤولية تجاه الغير.",
-      "من يحتاجون إلى تأمين مؤقت للتنقل داخل الاتحاد الأوروبي.",
-      "المركبات العابرة (ترانزيت) عبر بولندا.",
+      "لمالكي السيارات ذات أرقام التسجيل البيلاروسية.",
+      "للأشخاص الذين يخططون للسفر إلى ليتوانيا بسيارتهم الخاصة.",
+      "للمسافرين العابرين عبر ليتوانيا إلى دول أخرى في الاتحاد الأوروبي.",
+      "للسائقين الذين يحتاجون إلى إثبات تأمين المسؤولية المدنية خلال فترة الرحلة.",
     ],
   },
-
   how: {
     title: "كيفية الإصدار",
     steps: [
-      "قدّم طلبًا عبر النموذج الموجود على الموقع.",
-      "أرسل بيانات المركبة والسائق لحساب التكلفة.",
+      "اترك طلبًا من خلال النموذج الموجود على الموقع.",
+      "أرسل بيانات السيارة والمالك لحساب التكلفة.",
       "ادفع قسط التأمين بالطريقة المناسبة لك.",
-      "استلم وثيقة التأمين وتعليمات التحقق من صلاحيتها.",
+      "استلم الوثيقة الجاهزة وتعليمات التحقق.",
     ],
   },
-
   price: {
     title: "التكلفة",
     text:
-      "تعتمد تكلفة التأمين على مدة الوثيقة ونوع المركبة. يمكنك دائمًا الاطلاع على السعر التقريبي باستخدام الحاسبة الإلكترونية في الصفحة الرئيسية للموقع.",
+      "يعتمد السعر على مدة سريان الوثيقة ونوع المركبة. يمكن الاطلاع على التكلفة التقديرية في الحاسبة الإلكترونية على الصفحة الرئيسية للموقع.",
   },
-
   validity: {
-    title: "مدة التغطية",
+    title: "مدد السريان",
     text:
-      "تتوفر وثائق تأمين لمدة تتراوح بين 30 يومًا و364 يومًا. يتم تحديد تاريخ بدء التغطية عند الإصدار، وتبقى الحماية سارية طوال الفترة المختارة. إذا لم تجد المدة المطلوبة أثناء تعبئة الطلب، يرجى ذكر ذلك في خانة الملاحظات.",
+      "تتوفر وثائق لمدة من 30 يومًا إلى 364 يومًا. يتم تحديد تاريخ البدء عند الإصدار، وبعد ذلك تسري التغطية خلال الفترة المختارة. إذا لم تجد المدة المطلوبة عند تعبئة الطلب، فاذكر هذه البيانات في التعليق.",
   },
-
   form: {
     title: "نموذج الطلب",
     desc:
-      "اضغط على الزر أدناه للانتقال إلى الصفحة الرئيسية وفتح نموذج الإصدار.",
+      "اضغط على الزر أدناه — ستُفتح الصفحة الرئيسية التي تحتوي على نموذج الإصدار.",
   },
-
   faq: {
-    title: "الأسئلة الشائعة",
+    title: "FAQ",
     items: [
       {
-        q: "هل يمكن عبور الحدود بين بيلاروس وبولندا بسيارة تحمل لوحات بيلاروسية؟",
+        q: "هل يمكن عبور الحدود البيلاروسية الليتوانية بسيارة تحمل لوحات بيلاروسية؟",
         a:
-          "نعم، يمكن عبور الحدود. ولكن يجب الانتباه إلى أن بولندا تشترط وجود مالك المركبة داخل السيارة عند عبور الحدود إذا كانت المركبة تحمل لوحات بيلاروسية. وهذا يعني أن المركبة لا يمكن أن تكون مملوكة لشركة أو لشخص غير موجود داخل السيارة أثناء العبور.",
+          "نعم، يمكن العبور مع الالتزام بقواعد الدخول السارية، ووجود تصريح إقامة ليتواني، واستيفاء متطلبات المستندات، ووجود تأمين مسؤولية مدنية سارٍ. قبل السفر، يُنصح بالتحقق من القيود الحالية في نقطة العبور المختارة.",
       },
       {
-        q: "هل يمكن إصدار التأمين عبر الإنترنت قبل عبور الحدود؟",
+        q: "هل يمكن إصدار الوثيقة عبر الإنترنت إذا لم أكن قد عبرت الحدود بعد؟",
         a:
-          "نعم، يمكنك تقديم الطلب مسبقًا للحصول على الوثيقة اعتبارًا من التاريخ الذي تحتاجه.",
+          "نعم، يمكن تقديم الطلب مسبقًا للحصول على الوثيقة في تاريخ بدء السريان المطلوب.",
       },
       {
-        q: "هل الوثيقة صالحة للتنقل داخل بولندا فقط؟",
+        q: "هل الوثيقة مناسبة للرحلات داخل ليتوانيا فقط؟",
         a:
-          "يتم إصدار الوثيقة للدخول إلى بولندا، وقد تكون صالحة أيضًا في الدول المحددة ضمن شروط التأمين (دول المنطقة الاقتصادية الأوروبية بالإضافة إلى سويسرا).",
+          "تُصدر الوثيقة للسفر إلى ليتوانيا وقد تسري في الدول المذكورة في شروط التأمين: دول المنطقة الاقتصادية الأوروبية وسويسرا.",
       },
       {
-        q: "هل يمكن إصدار التأمين لشاحنة؟",
+        q: "هل يمكن إصدار التأمين لسيارة شحن؟",
         a:
-          "نعم، يمكن إصدار التأمين للمركبات الخاصة والشاحنات، ولكن يجب أن تكون الوثيقة باسم شخص طبيعي (على سبيل المثال السائق).",
+          "نعم، الإصدار متاح لكل من السيارات الخاصة ومركبات الشحن، إذا كانت المركبة تستوفي شروط شركة التأمين.",
       },
       {
-        q: "ما مدى سرعة استلام الوثيقة؟",
+        q: "ما مدى سرعة وصول الوثيقة؟",
         a:
-          "بعد تأكيد الدفع، يتم عادة إرسال الوثيقة إلكترونيًا خلال فترة قصيرة. ويعتمد ذلك على حجم العمل لدى الموظفين، لكن المتوسط يقارب 10 دقائق.",
+          "بعد تأكيد الدفع، تُرسل الوثيقة عادةً بصيغة إلكترونية خلال وقت قصير. تعتمد المدة على عبء عمل المشغلين، وفي المتوسط تكون حوالي 10 دقائق.",
       },
       {
         q: "أين يمكن التحقق من صلاحية الوثيقة؟",
         a:
-          "يمكن التحقق من صلاحية الوثيقة عبر خدمة UFG الرسمية في بولندا.",
+          "يمكن التحقق من خلال الخدمة الرسمية UFG في بولندا.",
       },
     ],
   },
-
   carousel: {
-    title: "صفحات مفيدة حسب الوجهة",
-    cardTitle: "تأمين سيارة بيلاروسية للسفر إلى بولندا",
-    cardText:
-      "الشروط، المدة، التكلفة، وإصدار التأمين عبر الإنترنت.",
+    title: "صفحات مفيدة حسب الاتجاهات",
+    cardTitle: "تأمين سيارة بيلاروسية للسفر إلى ليتوانيا",
+    cardText: "الشروط، المدد، التكلفة، والإصدار عبر الإنترنت.",
     cta: "فتح الصفحة",
   },
 };
-const he: belarusLithuaniaOcDictionary = {
-  seo: {
-    title: "ביטוח לרכב בלארוסי לנסיעה לפולין",
-    description:
-      "הנפקת ביטוח לנסיעה לפולין. בקשה מקוונת, חישוב עלות ותמיכה דרך WhatsApp ו-Telegram.",
-  },
 
-  breadcrumbTitle: "ביטוח לרכב בלארוסי בפולין",
-
-  hero: {
-    kicker: "ביטוח לרכבים הרשומים בבלארוס",
-    title: "ביטוח לנסיעה לפולין עבור רכבים עם לוחיות רישוי בלארוסיות",
-    lead:
-      "הנפיקו פוליסה לכניסה ולנסיעה בפולין ובמדינות האיחוד האירופי: בקשה מקוונת, חישוב עלות וליווי באמצעות אפליקציות מסרים.",
-    cta: "הגש בקשה לביטוח",
-  },
-
-  what: {
-    title: "OC Graniczne לפולין עבור רכב עם לוחיות בלארוסיות",
-    text:
-      "אם הרכב רשום בבלארוס ואתם מתכננים נסיעה לפולין, ייתכן שתידרשו לביטוח גבול מסוג OC Graniczne. פוליסה זו מיועדת לכלי רכב הרשומים מחוץ לאזור הכלכלי האירופי כאשר אין ברשותם כרטיס ירוק (Green Card) תקף. בעמוד זה תוכלו ללמוד למי מיועד ביטוח OC Graniczne, כיצד מתבצע התהליך, מהי עלות הביטוח ולאיזו תקופה ניתן להנפיק אותו. לאחר הגשת הבקשה, הפוליסה תישלח אליכם בפורמט PDF.",
-  },
-
-  who: {
-    title: "למי מיועדת הפוליסה:",
-    items: [
-      "לבעלי רכבים ולנהגים שרכבם רשום בבלארוס.",
-      "למי שנכנס לפולין ברכב פרטי.",
-      "למי שזקוק לכיסוי ביטוחי תקף לאחריות כלפי צד שלישי.",
-      "למי שנדרש לביטוח זמני לצורך נסיעה במדינות האיחוד האירופי.",
-      "למי שעובר דרך פולין במסגרת נסיעת טרנזיט.",
-    ],
-  },
-
-  how: {
-    title: "איך מנפיקים את הביטוח",
-    steps: [
-      "מלאו את טופס הבקשה באתר.",
-      "העבירו את פרטי הרכב והנהג לצורך חישוב העלות.",
-      "שלמו את פרמיית הביטוח בדרך הנוחה לכם.",
-      "קבלו את הפוליסה המוכנה והנחיות לבדיקת תקפותה.",
-    ],
-  },
-
-  price: {
-    title: "עלות הביטוח",
-    text:
-      "מחיר הביטוח תלוי במשך תקופת הכיסוי ובסוג הרכב. ניתן תמיד לבדוק את העלות המשוערת בעמוד הראשי של האתר באמצעות המחשבון המקוון.",
-  },
-
-  validity: {
-    title: "תקופת תוקף",
-    text:
-      "ניתן להנפיק פוליסות לתקופה של 30 עד 364 ימים. מועד תחילת הביטוח נקבע בעת ההנפקה, והכיסוי יהיה בתוקף למשך התקופה שנבחרה. אם אינכם רואים בטופס את התקופה הדרושה לכם, ציינו זאת בהערות.",
-  },
-
-  form: {
-    title: "טופס בקשה",
-    desc:
-      "לחצו על הכפתור למטה — תועברו לעמוד הראשי שבו נמצא טופס ההנפקה.",
-  },
-
-  faq: {
-    title: "שאלות נפוצות",
-    items: [
-      {
-        q: "האם ניתן לחצות את גבול בלארוס–פולין ברכב עם לוחיות בלארוסיות?",
-        a:
-          "כן, ניתן לחצות את הגבול. עם זאת, חשוב לדעת שפולין קבעה כי ברכב בעל לוחיות בלארוסיות חייב להיות נוכח בעל הרכב בעת מעבר הגבול. לכן הרכב אינו יכול להיות בבעלות חברה, או בבעלות אדם שאינו נמצא ברכב בזמן חציית הגבול.",
-      },
-      {
-        q: "האם אפשר להנפיק את הביטוח אונליין לפני חציית הגבול?",
-        a:
-          "כן. ניתן להגיש בקשה מראש ולקבל את הפוליסה לתאריך תחילת הכיסוי הרצוי.",
-      },
-      {
-        q: "האם הפוליסה מתאימה לנסיעות בפולין בלבד?",
-        a:
-          "הפוליסה מיועדת לכניסה לפולין ויכולה להיות תקפה גם במדינות המפורטות בתנאי הביטוח (מדינות האזור הכלכלי האירופי ושווייץ).",
-      },
-      {
-        q: "האם ניתן לבטח משאית או רכב מסחרי?",
-        a:
-          "כן. ניתן להנפיק ביטוח הן לרכב פרטי והן לרכב מסחרי, אך רק על שם אדם פרטי (לדוגמה, הנהג).",
-      },
-      {
-        q: "כמה זמן לוקח לקבל את הפוליסה?",
-        a:
-          "לאחר אישור התשלום, הפוליסה נשלחת בדרך כלל תוך זמן קצר בדואר אלקטרוני. משך הטיפול תלוי בעומס העבודה של המפעילים, אך בממוצע מדובר בכ-10 דקות.",
-      },
-      {
-        q: "היכן ניתן לבדוק את תוקף הפוליסה?",
-        a:
-          "ניתן לבדוק את תוקף הפוליסה באמצעות השירות הרשמי של UFG בפולין.",
-      },
-    ],
-  },
-
-  carousel: {
-    title: "עמודים שימושיים לפי יעד",
-    cardTitle: "ביטוח לרכב בלארוסי לנסיעה לפולין",
-    cardText:
-      "תנאים, תקופות כיסוי, מחירים והנפקה מקוונת.",
-    cta: "פתח את העמוד",
-  },
-};
 
 export const belarusLithuaniaOcDictionary: Record<Lang, belarusLithuaniaOcDictionary> = { ru, 
   pl: en, 
@@ -907,15 +592,15 @@ export const belarusLithuaniaOcDictionary: Record<Lang, belarusLithuaniaOcDictio
   uz: ru, 
   ka, 
   kk: ru, 
-  tr, 
-  fa, 
+  tr: en, 
+  fa: en, 
   hy,   
   ckb: ar,
   kmr: ar,
   ar, 
-  az: tr,
+  az: en,
   uk: ru,
-  he,
+  he: en,
 
   ro: en,
   sr: en,

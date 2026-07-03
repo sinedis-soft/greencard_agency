@@ -1,6 +1,8 @@
 import type { Lang } from "@/app/dictionaries/header";
 import { getGeorgiaRomaniaOcDictionary } from "@/app/dictionaries/seo-landings/georgiaRomaniaOc";
 import { getBelarusPolandOcDictionary } from "@/app/dictionaries/seo-landings/belarusPolandOc";
+import { belarusLithuaniaOcDictionary } from "@/app/dictionaries/seo-landings/belarusLithuaniaOc";
+import { getUaeOcDictionary } from "@/app/dictionaries/seo-landings/uaeOc";
 
 export type SeoRouteKey =
   | "home"
@@ -11,16 +13,18 @@ export type SeoRouteKey =
   | "privacy"
   | "cookiePolicy"
   | "georgiaRomaniaOc"
-  | "belarusPolandOc";
+  | "belarusPolandOc"
+  | "belarusLithuaniaOc"
+  | "uaeOc";
 
 type RouteSeo = {
   title: string;
   description: string;
 };
 
-type SeoDictionaryBase = Record<Exclude<SeoRouteKey, "georgiaRomaniaOc" | "belarusPolandOc">, RouteSeo>;
+type SeoDictionaryBase = Record<Exclude<SeoRouteKey, "georgiaRomaniaOc" | "belarusPolandOc" | "belarusLithuaniaOc" | "uaeOc">, RouteSeo>;
 
-type SeoDictionary = SeoDictionaryBase & { georgiaRomaniaOc: RouteSeo; belarusPolandOc: RouteSeo };
+type SeoDictionary = SeoDictionaryBase & { georgiaRomaniaOc: RouteSeo; belarusPolandOc: RouteSeo; belarusLithuaniaOc: RouteSeo; uaeOc: RouteSeo; };
 
 export const seoDictionary: Record<Lang, SeoDictionaryBase> = {
   ru: {
@@ -821,6 +825,8 @@ export function getSeoDictionary(lang: Lang): SeoDictionary {
   const base = seoDictionary[lang];
   const georgiaLandingSeo = getGeorgiaRomaniaOcDictionary(lang).seo;
   const belarusLandingSeo = getBelarusPolandOcDictionary(lang).seo;
+  const belarusLithuaniaLandingSeo = belarusLithuaniaOcDictionary[lang].seo;
+  const uaeOcLandingSeo = getUaeOcDictionary(lang).seo;
 
   return {
     ...base,
@@ -831,6 +837,14 @@ export function getSeoDictionary(lang: Lang): SeoDictionary {
     belarusPolandOc: {
       title: belarusLandingSeo.title,
       description: belarusLandingSeo.description,
+    },
+    belarusLithuaniaOc: {
+      title: belarusLithuaniaLandingSeo.title,
+      description: belarusLithuaniaLandingSeo.description,
+    },
+    uaeOc: {
+      title: uaeOcLandingSeo.title,
+      description: uaeOcLandingSeo.description,
     },
   };
 }
