@@ -43,7 +43,7 @@ export default async function OrderPage({ params }: { params: Promise<{ lang: st
             </div>
           </div>
           <div className="lead-form-shell">
-            <LeadForm lang={lang} />
+            <LeadForm lang={lang} showOrderSummary />
           </div>
         </div>
       </section>
