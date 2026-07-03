@@ -169,7 +169,7 @@ const pl: BelarusPolandOcDictionary = {
     cardTitle:
       "Ubezpieczenie gruzińskiego samochodu na podróż do Rumunii",
     cardText:
-      "Ubezpieczenie, okres obowiązywania, koszt oraz zawarcie online.",
+      "Ubezpieczenie, okres obowiązywania, koszt oraz zawarcie .",
     cta: "Otwórz stronę",
   },
 };
