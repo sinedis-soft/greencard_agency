@@ -182,8 +182,12 @@ export default function LeadForm(props: { lang: Lang }) {
     }
 
     try {
+      const params = new URLSearchParams(window.location.search);
+      const querySelection = { vehicle: params.get("vehicle"), term: params.get("term") };
+      applyCalculatorSelection(querySelection);
+
       const savedSelection = window.sessionStorage.getItem("calculatorSelection");
-      if (savedSelection) {
+      if (savedSelection && !querySelection.vehicle && !querySelection.term) {
         applyCalculatorSelection(JSON.parse(savedSelection) as { vehicle?: unknown; term?: unknown });
       }
     } catch {

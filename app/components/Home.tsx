@@ -4,6 +4,7 @@ import { getHomeDictionary } from "@/app/dictionaries/home";
 import InfoCompare from "@/app/components/InfoCompare";
 import Calculator from "@/app/components/Calculator";
 import LeadForm from "@/app/components/LeadForm";
+import TariffCards from "@/app/components/TariffCards";
 import CoverageBlock from "@/app/components/CoverageBlock";
 import { keepShortWords } from "@/app/utils/typography";
 import { getBelarusPolandOcDictionary } from "@/app/dictionaries/seo-landings/belarusPolandOc";
@@ -272,6 +273,8 @@ export default function Home({ lang }: { lang: Lang }) {
       ) : null}
       
 
+
+      <TariffCards lang={lang} />
 
       <section className="section" id="buy">
         <div className="container">
