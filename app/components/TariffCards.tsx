@@ -31,6 +31,7 @@ const MOBILE_HIDDEN_VEHICLES = new Set<PriceVehicle>([
   "bus",
   "truck",
   "special",
+  "trailer",
 ]);
 
 export default function TariffCards({ lang }: { lang: Lang }) {
