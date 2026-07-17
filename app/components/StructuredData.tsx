@@ -204,6 +204,43 @@ export function WebSiteJsonLd({ lang }: { lang: Lang }) {
   return <JsonLd data={data} />;
 }
 
+
+export function InsurancePageJsonLd({
+  lang,
+  pagePath,
+  title,
+  description,
+  review,
+}: {
+  lang: Lang;
+  pagePath: string;
+  title: string;
+  description: string;
+  review: { authorId: string; reviewerId: string; reviewedAt: string };
+}) {
+  const data = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": toAbsolute(`/${lang}${pagePath}#webpage`),
+    url: toAbsolute(`/${lang}${pagePath}`),
+    name: title,
+    description,
+    inLanguage: lang,
+    isPartOf: {
+      "@id": toAbsolute(`/${lang}#website`),
+    },
+    author: {
+      "@id": "https://greencard.agency/#person-sergey-anatska",
+    },
+    dateModified: review.reviewedAt,
+    publisher: {
+      "@id": toAbsolute(`/${lang}#organization`),
+    },
+  };
+
+  return <JsonLd data={data} />;
+}
+
 export function BreadcrumbListJsonLd({
   lang,
   pageName,

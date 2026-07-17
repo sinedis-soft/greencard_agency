@@ -1,5 +1,7 @@
 import Link from "next/link";
 import type { Lang } from "@/app/dictionaries/header";
+import type { InsuranceContentReview } from "@/app/seo";
+import ContentReview from "@/app/components/ContentReview";
 import type { UaeOcDictionary } from "@/app/dictionaries/seo-landings/uaeOc";
 import { keepTypography } from "@/app/utils/typography";
 import styles from "./UaeLandingPage.module.css";
@@ -7,6 +9,7 @@ import styles from "./UaeLandingPage.module.css";
 type UaeLandingPageProps = {
   lang: Lang;
   dictionary: UaeOcDictionary;
+  review: InsuranceContentReview;
 };
 
 const homeCrumbByLang: Record<Lang, string> = {
@@ -38,7 +41,7 @@ function toneClass(tone: UaeOcDictionary["answers"][number]["tone"]) {
   return styles.answerNo;
 }
 
-export default function UaeLandingPage({ lang, dictionary: t }: UaeLandingPageProps) {
+export default function UaeLandingPage({ lang, dictionary: t, review }: UaeLandingPageProps) {
   return (
     <div className={styles.uaeLanding}>
       <nav aria-label="Breadcrumb" className={`route-breadcrumb container ${styles.breadcrumb}`}>
@@ -239,6 +242,8 @@ export default function UaeLandingPage({ lang, dictionary: t }: UaeLandingPagePr
           </div>
         </div>
       </section>
+
+      <ContentReview lang={lang} review={review} />
 
       <section className={`${styles.section} ${styles.sectionSoft}`}>
         <div className={styles.sectionHeader}>

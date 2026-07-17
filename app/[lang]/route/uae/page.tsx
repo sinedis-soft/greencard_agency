@@ -7,13 +7,15 @@ import {
   pageAlternates,
   pageSocialMetadata,
   routeStaticParams,
+  requireRouteContentReview,
   toAbsolute,
 } from "@/app/seo";
 import { getUaeOcDictionary } from "@/app/dictionaries/seo-landings/uaeOc";
-import { BreadcrumbListJsonLd } from "@/app/components/StructuredData";
+import { BreadcrumbListJsonLd, InsurancePageJsonLd } from "@/app/components/StructuredData";
 import UaeLandingPage from "@/app/components/UaeLandingPage";
 
 const UAE_ROUTE = "/route/uae";
+const CONTENT_REVIEW = requireRouteContentReview(UAE_ROUTE);
 
 export const dynamicParams = false;
 
@@ -48,6 +50,9 @@ function faqJsonLd(lang: Lang, dictionary: ReturnType<typeof getUaeOcDictionary>
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "@id": toAbsolute(`/${lang}${UAE_ROUTE}#faq`),
+    author: { "@id": "https://greencard.agency/#person-sergey-anatska" },
+    dateModified: CONTENT_REVIEW.reviewedAt,
+    publisher: { "@id": toAbsolute(`/${lang}#organization`) },
     mainEntity: dictionary.faq.items.map((item) => ({
       "@type": "Question",
       name: item.q,
@@ -83,8 +88,9 @@ export default async function UaeOcPage({ params }: { params: Promise<{ lang: st
   return (
     <main id="main">
       <BreadcrumbListJsonLd lang={lang} pageName={t.breadcrumbTitle} pagePath={UAE_ROUTE} />
+      <InsurancePageJsonLd lang={lang} pagePath={UAE_ROUTE} title={t.seo.title} description={t.seo.description} review={CONTENT_REVIEW} />
       <JsonLd data={faqJsonLd(lang, t)} />
-      <UaeLandingPage lang={lang} dictionary={t} />
+      <UaeLandingPage lang={lang} dictionary={t} review={CONTENT_REVIEW} />
     </main>
   );
 }

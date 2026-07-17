@@ -12,6 +12,7 @@ const ROUTE_DICTIONARIES = {
   "georgia/bulgaria": "app/dictionaries/seo-landings/georgiaBulgariaOc.ts",
   "kazakhstan/poland": "app/dictionaries/seo-landings/kazakhstanPolandOc.ts",
   uae: "app/dictionaries/seo-landings/uaeOc.ts",
+  "experts/sergey-anatska": "app/dictionaries/experts/sergeyAnatska.ts",
 };
 
 const FULL_DICTIONARY_EXCLUSIONS = [
@@ -86,6 +87,7 @@ const ROUTE_REQUIRED_LEGAL_FIELDS = {
     "steps.items",
     "faq.items",
   ],
+  "experts/sergey-anatska": ["seo.title", "seo.description", "shortDescription", "biography", "specializations", "editorialPolicy"],
 };
 
 function assert(condition, message) {
@@ -102,7 +104,7 @@ function objectBody(source, name) {
 
 function parseRouteLocales() {
   const body = objectBody(seoSource, "ROUTE_LOCALES");
-  const entries = [...body.matchAll(/"?([a-z]+(?:\/[a-z]+){0,2})"?\s*:\s*\[([^\]]+)\]/g)];
+  const entries = [...body.matchAll(/"?([a-z]+(?:\/[a-z-]+){0,2})"?\s*:\s*\[([^\]]+)\]/g)];
   return new Map(entries.map(([, route, values]) => [
     route,
     [...values.matchAll(/"([a-z]+)"/g)].map(([, locale]) => locale),

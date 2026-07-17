@@ -6,12 +6,14 @@ import {
   pageAlternates,
   pageSocialMetadata,
   routeStaticParams,
+  requireRouteContentReview,
 } from "@/app/seo";
 import { getbelarusLithuaniaOcDictionary } from "@/app/dictionaries/seo-landings/belarusLithuaniaOc";
-import { BreadcrumbListJsonLd } from "@/app/components/StructuredData";
+import { BreadcrumbListJsonLd, InsurancePageJsonLd } from "@/app/components/StructuredData";
 import RouteLandingPage from "@/app/components/RouteLandingPage";
 
 const BELARUS_LITHUANIA_ROUTE = "/route/belarus/lithuania";
+const CONTENT_REVIEW = requireRouteContentReview(BELARUS_LITHUANIA_ROUTE);
 
 export function generateStaticParams() {
   return routeStaticParams(BELARUS_LITHUANIA_ROUTE);
@@ -46,7 +48,8 @@ export default async function BelarusLithuaniaOcPage({ params }: { params: Promi
   return (
     <main id="main">
       <BreadcrumbListJsonLd lang={lang} pageName={t.breadcrumbTitle} pagePath={BELARUS_LITHUANIA_ROUTE} />
-      <RouteLandingPage lang={lang} dictionary={t} />
+      <InsurancePageJsonLd lang={lang} pagePath={BELARUS_LITHUANIA_ROUTE} title={t.seo.title} description={t.seo.description} review={CONTENT_REVIEW} />
+      <RouteLandingPage lang={lang} dictionary={t} review={CONTENT_REVIEW} />
     </main>
   );
 }

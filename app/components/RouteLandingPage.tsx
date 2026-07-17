@@ -1,5 +1,7 @@
 import Link from "next/link";
 import type { Lang } from "@/app/dictionaries/header";
+import type { InsuranceContentReview } from "@/app/seo";
+import ContentReview from "@/app/components/ContentReview";
 import type { BelarusPolandOcDictionary } from "@/app/dictionaries/seo-landings/belarusPolandOc";
 import Calculator from "@/app/components/Calculator";
 import { keepTypography } from "@/app/utils/typography";
@@ -8,6 +10,7 @@ import styles from "./RouteLandingPage.module.css";
 type RouteLandingPageProps = {
   lang: Lang;
   dictionary: BelarusPolandOcDictionary;
+  review: InsuranceContentReview;
 };
 
 type RouteEnhancement = {
@@ -168,7 +171,7 @@ const routeEnhancementsByLang: Partial<Record<Lang, RouteEnhancement>> = {
   },
 };
 
-export default function RouteLandingPage({ lang, dictionary: t }: RouteLandingPageProps) {
+export default function RouteLandingPage({ lang, dictionary: t, review }: RouteLandingPageProps) {
   const topSignals = [t.what.title, t.price.title, t.validity.title];
   const supportSignals = t.who.items.slice(0, 3);
   const enhancement = routeEnhancementsByLang[lang];
@@ -391,6 +394,8 @@ export default function RouteLandingPage({ lang, dictionary: t }: RouteLandingPa
           </ul>
         </div>
       </section>
+
+      <ContentReview lang={lang} review={review} />
 
       <section className="route-faq section" id="faq">
         <div className="container route-faq__grid">

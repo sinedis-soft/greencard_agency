@@ -6,12 +6,14 @@ import {
   pageAlternates,
   pageSocialMetadata,
   routeStaticParams,
+  requireRouteContentReview,
 } from "@/app/seo";
 import { getGeorgiaBulgariaOcDictionary } from "@/app/dictionaries/seo-landings/georgiaBulgariaOc";
-import { BreadcrumbListJsonLd } from "@/app/components/StructuredData";
+import { BreadcrumbListJsonLd, InsurancePageJsonLd } from "@/app/components/StructuredData";
 import RouteLandingPage from "@/app/components/RouteLandingPage";
 
 const GEORGIA_BULGARIA_ROUTE = "/route/georgia/bulgaria";
+const CONTENT_REVIEW = requireRouteContentReview(GEORGIA_BULGARIA_ROUTE);
 
 export function generateStaticParams() {
   return routeStaticParams(GEORGIA_BULGARIA_ROUTE);
@@ -46,7 +48,8 @@ export default async function GeorgiaRomaniaOcPage({ params }: { params: Promise
   return (
     <main id="main">
       <BreadcrumbListJsonLd lang={lang} pageName={t.breadcrumbTitle} pagePath={GEORGIA_BULGARIA_ROUTE} />
-      <RouteLandingPage lang={lang} dictionary={t} />
+      <InsurancePageJsonLd lang={lang} pagePath={GEORGIA_BULGARIA_ROUTE} title={t.seo.title} description={t.seo.description} review={CONTENT_REVIEW} />
+      <RouteLandingPage lang={lang} dictionary={t} review={CONTENT_REVIEW} />
     </main>
   );
 }

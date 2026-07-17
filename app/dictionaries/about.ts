@@ -19,6 +19,11 @@ export interface AboutDictionary {
     title: string;
     desc: string;
   };
+  expertLink?: {
+    title: string;
+    desc: string;
+    cta: string;
+  };
 }
 
 const RU: AboutDictionary = {
@@ -139,6 +144,11 @@ const RU: AboutDictionary = {
     title: "Свяжитесь с нами",
     desc:
       "Ответим на вопросы по страхованию, условиям оформления и необходимым документам.",
+  },
+  expertLink: {
+    title: "Эксперт и редакционная политика",
+    desc: "Информация о специалисте, который подготавливает и проверяет страховые материалы сайта, и о принципах редакционной проверки.",
+    cta: "Открыть профиль эксперта",
   },
 };
 
@@ -262,6 +272,11 @@ const PL: AboutDictionary = {
     desc:
       "Odpowiemy na pytania dotyczące ubezpieczenia, warunków zawarcia umowy oraz wymaganych dokumentów.",
   },
+  expertLink: {
+    title: "Ekspert i polityka redakcyjna",
+    desc: "Informacje o specjaliście przygotowującym i sprawdzającym materiały ubezpieczeniowe serwisu oraz o zasadach weryfikacji redakcyjnej.",
+    cta: "Otwórz profil eksperta",
+  },
 };
 
 const EN: AboutDictionary = {
@@ -384,6 +399,11 @@ const EN: AboutDictionary = {
     desc:
       "We will answer your questions regarding insurance coverage, application terms, and required documentation.",
   },
+  expertLink: {
+    title: "Expert and editorial policy",
+    desc: "Information about the specialist who prepares and reviews the website insurance materials and about the editorial review principles.",
+    cta: "Open expert profile",
+  },
 };
 
 const BE: AboutDictionary = {
@@ -505,6 +525,11 @@ const BE: AboutDictionary = {
     title: "Звяжыцеся з намі",
     desc:
       "Адкажам на пытанні па страхаванні, умовах афармлення і неабходных дакументах.",
+  },
+  expertLink: {
+    title: "Эксперт і рэдакцыйная палітыка",
+    desc: "Інфармацыя пра спецыяліста, які рыхтуе і правярае страхавыя матэрыялы сайта, і пра прынцыпы рэдакцыйнай праверкі.",
+    cta: "Адкрыць профіль эксперта",
   },
 };
 

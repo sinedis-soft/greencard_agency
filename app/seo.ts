@@ -1,4 +1,5 @@
 import { LOCALES, type Lang } from "@/app/dictionaries/header";
+import type { ExpertId } from "@/app/experts/experts";
 
 export const SITE_URL = "https://greencard.agency";
 
@@ -9,8 +10,16 @@ export const SOCIAL_PREVIEW_IMAGE = {
   alt: "SINEDIS border insurance online for Poland and the EU",
 } as const;
 
+export type InsuranceContentReview = {
+  authorId: ExpertId;
+  reviewerId: ExpertId;
+  reviewedAt: string;
+};
+
 type RouteMeta = {
   lastModified: string;
+  review?: InsuranceContentReview;
+  pageType?: "insurance-route" | "expert";
 };
 
 type RouteLocaleKey =
@@ -19,7 +28,8 @@ type RouteLocaleKey =
   | "georgia/romania"
   | "georgia/bulgaria"
   | "kazakhstan/poland"
-  | "uae";
+  | "uae"
+  | "experts/sergey-anatska";
 
 export const ROUTE_LOCALES = {
   "belarus/poland": ["ru", "pl", "en", "be", "ka", "tr", "fa", "hy", "ar", "he"],
@@ -28,6 +38,7 @@ export const ROUTE_LOCALES = {
   "georgia/bulgaria": ["ru", "en", "ka", "hy", "ar"],
   "kazakhstan/poland": ["ru", "pl", "kk", "en", "ar"],
   uae: ["ru", "en", "ar"],
+  "experts/sergey-anatska": ["ru", "pl", "en", "be"],
 } as const satisfies Record<RouteLocaleKey, readonly Lang[]>;
 
 export const ROUTE_META = {
@@ -38,14 +49,41 @@ export const ROUTE_META = {
   "/rules": { lastModified: "2026-05-08" },
   "/privacy": { lastModified: "2026-05-08" },
   "/cookiepolicy": { lastModified: "2026-05-08" },
+  "/experts/sergey-anatska": { lastModified: "2026-07-17" },
   "/route/belarus/poland": {
     lastModified: "2026-07-17",
+    review: {
+      authorId: "sergey-anatska",
+      reviewerId: "sergey-anatska",
+      reviewedAt: "2026-07-17",
+    },
+    pageType: "insurance-route",
   },
-  "/route/belarus/lithuania": { lastModified: "2026-07-17" },
-  "/route/georgia/romania": { lastModified: "2026-07-17" },
-  "/route/georgia/bulgaria": { lastModified: "2026-07-17" },
-  "/route/kazakhstan/poland": { lastModified: "2026-07-17" },
-  "/route/uae": { lastModified: "2026-07-02" },
+  "/route/belarus/lithuania": { lastModified: "2026-07-17", review: {
+      authorId: "sergey-anatska",
+      reviewerId: "sergey-anatska",
+      reviewedAt: "2026-07-17",
+    },
+    pageType: "insurance-route", },
+  "/route/georgia/romania": { lastModified: "2026-07-17", review: {
+      authorId: "sergey-anatska",
+      reviewerId: "sergey-anatska",
+      reviewedAt: "2026-07-17",
+    },
+    pageType: "insurance-route", },
+  "/route/georgia/bulgaria": { lastModified: "2026-07-17", review: {
+      authorId: "sergey-anatska",
+      reviewerId: "sergey-anatska",
+      reviewedAt: "2026-07-17",
+    },
+    pageType: "insurance-route", },
+  "/route/kazakhstan/poland": { lastModified: "2026-07-17", review: {
+      authorId: "sergey-anatska",
+      reviewerId: "sergey-anatska",
+      reviewedAt: "2026-07-17",
+    },
+    pageType: "insurance-route", },
+  "/route/uae": { lastModified: "2026-07-02", review: { authorId: "sergey-anatska", reviewerId: "sergey-anatska", reviewedAt: "2026-07-02" }, pageType: "insurance-route" },
 } as const satisfies Record<string, RouteMeta>;
 
 export const ROUTES = Object.keys(ROUTE_META) as Array<keyof typeof ROUTE_META>;
@@ -58,7 +96,7 @@ function normalizeRoute(route: string = ""): string {
 }
 
 function routeLocaleKey(route: string): RouteLocaleKey | undefined {
-  const normalizedRoute = normalizeRoute(route).replace(/^\/route\//, "");
+  const normalizedRoute = normalizeRoute(route).replace(/^\/route\//, "").replace(/^\//, "");
 
   return Object.hasOwn(ROUTE_LOCALES, normalizedRoute)
     ? (normalizedRoute as RouteLocaleKey)
@@ -66,7 +104,25 @@ function routeLocaleKey(route: string): RouteLocaleKey | undefined {
 }
 
 export function routeLastModified(route: AppRoute): Date {
-  return new Date(ROUTE_META[route].lastModified);
+  return new Date((ROUTE_META[route] as RouteMeta).review?.reviewedAt ?? ROUTE_META[route].lastModified);
+}
+
+export function routeContentReview(route: AppRoute): InsuranceContentReview | undefined {
+  return (ROUTE_META[route] as RouteMeta).review;
+}
+
+export function requireRouteContentReview(route: AppRoute): InsuranceContentReview {
+  const review = routeContentReview(route);
+
+  if (!review) {
+    throw new Error(`Missing content review metadata for ${route}`);
+  }
+
+  return review;
+}
+
+export function insurancePageRoutes(): AppRoute[] {
+  return ROUTES.filter((route) => (ROUTE_META[route] as RouteMeta).pageType === "insurance-route");
 }
 
 export function routeLocales(route: string = ""): Lang[] {

@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Lang } from "@/app/dictionaries/header";
 import type { AboutDictionary } from "@/app/dictionaries/about";
 import { keepShortWords } from "@/app/utils/typography";
+import OfficialSources from "@/app/components/OfficialSources";
 
 type LegalSection = {
   title: string;
@@ -154,6 +155,24 @@ export default function AboutPage({
           </article>
         </div>
       </section>
+
+      <OfficialSources lang={lang} showCredentials />
+
+      {t.expertLink ? (
+        <section className="section" aria-labelledby="about-expert-title">
+          <div className="container">
+            <div className="about-contact__panel">
+              <div>
+                <h2 id="about-expert-title">{keepShortWords(t.expertLink.title)}</h2>
+                <p>{t.expertLink.desc}</p>
+              </div>
+              <Link className="btn btn--soft" href={`/${lang}/experts/sergey-anatska`}>
+                {t.expertLink.cta}
+              </Link>
+            </div>
+          </div>
+        </section>
+      ) : null}
 
       <section
         className="section about-contact"
