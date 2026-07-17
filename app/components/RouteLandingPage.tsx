@@ -2,6 +2,8 @@ import Link from "next/link";
 import type { Lang } from "@/app/dictionaries/header";
 import type { InsuranceContentReview } from "@/app/seo";
 import ContentReview from "@/app/components/ContentReview";
+import CaseStudies from "@/app/components/CaseStudies";
+import type { CaseStudyId, CaseStudyLocale } from "@/app/practiceContent";
 import type { BelarusPolandOcDictionary } from "@/app/dictionaries/seo-landings/belarusPolandOc";
 import Calculator from "@/app/components/Calculator";
 import { keepTypography } from "@/app/utils/typography";
@@ -11,6 +13,7 @@ type RouteLandingPageProps = {
   lang: Lang;
   dictionary: BelarusPolandOcDictionary;
   review: InsuranceContentReview;
+  caseIds?: readonly CaseStudyId[];
 };
 
 type RouteEnhancement = {
@@ -171,7 +174,11 @@ const routeEnhancementsByLang: Partial<Record<Lang, RouteEnhancement>> = {
   },
 };
 
-export default function RouteLandingPage({ lang, dictionary: t, review }: RouteLandingPageProps) {
+function isCaseStudyLocale(lang: Lang): lang is CaseStudyLocale {
+  return lang === "ru" || lang === "pl" || lang === "en" || lang === "be";
+}
+
+export default function RouteLandingPage({ lang, dictionary: t, review, caseIds = [] }: RouteLandingPageProps) {
   const topSignals = [t.what.title, t.price.title, t.validity.title];
   const supportSignals = t.who.items.slice(0, 3);
   const enhancement = routeEnhancementsByLang[lang];
@@ -394,6 +401,8 @@ export default function RouteLandingPage({ lang, dictionary: t, review }: RouteL
           </ul>
         </div>
       </section>
+
+      {caseIds.length > 0 && isCaseStudyLocale(lang) ? <CaseStudies caseIds={caseIds} locale={lang} /> : null}
 
       <ContentReview lang={lang} review={review} />
 
