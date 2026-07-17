@@ -49,7 +49,7 @@ export default async function BelarusPolandOcPage({ params }: { params: Promise<
     <main id="main">
       <BreadcrumbListJsonLd lang={lang} pageName={t.breadcrumbTitle} pagePath={BELARUS_POLAND_ROUTE} />
       <InsurancePageJsonLd lang={lang} pagePath={BELARUS_POLAND_ROUTE} title={t.seo.title} description={t.seo.description} review={CONTENT_REVIEW} />
-      <RouteLandingPage lang={lang} dictionary={t} review={CONTENT_REVIEW} />
+      <RouteLandingPage lang={lang} dictionary={t} review={CONTENT_REVIEW} caseIds={["belarus-poland-border-insurance"]} />
     </main>
   );
 }

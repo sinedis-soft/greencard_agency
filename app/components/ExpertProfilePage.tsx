@@ -5,6 +5,8 @@ import type { ExpertPageDictionary } from "@/app/dictionaries/experts/sergeyAnat
 import type { SupportedExpertLocale } from "@/app/experts/experts";
 import { keepShortWords } from "@/app/utils/typography";
 import OfficialSources from "@/app/components/OfficialSources";
+import CaseStudies from "@/app/components/CaseStudies";
+import PracticeMetrics from "@/app/components/PracticeMetrics";
 
 export default function ExpertProfilePage({
   expertId,
@@ -91,6 +93,10 @@ export default function ExpertProfilePage({
           </article>
         </div>
       </section>
+
+      <CaseStudies caseIds={["belarus-poland-border-insurance", "georgia-romania-ferry"]} locale={lang} />
+
+      <PracticeMetrics locale={lang} />
 
       <OfficialSources lang={lang} />
 
