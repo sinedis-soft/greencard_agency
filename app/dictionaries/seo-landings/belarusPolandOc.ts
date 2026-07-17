@@ -50,7 +50,7 @@ const en: BelarusPolandOcDictionary = {
   seo: {
     title: "Insurance for a Belarusian Car Traveling to Poland",
     description:
-      "Insurance оформление for travel to Poland. Online application, price calculation, and support via WhatsApp and Telegram.",
+      "Insurance for travel to Poland. Online application, price calculation, and support via WhatsApp and Telegram.",
   },
   breadcrumbTitle: "Insurance for a Belarusian Vehicle Traveling to Poland",
   hero: {
@@ -141,6 +141,101 @@ const en: BelarusPolandOcDictionary = {
     cardText:
       "Conditions, duration, pricing, and online application.",
     cta: "Open Page",
+  },
+};
+const pl: BelarusPolandOcDictionary = {
+  seo: {
+    title: "Ubezpieczenie samochodu z Białorusi do Polski",
+    description:
+      "Ubezpieczenie na podróż do Polski. Wniosek online, kalkulacja ceny oraz wsparcie przez WhatsApp i Telegram.",
+  },
+  breadcrumbTitle: "Ubezpieczenie białoruskiego samochodu do Polski",
+  hero: {
+    kicker: "Ubezpieczenie dla pojazdów z Białorusi",
+    title: "Ubezpieczenie do Polski dla aut na białoruskich numerach",
+    lead:
+      "Złóż wniosek o polisę na wjazd i podróż po Polsce oraz UE: formularz online, kalkulacja ceny i wsparcie w komunikatorach.",
+    cta: "Złóż wniosek o ubezpieczenie",
+  },
+  what: {
+    title: "OC graniczne do Polski dla pojazdu na białoruskich numerach",
+    text:
+      "Jeżeli pojazd jest zarejestrowany na Białorusi i planujesz podróż do Polski, przy wjeździe może być wymagane OC graniczne. Taka polisa jest zawierana dla pojazdów zarejestrowanych poza Europejskim Obszarem Gospodarczym, jeżeli nie ma ważnej Zielonej Karty. Na tej stronie możesz sprawdzić, komu potrzebne jest OC graniczne, jak wygląda zawarcie polisy, od czego zależy cena i na jaki okres można ją zawrzeć. Po złożeniu wniosku polisa jest wysyłana w formacie PDF.",
+  },
+  who: {
+    title: "Komu potrzebna jest ta polisa:",
+    items: [
+      "Właścicielom i kierowcom pojazdów zarejestrowanych na Białorusi.",
+      "Osobom wjeżdżającym do Polski prywatnym samochodem.",
+      "Osobom, które potrzebują ważnego ubezpieczenia odpowiedzialności cywilnej wobec osób trzecich.",
+      "Osobom, które potrzebują czasowego ubezpieczenia na podróż po UE.",
+      "Gdy pojazd przejeżdża przez Polskę tranzytem.",
+    ],
+  },
+  how: {
+    title: "Jak złożyć wniosek",
+    steps: [
+      "Zostaw wniosek przez formularz na stronie.",
+      "Przekaż dane pojazdu i kierowcy potrzebne do kalkulacji.",
+      "Opłać składkę ubezpieczeniową wygodną metodą.",
+      "Odbierz gotową polisę i instrukcję weryfikacji.",
+    ],
+  },
+  price: {
+    title: "Cena",
+    text:
+      "Cena zależy od okresu obowiązywania polisy i rodzaju pojazdu. Orientacyjny koszt można sprawdzić na stronie głównej w kalkulatorze online.",
+  },
+  validity: {
+    title: "Okres obowiązywania",
+    text:
+      "Dostępne są polisy na okres od 30 do 364 dni. Data początku jest wskazywana przy zawieraniu polisy, a następnie ochrona obowiązuje przez wybrany okres. Jeżeli w formularzu nie widzisz potrzebnego okresu, wpisz tę informację w komentarzu.",
+  },
+  form: {
+    title: "Formularz wniosku",
+    desc:
+      "Kliknij przycisk poniżej — otworzy się strona główna z formularzem zgłoszeniowym.",
+  },
+  faq: {
+    title: "FAQ",
+    items: [
+      {
+        q: "Czy można przekroczyć granicę białorusko-polską autem na białoruskich numerach?",
+        a:
+          "Tak, przekroczenie granicy jest możliwe. Należy jednak pamiętać o zasadzie, zgodnie z którą w samochodzie na białoruskich numerach powinien znajdować się właściciel pojazdu. Oznacza to, że pojazd nie może należeć do osoby prawnej ani do osoby, której nie ma w aucie w momencie przekraczania granicy.",
+      },
+      {
+        q: "Czy mogę złożyć wniosek online, jeśli nie przekroczyłem jeszcze granicy?",
+        a:
+          "Tak, wniosek można złożyć wcześniej, aby otrzymać polisę na potrzebną datę rozpoczęcia ochrony.",
+      },
+      {
+        q: "Czy polisa nadaje się tylko do podróży po Polsce?",
+        a:
+          "Polisa jest zawierana na wjazd do Polski i może obowiązywać w krajach wskazanych w warunkach ubezpieczenia (kraje Europejskiego Obszaru Gospodarczego + Szwajcaria).",
+      },
+      {
+        q: "Czy można zawrzeć ubezpieczenie dla samochodu ciężarowego?",
+        a:
+          "Tak, zawarcie polisy jest dostępne zarówno dla samochodów osobowych, jak i ciężarowych, ale tylko na osobę fizyczną, na przykład kierowcę.",
+      },
+      {
+        q: "Jak szybko przychodzi polisa?",
+        a:
+          "Po potwierdzeniu płatności polisa jest zwykle wysyłana elektronicznie w krótkim czasie. Zależy to od obciążenia operatorów; średnio trwa to około 10 minut.",
+      },
+      {
+        q: "Gdzie można sprawdzić ważność polisy?",
+        a:
+          "Weryfikacja jest możliwa przez oficjalny serwis UFG w Polsce.",
+      },
+    ],
+  },
+  carousel: {
+    title: "Przydatne strony według kierunku",
+    cardTitle: "Ubezpieczenie białoruskiego samochodu na podróż do Polski",
+    cardText: "Warunki, okres, cena i wniosek online.",
+    cta: "Otwórz stronę",
   },
 };
 
@@ -930,7 +1025,7 @@ const kk: BelarusPolandOcDictionary = {
 
 
 export const belarusPolandOcDictionary: Record<Lang, BelarusPolandOcDictionary> = { ru, 
-  pl: en, 
+  pl,
   en, 
   be, 
   uz: ru, 

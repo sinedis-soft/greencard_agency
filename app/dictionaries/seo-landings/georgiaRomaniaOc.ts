@@ -91,7 +91,7 @@ const pl: BelarusPolandOcDictionary = {
   what: {
     title: "Czym jest OC graniczne na podróż do Rumunii",
     text:
-      "OC graniczne to tymczasowe ubezpieczenie odpowiedzialności cywilnej wykorzystywane przy wjeździe pojazdu do krajów Unii Europejskiej. W przypadku samochodów zarejestrowanych w Gruzji taka umowa może być wymagana, jeżeli pojazd nie posiada ważonej Zielonej Karty. Polisa zawierana jest na określony czas i obowiązuje zgodnie z warunkami ubezpieczyciela. Jej celem jest potwierdzenie posiadania obowiązkowego ubezpieczenia OC właściciela pojazdu podczas podróży po krajach wskazanych w umowie.",
+      "OC graniczne to tymczasowe ubezpieczenie odpowiedzialności cywilnej wykorzystywane przy wjeździe pojazdu do krajów Unii Europejskiej. W przypadku samochodów zarejestrowanych w Gruzji taka umowa może być wymagana, jeżeli pojazd nie posiada ważnej Zielonej Karty. Polisa zawierana jest na określony czas i obowiązuje zgodnie z warunkami ubezpieczyciela. Jej celem jest potwierdzenie posiadania obowiązkowego ubezpieczenia OC właściciela pojazdu podczas podróży po krajach wskazanych w umowie.",
   },
   who: {
     title: "Komu potrzebna jest ta polisa:",
@@ -127,7 +127,7 @@ const pl: BelarusPolandOcDictionary = {
   form: {
     title: "Wniosek online",
     desc:
-      "Po wysłaniu formularza менеджер sprawdzi dane pojazdu i przygotuje informacje potrzebne do zawarcia polisy.",
+      "Po wysłaniu formularza konsultant sprawdzi dane pojazdu i przygotuje informacje potrzebne do zawarcia polisy.",
   },
   faq: {
     title: "FAQ",
@@ -169,7 +169,7 @@ const pl: BelarusPolandOcDictionary = {
     cardTitle:
       "Ubezpieczenie gruzińskiego samochodu na podróż do Rumunii",
     cardText:
-      "Ubezpieczenie, okres obowiązywania, koszt oraz zawarcie .",
+      "Ubezpieczenie, okres obowiązywania, koszt oraz zawarcie online.",
     cta: "Otwórz stronę",
   },
 };
@@ -185,7 +185,7 @@ const en: BelarusPolandOcDictionary = {
     kicker: "Border Insurance for Entry into the EU",
     title: "Car Insurance for a Vehicle with Georgian Plates in Romania",
     lead:
-      "Online оформление of an insurance policy for travel to Romania and other European countries. Document preparation, price calculation, and remote application support.",
+      "Online application for an insurance policy for travel to Romania and other European countries. Document preparation, price calculation, and remote application support.",
     cta: "Submit an Application",
   },
   what: {
@@ -222,7 +222,7 @@ const en: BelarusPolandOcDictionary = {
   validity: {
     title: "Validity Period of OC graniczne",
     text:
-      "The insurance is issued for a fixed period. The minimum validity period is usually 30 days. Depending on the условия, the policy may also be issued for a longer duration if permitted by the insurance rules.",
+      "The insurance is issued for a fixed period. The minimum validity period is usually 30 days. Depending on the terms, the policy may also be issued for a longer duration if permitted by the insurance rules.",
   },
   form: {
     title: "Online Application",
