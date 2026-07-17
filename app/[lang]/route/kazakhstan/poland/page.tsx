@@ -8,12 +8,14 @@ import {
   pageAlternates,
   pageSocialMetadata,
   routeStaticParams,
+  requireRouteContentReview,
 } from "@/app/seo";
 import { getKazakhstanPolandOcDictionary } from "@/app/dictionaries/seo-landings/kazakhstanPolandOc";
-import { BreadcrumbListJsonLd } from "@/app/components/StructuredData";
+import { BreadcrumbListJsonLd, InsurancePageJsonLd } from "@/app/components/StructuredData";
 import RouteLandingPage from "@/app/components/RouteLandingPage";
 
 const KAZAKHSTAN_POLAND_ROUTE = "/route/kazakhstan/poland";
+const CONTENT_REVIEW = requireRouteContentReview(KAZAKHSTAN_POLAND_ROUTE);
 
 type PageProps = {
   params: Promise<{
@@ -95,10 +97,12 @@ export default async function KazakhstanPolandOcPage({
         pageName={dictionary.breadcrumbTitle}
         pagePath={KAZAKHSTAN_POLAND_ROUTE}
       />
+      <InsurancePageJsonLd lang={lang} pagePath={KAZAKHSTAN_POLAND_ROUTE} title={dictionary.seo.title} description={dictionary.seo.description} review={CONTENT_REVIEW} />
 
       <RouteLandingPage
         lang={lang}
         dictionary={dictionary}
+        review={CONTENT_REVIEW}
       />
     </main>
   );

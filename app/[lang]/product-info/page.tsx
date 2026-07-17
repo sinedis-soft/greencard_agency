@@ -5,6 +5,7 @@ import { LOCALES } from "@/app/dictionaries/header";
 import { pageAlternates, pageSocialMetadata } from "@/app/seo";
 import { getSeoDictionary } from "@/app/dictionaries/seo";
 import { BreadcrumbListJsonLd } from "@/app/components/StructuredData";
+import OfficialSources from "@/app/components/OfficialSources";
 const breadcrumbTitleByLang: Record<Lang, string> = {
   ru: "Информация о продукте",
   pl: "Informacje o produkcie",
@@ -82,6 +83,7 @@ export default async function ProductInfoRoute({ params }: { params: Params }) {
         pagePath="/product-info"
       />
       <CookiesPolicyPage lang={lang} t={t} />
+      <OfficialSources lang={lang} sourceIds={["isap", "product-info", "knf"]} />
     </>
   );
 }

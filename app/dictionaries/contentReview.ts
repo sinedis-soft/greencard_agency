@@ -1,0 +1,198 @@
+import type { Lang } from "@/app/dictionaries/header";
+
+export type ContentReviewDictionary = {
+  prepared: string;
+  reviewed: string;
+  preparedAndReviewed: string;
+  lastReviewed: string;
+  aboutExpert: string;
+  editorialPolicy: string;
+  roleSummary: string;
+};
+
+export const contentReviewDictionary: Record<Lang, ContentReviewDictionary> = {
+  ru: {
+    prepared: "Подготовил",
+    reviewed: "Проверил",
+    preparedAndReviewed: "Подготовил и проверил",
+    lastReviewed: "Последняя проверка",
+    aboutExpert: "Об эксперте",
+    editorialPolicy: "Редакционная политика",
+    roleSummary: "Член правления SINEDIS · консультант OFWCA WARTA · COO / CCO",
+  },
+  en: {
+    prepared: "Prepared by",
+    reviewed: "Reviewed by",
+    preparedAndReviewed: "Prepared and reviewed by",
+    lastReviewed: "Last reviewed",
+    aboutExpert: "About the expert",
+    editorialPolicy: "Editorial policy",
+    roleSummary: "Board member of SINEDIS · OFWCA WARTA consultant · COO / CCO",
+  },
+  pl: {
+    prepared: "Przygotował",
+    reviewed: "Sprawdził",
+    preparedAndReviewed: "Przygotował i sprawdził",
+    lastReviewed: "Ostatnia weryfikacja",
+    aboutExpert: "O ekspercie",
+    editorialPolicy: "Polityka redakcyjna",
+    roleSummary: "Członek zarządu SINEDIS · konsultant OFWCA WARTA · COO / CCO",
+  },
+  be: {
+    prepared: "Падрыхтаваў",
+    reviewed: "Праверыў",
+    preparedAndReviewed: "Падрыхтаваў і праверыў",
+    lastReviewed: "Апошняя праверка",
+    aboutExpert: "Пра эксперта",
+    editorialPolicy: "Рэдакцыйная палітыка",
+    roleSummary: "Член праўлення SINEDIS · кансультант OFWCA WARTA · COO / CCO",
+  },
+  uk: {
+    prepared: "Підготував",
+    reviewed: "Перевірив",
+    preparedAndReviewed: "Підготував і перевірив",
+    lastReviewed: "Остання перевірка",
+    aboutExpert: "Про експерта",
+    editorialPolicy: "Редакційна політика",
+    roleSummary: "Член правління SINEDIS · консультант OFWCA WARTA · COO / CCO",
+  },
+  kk: {
+    prepared: "Дайындаған",
+    reviewed: "Тексерген",
+    preparedAndReviewed: "Дайындаған және тексерген",
+    lastReviewed: "Соңғы тексеру",
+    aboutExpert: "Сарапшы туралы",
+    editorialPolicy: "Редакциялық саясат",
+    roleSummary: "SINEDIS басқарма мүшесі · OFWCA WARTA консультанты · COO / CCO",
+  },
+  uz: {
+    prepared: "Tayyorladi",
+    reviewed: "Tekshirdi",
+    preparedAndReviewed: "Tayyorladi va tekshirdi",
+    lastReviewed: "Oxirgi tekshiruv",
+    aboutExpert: "Ekspert haqida",
+    editorialPolicy: "Tahririy siyosat",
+    roleSummary: "SINEDIS boshqaruvi a’zosi · OFWCA WARTA konsultanti · COO / CCO",
+  },
+  az: {
+    prepared: "Hazırladı",
+    reviewed: "Yoxladı",
+    preparedAndReviewed: "Hazırladı və yoxladı",
+    lastReviewed: "Son yoxlama",
+    aboutExpert: "Ekspert haqqında",
+    editorialPolicy: "Redaksiya siyasəti",
+    roleSummary: "SINEDIS idarə heyətinin üzvü · OFWCA WARTA məsləhətçisi · COO / CCO",
+  },
+  tr: {
+    prepared: "Hazırlayan",
+    reviewed: "Kontrol eden",
+    preparedAndReviewed: "Hazırlayan ve kontrol eden",
+    lastReviewed: "Son kontrol",
+    aboutExpert: "Uzman hakkında",
+    editorialPolicy: "Yayın politikası",
+    roleSummary: "SINEDIS yönetim kurulu üyesi · OFWCA WARTA danışmanı · COO / CCO",
+  },
+  ka: {
+    prepared: "მოამზადა",
+    reviewed: "შეამოწმა",
+    preparedAndReviewed: "მოამზადა და შეამოწმა",
+    lastReviewed: "ბოლო შემოწმება",
+    aboutExpert: "ექსპერტის შესახებ",
+    editorialPolicy: "სარედაქციო პოლიტიკა",
+    roleSummary: "SINEDIS-ის მმართველობის წევრი · OFWCA WARTA კონსულტანტი · COO / CCO",
+  },
+  hy: {
+    prepared: "Պատրաստեց",
+    reviewed: "Ստուգեց",
+    preparedAndReviewed: "Պատրաստեց և ստուգեց",
+    lastReviewed: "Վերջին ստուգում",
+    aboutExpert: "Փորձագետի մասին",
+    editorialPolicy: "Խմբագրական քաղաքականություն",
+    roleSummary: "SINEDIS-ի վարչության անդամ · OFWCA WARTA խորհրդատու · COO / CCO",
+  },
+  fa: {
+    prepared: "تهیه کرد",
+    reviewed: "بررسی کرد",
+    preparedAndReviewed: "تهیه و بررسی کرد",
+    lastReviewed: "آخرین بررسی",
+    aboutExpert: "درباره کارشناس",
+    editorialPolicy: "سیاست تحریریه",
+    roleSummary: "عضو هیئت‌مدیره SINEDIS · مشاور OFWCA WARTA · COO / CCO",
+  },
+  ckb: {
+    prepared: "ئامادەکردنی",
+    reviewed: "پێداچوونەوەی",
+    preparedAndReviewed: "ئامادەکردن و پێداچوونەوە",
+    lastReviewed: "دوایین پێداچوونەوە",
+    aboutExpert: "دەربارەی پسپۆڕ",
+    editorialPolicy: "سیاسەتی دەستکاریکردن",
+    roleSummary: "ئەندامی بەڕێوەبەرایەتی SINEDIS · ڕاوێژکاری OFWCA WARTA · COO / CCO",
+  },
+  kmr: {
+    prepared: "Amade kir",
+    reviewed: "Kontrol kir",
+    preparedAndReviewed: "Amade û kontrol kir",
+    lastReviewed: "Kontrola dawî",
+    aboutExpert: "Derbarê pisporî de",
+    editorialPolicy: "Siyaseta redaksiyonê",
+    roleSummary: "Endamê rêveberiya SINEDIS · şêwirmendê OFWCA WARTA · COO / CCO",
+  },
+  ar: {
+    prepared: "أعده",
+    reviewed: "راجعه",
+    preparedAndReviewed: "أعده وراجعه",
+    lastReviewed: "آخر مراجعة",
+    aboutExpert: "عن الخبير",
+    editorialPolicy: "السياسة التحريرية",
+    roleSummary: "عضو مجلس إدارة SINEDIS · مستشار OFWCA WARTA · COO / CCO",
+  },
+  he: {
+    prepared: "הוכן על ידי",
+    reviewed: "נבדק על ידי",
+    preparedAndReviewed: "הוכן ונבדק על ידי",
+    lastReviewed: "בדיקה אחרונה",
+    aboutExpert: "על המומחה",
+    editorialPolicy: "מדיניות עריכה",
+    roleSummary: "חבר הנהלת SINEDIS · יועץ OFWCA WARTA · COO / CCO",
+  },
+  ro: {
+    prepared: "Pregătit de",
+    reviewed: "Verificat de",
+    preparedAndReviewed: "Pregătit și verificat de",
+    lastReviewed: "Ultima verificare",
+    aboutExpert: "Despre expert",
+    editorialPolicy: "Politica editorială",
+    roleSummary: "Membru al conducerii SINEDIS · consultant OFWCA WARTA · COO / CCO",
+  },
+  sr: {
+    prepared: "Припремио",
+    reviewed: "Проверио",
+    preparedAndReviewed: "Припремио и проверио",
+    lastReviewed: "Последња провера",
+    aboutExpert: "О експерту",
+    editorialPolicy: "Уредничка политика",
+    roleSummary: "Члан управе SINEDIS · консултант OFWCA WARTA · COO / CCO",
+  },
+  sq: {
+    prepared: "Përgatiti",
+    reviewed: "Kontrolloi",
+    preparedAndReviewed: "Përgatiti dhe kontrolloi",
+    lastReviewed: "Kontrolli i fundit",
+    aboutExpert: "Rreth ekspertit",
+    editorialPolicy: "Politika editoriale",
+    roleSummary: "Anëtar i bordit të SINEDIS · konsulent OFWCA WARTA · COO / CCO",
+  },
+  mn: {
+    prepared: "Бэлтгэсэн",
+    reviewed: "Шалгасан",
+    preparedAndReviewed: "Бэлтгэж, шалгасан",
+    lastReviewed: "Сүүлд шалгасан",
+    aboutExpert: "Мэргэжилтний тухай",
+    editorialPolicy: "Редакцын бодлого",
+    roleSummary: "SINEDIS-ийн удирдах зөвлөлийн гишүүн · OFWCA WARTA зөвлөх · COO / CCO",
+  },
+};
+
+export function getContentReviewDictionary(lang: Lang): ContentReviewDictionary {
+  return contentReviewDictionary[lang];
+}
