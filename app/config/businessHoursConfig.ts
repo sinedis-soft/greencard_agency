@@ -12,10 +12,10 @@ export type BusinessHoursConfig = {
 
 export const businessHoursConfig: BusinessHoursConfig = {
   businessTimezone: "Europe/Minsk",
-  workDays: [1, 2, 3, 4, 5],
+  workDays: [1, 2, 3, 4, 5, 6, 7],
   startHour: 9,
   startMinute: 0,
-  endHour: 21,
+  endHour: 22,
   endMinute: 0,
   closingSoonThresholdMinutes: 120,
 };
