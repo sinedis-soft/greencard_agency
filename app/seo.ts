@@ -11,8 +11,24 @@ export const SOCIAL_PREVIEW_IMAGE = {
 
 type RouteMeta = {
   lastModified: string;
-  disabledLocales?: readonly Lang[];
 };
+
+type RouteLocaleKey =
+  | "belarus/poland"
+  | "belarus/lithuania"
+  | "georgia/romania"
+  | "georgia/bulgaria"
+  | "kazakhstan/poland"
+  | "uae";
+
+export const ROUTE_LOCALES = {
+  "belarus/poland": ["ru", "pl", "en", "be", "ka", "tr", "fa", "hy", "ar", "he"],
+  "belarus/lithuania": ["ru", "en", "be", "ka", "hy", "ar"],
+  "georgia/romania": ["ru", "pl", "en", "be", "uz", "ka", "kk", "tr", "fa", "hy", "he", "ar"],
+  "georgia/bulgaria": ["ru", "en", "ka", "hy", "ar"],
+  "kazakhstan/poland": ["ru", "pl", "kk", "en", "ar"],
+  uae: ["ru", "en", "ar"],
+} as const satisfies Record<RouteLocaleKey, readonly Lang[]>;
 
 export const ROUTE_META = {
   "": { lastModified: "2026-05-08" },
@@ -23,14 +39,13 @@ export const ROUTE_META = {
   "/privacy": { lastModified: "2026-05-08" },
   "/cookiepolicy": { lastModified: "2026-05-08" },
   "/route/belarus/poland": {
-    lastModified: "2026-05-14",
-    disabledLocales: ["pl"],
+    lastModified: "2026-07-17",
   },
-  "/route/georgia/romania": { lastModified: "2026-05-14" },
-  "/route/uae": {
-    lastModified: "2026-07-02",
-    disabledLocales: ["be", "uk", "kk", "uz", "az", "tr", "ka", "hy", "fa", "ckb", "kmr", "ar", "he", "ro", "sr", "sq", "mn"],
-  },
+  "/route/belarus/lithuania": { lastModified: "2026-07-17" },
+  "/route/georgia/romania": { lastModified: "2026-07-17" },
+  "/route/georgia/bulgaria": { lastModified: "2026-07-17" },
+  "/route/kazakhstan/poland": { lastModified: "2026-07-17" },
+  "/route/uae": { lastModified: "2026-07-02" },
 } as const satisfies Record<string, RouteMeta>;
 
 export const ROUTES = Object.keys(ROUTE_META) as Array<keyof typeof ROUTE_META>;
@@ -42,11 +57,11 @@ function normalizeRoute(route: string = ""): string {
   return route === "/" ? "" : route;
 }
 
-function getRouteMeta(route: string): RouteMeta | undefined {
-  const normalizedRoute = normalizeRoute(route);
+function routeLocaleKey(route: string): RouteLocaleKey | undefined {
+  const normalizedRoute = normalizeRoute(route).replace(/^\/route\//, "");
 
-  return Object.hasOwn(ROUTE_META, normalizedRoute)
-    ? ROUTE_META[normalizedRoute as AppRoute]
+  return Object.hasOwn(ROUTE_LOCALES, normalizedRoute)
+    ? (normalizedRoute as RouteLocaleKey)
     : undefined;
 }
 
@@ -55,9 +70,13 @@ export function routeLastModified(route: AppRoute): Date {
 }
 
 export function routeLocales(route: string = ""): Lang[] {
-  const disabledLocales = new Set<Lang>(getRouteMeta(route)?.disabledLocales ?? []);
+  const key = routeLocaleKey(route);
 
-  return LOCALES.filter((locale) => !disabledLocales.has(locale));
+  if (key) {
+    return [...ROUTE_LOCALES[key]];
+  }
+
+  return [...LOCALES];
 }
 
 export function isRouteLocaleIndexable(lang: Lang, route: string = ""): boolean {

@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "eslint",
     "check:relations": "node scripts/check-relations.mjs",
-    "check:sitemaps": "node scripts/check-sitemaps.mjs"
+    "check:sitemaps": "node scripts/check-sitemaps.mjs",
+    "check:route-sitemap": "node scripts/check-route-sitemap-coverage.mjs",
+    "check:i18n": "node scripts/check-i18n.mjs"
   },
   "dependencies": {
     "next": "16.1.6",
