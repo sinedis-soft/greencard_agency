@@ -11,47 +11,71 @@ import {
   requireRouteContentReview,
   toAbsolute,
 } from "@/app/seo";
-import { getUaeOcDictionary } from "@/app/dictionaries/seo-landings/uaeOc";
-import { BreadcrumbListJsonLd, InsurancePageJsonLd } from "@/app/components/StructuredData";
+import { getUaeGreeceOcDictionary } from "@/app/dictionaries/seo-landings/uaeGreeceOc";
+import {
+  BreadcrumbListJsonLd,
+  InsurancePageJsonLd,
+} from "@/app/components/StructuredData";
 import UaeLandingPage from "@/app/components/UaeLandingPage";
 
-const UAE_ROUTE = "/route/uae";
-const CONTENT_REVIEW = requireRouteContentReview(UAE_ROUTE);
+const UAE_GREECE_ROUTE = "/route/uae/greece";
+const CONTENT_REVIEW = requireRouteContentReview(UAE_GREECE_ROUTE);
 
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return routeStaticParams(UAE_ROUTE);
+  return routeStaticParams(UAE_GREECE_ROUTE);
 }
 
 function normalizeLang(value: string): Lang {
-  return (LOCALES as readonly string[]).includes(value) ? (value as Lang) : "ru";
+  return (LOCALES as readonly string[]).includes(value)
+    ? (value as Lang)
+    : "ru";
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
   const { lang: rawLang } = await params;
   const lang = normalizeLang(rawLang);
 
-  if (!isRouteLocaleIndexable(lang, UAE_ROUTE)) {
-    return { robots: { index: false, follow: false } };
+  if (!isRouteLocaleIndexable(lang, UAE_GREECE_ROUTE)) {
+    return {
+      robots: {
+        index: false,
+        follow: false,
+      },
+    };
   }
 
-  const t = getUaeOcDictionary(lang);
+  const t = getUaeGreeceOcDictionary(lang);
 
   return {
-    alternates: pageAlternates(lang, UAE_ROUTE),
+    alternates: pageAlternates(lang, UAE_GREECE_ROUTE),
     title: t.seo.title,
     description: t.seo.description,
-    ...pageSocialMetadata(lang, UAE_ROUTE, t.seo.title, t.seo.description),
+    ...pageSocialMetadata(
+      lang,
+      UAE_GREECE_ROUTE,
+      t.seo.title,
+      t.seo.description,
+    ),
   };
 }
 
-function faqJsonLd(lang: Lang, dictionary: ReturnType<typeof getUaeOcDictionary>) {
+function faqJsonLd(
+  lang: Lang,
+  dictionary: ReturnType<typeof getUaeGreeceOcDictionary>,
+) {
   return {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "@id": toAbsolute(`/${lang}${UAE_ROUTE}#faq`),
-    author: { "@id": "https://greencard.agency/#person-sergey-anatska" },
+    "@id": toAbsolute(`/${lang}${UAE_GREECE_ROUTE}#faq`),
+    author: {
+      "@id": "https://greencard.agency/#person-sergey-anatska",
+    },
     dateModified: CONTENT_REVIEW.reviewedAt,
     publisher: {
       "@id": ORGANIZATION_ID,
@@ -78,22 +102,43 @@ function JsonLd({ data }: { data: Record<string, unknown> }) {
   );
 }
 
-export default async function UaeOcPage({ params }: { params: Promise<{ lang: string }> }) {
+export default async function UaeGreeceOcPage({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
   const { lang: rawLang } = await params;
   const lang = normalizeLang(rawLang);
 
-  if (!isRouteLocaleIndexable(lang, UAE_ROUTE)) {
+  if (!isRouteLocaleIndexable(lang, UAE_GREECE_ROUTE)) {
     notFound();
   }
 
-  const t = getUaeOcDictionary(lang);
+  const t = getUaeGreeceOcDictionary(lang);
 
   return (
     <main id="main">
-      <BreadcrumbListJsonLd lang={lang} pageName={t.breadcrumbTitle} pagePath={UAE_ROUTE} />
-      <InsurancePageJsonLd lang={lang} pagePath={UAE_ROUTE} title={t.seo.title} description={t.seo.description} review={CONTENT_REVIEW} />
+      <BreadcrumbListJsonLd
+        lang={lang}
+        pageName={t.breadcrumbTitle}
+        pagePath={UAE_GREECE_ROUTE}
+      />
+
+      <InsurancePageJsonLd
+        lang={lang}
+        pagePath={UAE_GREECE_ROUTE}
+        title={t.seo.title}
+        description={t.seo.description}
+        review={CONTENT_REVIEW}
+      />
+
       <JsonLd data={faqJsonLd(lang, t)} />
-      <UaeLandingPage lang={lang} dictionary={t} review={CONTENT_REVIEW} />
+
+      <UaeLandingPage
+        lang={lang}
+        dictionary={t}
+        review={CONTENT_REVIEW}
+      />
     </main>
   );
 }
