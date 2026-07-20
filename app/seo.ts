@@ -30,6 +30,7 @@ type RouteLocaleKey =
   | "georgia/bulgaria"
   | "kazakhstan/poland"
   | "uae"
+  | "uae/bulgaria"
   | "experts/sergey-anatska";
 
 export const ROUTE_LOCALES = {
@@ -39,6 +40,7 @@ export const ROUTE_LOCALES = {
   "georgia/bulgaria": ["ru", "en", "ka", "hy", "ar"],
   "kazakhstan/poland": ["ru", "pl", "kk", "en", "ar"],
   uae: ["ru", "en", "ar"],
+  "uae/bulgaria": ["ru", "en", "ar"],
   "experts/sergey-anatska": ["ru", "pl", "en", "be"],
 } as const satisfies Record<RouteLocaleKey, readonly Lang[]>;
 
@@ -90,6 +92,18 @@ export const ROUTE_META = {
       authorId: "sergey-anatska",
       reviewerId: "sergey-anatska",
       reviewedAt: "2026-07-02",
+    },
+    pageType: "insurance-route",
+    hreflangOverrides: {
+      ar: "ar-AE",
+    },
+  },
+  "/route/uae/bulgaria": {
+    lastModified: "2026-07-20",
+    review: {
+      authorId: "sergey-anatska",
+      reviewerId: "sergey-anatska",
+      reviewedAt: "2026-07-20",
     },
     pageType: "insurance-route",
     hreflangOverrides: {
