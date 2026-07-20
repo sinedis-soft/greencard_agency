@@ -32,6 +32,7 @@ type RouteLocaleKey =
   | "uae"
   | "uae/bulgaria"
   | "uae/greece"
+  | "albania/bulgaria"
   | "experts/sergey-anatska";
 
 export const ROUTE_LOCALES = {
@@ -43,6 +44,7 @@ export const ROUTE_LOCALES = {
   uae: ["ru", "en", "ar"],
   "uae/bulgaria": ["ru", "en", "ar"],
   "uae/greece": ["ru", "en", "ar"],
+  "albania/bulgaria": ["ru", "en", "sq"],
   "experts/sergey-anatska": ["ru", "pl", "en", "be"],
 } as const satisfies Record<RouteLocaleKey, readonly Lang[]>;
 
@@ -124,6 +126,16 @@ export const ROUTE_META = {
       ar: "ar-AE",
     },
   },
+  "/route/albania/bulgaria": {
+    lastModified: "2026-07-20",
+    review: {
+      authorId: "sergey-anatska",
+      reviewerId: "sergey-anatska",
+      reviewedAt: "2026-07-20",
+    },
+    pageType: "insurance-route",
+  },
+  
 } as const satisfies Record<string, RouteMeta>;
 
 export const ROUTES = Object.keys(ROUTE_META) as Array<keyof typeof ROUTE_META>;
