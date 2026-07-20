@@ -3,6 +3,7 @@ import { LOCALES, Lang } from "@/app/dictionaries/header";
 import { pageAlternates, pageSocialMetadata, toAbsolute } from "@/app/seo";
 import { getSeoDictionary } from "@/app/dictionaries/seo";
 import { getHomeDictionary } from "@/app/dictionaries/home";
+import { ORGANIZATION_ID } from "@/app/entityIds";
 function normalizeLang(value: string): Lang {
   return (LOCALES as readonly string[]).includes(value) ? (value as Lang) : "en";
 }
@@ -43,7 +44,7 @@ export default async function Page({
       serviceType: "OC graniczne border insurance arrangement",
       description: serviceDescription,
       provider: {
-        "@id": toAbsolute(`/${lang}#organization`),
+        "@id": ORGANIZATION_ID,
       },
       areaServed: ["PL", "EEA", "CH", "NO", "IS"],
       url: toAbsolute(`/${lang}`),

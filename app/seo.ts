@@ -20,6 +20,7 @@ type RouteMeta = {
   lastModified: string;
   review?: InsuranceContentReview;
   pageType?: "insurance-route" | "expert";
+  hreflangOverrides?: Partial<Record<Lang, string>>;
 };
 
 type RouteLocaleKey =
@@ -34,7 +35,7 @@ type RouteLocaleKey =
 export const ROUTE_LOCALES = {
   "belarus/poland": ["ru", "pl", "en", "be", "ka", "tr", "fa", "hy", "ar", "he"],
   "belarus/lithuania": ["ru", "en", "be", "ka", "hy", "ar"],
-  "georgia/romania": ["ru", "pl", "en", "be", "uz", "ka", "kk", "tr", "fa", "hy", "he", "ar"],
+  "georgia/romania": ["ru", "en", "be", "ka", "kk"],
   "georgia/bulgaria": ["ru", "en", "ka", "hy", "ar"],
   "kazakhstan/poland": ["ru", "pl", "kk", "en", "ar"],
   uae: ["ru", "en", "ar"],
@@ -83,11 +84,21 @@ export const ROUTE_META = {
       reviewedAt: "2026-07-17",
     },
     pageType: "insurance-route", },
-  "/route/uae": { lastModified: "2026-07-02", review: { authorId: "sergey-anatska", reviewerId: "sergey-anatska", reviewedAt: "2026-07-02" }, pageType: "insurance-route" },
+  "/route/uae": {
+    lastModified: "2026-07-02",
+    review: {
+      authorId: "sergey-anatska",
+      reviewerId: "sergey-anatska",
+      reviewedAt: "2026-07-02",
+    },
+    pageType: "insurance-route",
+    hreflangOverrides: {
+      ar: "ar-AE",
+    },
+  },
 } as const satisfies Record<string, RouteMeta>;
 
 export const ROUTES = Object.keys(ROUTE_META) as Array<keyof typeof ROUTE_META>;
-;
 
 export type AppRoute = keyof typeof ROUTE_META;
 
@@ -182,22 +193,40 @@ export function toAbsolute(path: string): string {
   return new URL(path, SITE_URL).toString();
 }
 
-export function buildHreflangAlternates(route: string = ""): Record<string, string> {
+export function buildHreflangAlternates(
+  route: string = "",
+): Record<string, string> {
   const normalizedRoute = normalizeRoute(route);
   const locales = routeLocales(normalizedRoute);
   const defaultLocale = locales.includes("en") ? "en" : locales[0];
 
+  const routeMeta = Object.hasOwn(ROUTE_META, normalizedRoute)
+    ? (ROUTE_META[
+        normalizedRoute as keyof typeof ROUTE_META
+      ] as RouteMeta)
+    : undefined;
+
   const alternates = Object.fromEntries(
-    locales.map((locale) => [
-      REGIONAL_HREFLANG_MAP[locale],
-      toAbsolute(localePath(locale, normalizedRoute)),
-    ]),
+    locales.map((locale) => {
+      const hreflang =
+        routeMeta?.hreflangOverrides?.[locale] ??
+        REGIONAL_HREFLANG_MAP[locale];
+
+      return [
+        hreflang,
+        toAbsolute(localePath(locale, normalizedRoute)),
+      ];
+    }),
   );
 
   return {
     ...alternates,
     ...(defaultLocale
-      ? { "x-default": toAbsolute(localePath(defaultLocale, normalizedRoute)) }
+      ? {
+          "x-default": toAbsolute(
+            localePath(defaultLocale, normalizedRoute),
+          ),
+        }
       : {}),
   };
 }

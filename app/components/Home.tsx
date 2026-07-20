@@ -54,9 +54,9 @@ export default function Home({ lang }: { lang: Lang }) {
         }
       : null,
 
-    isRouteLocaleIndexable(lang, "/country/uae")
+    isRouteLocaleIndexable(lang, "/route/uae")
       ? {
-          href: `/${lang}/country/uae`,
+          href: `/${lang}/route/uae`,
           title: uaeOc.carousel.cardTitle,
           text: uaeOc.carousel.cardText,
           cta: uaeOc.carousel.cta,

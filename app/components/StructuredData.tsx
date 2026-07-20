@@ -1,12 +1,17 @@
 import { LOCALES, type Lang } from "@/app/dictionaries/header";
+import {
+  ORGANIZATION_ID,
+  SERGEY_ANATSKA_PERSON_ID,
+} from "@/app/entityIds";
 import { SITE_URL, toAbsolute } from "@/app/seo";
 
 type JsonLdProps = {
   data: Record<string, unknown> | Array<Record<string, unknown>>;
 };
 
-const TARGET_CARRIER_COUNTRIES = [
+const TARGET_CUSTOMER_COUNTRIES = [
   "BY",
+  "RU",
   "UZ",
   "AM",
   "GE",
@@ -15,9 +20,29 @@ const TARGET_CARRIER_COUNTRIES = [
   "AZ",
   "TM",
   "KZ",
-  "KG",
   "MD",
   "UA",
+  "AE",
+  "EG",
+  "IR",
+  "IQ",
+  "MN",
+  "RS",
+  "HR",
+  "ME",
+  "AL",
+  "DZ",
+  "IL",
+  "SA",
+  "OM",
+  "YE",
+  "IN",
+  "TN",
+  "LY",
+  "LB",
+  "XK",
+  "Northern Cyprus",
+  "Kosovo",
 ] as const;
 
 const COMPANY_ADDRESS = {
@@ -82,7 +107,7 @@ export function OrganizationJsonLd({ lang }: { lang: Lang }) {
   const data = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "@id": toAbsolute(`/${lang}#organization`),
+    "@id": ORGANIZATION_ID,
     name: "SINEDIS Sp. z o.o.",
     legalName: "SINEDIS Spółka z ograniczoną odpowiedzialnością",
     url: SITE_URL,
@@ -91,7 +116,7 @@ export function OrganizationJsonLd({ lang }: { lang: Lang }) {
     address: COMPANY_ADDRESS,
     openingHoursSpecification: OPENING_HOURS,
     ...(sameAs ? { sameAs } : {}),
-    areaServed: ["PL", "EEA", ...TARGET_CARRIER_COUNTRIES],
+    areaServed: ["PL", "EEA", ...TARGET_CUSTOMER_COUNTRIES],
     identifier: [
       {
         "@type": "PropertyValue",
@@ -116,7 +141,7 @@ export function OrganizationJsonLd({ lang }: { lang: Lang }) {
         telephone: "+48573581333",
         email: "info@sinedis.pl",
         availableLanguage: AVAILABLE_LANGUAGES,
-        areaServed: ["PL", "EEA", ...TARGET_CARRIER_COUNTRIES],
+        areaServed: ["PL", "EEA", ...TARGET_CUSTOMER_COUNTRIES],
         url: getContactPage(lang),
       },
     ],
@@ -131,19 +156,16 @@ export function InsuranceAgencyJsonLd({ lang }: { lang: Lang }) {
   const data = {
     "@context": "https://schema.org",
     "@type": "InsuranceAgency",
-    "@id": toAbsolute(`/${lang}#insurance-agency`),
+    "@id": ORGANIZATION_ID,
     name: "SINEDIS Sp. z o.o.",
     legalName: "SINEDIS Spółka z ograniczoną odpowiedzialnością",
-    url: toAbsolute(`/${lang}`),
+    url: SITE_URL,
     email: "info@sinedis.pl",
     telephone: "+48573581333",
     address: COMPANY_ADDRESS,
     openingHoursSpecification: OPENING_HOURS,
     ...(sameAs ? { sameAs } : {}),
-    parentOrganization: {
-      "@id": toAbsolute(`/${lang}#organization`),
-    },
-    areaServed: ["PL", "EEA", ...TARGET_CARRIER_COUNTRIES],
+    areaServed: ["PL", "EEA", ...TARGET_CUSTOMER_COUNTRIES],
     contactPoint: [
       {
         "@type": "ContactPoint",
@@ -151,7 +173,7 @@ export function InsuranceAgencyJsonLd({ lang }: { lang: Lang }) {
         telephone: "+48573581333",
         email: "info@sinedis.pl",
         availableLanguage: AVAILABLE_LANGUAGES,
-        areaServed: ["PL", "EEA", ...TARGET_CARRIER_COUNTRIES],
+        areaServed: ["PL", "EEA", ...TARGET_CUSTOMER_COUNTRIES],
         url: getContactPage(lang),
       },
     ],
@@ -197,7 +219,7 @@ export function WebSiteJsonLd({ lang }: { lang: Lang }) {
     url: toAbsolute(`/${lang}`),
     inLanguage: lang,
     publisher: {
-      "@id": toAbsolute(`/${lang}#organization`),
+      "@id": ORGANIZATION_ID,
     },
   };
 
@@ -230,11 +252,11 @@ export function InsurancePageJsonLd({
       "@id": toAbsolute(`/${lang}#website`),
     },
     author: {
-      "@id": "https://greencard.agency/#person-sergey-anatska",
+      "@id": SERGEY_ANATSKA_PERSON_ID,
     },
     dateModified: review.reviewedAt,
     publisher: {
-      "@id": toAbsolute(`/${lang}#organization`),
+      "@id": ORGANIZATION_ID,
     },
   };
 

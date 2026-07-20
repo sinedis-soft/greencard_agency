@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import type { Lang } from "@/app/dictionaries/header";
 import { LOCALES } from "@/app/dictionaries/header";
+import { ORGANIZATION_ID } from "@/app/entityIds";
 import {
   isRouteLocaleIndexable,
   pageAlternates,
@@ -52,7 +53,9 @@ function faqJsonLd(lang: Lang, dictionary: ReturnType<typeof getUaeOcDictionary>
     "@id": toAbsolute(`/${lang}${UAE_ROUTE}#faq`),
     author: { "@id": "https://greencard.agency/#person-sergey-anatska" },
     dateModified: CONTENT_REVIEW.reviewedAt,
-    publisher: { "@id": toAbsolute(`/${lang}#organization`) },
+    publisher: {
+      "@id": ORGANIZATION_ID,
+    },
     mainEntity: dictionary.faq.items.map((item) => ({
       "@type": "Question",
       name: item.q,

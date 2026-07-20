@@ -1,6 +1,7 @@
 export const dynamic = "force-static";
 export const dynamicParams = false;
 
+import { ORGANIZATION_ID } from "@/app/entityIds";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { LOCALES, type Lang } from "@/app/dictionaries/header";
@@ -45,6 +46,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
 function profilePageJsonLd(lang: SupportedExpertLocale) {
   const t = getSergeyAnatskaExpertDictionary(lang);
   const url = toAbsolute(`/${lang}${pagePath}`);
+
   return {
     "@context": "https://schema.org",
     "@type": "ProfilePage",
@@ -54,9 +56,15 @@ function profilePageJsonLd(lang: SupportedExpertLocale) {
     description: t.seo.description,
     dateModified: expert.lastReviewed,
     inLanguage: lang,
-    isPartOf: { "@id": toAbsolute(`/${lang}#website`) },
-    publisher: { "@id": toAbsolute(`/${lang}#organization`) },
-    mainEntity: { "@id": expert.personId },
+    isPartOf: {
+      "@id": toAbsolute(`/${lang}#website`),
+    },
+    publisher: {
+      "@id": ORGANIZATION_ID,
+    },
+    mainEntity: {
+      "@id": expert.personId,
+    },
   };
 }
 

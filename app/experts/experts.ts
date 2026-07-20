@@ -1,4 +1,5 @@
 import type { Lang } from "@/app/dictionaries/header";
+import { ORGANIZATION_ID } from "@/app/entityIds";
 
 export const SUPPORTED_EXPERT_LOCALES = ["ru", "pl", "en", "be"] as const satisfies readonly Lang[];
 
@@ -40,7 +41,7 @@ export const EXPERTS = {
     },
     organization: {
       name: "SINEDIS Sp. z o.o.",
-      schemaId: "https://greencard.agency/#organization-sinedis",
+      schemaId: ORGANIZATION_ID,
     },
     professionalRoles: [
       "Член правления страхового агента SINEDIS",
