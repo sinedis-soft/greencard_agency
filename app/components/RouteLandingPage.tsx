@@ -205,7 +205,7 @@ export default function RouteLandingPage({ lang, dictionary: t, review, caseIds 
               <h1 className="h1 route-hero__title">{keepTypography(t.hero.title)}</h1>
               <p className="lead route-hero__lead">{t.hero.lead}</p>
               <div className="route-hero__actions">
-                <a className="btn btn--primary" href={`/${lang}#buy`}>
+                <a className="btn btn--primary" href={`/${lang}/order`}>
                   {t.hero.cta}
                 </a>
                 <a className="btn btn--soft route-hero__secondary" href="#faq">
@@ -221,7 +221,7 @@ export default function RouteLandingPage({ lang, dictionary: t, review, caseIds 
 
             <div className="route-hero__calculator">
               <div className="route-hero__calculator-glow" aria-hidden="true" />
-              <Calculator lang={lang} />
+              <Calculator lang={lang} mode="order" />
             </div>
           </div>
         </div>
@@ -390,7 +390,7 @@ export default function RouteLandingPage({ lang, dictionary: t, review, caseIds 
               <h2 className="section__title">{keepTypography(t.form.title)}</h2>
               <p>{t.form.desc}</p>
             </div>
-            <a className="btn btn--primary" href={`/${lang}#buy`}>
+            <a className="btn btn--primary" href={`/${lang}/order`}>
               {t.hero.cta}
             </a>
           </div>
