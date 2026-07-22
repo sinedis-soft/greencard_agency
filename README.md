@@ -216,3 +216,39 @@ If dictionaries covered by the relation checker are changed, also run:
 ```bash
 npm run check:relations
 ```
+
+## GA4 funnel and key events
+
+The website emits the following GA4 funnel events without personal data in event parameters:
+
+- `calculator_complete` — sent when a visitor applies the calculator estimate.
+- `begin_checkout` — sent when a visitor moves from the calculator toward the order form.
+- `lead_form_view` — sent once per form mount/language view.
+- `lead_step_1_complete` — sent after the contact/policyholder step passes native validation.
+- `lead_submit_attempt` — sent before the lead API request.
+- `generate_lead` — sent only after the lead API returns `{ ok: true }`; partial file fallback responses still produce a single success event.
+- `lead_submit_error` — sent for failed submissions with safe status/type parameters only, not the full API response text.
+
+GA4 key events must be marked manually in the GA4 property for:
+
+- `generate_lead`
+- `payment_link_sent`
+- `purchase`
+
+`payment_link_sent` and `purchase` are prepared event names in code, but this site currently cannot reliably determine them because payment links and final purchase status are not created in the frontend. Send `payment_link_sent` from the Bitrix24 automation stage that creates/sends the payment link. Send `purchase` from the payment provider webhook or the Bitrix24/Stripe process that confirms paid policy completion; include only non-personal order metadata such as currency, value, and internal non-PII IDs.
+
+### Bitrix24 attribution fields blocker
+
+The lead API accepts and validates only these attribution fields from the multipart form: `landing_page`, `page_url`, `referrer`, `utm_source`, `utm_medium`, `utm_campaign`, `utm_content`, `utm_term`, `gclid`, `language`, and `route`. Values are length-limited, URL fields are normalized, and arbitrary client JSON attribution is ignored.
+
+Separate Bitrix24 custom field IDs for this attribution set are not present in the repository. Until the real `UF_CRM_*` IDs are provided, the API appends a structured attribution block to the deal `COMMENTS` without replacing the client’s vehicle comment. To complete separate-field storage, provide the Bitrix24 deal custom field IDs for each attribution key above and replace the temporary comments fallback with explicit field mappings.
+
+### PR 2 DebugView checklist
+
+Verify in GA4 DebugView with test data only:
+
+1. Price calculation emits `calculator_complete` without personal data.
+2. Moving to the form emits `begin_checkout` without personal data.
+3. Completing the first step emits `lead_step_1_complete` without names, email, phone, passport, address, VIN, plate, or uploaded-document data.
+4. A successful API response `{ ok: true }` emits exactly one `generate_lead`, including when `partialSuccess` is `true`.
+5. A failed submission emits `lead_submit_error` with only safe status/type fields and no full API response text.
