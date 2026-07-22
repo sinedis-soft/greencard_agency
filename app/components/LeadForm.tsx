@@ -299,6 +299,7 @@ export default function LeadForm(props: { lang: Lang; showOrderSummary?: boolean
       type LeadApiResponse = {
         ok?: boolean;
         message?: string;
+        traceId?: string;
       };
 
       let data: LeadApiResponse | null = null;
@@ -328,23 +329,16 @@ export default function LeadForm(props: { lang: Lang; showOrderSummary?: boolean
       };
 
       if (!res.ok || !ok) {
-        const isLikelyTimeout = [408, 499, 500, 502, 503, 504, 522, 524].includes(res.status);
-
         if (res.status === 413) {
           setStatus("error");
           setMessage("The attached files are too large for upload. Please attach smaller files.");
           return;
         }
 
-        if (isLikelyTimeout && !serverMsg) {
-          setStatus("success");
-          setMessage(t.statusSuccess);
-          resetFormState();
-          return;
-        }
-
+        const traceSuffix = data?.traceId ? ` Trace ID: ${data.traceId}` : "";
         setStatus("error");
-        setMessage(serverMsg || t.statusError);
+        setMessage(`${serverMsg || t.statusError}${traceSuffix}`);
+        setOutcome("none");
         return;
       }
 
@@ -353,20 +347,9 @@ export default function LeadForm(props: { lang: Lang; showOrderSummary?: boolean
       setOutcome(partialSuccess ? "partial" : "success");
       resetFormState();
     } catch {
-      setStatus("success");
-      setMessage(t.statusSuccess);
-      setOutcome("success");
-      e.currentTarget.reset();
-      setStep(1);
-      setFirstName("");
-      setLastName("");
-      setPhone("");
-      setEmail("");
-      setBirthDate("");
-      setAddress("");
-      setVehicleBlocks([0]);
-      setVehicleFileCounts({});
-      setVehiclePrices({});
+      setStatus("error");
+      setMessage(t.statusError);
+      setOutcome("none");
     }
   }
 

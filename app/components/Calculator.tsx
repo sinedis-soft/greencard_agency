@@ -3,6 +3,7 @@
 // app/components/Calculator.tsx
 
 import { useMemo, useState } from "react";
+import { useRouter } from "next/navigation";
 
 import type { Lang } from "@/app/dictionaries/header";
 
@@ -17,7 +18,10 @@ import {
   formatCurrency,
 } from "@/app/lib/insurancePrices";
 
-export default function Calculator({ lang }: { lang: Lang }) {
+type CalculatorMode = "inline" | "order";
+
+export default function Calculator({ lang, mode = "inline" }: { lang: Lang; mode?: CalculatorMode }) {
+  const router = useRouter();
   const t = getCalculatorDictionary(lang);
 
   const [vehicle, setVehicle] = useState<Vehicle>("car");
@@ -39,6 +43,12 @@ export default function Calculator({ lang }: { lang: Lang }) {
     if (typeof window !== "undefined") {
       window.sessionStorage.setItem("calculatorSelection", JSON.stringify(detail));
       window.dispatchEvent(new CustomEvent("calculatorSelectionChanged", { detail }));
+      if (mode === "order") {
+        const params = new URLSearchParams({ vehicle, term });
+        router.push(`/${lang}/order?${params.toString()}`);
+        return;
+      }
+
       document.getElementById("buy")?.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   }
