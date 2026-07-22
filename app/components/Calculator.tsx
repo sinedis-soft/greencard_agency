@@ -17,6 +17,7 @@ import {
   getPolicyPrice,
   formatCurrency,
 } from "@/app/lib/insurancePrices";
+import { trackFunnelEvent } from "@/app/lib/analytics";
 
 type CalculatorMode = "inline" | "order";
 
@@ -43,6 +44,20 @@ export default function Calculator({ lang, mode = "inline" }: { lang: Lang; mode
     if (typeof window !== "undefined") {
       window.sessionStorage.setItem("calculatorSelection", JSON.stringify(detail));
       window.dispatchEvent(new CustomEvent("calculatorSelectionChanged", { detail }));
+      trackFunnelEvent("calculator_complete", {
+        language: lang,
+        vehicle_type: vehicle,
+        insurance_term: term,
+        value: getPolicyPrice(vehicle, term),
+        currency: "PLN",
+      });
+      trackFunnelEvent("begin_checkout", {
+        language: lang,
+        vehicle_type: vehicle,
+        insurance_term: term,
+        value: getPolicyPrice(vehicle, term),
+        currency: "PLN",
+      });
       if (mode === "order") {
         const params = new URLSearchParams({ vehicle, term });
         router.push(`/${lang}/order?${params.toString()}`);

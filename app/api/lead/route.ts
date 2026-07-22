@@ -202,6 +202,99 @@ function normalizeBitrixFileName(originalName: string): string {
     .slice(0, 80);
   return `${safeBase || "document"}${ext}`;
 }
+type AttributionField =
+  | "landing_page"
+  | "page_url"
+  | "referrer"
+  | "utm_source"
+  | "utm_medium"
+  | "utm_campaign"
+  | "utm_content"
+  | "utm_term"
+  | "gclid"
+  | "language"
+  | "route";
+
+type AttributionData = Partial<Record<AttributionField, string>>;
+
+const attributionFields: AttributionField[] = [
+  "landing_page",
+  "page_url",
+  "referrer",
+  "utm_source",
+  "utm_medium",
+  "utm_campaign",
+  "utm_content",
+  "utm_term",
+  "gclid",
+  "language",
+  "route",
+];
+
+const attributionMaxLength: Record<AttributionField, number> = {
+  landing_page: 500,
+  page_url: 500,
+  referrer: 500,
+  utm_source: 120,
+  utm_medium: 120,
+  utm_campaign: 160,
+  utm_content: 160,
+  utm_term: 160,
+  gclid: 200,
+  language: 10,
+  route: 120,
+};
+
+function normalizeUrlValue(value: string): string {
+  if (!value) return "";
+
+  try {
+    const url = new URL(value);
+    if (url.protocol !== "http:" && url.protocol !== "https:") return "";
+    url.hash = "";
+    return url.toString();
+  } catch {
+    return "";
+  }
+}
+
+function sanitizeAttributionText(value: string, maxLength: number): string {
+  return value.replace(/[\u0000-\u001F\u007F]/g, " ").replace(/\s+/g, " ").trim().slice(0, maxLength);
+}
+
+function parseAttribution(form: FormData, fallbackLang: string): AttributionData {
+  const attribution: AttributionData = {};
+
+  for (const field of attributionFields) {
+    let value = toString(form.get(field));
+
+    if (!value && field === "language") value = fallbackLang;
+    if (!value) continue;
+
+    if (field === "landing_page" || field === "page_url" || field === "referrer") {
+      value = normalizeUrlValue(value);
+    } else {
+      value = sanitizeAttributionText(value, attributionMaxLength[field]);
+    }
+
+    if (value) attribution[field] = value.slice(0, attributionMaxLength[field]);
+  }
+
+  return attribution;
+}
+
+function appendAttributionComment(comment: string, attribution: AttributionData): string {
+  const rows = attributionFields
+    .map((field) => [field, attribution[field]] as const)
+    .filter(([, value]) => Boolean(value))
+    .map(([field, value]) => `${field}: ${value}`);
+
+  if (rows.length === 0) return comment;
+
+  const attributionBlock = ["--- Attribution ---", ...rows].join("\n");
+  return [comment, attributionBlock].filter(Boolean).join("\n\n").slice(0, 3000);
+}
+
 type BitrixFileValue = { fileData: [string, string] };
 function getIdFromFirstItem(value: unknown): number | null { if (!Array.isArray(value)) return null; const first = value[0]; if (!first || typeof first !== "object") return null; const id = (first as { ID?: unknown }).ID; const parsed = Number(id); return Number.isFinite(parsed) && parsed > 0 ? parsed : null; }
 function getCreatedId(value: unknown): number { const parsed = Number(value); if (!Number.isFinite(parsed) || parsed <= 0) throw new Error("Bitrix returned invalid ID"); return parsed; }
@@ -288,7 +381,7 @@ export async function POST(req: Request) {
   let stage: LeadRouteStage = "form_parse";
   let vehicleCount = 0;
 
-  try { const form = await req.formData(); const lang = toString(form.get("lang")) || "en"; const firstName = toString(form.get("contact_firstNameLat")); const lastName = toString(form.get("contact_lastNameLat")); const phone = toString(form.get("contact_phone")); const email = toString(form.get("contact_email")).toLowerCase(); const isCompany = form.get("policyholder_isCompany") === "on"; const birthDate = toString(form.get("policyholder_birthDate")); const address = toString(form.get("policyholder_address")); const policyholderPass = toString(form.get("policyholder_pass")); const companyInn = toString(form.get("company_inn")); const ceoFullName = toString(form.get("company_ceo_fullName")); const ceoTitle = toString(form.get("company_ceo_title")); const vehiclesByIdx: Record<string, VehicleInput> = {}; for (const [key, value] of form.entries()) { const match = key.match(/^vehicles\[(\d+)\]\[(\w+)\]$/); if (!match) continue; const [, idx, field] = match; vehiclesByIdx[idx] ||= { countryFrom: "", vehicleType: "", period: "", startDate: "", plate: "", vin: "", brend: "", year: "", engineType: "", engineCapacity: "", vehiclePower: "", powerUnit: "", comment: "", docs: [] }; if (field === "docs" && value instanceof File) { vehiclesByIdx[idx].docs.push(value); } else if (typeof value === "string" && isVehicleStringField(field)) { vehiclesByIdx[idx][field] = value.trim(); } } const vehicles = Object.keys(vehiclesByIdx).sort((a,b)=>Number(a)-Number(b)).map((key)=>vehiclesByIdx[key]).filter((vehicle)=>vehicle.plate || vehicle.docs.length > 0); vehicleCount = vehicles.length; if (!email || !phone || vehicles.length === 0) throw new LeadValidationError("Missing required fields"); for (const vehicle of vehicles) { mapPeriod(vehicle.period); } stage = "contact_lookup"; const duplicateResult = await bx("crm.duplicate.findbycomm", { type: "EMAIL", values: [email] }); stage = "contact_upsert"; const contactFields = { NAME: firstName, LAST_NAME: lastName, PHONE: phone ? [{ VALUE: phone, VALUE_TYPE: "WORK" }] : [], EMAIL: email ? [{ VALUE: email, VALUE_TYPE: "WORK" }] : [], UF_CRM_1753957395750: langToComm[lang] || "3953", UF_CRM_CONTACT_1686145698592: policyholderPass, ...(isCompany ? {} : { BIRTHDATE: birthDate, ADDRESS: address }) }; const existingContactId = getContactIdFromDuplicateResult(duplicateResult); let contactId: number; if (existingContactId) { contactId = existingContactId; await bx("crm.contact.update", { id: contactId, fields: contactFields }); } else { contactId = getCreatedId(await bx("crm.contact.add", { fields: contactFields })); } let companyId = 1817; if (isCompany) { stage = "company_upsert"; const companyList = await bx("crm.company.list", { filter: { UF_CRM_COMPANY_1692911328252: companyInn }, select: ["ID"], start: -1 }); const companyFields = { TITLE: companyInn ? `Company ${companyInn}` : `Company ${lastName} ${firstName}`.trim(), UF_CRM_COMPANY_1692911328252: companyInn, UF_CRM_1709019759168: ceoFullName, UF_CRM_1709019814756: ceoTitle }; const existingCompanyId = getIdFromFirstItem(companyList); if (existingCompanyId) { companyId = existingCompanyId; await bx("crm.company.update", { id: companyId, fields: companyFields }); } else { companyId = getCreatedId(await bx("crm.company.add", { fields: companyFields })); } } let hasFileProcessingIssue = false; for (const vehicle of vehicles) { const docs: BitrixFileValue[] = []; for (const file of vehicle.docs) { const normalizedName = `${Date.now()}_${normalizeBitrixFileName(file.name)}`; docs.push({ fileData: [normalizedName, await fileToBase64(file)] }); } const dealFields = { TITLE: `Lead ${lastName} ${firstName} ${vehicle.plate}`.trim(), CONTACT_ID: contactId, COMPANY_ID: companyId, UF_CRM_1686152306664: countryMap[vehicle.countryFrom] || "411", UF_CRM_1686152567597: vehicleTypeMap[vehicle.vehicleType] || "127", UF_CRM_1686152209741: mapPeriod(vehicle.period), UF_CRM_1686152149204: vehicle.startDate, UF_CRM_1686152485641: vehicle.plate, UF_CRM_1686152659867: vehicle.vin, UF_CRM_1686152515152: vehicle.brend, UF_CRM_1686152614718: vehicle.year ? Number(vehicle.year) : "", UF_CRM_1686152745455: engineTypeMap[vehicle.engineType] || "", UF_CRM_1686152831791: vehicle.engineCapacity ? Number(vehicle.engineCapacity) : "", UF_CRM_1686152861297: vehicle.vehiclePower ? Number(vehicle.vehiclePower) : "", UF_CRM_1686152902186: powerUnitMap[vehicle.powerUnit] || "", COMMENTS: vehicle.comment, UF_CRM_1693578066803: "401", UF_CRM_1686682902533: "813", UF_CRM_1690539097: "425", UF_CRM_1700656576088: "", UF_CRM_1686683031442: "231", ...(docs.length > 0 ? { UF_CRM_1686154280439: docs } : {}) }; stage = "deal_upsert"; await safeWriteLeadLog("INFO", "Attempting Bitrix deal add", { traceId, docsCount: docs.length }); let dealId: number; try { dealId = getCreatedId(await bx("crm.deal.add", { fields: dealFields })); } catch (error) { const reason = error instanceof Error ? error.message : "Unknown error"; if (docs.length > 0) { await safeWriteLeadLog("ERROR", "Bitrix rejected files during deal add", { traceId, docsCount: docs.length, error: reason }); const fallbackDealFields = { ...dealFields }; delete (fallbackDealFields as Record<string, unknown>).UF_CRM_1686154280439; dealId = getCreatedId(await bx("crm.deal.add", { fields: fallbackDealFields })); hasFileProcessingIssue = true; } else { throw error; } }
+  try { const form = await req.formData(); const lang = toString(form.get("lang")) || "en"; const firstName = toString(form.get("contact_firstNameLat")); const lastName = toString(form.get("contact_lastNameLat")); const phone = toString(form.get("contact_phone")); const email = toString(form.get("contact_email")).toLowerCase(); const isCompany = form.get("policyholder_isCompany") === "on"; const birthDate = toString(form.get("policyholder_birthDate")); const address = toString(form.get("policyholder_address")); const policyholderPass = toString(form.get("policyholder_pass")); const companyInn = toString(form.get("company_inn")); const attribution = parseAttribution(form, lang); const ceoFullName = toString(form.get("company_ceo_fullName")); const ceoTitle = toString(form.get("company_ceo_title")); const vehiclesByIdx: Record<string, VehicleInput> = {}; for (const [key, value] of form.entries()) { const match = key.match(/^vehicles\[(\d+)\]\[(\w+)\]$/); if (!match) continue; const [, idx, field] = match; vehiclesByIdx[idx] ||= { countryFrom: "", vehicleType: "", period: "", startDate: "", plate: "", vin: "", brend: "", year: "", engineType: "", engineCapacity: "", vehiclePower: "", powerUnit: "", comment: "", docs: [] }; if (field === "docs" && value instanceof File) { vehiclesByIdx[idx].docs.push(value); } else if (typeof value === "string" && isVehicleStringField(field)) { vehiclesByIdx[idx][field] = value.trim(); } } const vehicles = Object.keys(vehiclesByIdx).sort((a,b)=>Number(a)-Number(b)).map((key)=>vehiclesByIdx[key]).filter((vehicle)=>vehicle.plate || vehicle.docs.length > 0); vehicleCount = vehicles.length; if (!email || !phone || vehicles.length === 0) throw new LeadValidationError("Missing required fields"); for (const vehicle of vehicles) { mapPeriod(vehicle.period); } stage = "contact_lookup"; const duplicateResult = await bx("crm.duplicate.findbycomm", { type: "EMAIL", values: [email] }); stage = "contact_upsert"; const contactFields = { NAME: firstName, LAST_NAME: lastName, PHONE: phone ? [{ VALUE: phone, VALUE_TYPE: "WORK" }] : [], EMAIL: email ? [{ VALUE: email, VALUE_TYPE: "WORK" }] : [], UF_CRM_1753957395750: langToComm[lang] || "3953", UF_CRM_CONTACT_1686145698592: policyholderPass, ...(isCompany ? {} : { BIRTHDATE: birthDate, ADDRESS: address }) }; const existingContactId = getContactIdFromDuplicateResult(duplicateResult); let contactId: number; if (existingContactId) { contactId = existingContactId; await bx("crm.contact.update", { id: contactId, fields: contactFields }); } else { contactId = getCreatedId(await bx("crm.contact.add", { fields: contactFields })); } let companyId = 1817; if (isCompany) { stage = "company_upsert"; const companyList = await bx("crm.company.list", { filter: { UF_CRM_COMPANY_1692911328252: companyInn }, select: ["ID"], start: -1 }); const companyFields = { TITLE: companyInn ? `Company ${companyInn}` : `Company ${lastName} ${firstName}`.trim(), UF_CRM_COMPANY_1692911328252: companyInn, UF_CRM_1709019759168: ceoFullName, UF_CRM_1709019814756: ceoTitle }; const existingCompanyId = getIdFromFirstItem(companyList); if (existingCompanyId) { companyId = existingCompanyId; await bx("crm.company.update", { id: companyId, fields: companyFields }); } else { companyId = getCreatedId(await bx("crm.company.add", { fields: companyFields })); } } let hasFileProcessingIssue = false; for (const vehicle of vehicles) { const docs: BitrixFileValue[] = []; for (const file of vehicle.docs) { const normalizedName = `${Date.now()}_${normalizeBitrixFileName(file.name)}`; docs.push({ fileData: [normalizedName, await fileToBase64(file)] }); } const dealFields = { TITLE: `Lead ${lastName} ${firstName} ${vehicle.plate}`.trim(), CONTACT_ID: contactId, COMPANY_ID: companyId, UF_CRM_1686152306664: countryMap[vehicle.countryFrom] || "411", UF_CRM_1686152567597: vehicleTypeMap[vehicle.vehicleType] || "127", UF_CRM_1686152209741: mapPeriod(vehicle.period), UF_CRM_1686152149204: vehicle.startDate, UF_CRM_1686152485641: vehicle.plate, UF_CRM_1686152659867: vehicle.vin, UF_CRM_1686152515152: vehicle.brend, UF_CRM_1686152614718: vehicle.year ? Number(vehicle.year) : "", UF_CRM_1686152745455: engineTypeMap[vehicle.engineType] || "", UF_CRM_1686152831791: vehicle.engineCapacity ? Number(vehicle.engineCapacity) : "", UF_CRM_1686152861297: vehicle.vehiclePower ? Number(vehicle.vehiclePower) : "", UF_CRM_1686152902186: powerUnitMap[vehicle.powerUnit] || "", COMMENTS: appendAttributionComment(vehicle.comment, attribution), UF_CRM_1693578066803: "401", UF_CRM_1686682902533: "813", UF_CRM_1690539097: "425", UF_CRM_1700656576088: "", UF_CRM_1686683031442: "231", ...(docs.length > 0 ? { UF_CRM_1686154280439: docs } : {}) }; stage = "deal_upsert"; await safeWriteLeadLog("INFO", "Attempting Bitrix deal add", { traceId, docsCount: docs.length }); let dealId: number; try { dealId = getCreatedId(await bx("crm.deal.add", { fields: dealFields })); } catch (error) { const reason = error instanceof Error ? error.message : "Unknown error"; if (docs.length > 0) { await safeWriteLeadLog("ERROR", "Bitrix rejected files during deal add", { traceId, docsCount: docs.length, error: reason }); const fallbackDealFields = { ...dealFields }; delete (fallbackDealFields as Record<string, unknown>).UF_CRM_1686154280439; dealId = getCreatedId(await bx("crm.deal.add", { fields: fallbackDealFields })); hasFileProcessingIssue = true; } else { throw error; } }
 
 
 

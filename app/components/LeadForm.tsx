@@ -7,6 +7,7 @@ import type { Lang } from "@/app/dictionaries/header";
 import { getLeadFormDictionary } from "@/app/dictionaries/leadForm";
 import { getPolicyPrice, formatCurrency } from "@/app/lib/insurancePrices";
 import SubmissionModal from "@/app/components/SubmissionModal";
+import { trackFunnelEvent } from "@/app/lib/analytics";
 
 type FormStatus = "idle" | "loading" | "success" | "error";
 type SubmitOutcome = "none" | "success" | "partial";
@@ -112,6 +113,37 @@ function validateFiles(
   return true;
 }
 
+function safeUrl(value: string): string {
+  try {
+    const url = new URL(value);
+    if (url.protocol !== "http:" && url.protocol !== "https:") return "";
+    url.hash = "";
+    return url.toString().slice(0, 500);
+  } catch {
+    return "";
+  }
+}
+
+function appendAttribution(formData: FormData, lang: Lang) {
+  if (typeof window === "undefined") return;
+
+  const currentUrl = new URL(window.location.href);
+  const route = currentUrl.pathname.split("/").filter(Boolean).slice(1).join("/") || "home";
+
+  formData.append("landing_page", safeUrl(`${currentUrl.origin}${currentUrl.pathname}`));
+  formData.append("page_url", safeUrl(window.location.href));
+  formData.append("referrer", safeUrl(document.referrer));
+  formData.append("language", lang);
+  formData.append("route", route.slice(0, 120));
+
+  const allowed = ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term", "gclid"] as const;
+
+  for (const key of allowed) {
+    const value = currentUrl.searchParams.get(key);
+    if (value) formData.append(key, value.slice(0, 200));
+  }
+}
+
 function todayISO(): string {
   const d = new Date();
   const yyyy = d.getFullYear();
@@ -153,6 +185,7 @@ export default function LeadForm(props: { lang: Lang; showOrderSummary?: boolean
   const [vehiclePrices, setVehiclePrices] = useState<VehiclePriceState>({});
 
   const formRef = useRef<HTMLFormElement | null>(null);
+  const successEventSentRef = useRef(false);
 
   const forbiddenTypes = [
     "application/zip",
@@ -166,6 +199,8 @@ export default function LeadForm(props: { lang: Lang; showOrderSummary?: boolean
   const maxTotalFilesBytes = 20 * 1024 * 1024;
 
   useEffect(() => {
+    trackFunnelEvent("lead_form_view", { language: props.lang }, { onceKey: props.lang });
+
     function applyCalculatorSelection(selection: { vehicle?: unknown; term?: unknown }) {
       const vehicleType = typeof selection.vehicle === "string" ? selection.vehicle : "";
       const period = typeof selection.term === "string" ? selection.term : "";
@@ -204,7 +239,7 @@ export default function LeadForm(props: { lang: Lang; showOrderSummary?: boolean
     return () => {
       window.removeEventListener("calculatorSelectionChanged", onCalculatorSelectionChanged);
     };
-  }, []);
+  }, [props.lang]);
 
   function addVehicle() {
     setVehicleBlocks(function (prev) {
@@ -282,14 +317,16 @@ export default function LeadForm(props: { lang: Lang; showOrderSummary?: boolean
 
       if (typeof window !== "undefined") {
         try {
-          formData.append("pageUrl", window.location.href);
-
-          const utm = localStorage.getItem("utm_data");
-          if (utm) formData.append("utm", utm);
+          appendAttribution(formData, props.lang);
         } catch {
           // ignore
         }
       }
+
+      trackFunnelEvent("lead_submit_attempt", {
+        language: props.lang,
+        vehicle_count: vehicleBlocks.length,
+      });
 
       const res = await fetch("/api/lead", {
         method: "POST",
@@ -332,6 +369,11 @@ export default function LeadForm(props: { lang: Lang; showOrderSummary?: boolean
         if (res.status === 413) {
           setStatus("error");
           setMessage("The attached files are too large for upload. Please attach smaller files.");
+          trackFunnelEvent("lead_submit_error", {
+            language: props.lang,
+            error_status: res.status,
+            error_type: "file_size",
+          });
           return;
         }
 
@@ -339,17 +381,35 @@ export default function LeadForm(props: { lang: Lang; showOrderSummary?: boolean
         setStatus("error");
         setMessage(`${serverMsg || t.statusError}${traceSuffix}`);
         setOutcome("none");
+        trackFunnelEvent("lead_submit_error", {
+          language: props.lang,
+          error_status: res.status,
+          error_type: res.status === 400 ? "validation" : "api_error",
+        });
         return;
       }
 
       setStatus("success");
       setMessage(t.statusSuccess);
       setOutcome(partialSuccess ? "partial" : "success");
+
+      if (!successEventSentRef.current) {
+        successEventSentRef.current = true;
+        trackFunnelEvent("generate_lead", {
+          language: props.lang,
+          vehicle_count: vehicleBlocks.length,
+          partial_success: partialSuccess,
+        });
+      }
       resetFormState();
     } catch {
       setStatus("error");
       setMessage(t.statusError);
       setOutcome("none");
+      trackFunnelEvent("lead_submit_error", {
+        language: props.lang,
+        error_type: "network_error",
+      });
     }
   }
 
@@ -1182,6 +1242,7 @@ export default function LeadForm(props: { lang: Lang; showOrderSummary?: boolean
 
                     if (!validateStep(1)) return;
 
+                    trackFunnelEvent("lead_step_1_complete", { language: props.lang });
                     setStep(2);
                   }}
                   disabled={status === "loading"}
