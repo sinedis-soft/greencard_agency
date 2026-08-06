@@ -135,6 +135,19 @@ export const ROUTE_META = {
     },
     pageType: "insurance-route",
   },
+
+  "/route/algeria/france": {
+    lastModified: "2026-08-06",
+    review: {
+      authorId: "sergey-anatska",
+      reviewerId: "sergey-anatska",
+      reviewedAt: "2026-08-06",
+    },
+    pageType: "insurance-route",
+    hreflangOverrides: {
+      ar: "ar-AE",
+    }
+  },
   
 } as const satisfies Record<string, RouteMeta>;
 

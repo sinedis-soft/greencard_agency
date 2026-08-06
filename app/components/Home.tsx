@@ -13,6 +13,7 @@ import { belarusLithuaniaOcDictionary } from "@/app/dictionaries/seo-landings/be
 import { getKazakhstanPolandOcDictionary } from "@/app/dictionaries/seo-landings/kazakhstanPolandOc";
 import { getGeorgiaBulgariaOcDictionary } from "@/app/dictionaries/seo-landings/georgiaBulgariaOc";
 import { getUaeOcDictionary } from "@/app/dictionaries/seo-landings/uaeOc";
+import { getAlgeriaFranceOcDictionary } from "@/app/dictionaries/seo-landings/algeriaFranceOc";
 import { isRouteLocaleIndexable } from "@/app/seo";
 import { BusinessHoursBanner } from "@/app/components/BusinessHoursBanner";
 
@@ -24,6 +25,7 @@ export default function Home({ lang }: { lang: Lang }) {
   const kazakhstanPoland = getKazakhstanPolandOcDictionary(lang);
   const georgiaBulgaria = getGeorgiaBulgariaOcDictionary(lang);
   const uaeOc = getUaeOcDictionary(lang);
+  const algeriaFrance = getAlgeriaFranceOcDictionary(lang);
   const guide = t.insuranceGuide;
 
   const seoCards = [
@@ -82,6 +84,17 @@ export default function Home({ lang }: { lang: Lang }) {
             cta: georgiaBulgaria.carousel.cta,
           }
         : null,
+      
+      isRouteLocaleIndexable(lang, "/route/algeria/france") &&
+        algeriaFrance
+          ? {
+              href: `/${lang}/route/algeria/france`,
+              title: algeriaFrance.carousel.cardTitle,
+              text: algeriaFrance.carousel.cardText,
+              cta: algeriaFrance.carousel.cta,
+            }
+          : null,
+
   ].filter(
     (
       card,
