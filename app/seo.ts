@@ -34,6 +34,7 @@ type RouteLocaleKey =
   | "uae/bulgaria"
   | "uae/greece"
   | "albania/bulgaria"
+  | "algeria/france"
   | "experts/sergey-anatska";
 
 export const ROUTE_LOCALES = {
@@ -47,6 +48,7 @@ export const ROUTE_LOCALES = {
   "uae/bulgaria": ["ru", "en", "ar"],
   "uae/greece": ["ru", "en", "ar"],
   "albania/bulgaria": ["ru", "en", "sq"],
+  "algeria/france": ["ar", "en"],
   "experts/sergey-anatska": ["ru", "pl", "en", "be"],
 } as const satisfies Record<RouteLocaleKey, readonly Lang[]>;
 
