@@ -15,13 +15,7 @@ const ROUTE_DICTIONARIES = {
   "experts/sergey-anatska": "app/dictionaries/experts/sergeyAnatska.ts",
 };
 
-const FULL_DICTIONARY_EXCLUSIONS = [
-  {
-    locale: "kk",
-    route: "belarus/poland",
-    reason: "Permanent redirect to Russian version",
-  },
-];
+const FULL_DICTIONARY_EXCLUSIONS = [];
 
 const RUSSIAN_TERMS = [
   "страховка",
@@ -271,7 +265,7 @@ assert(!seoSource.includes("disabledLocales"), "Route locale matrix should repla
 assert(!seoSource.includes("LOCALES.filter"), "routeLocales must not derive route languages by filtering global LOCALES");
 assert(!sitemapSource.includes("/kk/route/belarus/poland"), "/kk/route/belarus/poland must not be hard-coded in sitemap output");
 const belarusPolandLocales = routeLocales.get("belarus/poland") ?? [];
-assert(!belarusPolandLocales.includes("kk"), "kk must not be allowed for belarus/poland");
+assert(belarusPolandLocales.includes("kk"), "kk must be allowed for belarus/poland");
 
 if (failures.length > 0) {
   console.error(failures.join("\n"));
