@@ -34,6 +34,10 @@ const SITEMAP_ROUTE_ROUTES = [
   "/route/georgia/bulgaria",
   "/route/kazakhstan/poland",
   "/route/uae",
+  "/route/uae/bulgaria",
+  "/route/uae/greece",
+  "/route/albania/bulgaria",
+  "/route/algeria/france",
 ] as const satisfies readonly AppRoute[];
 
 export const SITEMAP_SECTIONS = [
