@@ -37,7 +37,7 @@ type RouteLocaleKey =
   | "experts/sergey-anatska";
 
 export const ROUTE_LOCALES = {
-  "belarus/poland": ["ru", "pl", "en", "be", "ka", "tr", "fa", "hy", "ar", "he"],
+  "belarus/poland": ["ru", "pl", "en", "be", "kk", "ka", "tr", "fa", "hy", "ar", "he"],
   "belarus/lithuania": ["ru", "en", "be", "ka", "hy", "ar"],
   "georgia/romania": ["ru", "en", "be", "ka", "kk"],
   "georgia/bulgaria": ["ru", "en", "ka", "hy", "ar"],

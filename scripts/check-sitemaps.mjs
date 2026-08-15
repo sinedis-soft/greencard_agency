@@ -65,6 +65,16 @@ function assertUrlSitemap(path, body) {
   assert(body.includes("<url>"), `${path} must include <url> entries`);
   assert(body.includes("<loc>"), `${path} must include <loc> entries`);
   assert(body.includes("<lastmod>"), `${path} must include <lastmod> entries`);
+  if (path === "/sitemap-routes.xml") {
+    assert(
+      body.includes("<loc>https://greencard.agency/kk/route/belarus/poland</loc>"),
+      `${path} must include the Kazakh Belarus-Poland URL`,
+    );
+    assert(
+      body.includes('hreflang="kk-KZ" href="https://greencard.agency/kk/route/belarus/poland"'),
+      `${path} must include the Kazakh Belarus-Poland hreflang`,
+    );
+  }
 }
 
 const failures = [];

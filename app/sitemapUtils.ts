@@ -23,10 +23,6 @@ const SITEMAP_MAIN_ROUTES = [
   "/contacts",
   "/experts/sergey-anatska",
 ] as const satisfies readonly AppRoute[];
-export const SITEMAP_ROUTE_EXCLUSIONS = {
-  "belarus/poland:kk": "Permanent redirect to Russian version",
-} as const satisfies Record<string, string>;
-
 const SITEMAP_ROUTE_ROUTES = [
   "/route/belarus/poland",
   "/route/belarus/lithuania",

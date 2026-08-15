@@ -16,11 +16,6 @@ const nextConfig: NextConfig = {
         destination: "/:lang/route/georgia/romania",
         permanent: true,
       },
-      {
-        source: "/kk/route/belarus/poland",
-        destination: "/ru/route/belarus/poland",
-        permanent: true,
-      },
     ];
   },
 };
