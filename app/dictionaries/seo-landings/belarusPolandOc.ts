@@ -110,7 +110,7 @@ const en: BelarusPolandOcDictionary = {
       {
         q: "Can I apply online if I have not crossed the border yet?",
         a:
-          "Yes, you can submit an application in advance, but to receive the policy you must be physically located in Poland.",
+          "Yes, you can submit an application in advance to receive the policy by the required coverage start date.",
       },
       {
         q: "Is the policy valid only for trips within Poland?",
