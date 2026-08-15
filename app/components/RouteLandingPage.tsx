@@ -14,6 +14,7 @@ type RouteLandingPageProps = {
   dictionary: BelarusPolandOcDictionary;
   review: InsuranceContentReview;
   caseIds?: readonly CaseStudyId[];
+  disableEnhancements?: boolean;
 };
 
 type RouteEnhancement = {
@@ -178,10 +179,45 @@ function isCaseStudyLocale(lang: Lang): lang is CaseStudyLocale {
   return lang === "ru" || lang === "pl" || lang === "en" || lang === "be";
 }
 
-export default function RouteLandingPage({ lang, dictionary: t, review, caseIds = [] }: RouteLandingPageProps) {
+function renderTextWithLinks(text: string) {
+  const urlRegex = /(https?:\/\/[^\s]+)/g;
+
+  return text.split(urlRegex).map((part, index) => {
+    if (part.match(urlRegex)) {
+      const url = part.replace(/[.,;!?]+$/, "");
+      const trailing = part.slice(url.length);
+
+      return (
+        <span key={`${url}-${index}`}>
+          <a
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {url}
+          </a>
+          {trailing}
+        </span>
+      );
+    }
+
+    return part;
+  });
+}
+
+export default function RouteLandingPage({
+  lang,
+  dictionary: t,
+  review,
+  caseIds = [],
+  disableEnhancements = false,
+}: RouteLandingPageProps) {
   const topSignals = [t.what.title, t.price.title, t.validity.title];
   const supportSignals = t.who.items.slice(0, 3);
-  const enhancement = routeEnhancementsByLang[lang];
+
+  const enhancement = disableEnhancements
+    ? undefined
+    : routeEnhancementsByLang[lang];
 
   return (
     <>
@@ -246,7 +282,7 @@ export default function RouteLandingPage({ lang, dictionary: t, review, caseIds 
         <div className="container route-overview__grid">
           <article className="route-card route-card--featured">
             <h2 className="section__title">{keepTypography(t.what.title)}</h2>
-            <p>{t.what.text}</p>
+            <p>{renderTextWithLinks(t.what.text)}</p>
           </article>
           <article className="route-card route-card--compact">
             <h2 className="section__title">{keepTypography(t.who.title)}</h2>

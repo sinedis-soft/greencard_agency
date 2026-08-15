@@ -28,6 +28,7 @@ type RouteLocaleKey =
   | "belarus/lithuania"
   | "georgia/romania"
   | "georgia/bulgaria"
+  | "georgia/greece"
   | "kazakhstan/poland"
   | "uae"
   | "uae/bulgaria"
@@ -40,6 +41,7 @@ export const ROUTE_LOCALES = {
   "belarus/lithuania": ["ru", "en", "be", "ka", "hy", "ar"],
   "georgia/romania": ["ru", "en", "be", "ka", "kk"],
   "georgia/bulgaria": ["ru", "en", "ka", "hy", "ar"],
+   "georgia/greece": ["ru", "en", "ka", ],
   "kazakhstan/poland": ["ru", "kk", "en", "ar"],
   uae: ["ru", "en", "ar"],
   "uae/bulgaria": ["ru", "en", "ar"],
@@ -113,6 +115,15 @@ export const ROUTE_META = {
     hreflangOverrides: {
       ar: "ar-AE",
     },
+  },
+  "/route/georgia/greece": {
+    lastModified: "2026-08-15",
+    review: {
+      authorId: "sergey-anatska",
+      reviewerId: "sergey-anatska",
+      reviewedAt: "2026-08-15",
+    },
+    pageType: "insurance-route",
   },
   "/route/uae/greece": {
     lastModified: "2026-07-20",

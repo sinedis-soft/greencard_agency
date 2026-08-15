@@ -32,6 +32,7 @@ const SITEMAP_ROUTE_ROUTES = [
   "/route/belarus/lithuania",
   "/route/georgia/romania",
   "/route/georgia/bulgaria",
+  "/route/georgia/greece",
   "/route/kazakhstan/poland",
   "/route/uae",
   "/route/uae/bulgaria",
