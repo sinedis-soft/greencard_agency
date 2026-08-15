@@ -1021,14 +1021,97 @@ const kk: BelarusPolandOcDictionary = {
     cta: "Бетті ашу",
   },
 };
-
+const uz: BelarusPolandOcDictionary = {
+  seo: {
+    title: "Belarus avtomobili uchun Polshada sug‘urta",
+    description:
+      "Polshaga safar uchun sug‘urtani rasmiylashtirish. Onlayn ariza, narxni hisoblash, WhatsApp va Telegram orqali yordam.",
+  },
+  breadcrumbTitle: "Belarus avtomobilini Polshaga safar uchun sug‘urtalash",
+  hero: {
+    kicker: "Belarusdan kelayotgan avtomobillar uchun sug‘urta",
+    title: "Belarus davlat raqamli avtomobillar uchun Polshada sug‘urta",
+    lead: "Polsha va Yevropa Ittifoqiga kirish hamda safar qilish uchun polisni rasmiylashtiring: onlayn ariza, narxni hisoblash va messenjerlar orqali yordam.",
+    cta: "Sug‘urta uchun ariza yuborish",
+  },
+  what: {
+    title: "Belarus davlat raqamli avtomobil uchun Polshaga OC graniczne",
+    text: "Agar avtomobil Belarusda ro‘yxatdan o‘tgan bo‘lsa va siz Polshaga safar qilishni rejalashtirayotgan bo‘lsangiz, mamlakatga kirish uchun OC graniczne chegara sug‘urtasi talab qilinishi mumkin. Bunday polis Yevropa iqtisodiy hududidan tashqarida ro‘yxatdan o‘tgan transport vositalari uchun, agar amaldagi «Yashil karta» mavjud bo‘lmasa, rasmiylashtiriladi. Ushbu sahifada OC graniczne kimga kerakligi, uni qanday rasmiylashtirish, sug‘urta qancha turishi va qanday muddatga rasmiylashtirilishi mumkinligini bilib olishingiz mumkin. Ariza topshirilgandan so‘ng polis PDF formatida yuboriladi.",
+  },
+  who: {
+    title: "Bu polis kimga kerak:",
+    items: [
+      "Belarusda ro‘yxatdan o‘tgan avtomobil egalari va haydovchilariga.",
+      "Polshaga shaxsiy avtomobilida kirayotganlarga.",
+      "Uchinchi shaxslar oldidagi javobgarlik bo‘yicha amaldagi sug‘urta himoyasi kerak bo‘lganlarga.",
+      "Yevropa Ittifoqi bo‘ylab safar uchun vaqtinchalik sug‘urta kerak bo‘lganlarga.",
+      "Agar avtomobil Polsha orqali tranzit o‘tsa.",
+    ],
+  },
+  how: {
+    title: "Qanday rasmiylashtiriladi",
+    steps: [
+      "Saytdagi forma orqali ariza qoldiring.",
+      "Narxni hisoblash uchun avtomobil va haydovchi ma’lumotlarini taqdim eting.",
+      "Sug‘urta badalini qulay usulda to‘lang.",
+      "Tayyor polis va uni tekshirish bo‘yicha yo‘riqnomani oling.",
+    ],
+  },
+  price: {
+    title: "Narxi",
+    text: "Narx polisning amal qilish muddati va transport vositasi turiga bog‘liq. Taxminiy narxni har doim saytning bosh sahifasidagi onlayn kalkulyator orqali ko‘rish mumkin.",
+  },
+  validity: {
+    title: "Amal qilish muddati",
+    text: "30 kundan 364 kungacha bo‘lgan polislar mavjud. Rasmiylashtirish vaqtida sug‘urta boshlanish sanasi ko‘rsatiladi, shundan so‘ng sug‘urta qoplamasi tanlangan muddat davomida amal qiladi. Agar arizani to‘ldirishda sizga kerakli muddatni ko‘rmasangiz, bu ma’lumotni izohda ko‘rsating.",
+  },
+  form: {
+    title: "Ariza formasi",
+    desc: "Quyidagi tugmani bosing — sug‘urtani rasmiylashtirish formasi joylashgan bosh sahifa ochiladi.",
+  },
+  faq: {
+    title: "FAQ",
+    items: [
+      {
+        q: "Belarus davlat raqamli avtomobilda Belarus–Polsha chegarasini kesib o‘tish mumkinmi?",
+        a: "Ha, chegarani kesib o‘tish mumkin. Biroq Polshada Belarus davlat raqamli avtomobilda chegarani kesib o‘tish vaqtida avtomobil egasi majburiy ravishda avtomobil ichida bo‘lishi kerakligi haqidagi qoida amal qilishini hisobga olish muhim. Bu avtomobil yuridik shaxsga yoki chegara kesib o‘tilayotgan paytda avtomobilda bo‘lmagan shaxsga tegishli bo‘lishi mumkin emasligini anglatadi.",
+      },
+      {
+        q: "Agar men hali chegarani kesib o‘tmagan bo‘lsam, sug‘urtani onlayn rasmiylashtirish mumkinmi?",
+        a: "Ha, polisni kerakli boshlanish sanasiga olish uchun arizani oldindan topshirish mumkin.",
+      },
+      {
+        q: "Polis faqat Polsha bo‘ylab safarlar uchun mos keladimi?",
+        a: "Polis Polshaga kirish uchun rasmiylashtiriladi va sug‘urta shartlarida ko‘rsatilgan mamlakatlar hududida amal qilishi mumkin (Yevropa iqtisodiy hududi mamlakatlari + Shveytsariya).",
+      },
+      {
+        q: "Yuk avtomobili uchun sug‘urta rasmiylashtirish mumkinmi?",
+        a: "Ha, sug‘urtani yengil avtomobil uchun ham, yuk transporti uchun ham rasmiylashtirish mumkin, biroq faqat jismoniy shaxs nomiga (masalan, haydovchi nomiga).",
+      },
+      {
+        q: "Polis qanchalik tez yuboriladi?",
+        a: "To‘lov tasdiqlangandan so‘ng polis odatda qisqa vaqt ichida elektron shaklda yuboriladi. Bu operatorlarning bandligiga bog‘liq, o‘rtacha taxminan 10 daqiqa.",
+      },
+      {
+        q: "Polisning amal qilishini qayerda tekshirish mumkin?",
+        a: "Polisni Polshadagi rasmiy UFG xizmati orqali tekshirish mumkin.",
+      },
+    ],
+  },
+  carousel: {
+    title: "Yo‘nalishlar bo‘yicha foydali sahifalar",
+    cardTitle: "Belarus avtomobili uchun Polshaga safar sug‘urtasi",
+    cardText: "Shartlar, muddatlar, narx va onlayn rasmiylashtirish.",
+    cta: "Sahifani ochish",
+  },
+};
 
 
 export const belarusPolandOcDictionary: Record<Lang, BelarusPolandOcDictionary> = { ru, 
   pl,
   en, 
   be, 
-  uz: ru, 
+  uz,
   ka, 
   kk, 
   tr, 
