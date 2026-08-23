@@ -6,11 +6,14 @@ import type { UaeOcDictionary } from "@/app/dictionaries/seo-landings/uaeOc";
 import { keepTypography } from "@/app/utils/typography";
 import styles from "./UaeLandingPage.module.css";
 import TariffCards from "@/app/components/TariffCards";
+import RelatedRoutes from "@/app/components/RelatedRoutes";
+import { getRoutesDictionary } from "@/app/dictionaries/routes";
 
 type UaeLandingPageProps = {
   lang: Lang;
   dictionary: UaeOcDictionary;
   review: InsuranceContentReview;
+  pagePath?: string;
 };
 
 const homeCrumbByLang: Record<Lang, string> = {
@@ -42,7 +45,8 @@ function toneClass(tone: UaeOcDictionary["answers"][number]["tone"]) {
   return styles.answerNo;
 }
 
-export default function UaeLandingPage({ lang, dictionary: t, review }: UaeLandingPageProps) {
+export default function UaeLandingPage({ lang, dictionary: t, review, pagePath }: UaeLandingPageProps) {
+  const routesDictionary = getRoutesDictionary(lang);
   return (
     <div className={styles.uaeLanding}>
       <nav aria-label="Breadcrumb" className={`route-breadcrumb container ${styles.breadcrumb}`}>
@@ -50,6 +54,8 @@ export default function UaeLandingPage({ lang, dictionary: t, review }: UaeLandi
           <li>
             <Link href={`/${lang}`}>{homeCrumbByLang[lang]}</Link>
           </li>
+          <li aria-hidden="true">/</li>
+          <li><Link href={`/${lang}/routes`}>{routesDictionary.title}</Link></li>
           <li aria-hidden="true">/</li>
           <li aria-current="page">{t.breadcrumbTitle}</li>
         </ol>
@@ -263,6 +269,8 @@ export default function UaeLandingPage({ lang, dictionary: t, review }: UaeLandi
           ))}
         </div>
       </section>
+
+      <RelatedRoutes lang={lang} currentPath={pagePath} currentOrigin={pagePath ? undefined : "uae"} />
 
       <section className={styles.finalCta} id="buy">
         <div>

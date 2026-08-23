@@ -4,6 +4,7 @@ import {
   SERGEY_ANATSKA_PERSON_ID,
 } from "@/app/entityIds";
 import { routeLastModified, SITE_URL, toAbsolute, type AppRoute } from "@/app/seo";
+import { getRoutesDictionary } from "@/app/dictionaries/routes";
 
 type JsonLdProps = {
   data: Record<string, unknown> | Array<Record<string, unknown>>;
@@ -266,11 +267,20 @@ export function BreadcrumbListJsonLd({
   lang,
   pageName,
   pagePath,
+  homeName = "Home",
+  parent,
 }: {
   lang: Lang;
   pageName: string;
   pagePath: string;
+  homeName?: string;
+  parent?: { name: string; path: string };
 }) {
+  const routeNavigation = getRoutesDictionary(lang);
+  const effectiveParent = parent ?? (pagePath.startsWith("/route/")
+    ? { name: routeNavigation.title, path: "/routes" }
+    : undefined);
+  const effectiveHomeName = homeName === "Home" ? routeNavigation.home : homeName;
   const data = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -279,12 +289,18 @@ export function BreadcrumbListJsonLd({
       {
         "@type": "ListItem",
         position: 1,
-        name: "Home",
+        name: effectiveHomeName,
         item: toAbsolute(`/${lang}`),
       },
-      {
+      ...(effectiveParent ? [{
         "@type": "ListItem",
         position: 2,
+        name: effectiveParent.name,
+        item: toAbsolute(`/${lang}${effectiveParent.path}`),
+      }] : []),
+      {
+        "@type": "ListItem",
+        position: effectiveParent ? 3 : 2,
         name: pageName,
         item: toAbsolute(`/${lang}${pagePath}`),
       },

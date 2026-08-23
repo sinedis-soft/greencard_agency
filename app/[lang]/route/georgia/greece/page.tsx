@@ -96,6 +96,7 @@ export default async function GeorgiaGreeceOcPage({
         dictionary={t}
         review={CONTENT_REVIEW}
         disableEnhancements
+        pagePath={GEORGIA_GREECE_ROUTE}
       />
     </main>
   );

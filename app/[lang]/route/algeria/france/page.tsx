@@ -8,6 +8,7 @@ import {
   pageAlternates,
   pageSocialMetadata,
   routeStaticParams,
+  routeLastModified,
   requireRouteContentReview,
   toAbsolute,
 } from "@/app/seo";
@@ -78,7 +79,7 @@ function faqJsonLd(
     author: {
       "@id": "https://greencard.agency/#person-sergey-anatska",
     },
-    dateModified: CONTENT_REVIEW.reviewedAt,
+    dateModified: routeLastModified(ALGERIA_FRANCE_ROUTE, lang),
     publisher: {
       "@id": ORGANIZATION_ID,
     },
@@ -140,6 +141,7 @@ export default async function AlgeriaFranceOcPage({
         lang={lang}
         dictionary={t}
         review={CONTENT_REVIEW}
+        pagePath={ALGERIA_FRANCE_ROUTE}
       />
     </main>
   );

@@ -49,7 +49,7 @@ export default async function BelarusLithuaniaOcPage({ params }: { params: Promi
     <main id="main">
       <BreadcrumbListJsonLd lang={lang} pageName={t.breadcrumbTitle} pagePath={BELARUS_LITHUANIA_ROUTE} />
       <InsurancePageJsonLd lang={lang} pagePath={BELARUS_LITHUANIA_ROUTE} title={t.seo.title} description={t.seo.description} review={CONTENT_REVIEW} />
-      <RouteLandingPage lang={lang} dictionary={t} review={CONTENT_REVIEW} />
+      <RouteLandingPage lang={lang} dictionary={t} review={CONTENT_REVIEW} pagePath={BELARUS_LITHUANIA_ROUTE} />
     </main>
   );
 }

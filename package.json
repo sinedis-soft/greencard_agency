@@ -11,6 +11,8 @@
     "check:relations": "node scripts/check-relations.mjs",
     "check:sitemaps": "node scripts/check-sitemaps.mjs",
     "check:route-sitemap": "node scripts/check-route-sitemap-coverage.mjs",
+    "check:route-links": "node scripts/check-route-links.mjs",
+    "test:routes": "node scripts/test-related-routes.mjs",
     "check:i18n": "node scripts/check-i18n.mjs",
     "check:practice": "node scripts/check-practice-content.mjs && node scripts/check-practice-metrics.mjs && node scripts/check-practice-safety.mjs"
   },

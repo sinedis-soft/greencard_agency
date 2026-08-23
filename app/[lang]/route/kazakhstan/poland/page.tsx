@@ -103,6 +103,7 @@ export default async function KazakhstanPolandOcPage({
         lang={lang}
         dictionary={dictionary}
         review={CONTENT_REVIEW}
+        pagePath={KAZAKHSTAN_POLAND_ROUTE}
       />
     </main>
   );

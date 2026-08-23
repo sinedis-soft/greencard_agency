@@ -1,5 +1,6 @@
 import { LOCALES, type Lang } from "@/app/dictionaries/header";
 import type { ExpertId } from "@/app/experts/experts";
+import { ROUTE_CATALOG_LOCALES, routeDefinitionByPath } from "@/app/routeRegistry";
 
 export const SITE_URL = "https://greencard.agency";
 
@@ -17,46 +18,23 @@ export type InsuranceContentReview = {
 };
 
 type RouteMeta = {
-  lastModified: string;
+  lastModified?: string;
   lastModifiedByLocale?: Partial<Record<Lang, string>>;
   review?: InsuranceContentReview;
   pageType?: "insurance-route" | "expert";
   hreflangOverrides?: Partial<Record<Lang, string>>;
 };
 
-type RouteLocaleKey =
-  | "belarus/poland"
-  | "belarus/lithuania"
-  | "georgia/romania"
-  | "georgia/bulgaria"
-  | "georgia/greece"
-  | "kazakhstan/poland"
-  | "uae"
-  | "uae/bulgaria"
-  | "uae/greece"
-  | "albania/bulgaria"
-  | "algeria/france"
-  | "experts/sergey-anatska";
-
 export const ROUTE_LOCALES = {
-  "belarus/poland": ["ru", "pl", "en", "be", "kk", "ka", "tr", "fa", "hy", "ar", "he"],
-  "belarus/lithuania": ["ru", "en", "be", "ka", "hy", "ar"],
-  "georgia/romania": ["ru", "en", "be", "ka", "kk"],
-  "georgia/bulgaria": ["ru", "en", "ka", "hy", "ar"],
-   "georgia/greece": ["ru", "en", "ka", ],
-  "kazakhstan/poland": ["ru", "kk", "en", "ar"],
   uae: ["ru", "en", "ar"],
-  "uae/bulgaria": ["ru", "en", "ar"],
-  "uae/greece": ["ru", "en", "ar"],
-  "albania/bulgaria": ["ru", "en", "sq"],
-  "algeria/france": ["ar", "en"],
   "experts/sergey-anatska": ["ru", "pl", "en", "be"],
-} as const satisfies Record<RouteLocaleKey, readonly Lang[]>;
+} as const satisfies Record<string, readonly Lang[]>;
 
 export const ROUTE_META = {
   "": { lastModified: "2026-08-23" },
   "/about": { lastModified: "2026-07-17" },
   "/contacts": { lastModified: "2026-06-12" },
+  "/routes": { lastModified: "2026-08-23" },
   "/product-info": { lastModified: "2026-05-08" },
   "/rules": { lastModified: "2026-05-08" },
   "/privacy": { lastModified: "2026-05-08" },
@@ -64,11 +42,6 @@ export const ROUTE_META = {
   "/experts/sergey-anatska": { lastModified: "2026-07-17" },
   "/route/belarus/poland": {
     lastModified: "2026-08-23",
-    lastModifiedByLocale: {
-      en: "2026-08-15", pl: "2026-07-17", be: "2026-06-12", kk: "2026-07-10",
-      ka: "2026-05-14", tr: "2026-05-14", fa: "2026-05-14", hy: "2026-05-14",
-      ar: "2026-06-12", he: "2026-06-12",
-    },
     review: {
       authorId: "sergey-anatska",
       reviewerId: "sergey-anatska",
@@ -76,17 +49,13 @@ export const ROUTE_META = {
     },
     pageType: "insurance-route",
   },
-  "/route/belarus/lithuania": { lastModified: "2026-08-23", lastModifiedByLocale: {
-      en: "2026-06-19", be: "2026-06-19", ka: "2026-06-19", hy: "2026-06-19", ar: "2026-06-19",
-    }, review: {
+  "/route/belarus/lithuania": { lastModified: "2026-08-23", review: {
       authorId: "sergey-anatska",
       reviewerId: "sergey-anatska",
       reviewedAt: "2026-07-17",
     },
     pageType: "insurance-route", },
-  "/route/georgia/romania": { lastModified: "2026-08-23", lastModifiedByLocale: {
-      en: "2026-05-14", be: "2026-05-14", ka: "2026-05-14", kk: "2026-05-14",
-    }, review: {
+  "/route/georgia/romania": { lastModified: "2026-08-23", review: {
       authorId: "sergey-anatska",
       reviewerId: "sergey-anatska",
       reviewedAt: "2026-07-17",
@@ -130,7 +99,6 @@ export const ROUTE_META = {
   },
   "/route/georgia/greece": {
     lastModified: "2026-08-23",
-    lastModifiedByLocale: { en: "2026-08-16", ka: "2026-08-16" },
     review: {
       authorId: "sergey-anatska",
       reviewerId: "sergey-anatska",
@@ -183,18 +151,18 @@ function normalizeRoute(route: string = ""): string {
   return route === "/" ? "" : route;
 }
 
-function routeLocaleKey(route: string): RouteLocaleKey | undefined {
+function routeLocaleKey(route: string): keyof typeof ROUTE_LOCALES | undefined {
   const normalizedRoute = normalizeRoute(route).replace(/^\/route\//, "").replace(/^\//, "");
 
   return Object.hasOwn(ROUTE_LOCALES, normalizedRoute)
-    ? (normalizedRoute as RouteLocaleKey)
+    ? (normalizedRoute as keyof typeof ROUTE_LOCALES)
     : undefined;
 }
 
 export function routeLastModified(route: AppRoute, lang?: Lang): string {
   const metadata = ROUTE_META[route] as RouteMeta;
 
-  return (lang && metadata.lastModifiedByLocale?.[lang]) ?? metadata.lastModified;
+  return (lang && metadata.lastModifiedByLocale?.[lang]) ?? metadata.lastModified ?? "";
 }
 
 export function routeContentReview(route: AppRoute): InsuranceContentReview | undefined {
@@ -216,6 +184,11 @@ export function insurancePageRoutes(): AppRoute[] {
 }
 
 export function routeLocales(route: string = ""): Lang[] {
+  if (normalizeRoute(route) === "/routes") return [...ROUTE_CATALOG_LOCALES];
+
+  const definition = routeDefinitionByPath(normalizeRoute(route));
+  if (definition) return [...definition.locales];
+
   const key = routeLocaleKey(route);
 
   if (key) {

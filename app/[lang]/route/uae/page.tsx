@@ -8,6 +8,7 @@ import {
   pageAlternates,
   pageSocialMetadata,
   routeStaticParams,
+  routeLastModified,
   requireRouteContentReview,
   toAbsolute,
 } from "@/app/seo";
@@ -52,7 +53,7 @@ function faqJsonLd(lang: Lang, dictionary: ReturnType<typeof getUaeOcDictionary>
     "@type": "FAQPage",
     "@id": toAbsolute(`/${lang}${UAE_ROUTE}#faq`),
     author: { "@id": "https://greencard.agency/#person-sergey-anatska" },
-    dateModified: CONTENT_REVIEW.reviewedAt,
+    dateModified: routeLastModified(UAE_ROUTE, lang),
     publisher: {
       "@id": ORGANIZATION_ID,
     },
