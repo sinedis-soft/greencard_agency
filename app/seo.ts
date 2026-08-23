@@ -18,6 +18,7 @@ export type InsuranceContentReview = {
 
 type RouteMeta = {
   lastModified: string;
+  lastModifiedByLocale?: Partial<Record<Lang, string>>;
   review?: InsuranceContentReview;
   pageType?: "insurance-route" | "expert";
   hreflangOverrides?: Partial<Record<Lang, string>>;
@@ -53,16 +54,21 @@ export const ROUTE_LOCALES = {
 } as const satisfies Record<RouteLocaleKey, readonly Lang[]>;
 
 export const ROUTE_META = {
-  "": { lastModified: "2026-05-08" },
-  "/about": { lastModified: "2026-05-08" },
-  "/contacts": { lastModified: "2026-05-08" },
+  "": { lastModified: "2026-08-23" },
+  "/about": { lastModified: "2026-07-17" },
+  "/contacts": { lastModified: "2026-06-12" },
   "/product-info": { lastModified: "2026-05-08" },
   "/rules": { lastModified: "2026-05-08" },
   "/privacy": { lastModified: "2026-05-08" },
   "/cookiepolicy": { lastModified: "2026-05-08" },
   "/experts/sergey-anatska": { lastModified: "2026-07-17" },
   "/route/belarus/poland": {
-    lastModified: "2026-07-17",
+    lastModified: "2026-08-23",
+    lastModifiedByLocale: {
+      en: "2026-08-15", pl: "2026-07-17", be: "2026-06-12", kk: "2026-07-10",
+      ka: "2026-05-14", tr: "2026-05-14", fa: "2026-05-14", hy: "2026-05-14",
+      ar: "2026-06-12", he: "2026-06-12",
+    },
     review: {
       authorId: "sergey-anatska",
       reviewerId: "sergey-anatska",
@@ -70,32 +76,36 @@ export const ROUTE_META = {
     },
     pageType: "insurance-route",
   },
-  "/route/belarus/lithuania": { lastModified: "2026-07-17", review: {
+  "/route/belarus/lithuania": { lastModified: "2026-08-23", lastModifiedByLocale: {
+      en: "2026-06-19", be: "2026-06-19", ka: "2026-06-19", hy: "2026-06-19", ar: "2026-06-19",
+    }, review: {
       authorId: "sergey-anatska",
       reviewerId: "sergey-anatska",
       reviewedAt: "2026-07-17",
     },
     pageType: "insurance-route", },
-  "/route/georgia/romania": { lastModified: "2026-07-17", review: {
+  "/route/georgia/romania": { lastModified: "2026-08-23", lastModifiedByLocale: {
+      en: "2026-05-14", be: "2026-05-14", ka: "2026-05-14", kk: "2026-05-14",
+    }, review: {
       authorId: "sergey-anatska",
       reviewerId: "sergey-anatska",
       reviewedAt: "2026-07-17",
     },
     pageType: "insurance-route", },
-  "/route/georgia/bulgaria": { lastModified: "2026-07-17", review: {
+  "/route/georgia/bulgaria": { lastModified: "2026-08-23", review: {
       authorId: "sergey-anatska",
       reviewerId: "sergey-anatska",
       reviewedAt: "2026-07-17",
     },
     pageType: "insurance-route", },
-  "/route/kazakhstan/poland": { lastModified: "2026-07-17", review: {
+  "/route/kazakhstan/poland": { lastModified: "2026-08-23", review: {
       authorId: "sergey-anatska",
       reviewerId: "sergey-anatska",
       reviewedAt: "2026-07-17",
     },
     pageType: "insurance-route", },
   "/route/uae": {
-    lastModified: "2026-07-02",
+    lastModified: "2026-08-23",
     review: {
       authorId: "sergey-anatska",
       reviewerId: "sergey-anatska",
@@ -107,7 +117,7 @@ export const ROUTE_META = {
     },
   },
   "/route/uae/bulgaria": {
-    lastModified: "2026-07-20",
+    lastModified: "2026-08-23",
     review: {
       authorId: "sergey-anatska",
       reviewerId: "sergey-anatska",
@@ -119,7 +129,8 @@ export const ROUTE_META = {
     },
   },
   "/route/georgia/greece": {
-    lastModified: "2026-08-15",
+    lastModified: "2026-08-23",
+    lastModifiedByLocale: { en: "2026-08-16", ka: "2026-08-16" },
     review: {
       authorId: "sergey-anatska",
       reviewerId: "sergey-anatska",
@@ -128,7 +139,7 @@ export const ROUTE_META = {
     pageType: "insurance-route",
   },
   "/route/uae/greece": {
-    lastModified: "2026-07-20",
+    lastModified: "2026-08-23",
     review: {
       authorId: "sergey-anatska",
       reviewerId: "sergey-anatska",
@@ -140,7 +151,7 @@ export const ROUTE_META = {
     },
   },
   "/route/albania/bulgaria": {
-    lastModified: "2026-07-20",
+    lastModified: "2026-08-23",
     review: {
       authorId: "sergey-anatska",
       reviewerId: "sergey-anatska",
@@ -150,7 +161,7 @@ export const ROUTE_META = {
   },
 
   "/route/algeria/france": {
-    lastModified: "2026-08-06",
+    lastModified: "2026-08-23",
     review: {
       authorId: "sergey-anatska",
       reviewerId: "sergey-anatska",
@@ -180,8 +191,10 @@ function routeLocaleKey(route: string): RouteLocaleKey | undefined {
     : undefined;
 }
 
-export function routeLastModified(route: AppRoute): Date {
-  return new Date((ROUTE_META[route] as RouteMeta).review?.reviewedAt ?? ROUTE_META[route].lastModified);
+export function routeLastModified(route: AppRoute, lang?: Lang): string {
+  const metadata = ROUTE_META[route] as RouteMeta;
+
+  return (lang && metadata.lastModifiedByLocale?.[lang]) ?? metadata.lastModified;
 }
 
 export function routeContentReview(route: AppRoute): InsuranceContentReview | undefined {
