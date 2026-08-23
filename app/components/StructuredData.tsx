@@ -3,7 +3,7 @@ import {
   ORGANIZATION_ID,
   SERGEY_ANATSKA_PERSON_ID,
 } from "@/app/entityIds";
-import { SITE_URL, toAbsolute } from "@/app/seo";
+import { routeLastModified, SITE_URL, toAbsolute, type AppRoute } from "@/app/seo";
 
 type JsonLdProps = {
   data: Record<string, unknown> | Array<Record<string, unknown>>;
@@ -232,7 +232,6 @@ export function InsurancePageJsonLd({
   pagePath,
   title,
   description,
-  review,
 }: {
   lang: Lang;
   pagePath: string;
@@ -254,7 +253,7 @@ export function InsurancePageJsonLd({
     author: {
       "@id": SERGEY_ANATSKA_PERSON_ID,
     },
-    dateModified: review.reviewedAt,
+    dateModified: routeLastModified(pagePath as AppRoute, lang),
     publisher: {
       "@id": ORGANIZATION_ID,
     },
