@@ -33,6 +33,7 @@ export const tariffsDictionary: Record<Lang, TariffsDictionary> = {
     price: "Стоимость",
     note: "Цены указаны в PLN по текущей тарифной таблице. Возможность оформления зависит от данных ТС и документов.",
   },
+  
   en,
   pl: {
     title: "Cena polisy według typu pojazdu",
@@ -64,7 +65,21 @@ export const tariffsDictionary: Record<Lang, TariffsDictionary> = {
     price: "Вартість",
     note: "Ціни вказані в PLN за актуальною тарифною таблицею. Можливість оформлення залежить від даних ТЗ і документів.",
   },
-  kk: en, uz: en, az: en, tr: en, ka: en, hy: en, fa: en, ckb: en, kmr: en, ar: en, he: en, ro: en, sr: en, sq: en, mn: en,
+  ar: {
+    title: "سعر الوثيقة حسب نوع المركبة",
+    desc: "اختر فئة المركبة ومدة التأمين. يتم تأكيد السعر النهائي قبل الدفع بعد مراجعة المستندات.",
+    badges: [
+      "سارية في الدول المذكورة في الوثيقة",
+      "مراجعة المستندات يدويًا",
+      "وثيقة التأمين بصيغة PDF عبر البريد الإلكتروني",
+    ],
+    order: "طلب التأمين",
+    tableTitle: "جدول ملخص الأسعار",
+    term: "المدة",
+    price: "السعر",
+    note: "الأسعار موضحة بالزلوتي البولندي (PLN) وفق جدول الأسعار الحالي. وتعتمد إمكانية إصدار الوثيقة على بيانات المركبة والمستندات المقدمة.",
+  },
+  kk: en, uz: en, az: en, tr: en, ka: en, hy: en, fa: en, ckb: en, kmr: en, he: en, ro: en, sr: en, sq: en, mn: en,
 };
 
 export function getTariffsDictionary(lang: Lang): TariffsDictionary {

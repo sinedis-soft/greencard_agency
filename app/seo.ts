@@ -158,7 +158,7 @@ export const ROUTE_META = {
     },
     pageType: "insurance-route",
     hreflangOverrides: {
-      ar: "ar-AE",
+      ar: "ar-DZ",
     }
   },
   

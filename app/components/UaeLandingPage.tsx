@@ -5,6 +5,7 @@ import ContentReview from "@/app/components/ContentReview";
 import type { UaeOcDictionary } from "@/app/dictionaries/seo-landings/uaeOc";
 import { keepTypography } from "@/app/utils/typography";
 import styles from "./UaeLandingPage.module.css";
+import TariffCards from "@/app/components/TariffCards";
 
 type UaeLandingPageProps = {
   lang: Lang;
@@ -226,6 +227,8 @@ export default function UaeLandingPage({ lang, dictionary: t, review }: UaeLandi
           ))}
         </ol>
       </section>
+
+      <TariffCards lang={lang} />
 
       <section className={styles.section}>
         <div className={styles.split}>

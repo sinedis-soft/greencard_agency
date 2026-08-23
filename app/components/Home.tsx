@@ -12,7 +12,11 @@ import { getGeorgiaRomaniaOcDictionary } from "@/app/dictionaries/seo-landings/g
 import { belarusLithuaniaOcDictionary } from "@/app/dictionaries/seo-landings/belarusLithuaniaOc";
 import { getKazakhstanPolandOcDictionary } from "@/app/dictionaries/seo-landings/kazakhstanPolandOc";
 import { getGeorgiaBulgariaOcDictionary } from "@/app/dictionaries/seo-landings/georgiaBulgariaOc";
+import { getGeorgiaGreeceOcDictionary } from "@/app/dictionaries/seo-landings/georgiaGreeceOc";
 import { getUaeOcDictionary } from "@/app/dictionaries/seo-landings/uaeOc";
+import { getUaeBulgariaOcDictionary } from "@/app/dictionaries/seo-landings/uaeBulgariaOc";
+import { getUaeGreeceOcDictionary } from "@/app/dictionaries/seo-landings/uaeGreeceOc";
+import { getAlbaniaBulgariaOcDictionary } from "@/app/dictionaries/seo-landings/albaniaBulgariaOc";
 import { getAlgeriaFranceOcDictionary } from "@/app/dictionaries/seo-landings/algeriaFranceOc";
 import { isRouteLocaleIndexable } from "@/app/seo";
 import { BusinessHoursBanner } from "@/app/components/BusinessHoursBanner";
@@ -24,7 +28,11 @@ export default function Home({ lang }: { lang: Lang }) {
   const belarusLithuania = belarusLithuaniaOcDictionary[lang];
   const kazakhstanPoland = getKazakhstanPolandOcDictionary(lang);
   const georgiaBulgaria = getGeorgiaBulgariaOcDictionary(lang);
+  const georgiaGreece = getGeorgiaGreeceOcDictionary(lang);
   const uaeOc = getUaeOcDictionary(lang);
+  const uaeBulgaria = getUaeBulgariaOcDictionary(lang);
+  const uaeGreece = getUaeGreeceOcDictionary(lang);
+  const albaniaBulgaria = getAlbaniaBulgariaOcDictionary(lang);
   const algeriaFrance = getAlgeriaFranceOcDictionary(lang);
   const guide = t.insuranceGuide;
 
@@ -75,25 +83,61 @@ export default function Home({ lang }: { lang: Lang }) {
           }
         : null,
 
-      isRouteLocaleIndexable(lang, "/route/georgia/bulgaria") &&
+    isRouteLocaleIndexable(lang, "/route/georgia/bulgaria") &&
       georgiaBulgaria
-        ? {
-            href: `/${lang}/route/georgia/bulgaria`,
-            title: georgiaBulgaria.carousel.cardTitle,
-            text: georgiaBulgaria.carousel.cardText,
-            cta: georgiaBulgaria.carousel.cta,
-          }
-        : null,
-      
-      isRouteLocaleIndexable(lang, "/route/algeria/france") &&
-        algeriaFrance
-          ? {
-              href: `/${lang}/route/algeria/france`,
-              title: algeriaFrance.carousel.cardTitle,
-              text: algeriaFrance.carousel.cardText,
-              cta: algeriaFrance.carousel.cta,
-            }
-          : null,
+      ? {
+          href: `/${lang}/route/georgia/bulgaria`,
+          title: georgiaBulgaria.carousel.cardTitle,
+          text: georgiaBulgaria.carousel.cardText,
+          cta: georgiaBulgaria.carousel.cta,
+        }
+      : null,
+
+    isRouteLocaleIndexable(lang, "/route/georgia/greece")
+      ? {
+          href: `/${lang}/route/georgia/greece`,
+          title: georgiaGreece.carousel.cardTitle,
+          text: georgiaGreece.carousel.cardText,
+          cta: georgiaGreece.carousel.cta,
+        }
+      : null,
+
+    isRouteLocaleIndexable(lang, "/route/uae/bulgaria")
+      ? {
+          href: `/${lang}/route/uae/bulgaria`,
+          title: uaeBulgaria.carousel.cardTitle,
+          text: uaeBulgaria.carousel.cardText,
+          cta: uaeBulgaria.carousel.cta,
+        }
+      : null,
+
+    isRouteLocaleIndexable(lang, "/route/uae/greece")
+      ? {
+          href: `/${lang}/route/uae/greece`,
+          title: uaeGreece.carousel.cardTitle,
+          text: uaeGreece.carousel.cardText,
+          cta: uaeGreece.carousel.cta,
+        }
+      : null,
+
+    isRouteLocaleIndexable(lang, "/route/albania/bulgaria")
+      ? {
+          href: `/${lang}/route/albania/bulgaria`,
+          title: albaniaBulgaria.carousel.cardTitle,
+          text: albaniaBulgaria.carousel.cardText,
+          cta: albaniaBulgaria.carousel.cta,
+        }
+      : null,
+
+    isRouteLocaleIndexable(lang, "/route/algeria/france") &&
+      algeriaFrance
+      ? {
+          href: `/${lang}/route/algeria/france`,
+          title: algeriaFrance.carousel.cardTitle,
+          text: algeriaFrance.carousel.cardText,
+          cta: algeriaFrance.carousel.cta,
+        }
+      : null,
 
   ].filter(
     (
@@ -532,4 +576,3 @@ export default function Home({ lang }: { lang: Lang }) {
     </main>
   );
 }
-
