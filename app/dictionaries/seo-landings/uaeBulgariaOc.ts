@@ -74,7 +74,7 @@ const ru: UaeOcDictionary = {
       "Автомобилю, зарегистрированному в Объединённых Арабских Эмиратах, для передвижения по территории Болгарии требуется действующее страхование гражданской ответственности. В зависимости от имеющихся документов может быть оформлено пограничное страхование (OC graniczne).",
     noticeLabel: "Главное:",
     notice:
-      "полис должен действовать в Болгарии на дату въезда и в течение всего периода использования автомобиля. Страхование для Болгарии не заменяет полисы, которые могут потребоваться в транзитных странах. И не дает право двигаться по платным дорогам без виньетки",
+      "полис должен действовать в Болгарии на дату въезда и в течение всего периода использования автомобиля. Страхование для Болгарии не заменяет полисы, которые могут потребоваться в транзитных странах, и не дает право двигаться по платным дорогам без виньетки",
     primaryCta: "Оформить страховку",
     secondaryCta: "Проверить документы",
     cardLabel: "Условия поездки",
@@ -236,7 +236,7 @@ const ru: UaeOcDictionary = {
     eyebrow: "Дата оформления",
     title: "Когда оформлять полис перед поездкой",
     text:
-      "Рекомендуется отправить заявку за 1–2 рабочих дня до планируемого въезда в Болгарию. Это оставляет время на проверку регистрационных документов и исправление возможных ошибок. Так же марка или моель Вашего транспортного средства могут отсутствовать в справочнеке страховой компании, и его необходимо будет согласовывать в рабочее время со страховой компанией.",
+      "Рекомендуется отправить заявку за 1–2 рабочих дня до планируемого въезда в Болгарию. Это оставляет время на проверку регистрационных документов и исправление возможных ошибок. Так же марка или модель Вашего транспортного средства могут отсутствовать в справочнике страховой компании, и его необходимо будет согласовывать в рабочее время со страховой компанией.",
     notice:
       "Полис нельзя оформить задним числом. Дата начала страхования должна наступить не позднее даты использования автомобиля в Болгарии.",
   },
@@ -302,7 +302,7 @@ const ru: UaeOcDictionary = {
       {
         q: "Действует ли OC graniczne в Болгарии?",
         a:
-          "Да, Данный полис действует во всех странах Европейской экономической зоны.",
+          "Да, Данный полис действует во всех странах Европейской экономической зоны и в Швейцарии.",
       },
       {
         q: "Покрывает ли этот полис дорогу из ОАЭ до Болгарии?",
@@ -588,22 +588,23 @@ const en: UaeOcDictionary = {
 
   faq: {
     eyebrow: "FAQ",
-    title: "Frequently Asked Questions About UAE → Bulgaria Insurance",
+    title: "Questions about insurance for UAE → Bulgaria",
+
     items: [
       {
-        q: "Can insurance be issued for a UAE-registered vehicle entering Bulgaria?",
+        q: "Can insurance be arranged for a vehicle from the UAE entering Bulgaria?",
         a:
-          "Yes. Border insurance may be issued for a vehicle registered in the UAE. Eligibility is confirmed after the vehicle type and registration document have been reviewed.",
+          "Yes, border insurance may be arranged for a vehicle registered in the UAE. Eligibility is confirmed after checking the vehicle type and registration document.",
       },
       {
-        q: "Is border insurance valid in Bulgaria?",
+        q: "Is OC graniczne valid in Bulgaria?",
         a:
-          "Yes. This policy is valid throughout the European Economic Area, provided the relevant countries are included in the policy’s territorial coverage.",
+          "Yes. This policy is valid in all countries of the European Economic Area and in Switzerland.",
       },
       {
-        q: "Does this policy cover the entire journey from the UAE to Bulgaria?",
+        q: "Does this policy cover the journey from the UAE to Bulgaria?",
         a:
-          "No. A policy issued for Bulgaria should not be assumed to cover every transit country. Coverage must be checked separately for each country on the route.",
+          "No. A policy intended for Bulgaria should not be considered valid in all transit countries. Coverage must be checked separately for each country along the route.",
       },
       {
         q: "Is the policy valid in Turkey?",
@@ -611,24 +612,24 @@ const en: UaeOcDictionary = {
           "No. Separate insurance is required for Turkey.",
       },
       {
-        q: "What documents are required for a UAE-registered vehicle?",
+        q: "What documents are required for a vehicle from the UAE?",
         a:
-          "You will need the vehicle registration document, registration number, VIN, make and model details, and the policyholder’s information.",
+          "You need the vehicle registration document, registration number, VIN, make and model details, and the policyholder's information.",
       },
       {
-        q: "Can I receive the policy online?",
+        q: "Can the policy be obtained online?",
         a:
-          "Yes. The application and documents are submitted online. Once the documents have been reviewed, payment has been made, and the policy has been issued, the completed policy will be sent as a PDF.",
+          "Yes. The application and documents are submitted online. After verification, payment and issuance, the completed policy is sent in PDF format.",
       },
       {
-        q: "When must the policy start?",
+        q: "When should the policy start?",
         a:
           "The policy must be valid before the vehicle is first used in Bulgaria. Retroactive issuance is not possible.",
       },
       {
-        q: "Does the policy cover damage to my vehicle?",
+        q: "Does the policy cover damage to the vehicle?",
         a:
-          "No. This is third-party liability insurance, not comprehensive insurance for damage to your own vehicle.",
+          "No. This is third-party liability insurance, not comprehensive motor insurance covering damage to the vehicle itself.",
       },
     ],
   },
@@ -884,38 +885,39 @@ const ar: UaeOcDictionary = {
   },
 
   faq: {
-    eyebrow: "الأسئلة الشائعة",
-    title: "أسئلة شائعة حول تأمين الإمارات → بلغاريا",
+    eyebrow: "FAQ",
+    title: "أسئلة حول التأمين لمسار الإمارات العربية المتحدة → بلغاريا",
+
     items: [
       {
-        q: "هل يمكن إصدار تأمين لسيارة مسجّلة في الإمارات لدخول بلغاريا؟",
+        q: "هل يمكن إصدار تأمين لسيارة من الإمارات العربية المتحدة للدخول إلى بلغاريا؟",
         a:
-          "نعم، يمكن إصدار تأمين حدودي لسيارة مسجّلة في الإمارات. وتُؤكد إمكانية الإصدار بعد التحقق من نوع السيارة ووثيقة تسجيلها.",
+          "نعم، يمكن إصدار تأمين حدودي لسيارة مسجلة في الإمارات العربية المتحدة. ويتم تأكيد إمكانية الإصدار بعد التحقق من نوع المركبة ووثيقة تسجيلها.",
       },
       {
-        q: "هل يسري التأمين الحدودي في بلغاريا؟",
+        q: "هل يسري OC graniczne في بلغاريا؟",
         a:
-          "نعم، تسري هذه الوثيقة في جميع دول المنطقة الاقتصادية الأوروبية، شريطة أن تكون الدول المعنية مدرجة ضمن نطاق التغطية المبين في الوثيقة.",
+          "نعم، تسري هذه الوثيقة في جميع دول المنطقة الاقتصادية الأوروبية وفي سويسرا.",
       },
       {
-        q: "هل تغطي هذه الوثيقة كامل الطريق من الإمارات إلى بلغاريا؟",
+        q: "هل تغطي هذه الوثيقة الطريق من الإمارات العربية المتحدة إلى بلغاريا؟",
         a:
-          "لا. لا ينبغي اعتبار الوثيقة المخصصة لبلغاريا سارية في جميع دول العبور. ويجب التحقق من التغطية بصورة منفصلة في كل دولة على الطريق.",
+          "لا. لا ينبغي اعتبار الوثيقة المخصصة لبلغاريا سارية في جميع دول العبور. ويجب التحقق من التغطية بشكل منفصل لكل دولة على مسار الرحلة.",
       },
       {
         q: "هل تسري الوثيقة في تركيا؟",
         a:
-          "لا. يلزم الحصول على تأمين منفصل لتركيا.",
+          "لا. يلزم تأمين منفصل لتركيا.",
       },
       {
-        q: "ما المستندات المطلوبة لسيارة مسجّلة في الإمارات؟",
+        q: "ما المستندات المطلوبة لسيارة من الإمارات العربية المتحدة؟",
         a:
-          "تحتاج إلى وثيقة تسجيل السيارة ورقم التسجيل ورقم الهيكل VIN وبيانات العلامة التجارية والطراز، إلى جانب بيانات طالب التأمين.",
+          "يلزم تقديم وثيقة تسجيل المركبة، ورقم التسجيل، ورقم VIN، وبيانات الماركة والطراز، بالإضافة إلى بيانات حامل الوثيقة.",
       },
       {
-        q: "هل يمكن استلام الوثيقة عبر الإنترنت؟",
+        q: "هل يمكن الحصول على الوثيقة عبر الإنترنت؟",
         a:
-          "نعم. يُرسل الطلب والمستندات عبر الإنترنت، وبعد المراجعة والدفع وإصدار الوثيقة، تُرسل النسخة النهائية بصيغة PDF.",
+          "نعم. يتم تقديم الطلب والمستندات عبر الإنترنت. وبعد التحقق والدفع وإصدار الوثيقة، تُرسل الوثيقة النهائية بصيغة PDF.",
       },
       {
         q: "متى يجب أن يبدأ سريان الوثيقة؟",
@@ -923,9 +925,9 @@ const ar: UaeOcDictionary = {
           "يجب أن تكون الوثيقة سارية قبل بدء استخدام السيارة في بلغاريا. ولا يمكن إصدارها بأثر رجعي.",
       },
       {
-        q: "هل تعوّض الوثيقة عن الأضرار التي تلحق بالسيارة؟",
+        q: "هل تعوض الوثيقة عن الأضرار التي تلحق بالسيارة؟",
         a:
-          "لا. هذا تأمين للمسؤولية المدنية تجاه الغير، وليس تأمينًا شاملًا يغطي الأضرار التي تلحق بسيارتك.",
+          "لا. هذا تأمين للمسؤولية المدنية تجاه الغير، وليس تأمينًا شاملاً على أضرار السيارة نفسها.",
       },
     ],
   },

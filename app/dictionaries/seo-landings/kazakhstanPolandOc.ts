@@ -28,8 +28,8 @@ const ru: BelarusPolandOcDictionary = {
   who: {
     title: "В каких случаях подходит этот полис",
     items: [
-      "Автомобиль зарегистрирован в Казахстане и временно въезжает в Польшу или другую страну ЕЭЗ.",
-      "На дату въезда отсутствует действующая Green Card, признаваемая в Польше. (Вместо OC graniczne вы можте приобрести Green Card у казахстанского страхового брокера ДИОНИС).",
+      "Автомобиль зарегистрирован в Казахстане и временно въезжает в Польшу или направляется в другую страну ЕЭЗ или Швейцарию.",
+      "На дату въезда отсутствует действующая Green Card, признаваемая в Польше. (Вместо OC graniczne вы можете приобрести Green Card у казахстанского страхового брокера ДИОНИС).",
       "Необходимо подтвердить страхование гражданской ответственности при эксплуатации автомобиля в Польше.",
       "Поездка продолжается из Польши в другие страны, указанные в территории действия полиса.",
       "Автомобиль используется для личной, служебной или коммерческой поездки, если его категория допускается правилами страховщика.",
@@ -73,17 +73,17 @@ const ru: BelarusPolandOcDictionary = {
       {
         q: "Какая страховка нужна автомобилю из Казахстана для въезда в Польшу?",
         a:
-          "Для въезда необходимо иметь страхование гражданской ответственности, действующее в Польше. Это может быть Green Card приобретенный у казахстанского страхового брокера ДИОНИС (https://dionis-insurance.kz/ru/green-card) либо, при наличии условий для оформления, польский полис OC graniczne.",
+          "Для въезда необходимо иметь страхование гражданской ответственности, действующее в Польше. Это может быть Green Card, приобретённая у казахстанского страхового брокера ДИОНИС (https://dionis-insurance.kz/ru/green-card) либо, при наличии условий для оформления, польский полис OC graniczne.",
       },
       {
         q: "Что лучше оформить: Green Card или OC graniczne?",
         a:
-          "Выбор зависит от маршрута, срока поездки и доступности конкретного продукта. Green Card обычно оформляется до поездки и может охватывать несколько стран системы. OC graniczne является отдельным временным договором и действует только на территории, указанной в полисе (только страны ЕЭЗ). Green Card для автомобиля, зарегистрированного в Казахстане, можно уточнить у страхового брокера «Дионис».",
+          "Выбор зависит от маршрута, срока поездки и доступности конкретного продукта. Green Card обычно оформляется до поездки и может охватывать несколько стран системы. OC graniczne является отдельным временным договором и действует только на территории, указанной в полисе (только страны ЕЭЗ и Швейцария). Green Card для автомобиля, зарегистрированного в Казахстане, можно уточнить у страхового брокера «Дионис».",
       },
       {
         q: "Действует ли польский полис на всем маршруте из Казахстана?",
         a:
-          "Нет. OC graniczne действует только в странах ЕЭЗ. Страны транзита до границы Европейской экономической зоны необходимо проверять отдельно и при необходимости приобретать для них местное пограничное страхование. Например если вы транзитом проезжаете территорию России, то вы можете приобрести страховой полис у казахстанского страхового брокера \"ДИОНИС\"",
+          "Нет. OC graniczne действует только в странах ЕЭЗ и Швейцарии. Страны транзита до границы Европейской экономической зоны необходимо проверять отдельно и при необходимости приобретать для них местное пограничное страхование. Например если вы транзитом проезжаете территорию России, то вы можете приобрести страховой полис у казахстанского страхового брокера \"ДИОНИС\"",
       },
       {
         q: "Подходит ли OC graniczne для поездки из Польши в другие страны ЕС?",
@@ -98,7 +98,7 @@ const ru: BelarusPolandOcDictionary = {
       {
         q: "Можно ли оформить полис полностью онлайн?",
         a:
-          "Да. Заявка, передача документов, расчет и получение готового полиса могут выполняться дистанционно. В отдельных случаях потребуется дополнительная ручная проверка документов.",
+          "Да. Заявка, передача документов, расчет и получение готового полиса могут выполняться дистанционно. В отдельных случаях потребуется дополнительная ручная проверка документов. Согласно разъяснению Польского бюро автостраховщиков (PBUK) автомобиль физически должен находится непосредственно на польской границе или на территории Польши.",
       },
       {
         q: "Какие документы нужны для оформления?",
@@ -153,7 +153,7 @@ const pl: BelarusPolandOcDictionary = {
   who: {
     title: "W jakich przypadkach ta polisa będzie odpowiednia",
     items: [
-      "Samochód jest zarejestrowany w Kazachstanie i tymczasowo wjeżdża do Polski.",
+      "Pojazd jest zarejestrowany w Kazachstanie i czasowo wjeżdża do Polski lub udaje się do innego państwa EOG.",
       "W dniu wjazdu kierowca nie posiada ważnej Zielonej Karty uznawanej w Polsce. Zamiast OC granicznego można kupić Zieloną Kartę za pośrednictwem kazachstańskiego brokera ubezpieczeniowego DIONIS.",
       "Konieczne jest potwierdzenie posiadania ubezpieczenia odpowiedzialności cywilnej podczas użytkowania samochodu w Polsce.",
       "Podróż jest kontynuowana z Polski do innych państw znajdujących się na terytorium obowiązywania polisy.",
@@ -255,375 +255,375 @@ const pl: BelarusPolandOcDictionary = {
 
 const kk: BelarusPolandOcDictionary = {
   seo: {
-    title: "Қазақстаннан келген автокөлікпен Польшаға кіруге арналған сақтандыру",
+    title: "Қазақстаннан келген автокөлікке Польшаға кіру кезінде сақтандыру",
     description:
-      "Қазақстандық нөмірлі автокөлікке Польшаға кірген кезде рәсімделетін OC graniczne. Бағытты тексеру, онлайн-өтінім беру, құнын есептеу және полисті PDF форматында алу.",
+      "Қазақстандық нөмірлі автокөлікке Польшаға кіру кезінде OC graniczne. Маршрутты тексеру, онлайн-өтінім, құнын есептеу және полисті PDF форматында алу.",
   },
 
-  breadcrumbTitle: "Қазақстаннан келген автокөлікпен Польшаға кіруге арналған сақтандыру",
+  breadcrumbTitle: "Қазақстаннан келген автокөлікті Польшаға кіру үшін сақтандыру",
 
   hero: {
     kicker: "Қазақстанда тіркелген автокөлікті сақтандыру",
-    title: "Қазақстандық автокөлікпен Польшаға кіруге арналған сақтандыру",
+    title: "Қазақстандық автокөлікке Польшаға кіру кезінде сақтандыру",
     lead:
-      "Қазақстанда тіркелген автокөлікпен Польшаға кірген сәтте сақтандыру аумағында танылатын жарамды сақтандыру құжаты болмаған жағдайда, польшалық OC graniczne полисін рәсімдеуге болады. Полисті рәсімдеу алдында сапардың толық бағытын және транзиттік елдерді тексеру қажет.",
-    cta: "Полис құнын есептеу және рәсімдеу",
+      "Қазақстанда тіркелген автокөлікке арналған поляк OC graniczne полисін рәсімдеу, егер Польшаға кіру сәтінде сақтандыру аумағында танылатын жарамды сақтандыру құжаты болмаса. Рәсімдеу алдында бүкіл сапар бағытын және транзиттік елдерді тексеру қажет.",
+    cta: "Құнын есептеу және полисті рәсімдеу",
   },
 
   what: {
     title: "Қазақстаннан келген автокөлікке Польшада OC graniczne қашан қажет",
     text:
-      "OC graniczne — көлік құралы иесінің азаматтық-құқықтық жауапкершілігін шекаралық сақтандыру жөніндегі польшалық шарт. Жүргізушіде Польша аумағында жауапкершілікті сақтандыруды растайтын жарамды Green Card немесе өзге құжат болмаған жағдайда, бұл полис Қазақстанның мемлекеттік тіркеу нөмірі бар автокөлікпен Польшаға кіру үшін пайдаланылуы мүмкін. Полис үшінші тұлғалар алдындағы жауапкершілікті өтейді, бірақ автокөліктің өзіне келтірілген залалды сақтандырмайды. Полисті рәсімдеу мүмкіндігі көлік құралының санатына, ұсынылған құжаттарға, сақтандырудың басталу күніне және сапар бағытына байланысты.",
+      "OC graniczne — бұл көлік құралы иесінің азаматтық-құқықтық жауапкершілігін шекаралық сақтандыру жөніндегі поляк шарты. Ол Қазақстанда тіркелген автокөлік Польшаға кірген кезде, егер жүргізушіде Польша аумағында жауапкершілікті сақтандыруды растайтын жарамды Green Card немесе басқа құжат болмаса, қолданылуы мүмкін. Полис үшінші тұлғалар алдындағы жауапкершілікті өтейді және автокөліктің өзіне келтірілген залалды сақтандыру болып табылмайды. Рәсімдеу мүмкіндігі көлік құралының санатына, құжаттарға, сақтандырудың басталу күніне және сапар бағытына байланысты.",
   },
 
   who: {
     title: "Бұл полис қандай жағдайларда қолайлы",
     items: [
-      "Автокөлік Қазақстанда тіркелген және Польшаға немесе ЕЭА-ның басқа еліне уақытша кіреді.",
-      "Кіру күні Польшада танылатын жарамды Green Card жоқ. OC graniczne орнына Green Card полисін қазақстандық «ДИОНИС» сақтандыру брокері арқылы сатып алуға болады.",
+      "Автокөлік Қазақстанда тіркелген және Польшаға уақытша кіреді немесе ЕЭА-ның басқа еліне не Швейцарияға бағыт алады.",
+      "Кіру күні Польшада танылатын жарамды Green Card жоқ. (OC graniczne орнына Green Card полисін қазақстандық «ДИОНИС» сақтандыру брокерінен сатып алуға болады).",
       "Польшада автокөлікті пайдалану кезінде азаматтық-құқықтық жауапкершіліктің сақтандырылғанын растау қажет.",
-      "Сапар Польшадан полистің қолданылу аумағына кіретін басқа елдерге жалғасады.",
-      "Автокөлік жеке, қызметтік немесе коммерциялық сапар үшін пайдаланылады және оның санаты сақтандырушының талаптарына сәйкес келеді.",
-      "Сапарға дейін Green Card рәсімдеу мүмкін емес немесе Польшаға кіру үшін балама сақтандыру құжаты қажет.",
+      "Сапар Польшадан полистің қолданылу аумағында көрсетілген басқа елдерге жалғасады.",
+      "Егер сақтандырушының ережелері көлік құралының санатына рұқсат етсе, автокөлік жеке, қызметтік немесе коммерциялық сапар үшін пайдаланылады.",
+      "Green Card полисін сапарға дейін рәсімдеу мүмкін емес немесе Польшаға кіру үшін балама сақтандыру құжаты қажет.",
     ],
   },
 
   how: {
     title: "Сақтандыруды қалай рәсімдеуге болады",
     steps: [
-      "Автокөлік тіркелген ел ретінде Қазақстанды көрсетіңіз.",
-      "Польшаға кіру күнін және қажетті сақтандыру мерзімін хабарлаңыз.",
-      "Анық көрінетін көлік құралын тіркеу туралы құжатты және сақтанушының деректерін жүктеңіз.",
-      "Полисті рәсімдеу мүмкіндігі мен түпкілікті құны туралы растау алыңыз.",
-      "Деректер тексерілгеннен кейін сақтандыру сыйлықақысын төлеңіз.",
-      "Полисті PDF форматында алып, сапар басталғанға дейін барлық деректерді тексеріңіз.",
+      "Автокөліктің тіркелген елі ретінде Қазақстанды көрсетіңіз.",
+      "Кіру күнін және қажетті сақтандыру мерзімін хабарлаңыз.",
+      "Оқуға анық техпаспортты және сақтанушының деректерін жүктеңіз.",
+      "Рәсімдеу мүмкіндігі туралы растауды және түпкілікті құнын алыңыз.",
+      "Деректер тексерілгеннен кейін сақтандыру жарнасын төлеңіз.",
+      "Полисті PDF форматында алыңыз және сапар басталғанға дейін барлық деректерді тексеріңіз.",
     ],
   },
 
   price: {
-    title: "Сақтандыру құны неге байланысты",
+    title: "Құны неге байланысты",
     text:
-      "OC graniczne құны көлік құралының түріне, сақтандыру мерзіміне және сақтандырушының тарифіне байланысты. Жеңіл автокөлікке, жүк көлігіне, автобусқа, тіркемеге немесе басқа көлік түріне арналған тарифтер әртүрлі болуы мүмкін. Алдын ала құнын онлайн-калькулятор арқылы көруге болады, алайда түпкілікті баға құжаттар мен көлік құралының санаты тексерілгеннен кейін расталады.",
+      "OC graniczne құны көлік құралының түріне, сақтандыру мерзіміне және сақтандырушының тарифіне байланысты. Жеңіл автокөлікке, жүк көлігіне, автобусқа, тіркемеге немесе басқа көлік түріне арналған тарифтер әртүрлі болуы мүмкін. Алдын ала құнын онлайн-калькулятордан көруге болады, алайда түпкілікті баға құжаттар мен автокөлік санаты тексерілгеннен кейін расталады.",
   },
 
   validity: {
     title: "Қолданылу мерзімі және басталу күні",
     text:
-      "Полис нақты басталу күні көрсетіле отырып, белгілі бір мерзімге рәсімделеді. Қолжетімді ең қысқа мерзім әдетте 30 күнді құрайды, ал одан ұзақ мерзімге рәсімдеу мүмкіндігі сақтандырушының қолданыстағы тарифтеріне байланысты. Сақтандыруды өткен күнмен рәсімдеуге болмайды, сондықтан өтінімді Польшаға кіргенге дейін беру қажет.",
+      "Полис көрсетілген басталу күнімен белгілі бір мерзімге рәсімделеді. Қолжетімді ең қысқа мерзім әдетте 30 күнді құрайды, ал ұзағырақ мерзімге рәсімдеу мүмкіндігі сақтандырушының қолданыстағы тарифтеріне байланысты. Сақтандыруды өткен күнмен рәсімдеуге болмайды, сондықтан өтінімді Польшаға кірер алдында беру қажет.",
   },
 
   form: {
-    title: "Қазақстандық автокөлікті сақтандыруға арналған өтінім",
+    title: "Қазақстандық автокөлікті сақтандыруға өтінім",
     desc:
-      "Өтінімде көлік құралы тіркелген елді, сапар бағытын, сақтандырудың басталу күнін, көлік құралының түрін және тіркеу құжатындағы деректерді көрсетіңіз. Тексеруден кейін менеджер OC graniczne рәсімдеуге болатынын немесе сапар үшін Green Card таңдаған дұрыс екенін хабарлайды.",
+      "Өтінімде тіркелген елді, маршрутты, сақтандырудың басталу күнін, көлік құралының түрін және тіркеу құжатындағы деректерді көрсетіңіз. Тексеруден кейін менеджер OC graniczne рәсімдеуге болатынын немесе сапар үшін Green Card қолданған дұрыс екенін хабарлайды.",
   },
 
   faq: {
     title: "Жиі қойылатын сұрақтар",
     items: [
       {
-        q: "Қазақстаннан келген автокөлікпен Польшаға кіру үшін қандай сақтандыру қажет?",
+        q: "Қазақстаннан келген автокөлікке Польшаға кіру үшін қандай сақтандыру қажет?",
         a:
-          "Польшаға кіру үшін осы елдің аумағында жарамды азаматтық-құқықтық жауапкершілікті сақтандыру қажет. Бұл қазақстандық «ДИОНИС» сақтандыру брокері арқылы сатып алынған Green Card (https://dionis-insurance.kz/ru/green-card) немесе рәсімдеу талаптары орындалған жағдайда польшалық OC graniczne полисі болуы мүмкін.",
+          "Польшаға кіру үшін осы елде қолданылатын азаматтық-құқықтық жауапкершілікті сақтандыру болуы қажет. Бұл қазақстандық «ДИОНИС» сақтандыру брокерінен сатып алынған Green Card (https://dionis-insurance.kz/ru/green-card) немесе тиісті шарттар болған жағдайда поляк OC graniczne полисі болуы мүмкін.",
       },
       {
-        q: "Қайсысын рәсімдеген дұрыс: Green Card немесе OC graniczne?",
+        q: "Қайсысын рәсімдеген дұрыс: Green Card әлде OC graniczne?",
         a:
-          "Таңдау сапар бағытына, оның ұзақтығына және нақты сақтандыру өнімінің қолжетімділігіне байланысты. Green Card әдетте сапарға дейін рәсімделеді және жүйеге кіретін бірнеше елді қамтуы мүмкін. OC graniczne — жеке уақытша сақтандыру шарты және тек полисте көрсетілген аумақта, яғни ЕЭА елдерінде қолданылады. Қазақстанда тіркелген автокөлікке Green Card рәсімдеу мүмкіндігін «ДИОНИС» сақтандыру брокерінен нақтылауға болады.",
+          "Таңдау маршрутқа, сапар мерзіміне және нақты өнімнің қолжетімділігіне байланысты. Green Card әдетте сапарға дейін рәсімделеді және жүйеге кіретін бірнеше елді қамтуы мүмкін. OC graniczne — жеке уақытша шарт және тек полисте көрсетілген аумақта ғана қолданылады (ЕЭА елдері мен Швейцария). Қазақстанда тіркелген автокөлікке Green Card рәсімдеу мүмкіндігін «Дионис» сақтандыру брокерінен нақтылауға болады.",
       },
       {
-        q: "Польшалық полис Қазақстаннан басталатын бүкіл бағытта жарамды ма?",
+        q: "Поляк полисі Қазақстаннан шығатын бүкіл маршрутта қолданыла ма?",
         a:
-          "Жоқ. OC graniczne тек ЕЭА елдерінде қолданылады. Еуропалық экономикалық аймақ шекарасына дейінгі транзиттік елдер бөлек тексерілуі тиіс, ал қажет болған жағдайда сол елдерге арналған жергілікті шекаралық сақтандыру сатып алу керек. Мысалы, егер сапар бағыты Ресей аумағы арқылы өтетін болса, тиісті сақтандыру полисін қазақстандық «ДИОНИС» сақтандыру брокері арқылы сатып алуға болады.",
+          "Жоқ. OC graniczne тек ЕЭА елдері мен Швейцарияда қолданылады. Еуропалық экономикалық аймақ шекарасына дейінгі транзиттік елдерді бөлек тексеріп, қажет болған жағдайда сол елдер үшін жергілікті шекаралық сақтандыру сатып алу керек. Мысалы, егер Ресей аумағы арқылы транзитпен өтсеңіз, сақтандыру полисін қазақстандық «ДИОНИС» сақтандыру брокерінен сатып алуға болады.",
       },
       {
-        q: "OC graniczne Польшадан ЕО-ның басқа елдеріне баруға жарай ма?",
+        q: "OC graniczne Польшадан ЕО-ның басқа елдеріне бару үшін жарай ма?",
         a:
-          "Полис басқа елдерде тек олар құжатта көрсетілген сақтандыру аумағына тікелей кірген жағдайда ғана қолданылады. Сапар алдында бағыттағы әрбір елді полистің қолданылу аумағымен салыстырып тексеру қажет.",
+          "Полис басқа елдерде тек олар құжатта көрсетілген қолданылу аумағына тікелей кірген жағдайда ғана пайдаланылуы мүмкін. Сапар алдында маршруттағы әрбір елді полистегі аумақпен салыстырып тексеру қажет.",
       },
       {
-        q: "Қазақстаннан келген жүк автокөлігіне сақтандыру рәсімдеуге бола ма?",
+        q: "Қазақстаннан келген жүк көлігіне сақтандыру рәсімдеуге бола ма?",
         a:
-          "Жүк көліктеріне де сақтандыру рәсімдеу мүмкіндігі болуы ықтимал, алайда тариф пен полис беру мүмкіндігі көлік құралының санатына, пайдалану мақсатына, тіркеу құжаттарына және сақтандырушының талаптарына байланысты.",
+          "Жүк көлігіне рәсімдеу қолжетімді болуы мүмкін, алайда тариф пен полисті беру мүмкіндігі көлік құралының санатына, пайдалану мақсатына, тіркеу құжаттарына және сақтандырушының ережелеріне байланысты.",
       },
       {
         q: "Полисті толығымен онлайн рәсімдеуге бола ма?",
         a:
-          "Иә. Өтінім беру, құжаттарды жіберу, құнын есептеу және дайын полисті алу қашықтан жүзеге асырылуы мүмкін. Кейбір жағдайларда құжаттарды қосымша қолмен тексеру қажет болады.",
+          "Иә. Өтінім беру, құжаттарды жіберу, есептеу және дайын полисті алу қашықтан жүзеге асырылуы мүмкін. Кейбір жағдайларда құжаттарды қосымша қолмен тексеру қажет болады. Польша автосақтандырушылар бюросының (PBUK) түсіндірмесіне сәйкес, автокөлік физикалық түрде тікелей Польша шекарасында немесе Польша аумағында болуы тиіс.",
       },
       {
-        q: "Сақтандыруды рәсімдеу үшін қандай құжаттар қажет?",
+        q: "Рәсімдеу үшін қандай құжаттар қажет?",
         a:
-          "Әдетте автокөліктің тіркеу құжаты, мемлекеттік тіркеу нөмірі, VIN, маркасы мен моделі, көлік құралының түрі, сақтанушының деректері, сақтандырудың басталу күні және мерзімі қажет.",
+          "Әдетте автокөліктің тіркеу құжаты, мемлекеттік нөмірі, VIN, маркасы мен моделі, көлік құралының түрі, сақтанушының деректері, сақтандырудың басталу күні және мерзімі қажет.",
       },
       {
         q: "Өтінімді қашан берген дұрыс?",
         a:
-          "Өтінімді Польшаға жоспарланған кіру күнінен 1–2 жұмыс күні бұрын беру ұсынылады. Бұл қазақстандық құжаттарды, көлік құралының санатын және сапар бағытын тексеруге жеткілікті уақыт береді.",
+          "Өтінімді Польшаға жоспарланған кіруден 1–2 жұмыс күні бұрын беру ұсынылады. Бұл қазақстандық құжаттарды, автокөлік санатын және маршрутты тексеруге уақыт береді.",
       },
       {
         q: "Берілген полисті қалай тексеруге болады?",
         a:
-          "Сақтандыру мерзімі басталғаннан кейін польшалық полис туралы мәліметтерді UFG ресми сервисі арқылы тексеруге болады. Сондай-ақ сапар алдында алынған құжаттағы автокөлік нөмірін, VIN-ді, полистің қолданылу мерзімін және сақтандыру аумағын өз бетіңізше мұқият тексеру қажет.",
+          "Сақтандыру мерзімі басталғаннан кейін поляк полисі туралы ақпаратты UFG ресми сервисі арқылы тексеруге болады. Сапар алдында алынған құжаттағы автокөлік нөмірін, VIN-ді, қолданылу мерзімін және сақтандыру аумағын өзіңіз де тексеруіңіз қажет.",
       },
     ],
   },
 
   carousel: {
-    title: "Сапар бағыттары бойынша сақтандыру туралы басқа беттер",
-    cardTitle: "Қазақстаннан Польшаға баратын автокөлікті сақтандыру",
+    title: "Маршруттар бойынша сақтандыру туралы басқа беттер",
+    cardTitle: "Қазақстаннан келген автокөлікті Польшаға бару үшін сақтандыру",
     cardText:
-      "Green Card пен OC graniczne арасындағы таңдау, құжаттарға қойылатын талаптар, сапар бағыты, құны және қашықтан рәсімдеу мүмкіндігі.",
-    cta: "Шарттармен танысу",
+      "Green Card пен OC graniczne арасындағы таңдау, құжаттарға қойылатын талаптар, маршрут, құны және қашықтан рәсімдеу.",
+    cta: "Шарттарды қарау",
   },
 };
 
 const en: BelarusPolandOcDictionary = {
   seo: {
-    title: "Insurance for a Vehicle from Kazakhstan Entering Poland",
+    title: "Insurance for a Kazakhstan-registered car entering Poland",
     description:
-      "Polish border liability insurance (OC graniczne) for a vehicle with Kazakhstan license plates entering Poland. Route review, online application, price calculation, and policy delivery in PDF format.",
+      "OC graniczne for a vehicle with Kazakhstan registration plates entering Poland. Route check, online application, price calculation and policy delivery in PDF format.",
   },
 
-  breadcrumbTitle: "Insurance for a Vehicle from Kazakhstan Entering Poland",
+  breadcrumbTitle: "Insurance for a Kazakhstan-registered car entering Poland",
 
   hero: {
-    kicker: "Insurance for a Vehicle Registered in Kazakhstan",
-    title: "Insurance for a Kazakhstan-Registered Vehicle Entering Poland",
+    kicker: "Insurance for a vehicle registered in Kazakhstan",
+    title: "Insurance for a Kazakhstan-registered car entering Poland",
     lead:
-      "A Polish OC graniczne policy may be issued for a vehicle registered in Kazakhstan if, at the time of entering Poland, the driver does not have a valid insurance document recognized within the applicable coverage territory. Before purchasing the policy, the entire travel route and all transit countries must be reviewed.",
-    cta: "Calculate the Price and Purchase a Policy",
+      "Issuance of a Polish OC graniczne policy for a vehicle registered in Kazakhstan if, at the time of entering Poland, there is no valid insurance document recognized within the coverage territory. Before issuing the policy, the entire travel route and transit countries must be checked.",
+    cta: "Calculate the price and buy the policy",
   },
 
   what: {
-    title: "When a Vehicle from Kazakhstan Needs OC Graniczne in Poland",
+    title: "When does a vehicle from Kazakhstan need OC graniczne in Poland?",
     text:
-      "OC graniczne is a Polish border insurance policy covering the vehicle owner's third-party liability. It may be used for a vehicle with Kazakhstan license plates when entering Poland if the driver does not have a valid Green Card or another document confirming liability insurance coverage in Poland. The policy covers liability for damage caused to third parties and does not cover damage to the insured vehicle itself. Eligibility depends on the vehicle category, the documents provided, the requested policy start date, and the travel route.",
+      "OC graniczne is a Polish border motor third-party liability insurance contract. It may be used for a vehicle with Kazakhstan registration plates when entering Poland if the driver does not have a valid Green Card or another document confirming third-party liability insurance coverage in Poland. The policy covers liability towards third parties and does not insure damage to the vehicle itself. Eligibility depends on the vehicle category, documents, insurance start date and travel route.",
   },
 
   who: {
-    title: "When This Policy May Be Suitable",
+    title: "When this policy is suitable",
     items: [
-      "The vehicle is registered in Kazakhstan and is temporarily entering Poland or another EEA country.",
-      "On the date of entry, the driver does not have a valid Green Card recognized in Poland. Instead of OC graniczne, you may purchase a Green Card through DIONIS, a Kazakhstan insurance broker.",
-      "Proof of third-party liability insurance is required while operating the vehicle in Poland.",
-      "The trip continues from Poland to other countries included in the policy's territorial coverage.",
-      "The vehicle is being used for a private, business, or commercial trip, provided that its category is accepted under the insurer's rules.",
-      "A Green Card cannot be obtained before the trip, or an alternative insurance document is required to enter Poland.",
+      "The vehicle is registered in Kazakhstan and temporarily enters Poland or is travelling to another EEA country or Switzerland.",
+      "On the date of entry, there is no valid Green Card recognized in Poland. (Instead of OC graniczne, you can purchase a Green Card from the Kazakhstan insurance broker DIONIS).",
+      "Proof of third-party liability insurance is required for use of the vehicle in Poland.",
+      "The journey continues from Poland to other countries included in the policy's territorial coverage.",
+      "The vehicle is used for a private, business or commercial trip, provided that its category is permitted under the insurer's rules.",
+      "A Green Card cannot be arranged before the trip, or an alternative insurance document is required to enter Poland.",
     ],
   },
 
   how: {
-    title: "How to Purchase the Insurance",
+    title: "How to arrange the insurance",
     steps: [
-      "Select Kazakhstan as the country where the vehicle is registered.",
-      "Provide the planned entry date and the required insurance period.",
-      "Upload a clearly legible vehicle registration document and the policyholder's information.",
-      "Receive confirmation that the policy can be issued, along with the final price.",
-      "Pay the insurance premium after the information has been verified.",
-      "Receive the policy in PDF format and review all details before starting your trip.",
+      "Select Kazakhstan as the country of vehicle registration.",
+      "Provide the date of entry and the required insurance period.",
+      "Upload a clearly readable vehicle registration document and the policyholder's details.",
+      "Receive confirmation that the policy can be issued and the final price.",
+      "Pay the insurance premium after the details have been checked.",
+      "Receive the policy in PDF format and verify all details before the trip begins.",
     ],
   },
 
   price: {
-    title: "What Determines the Price",
+    title: "What determines the price",
     text:
-      "The price of OC graniczne depends on the type of vehicle, the insurance period, and the insurer's current rates. Rates may vary for passenger vehicles, trucks, buses, trailers, and other types of vehicles. An estimated price may be available through the online calculator, but the final price is confirmed only after the documents and vehicle category have been reviewed.",
+      "The cost of OC graniczne depends on the type of vehicle, the insurance period and the insurer's tariff. Rates for passenger cars, trucks, buses, trailers and other vehicle categories may differ. An estimated price can be checked in the online calculator, but the final price is confirmed after the documents and vehicle category have been verified.",
   },
 
   validity: {
-    title: "Policy Period and Start Date",
+    title: "Policy period and start date",
     text:
-      "The policy is issued for a specific period with a stated coverage start date. The minimum available period is usually 30 days, while the option to purchase coverage for a longer period depends on the insurer's current rates. Insurance cannot be issued retroactively, so the application must be submitted before entering Poland.",
+      "The policy is issued for a specified period with a stated start date. The minimum available period is usually 30 days, while the possibility of arranging insurance for a longer period depends on the insurer's current tariffs. Insurance cannot be issued retroactively, so the application should be submitted before entering Poland.",
   },
 
   form: {
-    title: "Application for Insurance for a Kazakhstan-Registered Vehicle",
+    title: "Insurance application for a Kazakhstan-registered vehicle",
     desc:
-      "In the application, provide the country of registration, travel route, policy start date, vehicle type, and the information shown in the vehicle registration document. After reviewing the application, a representative will confirm whether OC graniczne can be issued or whether a Green Card would be a better option for the trip.",
+      "In the application, provide the country of registration, travel route, insurance start date, vehicle type and details from the registration document. After verification, the manager will confirm whether OC graniczne can be issued or whether a Green Card would be more suitable for the trip.",
   },
 
   faq: {
-    title: "Frequently Asked Questions",
+    title: "Frequently asked questions",
     items: [
       {
         q: "What insurance does a vehicle from Kazakhstan need to enter Poland?",
         a:
-          "To enter Poland, the vehicle must have valid third-party liability insurance that is recognized in Poland. This may be a Green Card purchased through DIONIS, a Kazakhstan insurance broker (https://dionis-insurance.kz/ru/green-card), or, if the eligibility requirements are met, a Polish OC graniczne policy.",
+          "To enter Poland, the vehicle must have valid motor third-party liability insurance recognized in Poland. This may be a Green Card purchased from the Kazakhstan insurance broker DIONIS (https://dionis-insurance.kz/ru/green-card) or, if the eligibility requirements are met, a Polish OC graniczne policy.",
       },
       {
-        q: "Which is better: a Green Card or OC graniczne?",
+        q: "Which is better: Green Card or OC graniczne?",
         a:
-          "The best option depends on the route, the length of the trip, and the availability of each product. A Green Card is usually purchased before the trip and may provide coverage in several countries participating in the Green Card system. OC graniczne is a separate temporary insurance contract and is valid only within the territory stated in the policy, which is limited to EEA countries. Availability of a Green Card for a vehicle registered in Kazakhstan can be confirmed with DIONIS insurance broker.",
+          "The choice depends on the route, duration of the trip and availability of the specific product. A Green Card is usually arranged before the trip and may cover several countries within the Green Card system. OC graniczne is a separate temporary insurance contract and is valid only within the territory specified in the policy (EEA countries and Switzerland only). Availability of a Green Card for a vehicle registered in Kazakhstan can be checked with the insurance broker DIONIS.",
       },
       {
-        q: "Is the Polish policy valid for the entire route from Kazakhstan?",
+        q: "Does the Polish policy cover the entire route from Kazakhstan?",
         a:
-          "No. OC graniczne is valid only in EEA countries. Transit countries located before the border of the European Economic Area must be reviewed separately, and local border insurance may need to be purchased for those countries. For example, if your route passes through Russia, you may purchase the required insurance policy through DIONIS, a Kazakhstan insurance broker.",
+          "No. OC graniczne is valid only in EEA countries and Switzerland. Transit countries before reaching the border of the European Economic Area must be checked separately, and local border insurance may need to be purchased for them. For example, if you transit through Russia, you can purchase an insurance policy from the Kazakhstan insurance broker DIONIS.",
       },
       {
-        q: "Can OC graniczne be used for travel from Poland to other EU countries?",
+        q: "Is OC graniczne suitable for travelling from Poland to other EU countries?",
         a:
-          "The policy may be used in other countries only if those countries are expressly included in the territorial coverage stated in the document. Before traveling, every country on the route should be checked against the policy.",
+          "The policy may be used in other countries only if those countries are explicitly included in the territorial coverage stated in the policy. Before travelling, each country on the route should be checked against the policy.",
       },
       {
-        q: "Can insurance be issued for a truck from Kazakhstan?",
+        q: "Can insurance be arranged for a truck from Kazakhstan?",
         a:
-          "Coverage may be available for commercial trucks, but the rate and the insurer's ability to issue the policy depend on the vehicle category, intended use, registration documents, and the insurer's underwriting rules.",
+          "Insurance may be available for trucks, but the tariff and eligibility for issuance depend on the vehicle category, its use, registration documents and the insurer's rules.",
       },
       {
-        q: "Can the policy be purchased entirely online?",
+        q: "Can the policy be arranged entirely online?",
         a:
-          "Yes. The application, document submission, price calculation, and delivery of the completed policy can all be handled remotely. In some cases, additional manual document verification may be required.",
+          "Yes. The application, document submission, calculation and delivery of the completed policy can be handled remotely. In some cases, additional manual verification of the documents may be required. According to guidance from the Polish Motor Insurers' Bureau (PBUK), the vehicle must physically be at the Polish border or within the territory of Poland.",
       },
       {
         q: "What documents are required?",
         a:
-          "The required information usually includes the vehicle registration document, license plate number, VIN, make and model, vehicle type, policyholder's information, policy start date, and requested insurance period.",
+          "Normally, you will need the vehicle registration document, registration number, VIN, make and model, vehicle type, policyholder details, insurance start date and insurance period.",
       },
       {
-        q: "When should I submit the application?",
+        q: "When is the best time to submit the application?",
         a:
-          "We recommend submitting the application 1–2 business days before the planned entry into Poland. This allows time to review the Kazakhstan registration documents, vehicle category, and travel route.",
+          "It is recommended to submit the application 1–2 business days before the planned entry into Poland. This allows time to verify the Kazakhstan registration documents, vehicle category and travel route.",
       },
       {
         q: "How can I verify the issued policy?",
         a:
-          "Once the coverage period begins, information about the Polish policy may be verified through the official UFG service. Before traveling, you should also independently check the license plate number, VIN, coverage period, and territorial coverage shown in the policy document.",
+          "Once the insurance period has started, information about the Polish policy can be checked through the official UFG service. Before travelling, you should also independently verify the vehicle registration number, VIN, policy period and territorial coverage in the document you receive.",
       },
     ],
   },
 
   carousel: {
-    title: "Other Route-Specific Insurance Pages",
-    cardTitle: "Insurance for a Vehicle Traveling from Kazakhstan to Poland",
+    title: "Other insurance pages by travel route",
+    cardTitle: "Insurance for a Kazakhstan-registered vehicle travelling to Poland",
     cardText:
-      "Choosing between a Green Card and OC graniczne, document requirements, travel route, pricing, and remote policy issuance.",
-    cta: "View the Requirements",
+      "Choosing between Green Card and OC graniczne, document requirements, route, price and remote policy issuance.",
+    cta: "View conditions",
   },
 };
 
 const ar: BelarusPolandOcDictionary = {
   seo: {
-    title: "تأمين سيارة من كازاخستان عند دخول بولندا",
+    title: "تأمين سيارة من كازاخستان عند الدخول إلى بولندا",
     description:
-      "تأمين المسؤولية المدنية الحدودي OC graniczne لسيارة تحمل لوحات تسجيل كازاخستانية عند دخول بولندا. مراجعة مسار الرحلة، وتقديم الطلب عبر الإنترنت، وحساب التكلفة، واستلام الوثيقة بصيغة PDF.",
+      "تأمين OC graniczne لسيارة تحمل لوحات تسجيل كازاخستانية عند الدخول إلى بولندا. التحقق من مسار الرحلة، تقديم الطلب عبر الإنترنت، حساب التكلفة واستلام الوثيقة بصيغة PDF.",
   },
 
   breadcrumbTitle: "تأمين سيارة من كازاخستان للدخول إلى بولندا",
 
   hero: {
-    kicker: "تأمين سيارة مسجّلة في كازاخستان",
-    title: "تأمين سيارة كازاخستانية عند دخول بولندا",
+    kicker: "تأمين سيارة مسجلة في كازاخستان",
+    title: "تأمين سيارة كازاخستانية عند الدخول إلى بولندا",
     lead:
-      "يمكن إصدار وثيقة التأمين البولندية OC graniczne لسيارة مسجّلة في كازاخستان إذا لم يكن لدى السائق، عند دخول بولندا، مستند تأمين ساري المفعول ومعترف به ضمن نطاق التغطية. وقبل إصدار الوثيقة، يجب التحقق من مسار الرحلة بالكامل ومن جميع دول العبور.",
+      "إصدار وثيقة OC graniczne بولندية لسيارة مسجلة في كازاخستان إذا لم تكن لدى المركبة، عند دخول بولندا، وثيقة تأمين سارية ومعترف بها ضمن نطاق التغطية. قبل إصدار الوثيقة، يجب التحقق من كامل مسار الرحلة ودول العبور.",
     cta: "احسب التكلفة وأصدر الوثيقة",
   },
 
   what: {
-    title: "متى تحتاج سيارة من كازاخستان إلى تأمين OC graniczne في بولندا",
+    title: "متى تحتاج سيارة من كازاخستان إلى OC graniczne في بولندا؟",
     text:
-      "OC graniczne هو عقد تأمين حدودي بولندي يغطي المسؤولية المدنية لمالك المركبة. ويمكن استخدامه لسيارة تحمل لوحات تسجيل كازاخستانية عند دخول بولندا إذا لم يكن لدى السائق بطاقة خضراء Green Card سارية المفعول أو أي مستند آخر يثبت وجود تأمين للمسؤولية المدنية معترف به في بولندا. تغطي الوثيقة المسؤولية تجاه الغير، ولا تشمل الأضرار التي تلحق بالسيارة نفسها. وتعتمد إمكانية إصدارها على فئة المركبة، والمستندات المقدمة، وتاريخ بدء التأمين، ومسار الرحلة.",
+      "OC graniczne هو عقد تأمين حدودي بولندي للمسؤولية المدنية لمالك المركبة. يمكن استخدامه لسيارة تحمل لوحات تسجيل كازاخستانية عند الدخول إلى بولندا إذا لم يكن لدى السائق Green Card سارية أو وثيقة أخرى تثبت وجود تأمين للمسؤولية المدنية معترف به في بولندا. تغطي الوثيقة المسؤولية تجاه الغير ولا تغطي الأضرار التي تلحق بالسيارة نفسها. وتعتمد إمكانية إصدار الوثيقة على فئة المركبة والمستندات وتاريخ بدء التأمين ومسار الرحلة.",
   },
 
   who: {
     title: "في أي حالات تكون هذه الوثيقة مناسبة",
     items: [
-      "أن تكون السيارة مسجّلة في كازاخستان وتدخل مؤقتًا إلى بولندا أو إلى دولة أخرى من دول المنطقة الاقتصادية الأوروبية.",
-      "ألا تكون لدى السائق، في تاريخ الدخول، بطاقة خضراء Green Card سارية المفعول ومعترفًا بها في بولندا. وبدلًا من OC graniczne، يمكن شراء Green Card عن طريق وسيط التأمين الكازاخستاني DIONIS.",
-      "أن تكون هناك حاجة إلى إثبات وجود تأمين للمسؤولية المدنية عند استخدام السيارة في بولندا.",
-      "أن تستمر الرحلة من بولندا إلى دول أخرى مشمولة ضمن النطاق الجغرافي المحدد في الوثيقة.",
-      "أن تُستخدم السيارة في رحلة شخصية أو مهنية أو تجارية، شريطة أن تكون فئتها مقبولة وفقًا لقواعد شركة التأمين.",
-      "تعذّر إصدار Green Card قبل الرحلة، أو الحاجة إلى مستند تأمين بديل للدخول إلى بولندا.",
+      "السيارة مسجلة في كازاخستان وتدخل بولندا مؤقتًا أو تتجه إلى دولة أخرى من دول المنطقة الاقتصادية الأوروبية أو إلى سويسرا.",
+      "لا توجد في تاريخ الدخول Green Card سارية ومعترف بها في بولندا. (يمكنك بدلًا من OC graniczne شراء Green Card من وسيط التأمين الكازاخستاني DIONIS).",
+      "يجب إثبات وجود تأمين للمسؤولية المدنية عند استخدام السيارة في بولندا.",
+      "تستمر الرحلة من بولندا إلى دول أخرى مشمولة ضمن النطاق الجغرافي للوثيقة.",
+      "تُستخدم السيارة لرحلة شخصية أو للعمل أو لأغراض تجارية، بشرط أن تسمح قواعد شركة التأمين بفئتها.",
+      "لا يمكن إصدار Green Card قبل الرحلة أو توجد حاجة إلى وثيقة تأمين بديلة للدخول إلى بولندا.",
     ],
   },
 
   how: {
     title: "كيفية إصدار التأمين",
     steps: [
-      "حدّد كازاخستان بوصفها دولة تسجيل السيارة.",
-      "اذكر تاريخ الدخول ومدة التأمين المطلوبة.",
-      "حمّل نسخة واضحة ومقروءة من وثيقة تسجيل السيارة وبيانات طالب التأمين.",
-      "احصل على تأكيد بإمكانية إصدار الوثيقة وعلى السعر النهائي.",
-      "ادفع قسط التأمين بعد التحقق من جميع البيانات.",
-      "استلم الوثيقة بصيغة PDF وتحقق من جميع المعلومات قبل بدء الرحلة.",
+      "اختر كازاخستان باعتبارها دولة تسجيل السيارة.",
+      "حدد تاريخ الدخول وفترة التأمين المطلوبة.",
+      "ارفع نسخة واضحة من شهادة تسجيل المركبة وبيانات حامل الوثيقة.",
+      "احصل على تأكيد بإمكانية إصدار الوثيقة والسعر النهائي.",
+      "ادفع قسط التأمين بعد التحقق من البيانات.",
+      "استلم الوثيقة بصيغة PDF وتحقق من جميع البيانات قبل بدء الرحلة.",
     ],
   },
 
   price: {
-    title: "العوامل التي تحدد التكلفة",
+    title: "ما الذي يحدد التكلفة",
     text:
-      "تعتمد تكلفة OC graniczne على نوع المركبة، ومدة التأمين، والتعرفة المعتمدة لدى شركة التأمين. وقد تختلف الأسعار بين سيارات الركوب، والشاحنات، والحافلات، والمقطورات، وغيرها من المركبات. ويمكن الاطلاع على سعر تقديري من خلال الحاسبة الإلكترونية، إلا أن السعر النهائي لا يُعتمد إلا بعد مراجعة المستندات والتحقق من فئة المركبة.",
+      "تعتمد تكلفة OC graniczne على نوع المركبة ومدة التأمين وتعرفة شركة التأمين. وقد تختلف الأسعار بين سيارات الركوب والشاحنات والحافلات والمقطورات وغيرها من أنواع المركبات. يمكن الاطلاع على سعر تقديري في الحاسبة الإلكترونية، إلا أن السعر النهائي يتم تأكيده بعد التحقق من المستندات وفئة المركبة.",
   },
 
   validity: {
-    title: "مدة السريان وتاريخ بدء التغطية",
+    title: "مدة سريان الوثيقة وتاريخ البدء",
     text:
-      "تُصدر الوثيقة لمدة محددة مع بيان تاريخ بدء التغطية. وتبلغ أقصر مدة متاحة عادةً 30 يومًا، بينما تعتمد إمكانية إصدار الوثيقة لمدة أطول على التعرفات السارية لدى شركة التأمين. ولا يمكن إصدار التأمين بأثر رجعي، لذلك يجب تقديم الطلب قبل دخول بولندا.",
+      "تُصدر الوثيقة لمدة محددة مع تاريخ بدء معين. وعادةً ما تكون أقصر مدة متاحة 30 يومًا، بينما تعتمد إمكانية إصدار التأمين لمدة أطول على التعرفات السارية لدى شركة التأمين. لا يمكن إصدار التأمين بأثر رجعي، لذلك يجب تقديم الطلب قبل دخول بولندا.",
   },
 
   form: {
     title: "طلب تأمين سيارة كازاخستانية",
     desc:
-      "يجب أن يتضمن الطلب دولة تسجيل السيارة، ومسار الرحلة، وتاريخ بدء التأمين، ونوع المركبة، والبيانات الواردة في وثيقة التسجيل. وبعد المراجعة، سيبلغك المسؤول عمّا إذا كان من الممكن إصدار OC graniczne أو إذا كانت Green Card خيارًا أنسب للرحلة.",
+      "في الطلب، حدد دولة التسجيل ومسار الرحلة وتاريخ بدء التأمين ونوع المركبة والبيانات الواردة في وثيقة التسجيل. بعد المراجعة، سيبلغك المدير بما إذا كان إصدار OC graniczne ممكنًا أو ما إذا كان استخدام Green Card أنسب للرحلة.",
   },
 
   faq: {
     title: "الأسئلة الشائعة",
     items: [
       {
-        q: "ما نوع التأمين المطلوب لسيارة من كازاخستان عند دخول بولندا؟",
+        q: "ما التأمين المطلوب لسيارة من كازاخستان للدخول إلى بولندا؟",
         a:
-          "يجب أن تكون السيارة مشمولة بتأمين للمسؤولية المدنية ساري المفعول ومعترف به في بولندا. وقد يكون ذلك من خلال Green Card يتم شراؤها عن طريق وسيط التأمين الكازاخستاني DIONIS (https://dionis-insurance.kz/ru/green-card)، أو من خلال وثيقة OC graniczne بولندية إذا استوفت السيارة شروط الإصدار.",
+          "لدخول بولندا، يجب أن تكون لدى المركبة تغطية سارية للمسؤولية المدنية ومعترف بها في بولندا. يمكن أن تكون Green Card يتم شراؤها من وسيط التأمين الكازاخستاني DIONIS (https://dionis-insurance.kz/ru/green-card)، أو وثيقة OC graniczne بولندية إذا كانت شروط الإصدار مستوفاة.",
       },
       {
         q: "أيهما أفضل: Green Card أم OC graniczne؟",
         a:
-          "يعتمد الاختيار على مسار الرحلة، ومدتها، ومدى توافر كل منتج. وعادةً ما تُصدر Green Card قبل السفر، وقد تشمل عدة دول منضمة إلى نظام البطاقة الخضراء. أما OC graniczne فهو عقد تأمين مؤقت ومستقل، ولا يسري إلا ضمن النطاق الجغرافي المحدد في الوثيقة، أي في دول المنطقة الاقتصادية الأوروبية فقط. ويمكن الاستفسار عن إمكانية إصدار Green Card لسيارة مسجّلة في كازاخستان لدى وسيط التأمين DIONIS.",
+          "يعتمد الاختيار على مسار الرحلة ومدتها ومدى توفر المنتج المحدد. عادةً ما يتم إصدار Green Card قبل الرحلة وقد تغطي عدة دول ضمن نظام البطاقة الخضراء. أما OC graniczne فهو عقد تأمين مؤقت منفصل ويسري فقط ضمن النطاق الجغرافي المحدد في الوثيقة، أي دول المنطقة الاقتصادية الأوروبية وسويسرا فقط. ويمكن الاستفسار عن إمكانية إصدار Green Card لسيارة مسجلة في كازاخستان لدى وسيط التأمين DIONIS.",
       },
       {
-        q: "هل تسري الوثيقة البولندية على كامل مسار الرحلة من كازاخستان؟",
+        q: "هل تسري الوثيقة البولندية على كامل المسار من كازاخستان؟",
         a:
-          "لا. يسري OC graniczne فقط في دول المنطقة الاقتصادية الأوروبية. أما دول العبور الواقعة قبل حدود المنطقة الاقتصادية الأوروبية، فيجب التحقق من متطلبات التأمين فيها بصورة منفصلة، وشراء تأمين حدودي محلي عند الحاجة. فعلى سبيل المثال، إذا كان مسار الرحلة يمر عبر روسيا، فيمكن شراء وثيقة التأمين المطلوبة عن طريق وسيط التأمين الكازاخستاني DIONIS.",
+          "لا. يسري OC graniczne فقط في دول المنطقة الاقتصادية الأوروبية وسويسرا. ويجب التحقق بشكل منفصل من دول العبور قبل الوصول إلى حدود المنطقة الاقتصادية الأوروبية، وشراء تأمين حدودي محلي لها عند الحاجة. على سبيل المثال، إذا كنت تعبر أراضي روسيا، فيمكنك شراء وثيقة تأمين من وسيط التأمين الكازاخستاني DIONIS.",
       },
       {
-        q: "هل يصلح OC graniczne للسفر من بولندا إلى دول أخرى في الاتحاد الأوروبي؟",
+        q: "هل يناسب OC graniczne السفر من بولندا إلى دول أخرى في الاتحاد الأوروبي؟",
         a:
-          "يمكن استخدام الوثيقة في دول أخرى فقط إذا كانت تلك الدول مشمولة صراحةً ضمن النطاق الجغرافي المحدد في الوثيقة. وقبل السفر، يجب مقارنة كل دولة على مسار الرحلة بنطاق التغطية الوارد في الوثيقة.",
+          "يمكن استخدام الوثيقة في دول أخرى فقط إذا كانت تلك الدول مشمولة صراحةً ضمن النطاق الجغرافي المحدد في الوثيقة. قبل السفر، يجب مطابقة كل دولة في المسار مع نطاق التغطية المذكور في الوثيقة.",
       },
       {
         q: "هل يمكن إصدار التأمين لشاحنة من كازاخستان؟",
         a:
-          "قد يكون إصدار التأمين متاحًا للشاحنات، إلا أن السعر وإمكانية إصدار الوثيقة يعتمدان على فئة المركبة، وطريقة استخدامها، ومستندات تسجيلها، وقواعد شركة التأمين.",
+          "قد يكون الإصدار متاحًا للشاحنات، لكن السعر وإمكانية إصدار الوثيقة يعتمدان على فئة المركبة وطريقة استخدامها ووثائق التسجيل وقواعد شركة التأمين.",
       },
       {
         q: "هل يمكن إصدار الوثيقة بالكامل عبر الإنترنت؟",
         a:
-          "نعم. يمكن تقديم الطلب، وإرسال المستندات، وحساب السعر، واستلام الوثيقة النهائية عن بُعد. وفي بعض الحالات، قد تكون هناك حاجة إلى مراجعة يدوية إضافية للمستندات.",
+          "نعم. يمكن تقديم الطلب وإرسال المستندات وإجراء الحساب واستلام الوثيقة النهائية عن بُعد. وفي بعض الحالات قد تكون هناك حاجة إلى مراجعة يدوية إضافية للمستندات. ووفقًا لتوضيحات المكتب البولندي لتأمين السيارات (PBUK)، يجب أن تكون المركبة موجودة فعليًا مباشرةً عند الحدود البولندية أو داخل أراضي بولندا.",
       },
       {
-        q: "ما المستندات المطلوبة لإصدار التأمين؟",
+        q: "ما المستندات المطلوبة للإصدار؟",
         a:
-          "تُطلب عادةً وثيقة تسجيل السيارة، ورقم اللوحة، ورقم الهيكل VIN، والماركة والطراز، ونوع المركبة، وبيانات طالب التأمين، وتاريخ بدء التغطية، ومدة التأمين المطلوبة.",
+          "عادةً ما تكون هناك حاجة إلى وثيقة تسجيل المركبة، ورقم التسجيل، ورقم VIN، والماركة والطراز، ونوع المركبة، وبيانات حامل الوثيقة، وتاريخ بدء التأمين ومدته.",
       },
       {
-        q: "متى يُفضّل تقديم الطلب؟",
+        q: "متى يُفضل تقديم الطلب؟",
         a:
-          "يُنصح بتقديم الطلب قبل موعد الدخول المتوقع إلى بولندا بيوم أو يومي عمل. ويتيح ذلك وقتًا كافيًا للتحقق من المستندات الكازاخستانية، وفئة المركبة، ومسار الرحلة.",
+          "يُنصح بتقديم الطلب قبل 1–2 يوم عمل من موعد الدخول المخطط إلى بولندا. يتيح ذلك وقتًا للتحقق من المستندات الكازاخستانية وفئة المركبة ومسار الرحلة.",
       },
       {
         q: "كيف يمكن التحقق من الوثيقة الصادرة؟",
         a:
-          "بعد بدء مدة التأمين، يمكن التحقق من بيانات الوثيقة البولندية عبر الخدمة الرسمية التابعة لـ UFG. كما يجب، قبل السفر، مراجعة رقم لوحة السيارة، ورقم VIN، ومدة السريان، ونطاق التغطية الوارد في الوثيقة المستلمة.",
+          "بعد بدء فترة التأمين، يمكن التحقق من معلومات الوثيقة البولندية من خلال الخدمة الرسمية لـ UFG. وقبل السفر، يجب أيضًا التحقق بنفسك من رقم تسجيل المركبة ورقم VIN ومدة سريان الوثيقة والنطاق الجغرافي للتغطية الوارد في المستند المستلم.",
       },
     ],
   },
 
   carousel: {
-    title: "صفحات أخرى عن التأمين بحسب مسار الرحلة",
+    title: "صفحات أخرى عن التأمين حسب مسار الرحلة",
     cardTitle: "تأمين سيارة من كازاخستان للسفر إلى بولندا",
     cardText:
-      "الاختيار بين Green Card وOC graniczne، ومتطلبات المستندات، ومسار الرحلة، والتكلفة، وإمكانية إصدار الوثيقة عن بُعد.",
+      "الاختيار بين Green Card وOC graniczne، ومتطلبات المستندات، ومسار الرحلة، والتكلفة، وإمكانية الإصدار عن بُعد.",
     cta: "عرض الشروط",
   },
 };

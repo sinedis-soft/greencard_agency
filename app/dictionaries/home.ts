@@ -143,14 +143,14 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
 
     insuranceGuide: {
       directAnswer:
-        "OC graniczne подходит для автомобиля, зарегистрированного за пределами Европейской экономической зоны, если водитель въезжает в Польшу или другую страну действия полиса без действующей Green Card. Полис не подходит для автомобилей, зарегистрированных в странах ЕЭЗ. Перед поездкой нужно проверить, что нужные страны указаны в полисе как покрываемые.",
+        "OC graniczne подходит для автомобиля, зарегистрированного за пределами Европейской экономической зоны, если водитель въезжает в Польшу или движется в другую страну действия полиса без действующей Green Card. Полис не подходит для автомобилей, зарегистрированных в странах ЕЭЗ. Перед поездкой нужно проверить, что нужные страны указаны в полисе как покрываемые.",
       fit: {
         title: "Кому подходит OC graniczne",
         items: [
           "автомобиль зарегистрирован за пределами ЕЭЗ;",
           "нет действующей Green Card, признаваемой на маршруте;",
           "поездка проходит через Польшу или страны, указанные в полисе;",
-          "страхователем может быть физическое или юридическое лицо;",
+          "страхователем может быть физическое лицо;",
           "доступны легковые авто, грузовые, автобусы, прицепы, мотоциклы и спецтехника.",
         ],
         links: [
@@ -418,7 +418,7 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
           "pojazd jest zarejestrowany poza EOG;",
           "brak ważnej Green Card uznawanej na danej trasie;",
           "podróż przebiega przez Polskę lub kraje wskazane w polisie;",
-          "ubezpieczającym może być osoba fizyczna albo osoba prawna;",
+          "ubezpieczającym może być osoba fizyczna osoba;",
           "dostępne są samochody osobowe, ciężarowe, autobusy, przyczepy, motocykle i pojazdy specjalne.",
         ],
         links: [
@@ -687,7 +687,7 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
           "the vehicle is registered outside the EEA;",
           "there is no valid Green Card recognized along the route;",
           "the trip goes through Poland or countries listed in the policy;",
-          "the policyholder may be an individual or a legal entity;",
+          "the policyholder may be an individual entity;",
           "passenger cars, trucks, buses, trailers, motorcycles, and special-purpose vehicles are available.",
         ],
         links: [
@@ -955,7 +955,7 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
           "аўтамабіль зарэгістраваны па-за межамі ЕЭЗ;",
           "няма дзейнай Green Card, якая прызнаецца на маршруце;",
           "паездка праходзіць праз Польшчу або краіны, указаныя ў полісе;",
-          "страхавальнікам можа быць фізічная або юрыдычная асоба;",
+          "страхавальнікам можа быць фізічная асоба;",
           "даступныя легкавыя аўто, грузавыя, аўтобусы, прычэпы, матацыклы і спецтэхніка.",
         ],
         links: [
@@ -1220,11 +1220,11 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
       fit: {
         title: "OC graniczne kimlar uchun mos",
         items: [
-          "avtomobil EIH hududidan tashqarida ro‘yxatdan o‘tgan;",
-          "yo‘nalishda tan olinadigan amaldagi Green Card yo‘q;",
-          "safar Polsha yoki polisda ko‘rsatilgan mamlakatlar orqali o‘tadi;",
-          "sug‘urta qildiruvchi jismoniy yoki yuridik shaxs bo‘lishi mumkin;",
-          "yengil avtomobillar, yuk avtomobillari, avtobuslar, tirkamalar, mototsikllar va maxsus texnika mavjud.",
+          "avtomobil Yevropa iqtisodiy hududidan (EEA) tashqarida ro‘yxatdan o‘tgan;",
+          "yo‘nalishda tan olinadigan amaldagi Green Card sug‘urtasi mavjud emas;",
+          "safar Polsha yoki polisda ko‘rsatilgan mamlakatlar orqali amalga oshiriladi;",
+          "sug‘urta qildiruvchi jismoniy shaxs bo‘lishi mumkin;",
+          "yengil avtomobillar, yuk avtomobillari, avtobuslar, tirkamalar, mototsikllar va maxsus texnika uchun sug‘urta mavjud.",
         ],
         links: [
           { href: "/rules", label: "Rasmiylashtirish qoidalari" },
@@ -1488,11 +1488,11 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
       fit: {
         title: "ვისთვის არის შესაფერისი OC graniczne",
         items: [
-          "ავტომობილი რეგისტრირებულია ევროპის ეკონომიკური ზონის ფარგლებს გარეთ;",
-          "არ არსებობს მარშრუტზე აღიარებული მოქმედი Green Card;",
-          "მგზავრობა გადის პოლონეთზე ან პოლისში მითითებულ ქვეყნებზე;",
-          "დამზღვევი შეიძლება იყოს ფიზიკური ან იურიდიული პირი;",
-          "ხელმისაწვდომია მსუბუქი ავტომობილები, სატვირთოები, ავტობუსები, მისაბმელები, მოტოციკლები და სპეცტექნიკა.",
+          "ავტომობილი რეგისტრირებულია ევროპის ეკონომიკური სივრცის (EEA) ფარგლებს გარეთ;",
+          "არ არსებობს მარშრუტზე აღიარებული მოქმედი Green Card-ის დაზღვევა;",
+          "მგზავრობა გადის პოლონეთის ან პოლისში მითითებული ქვეყნების გავლით;",
+          "დამზღვევი შეიძლება იყოს ფიზიკური პირი;",
+          "დაზღვევა ხელმისაწვდომია მსუბუქი და სატვირთო ავტომობილებისთვის, ავტობუსებისთვის, მისაბმელებისთვის, მოტოციკლებისა და სპეციალური ტექნიკისთვის.",
         ],
         links: [
           { href: "/rules", label: "გაფორმების წესები" },
@@ -1757,10 +1757,10 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
         title: "OC graniczne кімдерге жарайды",
         items: [
           "автокөлік ЕЭА аумағынан тыс жерде тіркелген;",
-          "бағытта танылатын қолданыстағы Green Card жоқ;",
-          "сапар Польша арқылы немесе полисте көрсетілген елдер арқылы өтеді;",
-          "сақтанушы жеке немесе заңды тұлға болуы мүмкін;",
-          "жеңіл автокөліктер, жүк көліктері, автобустар, тіркемелер, мотоциклдер және арнайы техника қолжетімді.",
+          "маршрутта танылатын қолданыстағы Green Card сақтандыруы жоқ;",
+          "сапар Польша немесе полисте көрсетілген елдер арқылы өтеді;",
+          "сақтанушы жеке тұлға бола алады;",
+          "жеңіл автокөліктерге, жүк көліктеріне, автобустарға, тіркемелерге, мотоциклдерге және арнайы техникаға сақтандыру қолжетімді.",
         ],
         links: [
           { href: "/rules", label: "Рәсімдеу ережелері" },
@@ -2025,10 +2025,10 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
         title: "OC graniczne kimler için uygundur",
         items: [
           "araç AEA dışında kayıtlıdır;",
-          "güzergâhta kabul edilen geçerli bir Green Card yoktur;",
-          "yolculuk Polonya’dan veya poliçede belirtilen ülkelerden geçmektedir;",
-          "sigorta ettiren gerçek kişi veya tüzel kişi olabilir;",
-          "binek araçlar, kamyonlar, otobüsler, römorklar, motosikletler ve özel amaçlı araçlar için düzenlenebilir.",
+          "güzergâh üzerinde geçerli ve tanınan bir Green Card sigortası bulunmamaktadır;",
+          "seyahat Polonya veya poliçede belirtilen ülkeler üzerinden gerçekleşmektedir;",
+          "sigorta ettiren gerçek kişi olabilir;",
+          "binek otomobiller, kamyonlar, otobüsler, römorklar, motosikletler ve özel amaçlı araçlar için sigorta mevcuttur.",
         ],
         links: [
           { href: "/rules", label: "Düzenleme kuralları" },
@@ -2292,11 +2292,11 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
       fit: {
         title: "OC graniczne برای چه کسانی مناسب است",
         items: [
-          "خودرو خارج از منطقه اقتصادی اروپا ثبت شده است؛",
-          "Green Card معتبری که در مسیر پذیرفته شود وجود ندارد؛",
-          "سفر از لهستان یا کشورهای ذکرشده در بیمه‌نامه عبور می‌کند؛",
-          "بیمه‌گذار می‌تواند شخص حقیقی یا شخص حقوقی باشد؛",
-          "خودروهای سواری، کامیون‌ها، اتوبوس‌ها، تریلرها، موتورسیکلت‌ها و ماشین‌آلات ویژه قابل پذیرش هستند.",
+          "خودرو در خارج از منطقه اقتصادی اروپا (EEA) ثبت شده است؛",
+          "بیمه معتبر Green Card که در مسیر سفر مورد پذیرش باشد وجود ندارد؛",
+          "مسیر سفر از لهستان یا کشورهای ذکرشده در بیمه‌نامه عبور می‌کند؛",
+          "بیمه‌گذار می‌تواند شخص حقیقی باشد؛",
+          "بیمه برای خودروهای سواری، کامیون‌ها، اتوبوس‌ها، تریلرها، موتورسیکلت‌ها و وسایل نقلیه ویژه در دسترس است.",
         ],
         links: [
           { href: "/rules", label: "قوانین صدور" },
@@ -2560,11 +2560,11 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
       fit: {
         title: "Ում է հարմար OC graniczne-ը",
         items: [
-          "ավտոմեքենան գրանցված է ԵՏԳ-ից դուրս;",
-          "երթուղում ճանաչվող գործող Green Card չկա;",
-          "ուղևորությունն անցնում է Լեհաստանի կամ պոլիսում նշված երկրների միջով;",
-          "ապահովադիր կարող է լինել ֆիզիկական կամ իրավաբանական անձ;",
-          "հասանելի են մարդատար ավտոմեքենաներ, բեռնատարներ, ավտոբուսներ, կցորդներ, մոտոցիկլներ և հատուկ տեխնիկա։",
+          "ավտոմեքենան գրանցված է Եվրոպական տնտեսական տարածքից (ԵՏՏ) դուրս;",
+          "երթուղու համար ճանաչվող գործող Green Card ապահովագրություն չկա;",
+          "ուղևորությունն անցնում է Լեհաստանի կամ ապահովագրական պոլիսում նշված երկրների տարածքով;",
+          "ապահովադիր կարող է լինել ֆիզիկական անձը;",
+          "ապահովագրությունը հասանելի է մարդատար և բեռնատար ավտոմեքենաների, ավտոբուսների, կցորդների, մոտոցիկլների և հատուկ տեխնիկայի համար.",
         ],
         links: [
           { href: "/rules", label: "Ձևակերպման կանոններ" },
@@ -2828,11 +2828,12 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
       fit: {
         title: "OC graniczne بۆ کێ گونجاوە",
         items: [
-          "ئۆتۆمبێل لە دەرەوەی ناوچەی ئابووریی ئەورووپا تۆمارکراوە؛",
-          "Green Card ـی کارای قبوڵکراو لەسەر ڕێڕەوەکە بوونی نییە؛",
-          "گەشتەکە بە پۆڵەندا یان وڵاتانی دیاریکراو لە پۆلیسدا تێدەپەڕێت؛",
-          "بیمەکەر دەتوانێت کەسێکی سروشتی یان کەسێکی یاسایی بێت؛",
-          "ئۆتۆمبێلی کەسی، بارەهەڵگر، پاس، تریلە، ماتۆرسکیل و ئامێری تایبەتمەند بەردەستن.",
+          "ئۆتۆمبێلەکە لە دەرەوەی ناوچەی ئابووری ئەورووپا (EEA) تۆمار کراوە؛",
+          "هیچ بیمەی Green Card ـێکی کارا کە لەسەر ڕێگای گەشتەکە پەسەند بکرێت، بوونی نییە؛",
+          "گەشتەکە بە پۆڵەندا یان ئەو وڵاتانەدا تێدەپەڕێت کە لە پۆلیسەکەدا دیاری کراون؛",
+          "بیمەکەر دەتوانێت کەسێکی تاک بێت؛",
+          "بیمە بۆ ئۆتۆمبێلی سواری، ئۆتۆمبێلی باربەر، پاس، تریلەر، ماتۆڕسکیل و ئامێر و ئۆتۆمبێلی تایبەت بەردەستە."
+
         ],
         links: [
           { href: "/rules", label: "یاساکانی دەرکردن" },
@@ -3096,11 +3097,12 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
       fit: {
         title: "OC graniczne ji bo kê guncav e",
         items: [
-          "otomobîl li derveyî EEA hatî tomar kirin;",
-          "Green Card-a derbasdar a ku li ser rê tê qebûlkirin tune ye;",
-          "rêwîtî ji Polonya an ji welatên di polîsê de hatine destnîşan kirin derbas dibe;",
-          "sîgortekar dikare kesekî fîzîkî an kesekî hiqûqî be;",
-          "otomobîlên kesane, kamyon, otobûs, trailer, motorsîklet û makîneyên taybet berdest in.",
+          "wesayît li derveyî Herêma Aborî ya Ewropayê (EEA) hatiye qeydkirin;",
+          "Green Card-a derbasdar a ku li ser rêya seferê tê pejirandin tune ye;",
+          "sefer di nav Polonya an welatên ku di polîçeyê de hatine destnîşankirin re derbas dibe;",
+          "kesê ku sigorteyê dike dikare kesekî fizîkî be;",
+          "sigorte ji bo otomobîlên rêwiyan, kamyonan, otobêsan, treyleran, motosîkletan û wesayîtên taybet peyda dibe."
+
         ],
         links: [
           { href: "/rules", label: "Rêgezên amadekirinê" },
@@ -3380,11 +3382,16 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
       fit: {
         title: "لمن يناسب تأمين الحدود؟",
         items: [
-          "المركبة مسجّلة خارج المنطقة الاقتصادية الأوروبية؛",
-          "لا توجد بطاقة خضراء سارية ومعترف بها على كامل مسار الرحلة؛",
-          "تمر الرحلة عبر بولندا أو دولة أخرى مذكورة في وثيقة التأمين؛",
-          "يمكن أن يكون طالب التأمين شخصًا طبيعيًا أو اعتباريًا، وفقًا لشروط الإصدار؛",
-          "يمكن تقديم طلب لسيارة ركوب أو شاحنة أو حافلة أو مقطورة أو دراجة نارية أو مركبة خاصة.",
+          "المركبة مسجّلة خارج المنطقة الاقتصادية الأوروبية (EEA)؛",
+
+          "لا توجد بطاقة خضراء (Green Card) سارية ومعترف بها على مسار الرحلة؛",
+
+          "تمر الرحلة عبر بولندا أو عبر الدول المذكورة في وثيقة التأمين؛",
+
+          "يمكن أن يكون طالب التأمين شخصًا طبيعيًا؛",
+
+          "يتوفر التأمين للسيارات الخاصة والشاحنات والحافلات والمقطورات والدراجات النارية والمركبات والمعدات الخاصة."
+
         ],
         links: [
           { href: "/rules", label: "شروط الإصدار" },
@@ -3703,7 +3710,7 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
           "автомобіль зареєстрований за межами ЄЕЗ;",
           "немає чинної Green Card, яка визнається на маршруті;",
           "поїздка проходить через Польщу або країни, зазначені в полісі;",
-          "страхувальником може бути фізична або юридична особа;",
+          "страхувальником може бути фізична особа;",
           "доступні легкові авто, вантажні, автобуси, причепи, мотоцикли та спецтехніка.",
         ],
         links: [
@@ -3968,11 +3975,16 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
       fit: {
         title: "למי מתאים OC graniczne",
         items: [
-          "הרכב רשום מחוץ לאזור הכלכלי האירופי;",
-          "אין Green Card תקפה המוכרת במסלול;",
-          "הנסיעה עוברת דרך פולין או דרך מדינות המצוינות בפוליסה;",
-          "בעל הפוליסה יכול להיות אדם פרטי או ישות משפטית;",
-          "זמינים רכבים פרטיים, משאיות, אוטובוסים, נגררים, אופנועים וציוד מיוחד.",
+          "הרכב רשום מחוץ לאזור הכלכלי האירופי (EEA);",
+
+          "אין Green Card תקף המוכר לאורך מסלול הנסיעה;",
+
+          "הנסיעה עוברת דרך פולין או דרך המדינות המצוינות בפוליסה;",
+
+          "בעל הפוליסה יכול להיות אדם פרטי;",
+
+          "הביטוח זמין לרכבים פרטיים, משאיות, אוטובוסים, נגררים, אופנועים וכלי רכב וציוד ייעודיים."
+
         ],
         links: [
           { href: "/rules", label: "כללי הנפקה" },
@@ -4236,11 +4248,16 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
       fit: {
         title: "OC graniczne kimlər üçün uyğundur",
         items: [
-          "avtomobil AİZ hüdudlarından kənarda qeydiyyatdan keçib;",
-          "marşrutda tanınan qüvvədə olan Green Card yoxdur;",
-          "səfər Polşa və ya polisdə göstərilən ölkələrdən keçir;",
-          "sığortalı fiziki və ya hüquqi şəxs ola bilər;",
-          "minik avtomobilləri, yük avtomobilləri, avtobuslar, qoşqular, motosikletlər və xüsusi texnika mövcuddur.",
+          "avtomobil Avropa İqtisadi Zonası (AİZ) xaricində qeydiyyata alınıb;",
+
+          "marşrut üzrə tanınan etibarlı Green Card sığortası yoxdur;",
+
+          "səfər Polşa və ya sığorta polisində göstərilən ölkələrdən keçir;",
+
+          "sığortalı fiziki şəxs ola bilər;",
+
+          "sığorta minik avtomobilləri, yük avtomobilləri, avtobuslar, qoşqular, motosikletlər və xüsusi texnika üçün mövcuddur."
+
         ],
         links: [
           { href: "/rules", label: "Rəsmiləşdirmə qaydaları" },
@@ -4504,11 +4521,11 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
       fit: {
         title: "Pentru cine este potrivită OC graniczne",
         items: [
-          "automobilul este înmatriculat în afara SEE;",
-          "nu există o Green Card valabilă, recunoscută pe traseu;",
+          "vehiculul este înmatriculat în afara Spațiului Economic European (SEE);",
+          "nu există o Carte Verde (Green Card) valabilă și recunoscută pe traseul călătoriei;",
           "călătoria trece prin Polonia sau prin țările indicate în poliță;",
-          "asiguratul poate fi persoană fizică sau persoană juridică;",
-          "sunt disponibile autoturisme, camioane, autobuze, remorci, motociclete și utilaje speciale.",
+          "asiguratul poate fi o persoană fizică;",
+          "asigurarea este disponibilă pentru autoturisme, camioane, autobuze, remorci, motociclete și vehicule sau utilaje speciale."
         ],
         links: [
           { href: "/rules", label: "Reguli de emitere" },
@@ -4775,7 +4792,7 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
           "automobil je registrovan van EEP;",
           "ne postoji važeća Green Card koja se priznaje na ruti;",
           "putovanje prolazi kroz Poljsku ili zemlje navedene u polisi;",
-          "ugovarač osiguranja može biti fizičko ili pravno lice;",
+          "ugovarač osiguranja može biti fizičko lice;",
           "dostupna su putnička vozila, teretna vozila, autobusi, prikolice, motocikli i specijalna mehanizacija.",
         ],
         links: [
@@ -5043,7 +5060,7 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
           "automjeti është i regjistruar jashtë ZEE-së;",
           "nuk ka Green Card të vlefshme që njihet në itinerar;",
           "udhëtimi kalon nëpër Poloni ose nëpër shtetet e shënuara në policë;",
-          "mbajtësi i sigurimit mund të jetë person fizik ose juridik;",
+          "mbajtësi i policës mund të jetë person fizik;",
           "janë të disponueshme veturat, kamionët, autobusët, rimorkiot, motoçikletat dhe makineritë speciale.",
         ],
         links: [
@@ -5311,7 +5328,7 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
           "автомашин ЕЭЗ-ээс гадуур бүртгэлтэй;",
           "маршрут дээр хүлээн зөвшөөрөгдөх хүчинтэй Green Card байхгүй;",
           "аялал Польш эсвэл полист заасан улсуудаар дамжин өнгөрнө;",
-          "даатгуулагч нь хувь хүн эсвэл хуулийн этгээд байж болно;",
+          "даатгуулагч нь хувь хүн байж болно;",
           "суудлын авто, ачааны авто, автобус, чиргүүл, мотоцикл болон тусгай техник боломжтой.",
         ],
         links: [
