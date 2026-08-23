@@ -4,6 +4,7 @@ import { join, relative, sep } from "node:path";
 const routeRoot = join(process.cwd(), "app", "[lang]", "route");
 const seoSource = readFileSync(join(process.cwd(), "app", "seo.ts"), "utf8");
 const sitemapSource = readFileSync(join(process.cwd(), "app", "sitemapUtils.ts"), "utf8");
+const registrySource = readFileSync(join(process.cwd(), "app", "routeRegistry.ts"), "utf8");
 const routePageSource = readFileSync(join(routeRoot, "belarus", "poland", "page.tsx"), "utf8");
 const nextConfigSource = readFileSync(join(process.cwd(), "next.config.ts"), "utf8");
 
@@ -35,11 +36,15 @@ function stringValuesFromArray(source, name) {
 
 const pageRoutes = walk(routeRoot)
   .filter((path) => path.endsWith(`${sep}page.tsx`))
+  .filter((path) => !readFileSync(path, "utf8").includes("return null"))
   .map((path) => `/${relative(routeRoot, path).split(sep).slice(0, -1).join("/")}`)
   .sort();
 
 const routeMeta = new Set(stringKeysFromObject(seoSource, "ROUTE_META"));
-const sitemapRoutes = new Set(stringValuesFromArray(sitemapSource, "SITEMAP_ROUTE_ROUTES"));
+const sitemapRoutes = new Set([
+  ...stringValuesFromArray(sitemapSource, "SITEMAP_ROUTE_ROUTES"),
+  ...[...registrySource.matchAll(/defineRoute\("([^"]+)", "([^"]+)"/g)].map((match) => `/route/${match[1]}/${match[2]}`),
+]);
 for (const route of pageRoutes) {
   const appRoute = `/route${route}`;
   assert(routeMeta.has(appRoute), `${appRoute} has page.tsx but is missing from ROUTE_META`);
@@ -51,8 +56,8 @@ for (const route of sitemapRoutes) {
 }
 
 assert(!sitemapSource.includes("/kk/route/belarus/poland"), "/kk/route/belarus/poland must not be hard-coded in sitemap output");
-const routeLocalesBody = seoSource.match(/ROUTE_LOCALES\s*=\s*{([\s\S]*?)\n}\s+as const/)?.[1] ?? "";
-const belarusPolandLocales = routeLocalesBody.match(/"belarus\/poland"\s*:\s*\[([^\]]+)\]/)?.[1] ?? "";
+const routeLocalesBody = `${seoSource}\n${registrySource}`;
+const belarusPolandLocales = registrySource.match(/defineRoute\("belarus", "poland", \[([^\]]+)\]/)?.[1] ?? "";
 assert(belarusPolandLocales.includes('"kk"'), "kk must be included in /route/belarus/poland hreflang/static params");
 const unchangedRouteLocales = {
   "belarus/lithuania": ["ru", "en", "be", "ka", "hy", "ar"],
@@ -66,8 +71,10 @@ const unchangedRouteLocales = {
   "experts/sergey-anatska": ["ru", "pl", "en", "be"],
 };
 for (const [route, expectedLocales] of Object.entries(unchangedRouteLocales)) {
-  const escapedRoute = route.replace("/", "\\/");
-  const values = routeLocalesBody.match(new RegExp(`"?${escapedRoute}"?\\s*:\\s*\\[([^\\]]+)\\]`))?.[1] ?? "";
+  const [origin, destination] = route.split("/");
+  const values = destination && origin !== "experts"
+    ? registrySource.match(new RegExp(`defineRoute\\("${origin}", "${destination}", \\[([^\\]]+)\\]`))?.[1] ?? ""
+    : routeLocalesBody.match(new RegExp(`"?${route.replace("/", "\\/")}"?\\s*:\\s*\\[([^\\]]+)\\]`))?.[1] ?? "";
   const actualLocales = [...values.matchAll(/"([a-z]+)"/g)].map(([, locale]) => locale);
   assert(JSON.stringify(actualLocales) === JSON.stringify(expectedLocales), `${route} locale matrix must remain unchanged`);
 }
@@ -82,4 +89,4 @@ assert(nextConfigSource.includes("source: `/:lang(${SUPPORTED_LOCALE_PATTERN})/b
 assert(nextConfigSource.includes('destination: "/:lang/route/belarus/poland"'), "Legacy Belarus-Poland redirect destination must remain unchanged");
 assert(nextConfigSource.match(/belarus-poland-oc`[\s\S]*?destination: "\/:lang\/route\/belarus\/poland"[\s\S]*?permanent: true/), "Legacy Belarus-Poland redirect must remain permanent");
 
-console.log(`ok route sitemap coverage (${pageRoutes.length} route page files)`);
+console.log(`ok route sitemap coverage (${pageRoutes.length} indexed origin/destination route page files; generic /route/uae checked separately)`);

@@ -19,7 +19,9 @@ import { getUaeGreeceOcDictionary } from "@/app/dictionaries/seo-landings/uaeGre
 import { getAlbaniaBulgariaOcDictionary } from "@/app/dictionaries/seo-landings/albaniaBulgariaOc";
 import { getAlgeriaFranceOcDictionary } from "@/app/dictionaries/seo-landings/algeriaFranceOc";
 import { isRouteLocaleIndexable } from "@/app/seo";
+import { hasRouteCatalog } from "@/app/routeRegistry";
 import { BusinessHoursBanner } from "@/app/components/BusinessHoursBanner";
+import { getRoutesDictionary } from "@/app/dictionaries/routes";
 
 export default function Home({ lang }: { lang: Lang }) {
   const t = getHomeDictionary(lang);
@@ -35,6 +37,7 @@ export default function Home({ lang }: { lang: Lang }) {
   const albaniaBulgaria = getAlbaniaBulgariaOcDictionary(lang);
   const algeriaFrance = getAlgeriaFranceOcDictionary(lang);
   const guide = t.insuranceGuide;
+  const routesNavigation = getRoutesDictionary(lang);
 
   const seoCards = [
     isRouteLocaleIndexable(lang, "/route/belarus/poland")
@@ -194,6 +197,11 @@ export default function Home({ lang }: { lang: Lang }) {
                 </h2>
                 <p className="section__desc">{guide.directAnswer}</p>
               </div>
+              {hasRouteCatalog(lang) ? (
+                <a className="btn btn--soft" href={`/${lang}/routes`}>
+                  {routesNavigation.title}
+                </a>
+              ) : null}
             </div>
 
             <div className="insurance-guide-grid">

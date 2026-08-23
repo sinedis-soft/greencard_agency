@@ -4010,3 +4010,43 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+.routes-catalog__groups {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+}
+
+.routes-catalog__group,
+.route-related__list {
+  margin: 0;
+}
+
+.route-related__list {
+  display: grid;
+  gap: 0.75rem;
+  list-style: none;
+  padding: 0;
+}
+
+.route-related__list a {
+  color: var(--ink);
+  font-weight: 700;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+.routes-catalog__home {
+  margin: 2rem 0 0;
+}
+
+.route-direction {
+  display: inline-flex;
+  max-width: 100%;
+  flex-wrap: wrap;
+  gap: 0.2em;
+  unicode-bidi: isolate;
+}
+
+.route-related__catalog-only {
+  padding-block: 1.5rem;
+}

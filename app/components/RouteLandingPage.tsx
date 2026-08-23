@@ -8,6 +8,8 @@ import type { BelarusPolandOcDictionary } from "@/app/dictionaries/seo-landings/
 import Calculator from "@/app/components/Calculator";
 import { keepTypography } from "@/app/utils/typography";
 import styles from "./RouteLandingPage.module.css";
+import RelatedRoutes from "@/app/components/RelatedRoutes";
+import { getRoutesDictionary } from "@/app/dictionaries/routes";
 
 type RouteLandingPageProps = {
   lang: Lang;
@@ -15,6 +17,7 @@ type RouteLandingPageProps = {
   review: InsuranceContentReview;
   caseIds?: readonly CaseStudyId[];
   disableEnhancements?: boolean;
+  pagePath: string;
 };
 
 type RouteEnhancement = {
@@ -211,9 +214,11 @@ export default function RouteLandingPage({
   review,
   caseIds = [],
   disableEnhancements = false,
+  pagePath,
 }: RouteLandingPageProps) {
   const topSignals = [t.what.title, t.price.title, t.validity.title];
   const supportSignals = t.who.items.slice(0, 3);
+  const routesDictionary = getRoutesDictionary(lang);
 
   const enhancement = disableEnhancements
     ? undefined
@@ -226,6 +231,8 @@ export default function RouteLandingPage({
           <li>
             <Link href={`/${lang}`}>{homeCrumbByLang[lang]}</Link>
           </li>
+          <li aria-hidden="true">/</li>
+          <li><Link href={`/${lang}/routes`}>{routesDictionary.title}</Link></li>
           <li aria-hidden="true">/</li>
           <li aria-current="page">{t.breadcrumbTitle}</li>
         </ol>
@@ -460,6 +467,7 @@ export default function RouteLandingPage({
           </div>
         </div>
       </section>
+      <RelatedRoutes lang={lang} currentPath={pagePath} />
     </>
   );
 }

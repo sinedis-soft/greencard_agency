@@ -7,6 +7,7 @@ import {
   toAbsolute,
   type AppRoute,
 } from "@/app/seo";
+import { INDEXABLE_ROUTE_PATHS } from "@/app/routeRegistry";
 
 import type { MetadataRoute } from "next";
 
@@ -21,20 +22,13 @@ const SITEMAP_MAIN_ROUTES = [
   "",
   "/about",
   "/contacts",
+  "/routes",
   "/experts/sergey-anatska",
 ] as const satisfies readonly AppRoute[];
 const SITEMAP_ROUTE_ROUTES = [
-  "/route/belarus/poland",
-  "/route/belarus/lithuania",
-  "/route/georgia/romania",
-  "/route/georgia/bulgaria",
-  "/route/georgia/greece",
-  "/route/kazakhstan/poland",
+  ...(INDEXABLE_ROUTE_PATHS as AppRoute[]),
+  // Generic UAE landing is indexable but is not an origin/destination route.
   "/route/uae",
-  "/route/uae/bulgaria",
-  "/route/uae/greece",
-  "/route/albania/bulgaria",
-  "/route/algeria/france",
 ] as const satisfies readonly AppRoute[];
 
 export const SITEMAP_SECTIONS = [
@@ -58,7 +52,7 @@ export type SitemapRoute = (typeof SITEMAP_ALL_ROUTES)[number];
 
 type SitemapEntry = {
   url: string;
-  lastModified: string;
+  lastModified?: string;
   changeFrequency: "weekly" | "monthly";
   priority: string;
   alternates: Record<string, string>;
@@ -94,7 +88,7 @@ function routePriority(route: SitemapRoute): SitemapEntry["priority"] {
 function createSitemapEntry(route: SitemapRoute): SitemapEntry[] {
   return routeLocales(route).map((lang) => ({
     url: toAbsolute(localePath(lang, route)),
-    lastModified: routeLastModified(route, lang),
+    lastModified: routeLastModified(route, lang) || undefined,
     changeFrequency: routeChangeFrequency(route),
     priority: routePriority(route),
     alternates: buildHreflangAlternates(route),
@@ -106,7 +100,7 @@ export function buildSitemapMetadata(
 ): MetadataRoute.Sitemap {
   return routes.flatMap(createSitemapEntry).map((entry) => ({
     url: entry.url,
-    lastModified: entry.lastModified,
+    ...(entry.lastModified ? { lastModified: entry.lastModified } : {}),
     changeFrequency: entry.changeFrequency,
     priority: Number(entry.priority),
     alternates: {
@@ -126,7 +120,10 @@ export function buildUrlSitemapXml(routes: readonly SitemapRoute[]): string {
         )
         .join("\n");
 
-      return `  <url>\n    <loc>${escapeXml(entry.url)}</loc>\n    <lastmod>${entry.lastModified}</lastmod>\n    <changefreq>${entry.changeFrequency}</changefreq>\n    <priority>${entry.priority}</priority>\n${alternates}\n  </url>`;
+      const lastModified = entry.lastModified
+        ? `\n    <lastmod>${entry.lastModified}</lastmod>`
+        : "";
+      return `  <url>\n    <loc>${escapeXml(entry.url)}</loc>${lastModified}\n    <changefreq>${entry.changeFrequency}</changefreq>\n    <priority>${entry.priority}</priority>\n${alternates}\n  </url>`;
     })
     .join("\n\n");
 

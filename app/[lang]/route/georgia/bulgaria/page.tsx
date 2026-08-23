@@ -49,7 +49,7 @@ export default async function GeorgiaRomaniaOcPage({ params }: { params: Promise
     <main id="main">
       <BreadcrumbListJsonLd lang={lang} pageName={t.breadcrumbTitle} pagePath={GEORGIA_BULGARIA_ROUTE} />
       <InsurancePageJsonLd lang={lang} pagePath={GEORGIA_BULGARIA_ROUTE} title={t.seo.title} description={t.seo.description} review={CONTENT_REVIEW} />
-      <RouteLandingPage lang={lang} dictionary={t} review={CONTENT_REVIEW} />
+      <RouteLandingPage lang={lang} dictionary={t} review={CONTENT_REVIEW} pagePath={GEORGIA_BULGARIA_ROUTE} />
     </main>
   );
 }
