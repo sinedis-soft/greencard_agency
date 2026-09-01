@@ -13,6 +13,12 @@ type FormStatus = "idle" | "loading" | "success" | "error";
 type SubmitOutcome = "none" | "success" | "partial";
 type Step = 1 | 2;
 
+const multilateralAgreementCountries = new Set([
+  "AD", "AT", "BE", "BA", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE",
+  "GR", "HU", "IS", "IE", "IT", "LV", "LI", "LT", "LU", "MT", "ME", "NL", "NO",
+  "PL", "PT", "RO", "RS", "SK", "SI", "ES", "SE", "CH", "GB",
+]);
+
 type VehiclePriceState = Record<
   number,
   {
@@ -50,6 +56,7 @@ function formatPlate(raw: string): string {
   return raw
     .replace(/\s/g, "")
     .replace(/[^A-Za-z0-9-]/g, "")
+    .replace(/Q/gi, "")
     .toUpperCase()
     .slice(0, 8);
 }
@@ -183,6 +190,7 @@ export default function LeadForm(props: { lang: Lang; showOrderSummary?: boolean
   const [vehicleBlocks, setVehicleBlocks] = useState<number[]>([0]);
   const [vehicleFileCounts, setVehicleFileCounts] = useState<Record<number, number>>({});
   const [vehiclePrices, setVehiclePrices] = useState<VehiclePriceState>({});
+  const [vehicleCountries, setVehicleCountries] = useState<Record<number, string>>({});
 
   const formRef = useRef<HTMLFormElement | null>(null);
   const successEventSentRef = useRef(false);
@@ -261,6 +269,12 @@ export default function LeadForm(props: { lang: Lang; showOrderSummary?: boolean
     });
 
     setVehicleFileCounts(function (prev) {
+      const next = { ...prev };
+      delete next[id];
+      return next;
+    });
+
+    setVehicleCountries(function (prev) {
       const next = { ...prev };
       delete next[id];
       return next;
@@ -363,6 +377,7 @@ export default function LeadForm(props: { lang: Lang; showOrderSummary?: boolean
         setVehicleBlocks([0]);
         setVehicleFileCounts({});
         setVehiclePrices({});
+        setVehicleCountries({});
       };
 
       if (!res.ok || !ok) {
@@ -875,8 +890,15 @@ export default function LeadForm(props: { lang: Lang; showOrderSummary?: boolean
                           id={fieldIds.countryFrom}
                           name={"vehicles[" + idx + "][countryFrom]"}
                           className="input"
-                          defaultValue=""
+                          value={vehicleCountries[id] || ""}
                           required
+                          onChange={(e) => {
+                            const value = e.currentTarget.value;
+                            e.currentTarget.setCustomValidity(
+                              multilateralAgreementCountries.has(value) ? t.policy.multilateralAgreementWarning : ""
+                            );
+                            setVehicleCountries((prev) => ({ ...prev, [id]: value }));
+                          }}
                         >
                           <option value="">{t.notSelected}</option>
                           {t.policy.options.countriesFrom.map(function (o) {
@@ -887,6 +909,11 @@ export default function LeadForm(props: { lang: Lang; showOrderSummary?: boolean
                             );
                           })}
                         </select>
+                        {multilateralAgreementCountries.has(vehicleCountries[id] || "") ? (
+                          <div className="field-warning" role="alert">
+                            {t.policy.multilateralAgreementWarning}
+                          </div>
+                        ) : null}
                       </div>
 
                       <div className="field">
@@ -931,6 +958,9 @@ export default function LeadForm(props: { lang: Lang; showOrderSummary?: boolean
                           name={"vehicles[" + idx + "][plate]"}
                           className="input"
                           required
+                          minLength={4}
+                          maxLength={8}
+                          pattern="[A-PR-Z0-9-]{4,8}"
                           onChange={(e) => {
                             e.currentTarget.value = formatPlate(e.currentTarget.value);
                           }}
@@ -1387,6 +1417,13 @@ export default function LeadForm(props: { lang: Lang; showOrderSummary?: boolean
           color: var(--text-700);
           font-size: 15px;
           line-height: 1.6;
+        }
+
+        .field-warning {
+          margin-top: 8px;
+          color: #9f2d20;
+          font-size: 14px;
+          line-height: 1.45;
         }
 
         .steps {
