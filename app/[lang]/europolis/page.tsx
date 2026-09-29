@@ -140,6 +140,7 @@ export default async function EuropolisPage({
         dictionary={t}
         review={CONTENT_REVIEW}
         pagePath={EUROPOLIS_ROUTE}
+        tariffsBeforeDocuments
       />
     </main>
   );
