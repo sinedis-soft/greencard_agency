@@ -27,6 +27,7 @@ type RouteMeta = {
 
 export const ROUTE_LOCALES = {
   uae: ["ru", "en", "ar"],
+  europolis: ["ru", "en", "ka", "uk"],
   "experts/sergey-anatska": ["ru", "pl", "en", "be"],
 } as const satisfies Record<string, readonly Lang[]>;
 
@@ -40,6 +41,15 @@ export const ROUTE_META = {
   "/privacy": { lastModified: "2026-05-08" },
   "/cookiepolicy": { lastModified: "2026-05-08" },
   "/experts/sergey-anatska": { lastModified: "2026-07-17" },
+  "/europolis": {
+    lastModified: "2026-09-29",
+    review: {
+      authorId: "sergey-anatska",
+      reviewerId: "sergey-anatska",
+      reviewedAt: "2026-09-29",
+    },
+    pageType: "insurance-route",
+  },
   "/route/belarus/poland": {
     lastModified: "2026-08-23",
     review: {

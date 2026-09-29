@@ -3,6 +3,7 @@ import { getGeorgiaRomaniaOcDictionary } from "@/app/dictionaries/seo-landings/g
 import { getBelarusPolandOcDictionary } from "@/app/dictionaries/seo-landings/belarusPolandOc";
 import { belarusLithuaniaOcDictionary } from "@/app/dictionaries/seo-landings/belarusLithuaniaOc";
 import { getUaeOcDictionary } from "@/app/dictionaries/seo-landings/uaeOc";
+import { getEuropolisDictionary } from "@/app/dictionaries/seo-landings/europolis";
 
 export type SeoRouteKey =
   | "home"
@@ -15,16 +16,33 @@ export type SeoRouteKey =
   | "georgiaRomaniaOc"
   | "belarusPolandOc"
   | "belarusLithuaniaOc"
-  | "uaeOc";
+  | "uaeOc"
+  | "europolis";
 
 type RouteSeo = {
   title: string;
   description: string;
 };
 
-type SeoDictionaryBase = Record<Exclude<SeoRouteKey, "georgiaRomaniaOc" | "belarusPolandOc" | "belarusLithuaniaOc" | "uaeOc">, RouteSeo>;
+type SeoDictionaryBase = Record<
+  Exclude<
+    SeoRouteKey,
+    | "georgiaRomaniaOc"
+    | "belarusPolandOc"
+    | "belarusLithuaniaOc"
+    | "uaeOc"
+    | "europolis"
+  >,
+  RouteSeo
+>;
 
-type SeoDictionary = SeoDictionaryBase & { georgiaRomaniaOc: RouteSeo; belarusPolandOc: RouteSeo; belarusLithuaniaOc: RouteSeo; uaeOc: RouteSeo; };
+type SeoDictionary = SeoDictionaryBase & {
+  georgiaRomaniaOc: RouteSeo;
+  belarusPolandOc: RouteSeo;
+  belarusLithuaniaOc: RouteSeo;
+  uaeOc: RouteSeo;
+  europolis: RouteSeo;
+};
 
 export const seoDictionary: Record<Lang, SeoDictionaryBase> = {
   ru: {
@@ -826,6 +844,7 @@ export function getSeoDictionary(lang: Lang): SeoDictionary {
   const belarusLandingSeo = getBelarusPolandOcDictionary(lang).seo;
   const belarusLithuaniaLandingSeo = belarusLithuaniaOcDictionary[lang].seo;
   const uaeOcLandingSeo = getUaeOcDictionary(lang).seo;
+  const europolisLandingSeo = getEuropolisDictionary(lang).seo;
 
   return {
     ...base,
@@ -844,6 +863,10 @@ export function getSeoDictionary(lang: Lang): SeoDictionary {
     uaeOc: {
       title: uaeOcLandingSeo.title,
       description: uaeOcLandingSeo.description,
+    },
+    europolis: {
+      title: europolisLandingSeo.title,
+      description: europolisLandingSeo.description,
     },
   };
 }
