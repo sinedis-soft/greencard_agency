@@ -34,7 +34,17 @@ const MOBILE_HIDDEN_VEHICLES = new Set<PriceVehicle>([
   "trailer",
 ]);
 
-export default function TariffCards({ lang }: { lang: Lang }) {
+export default function TariffCards({
+  lang,
+  vehicleTypes,
+  title,
+  description,
+}: {
+  lang: Lang;
+  vehicleTypes?: readonly PriceVehicle[];
+  title?: string;
+  description?: string;
+}) {
   const calculator = getCalculatorDictionary(lang);
   const leadForm = getLeadFormDictionary(lang);
   const t = getTariffsDictionary(lang);
@@ -53,7 +63,7 @@ export default function TariffCards({ lang }: { lang: Lang }) {
     ]),
   );
 
-  const vehicles = leadForm.policy.options.vehicleTypes.map(
+  const vehicles = vehicleTypes ?? leadForm.policy.options.vehicleTypes.map(
     (option) => option.value as PriceVehicle,
   );
 
@@ -74,10 +84,10 @@ export default function TariffCards({ lang }: { lang: Lang }) {
         <div className="section__hd tariffs__header">
           <div>
             <h2 className="section__title" id="tariffs-title">
-              {keepShortWords(t.title)}
+              {keepShortWords(title ?? t.title)}
             </h2>
 
-            <p className="section__desc">{t.desc}</p>
+            <p className="section__desc">{description ?? t.desc}</p>
           </div>
         </div>
 

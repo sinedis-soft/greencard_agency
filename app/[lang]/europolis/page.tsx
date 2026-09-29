@@ -141,6 +141,7 @@ export default async function EuropolisPage({
         review={CONTENT_REVIEW}
         pagePath={EUROPOLIS_ROUTE}
         tariffsBeforeDocuments
+        tariffVehicleTypes={["car"]}
       />
     </main>
   );
