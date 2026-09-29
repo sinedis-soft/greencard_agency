@@ -14,6 +14,7 @@ type UaeLandingPageProps = {
   dictionary: UaeOcDictionary;
   review: InsuranceContentReview;
   pagePath?: string;
+  tariffsBeforeDocuments?: boolean;
 };
 
 const homeCrumbByLang: Record<Lang, string> = {
@@ -45,7 +46,7 @@ function toneClass(tone: UaeOcDictionary["answers"][number]["tone"]) {
   return styles.answerNo;
 }
 
-export default function UaeLandingPage({ lang, dictionary: t, review, pagePath }: UaeLandingPageProps) {
+export default function UaeLandingPage({ lang, dictionary: t, review, pagePath, tariffsBeforeDocuments = false }: UaeLandingPageProps) {
   const routesDictionary = getRoutesDictionary(lang);
   return (
     <div className={styles.uaeLanding}>
@@ -165,6 +166,8 @@ export default function UaeLandingPage({ lang, dictionary: t, review, pagePath }
         </div>
       </section>
 
+      {tariffsBeforeDocuments && <TariffCards lang={lang} />}
+
       <section className={`${styles.section} ${styles.sectionSoft}`} id="documents">
         <div className={styles.sectionHeader}>
           <p className={styles.eyebrow}>{t.documents.eyebrow}</p>
@@ -234,7 +237,7 @@ export default function UaeLandingPage({ lang, dictionary: t, review, pagePath }
         </ol>
       </section>
 
-      <TariffCards lang={lang} />
+      {!tariffsBeforeDocuments && <TariffCards lang={lang} />}
 
       <section className={styles.section}>
         <div className={styles.split}>
