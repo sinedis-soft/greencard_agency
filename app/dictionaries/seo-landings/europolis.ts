@@ -3,7 +3,7 @@ import type { UaeOcDictionary } from "@/app/dictionaries/seo-landings/uaeOc";
 
 const ru: UaeOcDictionary = {
   seo: {
-    title: "Европолис купить онлайн — страховка на авто в Европе",
+    title: "Европолис купить онлайн — страховка на авто в Европу",
     description:
       "Европолис для автомобиля с иностранными номерами: оформление пограничного страхования онлайн для поездки по Европе. Проверим документы, маршрут и территорию действия, рассчитаем стоимость и отправим полис в PDF.",
   },
@@ -379,7 +379,7 @@ const en: UaeOcDictionary = {
   hero: {
     eyebrow: "Foreign-registered vehicle → Europe",
 
-    title: "Europolis Car Insurance — Apply Online",
+    title: "Europolis — Car Insurance for Travel to Europe — Buy Online",
 
     lead:
       "Europolis is the name used on this page for border third-party liability insurance (OC graniczne) for vehicles with foreign registration plates. This type of policy may be required for temporary use of a vehicle in European countries if the vehicle does not have another valid insurance policy recognized in the relevant territory.",
@@ -746,7 +746,7 @@ const ka: UaeOcDictionary = {
   hero: {
     eyebrow: "უცხოური სანომრე ნიშნების მქონე ავტომობილი → ევროპა",
 
-    title: "ევროპოლისი ავტომობილისთვის — ონლაინ გაფორმება",
+    title: "ევროპოლისი — ავტომობილის დაზღვევა ევროპაში მოგზაურობისთვის — ონლაინ გაფორმება",
 
     lead:
       "ევროპოლისი — ამ გვერდზე გამოყენებული სახელწოდებაა უცხოური სანომრე ნიშნების მქონე ავტომობილის სასაზღვრო სამოქალაქო პასუხისმგებლობის დაზღვევისთვის (OC graniczne). ასეთი პოლისი შეიძლება საჭირო გახდეს ავტომობილის ევროპაში დროებით გამოყენებისთვის, თუ მას არ გააჩნია სხვა მოქმედი დაზღვევა, რომელიც შესაბამის ტერიტორიაზე აღიარებულია.",
@@ -1103,17 +1103,17 @@ const ka: UaeOcDictionary = {
 
 const uk: UaeOcDictionary = {
   seo: {
-    title: "Купити Європоліс онлайн — автострахування в Європі",
+    title: "Купити Європоліс онлайн — страхування авто для поїздки до Європи",
     description:
       "Європоліс для автомобіля з іноземними номерами: оформлення прикордонного страхування онлайн для поїздки Європою. Перевіримо документи, маршрут і територію дії, розрахуємо вартість та надішлемо поліс у PDF.",
   },
 
-  breadcrumbTitle: "Європоліс для поїздки до Європи",
+  breadcrumbTitle: "Європоліс - для поїздки до Європи",
 
   hero: {
     eyebrow: "Автомобіль з іноземними номерами → Європа",
 
-    title: "Європоліс на автомобіль — оформлення онлайн",
+    title: "Європоліс — страхування автомобіля для поїздки до Європи — оформлення онлайн",
 
     lead:
       "Європоліс — назва, що використовується на цій сторінці для прикордонного страхування цивільної відповідальності (OC graniczne) автомобіля з іноземними реєстраційними номерами. Такий поліс може знадобитися для тимчасового використання автомобіля в країнах Європи, якщо він не має іншого чинного страхування, яке визнається на відповідній території.",
