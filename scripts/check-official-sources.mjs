@@ -28,7 +28,7 @@ assert(!/лицензи[яюи]|licensed KNF|licencjonowany|лицензиров
 assert(model.includes('krs: "0000999636"'), "KRS mismatch");
 assert(model.includes('nip: "5242953841"'), "NIP mismatch");
 assert(model.includes('regon: "52350998300000"'), "REGON mismatch");
-assert(model.includes('ul. Henryka Dobrzańskiego „Hubala” 22D') && model.includes('01-473 Warszawa') && model.includes('Polska'), "address mismatch");
+assert(model.includes('ul. Przyrzecze 6') && model.includes('03-107 Warszawa') && model.includes('Polska'), "address mismatch");
 assert(model.includes('url: "https://isap.sejm.gov.pl/isap.nsf/download.xsp/WDU20170002486/U/D20172486Lj.pdf"'), "ISAP URL mismatch");
 assert(model.includes('internalPath: "/product-info"'), "product-info must use localized internal path");
 assert(model.includes('powerOfAttorneyNumber: "07447/2024"'), "WARTA authorization number mismatch");

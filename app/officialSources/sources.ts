@@ -36,8 +36,8 @@ export const COMPANY_DETAILS = {
   nip: "5242953841",
   regon: "52350998300000",
   addressLines: [
-    "ul. Henryka Dobrzańskiego „Hubala” 22D",
-    "01-473 Warszawa",
+    "ul. Przyrzecze 6",
+    "03-107 Warszawa",
     "Polska",
   ],
   knfRegisterNumber: "11257162/A",
