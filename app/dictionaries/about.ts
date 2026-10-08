@@ -72,7 +72,7 @@ const RU: AboutDictionary = {
       "",
       "Данные страхового агента",
       "Компания: SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
-      "Адрес агента: 01-473 Варшава, ul. Dobrzańskiego Hubala 22D",
+      "Адрес агента: ul. Przyrzecze 6, 03-107, Warszawa, Polska",
       "Номер в реестре страховых агентов: 11257162/A",
       "NIP: 5242953841",
 
@@ -133,7 +133,7 @@ const RU: AboutDictionary = {
 
       "",
       "SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
-      "Адрес агента: 01-473 Варшава, ul. Dobrzańskiego Hubala 22D",
+      "Адрес агента: ul. Przyrzecze 6, 03-107, Warszawa, Polska",
     ],
 
     note:
@@ -199,7 +199,7 @@ const PL: AboutDictionary = {
       "",
       "Dane agenta ubezpieczeniowego",
       "Firma: SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
-      "Adres agenta: 01-473 Warszawa, ul. Dobrzańskiego Hubala 22D",
+      "Adres agenta: ul. Przyrzecze 6, 03-107, Warszawa, Polska",
       "Numer wpisu do rejestru agentów ubezpieczeniowych: 11257162/A",
       "NIP: 5242953841",
 
@@ -260,7 +260,7 @@ const PL: AboutDictionary = {
 
       "",
       "SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
-      "Adres agenta: 01-473 Warszawa, ul. Dobrzańskiego Hubala 22D",
+      "Adres agenta: ul. Przyrzecze 6, 03-107, Warszawa, Polska",
     ],
 
     note:
@@ -326,7 +326,7 @@ const EN: AboutDictionary = {
       "",
       "Insurance Agent Details",
       "Company name: SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
-      "Registered address: ul. Dobrzańskiego Hubala 22D, 01-473 Warsaw, Poland",
+      "Registered address: ul. Przyrzecze 6, 03-107, Warszawa, Polska",
       "Insurance Agent Register Number: 11257162/A",
       "Tax Identification Number (NIP): 5242953841",
 
@@ -387,7 +387,7 @@ const EN: AboutDictionary = {
 
       "",
       "SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
-      "Registered address: ul. Dobrzańskiego Hubala 22D, 01-473 Warsaw, Poland",
+      "Registered address: ul. Przyrzecze 6, 03-107, Warszawa, Polska",
     ],
 
     note:
@@ -453,7 +453,7 @@ const BE: AboutDictionary = {
       "",
       "Даныя страхавога агента",
       "Кампанія: SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
-      "Адрас агента: 01-473 Варшава, ul. Dobrzańskiego Hubala 22D",
+      "Адрас агента: ul. Przyrzecze 6, 03-107, Warszawa, Polska",
       "Нумар у рэестры страхавых агентаў: 11257162/A",
       "NIP: 5242953841",
 
@@ -514,7 +514,7 @@ const BE: AboutDictionary = {
 
       "",
       "SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
-      "Адрас агента: 01-473 Варшава, ul. Dobrzańskiego Hubala 22D",
+      "Адрас агента: ul. Przyrzecze 6, 03-107, Warszawa, Polska",
     ],
 
     note:
@@ -580,7 +580,7 @@ const UZ: AboutDictionary = {
       "",
       "Sug‘urta agenti ma’lumotlari",
       "Kompaniya: SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
-      "Agent manzili: 01-473 Varshava, ul. Dobrzańskiego Hubala 22D",
+      "Agent manzili: ul. Przyrzecze 6, 03-107, Warszawa, Polska",
       "Sug‘urta agentlari reyestridagi raqam: 11257162/A",
       "NIP: 5242953841",
 
@@ -641,7 +641,7 @@ const UZ: AboutDictionary = {
 
       "",
       "SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
-      "Agent manzili: 01-473 Varshava, ul. Dobrzańskiego Hubala 22D",
+      "Agent manzili: ul. Przyrzecze 6, 03-107, Warszawa, Polska",
     ],
 
     note:
@@ -702,7 +702,7 @@ const KA: AboutDictionary = {
       "",
       "სადაზღვევო აგენტის მონაცემები",
       "კომპანია: SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
-      "აგენტის მისამართი: 01-473 ვარშავა, ul. Dobrzańskiego Hubala 22D",
+      "აგენტის მისამართი: ul. Przyrzecze 6, 03-107, Warszawa, Polska",
       "სადაზღვევო აგენტების რეესტრის ნომერი: 11257162/A",
       "NIP: 5242953841",
 
@@ -763,7 +763,7 @@ const KA: AboutDictionary = {
 
       "",
       "SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
-      "აგენტის მისამართი: 01-473 ვარშავა, ul. Dobrzańskiego Hubala 22D",
+      "აგენტის მისამართი: ul. Przyrzecze 6, 03-107, Warszawa, Polska",
     ],
 
     note:
@@ -824,7 +824,7 @@ const KK: AboutDictionary = {
       "",
       "Сақтандыру агенті туралы мәліметтер",
       "Компания: SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
-      "Агенттің мекенжайы: 01-473 Варшава, ul. Dobrzańskiego Hubala 22D",
+      "Агенттің мекенжайы: ul. Przyrzecze 6, 03-107, Warszawa, Polska",
       "Сақтандыру агенттері тізіліміндегі нөмірі: 11257162/A",
       "NIP: 5242953841",
 
@@ -885,7 +885,7 @@ const KK: AboutDictionary = {
 
       "",
       "SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
-      "Агенттің мекенжайы: 01-473 Варшава, ul. Dobrzańskiego Hubala 22D",
+      "Агенттің мекенжайы: ul. Przyrzecze 6, 03-107, Warszawa, Polska",
     ],
 
     note:
@@ -946,7 +946,7 @@ const TR: AboutDictionary = {
       "",
       "Sigorta Acentesine İlişkin Bilgiler",
       "Şirket: SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
-      "Acentenin adresi: 01-473 Varşova, ul. Dobrzańskiego Hubala 22D",
+      "Acentenin adresi: ul. Przyrzecze 6, 03-107, Warszawa, Polska",
       "Sigorta acenteleri sicil numarası: 11257162/A",
       "NIP: 5242953841",
 
@@ -1007,7 +1007,7 @@ const TR: AboutDictionary = {
 
       "",
       "SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
-      "Acentenin adresi: 01-473 Varşova, ul. Dobrzańskiego Hubala 22D",
+      "Acentenin adresi: ul. Przyrzecze 6, 03-107, Warszawa, Polska",
     ],
 
     note:
@@ -1068,7 +1068,7 @@ const FA: AboutDictionary = {
       "",
       "اطلاعات نماینده بیمه",
       "شرکت: SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
-      "نشانی نماینده: 01-473 Warsaw, ul. Dobrzańskiego Hubala 22D",
+      "نشانی نماینده: ul. Przyrzecze 6, 03-107, Warszawa, Polska",
       "شماره ثبت در فهرست نمایندگان بیمه: 11257162/A",
       "NIP: 5242953841",
 
@@ -1129,7 +1129,7 @@ const FA: AboutDictionary = {
 
       "",
       "SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
-      "نشانی نماینده: 01-473 Warsaw, ul. Dobrzańskiego Hubala 22D",
+      "نشانی نماینده: ul. Przyrzecze 6, 03-107, Warszawa, Polska",
     ],
 
     note:
@@ -1190,7 +1190,7 @@ const HY: AboutDictionary = {
       "",
       "Ապահովագրական գործակալի տվյալներ",
       "Ընկերություն՝ SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
-      "Գործակալի հասցե՝ 01-473 Վարշավա, ul. Dobrzańskiego Hubala 22D",
+      "Գործակալի հասցե՝ ul. Przyrzecze 6, 03-107, Warszawa, Polska",
       "Ապահովագրական գործակալների ռեեստրում համարը՝ 11257162/A",
       "NIP՝ 5242953841",
 
@@ -1251,7 +1251,7 @@ const HY: AboutDictionary = {
 
       "",
       "SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
-      "Գործակալի հասցե՝ 01-473 Վարշավա, ul. Dobrzańskiego Hubala 22D",
+      "Գործակալի հասցե՝ ul. Przyrzecze 6, 03-107, Warszawa, Polska",
     ],
 
     note:
@@ -1312,7 +1312,7 @@ const CKB: AboutDictionary = {
       "",
       "زانیاری وەکیلی بیمە",
       "کۆمپانیا: SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
-      "ناونیشانی وەکیل: 01-473 Warszawa, ul. Dobrzańskiego Hubala 22D",
+      "ناونیشانی وەکیل: ul. Przyrzecze 6, 03-107, Warszawa, Polska",
       "ژمارەی تۆمارکردن لە تۆماری وەکیلان: 11257162/A",
       "NIP: 5242953841",
 
@@ -1373,7 +1373,7 @@ const CKB: AboutDictionary = {
 
       "",
       "SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
-      "ناونیشانی وەکیل: 01-473 Warszawa, ul. Dobrzańskiego Hubala 22D",
+      "ناونیشانی وەکیل: ul. Przyrzecze 6, 03-107, Warszawa, Polska",
     ],
 
     note:
@@ -1434,7 +1434,7 @@ const KMR: AboutDictionary = {
       "",
       "Agahdariyên ajanê sîgorteyê",
       "Şirket: SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
-      "Navnîşana ajanê: 01-473 Warszawa, ul. Dobrzańskiego Hubala 22D",
+      "Navnîşana ajanê: ul. Przyrzecze 6, 03-107, Warszawa, Polska",
       "Hejmara qeyda ajanên sîgorteyê: 11257162/A",
       "NIP: 5242953841",
 
@@ -1495,7 +1495,7 @@ const KMR: AboutDictionary = {
 
       "",
       "SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
-      "Navnîşana ajanê: 01-473 Warszawa, ul. Dobrzańskiego Hubala 22D",
+      "Navnîşana ajanê: ul. Przyrzecze 6, 03-107, Warszawa, Polska",
     ],
 
     note:
@@ -1556,7 +1556,7 @@ const AR: AboutDictionary = {
       "",
       "بيانات وكيل التأمين",
       "اسم الشركة: SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
-      "عنوان الوكيل: 01-473 وارسو، ul. Dobrzańskiego Hubala 22D",
+      "عنوان الوكيل: ul. Przyrzecze 6, 03-107, Warszawa, Polska",
       "رقم التسجيل في سجل وكلاء التأمين: 11257162/A",
       "NIP: 5242953841",
 
@@ -1617,7 +1617,7 @@ const AR: AboutDictionary = {
 
       "",
       "SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
-      "عنوان الوكيل: 01-473 وارسو، ul. Dobrzańskiego Hubala 22D",
+      "عنوان الوكيل: ul. Przyrzecze 6, 03-107, Warszawa, Polska",
     ],
 
     note:
@@ -1677,7 +1677,7 @@ const HE: AboutDictionary = {
       "",
       "פרטי סוכן הביטוח",
       "חברה: SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
-      "כתובת הסוכן: 01-473 Warszawa, ul. Dobrzańskiego Hubala 22D",
+      "כתובת הסוכן: ul. Przyrzecze 6, 03-107, Warszawa, Polska",
       "מספר רישום במרשם סוכני הביטוח: 11257162/A",
       "NIP: 5242953841",
 
@@ -1738,7 +1738,7 @@ const HE: AboutDictionary = {
 
       "",
       "SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
-      "כתובת הסוכן: 01-473 Warszawa, ul. Dobrzańskiego Hubala 22D",
+      "כתובת הסוכן: ul. Przyrzecze 6, 03-107, Warszawa, Polska",
     ],
 
     note:
@@ -1798,7 +1798,7 @@ const UK: AboutDictionary = {
       "",
       "Дані страхового агента",
       "Компанія: SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
-      "Адреса агента: 01-473 Варшава, ul. Dobrzańskiego Hubala 22D",
+      "Адреса агента: ul. Przyrzecze 6, 03-107, Warszawa, Polska",
       "Номер у реєстрі страхових агентів: 11257162/A",
       "NIP: 5242953841",
 
@@ -1859,7 +1859,7 @@ const UK: AboutDictionary = {
 
       "",
       "SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
-      "Адреса агента: 01-473 Варшава, ul. Dobrzańskiego Hubala 22D",
+      "Адреса агента: ul. Przyrzecze 6, 03-107, Warszawa, Polska",
     ],
 
     note:
@@ -1919,7 +1919,7 @@ const AZ: AboutDictionary = {
       "",
       "Sığorta agenti haqqında məlumat",
       "Şirkət: SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
-      "Agentin ünvanı: 01-473 Varşava, ul. Dobrzańskiego Hubala 22D",
+      "Agentin ünvanı: ul. Przyrzecze 6, 03-107, Warszawa, Polska",
       "Sığorta agentləri reyestrində qeydiyyat nömrəsi: 11257162/A",
       "NIP: 5242953841",
 
@@ -1980,7 +1980,7 @@ const AZ: AboutDictionary = {
 
       "",
       "SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
-      "Agentin ünvanı: 01-473 Varşava, ul. Dobrzańskiego Hubala 22D",
+      "Agentin ünvanı: ul. Przyrzecze 6, 03-107, Warszawa, Polska",
     ],
 
     note:
@@ -2040,7 +2040,7 @@ const RO: AboutDictionary = {
       "",
       "Datele agentului de asigurare",
       "Compania: SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
-      "Adresa agentului: 01-473 Varșovia, ul. Dobrzańskiego Hubala 22D",
+      "Adresa agentului: ul. Przyrzecze 6, 03-107, Warszawa, Polska",
       "Numărul din registrul agenților de asigurare: 11257162/A",
       "NIP: 5242953841",
 
@@ -2101,7 +2101,7 @@ const RO: AboutDictionary = {
 
       "",
       "SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
-      "Adresa agentului: 01-473 Varșovia, ul. Dobrzańskiego Hubala 22D",
+      "Adresa agentului: ul. Przyrzecze 6, 03-107, Warszawa, Polska",
     ],
 
     note:
@@ -2161,7 +2161,7 @@ const SR: AboutDictionary = {
       "",
       "Podaci o agentu osiguranja",
       "Naziv društva: SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
-      "Adresa agenta: 01-473 Varšava, ul. Dobrzańskiego Hubala 22D",
+      "Adresa agenta: ul. Przyrzecze 6, 03-107, Warszawa, Polska",
       "Broj u registru agenata osiguranja: 11257162/A",
       "NIP: 5242953841",
 
@@ -2222,7 +2222,7 @@ const SR: AboutDictionary = {
 
       "",
       "SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
-      "Adresa agenta: 01-473 Varšava, ul. Dobrzańskiego Hubala 22D",
+      "Adresa agenta: ul. Przyrzecze 6, 03-107, Warszawa, Polska",
     ],
 
     note:
@@ -2283,7 +2283,7 @@ const SQ: AboutDictionary = {
       "",
       "Të dhënat e agjentit të sigurimeve",
       "Shoqëria: SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
-      "Adresa e agjentit: 01-473 Varshavë, ul. Dobrzańskiego Hubala 22D",
+      "Adresa e agjentit: ul. Przyrzecze 6, 03-107, Warszawa, Polska",
       "Numri në regjistrin e agjentëve të sigurimeve: 11257162/A",
       "NIP: 5242953841",
 
@@ -2344,7 +2344,7 @@ const SQ: AboutDictionary = {
 
       "",
       "SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
-      "Adresa e agjentit: 01-473 Varshavë, ul. Dobrzańskiego Hubala 22D",
+      "Adresa e agjentit: ul. Przyrzecze 6, 03-107, Warszawa, Polska",
     ],
 
     note:
@@ -2404,7 +2404,7 @@ const MN: AboutDictionary = {
       "",
       "Даатгалын төлөөлөгчийн мэдээлэл",
       "Компани: SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
-      "Төлөөлөгчийн хаяг: 01-473 Варшав, ul. Dobrzańskiego Hubala 22D",
+      "Төлөөлөгчийн хаяг: ul. Przyrzecze 6, 03-107, Warszawa, Polska",
       "Даатгалын төлөөлөгчдийн бүртгэлийн дугаар: 11257162/A",
       "NIP: 5242953841",
 
@@ -2465,7 +2465,7 @@ const MN: AboutDictionary = {
 
       "",
       "SINEDIS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
-      "Төлөөлөгчийн хаяг: 01-473 Варшав, ul. Dobrzańskiego Hubala 22D",
+      "Төлөөлөгчийн хаяг: ul. Przyrzecze 6, 03-107, Warszawa, Polska",
     ],
 
     note:

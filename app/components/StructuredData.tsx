@@ -48,9 +48,9 @@ const TARGET_CUSTOMER_COUNTRIES = [
 
 const COMPANY_ADDRESS = {
   "@type": "PostalAddress",
-  streetAddress: "ul. H. Dobrzańskiego Hubala 22D",
+  streetAddress: "ul. Przyrzecze 6",
   addressLocality: "Warszawa",
-  postalCode: "01-473",
+  postalCode: "03-107",
   addressCountry: "PL",
 };
 

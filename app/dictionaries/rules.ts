@@ -17,7 +17,7 @@ const ru: RulesDictionary = {
     {
       title: "§ 1. Определения",
       paragraphs: [
-        "SINEDIS — SINEDIS Spółka z ograniczoną odpowiedzialnością, ul. H. Dobrzańskiego Hubala 22D, 01-473 Warszawa, Polska, KRS: 0000999636, NIP: 5242953841, REGON: 52350998300000, e-mail: info@sinedis.pl.",
+        "SINEDIS — SINEDIS Spółka z ograniczoną odpowiedzialnością, ul. Przyrzecze 6, 03-107, Warszawa, Polska, KRS: 0000999636, NIP: 5242953841, REGON: 52350998300000, e-mail: info@sinedis.pl.",
         "SINEDIS является страховым агентом, действующим от имени нескольких страховых компаний на основании предоставленных полномочий.",
         "Пользователь — физическое или юридическое лицо, использующее сервис SINEDIS или Contact Center.",
         "Сервис — интернет-платформа SINEDIS, доступная через сайты https://sinedis.pl и https://greencard.agency.",
@@ -135,8 +135,8 @@ const ru: RulesDictionary = {
       title: "Официальные данные",
       paragraphs: [
         "SINEDIS Spółka z ograniczoną odpowiedzialnością",
-        "ul. H. Dobrzańskiego Hubala 22D",
-        "01-473 Warszawa, Polska",
+        "ul. Przyrzecze 6",
+        "03-107 Warszawa, Polska",
         "",
         "KRS: 0000999636",
         "NIP: 5242953841",
@@ -163,7 +163,7 @@ const pl: RulesDictionary = {
     {
       title: "§ 1. Definicje",
       paragraphs: [
-        "SINEDIS — SINEDIS Spółka z ograniczoną odpowiedzialnością, ul. H. Dobrzańskiego Hubala 22D, 01-473 Warszawa, Polska, KRS: 0000999636, NIP: 5242953841, REGON: 52350998300000, e-mail: info@sinedis.pl.",
+        "SINEDIS — SINEDIS Spółka z ograniczoną odpowiedzialnością, ul. Przyrzecze 6, 03-107, Warszawa, Polska, KRS: 0000999636, NIP: 5242953841, REGON: 52350998300000, e-mail: info@sinedis.pl.",
         "SINEDIS jest agentem ubezpieczeniowym działającym w imieniu kilku zakładów ubezpieczeń na podstawie udzielonych pełnomocnictw.",
         "Użytkownik — osoba fizyczna lub prawna korzystająca z serwisu SINEDIS lub Contact Center.",
         "Serwis — platforma internetowa SINEDIS dostępna pod adresami https://sinedis.pl oraz https://greencard.agency.",
@@ -283,8 +283,8 @@ const pl: RulesDictionary = {
       title: "Dane oficjalne",
       paragraphs: [
         "SINEDIS Spółka z ograniczoną odpowiedzialnością",
-        "ul. H. Dobrzańskiego Hubala 22D",
-        "01-473 Warszawa, Polska",
+        "ul. Przyrzecze 6",
+        "03-107 Warszawa, Polska",
         "",
         "KRS: 0000999636",
         "NIP: 5242953841",
@@ -311,7 +311,7 @@ const en: RulesDictionary = {
     {
       title: "§ 1. Definitions",
       paragraphs: [
-        "SINEDIS — SINEDIS Spółka z ograniczoną odpowiedzialnością, ul. H. Dobrzańskiego Hubala 22D, 01-473 Warsaw, Poland, KRS: 0000999636, NIP: 5242953841, REGON: 52350998300000, e-mail: info@sinedis.pl.",
+        "SINEDIS — SINEDIS Spółka z ograniczoną odpowiedzialnością, ul. Przyrzecze 6, 03-107, Warszawa, Polska, Poland, KRS: 0000999636, NIP: 5242953841, REGON: 52350998300000, e-mail: info@sinedis.pl.",
         "SINEDIS is an insurance agent acting on behalf of multiple insurance undertakings under granted powers of attorney.",
         "User — an individual or legal entity using the SINEDIS service or Contact Center.",
         "Service — the SINEDIS online platform available via https://sinedis.pl and https://greencard.agency.",
@@ -431,8 +431,8 @@ const en: RulesDictionary = {
       title: "Official Information",
       paragraphs: [
         "SINEDIS Spółka z ograniczoną odpowiedzialnością",
-        "ul. H. Dobrzańskiego Hubala 22D",
-        "01-473 Warsaw, Poland",
+        "ul. Przyrzecze 6",
+        "03-107 Warsaw, Poland",
         "",
         "KRS: 0000999636",
         "NIP: 5242953841",
@@ -459,7 +459,7 @@ const be: RulesDictionary = {
     {
       title: "§ 1. Вызначэнні",
       paragraphs: [
-        "SINEDIS — SINEDIS Spółka z ograniczoną odpowiedzialnością, ul. H. Dobrzańskiego Hubala 22D, 01-473 Warszawa, Polska, KRS: 0000999636, NIP: 5242953841, REGON: 52350998300000, e-mail: info@sinedis.pl.",
+        "SINEDIS — SINEDIS Spółka z ograniczoną odpowiedzialnością, ul. Przyrzecze 6, 03-107, Warszawa, Polska, KRS: 0000999636, NIP: 5242953841, REGON: 52350998300000, e-mail: info@sinedis.pl.",
         "SINEDIS з'яўляецца страхавым агентам, які дзейнічае ад імя некалькіх страхавых кампаній на падставе прадастаўленых паўнамоцтваў.",
         "Карыстальнік — фізічная або юрыдычная асоба, якая выкарыстоўвае сэрвіс SINEDIS або Contact Center.",
         "Сэрвіс — інтэрнэт-платформа SINEDIS, даступная праз сайты https://sinedis.pl і https://greencard.agency.",
@@ -580,8 +580,8 @@ const be: RulesDictionary = {
       title: "Афіцыйныя даныя",
       paragraphs: [
         "SINEDIS Spółka z ograniczoną odpowiedzialnością",
-        "ul. H. Dobrzańskiego Hubala 22D",
-        "01-473 Warszawa, Polska",
+        "ul. Przyrzecze 6",
+        "03-107 Warsaw, Poland",
         "",
         "KRS: 0000999636",
         "NIP: 5242953841",
@@ -611,7 +611,7 @@ const uz: RulesDictionary = {
       title: "§ 1. Ta’riflar",
 
       paragraphs: [
-        "SINEDIS — SINEDIS Spółka z ograniczoną odpowiedzialnością, ul. H. Dobrzańskiego Hubala 22D, 01-473 Warszawa, Polska, KRS: 0000999636, NIP: 5242953841, REGON: 52350998300000, e-mail: info@sinedis.pl.",
+        "SINEDIS — SINEDIS Spółka z ograniczoną odpowiedzialnością, ul. Przyrzecze 6, 03-107, Warszawa, Polska, KRS: 0000999636, NIP: 5242953841, REGON: 52350998300000, e-mail: info@sinedis.pl.",
         "SINEDIS berilgan vakolatlar asosida bir nechta sug‘urta kompaniyalari nomidan faoliyat yurituvchi sug‘urta agentidir.",
         "Foydalanuvchi — SINEDIS servisi yoki Contact Center xizmatidan foydalanuvchi jismoniy yoki yuridik shaxs.",
         "Servis — https://sinedis.pl va https://greencard.agency saytlarida mavjud bo‘lgan SINEDIS internet-platformasi.",
@@ -742,8 +742,8 @@ const uz: RulesDictionary = {
 
       paragraphs: [
         "SINEDIS Spółka z ograniczoną odpowiedzialnością",
-        "ul. H. Dobrzańskiego Hubala 22D",
-        "01-473 Warszawa, Polska",
+        "ul. Przyrzecze 6",
+        "03-107 Warsaw, Poland",
         "",
         "KRS: 0000999636",
         "NIP: 5242953841",
@@ -770,7 +770,7 @@ const ka: RulesDictionary = {
     {
       title: "§ 1. განმარტებები",
       paragraphs: [
-        "SINEDIS — SINEDIS Spółka z ograniczoną odpowiedzialnością, ul. H. Dobrzańskiego Hubala 22D, 01-473 Warszawa, Polska, KRS: 0000999636, NIP: 5242953841, REGON: 52350998300000, e-mail: info@sinedis.pl.",
+        "SINEDIS — SINEDIS Spółka z ograniczoną odpowiedzialnością, ul. Przyrzecze 6, 03-107, Warszawa, Polska, KRS: 0000999636, NIP: 5242953841, REGON: 52350998300000, e-mail: info@sinedis.pl.",
         "SINEDIS წარმოადგენს სადაზღვევო აგენტს, რომელიც მოქმედებს რამდენიმე სადაზღვევო კომპანიის სახელით მინიჭებული უფლებამოსილების საფუძველზე.",
         "მომხმარებელი — ფიზიკური ან იურიდიული პირი, რომელიც იყენებს SINEDIS-ის სერვისს ან Contact Center-ს.",
         "სერვისი — SINEDIS-ის ინტერნეტ-პლატფორმა, რომელიც ხელმისაწვდომია ვებგვერდებზე https://sinedis.pl და https://greencard.agency.",
@@ -888,8 +888,8 @@ const ka: RulesDictionary = {
       title: "ოფიციალური მონაცემები",
       paragraphs: [
         "SINEDIS Spółka z ograniczoną odpowiedzialnością",
-        "ul. H. Dobrzańskiego Hubala 22D",
-        "01-473 Warszawa, Polska",
+        "ul. Przyrzecze 6",
+        "03-107 Warsaw, Poland",
         "",
         "KRS: 0000999636",
         "NIP: 5242953841",
@@ -916,7 +916,7 @@ const kk: RulesDictionary = {
     {
       title: "§ 1. Анықтамалар",
       paragraphs: [
-        "SINEDIS — SINEDIS Spółka z ograniczoną odpowiedzialnością, ul. H. Dobrzańskiego Hubala 22D, 01-473 Warszawa, Polska, KRS: 0000999636, NIP: 5242953841, REGON: 52350998300000, e-mail: info@sinedis.pl.",
+        "SINEDIS — SINEDIS Spółka z ograniczoną odpowiedzialnością, ul. Przyrzecze 6, 03-107, Warszawa, Polska, KRS: 0000999636, NIP: 5242953841, REGON: 52350998300000, e-mail: info@sinedis.pl.",
         "SINEDIS берілген өкілеттіктер негізінде бірнеше сақтандыру компаниясының атынан әрекет ететін сақтандыру агенті болып табылады.",
         "Пайдаланушы — SINEDIS сервисін немесе Contact Center қызметін пайдаланатын жеке немесе заңды тұлға.",
         "Сервис — https://sinedis.pl және https://greencard.agency сайттары арқылы қолжетімді SINEDIS интернет-платформасы.",
@@ -1036,8 +1036,8 @@ const kk: RulesDictionary = {
       title: "Ресми деректер",
       paragraphs: [
         "SINEDIS Spółka z ograniczoną odpowiedzialnością",
-        "ul. H. Dobrzańskiego Hubala 22D",
-        "01-473 Warszawa, Polska",
+        "ul. Przyrzecze 6",
+        "03-107 Warsaw, Poland",
         "",
         "KRS: 0000999636",
         "NIP: 5242953841",
@@ -1064,7 +1064,7 @@ const tr: RulesDictionary = {
     {
       title: "§ 1. Tanımlar",
       paragraphs: [
-        "SINEDIS — SINEDIS Spółka z ograniczoną odpowiedzialnością, ul. H. Dobrzańskiego Hubala 22D, 01-473 Warszawa, Polonya, KRS: 0000999636, NIP: 5242953841, REGON: 52350998300000, e-posta: info@sinedis.pl.",
+        "SINEDIS — SINEDIS Spółka z ograniczoną odpowiedzialnością, ul. Przyrzecze 6, 03-107, Warszawa, Polska, KRS: 0000999636, NIP: 5242953841, REGON: 52350998300000, e-posta: info@sinedis.pl.",
         "SINEDIS, verilen yetkilere dayanarak birden fazla sigorta şirketi adına faaliyet gösteren bir sigorta acentesidir.",
         "Kullanıcı — SINEDIS hizmetini veya Contact Center hizmetini kullanan gerçek veya tüzel kişi.",
         "Hizmet — https://sinedis.pl ve https://greencard.agency internet siteleri üzerinden erişilebilen SINEDIS çevrim içi platformu.",
@@ -1182,8 +1182,8 @@ const tr: RulesDictionary = {
       title: "Resmî Bilgiler",
       paragraphs: [
         "SINEDIS Spółka z ograniczoną odpowiedzialnością",
-        "ul. H. Dobrzańskiego Hubala 22D",
-        "01-473 Warszawa, Polonya",
+        "ul. Przyrzecze 6",
+        "03-107 Warsaw, Poland",
         "",
         "KRS: 0000999636",
         "NIP: 5242953841",
@@ -1210,7 +1210,7 @@ const fa: RulesDictionary = {
     {
       title: "§ 1. تعاریف",
       paragraphs: [
-        "SINEDIS — شرکت SINEDIS Spółka z ograniczoną odpowiedzialnością، به نشانی ul. H. Dobrzańskiego Hubala 22D, 01-473 Warszawa, Polska، KRS: 0000999636، NIP: 5242953841، REGON: 52350998300000، ایمیل: info@sinedis.pl.",
+        "SINEDIS — شرکت SINEDIS Spółka z ograniczoną odpowiedzialnością، به نشانی ul. Przyrzecze 6, 03-107, Warszawa, Polska، KRS: 0000999636، NIP: 5242953841، REGON: 52350998300000، ایمیل: info@sinedis.pl.",
         "SINEDIS به‌عنوان نماینده بیمه و بر اساس اختیارات اعطاشده از سوی چندین شرکت بیمه فعالیت می‌کند.",
         "کاربر — شخص حقیقی یا حقوقی که از سرویس SINEDIS یا Contact Center استفاده می‌کند.",
         "سرویس — پلتفرم اینترنتی SINEDIS که از طریق وب‌سایت‌های https://sinedis.pl و https://greencard.agency در دسترس است.",
@@ -1328,8 +1328,8 @@ const fa: RulesDictionary = {
       title: "اطلاعات رسمی",
       paragraphs: [
         "SINEDIS Spółka z ograniczoną odpowiedzialnością",
-        "ul. H. Dobrzańskiego Hubala 22D",
-        "01-473 Warszawa, Polska",
+        "ul. Przyrzecze 6",
+        "03-107 Warsaw, Poland",
         "",
         "KRS: 0000999636",
         "NIP: 5242953841",
@@ -1356,7 +1356,7 @@ const hy: RulesDictionary = {
     {
       title: "§ 1. Սահմանումներ",
       paragraphs: [
-        "SINEDIS — SINEDIS Spółka z ograniczoną odpowiedzialnością, ul. H. Dobrzańskiego Hubala 22D, 01-473 Warszawa, Polska, KRS: 0000999636, NIP: 5242953841, REGON: 52350998300000, e-mail: info@sinedis.pl։",
+        "SINEDIS — SINEDIS Spółka z ograniczoną odpowiedzialnością, ul. Przyrzecze 6, 03-107, Warszawa, Polska, KRS: 0000999636, NIP: 5242953841, REGON: 52350998300000, e-mail: info@sinedis.pl։",
         "SINEDIS-ը հանդիսանում է ապահովագրական գործակալ, որը գործում է մի քանի ապահովագրական ընկերությունների անունից՝ տրամադրված լիազորությունների հիման վրա։",
         "Օգտատեր — ֆիզիկական կամ իրավաբանական անձ, որն օգտագործում է SINEDIS ծառայությունը կամ Contact Center-ը։",
         "Ծառայություն — SINEDIS ինտերնետային հարթակը, որը հասանելի է https://sinedis.pl և https://greencard.agency կայքերի միջոցով։",
@@ -1477,8 +1477,8 @@ const hy: RulesDictionary = {
       title: "Պաշտոնական տվյալներ",
       paragraphs: [
         "SINEDIS Spółka z ograniczoną odpowiedzialnością",
-        "ul. H. Dobrzańskiego Hubala 22D",
-        "01-473 Warszawa, Polska",
+        "ul. Przyrzecze 6",
+        "03-107 Warsaw, Poland",
         "",
         "KRS: 0000999636",
         "NIP: 5242953841",
@@ -1505,7 +1505,7 @@ const ckb: RulesDictionary = {
     {
       title: "§ 1. پێناسەکان",
       paragraphs: [
-        "SINEDIS — SINEDIS Spółka z ograniczoną odpowiedzialnością، ul. H. Dobrzańskiego Hubala 22D، 01-473 Warszawa، Polska، KRS: 0000999636، NIP: 5242953841، REGON: 52350998300000، ئیمەیڵ: info@sinedis.pl.",
+        "SINEDIS — SINEDIS Spółka z ograniczoną odpowiedzialnością، ul. Przyrzecze 6, 03-107, Warszawa, Polska، KRS: 0000999636، NIP: 5242953841، REGON: 52350998300000، ئیمەیڵ: info@sinedis.pl.",
         "SINEDIS وەکیلی بیمەیە و لە ناوی چەند کۆمپانیای بیمەوە، بەپێی دەسەڵاتە پێدراوەکان، کار دەکات.",
         "بەکارهێنەر — کەسی ئاسایی یان کەسی یاساییە کە خزمەتگوزارییەکانی SINEDIS یان Contact Center بەکاردەهێنێت.",
         "خزمەتگوزاری — پلاتفۆڕمی ئینتەرنێتی SINEDISە کە لە ڕێگەی ماڵپەڕەکانی https://sinedis.pl و https://greencard.agency بەردەستە.",
@@ -1623,8 +1623,8 @@ const ckb: RulesDictionary = {
       title: "زانیارییە فەرمییەکان",
       paragraphs: [
         "SINEDIS Spółka z ograniczoną odpowiedzialnością",
-        "ul. H. Dobrzańskiego Hubala 22D",
-        "01-473 Warszawa, Polska",
+        "ul. Przyrzecze 6",
+        "03-107 Warsaw, Poland",
         "",
         "KRS: 0000999636",
         "NIP: 5242953841",
@@ -1652,7 +1652,7 @@ const kmr: RulesDictionary = {
       title: "§ 1. Danasîn",
 
       paragraphs: [
-        "SINEDIS — SINEDIS Spółka z ograniczoną odpowiedzialnością, ul. H. Dobrzańskiego Hubala 22D, 01-473 Warszawa, Polonya, KRS: 0000999636, NIP: 5242953841, REGON: 52350998300000, e-mail: info@sinedis.pl.",
+        "SINEDIS — SINEDIS Spółka z ograniczoną odpowiedzialnością, ul. Przyrzecze 6, 03-107, Warszawa, Polska, KRS: 0000999636, NIP: 5242953841, REGON: 52350998300000, e-mail: info@sinedis.pl.",
         "SINEDIS ajanek sîgorteyê ye ku li ser navê çend şirketên sîgorteyê, li gorî desthilatên ku ji wî re hatine dayîn, tevdigere.",
         "Bikarhêner — kesek ferdî an jî kesek qanûnî ye ku xizmeta SINEDIS an Contact Center bikar tîne.",
         "Xizmet — platforma înternetê ya SINEDIS e ku bi rêya malperên https://sinedis.pl û https://greencard.agency tê gihîştin.",
@@ -1778,8 +1778,8 @@ const kmr: RulesDictionary = {
 
       paragraphs: [
         "SINEDIS Spółka z ograniczoną odpowiedzialnością",
-        "ul. H. Dobrzańskiego Hubala 22D",
-        "01-473 Warszawa, Polonya",
+        "ul. Przyrzecze 6",
+        "03-107 Warsaw, Poland",
         "",
 
         "KRS: 0000999636",
@@ -1809,7 +1809,7 @@ const ar: RulesDictionary = {
     {
       title: "§ 1. التعاريف",
       paragraphs: [
-        "SINEDIS — شركة SINEDIS Spółka z ograniczoną odpowiedzialnością، العنوان: ul. H. Dobrzańskiego Hubala 22D، 01-473 Warszawa، بولندا، KRS: 0000999636، NIP: 5242953841، REGON: 52350998300000، البريد الإلكتروني: info@sinedis.pl.",
+        "SINEDIS — شركة SINEDIS Spółka z ograniczoną odpowiedzialnością، العنوان: ul. Przyrzecze 6, 03-107, Warszawa, Polska KRS: 0000999636، NIP: 5242953841، REGON: 52350998300000، البريد الإلكتروني: info@sinedis.pl.",
         "تعمل SINEDIS كوكيل تأمين نيابةً عن عدة شركات تأمين بموجب الصلاحيات الممنوحة لها.",
         "المستخدم — شخص طبيعي أو اعتباري يستخدم خدمة SINEDIS أو مركز الاتصال.",
         "الخدمة — منصة SINEDIS الإلكترونية المتاحة عبر موقعي https://sinedis.pl و https://greencard.agency.",
@@ -1926,8 +1926,8 @@ const ar: RulesDictionary = {
       title: "البيانات الرسمية",
       paragraphs: [
         "SINEDIS Spółka z ograniczoną odpowiedzialnością",
-        "ul. H. Dobrzańskiego Hubala 22D",
-        "01-473 Warszawa, Polska",
+        "ul. Przyrzecze 6",
+        "03-107 Warsaw, Poland",
         "",
         "KRS: 0000999636",
         "NIP: 5242953841",
@@ -1954,7 +1954,7 @@ const uk: RulesDictionary = {
     {
       title: "§ 1. Визначення",
       paragraphs: [
-        "SINEDIS — SINEDIS Spółka z ograniczoną odpowiedzialnością, ul. H. Dobrzańskiego Hubala 22D, 01-473 Warszawa, Polska, KRS: 0000999636, NIP: 5242953841, REGON: 52350998300000, e-mail: info@sinedis.pl.",
+        "SINEDIS — SINEDIS Spółka z ograniczoną odpowiedzialnością, ul. Przyrzecze 6, 03-107, Warszawa, Polska, KRS: 0000999636, NIP: 5242953841, REGON: 52350998300000, e-mail: info@sinedis.pl.",
         "SINEDIS є страховим агентом, який діє від імені кількох страхових компаній на підставі наданих повноважень.",
         "Користувач — фізична або юридична особа, яка користується сервісом SINEDIS або Contact Center.",
         "Сервіс — інтернет-платформа SINEDIS, доступна через сайти https://sinedis.pl та https://greencard.agency.",
@@ -2071,8 +2071,8 @@ const uk: RulesDictionary = {
       title: "Офіційні дані",
       paragraphs: [
         "SINEDIS Spółka z ograniczoną odpowiedzialnością",
-        "ul. H. Dobrzańskiego Hubala 22D",
-        "01-473 Warszawa, Polska",
+        "ul. Przyrzecze 6",
+        "03-107 Warsaw, Poland",
         "",
         "KRS: 0000999636",
         "NIP: 5242953841",
@@ -2101,7 +2101,7 @@ const he: RulesDictionary = {
     {
       title: "§ 1. הגדרות",
       paragraphs: [
-        "SINEDIS — SINEDIS Spółka z ograniczoną odpowiedzialnością, ul. H. Dobrzańskiego Hubala 22D, 01-473 Warszawa, Polska, KRS: 0000999636, NIP: 5242953841, REGON: 52350998300000, e-mail: info@sinedis.pl.",
+        "SINEDIS — SINEDIS Spółka z ograniczoną odpowiedzialnością, ul. Przyrzecze 6, 03-107, Warszawa, Polska, KRS: 0000999636, NIP: 5242953841, REGON: 52350998300000, e-mail: info@sinedis.pl.",
         "SINEDIS היא סוכנות ביטוח הפועלת מטעמן של מספר חברות ביטוח מכוח ייפויי כוח והרשאות מתאימים.",
         "משתמש — אדם פרטי או תאגיד המשתמש בשירותי SINEDIS או במוקד השירות הטלפוני.",
         "השירות — פלטפורמת האינטרנט של SINEDIS הזמינה בכתובות https://sinedis.pl ו-https://greencard.agency.",
@@ -2218,8 +2218,8 @@ const he: RulesDictionary = {
       title: "פרטים רשמיים",
       paragraphs: [
         "SINEDIS Spółka z ograniczoną odpowiedzialnością",
-        "ul. H. Dobrzańskiego Hubala 22D",
-        "01-473 Warszawa, Polska",
+        "ul. Przyrzecze 6",
+        "03-107 Warsaw, Poland",
         "",
         "KRS: 0000999636",
         "NIP: 5242953841",
@@ -2250,7 +2250,7 @@ const az: RulesDictionary = {
     {
       title: "§ 1. Təriflər",
       paragraphs: [
-        "SINEDIS — SINEDIS Spółka z ograniczoną odpowiedzialnością, ul. H. Dobrzańskiego Hubala 22D, 01-473 Warszawa, Polska, KRS: 0000999636, NIP: 5242953841, REGON: 52350998300000, e-mail: info@sinedis.pl.",
+        "SINEDIS — SINEDIS Spółka z ograniczoną odpowiedzialnością, ul. Przyrzecze 6, 03-107, Warszawa, Polska, Polska, KRS: 0000999636, NIP: 5242953841, REGON: 52350998300000, e-mail: info@sinedis.pl.",
         "SINEDIS verilmiş səlahiyyətlər əsasında bir neçə sığorta şirkətinin adından fəaliyyət göstərən sığorta agentidir.",
         "İstifadəçi — SINEDIS xidmətindən və ya Contact Center-dən istifadə edən fiziki və ya hüquqi şəxs.",
         "Xidmət — https://sinedis.pl və https://greencard.agency internet saytları vasitəsilə əlçatan olan SINEDIS onlayn platforması.",
@@ -2367,8 +2367,8 @@ const az: RulesDictionary = {
       title: "Rəsmi məlumatlar",
       paragraphs: [
         "SINEDIS Spółka z ograniczoną odpowiedzialnością",
-        "ul. H. Dobrzańskiego Hubala 22D",
-        "01-473 Warszawa, Polska",
+        "ul. Przyrzecze 6",
+        "03-107 Warsaw, Poland",
         "",
         "KRS: 0000999636",
         "NIP: 5242953841",
@@ -2398,7 +2398,7 @@ const ro: RulesDictionary = {
     {
       title: "§ 1. Definiții",
       paragraphs: [
-        "SINEDIS — SINEDIS Spółka z ograniczoną odpowiedzialnością, ul. H. Dobrzańskiego Hubala 22D, 01-473 Warszawa, Polska, KRS: 0000999636, NIP: 5242953841, REGON: 52350998300000, e-mail: info@sinedis.pl.",
+        "SINEDIS — SINEDIS Spółka z ograniczoną odpowiedzialnością, ul. Przyrzecze 6, 03-107, Warszawa, Polska, KRS: 0000999636, NIP: 5242953841, REGON: 52350998300000, e-mail: info@sinedis.pl.",
         "SINEDIS este un agent de asigurare care acționează în numele mai multor societăți de asigurare în baza împuternicirilor acordate.",
         "Utilizator — persoană fizică sau juridică care utilizează serviciul SINEDIS sau Contact Center-ul.",
         "Serviciu — platforma online SINEDIS, disponibilă prin intermediul site-urilor https://sinedis.pl și https://greencard.agency.",
@@ -2515,8 +2515,8 @@ const ro: RulesDictionary = {
       title: "Date oficiale",
       paragraphs: [
         "SINEDIS Spółka z ograniczoną odpowiedzialnością",
-        "ul. H. Dobrzańskiego Hubala 22D",
-        "01-473 Warszawa, Polska",
+        "ul. Przyrzecze 6",
+        "03-107 Warsaw, Poland",
         "",
         "KRS: 0000999636",
         "NIP: 5242953841",
@@ -2546,7 +2546,7 @@ const sr: RulesDictionary = {
     {
       title: "§ 1. Definicije",
       paragraphs: [
-        "SINEDIS — SINEDIS Spółka z ograniczoną odpowiedzialnością, ul. H. Dobrzańskiego Hubala 22D, 01-473 Warszawa, Poljska, KRS: 0000999636, NIP: 5242953841, REGON: 52350998300000, e-mail: info@sinedis.pl.",
+        "SINEDIS — SINEDIS Spółka z ograniczoną odpowiedzialnością, ul. Przyrzecze 6, 03-107, Warszawa, Polska, KRS: 0000999636, NIP: 5242953841, REGON: 52350998300000, e-mail: info@sinedis.pl.",
         "SINEDIS je agent osiguranja koji deluje u ime više osiguravajućih društava na osnovu datih ovlašćenja.",
         "Korisnik — fizičko ili pravno lice koje koristi servis SINEDIS ili Contact Center.",
         "Servis — internet platforma SINEDIS dostupna putem sajtova https://sinedis.pl i https://greencard.agency.",
@@ -2663,8 +2663,8 @@ const sr: RulesDictionary = {
       title: "Zvanični podaci",
       paragraphs: [
         "SINEDIS Spółka z ograniczoną odpowiedzialnością",
-        "ul. H. Dobrzańskiego Hubala 22D",
-        "01-473 Warszawa, Poljska",
+        "ul. Przyrzecze 6",
+        "03-107 Warsaw, Poland",
         "",
         "KRS: 0000999636",
         "NIP: 5242953841",
@@ -2694,7 +2694,7 @@ const sq: RulesDictionary = {
     {
       title: "§ 1. Përkufizimet",
       paragraphs: [
-        "SINEDIS — SINEDIS Spółka z ograniczoną odpowiedzialnością, ul. H. Dobrzańskiego Hubala 22D, 01-473 Warszawa, Poloni, KRS: 0000999636, NIP: 5242953841, REGON: 52350998300000, e-mail: info@sinedis.pl.",
+        "SINEDIS — SINEDIS Spółka z ograniczoną odpowiedzialnością, ul. Przyrzecze 6, 03-107, Warszawa, Polska, KRS: 0000999636, NIP: 5242953841, REGON: 52350998300000, e-mail: info@sinedis.pl.",
         "SINEDIS është një agjent sigurimesh që vepron në emër të disa shoqërive të sigurimeve mbi bazën e autorizimeve të dhëna.",
         "Përdoruesi — person fizik ose juridik që përdor shërbimin SINEDIS ose Contact Center.",
         "Shërbimi — platforma online e SINEDIS, e disponueshme përmes faqeve https://sinedis.pl dhe https://greencard.agency.",
@@ -2811,8 +2811,8 @@ const sq: RulesDictionary = {
       title: "Të dhënat zyrtare",
       paragraphs: [
         "SINEDIS Spółka z ograniczoną odpowiedzialnością",
-        "ul. H. Dobrzańskiego Hubala 22D",
-        "01-473 Warszawa, Poloni",
+        "ul. Przyrzecze 6",
+        "03-107 Warsaw, Poland",
         "",
         "KRS: 0000999636",
         "NIP: 5242953841",
@@ -2842,7 +2842,7 @@ const mn: RulesDictionary = {
     {
       title: "§ 1. Тодорхойлолтууд",
       paragraphs: [
-        "SINEDIS — SINEDIS Spółka z ograniczoną odpowiedzialnością, ul. H. Dobrzańskiego Hubala 22D, 01-473 Warszawa, Polska, KRS: 0000999636, NIP: 5242953841, REGON: 52350998300000, e-mail: info@sinedis.pl.",
+        "SINEDIS — SINEDIS Spółka z ograniczoną odpowiedzialnością, ul. Przyrzecze 6, 03-107, Warszawa, Polska, KRS: 0000999636, NIP: 5242953841, REGON: 52350998300000, e-mail: info@sinedis.pl.",
         "SINEDIS нь олгогдсон итгэмжлэлийн үндсэн дээр хэд хэдэн даатгалын компанийн нэрийн өмнөөс үйл ажиллагаа явуулдаг даатгалын төлөөлөгч юм.",
         "Хэрэглэгч — SINEDIS үйлчилгээ эсвэл Contact Center-ийг ашиглаж буй хувь хүн эсвэл хуулийн этгээд.",
         "Үйлчилгээ — https://sinedis.pl болон https://greencard.agency вэбсайтаар дамжуулан ашиглах боломжтой SINEDIS-ийн интернет платформ.",
@@ -2959,8 +2959,8 @@ const mn: RulesDictionary = {
       title: "Албан ёсны мэдээлэл",
       paragraphs: [
         "SINEDIS Spółka z ograniczoną odpowiedzialnością",
-        "ul. H. Dobrzańskiego Hubala 22D",
-        "01-473 Warszawa, Polska",
+        "ul. Przyrzecze 6",
+        "03-107 Warsaw, Poland",
         "",
         "KRS: 0000999636",
         "NIP: 5242953841",
