@@ -33,16 +33,16 @@ export const ROUTE_LOCALES = {
 
 export const ROUTE_META = {
   "": { lastModified: "2026-08-23" },
-  "/about": { lastModified: "2026-07-17" },
+  "/about": { lastModified: "2026-10-08" },
   "/contacts": { lastModified: "2026-06-12" },
   "/routes": { lastModified: "2026-08-23" },
   "/product-info": { lastModified: "2026-05-08" },
-  "/rules": { lastModified: "2026-05-08" },
-  "/privacy": { lastModified: "2026-05-08" },
+  "/rules": { lastModified: "2026-10-08" },
+  "/privacy": { lastModified: "2026-10-08" },
   "/cookiepolicy": { lastModified: "2026-05-08" },
   "/experts/sergey-anatska": { lastModified: "2026-07-17" },
   "/europolis": {
-    lastModified: "2026-09-29",
+    lastModified: "2026-10-08",
     review: {
       authorId: "sergey-anatska",
       reviewerId: "sergey-anatska",
