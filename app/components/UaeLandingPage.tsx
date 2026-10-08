@@ -6,6 +6,7 @@ import type { UaeOcDictionary } from "@/app/dictionaries/seo-landings/uaeOc";
 import { keepTypography } from "@/app/utils/typography";
 import styles from "./UaeLandingPage.module.css";
 import TariffCards from "@/app/components/TariffCards";
+import type { PriceVehicle } from "@/app/lib/insurancePrices";
 import RelatedRoutes from "@/app/components/RelatedRoutes";
 import { getRoutesDictionary } from "@/app/dictionaries/routes";
 
@@ -14,6 +15,8 @@ type UaeLandingPageProps = {
   dictionary: UaeOcDictionary;
   review: InsuranceContentReview;
   pagePath?: string;
+  tariffsBeforeDocuments?: boolean;
+  tariffVehicleTypes?: readonly PriceVehicle[];
 };
 
 const homeCrumbByLang: Record<Lang, string> = {
@@ -45,8 +48,16 @@ function toneClass(tone: UaeOcDictionary["answers"][number]["tone"]) {
   return styles.answerNo;
 }
 
-export default function UaeLandingPage({ lang, dictionary: t, review, pagePath }: UaeLandingPageProps) {
+export default function UaeLandingPage({ lang, dictionary: t, review, pagePath, tariffsBeforeDocuments = false, tariffVehicleTypes }: UaeLandingPageProps) {
   const routesDictionary = getRoutesDictionary(lang);
+  const tariffCards = (
+    <TariffCards
+      lang={lang}
+      vehicleTypes={tariffVehicleTypes}
+      title={tariffVehicleTypes ? t.price.title : undefined}
+      description={tariffVehicleTypes ? t.price.text : undefined}
+    />
+  );
   return (
     <div className={styles.uaeLanding}>
       <nav aria-label="Breadcrumb" className={`route-breadcrumb container ${styles.breadcrumb}`}>
@@ -165,6 +176,8 @@ export default function UaeLandingPage({ lang, dictionary: t, review, pagePath }
         </div>
       </section>
 
+      {tariffsBeforeDocuments && tariffCards}
+
       <section className={`${styles.section} ${styles.sectionSoft}`} id="documents">
         <div className={styles.sectionHeader}>
           <p className={styles.eyebrow}>{t.documents.eyebrow}</p>
@@ -234,7 +247,7 @@ export default function UaeLandingPage({ lang, dictionary: t, review, pagePath }
         </ol>
       </section>
 
-      <TariffCards lang={lang} />
+      {!tariffsBeforeDocuments && tariffCards}
 
       <section className={styles.section}>
         <div className={styles.split}>

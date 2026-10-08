@@ -23,6 +23,7 @@ const SITEMAP_MAIN_ROUTES = [
   "/about",
   "/contacts",
   "/routes",
+  "/europolis",
   "/experts/sergey-anatska",
 ] as const satisfies readonly AppRoute[];
 const SITEMAP_ROUTE_ROUTES = [
