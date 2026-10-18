@@ -59,6 +59,8 @@ assert(!sitemapSource.includes("/kk/route/belarus/poland"), "/kk/route/belarus/p
 const routeLocalesBody = `${seoSource}\n${registrySource}`;
 const belarusPolandLocales = registrySource.match(/defineRoute\("belarus", "poland", \[([^\]]+)\]/)?.[1] ?? "";
 assert(belarusPolandLocales.includes('"kk"'), "kk must be included in /route/belarus/poland hreflang/static params");
+const algeriaFranceLocales = registrySource.match(/defineRoute\("algeria", "france", \[([^\]]+)\]/)?.[1] ?? "";
+assert(algeriaFranceLocales.includes('"ru"'), "ru must be included in /route/algeria/france hreflang/static params");
 const unchangedRouteLocales = {
   "belarus/lithuania": ["ru", "en", "be", "ka", "hy", "ar"],
   "georgia/romania": ["ru", "en", "be", "ka", "kk"],
