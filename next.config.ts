@@ -7,6 +7,17 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: "/:path*",
+        has: [
+          {
+            type: "host",
+            value: "www.greencard.agency",
+          },
+        ],
+        destination: "https://greencard.agency/:path*",
+        permanent: true,
+      },
+      {
         source: `/:lang(${SUPPORTED_LOCALE_PATTERN})/belarus-poland-oc`,
         destination: "/:lang/route/belarus/poland",
         permanent: true,
