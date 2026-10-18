@@ -16,6 +16,16 @@ const model = sources["app/officialSources/sources.ts"];
 const dict = sources["app/dictionaries/officialSources.ts"];
 const component = sources["app/components/OfficialSources.tsx"];
 const combined = Object.values(sources).join("\n");
+const addressFiles = [
+  "app/officialSources/sources.ts",
+  "app/dictionaries/about.ts",
+  "app/dictionaries/privacyPolicy.ts",
+  "app/dictionaries/rules.ts",
+  "email-templates/oc-graniczne/05-insurance-agent-info.html",
+];
+const addressContent = addressFiles
+  .map((file) => readFileSync(file, "utf8"))
+  .join("\n");
 
 function assert(condition, message) {
   if (!condition) throw new Error(message);
@@ -29,6 +39,14 @@ assert(model.includes('krs: "0000999636"'), "KRS mismatch");
 assert(model.includes('nip: "5242953841"'), "NIP mismatch");
 assert(model.includes('regon: "52350998300000"'), "REGON mismatch");
 assert(model.includes('ul. Przyrzecze 6') && model.includes('03-107 Warszawa') && model.includes('Polska'), "address mismatch");
+const addressOccurrences = addressContent.match(/ul\. Przyrzecze 6/g)?.length ?? 0;
+const canonicalInlineAddresses = addressContent.match(/ul\. Przyrzecze 6, 03-107 Warszawa, Polska/g)?.length ?? 0;
+const canonicalBlockAddresses = addressContent.match(/"ul\. Przyrzecze 6",\s*"03-107 Warszawa",\s*"Polska"/g)?.length ?? 0;
+const canonicalHtmlAddresses = addressContent.match(/ul\. Przyrzecze 6<br>03-107 Warszawa<br>Polska/g)?.length ?? 0;
+assert(
+  addressOccurrences === canonicalInlineAddresses + canonicalBlockAddresses + canonicalHtmlAddresses,
+  "all SINEDIS addresses must use: ul. Przyrzecze 6 / 03-107 Warszawa / Polska",
+);
 assert(model.includes('url: "https://isap.sejm.gov.pl/isap.nsf/download.xsp/WDU20170002486/U/D20172486Lj.pdf"'), "ISAP URL mismatch");
 assert(model.includes('internalPath: "/product-info"'), "product-info must use localized internal path");
 assert(model.includes('powerOfAttorneyNumber: "07447/2024"'), "WARTA authorization number mismatch");
