@@ -26,7 +26,6 @@ type RouteMeta = {
 };
 
 export const ROUTE_LOCALES = {
-  uae: ["ru", "en", "ar"],
   europolis: ["ru", "en", "ka", "uk"],
   "experts/sergey-anatska": ["ru", "pl", "en", "be"],
 } as const satisfies Record<string, readonly Lang[]>;
@@ -83,18 +82,6 @@ export const ROUTE_META = {
       reviewedAt: "2026-07-17",
     },
     pageType: "insurance-route", },
-  "/route/uae": {
-    lastModified: "2026-08-23",
-    review: {
-      authorId: "sergey-anatska",
-      reviewerId: "sergey-anatska",
-      reviewedAt: "2026-07-02",
-    },
-    pageType: "insurance-route",
-    hreflangOverrides: {
-      ar: "ar-AE",
-    },
-  },
   "/route/uae/bulgaria": {
     lastModified: "2026-08-23",
     review: {
