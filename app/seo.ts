@@ -31,17 +31,29 @@ export const ROUTE_LOCALES = {
 } as const satisfies Record<string, readonly Lang[]>;
 
 export const ROUTE_META = {
-  "": { lastModified: "2026-08-23" },
-  "/about": { lastModified: "2026-07-17" },
+  "": {
+    lastModified: "2026-08-23",
+    lastModifiedByLocale: {
+      ru: "2026-10-19",
+      en: "2026-10-19",
+      ar: "2026-10-19",
+    },
+  },
+  "/about": { lastModified: "2026-10-18" },
   "/contacts": { lastModified: "2026-06-12" },
-  "/routes": { lastModified: "2026-08-23" },
+  "/routes": {
+    lastModified: "2026-08-23",
+    lastModifiedByLocale: {
+      ru: "2026-10-18",
+    },
+  },
   "/product-info": { lastModified: "2026-05-08" },
   "/rules": { lastModified: "2026-05-08" },
   "/privacy": { lastModified: "2026-05-08" },
   "/cookiepolicy": { lastModified: "2026-05-08" },
   "/experts/sergey-anatska": { lastModified: "2026-07-17" },
   "/europolis": {
-    lastModified: "2026-09-29",
+    lastModified: "2026-10-19",
     review: {
       authorId: "sergey-anatska",
       reviewerId: "sergey-anatska",
@@ -83,7 +95,7 @@ export const ROUTE_META = {
     },
     pageType: "insurance-route", },
   "/route/uae/bulgaria": {
-    lastModified: "2026-08-23",
+    lastModified: "2026-10-19",
     review: {
       authorId: "sergey-anatska",
       reviewerId: "sergey-anatska",
@@ -104,7 +116,7 @@ export const ROUTE_META = {
     pageType: "insurance-route",
   },
   "/route/uae/greece": {
-    lastModified: "2026-08-23",
+    lastModified: "2026-10-19",
     review: {
       authorId: "sergey-anatska",
       reviewerId: "sergey-anatska",
@@ -116,7 +128,7 @@ export const ROUTE_META = {
     },
   },
   "/route/albania/bulgaria": {
-    lastModified: "2026-08-23",
+    lastModified: "2026-10-19",
     review: {
       authorId: "sergey-anatska",
       reviewerId: "sergey-anatska",
@@ -126,7 +138,7 @@ export const ROUTE_META = {
   },
 
   "/route/algeria/france": {
-    lastModified: "2026-08-23",
+    lastModified: "2026-10-19",
     review: {
       authorId: "sergey-anatska",
       reviewerId: "sergey-anatska",
