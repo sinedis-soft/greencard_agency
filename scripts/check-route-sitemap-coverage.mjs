@@ -66,7 +66,6 @@ const unchangedRouteLocales = {
   "georgia/romania": ["ru", "en", "be", "ka", "kk"],
   "georgia/bulgaria": ["ru", "en", "ka", "hy", "ar"],
   "kazakhstan/poland": ["ru", "kk", "en", "ar"],
-  uae: ["ru", "en", "ar"],
   "uae/bulgaria": ["ru", "en", "ar"],
   "uae/greece": ["ru", "en", "ar"],
   "albania/bulgaria": ["ru", "en", "sq"],
@@ -91,4 +90,4 @@ assert(nextConfigSource.includes("source: `/:lang(${SUPPORTED_LOCALE_PATTERN})/b
 assert(nextConfigSource.includes('destination: "/:lang/route/belarus/poland"'), "Legacy Belarus-Poland redirect destination must remain unchanged");
 assert(nextConfigSource.match(/belarus-poland-oc`[\s\S]*?destination: "\/:lang\/route\/belarus\/poland"[\s\S]*?permanent: true/), "Legacy Belarus-Poland redirect must remain permanent");
 
-console.log(`ok route sitemap coverage (${pageRoutes.length} indexed origin/destination route page files; generic /route/uae checked separately)`);
+console.log(`ok route sitemap coverage (${pageRoutes.length} indexed origin/destination route page files)`);
