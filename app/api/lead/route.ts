@@ -232,7 +232,11 @@ type AttributionField =
   | "utm_term"
   | "gclid"
   | "language"
-  | "route";
+  | "locale"
+  | "route"
+  | "origin_country"
+  | "destination_country"
+  | "vehicle_type";
 
 type AttributionData = Partial<Record<AttributionField, string>>;
 
@@ -247,7 +251,11 @@ const attributionFields: AttributionField[] = [
   "utm_term",
   "gclid",
   "language",
+  "locale",
   "route",
+  "origin_country",
+  "destination_country",
+  "vehicle_type",
 ];
 
 const attributionMaxLength: Record<AttributionField, number> = {
@@ -261,7 +269,11 @@ const attributionMaxLength: Record<AttributionField, number> = {
   utm_term: 160,
   gclid: 200,
   language: 10,
+  locale: 10,
   route: 120,
+  origin_country: 80,
+  destination_country: 80,
+  vehicle_type: 80,
 };
 
 function normalizeUrlValue(value: string): string {
