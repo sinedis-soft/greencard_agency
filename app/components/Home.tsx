@@ -13,7 +13,6 @@ import { belarusLithuaniaOcDictionary } from "@/app/dictionaries/seo-landings/be
 import { getKazakhstanPolandOcDictionary } from "@/app/dictionaries/seo-landings/kazakhstanPolandOc";
 import { getGeorgiaBulgariaOcDictionary } from "@/app/dictionaries/seo-landings/georgiaBulgariaOc";
 import { getGeorgiaGreeceOcDictionary } from "@/app/dictionaries/seo-landings/georgiaGreeceOc";
-import { getUaeOcDictionary } from "@/app/dictionaries/seo-landings/uaeOc";
 import { getUaeBulgariaOcDictionary } from "@/app/dictionaries/seo-landings/uaeBulgariaOc";
 import { getUaeGreeceOcDictionary } from "@/app/dictionaries/seo-landings/uaeGreeceOc";
 import { getAlbaniaBulgariaOcDictionary } from "@/app/dictionaries/seo-landings/albaniaBulgariaOc";
@@ -31,7 +30,6 @@ export default function Home({ lang }: { lang: Lang }) {
   const kazakhstanPoland = getKazakhstanPolandOcDictionary(lang);
   const georgiaBulgaria = getGeorgiaBulgariaOcDictionary(lang);
   const georgiaGreece = getGeorgiaGreeceOcDictionary(lang);
-  const uaeOc = getUaeOcDictionary(lang);
   const uaeBulgaria = getUaeBulgariaOcDictionary(lang);
   const uaeGreece = getUaeGreeceOcDictionary(lang);
   const albaniaBulgaria = getAlbaniaBulgariaOcDictionary(lang);
@@ -64,15 +62,6 @@ export default function Home({ lang }: { lang: Lang }) {
           title: belarusLithuania.carousel.cardTitle,
           text: belarusLithuania.carousel.cardText,
           cta: belarusLithuania.carousel.cta,
-        }
-      : null,
-
-    isRouteLocaleIndexable(lang, "/route/uae")
-      ? {
-          href: `/${lang}/route/uae`,
-          title: uaeOc.carousel.cardTitle,
-          text: uaeOc.carousel.cardText,
-          cta: uaeOc.carousel.cta,
         }
       : null,
 
