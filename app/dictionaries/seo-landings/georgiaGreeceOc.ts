@@ -36,7 +36,7 @@ const ru: BelarusPolandOcDictionary = {
       "В Зеленой карте или нашей страховке код GR — Греция — не исключен из покрытия.",
       "Срок действия страховки полностью охватывает даты нахождения в Турции и Греции.",
       "Регистрационный номер, VIN и данные автомобиля в страховых документах совпадают с техпаспортом.",
-      "ВАЖНО! При приобретении полиса у нас ваш номерной знак должен быть не длиннее 8 символов и в номерном знаке должны отсутствовать буквы 'Q'",
+      "ВАЖНО! При приобретении полиса у нас ваш номерной знак должен быть не длиннее 9 символов и в номерном знаке должны отсутствовать буквы 'Q'",
     ],
   },
 
@@ -169,7 +169,7 @@ const ka: BelarusPolandOcDictionary = {
       "Green Card-ში ან ჩვენს მიერ გაფორმებულ დაზღვევაში საბერძნეთის კოდი GR არ არის გამორიცხული დაფარვიდან.",
       "დაზღვევის მოქმედების ვადა სრულად მოიცავს თურქეთსა და საბერძნეთში ყოფნის პერიოდს.",
       "სადაზღვევო დოკუმენტებში მითითებული სანომრე ნიშანი, VIN და ავტომობილის მონაცემები ემთხვევა ავტომობილის რეგისტრაციის მოწმობის მონაცემებს.",
-      "მნიშვნელოვანია! ჩვენთან პოლისის შეძენის შემთხვევაში სანომრე ნიშანი არ უნდა შეიცავდეს 8-ზე მეტ სიმბოლოს და მასში არ უნდა იყოს ასო „Q“.",
+      "მნიშვნელოვანია! ჩვენთან პოლისის შეძენის შემთხვევაში სანომრე ნიშანი არ უნდა შეიცავდეს 9-ზე მეტ სიმბოლოს და მასში არ უნდა იყოს ასო „Q“.",
     ],
   },
 
@@ -303,7 +303,7 @@ const en: BelarusPolandOcDictionary = {
       "Greece (GR) is not excluded from your Green Card or from the insurance policy we arrange for you.",
       "The insurance remains valid for the entire period you will be driving in Turkey and Greece.",
       "The registration number, VIN, and other vehicle details shown on the insurance documents match the vehicle registration certificate.",
-      "IMPORTANT: If you purchase the policy through us, your registration plate must contain no more than 8 characters and must not include the letter “Q”.",
+      "IMPORTANT: If you purchase the policy through us, your registration plate must contain no more than 9 characters and must not include the letter “Q”.",
     ],
   },
 

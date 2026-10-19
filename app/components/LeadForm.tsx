@@ -59,7 +59,7 @@ function formatPlate(raw: string): string {
     .replace(/[^A-Za-z0-9-]/g, "")
     .replace(/Q/gi, "")
     .toUpperCase()
-    .slice(0, 8);
+    .slice(0, 9);
 }
 
 function formatVIN(raw: string): string {
@@ -980,8 +980,8 @@ export default function LeadForm(props: { lang: Lang; showOrderSummary?: boolean
                           className="input"
                           required
                           minLength={4}
-                          maxLength={8}
-                          pattern="[A-PR-Z0-9-]{4,8}"
+                          maxLength={9}
+                          pattern="[A-PR-Z0-9-]{4,9}"
                           onChange={(e) => {
                             e.currentTarget.value = formatPlate(e.currentTarget.value);
                           }}

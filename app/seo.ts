@@ -107,7 +107,7 @@ export const ROUTE_META = {
     },
   },
   "/route/georgia/greece": {
-    lastModified: "2026-08-23",
+    lastModified: "2026-10-19",
     review: {
       authorId: "sergey-anatska",
       reviewerId: "sergey-anatska",
