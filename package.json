@@ -12,6 +12,11 @@
     "check:sitemaps": "node scripts/check-sitemaps.mjs",
     "check:route-sitemap": "node scripts/check-route-sitemap-coverage.mjs",
     "check:route-links": "node scripts/check-route-links.mjs",
+    "check:retired-route-urls": "npm run build && node scripts/check-retired-route-urls.mjs",
+    "check:route-languages": "npm run build && node scripts/check-route-languages.mjs",
+    "report:route-languages": "npm run build && node scripts/check-route-languages.mjs --report reports/route-language-report.md",
+    "check:route-alternates": "npm run build && node scripts/check-route-alternates.mjs",
+    "report:route-alternates": "npm run build && node scripts/check-route-alternates.mjs --report reports/route-alternates-report.md",
     "test:routes": "node scripts/test-related-routes.mjs",
     "check:i18n": "node scripts/check-i18n.mjs",
     "check:practice": "node scripts/check-practice-content.mjs && node scripts/check-practice-metrics.mjs && node scripts/check-practice-safety.mjs"

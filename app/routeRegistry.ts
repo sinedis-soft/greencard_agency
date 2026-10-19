@@ -53,7 +53,7 @@ export const ROUTE_DEFINITIONS = [
   defineRoute("uae", "bulgaria", ["ru", "en", "ar"], getUaeBulgariaOcDictionary, 60),
   defineRoute("uae", "greece", ["ru", "en", "ar"], getUaeGreeceOcDictionary, 59),
   defineRoute("albania", "bulgaria", ["ru", "en", "sq"], getAlbaniaBulgariaOcDictionary, 50),
-  defineRoute("algeria", "france", ["ar", "en"], getAlgeriaFranceOcDictionary, 40),
+  defineRoute("algeria", "france", ["ru", "ar", "en"], getAlgeriaFranceOcDictionary, 40),
 ] as const satisfies readonly RouteDefinition[];
 
 export const INDEXABLE_ROUTE_PATHS = ROUTE_DEFINITIONS.map(

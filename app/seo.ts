@@ -26,23 +26,34 @@ type RouteMeta = {
 };
 
 export const ROUTE_LOCALES = {
-  uae: ["ru", "en", "ar"],
   europolis: ["ru", "en", "ka", "uk"],
   "experts/sergey-anatska": ["ru", "pl", "en", "be"],
 } as const satisfies Record<string, readonly Lang[]>;
 
 export const ROUTE_META = {
-  "": { lastModified: "2026-08-23" },
-  "/about": { lastModified: "2026-07-17" },
+  "": {
+    lastModified: "2026-08-23",
+    lastModifiedByLocale: {
+      ru: "2026-10-19",
+      en: "2026-10-19",
+      ar: "2026-10-19",
+    },
+  },
+  "/about": { lastModified: "2026-10-18" },
   "/contacts": { lastModified: "2026-06-12" },
-  "/routes": { lastModified: "2026-08-23" },
+  "/routes": {
+    lastModified: "2026-08-23",
+    lastModifiedByLocale: {
+      ru: "2026-10-18",
+    },
+  },
   "/product-info": { lastModified: "2026-05-08" },
   "/rules": { lastModified: "2026-05-08" },
   "/privacy": { lastModified: "2026-05-08" },
   "/cookiepolicy": { lastModified: "2026-05-08" },
   "/experts/sergey-anatska": { lastModified: "2026-07-17" },
   "/europolis": {
-    lastModified: "2026-09-29",
+    lastModified: "2026-10-19",
     review: {
       authorId: "sergey-anatska",
       reviewerId: "sergey-anatska",
@@ -83,20 +94,8 @@ export const ROUTE_META = {
       reviewedAt: "2026-07-17",
     },
     pageType: "insurance-route", },
-  "/route/uae": {
-    lastModified: "2026-08-23",
-    review: {
-      authorId: "sergey-anatska",
-      reviewerId: "sergey-anatska",
-      reviewedAt: "2026-07-02",
-    },
-    pageType: "insurance-route",
-    hreflangOverrides: {
-      ar: "ar-AE",
-    },
-  },
   "/route/uae/bulgaria": {
-    lastModified: "2026-08-23",
+    lastModified: "2026-10-19",
     review: {
       authorId: "sergey-anatska",
       reviewerId: "sergey-anatska",
@@ -108,7 +107,7 @@ export const ROUTE_META = {
     },
   },
   "/route/georgia/greece": {
-    lastModified: "2026-08-23",
+    lastModified: "2026-10-19",
     review: {
       authorId: "sergey-anatska",
       reviewerId: "sergey-anatska",
@@ -117,7 +116,7 @@ export const ROUTE_META = {
     pageType: "insurance-route",
   },
   "/route/uae/greece": {
-    lastModified: "2026-08-23",
+    lastModified: "2026-10-19",
     review: {
       authorId: "sergey-anatska",
       reviewerId: "sergey-anatska",
@@ -129,7 +128,7 @@ export const ROUTE_META = {
     },
   },
   "/route/albania/bulgaria": {
-    lastModified: "2026-08-23",
+    lastModified: "2026-10-19",
     review: {
       authorId: "sergey-anatska",
       reviewerId: "sergey-anatska",
@@ -139,7 +138,7 @@ export const ROUTE_META = {
   },
 
   "/route/algeria/france": {
-    lastModified: "2026-08-23",
+    lastModified: "2026-10-19",
     review: {
       authorId: "sergey-anatska",
       reviewerId: "sergey-anatska",

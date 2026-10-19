@@ -47,7 +47,7 @@ const ar: UaeOcDictionary = {
       label: "يمكن تقديم الطلب",
       title: "للسيارات التي تحمل لوحات جزائرية",
       text:
-        "نراجع طلبات التأمين للسيارات المسجّلة في الجزائر والمتجهة إلى فرنسا. وتُؤكد إمكانية الإصدار بعد التحقق من وثيقة تسجيل السيارة ونوع المركبة وخط الرحلة. مهم! يجب ألا يتجاوز رقم لوحة تسجيل السيارة 8 خانات، ويجب ألا يحتوي على الحرف «Q».",
+        "نراجع طلبات التأمين للسيارات المسجّلة في الجزائر والمتجهة إلى فرنسا. وتُؤكد إمكانية الإصدار بعد التحقق من وثيقة تسجيل السيارة ونوع المركبة وخط الرحلة. مهم! يجب ألا يتجاوز رقم لوحة تسجيل السيارة 9 خانات، ويجب ألا يحتوي على الحرف «Q».",
     },
     {
       tone: "warning",
@@ -339,7 +339,7 @@ const ru: UaeOcDictionary = {
       label: "Можно подать заявку",
       title: "Для автомобилей с алжирскими номерами",
       text:
-        "Мы рассматриваем заявки на страхование автомобилей, зарегистрированных в Алжире и следующих во Францию. Возможность оформления подтверждается после проверки свидетельства о регистрации, типа транспортного средства и маршрута поездки. ВАЖНО! Регистрационная таблица автомобиля должна содержать не более 8 символов. В ней не должно быть буквы 'Q'",
+        "Мы рассматриваем заявки на страхование автомобилей, зарегистрированных в Алжире и следующих во Францию. Возможность оформления подтверждается после проверки свидетельства о регистрации, типа транспортного средства и маршрута поездки. ВАЖНО! Регистрационная таблица автомобиля должна содержать не более 9 символов. В ней не должно быть буквы 'Q'",
     },
     {
       tone: "warning",
@@ -631,7 +631,7 @@ const pl: UaeOcDictionary = {
       label: "Można złożyć wniosek",
       title: "Dla pojazdów z algierskimi tablicami rejestracyjnymi",
       text:
-        "Rozpatrujemy wnioski dotyczące ubezpieczenia pojazdów zarejestrowanych w Algierii i podróżujących do Francji. Możliwość wystawienia polisy potwierdzamy po sprawdzeniu dowodu rejestracyjnego, rodzaju pojazdu oraz trasy podróży. WAŻNE! Numer rejestracyjny pojazdu może zawierać maksymalnie 8 znaków i nie może zawierać litery „Q”.",
+        "Rozpatrujemy wnioski dotyczące ubezpieczenia pojazdów zarejestrowanych w Algierii i podróżujących do Francji. Możliwość wystawienia polisy potwierdzamy po sprawdzeniu dowodu rejestracyjnego, rodzaju pojazdu oraz trasy podróży. WAŻNE! Numer rejestracyjny pojazdu może zawierać maksymalnie 9 znaków i nie może zawierać litery „Q“.",
     },
     {
       tone: "warning",
@@ -923,7 +923,7 @@ const en: UaeOcDictionary = {
       label: "Applications are accepted",
       title: "For vehicles with Algerian registration plates",
       text:
-        "We review insurance applications for vehicles registered in Algeria and travelling to France. Eligibility is confirmed after we check the vehicle registration document, vehicle type, and travel route. IMPORTANT! The vehicle registration number must contain no more than 8 characters and must not include the letter 'Q'.",
+        "We review insurance applications for vehicles registered in Algeria and travelling to France. Eligibility is confirmed after we check the vehicle registration document, vehicle type, and travel route. IMPORTANT! The vehicle registration number must contain no more than 9 characters and must not include the letter 'Q'.",
     },
     {
       tone: "warning",
@@ -1215,7 +1215,7 @@ const be: UaeOcDictionary = {
       label: "Можна падаць заяўку",
       title: "Для аўтамабіляў з алжырскімі нумарамі",
       text:
-        "Мы разглядаем заяўкі на страхаванне аўтамабіляў, зарэгістраваных у Алжыры і якія накіроўваюцца ў Францыю. Магчымасць афармлення пацвярджаецца пасля праверкі пасведчання аб рэгістрацыі, тыпу транспартнага сродку і маршруту паездкі. ВАЖНА! Рэгістрацыйны нумар аўтамабіля павінен змяшчаць не больш за 8 сімвалаў і не павінен утрымліваць літару «Q».",
+        "Мы разглядаем заяўкі на страхаванне аўтамабіляў, зарэгістраваных у Алжыры і якія накіроўваюцца ў Францыю. Магчымасць афармлення пацвярджаецца пасля праверкі пасведчання аб рэгістрацыі, тыпу транспартнага сродку і маршруту паездкі. ВАЖНА! Рэгістрацыйны нумар аўтамабіля павінен змяшчаць не больш за 9 сімвалаў і не павінен утрымліваць літару «Q».",
     },
     {
       tone: "warning",

@@ -28,8 +28,6 @@ const SITEMAP_MAIN_ROUTES = [
 ] as const satisfies readonly AppRoute[];
 const SITEMAP_ROUTE_ROUTES = [
   ...(INDEXABLE_ROUTE_PATHS as AppRoute[]),
-  // Generic UAE landing is indexable but is not an origin/destination route.
-  "/route/uae",
 ] as const satisfies readonly AppRoute[];
 
 export const SITEMAP_SECTIONS = [

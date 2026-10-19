@@ -17,6 +17,7 @@ const ROUTE_DICTIONARIES = {
   "uae/greece": "app/dictionaries/seo-landings/uaeGreeceOc.ts",
   "albania/bulgaria": "app/dictionaries/seo-landings/albaniaBulgariaOc.ts",
   "algeria/france": "app/dictionaries/seo-landings/algeriaFranceOc.ts",
+  europolis: "app/dictionaries/seo-landings/europolis.ts",
   uae: "app/dictionaries/seo-landings/uaeOc.ts",
   "experts/sergey-anatska": "app/dictionaries/experts/sergeyAnatska.ts",
 };
@@ -74,6 +75,19 @@ const DEFAULT_REQUIRED_LEGAL_FIELDS = [
 ];
 
 const ROUTE_REQUIRED_LEGAL_FIELDS = {
+  europolis: [
+    "seo.title",
+    "seo.description",
+    "hero.title",
+    "hero.notice",
+    "suitability.text",
+    "coverage.text",
+    "documents.text",
+    "price.text",
+    "timing.text",
+    "steps.items",
+    "faq.items",
+  ],
   uae: [
     "seo.title",
     "seo.description",

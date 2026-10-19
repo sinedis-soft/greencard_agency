@@ -9,6 +9,10 @@ import TariffCards from "@/app/components/TariffCards";
 import type { PriceVehicle } from "@/app/lib/insurancePrices";
 import RelatedRoutes from "@/app/components/RelatedRoutes";
 import { getRoutesDictionary } from "@/app/dictionaries/routes";
+import LeadForm from "@/app/components/LeadForm";
+import { BusinessHoursBanner } from "@/app/components/BusinessHoursBanner";
+import { getHomeDictionary } from "@/app/dictionaries/home";
+import RouteAttribution from "@/app/components/RouteAttribution";
 
 type UaeLandingPageProps = {
   lang: Lang;
@@ -50,6 +54,7 @@ function toneClass(tone: UaeOcDictionary["answers"][number]["tone"]) {
 
 export default function UaeLandingPage({ lang, dictionary: t, review, pagePath, tariffsBeforeDocuments = false, tariffVehicleTypes }: UaeLandingPageProps) {
   const routesDictionary = getRoutesDictionary(lang);
+  const homeDictionary = getHomeDictionary(lang);
   const tariffCards = (
     <TariffCards
       lang={lang}
@@ -60,6 +65,7 @@ export default function UaeLandingPage({ lang, dictionary: t, review, pagePath, 
   );
   return (
     <div className={styles.uaeLanding}>
+      {pagePath ? <RouteAttribution lang={lang} pagePath={pagePath} /> : null}
       <nav aria-label="Breadcrumb" className={`route-breadcrumb container ${styles.breadcrumb}`}>
         <ol className="route-breadcrumb__list">
           <li>
@@ -285,16 +291,20 @@ export default function UaeLandingPage({ lang, dictionary: t, review, pagePath, 
 
       <RelatedRoutes lang={lang} currentPath={pagePath} currentOrigin={pagePath ? undefined : "uae"} />
 
-      <section className={styles.finalCta} id="buy">
-        <div>
-          <p className={styles.finalCtaEyebrow}>{t.finalCta.eyebrow}</p>
-          <h2>{keepTypography(t.finalCta.title)}</h2>
-          <p>{t.finalCta.text}</p>
-        </div>
+      <section className="section" id="buy">
+        <div className="container">
+          <div className="section__hd">
+            <div>
+              <h2 className="section__title">{keepTypography(homeDictionary.form.title)}</h2>
+              <p className="section__desc">{homeDictionary.form.desc}</p>
+              <BusinessHoursBanner dict={homeDictionary.businessHours} />
+            </div>
+          </div>
 
-        <a className={`${styles.button} ${styles.buttonPrimary} ${styles.buttonLarge}`} href={`/${lang}#buy`}>
-          {t.finalCta.button}
-        </a>
+          <div className="lead-form-shell">
+            <LeadForm lang={lang} />
+          </div>
+        </div>
       </section>
     </div>
   );

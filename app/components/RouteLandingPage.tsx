@@ -10,6 +10,7 @@ import { keepTypography } from "@/app/utils/typography";
 import styles from "./RouteLandingPage.module.css";
 import RelatedRoutes from "@/app/components/RelatedRoutes";
 import { getRoutesDictionary } from "@/app/dictionaries/routes";
+import RouteAttribution from "@/app/components/RouteAttribution";
 
 type RouteLandingPageProps = {
   lang: Lang;
@@ -226,6 +227,7 @@ export default function RouteLandingPage({
 
   return (
     <>
+      <RouteAttribution lang={lang} pagePath={pagePath} />
       <nav aria-label="Breadcrumb" className="route-breadcrumb container">
         <ol className="route-breadcrumb__list">
           <li>
