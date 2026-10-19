@@ -8,6 +8,7 @@ import { getLeadFormDictionary } from "@/app/dictionaries/leadForm";
 import { getPolicyPrice, formatCurrency } from "@/app/lib/insurancePrices";
 import SubmissionModal from "@/app/components/SubmissionModal";
 import { trackFunnelEvent } from "@/app/lib/analytics";
+import { readStoredRouteAttribution } from "@/app/components/RouteAttribution";
 
 type FormStatus = "idle" | "loading" | "success" | "error";
 type SubmitOutcome = "none" | "success" | "partial";
@@ -135,18 +136,38 @@ function appendAttribution(formData: FormData, lang: Lang) {
   if (typeof window === "undefined") return;
 
   const currentUrl = new URL(window.location.href);
-  const route = currentUrl.pathname.split("/").filter(Boolean).slice(1).join("/") || "home";
+  const pathParts = currentUrl.pathname.split("/").filter(Boolean);
+  const isRoutePage = pathParts[1] === "route" && pathParts.length >= 4;
+  const isOrderPage = pathParts[1] === "order";
+  const stored = isOrderPage ? readStoredRouteAttribution() : null;
+  const route = isRoutePage
+    ? pathParts.slice(1).join("/")
+    : stored?.route || pathParts.slice(1).join("/") || "home";
+  const landingPage = isRoutePage
+    ? `${currentUrl.origin}${currentUrl.pathname}`
+    : stored?.landingPage || `${currentUrl.origin}${currentUrl.pathname}`;
+  const locale = isRoutePage ? lang : stored?.locale || lang;
+  const originCountry = isRoutePage ? pathParts[2] : stored?.originCountry;
+  const destinationCountry = isRoutePage ? pathParts[3] : stored?.destinationCountry;
 
-  formData.append("landing_page", safeUrl(`${currentUrl.origin}${currentUrl.pathname}`));
+  formData.append("landing_page", safeUrl(landingPage));
   formData.append("page_url", safeUrl(window.location.href));
   formData.append("referrer", safeUrl(document.referrer));
   formData.append("language", lang);
+  formData.append("locale", locale);
   formData.append("route", route.slice(0, 120));
+  if (originCountry) formData.append("origin_country", originCountry.slice(0, 80));
+  if (destinationCountry) formData.append("destination_country", destinationCountry.slice(0, 80));
+
+  const vehicleType = formData.get("vehicles[0][vehicleType]");
+  if (typeof vehicleType === "string" && vehicleType) {
+    formData.append("vehicle_type", vehicleType.slice(0, 80));
+  }
 
   const allowed = ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term", "gclid"] as const;
 
   for (const key of allowed) {
-    const value = currentUrl.searchParams.get(key);
+    const value = currentUrl.searchParams.get(key) || stored?.utm[key];
     if (value) formData.append(key, value.slice(0, 200));
   }
 }
