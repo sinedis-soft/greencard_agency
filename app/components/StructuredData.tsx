@@ -5,6 +5,7 @@ import {
 } from "@/app/entityIds";
 import { routeLastModified, SITE_URL, toAbsolute, type AppRoute } from "@/app/seo";
 import { getRoutesDictionary } from "@/app/dictionaries/routes";
+import { PRICES_EUR } from "@/app/lib/insurancePrices";
 
 type JsonLdProps = {
   data: Record<string, unknown> | Array<Record<string, unknown>>;
@@ -64,6 +65,14 @@ const OPENING_HOURS = [
 ];
 
 const AVAILABLE_LANGUAGES = [...LOCALES];
+
+const PASSENGER_CAR_PRICE_RANGE_PLN = (() => {
+  const prices = Object.values(PRICES_EUR.car).filter(
+    (price): price is number => typeof price === "number",
+  );
+
+  return `${Math.min(...prices).toFixed(2)}–${Math.max(...prices).toFixed(2)} PLN`;
+})();
 
 /**
  * sameAs должен содержать внешние официальные профили бренда.
@@ -162,6 +171,8 @@ export function InsuranceAgencyJsonLd({ lang }: { lang: Lang }) {
     "@id": ORGANIZATION_ID,
     name: "SINEDIS Sp. z o.o.",
     legalName: "SINEDIS Spółka z ograniczoną odpowiedzialnością",
+    image: toAbsolute("/og_twitter_image.png"),
+    priceRange: PASSENGER_CAR_PRICE_RANGE_PLN,
     url: SITE_URL,
     email: "info@sinedis.pl",
     telephone: "+48573581333",
