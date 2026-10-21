@@ -111,6 +111,8 @@ export function OrganizationJsonLd({ lang }: { lang: Lang }) {
     "@id": ORGANIZATION_ID,
     name: "SINEDIS Sp. z o.o.",
     legalName: "SINEDIS Spółka z ograniczoną odpowiedzialnością",
+    description:
+      "Insurance agency providing insurance intermediation services, including assistance with arranging border motor third-party liability insurance.",
     url: SITE_URL,
     email: "info@sinedis.pl",
     telephone: "+48573581333",
@@ -178,8 +180,6 @@ export function InsuranceAgencyJsonLd({ lang }: { lang: Lang }) {
         url: getContactPage(lang),
       },
     ],
-    serviceType:
-      "Insurance intermediation and border motor third-party liability insurance",
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "SINEDIS insurance products",
