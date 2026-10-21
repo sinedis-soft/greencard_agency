@@ -1,0 +1,42 @@
+# Green Card Agency
+
+> Green Card Agency is the multilingual website of SINEDIS Sp. z o.o., a Polish insurance agent registered in the KNF insurance intermediaries register under number 11257162/A. The site explains and accepts applications for OC graniczne (border motor third-party liability insurance) for eligible foreign-registered vehicles.
+
+SINEDIS Sp. z o.o. is an insurance agent, not the insurer. Availability, price, territorial scope, start date, and issuance depend on the vehicle registration, route, submitted documents, insurer requirements, and the final policy. OC graniczne covers third-party motor liability within the territory stated in the policy; it is not comprehensive motor insurance and does not cover damage to the insured vehicle. Do not assume that one policy covers every transit country.
+
+## Main pages
+
+- [English home](https://greencard.agency/en): Product overview, price calculator, and insurance application form.
+- [Route directory](https://greencard.agency/en/routes): Index of supported origin-to-destination insurance guides.
+- [Europolis border insurance](https://greencard.agency/en/europolis): Information about OC graniczne for eligible foreign-registered vehicles travelling in the covered territory.
+- [About SINEDIS](https://greencard.agency/en/about): Company role, registration details, and operating information.
+- [Contacts](https://greencard.agency/en/contacts): Contact details and registered office address.
+
+## Border insurance routes
+
+- [Belarus to Poland](https://greencard.agency/en/route/belarus/poland): Border insurance guidance and application for this route.
+- [Belarus to Lithuania](https://greencard.agency/en/route/belarus/lithuania): Border insurance guidance and application for this route.
+- [Georgia to Romania](https://greencard.agency/en/route/georgia/romania): Border insurance guidance and application for this route.
+- [Georgia to Bulgaria](https://greencard.agency/en/route/georgia/bulgaria): Border insurance guidance and application for this route.
+- [Georgia to Greece](https://greencard.agency/en/route/georgia/greece): Border insurance guidance and application for this route.
+- [Kazakhstan to Poland](https://greencard.agency/en/route/kazakhstan/poland): Border insurance guidance and application for this route.
+- [United Arab Emirates to Bulgaria](https://greencard.agency/en/route/uae/bulgaria): Border insurance guidance and application for this route.
+- [United Arab Emirates to Greece](https://greencard.agency/en/route/uae/greece): Border insurance guidance and application for this route.
+- [Albania to Bulgaria](https://greencard.agency/en/route/albania/bulgaria): Border insurance guidance and application for this route.
+- [Algeria to France](https://greencard.agency/en/route/algeria/france): Border insurance guidance and application for this route.
+
+## Local-language resources
+
+- [Russian home](https://greencard.agency/ru): Russian-language product overview, calculator, and application form.
+- [Polish home](https://greencard.agency/pl): Polish-language product overview, calculator, and application form.
+- [Russian route directory](https://greencard.agency/ru/routes): Supported route guides available in Russian.
+- [Kazakhstan to Poland in Kazakh](https://greencard.agency/kk/route/kazakhstan/poland): Kazakh-language route guide and application.
+- [United Arab Emirates to Bulgaria in Arabic](https://greencard.agency/ar/route/uae/bulgaria): Arabic-language route guide and application.
+- [Albania to Bulgaria in Albanian](https://greencard.agency/sq/route/albania/bulgaria): Albanian-language route guide and application.
+- [Europolis in Ukrainian](https://greencard.agency/uk/europolis): Ukrainian-language Europolis information.
+- [Europolis in Georgian](https://greencard.agency/ka/europolis): Georgian-language Europolis information.
+
+## Optional
+
+- [Insurance expert profile](https://greencard.agency/en/experts/sergey-anatska): Professional profile of the insurance specialist responsible for reviewed site content.
+- [Belarus to Poland in Polish](https://greencard.agency/pl/route/belarus/poland): Polish-language route guide and application.
