@@ -196,6 +196,7 @@ export default function LeadForm(props: { lang: Lang; showOrderSummary?: boolean
   const t = getLeadFormDictionary(props.lang);
 
   const [step, setStep] = useState<Step>(1);
+  const [hasVisitedStepTwo, setHasVisitedStepTwo] = useState(false);
   const [status, setStatus] = useState<FormStatus>("idle");
   const [message, setMessage] = useState("");
   const [outcome, setOutcome] = useState<SubmitOutcome>("none");
@@ -389,6 +390,7 @@ export default function LeadForm(props: { lang: Lang; showOrderSummary?: boolean
       const resetFormState = () => {
         formEl.reset();
         setStep(1);
+        setHasVisitedStepTwo(false);
         setFirstName("");
         setLastName("");
         setPhone("");
@@ -817,8 +819,9 @@ export default function LeadForm(props: { lang: Lang; showOrderSummary?: boolean
               </div>
             </div>
 
-            <div data-form-step="2" hidden={step !== 2}>
-              <div className="hr" />
+            {hasVisitedStepTwo ? (
+              <div data-form-step="2" hidden={step !== 2}>
+                <div className="hr" />
 
               <div className="legend">{t.policy.legend}</div>
 
@@ -1263,7 +1266,8 @@ export default function LeadForm(props: { lang: Lang; showOrderSummary?: boolean
                   {t.policy.addVehicle}
                 </button>
               </div>
-            </div>
+              </div>
+            ) : null}
 
             {status !== "idle" ? (
               <div id={statusId} role="status" aria-live="polite" className="help help--status">
@@ -1294,6 +1298,7 @@ export default function LeadForm(props: { lang: Lang; showOrderSummary?: boolean
                     if (!validateStep(1)) return;
 
                     trackFunnelEvent("lead_step_1_complete", { language: props.lang });
+                    setHasVisitedStepTwo(true);
                     setStep(2);
                   }}
                   disabled={status === "loading"}
