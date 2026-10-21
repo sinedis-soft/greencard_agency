@@ -908,7 +908,7 @@ textarea:hover {
 
 .section__desc {
   margin: 0;
-  color: var(--text-600);
+  color: var(--text-700);
   max-width: 70ch;
   font-size: 14.5px;
 }
