@@ -26,8 +26,8 @@ type RouteMeta = {
 };
 
 export const ROUTE_LOCALES = {
-  europolis: ["ru", "en", "ka", "uk"],
-  "experts/sergey-anatska": ["ru", "pl", "en", "be"],
+  europolis: ["ru", "en", "ka", "uk", "uz", "kk", "hy", "ar"],
+  "experts/sergey-anatska": ["ru", "en", "ka", "uk", "uz", "kk", "hy", "ar"],
 } as const satisfies Record<string, readonly Lang[]>;
 
 export const ROUTE_META = {
@@ -53,7 +53,7 @@ export const ROUTE_META = {
   "/cookiepolicy": { lastModified: "2026-05-08" },
   "/experts/sergey-anatska": { lastModified: "2026-07-17" },
   "/europolis": {
-    lastModified: "2026-10-19",
+    lastModified: "2026-10-25",
     review: {
       authorId: "sergey-anatska",
       reviewerId: "sergey-anatska",
