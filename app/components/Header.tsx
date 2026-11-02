@@ -62,8 +62,9 @@ export default function Header({ lang, active }: { lang: Lang; active?: Active }
   }, []);
 
 
-  const calcHref = "/#calc";
-  const buyHref = "/#buy";
+  const hasRouteOrderForm = pathname === withLang(lang, "/route/belarus/poland");
+  const calcHref = hasRouteOrderForm ? "/route/belarus/poland#calc" : "/#calc";
+  const buyHref = hasRouteOrderForm ? "/route/belarus/poland#buy" : "/#buy";
 
   return (
     <>

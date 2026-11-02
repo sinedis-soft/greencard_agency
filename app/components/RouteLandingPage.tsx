@@ -12,6 +12,9 @@ import RelatedRoutes from "@/app/components/RelatedRoutes";
 import { getRoutesDictionary } from "@/app/dictionaries/routes";
 import RouteAttribution from "@/app/components/RouteAttribution";
 import { getRouteEnhancement } from "@/app/dictionaries/routeEnhancements";
+import LeadForm from "@/app/components/LeadForm";
+import { BusinessHoursBanner } from "@/app/components/BusinessHoursBanner";
+import { getHomeDictionary } from "@/app/dictionaries/home";
 
 type RouteLandingPageProps = {
   lang: Lang;
@@ -19,6 +22,7 @@ type RouteLandingPageProps = {
   review: InsuranceContentReview;
   caseIds?: readonly CaseStudyId[];
   disableEnhancements?: boolean;
+  inlineOrderForm?: boolean;
   pagePath: string;
 };
 
@@ -90,11 +94,14 @@ export default function RouteLandingPage({
   review,
   caseIds = [],
   disableEnhancements = false,
+  inlineOrderForm = false,
   pagePath,
 }: RouteLandingPageProps) {
   const topSignals = [t.what.title, t.price.title, t.validity.title];
   const supportSignals = t.who.items.slice(0, 3);
   const routesDictionary = getRoutesDictionary(lang);
+  const orderHref = inlineOrderForm ? "#buy" : `/${lang}/order`;
+  const businessHours = inlineOrderForm ? getHomeDictionary(lang).businessHours : undefined;
 
   const enhancement = disableEnhancements
     ? undefined
@@ -125,7 +132,7 @@ export default function RouteLandingPage({
               <h1 className="h1 route-hero__title">{keepTypography(t.hero.title)}</h1>
               <p className="lead route-hero__lead">{t.hero.lead}</p>
               <div className="route-hero__actions">
-                <a className="btn btn--primary" href={`/${lang}/order`}>
+                <a className="btn btn--primary" href={orderHref}>
                   {t.hero.cta}
                 </a>
                 <a className="btn btn--soft route-hero__secondary" href="#faq">
@@ -141,7 +148,7 @@ export default function RouteLandingPage({
 
             <div className="route-hero__calculator">
               <div className="route-hero__calculator-glow" aria-hidden="true" />
-              <Calculator lang={lang} mode="order" />
+              <Calculator lang={lang} mode={inlineOrderForm ? "inline" : "order"} />
             </div>
           </div>
         </div>
@@ -303,24 +310,26 @@ export default function RouteLandingPage({
         </section>
       ) : null}
 
-      <section className="route-cta section">
-        <div className="container">
-          <div className="route-cta__panel">
-            <div>
-              <h2 className="section__title">{keepTypography(t.form.title)}</h2>
-              <p>{t.form.desc}</p>
+      {!inlineOrderForm ? (
+        <section className="route-cta section">
+          <div className="container">
+            <div className="route-cta__panel">
+              <div>
+                <h2 className="section__title">{keepTypography(t.form.title)}</h2>
+                <p>{t.form.desc}</p>
+              </div>
+              <a className="btn btn--primary" href={`/${lang}/order`}>
+                {t.hero.cta}
+              </a>
             </div>
-            <a className="btn btn--primary" href={`/${lang}/order`}>
-              {t.hero.cta}
-            </a>
+            <ul className="route-support-list" aria-label={t.who.title}>
+              {supportSignals.map((signal) => (
+                <li key={signal}>{signal}</li>
+              ))}
+            </ul>
           </div>
-          <ul className="route-support-list" aria-label={t.who.title}>
-            {supportSignals.map((signal) => (
-              <li key={signal}>{signal}</li>
-            ))}
-          </ul>
-        </div>
-      </section>
+        </section>
+      ) : null}
 
       {caseIds.length > 0 && isCaseStudyLocale(lang) ? <CaseStudies caseIds={caseIds} locale={lang} /> : null}
 
@@ -344,6 +353,23 @@ export default function RouteLandingPage({
           </div>
         </div>
       </section>
+      {inlineOrderForm && businessHours ? (
+        <section className="section section--order" id="buy" aria-labelledby="route-order-title">
+          <div className="container">
+            <div className="section__hd">
+              <div>
+                <h2 className="section__title" id="route-order-title">{keepTypography(t.form.title)}</h2>
+                <p className="section__desc">{t.form.desc}</p>
+                <BusinessHoursBanner dict={businessHours} />
+              </div>
+            </div>
+            <div className="lead-form-shell">
+              <LeadForm lang={lang} showOrderSummary />
+            </div>
+          </div>
+        </section>
+      ) : null}
+
       <RelatedRoutes lang={lang} currentPath={pagePath} />
     </>
   );
