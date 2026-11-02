@@ -30,9 +30,9 @@ const ru: BelarusPolandOcDictionary = {
   what: { title: "OC graniczne в Польшу для автомобиля на белорусских номерах", text: "Если автомобиль зарегистрирован в Беларуси и вы планируете поездку в Польшу, для въезда может потребоваться договор пограничного страхования OC graniczne. Такой полис оформляется для транспортных средств с регистрацией вне Европейской экономической зоны, если отсутствует действующая «Зелёная карта». На этой странице вы можете узнать, кому нужен OC graniczne, как проходит оформление, сколько стоит страховка и на какой срок её можно оформить. После подачи заявки полис направляется в PDF-формате." },
   who: { title: "Кому нужен этот полис:", items: ["Владельцам и водителям авто, зарегистрированных в Беларуси.", "Тем, кто въезжает в Польшу на личном автомобиле.", "Тем, кому нужна действующая страховая защита ответственности перед третьими лицами.", "Тем, кому необходимо временное страхование для поездки по ЕС.", "Если автомобиль направляется транзитом через Польшу."] },
   how: { title: "Как оформить", steps: ["Оставьте заявку через форму на сайте.", "Передайте данные авто и водителя для расчета.", "Оплатите страховой взнос удобным способом.", "Получите готовый полис и инструкцию по проверке."] },
-  price: { title: "Стоимость", text: "Цена зависит от срока действия полиса и типа транспортного средства. Ориентировочную стоимость всегда можно посмотреть на главной странице сайта в онлайн-калькуляторе." },
+  price: { title: "Стоимость", text: "Цена зависит от срока действия полиса и типа транспортного средства. Рассчитайте ориентировочную стоимость в калькуляторе выше. Нажмите «Оформить по расчёту», чтобы перейти к форме заявки ниже на этой странице." },
   validity: { title: "Сроки действия", text: "Доступны полисы на срок от 30 до 364 дней. Дата начала указывается при оформлении, после чего покрытие действует выбранный период. Если при заполнении заявки вы не видите нужного вам срока - укажите эти данные в комментарии." },
-  form: { title: "Форма заявки", desc: "Нажмите кнопку ниже — откроется главная страница с формой для оформления." },
+  form: { title: "Форма заявки", desc: "Заполните форму ниже: укажите контактные данные, сведения об автомобиле и дату начала страхования. Выбранные в калькуляторе тип транспортного средства и срок будут перенесены в форму." },
   faq: { title: "FAQ", items: [
     { q: "Можно ли пересекать Белорусско-Польскую границу на авто с белорусскими номерами?", a: "Да, пересекать границу можно. Но важно понимать, что Польша ввела правило, что в автомобиле с белорусскими номерами в обязательном порядке должен быть владелец автомобиля. А это значит, что автомобиль не может принадлежать юридическому лицу, либо лицу которого нет в авто на момент пересечения границы." },
     { q: "Можно ли оформить онлайн, если я еще не пересек границу?", a: "Да, заявку можно оставить заранее, чтобы получить полис к нужной дате начала действия." },
@@ -87,7 +87,7 @@ const en: BelarusPolandOcDictionary = {
   price: {
     title: "Price",
     text:
-      "The price depends on the policy period and the type of vehicle. You can always check the estimated cost on the main page of the website using the online calculator.",
+      "The price depends on the policy period and vehicle type. Use the calculator above for an estimate, then click its application button to go to the form below on this page.",
   },
   validity: {
     title: "Policy Period",
@@ -97,7 +97,7 @@ const en: BelarusPolandOcDictionary = {
   form: {
     title: "Application Form",
     desc:
-      "Click the button below to open the main page with the application form.",
+      "Complete the form below with your contact details, vehicle information and insurance start date. The vehicle type and period selected in the calculator will be transferred to the form.",
   },
   faq: {
     title: "FAQ",
@@ -184,7 +184,7 @@ const pl: BelarusPolandOcDictionary = {
   price: {
     title: "Cena",
     text:
-      "Cena zależy od okresu obowiązywania polisy i rodzaju pojazdu. Orientacyjny koszt można sprawdzić na stronie głównej w kalkulatorze online.",
+      "Cena zależy od okresu ubezpieczenia i rodzaju pojazdu. Oblicz orientacyjny koszt w kalkulatorze powyżej, a następnie kliknij przycisk przejścia do wniosku, aby przejść do formularza poniżej na tej stronie.",
   },
   validity: {
     title: "Okres obowiązywania",
@@ -194,7 +194,7 @@ const pl: BelarusPolandOcDictionary = {
   form: {
     title: "Formularz wniosku",
     desc:
-      "Kliknij przycisk poniżej — otworzy się strona główna z formularzem zgłoszeniowym.",
+      "Wypełnij formularz poniżej: podaj dane kontaktowe, informacje o pojeździe i datę rozpoczęcia ubezpieczenia. Rodzaj pojazdu i okres wybrane w kalkulatorze zostaną przeniesione do formularza.",
   },
   faq: {
     title: "FAQ",
@@ -281,7 +281,7 @@ const be: BelarusPolandOcDictionary = {
   price: {
     title: "Кошт",
     text:
-      "Кошт залежыць ад тэрміну дзеяння поліса і тыпу транспартнага сродку. Прыкладны кошт заўсёды можна паглядзець на галоўнай старонцы сайта ў анлайн-калькулятары.",
+      "Кошт залежыць ад тэрміну дзеяння поліса і тыпу транспартнага сродку. Разлічыце прыкладны кошт у калькулятары вышэй і націсніце кнопку афармлення, каб перайсці да формы заяўкі ніжэй на гэтай старонцы.",
   },
   validity: {
     title: "Тэрміны дзеяння",
@@ -291,7 +291,7 @@ const be: BelarusPolandOcDictionary = {
   form: {
     title: "Форма заяўкі",
     desc:
-      "Націсніце кнопку ніжэй — адкрыецца галоўная старонка з формай для афармлення.",
+      "Запоўніце форму ніжэй: пазначце кантактныя даныя, звесткі пра аўтамабіль і дату пачатку страхавання. Выбраныя ў калькулятары тып транспартнага сродку і тэрмін будуць перанесены ў форму.",
   },
   faq: {
     title: "FAQ",
@@ -386,7 +386,7 @@ const ka: BelarusPolandOcDictionary = {
   price: {
     title: "ღირებულება",
     text:
-      "ფასი დამოკიდებულია პოლისის მოქმედების ვადასა და სატრანსპორტო საშუალების ტიპზე. სავარაუდო ღირებულების ნახვა ყოველთვის შესაძლებელია საიტის მთავარ გვერდზე ონლაინ-კალკულატორის საშუალებით.",
+      "ფასი დამოკიდებულია დაზღვევის ვადასა და სატრანსპორტო საშუალების ტიპზე. სავარაუდო ღირებულება გამოთვალეთ ზემოთ მოცემული კალკულატორით, შემდეგ დააჭირეთ განაცხადის ღილაკს ამავე გვერდზე ქვემოთ განთავსებულ ფორმაზე გადასასვლელად.",
   },
   validity: {
     title: "მოქმედების ვადები",
@@ -396,7 +396,7 @@ const ka: BelarusPolandOcDictionary = {
   form: {
     title: "განაცხადის ფორმა",
     desc:
-      "დააჭირეთ ქვემოთ მოცემულ ღილაკს — გაიხსნება მთავარი გვერდი განაცხადის ფორმით.",
+      "შეავსეთ ქვემოთ მოცემული ფორმა: მიუთითეთ საკონტაქტო მონაცემები, ინფორმაცია ავტომობილის შესახებ და დაზღვევის დაწყების თარიღი. კალკულატორში არჩეული სატრანსპორტო საშუალების ტიპი და ვადა ფორმაში გადაიტანება.",
   },
   faq: {
     title: "FAQ",
@@ -483,7 +483,7 @@ const tr: BelarusPolandOcDictionary = {
   },
   price: {
     title: "Fiyat",
-    text: "Fiyat, poliçenin geçerlilik süresine ve araç türüne bağlıdır. Yaklaşık maliyet her zaman sitenin ana sayfasındaki online hesaplayıcıda görülebilir.",
+    text: "Fiyat, sigorta süresine ve araç türüne bağlıdır. Tahmini tutarı yukarıdaki hesaplayıcıdan öğrenin, ardından bu sayfanın altındaki forma geçmek için başvuru düğmesine tıklayın.",
   },
   validity: {
     title: "Geçerlilik süreleri",
@@ -491,7 +491,7 @@ const tr: BelarusPolandOcDictionary = {
   },
   form: {
     title: "Başvuru formu",
-    desc: "Aşağıdaki butona tıklayın — başvuru formunun bulunduğu ana sayfa açılacaktır.",
+    desc: "Aşağıdaki formu iletişim bilgileriniz, araç bilgileriniz ve sigorta başlangıç tarihiyle doldurun. Hesaplayıcıda seçtiğiniz araç türü ve süre forma aktarılır.",
   },
   faq: {
     title: "SSS",
@@ -571,7 +571,7 @@ const fa: BelarusPolandOcDictionary = {
   price: {
     title: "هزینه",
     text:
-      "قیمت به مدت اعتبار بیمه‌نامه و نوع وسیله نقلیه بستگی دارد. هزینه تقریبی را همیشه می‌توانید در صفحه اصلی سایت و از طریق ماشین‌حساب آنلاین مشاهده کنید.",
+      "قیمت به مدت بیمه و نوع وسیله نقلیه بستگی دارد. هزینه تقریبی را با ماشین‌حساب بالا محاسبه کنید، سپس برای رفتن به فرم پایین همین صفحه، دکمه درخواست را بزنید.",
   },
   validity: {
     title: "مدت اعتبار",
@@ -581,7 +581,7 @@ const fa: BelarusPolandOcDictionary = {
   form: {
     title: "فرم درخواست",
     desc:
-      "روی دکمه زیر کلیک کنید — صفحه اصلی با فرم صدور بیمه باز خواهد شد.",
+      "فرم زیر را با اطلاعات تماس، مشخصات خودرو و تاریخ شروع بیمه تکمیل کنید. نوع وسیله نقلیه و مدت انتخاب‌شده در ماشین‌حساب به فرم منتقل می‌شود.",
   },
   faq: {
     title: "سوالات متداول",
@@ -666,7 +666,7 @@ const hy: BelarusPolandOcDictionary = {
   price: {
     title: "Արժեք",
     text:
-      "Գինը կախված է պոլիսի գործողության ժամկետից և տրանսպորտային միջոցի տեսակից։ Մոտավոր արժեքը միշտ կարելի է տեսնել կայքի գլխավոր էջի առցանց հաշվիչում։",
+      "Գինը կախված է ապահովագրության ժամկետից և տրանսպորտային միջոցի տեսակից։ Մոտավոր արժեքը հաշվարկեք վերևի հաշվիչով, ապա սեղմեք հայտի կոճակը՝ այս էջի ներքևում գտնվող ձևին անցնելու համար։",
   },
   validity: {
     title: "Գործողության ժամկետներ",
@@ -676,7 +676,7 @@ const hy: BelarusPolandOcDictionary = {
   form: {
     title: "Հայտի ձև",
     desc:
-      "Սեղմեք ստորև գտնվող կոճակը — կբացվի գլխավոր էջը հայտի ձևով։",
+      "Լրացրեք ստորև բերված ձևը՝ նշելով կապի տվյալները, ավտոմեքենայի մասին տեղեկությունները և ապահովագրության մեկնարկի ամսաթիվը։ Հաշվիչում ընտրված տրանսպորտային միջոցի տեսակը և ժամկետը կփոխանցվեն ձևին։",
   },
   faq: {
     title: "FAQ",
@@ -764,7 +764,7 @@ const ar: BelarusPolandOcDictionary = {
   price: {
     title: "التكلفة",
     text:
-      "تعتمد تكلفة التأمين على مدة الوثيقة ونوع المركبة. يمكنك دائمًا الاطلاع على السعر التقريبي باستخدام الحاسبة الإلكترونية في الصفحة الرئيسية للموقع.",
+      "تعتمد التكلفة على مدة التأمين ونوع المركبة. احسب السعر التقريبي باستخدام الحاسبة أعلاه، ثم اضغط على زر الطلب للانتقال إلى النموذج أدناه في الصفحة نفسها.",
   },
 
   validity: {
@@ -776,7 +776,7 @@ const ar: BelarusPolandOcDictionary = {
   form: {
     title: "نموذج الطلب",
     desc:
-      "اضغط على الزر أدناه للانتقال إلى الصفحة الرئيسية وفتح نموذج الإصدار.",
+      "أكمل النموذج أدناه ببيانات الاتصال ومعلومات المركبة وتاريخ بدء التأمين. سيتم نقل نوع المركبة والمدة المختارين في الحاسبة إلى النموذج.",
   },
 
   faq: {
@@ -870,7 +870,7 @@ const he: BelarusPolandOcDictionary = {
   price: {
     title: "עלות הביטוח",
     text:
-      "מחיר הביטוח תלוי במשך תקופת הכיסוי ובסוג הרכב. ניתן תמיד לבדוק את העלות המשוערת בעמוד הראשי של האתר באמצעות המחשבון המקוון.",
+      "המחיר תלוי בתקופת הביטוח ובסוג הרכב. חשבו את העלות המשוערת במחשבון למעלה, ואז לחצו על כפתור הבקשה כדי לעבור לטופס בהמשך עמוד זה.",
   },
 
   validity: {
@@ -882,7 +882,7 @@ const he: BelarusPolandOcDictionary = {
   form: {
     title: "טופס בקשה",
     desc:
-      "לחצו על הכפתור למטה — תועברו לעמוד הראשי שבו נמצא טופס ההנפקה.",
+      "מלאו את הטופס למטה עם פרטי הקשר, פרטי הרכב ותאריך תחילת הביטוח. סוג הרכב והתקופה שנבחרו במחשבון יועברו לטופס.",
   },
 
   faq: {
@@ -972,7 +972,7 @@ const kk: BelarusPolandOcDictionary = {
   price: {
     title: "Құны",
     text:
-      "Бағасы полистің қолданылу мерзіміне және көлік құралының түріне байланысты. Шамамен алынған құнын сайттың басты бетіндегі онлайн-калькулятордан әрқашан көруге болады.",
+      "Баға сақтандыру мерзімі мен көлік құралының түріне байланысты. Шамамен құнын жоғарыдағы калькуляторда есептеп, осы беттегі төменде орналасқан өтінім нысанына өту үшін өтінім беру батырмасын басыңыз.",
   },
   validity: {
     title: "Қолданылу мерзімі",
@@ -982,7 +982,7 @@ const kk: BelarusPolandOcDictionary = {
   form: {
     title: "Өтінім нысаны",
     desc:
-      "Төмендегі батырманы басыңыз — сақтандыру рәсімдеуге арналған нысаны бар басты бет ашылады.",
+      "Төмендегі нысанды толтырыңыз: байланыс деректерін, көлік туралы мәліметтерді және сақтандырудың басталу күнін көрсетіңіз. Калькуляторда таңдалған көлік түрі мен мерзімі нысанға көшіріледі.",
   },
   faq: {
     title: "Жиі қойылатын сұрақтар",
@@ -1059,7 +1059,7 @@ const uz: BelarusPolandOcDictionary = {
   },
   price: {
     title: "Narxi",
-    text: "Narx polisning amal qilish muddati va transport vositasi turiga bog‘liq. Taxminiy narxni har doim saytning bosh sahifasidagi onlayn kalkulyator orqali ko‘rish mumkin.",
+    text: "Narx sug‘urta muddati va transport vositasi turiga bog‘liq. Taxminiy narxni yuqoridagi kalkulyatorda hisoblang, so‘ng shu sahifaning pastidagi shaklga o‘tish uchun ariza tugmasini bosing.",
   },
   validity: {
     title: "Amal qilish muddati",
@@ -1067,7 +1067,7 @@ const uz: BelarusPolandOcDictionary = {
   },
   form: {
     title: "Ariza formasi",
-    desc: "Quyidagi tugmani bosing — sug‘urtani rasmiylashtirish formasi joylashgan bosh sahifa ochiladi.",
+    desc: "Quyidagi shaklni to‘ldiring: aloqa ma’lumotlari, avtomobil haqidagi ma’lumotlar va sug‘urta boshlanish sanasini kiriting. Kalkulyatorda tanlangan transport vositasi turi va muddat shaklga o‘tkaziladi.",
   },
   faq: {
     title: "FAQ",

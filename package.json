@@ -13,6 +13,7 @@
     "check:route-sitemap": "node scripts/check-route-sitemap-coverage.mjs",
     "check:route-links": "node scripts/check-route-links.mjs",
     "check:route-enhancements": "node scripts/check-route-enhancements.mjs",
+    "check:belarus-poland-order": "node scripts/check-belarus-poland-order.mjs",
     "check:retired-route-urls": "npm run build && node scripts/check-retired-route-urls.mjs",
     "check:route-languages": "npm run build && node scripts/check-route-languages.mjs",
     "report:route-languages": "npm run build && node scripts/check-route-languages.mjs --report reports/route-language-report.md",
