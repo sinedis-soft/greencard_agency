@@ -62,7 +62,8 @@ export const ROUTE_META = {
     pageType: "insurance-route",
   },
   "/route/belarus/poland": {
-    lastModified: "2026-08-23",
+    // Route content and the localized application form were updated in #81 and #82.
+    lastModified: "2026-11-02",
     review: {
       authorId: "sergey-anatska",
       reviewerId: "sergey-anatska",
@@ -70,25 +71,25 @@ export const ROUTE_META = {
     },
     pageType: "insurance-route",
   },
-  "/route/belarus/lithuania": { lastModified: "2026-08-23", review: {
+  "/route/belarus/lithuania": { lastModified: "2026-08-23", lastModifiedByLocale: { ru: "2026-11-02" }, review: {
       authorId: "sergey-anatska",
       reviewerId: "sergey-anatska",
       reviewedAt: "2026-07-17",
     },
     pageType: "insurance-route", },
-  "/route/georgia/romania": { lastModified: "2026-08-23", review: {
+  "/route/georgia/romania": { lastModified: "2026-08-23", lastModifiedByLocale: { ru: "2026-11-02" }, review: {
       authorId: "sergey-anatska",
       reviewerId: "sergey-anatska",
       reviewedAt: "2026-07-17",
     },
     pageType: "insurance-route", },
-  "/route/georgia/bulgaria": { lastModified: "2026-08-23", review: {
+  "/route/georgia/bulgaria": { lastModified: "2026-08-23", lastModifiedByLocale: { ru: "2026-11-02" }, review: {
       authorId: "sergey-anatska",
       reviewerId: "sergey-anatska",
       reviewedAt: "2026-07-17",
     },
     pageType: "insurance-route", },
-  "/route/kazakhstan/poland": { lastModified: "2026-08-23", review: {
+  "/route/kazakhstan/poland": { lastModified: "2026-08-23", lastModifiedByLocale: { ru: "2026-11-02" }, review: {
       authorId: "sergey-anatska",
       reviewerId: "sergey-anatska",
       reviewedAt: "2026-07-17",
