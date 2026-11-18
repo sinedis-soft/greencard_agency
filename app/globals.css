@@ -861,6 +861,35 @@ textarea:hover {
   border-color: var(--border-strong);
 }
 
+@supports (appearance: base-select) {
+  .lead-form-card select {
+    appearance: base-select;
+  }
+
+  .lead-form-card select::picker(select) {
+    appearance: base-select;
+    max-block-size: min(18rem, 50dvh);
+    padding: 4px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: #ffffff;
+    color: var(--text-900);
+    box-shadow: var(--shadow-1);
+    overflow: auto;
+  }
+
+  .lead-form-card select option {
+    padding: 8px 10px;
+    border-radius: 8px;
+  }
+
+  .lead-form-card select option:checked,
+  .lead-form-card select option:hover {
+    background: var(--brand-accent-soft);
+  }
+}
+
+
 .help {
   font-size: 12px;
   color: var(--text-600);
