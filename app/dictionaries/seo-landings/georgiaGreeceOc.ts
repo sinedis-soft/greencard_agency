@@ -5,7 +5,7 @@ const ru: BelarusPolandOcDictionary = {
   seo: {
     title: "Страховка для грузинского автомобиля в Грецию",
     description: 
-        "Пограничная страховка для автомобиля с грузинскими номерами при поездке в Грецию через Турцию. Срок от 30 дней, стоимость для легкового авто — 158 PLN.",
+        "Пограничная страховка для автомобиля с грузинскими номерами при поездке в Грецию через Турцию. Срок от 30 дней, стоимость для легкового авто — 150 PLN.",
   },
 
   breadcrumbTitle:
@@ -54,7 +54,7 @@ const ru: BelarusPolandOcDictionary = {
   price: {
     title: "Стоимость страхования маршрута",
     text:
-      "Стоимость зависит от типа транспортного средства и срока страхования. Минимальный срок страхования составляет 30 дней. Стоимость пакета для легкового автомобиля — 158 PLN. В сумму входит оформление полиса пограничного страхования, действующего в Греции и на предусмотренной договором территории ЕЭЗ.",
+      "Стоимость зависит от типа транспортного средства и срока страхования. Минимальный срок страхования составляет 30 дней. Стоимость пакета для легкового автомобиля — 150 PLN. В сумму входит оформление полиса пограничного страхования, действующего в Греции и на предусмотренной договором территории ЕЭЗ.",
   },
 
   validity: {
@@ -138,7 +138,7 @@ const ka: BelarusPolandOcDictionary = {
   seo: {
     title: "დაზღვევა ქართული ავტომობილისთვის საბერძნეთში",
     description:
-      "სასაზღვრო დაზღვევა ქართული ნომრებით რეგისტრირებული ავტომობილისთვის თურქეთის გავლით საბერძნეთში მგზავრობისას. ვადა — 30 დღიდან, მსუბუქი ავტომობილისთვის ფასი — 158 PLN.",
+      "სასაზღვრო დაზღვევა ქართული ნომრებით რეგისტრირებული ავტომობილისთვის თურქეთის გავლით საბერძნეთში მგზავრობისას. ვადა — 30 დღიდან, მსუბუქი ავტომობილისთვის ფასი — 150 PLN.",
   },
 
   breadcrumbTitle:
@@ -187,7 +187,7 @@ const ka: BelarusPolandOcDictionary = {
   price: {
     title: "მარშრუტის დაზღვევის ღირებულება",
     text:
-      "ღირებულება დამოკიდებულია სატრანსპორტო საშუალების ტიპსა და დაზღვევის ვადაზე. დაზღვევის მინიმალური ვადაა 30 დღე. მსუბუქი ავტომობილისთვის ჩვენი პაკეტის ღირებულება შეადგენს 158 PLN-ს. თანხაში შედის სასაზღვრო დაზღვევის პოლისის გაფორმება, რომელიც მოქმედებს საბერძნეთში და ხელშეკრულებით განსაზღვრულ ევროპის ეკონომიკური ზონის ტერიტორიაზე.",
+      "ღირებულება დამოკიდებულია სატრანსპორტო საშუალების ტიპსა და დაზღვევის ვადაზე. დაზღვევის მინიმალური ვადაა 30 დღე. მსუბუქი ავტომობილისთვის ჩვენი პაკეტის ღირებულება შეადგენს 150 PLN-ს. თანხაში შედის სასაზღვრო დაზღვევის პოლისის გაფორმება, რომელიც მოქმედებს საბერძნეთში და ხელშეკრულებით განსაზღვრულ ევროპის ეკონომიკური ზონის ტერიტორიაზე.",
   },
 
   validity: {
@@ -272,7 +272,7 @@ const en: BelarusPolandOcDictionary = {
   seo: {
     title: "Insurance for a Georgian-Registered Car Traveling to Greece",
     description:
-      "Border insurance for a Georgian-registered vehicle traveling to Greece via Turkey. Coverage from 30 days; price for a passenger car — PLN 158.",
+      "Border insurance for a Georgian-registered vehicle traveling to Greece via Turkey. Coverage from 30 days; price for a passenger car — PLN 150.",
   },
 
   breadcrumbTitle:
@@ -321,7 +321,7 @@ const en: BelarusPolandOcDictionary = {
   price: {
     title: "Cost of Insurance for the Route",
     text:
-      "The price depends on the type of vehicle and the insurance period. The minimum insurance period is 30 days. The package for a passenger car costs PLN 158. This includes arranging a border insurance policy valid in Greece and throughout the EEA territory covered by the policy.",
+      "The price depends on the type of vehicle and the insurance period. The minimum insurance period is 30 days. The package for a passenger car costs PLN 150. This includes arranging a border insurance policy valid in Greece and throughout the EEA territory covered by the policy.",
   },
 
   validity: {
