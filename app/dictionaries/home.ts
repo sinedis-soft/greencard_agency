@@ -369,7 +369,11 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
       title: "OC graniczne dla pojazdu zarejestrowanego poza EOG",
       lead:
         "Pomagamy zdalnie zawrzeć umowę ubezpieczenia granicznego na wjazd do Polski, UE oraz innych krajów wskazanych w polisie.",
-      meta: ["Dla pojazdów spoza EOG", "Polisa PDF po weryfikacji", "Ochrona tylko w krajach z listy"],
+      meta: [
+        "Dla pojazdów z Ukrainy, Białorusi, Rosji, Kazachstanu, Gruzji, Armenii, Azerbejdżanu, Chin, ZEA, Izraela i innych krajów",
+        "Polisa PDF po weryfikacji",
+        "Cena od 150 zł za 30 dni",
+      ],
       ctaCalc: "Oblicz koszt",
       ctaBuy: "Kup polisę",
     },
@@ -638,7 +642,11 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
       title: "OC graniczne online for a vehicle registered outside the EEA",
       lead:
         "We help you remotely arrange a border insurance agreement for entry into Poland, the EU, and other countries listed in the policy.",
-      meta: ["For vehicles outside the EEA", "PDF policy after verification", "Coverage only in listed countries"],
+      meta: [
+        "For vehicles from Ukraine, Belarus, Russia, Kazakhstan, Georgia, Armenia, Azerbaijan, China, the UAE, Israel and other countries",
+        "PDF policy after verification",
+        "From PLN 150 for 30 days",
+      ],
       ctaCalc: "Calculate cost",
       ctaBuy: "Buy policy",
     },
@@ -906,7 +914,11 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
       title: "OC graniczne анлайн для аўтамабіля, зарэгістраванага па-за межамі ЕЭЗ",
       lead:
         "Мы дапамагаем дыстанцыйна аформіць дагавор памежнага страхавання для ўезду ў Польшчу, ЕС і іншыя краіны, указаныя ў полісе.",
-      meta: ["Для аўто па-за ЕЭЗ", "PDF-поліс пасля праверкі", "Пакрыццё толькі паводле спісу краін"],
+      meta: [
+        "Для аўто з Украіны, Беларусі, Расіі, Казахстана, Грузіі, Арменіі, Азербайджана, Кітая, ААЭ, Ізраіля і іншых краін",
+        "PDF-поліс пасля праверкі",
+        "Кошт ад 150 злотых за 30 дзён",
+      ],
       ctaCalc: "Разлічыць кошт",
       ctaBuy: "Аформіць поліс",
     },
@@ -1174,7 +1186,11 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
       title: "EIH hududidan tashqarida ro‘yxatdan o‘tgan avtomobil uchun OC graniczne onlayn",
       lead:
         "Biz Polsha, YI va polisda ko‘rsatilgan boshqa mamlakatlarga kirish uchun transchegaraviy sug‘urta shartnomasini masofadan rasmiylashtirishga yordam beramiz.",
-      meta: ["EIHdan tashqaridagi avtomobillar uchun", "Tekshiruvdan keyin PDF-polis", "Qoplama faqat mamlakatlar ro‘yxati bo‘yicha"],
+      meta: [
+        "Ukraina, Belarus, Rossiya, Qozogʻiston, Gruziya, Armaniston, Ozarbayjon, Xitoy, BAA, Isroil va boshqa mamlakatlarda roʻyxatdan oʻtgan avtomobillar uchun",
+        "Tekshiruvdan keyin PDF-polis",
+        "30 kun uchun narx 150 Polsha zlotisidan boshlanadi",
+      ],
       ctaCalc: "Narxni hisoblash",
       ctaBuy: "Polisni rasmiylashtirish",
     },
@@ -1442,7 +1458,11 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
       title: "OC graniczne ონლაინ ევროპის ეკონომიკური ზონის ფარგლებს გარეთ რეგისტრირებული ავტომობილისთვის",
       lead:
         "ჩვენ გეხმარებით დისტანციურად გააფორმოთ საზღვრისპირა დაზღვევის ხელშეკრულება პოლონეთში, ევროკავშირში და პოლისში მითითებულ სხვა ქვეყნებში შესასვლელად.",
-      meta: ["ევროპის ეკონომიკური ზონის გარეთ რეგისტრირებული ავტომობილებისთვის", "PDF-პოლისი შემოწმების შემდეგ", "დაფარვა მხოლოდ ქვეყნების ჩამონათვალის მიხედვით"],
+      meta: [
+        "უკრაინის, ბელარუსის, რუსეთის, ყაზახეთის, საქართველოს, სომხეთის, აზერბაიჯანის, ჩინეთის, არაბთა გაერთიანებული საამიროების, ისრაელისა და სხვა ქვეყნების ნომრიანი ავტომობილებისთვის",
+        "PDF-პოლისი შემოწმების შემდეგ",
+        "30 დღის ფასი 150 პოლონური ზლოტიდან",
+      ],
       ctaCalc: "ღირებულების გამოთვლა",
       ctaBuy: "პოლისის გაფორმება",
     },
@@ -1710,7 +1730,11 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
       title: "ЕЭА аумағынан тыс жерде тіркелген автокөлікке арналған OC graniczne онлайн",
       lead:
         "Біз Польшаға, ЕО-ға және полисте көрсетілген басқа елдерге кіру үшін трансшекаралық сақтандыру шартын қашықтан рәсімдеуге көмектесеміз.",
-      meta: ["ЕЭА-дан тыс автокөліктер үшін", "Тексеруден кейін PDF-полис", "Қамту тек елдер тізімі бойынша"],
+      meta: [
+        "Украина, Беларусь, Ресей, Қазақстан, Грузия, Армения, Әзербайжан, Қытай, БАӘ, Израиль және басқа елдерде тіркелген автокөліктерге",
+        "Тексеруден кейін PDF-полис",
+        "30 күнге бағасы 150 поляк злотыйынан басталады",
+      ],
       ctaCalc: "Құнын есептеу",
       ctaBuy: "Полисті рәсімдеу",
     },
@@ -1978,7 +2002,11 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
       title: "AEA dışında kayıtlı bir araç için OC graniczne online",
       lead:
         "Polonya’ya, AB’ye ve poliçede belirtilen diğer ülkelere giriş için sınır ötesi sigorta sözleşmesini uzaktan düzenlemenize yardımcı oluyoruz.",
-      meta: ["AEA dışındaki araçlar için", "Kontrolden sonra PDF poliçe", "Teminat yalnızca ülke listesine göre"],
+      meta: [
+        "Ukrayna, Belarus, Rusya, Kazakistan, Gürcistan, Ermenistan, Azerbaycan, Çin, BAE, İsrail ve diğer ülkelerde kayıtlı araçlar için",
+        "Kontrolden sonra PDF poliçe",
+        "30 günlük fiyat 150 Polonya zlotisinden başlar",
+      ],
       ctaCalc: "Ücreti hesapla",
       ctaBuy: "Poliçeyi düzenle",
     },
@@ -2246,7 +2274,11 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
       title: "OC graniczne آنلاین برای خودروی ثبت‌شده خارج از منطقه اقتصادی اروپا",
       lead:
         "ما به شما کمک می‌کنیم قرارداد بیمه مرزی را برای ورود به لهستان، اتحادیه اروپا و سایر کشورهایی که در بیمه‌نامه ذکر شده‌اند، از راه دور تنظیم کنید.",
-      meta: ["برای خودروهای خارج از منطقه اقتصادی اروپا", "بیمه‌نامه PDF پس از بررسی", "پوشش فقط بر اساس فهرست کشورها"],
+      meta: [
+        "برای خودروهای ثبت‌شده در اوکراین، بلاروس، روسیه، قزاقستان، گرجستان، ارمنستان، جمهوری آذربایجان، چین، امارات متحده عربی، اسرائیل و سایر کشورها",
+        "بیمه‌نامه PDF پس از بررسی",
+        "از ۱۵۰ زلوتی لهستان برای ۳۰ روز",
+      ],
       ctaCalc: "محاسبه هزینه",
       ctaBuy: "صدور بیمه‌نامه",
     },
@@ -2514,7 +2546,11 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
       title: "OC graniczne առցանց՝ ԵՏԳ-ից դուրս գրանցված ավտոմեքենայի համար",
       lead:
         "Մենք օգնում ենք հեռակա կարգով ձևակերպել սահմանային ապահովագրության պայմանագիր՝ Լեհաստան, ԵՄ և պոլիսում նշված այլ երկրներ մուտք գործելու համար։",
-      meta: ["ԵՏԳ-ից դուրս գտնվող ավտոմեքենաների համար", "PDF-պոլիս՝ ստուգումից հետո", "Ծածկույթը միայն երկրների ցանկի համաձայն"],
+      meta: [
+        "Ուկրաինայում, Բելառուսում, Ռուսաստանում, Ղազախստանում, Վրաստանում, Հայաստանում, Ադրբեջանում, Չինաստանում, ԱՄԷ-ում, Իսրայելում և այլ երկրներում գրանցված ավտոմեքենաների համար",
+        "PDF-պոլիս՝ ստուգումից հետո",
+        "30 օրվա արժեքը՝ 150 լեհական զլոտիից սկսած",
+      ],
       ctaCalc: "Հաշվարկել արժեքը",
       ctaBuy: "Ձևակերպել պոլիսը",
     },
@@ -2782,7 +2818,11 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
       title: "OC graniczne ئۆنلاین بۆ ئۆتۆمبێلێک کە لە دەرەوەی ناوچەی ئابووریی ئەورووپا تۆمارکراوە",
       lead:
         "ئێمە یارمەتیتان دەدەین بەدوورەوە گرێبەستی بیمەی سنووری بۆ چوونە ناو پۆڵەندا، یەکێتیی ئەورووپا و وڵاتانی دیکەی دیاریکراو لە پۆلیسدا ڕێکبخەن.",
-      meta: ["بۆ ئۆتۆمبێلەکانی دەرەوەی ناوچەی ئابووریی ئەورووپا", "پۆلیسی PDF دوای پشکنین", "داپۆشین تەنها بەپێی لیستی وڵاتان"],
+      meta: [
+        "بۆ ئۆتۆمبێلە تۆمارکراوەکان لە ئۆکرانیا، بیلاڕووس، ڕووسیا، قازاخستان، گورجستان، ئەرمەنستان، ئازەربایجان، چین، ئیماراتی عەرەبیی یەکگرتوو، ئیسرائیل و وڵاتانی دیکە",
+        "پۆلیسی PDF دوای پشکنین",
+        "نرخ بۆ ٣٠ ڕۆژ لە ١٥٠ زلۆتیی پۆڵەندییەوە دەست پێ دەکات",
+      ],
       ctaCalc: "حسابکردنی نرخ",
       ctaBuy: "دەرکردنی پۆلیس",
     },
@@ -3051,7 +3091,11 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
       title: "OC graniczne serhêl ji bo otomobîla ku li derveyî EEA hatî tomar kirin",
       lead:
         "Em alîkariyê dikin ku hûn peymana sîgorteya derbasbûna sînorî ji bo ketina Polonya, YE û welatên din ên di polîsê de hatine destnîşan kirin, ji dûr ve amade bikin.",
-      meta: ["Ji bo otomobîlên derveyî EEA", "Polîsa PDF piştî kontrolê", "Parastin tenê li gorî lîsteya welatan"],
+      meta: [
+        "Ji bo wesayîtên ku li Ûkrayna, Belarus, Rûsya, Qazaxistan, Gurcistan, Ermenistan, Azerbaycan, Çîn, Mîrgehên Yekbûyî yên Erebî, Îsraîl û welatên din hatine tomarkirin",
+        "Polîsa PDF piştî kontrolê",
+        "Bihayê 30 rojan ji 150 zlotiyên Polonyayê dest pê dike",
+      ],
       ctaCalc: "Nirxê hesab bike",
       ctaBuy: "Polîsê amade bike",
     },
@@ -3321,9 +3365,9 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
       lead:
         "للمركبات المسجّلة خارج المنطقة الاقتصادية الأوروبية عند عدم وجود بطاقة خضراء سارية. احسب التكلفة، وأرسل المستندات، واحصل على وثيقة OC Graniczne بصيغة PDF بعد التحقق من البيانات والمسار.",
       meta: [
-        "للمركبات المسجّلة خارج المنطقة الاقتصادية الأوروبية",
+        "للمركبات المسجّلة في أوكرانيا وبيلاروسيا وروسيا وكازاخستان وجورجيا وأرمينيا وأذربيجان والصين والإمارات وإسرائيل ودول أخرى",
         "وثيقة PDF عبر البريد الإلكتروني",
-        "مراجعة المستندات ودول مسار الرحلة قبل الإصدار",
+        "السعر يبدأ من ١٥٠ زلوتي بولندي لمدة ٣٠ يومًا",
       ],
       ctaCalc: "احسب تكلفة التأمين",
       ctaBuy: "قدّم طلب التأمين",
@@ -3661,7 +3705,11 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
       title: "OC graniczne онлайн для автомобіля, зареєстрованого за межами ЄЕЗ",
       lead:
         "Ми допомагаємо дистанційно оформити договір транскордонного страхування для в’їзду до Польщі, ЄС та інших країн, зазначених у полісі.",
-      meta: ["Для авто поза ЄЕЗ", "PDF-поліс після перевірки", "Покриття лише за списком країн"],
+      meta: [
+        "Для авто з України, Білорусі, Росії, Казахстану, Грузії, Вірменії, Азербайджану, Китаю, ОАЕ, Ізраїлю та інших країн",
+        "PDF-поліс після перевірки",
+        "Ціна від 150 злотих за 30 днів",
+      ],
       ctaCalc: "Розрахувати вартість",
       ctaBuy: "Оформити поліс",
     },
@@ -3929,7 +3977,11 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
       title: "OC graniczne אונליין לרכב הרשום מחוץ לאזור הכלכלי האירופי",
       lead:
         "אנו מסייעים להסדיר מרחוק חוזה ביטוח חוצה־גבולות לכניסה לפולין, לאיחוד האירופי ולמדינות אחרות המצוינות בפוליסה.",
-      meta: ["לרכב מחוץ לאזור הכלכלי האירופי", "פוליסת PDF לאחר בדיקה", "כיסוי רק לפי רשימת המדינות"],
+      meta: [
+        "לכלי רכב הרשומים באוקראינה, בלארוס, רוסיה, קזחסטן, גאורגיה, ארמניה, אזרבייג׳ן, סין, איחוד האמירויות, ישראל ומדינות נוספות",
+        "פוליסת PDF לאחר בדיקה",
+        "החל מ־150 זלוטי פולני ל־30 יום",
+      ],
       ctaCalc: "חשב עלות",
       ctaBuy: "הנפק פוליסה",
     },
@@ -4202,7 +4254,11 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
       title: "AİZ hüdudlarından kənarda qeydiyyatdan keçmiş avtomobil üçün OC graniczne onlayn",
       lead:
         "Biz Polşaya, Aİ-yə və polisdə göstərilən digər ölkələrə giriş üçün transsərhəd sığorta müqaviləsini məsafədən rəsmiləşdirməyə kömək edirik.",
-      meta: ["AİZ-dən kənar avtomobillər üçün", "Yoxlamadan sonra PDF-polis", "Əhatə yalnız ölkələr siyahısı üzrə"],
+      meta: [
+        "Ukrayna, Belarus, Rusiya, Qazaxıstan, Gürcüstan, Ermənistan, Azərbaycan, Çin, BƏƏ, İsrail və digər ölkələrdə qeydiyyatda olan avtomobillər üçün",
+        "Yoxlamadan sonra PDF-polis",
+        "30 günlük qiymət 150 Polşa zlotisindən başlayır",
+      ],
       ctaCalc: "Dəyəri hesablayın",
       ctaBuy: "Polisi rəsmiləşdirin",
     },
@@ -4475,7 +4531,11 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
       title: "OC graniczne online pentru un automobil înmatriculat în afara SEE",
       lead:
         "Vă ajutăm să încheiați la distanță un contract de asigurare transfrontalieră pentru intrarea în Polonia, UE și alte țări indicate în poliță.",
-      meta: ["Pentru auto din afara SEE", "Poliță PDF după verificare", "Acoperire doar conform listei de țări"],
+      meta: [
+        "Pentru vehicule înmatriculate în Ucraina, Belarus, Rusia, Kazahstan, Georgia, Armenia, Azerbaidjan, China, EAU, Israel și alte țări",
+        "Poliță PDF după verificare",
+        "Preț de la 150 de zloți polonezi pentru 30 de zile",
+      ],
       ctaCalc: "Calculați costul",
       ctaBuy: "Emiteți polița",
     },
@@ -4743,7 +4803,11 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
       title: "OC graniczne online za automobil registrovan van EEP",
       lead:
         "Pomažemo vam da na daljinu zaključite ugovor o prekograničnom osiguranju za ulazak u Poljsku, EU i druge zemlje navedene u polisi.",
-      meta: ["Za vozila van EEP", "PDF polisa nakon provere", "Pokriće samo prema spisku zemalja"],
+      meta: [
+        "Za vozila registrovana u Ukrajini, Belorusiji, Rusiji, Kazahstanu, Gruziji, Jermeniji, Azerbejdžanu, Kini, UAE, Izraelu i drugim zemljama",
+        "PDF polisa nakon provere",
+        "Cena od 150 poljskih zlota za 30 dana",
+      ],
       ctaCalc: "Izračunajte cenu",
       ctaBuy: "Izdajte polisu",
     },
@@ -5011,7 +5075,11 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
       title: "OC graniczne online për automjet të regjistruar jashtë ZEE-së",
       lead:
         "Ju ndihmojmë ta lidhni nga distanca kontratën e sigurimit ndërkufitar për hyrje në Poloni, BE dhe në shtetet e tjera të shënuara në policë.",
-      meta: ["Për automjete jashtë ZEE-së", "Policë PDF pas verifikimit", "Mbulim vetëm sipas listës së shteteve"],
+      meta: [
+        "Për automjete të regjistruara në Ukrainë, Bjellorusi, Rusi, Kazakistan, Gjeorgji, Armeni, Azerbajxhan, Kinë, Emiratet e Bashkuara Arabe, Izrael dhe vende të tjera",
+        "Policë PDF pas verifikimit",
+        "Çmimi nga 150 zlloti polake për 30 ditë",
+      ],
       ctaCalc: "Llogaritni çmimin",
       ctaBuy: "Lëshoni policën",
     },
@@ -5279,7 +5347,11 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
       title: "ЕЭЗ-ээс гадуур бүртгэлтэй автомашинд зориулсан OC graniczne онлайн",
       lead:
         "Бид Польш, ЕХ болон полист заасан бусад улс руу нэвтрэхэд шаардлагатай хил дамнасан даатгалын гэрээг зайнаас оформить хийхэд тусалдаг.",
-      meta: ["ЕЭЗ-ээс гадуурх авто машинд", "Шалгалтын дараах PDF-полис", "Хамрах хүрээ зөвхөн улсын жагсаалтын дагуу"],
+      meta: [
+        "Украин, Беларусь, Орос, Казахстан, Гүрж, Армени, Азербайжан, Хятад, АНЭУ, Израил болон бусад улсад бүртгэлтэй автомашинд зориулсан",
+        "Шалгалтын дараах PDF-полис",
+        "30 хоногийн үнэ 150 Польш злотоос эхэлнэ",
+      ],
       ctaCalc: "Үнийг тооцоолох",
       ctaBuy: "Полис оформить хийх",
     },
