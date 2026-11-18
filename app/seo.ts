@@ -30,14 +30,11 @@ export const ROUTE_LOCALES = {
   "experts/sergey-anatska": ["ru", "en", "ka", "uk", "uz", "kk", "hy", "ar"],
 } as const satisfies Record<string, readonly Lang[]>;
 
+const TARIFF_PAGES_LAST_MODIFIED = "2026-11-18";
+
 export const ROUTE_META = {
   "": {
-    lastModified: "2026-08-23",
-    lastModifiedByLocale: {
-      ru: "2026-10-19",
-      en: "2026-10-19",
-      ar: "2026-10-19",
-    },
+    lastModified: TARIFF_PAGES_LAST_MODIFIED,
   },
   "/about": { lastModified: "2026-10-18" },
   "/contacts": { lastModified: "2026-06-12" },
@@ -53,7 +50,7 @@ export const ROUTE_META = {
   "/cookiepolicy": { lastModified: "2026-05-08" },
   "/experts/sergey-anatska": { lastModified: "2026-07-17" },
   "/europolis": {
-    lastModified: "2026-10-25",
+    lastModified: TARIFF_PAGES_LAST_MODIFIED,
     review: {
       authorId: "sergey-anatska",
       reviewerId: "sergey-anatska",
@@ -62,8 +59,7 @@ export const ROUTE_META = {
     pageType: "insurance-route",
   },
   "/route/belarus/poland": {
-    // Route content and the localized application form were updated in #81 and #82.
-    lastModified: "2026-11-02",
+    lastModified: TARIFF_PAGES_LAST_MODIFIED,
     review: {
       authorId: "sergey-anatska",
       reviewerId: "sergey-anatska",
@@ -71,32 +67,32 @@ export const ROUTE_META = {
     },
     pageType: "insurance-route",
   },
-  "/route/belarus/lithuania": { lastModified: "2026-08-23", lastModifiedByLocale: { ru: "2026-11-02" }, review: {
+  "/route/belarus/lithuania": { lastModified: TARIFF_PAGES_LAST_MODIFIED, review: {
       authorId: "sergey-anatska",
       reviewerId: "sergey-anatska",
       reviewedAt: "2026-07-17",
     },
     pageType: "insurance-route", },
-  "/route/georgia/romania": { lastModified: "2026-08-23", lastModifiedByLocale: { ru: "2026-11-02" }, review: {
+  "/route/georgia/romania": { lastModified: TARIFF_PAGES_LAST_MODIFIED, review: {
       authorId: "sergey-anatska",
       reviewerId: "sergey-anatska",
       reviewedAt: "2026-07-17",
     },
     pageType: "insurance-route", },
-  "/route/georgia/bulgaria": { lastModified: "2026-08-23", lastModifiedByLocale: { ru: "2026-11-02" }, review: {
+  "/route/georgia/bulgaria": { lastModified: TARIFF_PAGES_LAST_MODIFIED, review: {
       authorId: "sergey-anatska",
       reviewerId: "sergey-anatska",
       reviewedAt: "2026-07-17",
     },
     pageType: "insurance-route", },
-  "/route/kazakhstan/poland": { lastModified: "2026-08-23", lastModifiedByLocale: { ru: "2026-11-02" }, review: {
+  "/route/kazakhstan/poland": { lastModified: TARIFF_PAGES_LAST_MODIFIED, review: {
       authorId: "sergey-anatska",
       reviewerId: "sergey-anatska",
       reviewedAt: "2026-07-17",
     },
     pageType: "insurance-route", },
   "/route/uae/bulgaria": {
-    lastModified: "2026-10-19",
+    lastModified: TARIFF_PAGES_LAST_MODIFIED,
     review: {
       authorId: "sergey-anatska",
       reviewerId: "sergey-anatska",
@@ -108,7 +104,7 @@ export const ROUTE_META = {
     },
   },
   "/route/georgia/greece": {
-    lastModified: "2026-10-19",
+    lastModified: TARIFF_PAGES_LAST_MODIFIED,
     review: {
       authorId: "sergey-anatska",
       reviewerId: "sergey-anatska",
@@ -117,7 +113,7 @@ export const ROUTE_META = {
     pageType: "insurance-route",
   },
   "/route/uae/greece": {
-    lastModified: "2026-10-19",
+    lastModified: TARIFF_PAGES_LAST_MODIFIED,
     review: {
       authorId: "sergey-anatska",
       reviewerId: "sergey-anatska",
@@ -129,7 +125,7 @@ export const ROUTE_META = {
     },
   },
   "/route/albania/bulgaria": {
-    lastModified: "2026-10-19",
+    lastModified: TARIFF_PAGES_LAST_MODIFIED,
     review: {
       authorId: "sergey-anatska",
       reviewerId: "sergey-anatska",
@@ -139,7 +135,7 @@ export const ROUTE_META = {
   },
 
   "/route/algeria/france": {
-    lastModified: "2026-10-19",
+    lastModified: TARIFF_PAGES_LAST_MODIFIED,
     review: {
       authorId: "sergey-anatska",
       reviewerId: "sergey-anatska",
