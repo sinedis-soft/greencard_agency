@@ -152,7 +152,7 @@ const ar: UaeOcDictionary = {
     eyebrow: "السعر والمدة",
     title: "كم تبلغ تكلفة تأمين سيارة جزائرية في فرنسا؟",
     text:
-      "يبلغ السعر الحالي لوثيقة مدتها 30 يومًا لسيارة خاصة 157.50 زلوتي بولندي. وقد تتوفر مدد 30 أو 60 أو 90 أو 180 أو 364 يومًا. ويُؤكد السعر النهائي وإمكانية الإصدار بعد مراجعة فئة المركبة والمستندات وخط الرحلة.",
+      "يبلغ السعر الحالي لوثيقة مدتها 30 يومًا لسيارة خاصة 150 زلوتي بولندي. وقد تتوفر مدد 30 أو 60 أو 90 أو 180 أو 364 يومًا. ويُؤكد السعر النهائي وإمكانية الإصدار بعد مراجعة فئة المركبة والمستندات وخط الرحلة.",
     factors: [
       "فئة المركبة؛",
       "مدة سريان الوثيقة؛",
@@ -444,7 +444,7 @@ const ru: UaeOcDictionary = {
     eyebrow: "Стоимость и срок",
     title: "Сколько стоит страховка для автомобиля из Алжира во Франции?",
     text:
-      "Текущая стоимость полиса на 30 дней для легкового автомобиля составляет 157,50 польского злотого. Также могут быть доступны сроки 30, 60, 90, 180 или 364 дня. Окончательная стоимость и возможность оформления подтверждаются после проверки категории транспортного средства, документов и маршрута.",
+      "Текущая стоимость полиса на 30 дней для легкового автомобиля составляет 150 польских злотых. Также могут быть доступны сроки 30, 60, 90, 180 или 364 дня. Окончательная стоимость и возможность оформления подтверждаются после проверки категории транспортного средства, документов и маршрута.",
     factors: [
       "категория транспортного средства;",
       "срок действия полиса;",
@@ -736,7 +736,7 @@ const pl: UaeOcDictionary = {
     eyebrow: "Cena i okres ubezpieczenia",
     title: "Ile kosztuje ubezpieczenie samochodu z Algierii we Francji?",
     text:
-      "Aktualna cena polisy na 30 dni dla samochodu osobowego wynosi 157,50 PLN. Mogą być również dostępne okresy 30, 60, 90, 180 lub 364 dni. Ostateczna cena i możliwość wystawienia polisy są potwierdzane po weryfikacji kategorii pojazdu, dokumentów oraz trasy podróży.",
+      "Aktualna cena polisy na 30 dni dla samochodu osobowego wynosi 150 PLN. Mogą być również dostępne okresy 30, 60, 90, 180 lub 364 dni. Ostateczna cena i możliwość wystawienia polisy są potwierdzane po weryfikacji kategorii pojazdu, dokumentów oraz trasy podróży.",
     factors: [
       "kategoria pojazdu;",
       "okres obowiązywania polisy;",
@@ -1028,7 +1028,7 @@ const en: UaeOcDictionary = {
     eyebrow: "Price and duration",
     title: "How much does insurance for an Algerian car in France cost?",
     text:
-      "The current price for a 30-day policy for a passenger car is 157.50 Polish zloty. Periods of 30, 60, 90, 180, or 364 days may also be available. The final price and eligibility are confirmed after the vehicle category, documents, and route have been reviewed.",
+      "The current price for a 30-day policy for a passenger car is 150 Polish zloty. Periods of 30, 60, 90, 180, or 364 days may also be available. The final price and eligibility are confirmed after the vehicle category, documents, and route have been reviewed.",
     factors: [
       "vehicle category;",
       "policy duration;",
@@ -1320,7 +1320,7 @@ const be: UaeOcDictionary = {
     eyebrow: "Кошт і тэрмін",
     title: "Колькі каштуе страхоўка для аўтамабіля з Алжыра ў Францыі?",
     text:
-      "Бягучы кошт поліса на 30 дзён для легкавога аўтамабіля складае 157,50 польскага злотага. Таксама могуць быць даступныя тэрміны 30, 60, 90, 180 або 364 дні. Канчатковы кошт і магчымасць афармлення пацвярджаюцца пасля праверкі катэгорыі транспартнага сродку, дакументаў і маршруту.",
+      "Бягучы кошт поліса на 30 дзён для легкавога аўтамабіля складае 150 польскіх злотых. Таксама могуць быць даступныя тэрміны 30, 60, 90, 180 або 364 дні. Канчатковы кошт і магчымасць афармлення пацвярджаюцца пасля праверкі катэгорыі транспартнага сродку, дакументаў і маршруту.",
     factors: [
       "катэгорыя транспартнага сродку;",
       "тэрмін дзеяння поліса;",
