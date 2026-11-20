@@ -1,5 +1,8 @@
 import type { Lang } from "@/app/dictionaries/header";
 import type { BelarusPolandOcDictionary } from "@/app/dictionaries/seo-landings/belarusPolandOc";
+import { getPolicyPrice } from "@/app/lib/insurancePrices";
+
+const car30DayPrice = getPolicyPrice("car", "30");
 
 const ru: BelarusPolandOcDictionary = {
   seo: {
@@ -187,7 +190,8 @@ const ka: BelarusPolandOcDictionary = {
   price: {
     title: "მარშრუტის დაზღვევის ღირებულება",
     text:
-      "ღირებულება დამოკიდებულია სატრანსპორტო საშუალების ტიპსა და დაზღვევის ვადაზე. დაზღვევის მინიმალური ვადაა 30 დღე. მსუბუქი ავტომობილისთვის ჩვენი პაკეტის ღირებულება შეადგენს 150 PLN-ს. თანხაში შედის სასაზღვრო დაზღვევის პოლისის გაფორმება, რომელიც მოქმედებს საბერძნეთში და ხელშეკრულებით განსაზღვრულ ევროპის ეკონომიკური ზონის ტერიტორიაზე.",
+      (car30DayPrice === null ? "" : `მსუბუქი ავტომობილის 30-დღიანი სასაზღვრო დაზღვევის (OC graniczne) საორიენტაციო ღირებულებაა ${car30DayPrice} PLN. `) +
+      "ღირებულება დამოკიდებულია სატრანსპორტო საშუალების ტიპსა და დაზღვევის ვადაზე. დაზღვევის მინიმალური ვადაა 30 დღე. თანხაში შედის სასაზღვრო დაზღვევის პოლისის გაფორმება, რომელიც მოქმედებს საბერძნეთში და ხელშეკრულებით განსაზღვრულ ევროპის ეკონომიკური ზონის ტერიტორიაზე.",
   },
 
   validity: {

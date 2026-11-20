@@ -862,11 +862,13 @@ textarea:hover {
 }
 
 @supports (appearance: base-select) {
-  .lead-form-card select {
+  .lead-form-card select,
+  #calc select {
     appearance: base-select;
   }
 
-  .lead-form-card select::picker(select) {
+  .lead-form-card select::picker(select),
+  #calc select::picker(select) {
     appearance: base-select;
     max-block-size: min(18rem, 50dvh);
     padding: 4px;
@@ -878,13 +880,16 @@ textarea:hover {
     overflow: auto;
   }
 
-  .lead-form-card select option {
+  .lead-form-card select option,
+  #calc select option {
     padding: 8px 10px;
     border-radius: 8px;
   }
 
   .lead-form-card select option:checked,
-  .lead-form-card select option:hover {
+  .lead-form-card select option:hover,
+  #calc select option:checked,
+  #calc select option:hover {
     background: var(--brand-accent-soft);
   }
 }

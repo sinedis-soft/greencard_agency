@@ -1,5 +1,8 @@
 // app/dictionaries/home.ts
 import type { Lang } from "@/app/dictionaries/header";
+import { getPolicyPrice } from "@/app/lib/insurancePrices";
+
+const car30DayPrice = getPolicyPrice("car", "30");
 
 export type VerifyCode = "PL" | "LV" | "LT";
 
@@ -1461,7 +1464,7 @@ export const homeDictionary: Record<Lang, HomeDictionary> = {
       meta: [
         "საქართველოს, უკრაინის, ბელარუსის, რუსეთის, ყაზახეთის, სომხეთის, აზერბაიჯანის, ჩინეთის, არაბთა გაერთიანებული საამიროების, ისრაელისა და სხვა ქვეყნების ნომრიანი ავტომობილებისთვის",
         "PDF-პოლისი შემოწმების შემდეგ",
-        "30 დღის ფასი 150 პოლონური ზლოტიდან",
+        car30DayPrice === null ? "ღირებულება იხილეთ კალკულატორში" : `30 დღის ფასი ${car30DayPrice} პოლონური ზლოტიდან`,
       ],
       ctaCalc: "ღირებულების გამოთვლა",
       ctaBuy: "პოლისის გაფორმება",
