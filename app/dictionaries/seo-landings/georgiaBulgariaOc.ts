@@ -1,5 +1,8 @@
 import type { Lang } from "@/app/dictionaries/header";
 import type { BelarusPolandOcDictionary } from "@/app/dictionaries/seo-landings/belarusPolandOc";
+import { getPolicyPrice } from "@/app/lib/insurancePrices";
+
+const car30DayPrice = getPolicyPrice("car", "30");
 
 const ru: BelarusPolandOcDictionary = {
   seo: {
@@ -326,6 +329,7 @@ const ka: BelarusPolandOcDictionary = {
   price: {
     title: "რაზეა დამოკიდებული ღირებულება",
     text:
+      (car30DayPrice === null ? "" : `მსუბუქი ავტომობილის 30-დღიანი სასაზღვრო დაზღვევის (OC graniczne) საორიენტაციო ღირებულებაა ${car30DayPrice} PLN. `) +
       "დაზღვევის ღირებულება დამოკიდებულია შერჩეულ პროდუქტზე, სატრანსპორტო საშუალების კატეგორიაზე, მოქმედების ვადასა და ტერიტორიულ დაფარვაზე. ტარიფები შეიძლება განსხვავდებოდეს მსუბუქი ავტომობილების, სატვირთოების, ავტობუსების, მოტოციკლებისა და მისაბმელებისთვის. საბოლოო ღირებულება დასტურდება სარეგისტრაციო დოკუმენტის, მარშრუტისა და შერჩეული სადაზღვევო პროდუქტის გაფორმების შესაძლებლობის შემოწმების შემდეგ.",
   },
 
