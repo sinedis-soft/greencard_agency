@@ -1,6 +1,7 @@
 // app/components/Home.tsx
 import type { Lang } from "@/app/dictionaries/header";
 import { getHomeDictionary } from "@/app/dictionaries/home";
+import { homeApplicationCta } from "@/app/dictionaries/homeApplicationCta";
 import InfoCompare from "@/app/components/InfoCompare";
 import Calculator from "@/app/components/Calculator";
 import LeadForm from "@/app/components/LeadForm";
@@ -24,6 +25,7 @@ import { getRoutesDictionary } from "@/app/dictionaries/routes";
 
 export default function Home({ lang }: { lang: Lang }) {
   const t = getHomeDictionary(lang);
+  const applicationCta = homeApplicationCta[lang];
   const landing = getBelarusPolandOcDictionary(lang);
   const georgiaRomania = getGeorgiaRomaniaOcDictionary(lang);
   const belarusLithuania = belarusLithuaniaOcDictionary[lang];
@@ -264,6 +266,21 @@ export default function Home({ lang }: { lang: Lang }) {
               </article>
             ))}
           </div>
+
+          <section className="process-cta" aria-labelledby="process-cta-title">
+            <div>
+              <h2 id="process-cta-title" className="process-cta__title">
+                {applicationCta.title}
+              </h2>
+              <p className="process-cta__text">{applicationCta.text}</p>
+            </div>
+            <a className="btn btn--primary process-cta__button" href="#buy">
+              {applicationCta.button}
+              <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M5 12h14m-7-7 7 7-7 7" />
+              </svg>
+            </a>
+          </section>
         </div>
       </section>
 
